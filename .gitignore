@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+
+# Files and generated directors
+dist/
+*.log
+npm-debug.log*
+
+.sass-cache/
+.vscode/
