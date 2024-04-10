@@ -1,48 +1,29 @@
-* {
-}
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-:root {
-  --green-color: #2f7973;
-  --black-color: #333333;
-  --white-color: #f7f7f7;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-style: normal;
-}
+  font-style: normal; }
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   padding: 0 3rem 0 3rem;
-  height: auto;
-
-  &__logo {
+  height: auto; }
+  .nav__logo {
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-    &__img {
+    align-items: center; }
+    .nav__logo__img {
       width: 55px;
-      height: 55px;
-    }
-
-    &__title {
+      height: 55px; }
+    .nav__logo__title {
       font-weight: 700;
       font-size: 20px;
-      color: var(--black-color);
-    }
-  }
-}
+      color: #000000; }
 
 .nav__links {
   display: flex;
@@ -51,27 +32,21 @@
   justify-content: space-between;
   padding: 10px;
   width: 100%;
-  max-width: 779px;
-
-  &__list {
+  max-width: 779px; }
+  .nav__links__list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-  }
-
-  &__list > li > a {
+    width: 100%; }
+  .nav__links__list > li > a {
     text-decoration: none;
-    color: var(--black-color);
-    font-size: 18px;
-  }
-}
+    color: #000000;
+    font-size: 18px; }
 
 .btn--green {
-  background-color: var(--green-color);
-}
+  background-color: #2f7973; }
 
 .join-btn {
   width: 144px;
@@ -80,6 +55,5 @@
   border-radius: 8px;
   border: none;
   font-size: 18px;
-  color: var(--white-color);
-  cursor: pointer;
-}
+  color: #ffffff;
+  cursor: pointer; }

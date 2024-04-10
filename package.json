@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start-sass": "node-sass -w style.scss style.css"
+    "start-sass": "node-sass -w scss/ -o css/"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
