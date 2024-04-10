@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "colors/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0 3rem 0 3rem;
+  height: auto;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__img {
+      width: 55px;
+      height: 55px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 20px;
+      color: $black;
+    }
+  }
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  max-width: 779px;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__list > li > a {
+    text-decoration: none;
+    color: $black;
+    font-size: 18px;
+  }
+}
+
+.btn--green {
+  background-color: $green-mint;
+}
+
+.join-btn {
+  width: 144px;
+  height: 42px;
+  padding: 10px 32px 10px 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  color: $white;
+  cursor: pointer;
+}
