@@ -2,10 +2,10 @@
 UI for oportunitatisicariere.ro
 
 # IMPORTANT:
-# Install and use SASS Preprocessor steps:
-1. Install node_modules using: npm install command using the terminal inside of the project folder.
+# How to install and use SASS Preprocessor steps:
+1. Install node_modules folder using: (npm install) command using the terminal inside of the project folder.
 
-2. Run: npm start-sass command in the terminal on the same project folder to run the SASS preprocessor in order to allow transformation of SASS code to CSS code.
+2. Run: (npm run start-sass) command in the terminal on the same project folder to run the SASS preprocessor in order to allow transformation of SASS code to CSS code.
 
 
 
