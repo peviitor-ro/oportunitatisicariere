@@ -34,9 +34,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  width: 100%;
-  max-width: 779px;
-
+  
   &__list {
     list-style-type: none;
     display: flex;
@@ -46,10 +44,14 @@
     width: 100%;
   }
 
+  &__list  li:not(:last-child) {
+    margin-right: 3rem;
+  }
+
   &__list > li > a {
     text-decoration: none;
     color: $black;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
@@ -59,9 +61,9 @@
 
 .join-btn {
   padding: 1rem 3rem;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   border: none;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: $white;
   cursor: pointer;
 }

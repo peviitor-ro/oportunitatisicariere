@@ -13,9 +13,7 @@ html {
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-style: normal; }
+  font-family: "Roboto"; }
 
 a {
   color: inherit;
@@ -44,9 +42,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  width: 100%;
-  max-width: 779px; }
+  padding: 1rem; }
   .nav__links__list {
     list-style-type: none;
     display: flex;
@@ -54,18 +50,20 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%; }
+  .nav__links__list li:not(:last-child) {
+    margin-right: 3rem; }
   .nav__links__list > li > a {
     text-decoration: none;
     color: #000000;
-    font-size: 18px; }
+    font-size: 1.8rem; }
 
 .btn--green {
   background-color: #2f7973; }
 
 .join-btn {
   padding: 1rem 3rem;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   border: none;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #ffffff;
   cursor: pointer; }
