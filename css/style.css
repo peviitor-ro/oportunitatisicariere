@@ -100,12 +100,14 @@ a {
     .how-contribute__jobs #arrow-left {
       position: absolute;
       top: 13rem;
-      left: -10rem; }
+      left: -10rem;
+      cursor: pointer; }
     .how-contribute__jobs #arrow-right {
       position: absolute;
       top: 13rem;
       right: -10rem;
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      cursor: pointer; }
   .how-contribute__job {
     display: flex;
     flex-direction: column;

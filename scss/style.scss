@@ -111,6 +111,7 @@
       position: absolute;
       top: 13rem;
       left: -10rem;
+      cursor: pointer;
     }
 
     #arrow-right {
@@ -118,6 +119,7 @@
       top: 13rem;
       right: -10rem;
       transform: rotate(180deg);
+      cursor: pointer;
     }
   }
 
