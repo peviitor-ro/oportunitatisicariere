@@ -68,6 +68,64 @@ a {
   color: #ffffff;
   cursor: pointer; }
 
+.how-contribute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7; }
+  .how-contribute__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0; }
+    .how-contribute__title h2 {
+      font-size: 3.2rem;
+      font-weight: 400; }
+  .how-contribute__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 38rem;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 4.2rem; }
+  .how-contribute__jobs {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
+    position: relative; }
+    .how-contribute__jobs #arrow-left {
+      position: absolute;
+      top: 13rem;
+      left: -10rem;
+      cursor: pointer; }
+    .how-contribute__jobs #arrow-right {
+      position: absolute;
+      top: 13rem;
+      right: -10rem;
+      transform: rotate(180deg);
+      cursor: pointer; }
+  .how-contribute__job {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.4rem;
+    padding-bottom: 4rem;
+    background-color: #ffffff; }
+    .how-contribute__job__text {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      padding-left: 2.4rem; }
+      .how-contribute__job__text h3 {
+        font-size: 2rem;
+        font-weight: 400; }
+      .how-contribute__job__text a {
+        font-size: 1.4rem; }
+
 .hero {
   display: flex;
   flex-direction: column;
