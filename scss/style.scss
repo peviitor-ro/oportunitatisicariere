@@ -1,22 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import "colors/colors.scss";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+@import "utils/_colors.scss";
+@import "utils/typography";
+@import "utils/reset";
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  padding: 0 3rem 0 3rem;
+  padding: 0 3rem;
   height: auto;
 
   &__logo {
@@ -31,7 +22,7 @@
 
     &__title {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 2rem;
       color: $black;
     }
   }
@@ -42,7 +33,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 1rem;
   width: 100%;
   max-width: 779px;
 
@@ -67,9 +58,7 @@
 }
 
 .join-btn {
-  width: 144px;
-  height: 42px;
-  padding: 10px 32px 10px 32px;
+  padding: 1rem 3rem;
   border-radius: 8px;
   border: none;
   font-size: 18px;

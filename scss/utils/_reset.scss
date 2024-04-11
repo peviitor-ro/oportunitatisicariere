@@ -1,0 +1,27 @@
+@import "./typography";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+    width: 100%;
+    // max-width: 1440px;
+    margin: 0 auto;
+    font-family: $roboto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
