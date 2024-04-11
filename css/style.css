@@ -175,8 +175,7 @@ a {
   justify-content: center;
   align-items: center; }
   .our-mission__content {
-    width: 100%;
-    max-width: 1278px; }
+    padding: 0 5rem; }
     .our-mission__content__title {
       display: flex;
       flex-direction: column;
