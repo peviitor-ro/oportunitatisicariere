@@ -149,11 +149,13 @@
   }
 }
 
+// Hero section
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //This height define the entire hero section and its backgound: 
+  //This height define the entire hero section and its backgound:
   height: 850px;
   padding-top: 4rem;
   background: linear-gradient(
@@ -204,6 +206,71 @@
       font-weight: 500;
       line-height: 2.1rem;
       cursor: pointer;
+    }
+  }
+}
+
+// Our misiion section
+
+.our-mission {
+  height: auto;
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    max-width: 1278px;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 7rem 0;
+    }
+
+    &__title > h1 {
+      font-size: 3.2rem;
+      font-weight: 400;
+      line-height: 3.6rem;
+      text-align: center;
+      color: $black;
+      margin-bottom: 1rem;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .description {
+        width: 618px;
+        margin-right: 4rem;
+        padding-right: 4rem;
+        padding-top: 1rem;
+
+        p {
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.2rem;
+          text-align: left;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .search-engine {
+        width: 100%;
+        max-width: 527px;
+        padding: 1rem;
+        margin-right: 4rem;
+        padding-left: 4rem;
+
+        //NOTE: de scos acel overflow pe y:
+        iframe {
+          overflow: hidden;
+        }
+      }
     }
   }
 }
