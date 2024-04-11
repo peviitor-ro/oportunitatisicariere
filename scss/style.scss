@@ -146,3 +146,62 @@
     }
   }
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //This height define the entire hero section and its backgound: 
+  height: 850px;
+  padding-top: 4rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url("../assets/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  &__content {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    &__title {
+      font-size: 4.8rem;
+      font-weight: 500;
+      line-height: 5.4rem;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    &__description {
+      padding: 0 25%;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &__btn {
+      padding: 2rem 4rem;
+      border-radius: 0.8rem;
+      color: $white;
+      border: none;
+      background-color: $green-mint;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 2.1rem;
+      cursor: pointer;
+    }
+  }
+}

@@ -25,20 +25,17 @@ a {
   justify-content: space-between;
   padding: 0 3rem;
   height: auto; }
-
-.nav__logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.nav__logo__img {
-  width: 55px;
-  height: 55px; }
-
-.nav__logo__title {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #000000; }
+  .nav__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .nav__logo__img {
+      width: 55px;
+      height: 55px; }
+    .nav__logo__title {
+      font-weight: 700;
+      font-size: 2rem;
+      color: #000000; }
 
 .nav__links {
   display: flex;
@@ -46,22 +43,19 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 1rem; }
-
-.nav__links__list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; }
-
-.nav__links__list li:not(:last-child) {
-  margin-right: 3rem; }
-
-.nav__links__list > li > a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 1.8rem; }
+  .nav__links__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+  .nav__links__list li:not(:last-child) {
+    margin-right: 3rem; }
+  .nav__links__list > li > a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.8rem; }
 
 .btn--green {
   background-color: #2f7973; }
@@ -79,65 +73,95 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #f7f7f7; }
+  .how-contribute__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0; }
+    .how-contribute__title h2 {
+      font-size: 3.2rem;
+      font-weight: 400; }
+  .how-contribute__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 38rem;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 4.2rem; }
+  .how-contribute__jobs {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
+    position: relative; }
+    .how-contribute__jobs #arrow-left {
+      position: absolute;
+      top: 13rem;
+      left: -10rem; }
+    .how-contribute__jobs #arrow-right {
+      position: absolute;
+      top: 13rem;
+      right: -10rem;
+      transform: rotate(180deg); }
+  .how-contribute__job {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.4rem;
+    padding-bottom: 4rem;
+    background-color: #ffffff; }
+    .how-contribute__job__text {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      padding-left: 2.4rem; }
+      .how-contribute__job__text h3 {
+        font-size: 2rem;
+        font-weight: 400; }
+      .how-contribute__job__text a {
+        font-size: 1.4rem; }
 
-.how-contribute__title {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7rem 0; }
-
-.how-contribute__title h2 {
-  font-size: 3.2rem;
-  font-weight: 400; }
-
-.how-contribute__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 38rem;
-  text-align: center;
-  font-size: 1.8rem;
-  padding-bottom: 4.2rem; }
-
-.how-contribute__jobs {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 7rem;
-  position: relative; }
-
-.how-contribute__jobs #arrow-left {
-  position: absolute;
-  top: 13rem;
-  left: -10rem; }
-
-.how-contribute__jobs #arrow-right {
-  position: absolute;
-  top: 13rem;
-  right: -10rem;
-  transform: rotate(180deg); }
-
-.how-contribute__job {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 2.4rem;
-  padding-bottom: 4rem;
-  background-color: #ffffff; }
-
-.how-contribute__job__text {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  padding-left: 2.4rem; }
-
-.how-contribute__job__text h3 {
-  font-size: 2rem;
-  font-weight: 400; }
-
-.how-contribute__job__text a {
-  font-size: 1.4rem; }
-
-/*# sourceMappingURL=style.css.map */
+  height: 850px;
+  padding-top: 4rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("../assets/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; }
+  .hero__content {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem; }
+    .hero__content__title {
+      font-size: 4.8rem;
+      font-weight: 500;
+      line-height: 5.4rem;
+      text-align: center;
+      margin-bottom: 4rem; }
+    .hero__content__description {
+      padding: 0 25%;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      text-align: center;
+      margin-bottom: 2rem; }
+      .hero__content__description span {
+        font-weight: bold; }
+    .hero__content__btn {
+      padding: 2rem 4rem;
+      border-radius: 0.8rem;
+      color: #ffffff;
+      border: none;
+      background-color: #2f7973;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 2.1rem;
+      cursor: pointer; }
