@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build:scss": "sass source/styles/main.scss dist/styles/main.css"
+    "build-css": "node-sass --include-path scss scss/style.scss scss/styles.css",
+    "start": "npm run build-css && xdg-open index.html || open index.html"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
