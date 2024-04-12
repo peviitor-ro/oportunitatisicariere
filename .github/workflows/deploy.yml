@@ -21,10 +21,10 @@ jobs:
         run: npm install
 
       - name: Build SCSS
-        run: npm run build:scss
+        run: npm run build-css
 
       - name: Build website
-        run: npm run build
+        run: npm run start
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.6
