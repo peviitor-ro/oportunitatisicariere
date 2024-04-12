@@ -1,0 +1,41 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      
+main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      
+name: Checkout repository
+      uses: actions/checkout@v2
+
+      
+name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+      
+name: Install dependencies
+      run: npm install
+
+      
+name: Build SCSS
+      run: npm run start-sass
+
+      
+name: Build website
+      run: npm run build
+
+      
+name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.6
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
