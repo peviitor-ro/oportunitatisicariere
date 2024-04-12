@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "start-sass": "node-sass -w scss/ -o css/",
     "build:scss": "sass source/styles/main.scss dist/styles/main.css"
   },
   "dependencies": {
