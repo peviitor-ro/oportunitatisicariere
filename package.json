@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build-css": "node-sass --include-path scss scss/style.scss scss/styles.css",
-    "build": "mkdir -p dist && cp index.html dist/"
+    "build": "webpack"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
