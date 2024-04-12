@@ -236,3 +236,50 @@ header {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 34rem;
+  gap: 3.5rem;
+  background-color: #f3f3f3; }
+  .team h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    margin-bottom: -0.5rem; }
+  .team-line {
+    transform: scale(0.6); }
+  .team p {
+    font-size: 1.6rem;
+    line-height: 130%;
+    text-align: center; }
+  .team__members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8rem;
+    grid-row-gap: 3.2rem; }
+  .team__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem; }
+    .team__member-img {
+      width: 16rem; }
+    .team__member h4 {
+      font-size: 2rem;
+      font-weight: 500; }
+    .team__member p {
+      font-size: 1.6rem; }
+    .team__member__socials {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+      justify-content: center; }
+      .team__member__socials img:hover {
+        transform: all 0.2s;
+        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%); }
