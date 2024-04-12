@@ -1,5 +1,9 @@
 # oportunitatisicariere
+
+Check out the final [Figma Design](https://www.figma.com/file/1fvOj1ECStKxx8VPenYX0u/oportunitatisicariere-final?type=design&node-id=1%3A23&mode=design&t=k9qLaYTLhwbiW9qE-1). 
+
 UI for oportunitatisicariere.ro
+
 
 
 # IMPORTANT:
