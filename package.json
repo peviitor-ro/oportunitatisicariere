@@ -1,9 +1,13 @@
 {
   "scripts": {
     "build-css": "node-sass --include-path scss scss/style.scss scss/styles.css",
-    "start": "npm run build-css && (google-chrome index.html || firefox index.html || safari index.html || xdg-open index.html || open index.html || start index.html || explorer index.html || start \"\" index.html)"
+    "build": "mkdir -p dist && cp index.html dist/"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   }
 }
