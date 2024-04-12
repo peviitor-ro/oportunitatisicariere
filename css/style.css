@@ -232,7 +232,28 @@ header {
         font-size: 1.4rem; }
 
 .why-contribute {
-  height: 60rem;
+  height: 70rem;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
+  .why-contribute__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.2rem 0; }
+  .why-contribute h2 {
+    font-size: 3.2rem;
+    font-weight: 400; }
+  .why-contribute__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 4.2rem; }
+  .why-contribute__reasons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem; }
