@@ -232,7 +232,6 @@ header {
         font-size: 1.4rem; }
 
 .why-contribute {
-  height: 70rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,4 +255,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 7rem; }
+    flex-wrap: wrap;
+    padding: 25rem;
+    padding-top: 0;
+    padding-bottom: 15rem; }
+    .why-contribute__reasons__reason {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5rem; }
+      .why-contribute__reasons__reason p {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 1.5rem; }
