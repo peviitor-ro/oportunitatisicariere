@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build-css": "node-sass --include-path scss scss/style.scss scss/styles.css",
-    "start": "npm run build-css && xdg-open index.html || open index.html"
+    "start": "npm run build-css && (xdg-open index.html || open index.html || start index.html)"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
