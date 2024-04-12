@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build SCSS
-        run: npm run start-sass
+        run: npm run build:scss
 
       - name: Build website
         run: npm run build
