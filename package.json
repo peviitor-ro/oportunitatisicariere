@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build-css": "node-sass --include-path scss style/styles.scss dist/style/styles.css",
+    "build-css": "node-sass --include-path scss style/style.scss dist/style/styles.css",
     "build": "mkdir -p dist && cp index.html dist/index.html && cp script.js dist/script.js && cp -r assets dist/assets && npm run build-css"
   },
   "dependencies": {
