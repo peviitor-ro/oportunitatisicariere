@@ -433,4 +433,58 @@ header {
 .join-us-section__button:hover {
   transition: all 0.3s;
   background-color: #1e524e;
+}
+
+footer {
+  padding: 11.2rem 22rem 2.7rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footer-navigation {
+  padding-bottom: 5.65rem;
+}
+footer hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #000000;
+  width: 100%;
+  max-width: 100rem;
+  margin-bottom: 5.5rem;
+}
+footer .footer-social__links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 7.2rem;
+}
+footer .footer-social__links li {
+  cursor: pointer;
+}
+footer .footer-social__links li svg {
+  width: 40px;
+  height: 40px;
+}
+footer .footer-social__links li svg:hover path {
+  fill: #2f7973;
+}
+footer .footer-social__links li svg:hover circle {
+  stroke: #2f7973;
+}
+footer .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5.3rem;
+}
+footer .footer-bottom p {
+  font-size: 1.4rem;
+}
+footer .footer-bottom h4 {
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
