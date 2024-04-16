@@ -425,3 +425,56 @@ header {
     }
   }
 }
+
+
+// thank-section
+
+.thank-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 10rem;
+
+  &__final-logo {
+    padding-bottom: 3rem;
+  }
+
+  & p {
+    padding-left: 67rem;
+    padding-right: 67rem;
+  }
+}
+
+// join-us-section
+
+.join-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10rem;
+  background-color: $greyish-white;
+
+  & p {
+    padding-left: 60rem;
+    padding-right: 60rem;
+  }
+
+  &__button {
+    padding: 1rem 3.2rem;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: $green-mint;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: $dark-mint;
+    }
+  }
+}
