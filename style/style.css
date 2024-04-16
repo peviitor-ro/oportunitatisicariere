@@ -466,8 +466,8 @@ footer .footer-social__links li {
   cursor: pointer;
 }
 footer .footer-social__links li svg {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 footer .footer-social__links li svg:hover path {
   fill: #2f7973;
