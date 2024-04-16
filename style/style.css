@@ -386,14 +386,17 @@ header {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding-top: 10rem;
+  padding: 15rem 0;
 }
 .thank-section__final-logo {
   padding-bottom: 3rem;
 }
 .thank-section p {
-  padding-left: 67rem;
-  padding-right: 67rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  padding-left: 42rem;
+  padding-right: 42rem;
 }
 
 .join-us-section {
@@ -405,9 +408,17 @@ header {
   padding: 10rem;
   background-color: #f7f7f7;
 }
+.join-us-section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  padding: 3rem 0;
+}
 .join-us-section p {
-  padding-left: 60rem;
-  padding-right: 60rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  padding: 0 30rem 8rem 30rem;
 }
 .join-us-section__button {
   padding: 1rem 3.2rem;
