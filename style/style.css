@@ -10,6 +10,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -433,4 +434,55 @@ header {
 .join-us-section__button:hover {
   transition: all 0.3s;
   background-color: #1e524e;
+}
+
+footer {
+  padding: 11.2rem 22rem 2.7rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footer-navigation {
+  padding-bottom: 5.65rem;
+}
+footer hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #000000;
+  width: 100%;
+  max-width: 100rem;
+  margin-bottom: 5.5rem;
+}
+footer .footer-social__links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 7.2rem;
+}
+footer .footer-social__links li {
+  cursor: pointer;
+}
+footer .footer-social__links li a img {
+  width: 4rem;
+  height: 4rem;
+}
+footer .footer-social__links li a img:hover {
+  filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
+}
+footer .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5.3rem;
+}
+footer .footer-bottom p {
+  font-size: 1.4rem;
+}
+footer .footer-bottom h4 {
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
