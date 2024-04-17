@@ -560,3 +560,22 @@ footer {
     }
   }
 }
+
+.top-redirect-btn {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  z-index: 99;
+  right: 5rem;
+  top: 80rem;
+
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  img:hover {
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+      brightness(85%) contrast(77%);
+  }
+}
