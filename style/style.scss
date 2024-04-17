@@ -532,12 +532,12 @@ footer {
         cursor: pointer;
       }
 
-      li img {
+      li a img {
         width: 4rem;
         height: 4rem;
       }
 
-      li img:hover {
+      li a img:hover {
         filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
           brightness(85%) contrast(77%);
       }

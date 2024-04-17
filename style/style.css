@@ -466,11 +466,11 @@ footer .footer-social__links {
 footer .footer-social__links li {
   cursor: pointer;
 }
-footer .footer-social__links li img {
+footer .footer-social__links li a img {
   width: 4rem;
   height: 4rem;
 }
-footer .footer-social__links li img:hover {
+footer .footer-social__links li a img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
 }
 footer .footer-bottom {
