@@ -35,7 +35,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
+  background-color: #f3f3f3;
+  z-index: 99;
   max-width: 1440px;
   width: 100%;
   padding: 0 3rem;
