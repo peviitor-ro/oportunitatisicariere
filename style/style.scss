@@ -51,6 +51,11 @@ header {
     gap: 3rem;
   }
 
+  // style for the page nav bar active link:
+  .active {
+    border-bottom: 3px solid $green-mint;
+  }
+
   &__list > li > a {
     text-decoration: none;
     color: $black;

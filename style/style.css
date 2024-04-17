@@ -70,6 +70,9 @@ header {
   width: 100%;
   gap: 3rem;
 }
+.nav__links .active {
+  border-bottom: 3px solid #2f7973;
+}
 .nav__links__list > li > a {
   text-decoration: none;
   color: #000000;
