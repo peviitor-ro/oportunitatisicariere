@@ -466,15 +466,12 @@ footer .footer-social__links {
 footer .footer-social__links li {
   cursor: pointer;
 }
-footer .footer-social__links li svg {
+footer .footer-social__links li img {
   width: 4rem;
   height: 4rem;
 }
-footer .footer-social__links li svg:hover path {
-  fill: #2f7973;
-}
-footer .footer-social__links li svg:hover circle {
-  stroke: #2f7973;
+footer .footer-social__links li img:hover {
+  filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
 }
 footer .footer-bottom {
   display: flex;

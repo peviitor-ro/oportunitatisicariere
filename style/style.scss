@@ -532,18 +532,14 @@ footer {
         cursor: pointer;
       }
 
-      li svg {
+      li img {
         width: 4rem;
         height: 4rem;
       }
 
-      li svg:hover {
-        path {
-          fill: $green-mint;
-        }
-        circle {
-          stroke: $green-mint;
-        }
+      li img:hover {
+        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+          brightness(85%) contrast(77%);
       }
     }
   }
