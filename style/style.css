@@ -30,11 +30,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
+  background-color: #f3f3f3;
+  z-index: 99;
   max-width: 1440px;
   width: 100%;
   padding: 0 3rem;
-  height: auto; }
+  height: auto;
+  border-bottom: 1px solid #6b6b6b; }
   .nav__logo {
     display: flex;
     flex-direction: row;
@@ -58,6 +61,8 @@ header {
     align-items: center;
     width: 100%;
     gap: 3rem; }
+    .nav__links__list__nav.active {
+      border-bottom: 3px solid #2f7973; }
   .nav__links__list > li > a {
     text-decoration: none;
     color: #000000;
@@ -404,3 +409,16 @@ footer {
       font-size: 1.4rem; }
     footer .footer-bottom h4 {
       font-size: 2rem; }
+
+.top-redirect-btn {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  z-index: 99;
+  right: 5rem;
+  top: 80rem; }
+  .top-redirect-btn img {
+    width: 5rem;
+    height: 5rem; }
+  .top-redirect-btn img:hover {
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%); }
