@@ -71,7 +71,7 @@ header {
   width: 100%;
   gap: 3rem;
 }
-.nav__links .active {
+.nav__links__list__nav.active {
   border-bottom: 3px solid #2f7973;
 }
 .nav__links__list > li > a {
@@ -498,7 +498,7 @@ footer .footer-bottom h4 {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 5rem;
+  right: 28rem;
   top: 80rem;
 }
 .top-redirect-btn img {
