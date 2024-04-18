@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
-  const navLinks = document.querySelectorAll(".nav__links__list a");
+  const navLinks = document.querySelectorAll(".nav__links__nav a");
 
   function highlightNavLink() {
     const scrollPosition = window.scrollY;
 
     sections.forEach((section) => {
       if (
-        (scrollPosition >= section.offsetTop - 200) &&
+        scrollPosition >= section.offsetTop - 200 &&
         scrollPosition < section.offsetTop + section.offsetHeight
       ) {
         const sectionId = section.getAttribute("id");
