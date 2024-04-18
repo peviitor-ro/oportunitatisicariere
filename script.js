@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach((section) => {
       if (
-        (scrollPosition >= section.offsetTop - 100) &&
+        (scrollPosition >= section.offsetTop - 200) &&
         scrollPosition < section.offsetTop + section.offsetHeight
       ) {
         const sectionId = section.getAttribute("id");
