@@ -530,7 +530,7 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 2.4rem;
-      margin-bottom: 7.2rem;
+      margin-bottom: 5rem;
 
       li {
         cursor: pointer;
@@ -549,13 +549,13 @@ footer {
 
   .footer-bottom {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5.3rem;
-
+    
     p {
-      font-size: 1.4rem;
+      padding: 1rem;
+      font-size: 1.9rem;
     }
 
     h4 {

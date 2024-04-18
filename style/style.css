@@ -467,7 +467,7 @@ footer .footer-social__links {
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
-  margin-bottom: 7.2rem;
+  margin-bottom: 5rem;
 }
 footer .footer-social__links li {
   cursor: pointer;
@@ -481,13 +481,13 @@ footer .footer-social__links li a img:hover {
 }
 footer .footer-bottom {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5.3rem;
 }
 footer .footer-bottom p {
-  font-size: 1.4rem;
+  padding: 1rem;
+  font-size: 1.9rem;
 }
 footer .footer-bottom h4 {
   font-size: 2rem;
