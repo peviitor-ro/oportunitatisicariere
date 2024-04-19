@@ -361,7 +361,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
+  gap: 8rem;
   padding: 6rem;
   padding-bottom: 3rem;
 }
