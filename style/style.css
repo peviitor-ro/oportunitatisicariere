@@ -36,8 +36,7 @@ header {
   max-width: 1440px;
   width: 100%;
   padding: 0 3rem;
-  height: auto;
-  border-bottom: 1px solid #6b6b6b; }
+  height: auto; }
   .nav__logo {
     display: flex;
     flex-direction: row;
@@ -46,6 +45,9 @@ header {
       font-weight: 700;
       font-size: 2rem;
       color: #000000; }
+
+.nav-bottom-border {
+  border-bottom: 1px solid #ccc; }
 
 .nav__links {
   display: flex;

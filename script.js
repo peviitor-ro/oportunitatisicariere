@@ -23,9 +23,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function removeNavBottomBorder(){
+    const scrollPosition = window.scrollY;
+    const navbar = document.querySelector('.nav');
+
+    if(scrollPosition > 50){
+      navbar.classList.add('nav-bottom-border');
+    }else{
+      navbar.classList.remove('nav-bottom-border');
+    }
+  }
+
   // Trigger the function when the user scroll over the page:
   document.addEventListener("scroll", () => {
     highlightNavLink();
+    removeNavBottomBorder();
   });
 
   // Highlight when the page gets loaded:
