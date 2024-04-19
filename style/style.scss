@@ -398,11 +398,12 @@ header {
   }
 
   &__members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 8rem;
-    grid-row-gap: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 6rem;
+    padding-bottom: 3rem;
   }
 
   &__member {
@@ -413,6 +414,8 @@ header {
 
     &-img {
       width: 16rem;
+      height: 16rem;
+      object-fit: cover;
     }
 
     & h4 {

@@ -358,11 +358,12 @@ header {
   text-align: center;
 }
 .team__members {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 8rem;
-  grid-row-gap: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 6rem;
+  padding-bottom: 3rem;
 }
 .team__member {
   display: flex;
@@ -372,6 +373,9 @@ header {
 }
 .team__member-img {
   width: 16rem;
+  height: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .team__member h4 {
   font-size: 2rem;
@@ -503,8 +507,6 @@ footer .footer-bottom h4 {
   z-index: 99;
   right: 28rem;
   top: 80rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 .top-redirect-btn img {
   width: 5rem;
