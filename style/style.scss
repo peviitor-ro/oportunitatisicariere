@@ -53,7 +53,7 @@ header {
     width: 100%;
     gap: 3rem;
 
-    &__nav.active {
+    .active {
       border-bottom: 3px solid $green-mint;
     }
   }
