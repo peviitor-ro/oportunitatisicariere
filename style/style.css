@@ -299,18 +299,22 @@ header {
     line-height: 130%;
     text-align: center; }
   .team__members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 8rem;
-    grid-row-gap: 3.2rem; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 6rem;
+    padding-bottom: 3rem; }
   .team__member {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem; }
     .team__member-img {
-      width: 16rem; }
+      width: 16rem;
+      height: 16rem;
+      object-fit: cover;
+      border-radius: 50%; }
     .team__member h4 {
       font-size: 2rem;
       font-weight: 500; }
