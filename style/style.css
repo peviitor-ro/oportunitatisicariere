@@ -500,6 +500,8 @@ footer .footer-bottom h4 {
   z-index: 99;
   right: 28rem;
   top: 80rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .top-redirect-btn img {
   width: 5rem;

@@ -31,3 +31,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Highlight when the page gets loaded:
   highlightNavLink();
 });
+
+// Scroll-to-top button
+const scrollBtn = document.querySelector('.top-redirect-btn');
+
+const toggleArrowVisibility = () => {
+    if (window.scrollY > 500) {
+        scrollBtn.style.opacity = '1';
+    } else {
+        scrollBtn.style.opacity = '0';
+    }
+};
+
+window.addEventListener('scroll', toggleArrowVisibility);
