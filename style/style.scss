@@ -19,7 +19,6 @@ header {
   width: 100%;
   padding: 0 3rem;
   height: auto;
-  border-bottom: 1px solid $dark-gray;
 
   &__logo {
     display: flex;
@@ -32,6 +31,10 @@ header {
       color: $black;
     }
   }
+}
+
+.nav-bottom-border {
+  border-bottom: 1px solid  #ccc;
 }
 
 .nav__links {
