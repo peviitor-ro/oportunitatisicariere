@@ -376,6 +376,7 @@ header {
   height: 16rem;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 50%;
 }
 .team__member h4 {
   font-size: 2rem;
