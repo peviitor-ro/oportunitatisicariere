@@ -100,7 +100,11 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 12rem 0 31rem 0;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
+  background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    ),
     url("../assets/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -249,18 +253,40 @@ header {
     padding-bottom: 4.2rem;
   }
 
-  &__jobs {
-    display: flex;
-    gap: 5.2rem;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 7rem;
-    position: relative;
+  // Swipper style
 
-    #arrow-left {
+  .swiper {
+    width: 100%;
+    max-width: 110rem;
+    height: auto;
+    position: static !important; 
+    display: flex !important; 
+
+    .swiper-wrapper {
+      .swiper-slide {
+        text-align: center;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          display: block;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    .swiper-button-prev {
       position: absolute;
-      top: 13rem;
-      left: -10rem;
+      top: 250rem;
+      left: 30rem;
       cursor: pointer;
       transform: scale(0.7);
 
@@ -271,10 +297,10 @@ header {
       // to add in the future rule for disabled arrow filter: contrast(20%);
     }
 
-    #arrow-right {
+    .swiper-button-next {
       position: absolute;
-      top: 13rem;
-      right: -10rem;
+      top: 250rem;
+      right: 30rem;
       transform: rotate(180deg) scale(0.7);
       cursor: pointer;
 
@@ -282,6 +308,14 @@ header {
         filter: invert(50%);
       }
     }
+  }
+
+  &__jobs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
+    position: relative;
   }
 
   &__job {
@@ -292,15 +326,16 @@ header {
     padding-bottom: 4rem;
     background-color: #fff;
 
-    & img {
+    img {
       width: 25rem;
     }
 
-    &__text {
+    .how-contribute__job__text {
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
-      padding-left: 2.4rem;
+      padding-left: 0.5rem;
+      align-items: flex-start;
 
       & h3 {
         font-size: 1.8rem;
@@ -432,7 +467,8 @@ header {
 
       & img:hover {
         transform: all 0.2s;
-        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
+        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg)
+          brightness(89%) contrast(88%);
       }
     }
   }
@@ -545,7 +581,8 @@ footer {
       }
 
       li a img:hover {
-        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
+        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+          brightness(85%) contrast(77%);
       }
     }
   }
@@ -555,7 +592,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     p {
       padding: 1rem;
       font-size: 1.9rem;
@@ -581,6 +618,7 @@ footer {
   }
 
   img:hover {
-    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+      brightness(85%) contrast(77%);
   }
 }

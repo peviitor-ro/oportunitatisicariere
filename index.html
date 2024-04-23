@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</title>
     <!-- import favicon logo files -->
     <link
@@ -137,39 +141,61 @@
             Găsește rolul potrivit pentru tine și fă o diferență în comunitate!
           </p>
         </div>
-        <div class="how-contribute__jobs">
-          <img src="./assets/arrow-jobs.svg" alt="arrow-left" id="arrow-left" />
+        <div class="how-contribute__jobs swiper">
           <img
             src="./assets/arrow-jobs.svg"
+            class="swiper-button-prev"
+            alt="arrow-left"
+            id="arrow-left"
+          />
+          <img
+            src="./assets/arrow-jobs.svg"
+            class="swiper-button-next"
             alt="arrow-right"
             id="arrow-right"
           />
-          <div class="how-contribute__job">
-            <img src="./assets/fe-job.png" alt="job-logo" />
-            <div class="how-contribute__job__text">
-              <h3>Frontend Developer</h3>
-              <a href="#">Detalii</a>
+          <div class="swiper-wrapper">
+            <div class="how-contribute__job swiper-slide">
+              <img src="./assets/fe-job.png" alt="job-logo" />
+              <div class="how-contribute__job__text">
+                <h3>Frontend Developer</h3>
+                <a href="#">Detalii</a>
+              </div>
             </div>
-          </div>
-          <div class="how-contribute__job">
-            <img src="./assets/be-job.png" alt="laptop" />
-            <div class="how-contribute__job__text">
-              <h3>Frontend Developer</h3>
-              <a href="#">Detalii</a>
+            <div class="how-contribute__job swiper-slide">
+              <img src="./assets/be-job.png" alt="laptop" />
+              <div class="how-contribute__job__text">
+                <h3>Frontend Developer</h3>
+                <a href="#">Detalii</a>
+              </div>
             </div>
-          </div>
-          <div class="how-contribute__job">
-            <img src="./assets/ba-job.png" alt="statistics" />
-            <div class="how-contribute__job__text">
-              <h3>Business Analyst</h3>
-              <a href="#">Detalii</a>
+            <div class="how-contribute__job swiper-slide">
+              <img src="./assets/ba-job.png" alt="statistics" />
+              <div class="how-contribute__job__text">
+                <h3>Business Analyst</h3>
+                <a href="#">Detalii</a>
+              </div>
             </div>
-          </div>
-          <div class="how-contribute__job">
-            <img src="./assets/ui-job.png" alt="drawings" />
-            <div class="how-contribute__job__text">
-              <h3>UI/UX Designer</h3>
-              <a href="#">Detalii</a>
+            <div class="how-contribute__job swiper-slide">
+              <img src="./assets/ui-job.png" alt="drawings" />
+              <div class="how-contribute__job__text">
+                <h3>UI/UX Designer</h3>
+                <a href="#">Detalii</a>
+              </div>
+            </div>
+            <div class="how-contribute__job swiper-slide">
+              <img src="./assets/ui-job.png" alt="drawings" />
+              <div class="how-contribute__job__text">
+                <h3>Pierde vara</h3>
+                <a href="#">Detalii</a>
+              </div>
+            </div>
+            <div class="how-contribute__job swiper-slide">
+              <img src="./assets/ui-job.png" alt="drawings" />
+              <div class="how-contribute__job__text">
+                <h3>Zugrav dinala blana</h3>
+                <a href="#">Detalii</a>
+              </div>
             </div>
           </div>
         </div>
@@ -408,5 +434,22 @@
       <img src="./assets//arrow-up.svg" alt="" />
     </a>
     <script src="script.js"></script>
+    <!-- Swiper JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper and define the carousel structure: -->
+    <script>
+      new Swiper(".how-contribute__jobs", {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2500, 
+          disableOnInteraction: false,
+        },
+      });
+    </script>
   </body>
 </html>
