@@ -1,13 +1,16 @@
+/* Global Imports */
 @import "utils/_colors.scss";
 @import "utils/typography";
 @import "utils/reset";
 
+/* Header Section */
 header {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+/* Navigation Section */
 .nav {
   display: flex;
   flex-direction: row;
@@ -56,21 +59,18 @@ header {
     .active {
       border-bottom: 3px solid $green-mint;
     }
-  }
 
-  // style for the page nav bar active link:
+    &>li>a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1.6rem;
 
-  &__list > li > a {
-    text-decoration: none;
-    color: $black;
-    font-size: 1.6rem;
-
-    &:hover {
-      color: $dark-gray;
-      transition: all 0.3s ease;
+      &:hover {
+        color: $dark-gray;
+        transition: all 0.3s ease;
+      }
     }
-
-    // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
+// we will add something like border-bottom: 2px solid $mint for the selected state in the future.
   }
 }
 
@@ -155,8 +155,7 @@ header {
   }
 }
 
-// Our mission section
-
+/* Our Mission Section */
 .our-mission {
   display: flex;
   justify-content: center;
@@ -170,14 +169,14 @@ header {
       flex-direction: column;
       align-items: center;
       padding: 7rem 0;
-    }
 
-    &__title > h2 {
-      font-size: 3.2rem;
-      font-weight: 400;
-      line-height: 3.6rem;
-      text-align: center;
-      color: $black;
+      > h2 {
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 3.6rem;
+        text-align: center;
+        color: $black;
+      }
     }
 
     &__details {
@@ -218,8 +217,7 @@ header {
   }
 }
 
-// how-contribute section
-
+/* How Contribute Section */
 .how-contribute {
   display: flex;
   flex-direction: column;
@@ -294,7 +292,7 @@ header {
         filter: invert(50%);
       }
 
-      // to add in the future rule for disabled arrow filter: contrast(20%);
+      // Add future rule for disabled arrow: filter: contrast(20%);
     }
 
     .swiper-button-next {
@@ -349,8 +347,7 @@ header {
   }
 }
 
-// Why contribute section
-
+/* Why Contribute Section */
 .why-contribute {
   display: flex;
   align-items: center;
@@ -362,11 +359,11 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 5.2rem 0;
-  }
 
-  & h2 {
-    font-size: 3.2rem;
-    font-weight: 400;
+    & h2 {
+      font-size: 3.2rem;
+      font-weight: 400;
+    }
   }
 
   &__description {
@@ -403,8 +400,7 @@ header {
   }
 }
 
-// Team section
-
+/* Team Section */
 .team {
   display: flex;
   flex-direction: column;
@@ -439,35 +435,34 @@ header {
     gap: 8rem;
     padding: 6rem;
     padding-bottom: 3rem;
-  }
 
-  &__member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
-
-    &-img {
-      width: 16rem;
-      height: 16rem;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    & h4 {
-      font-size: 2rem;
-      font-weight: 500;
-    }
-
-    & p {
-      font-size: 1.6rem;
-    }
-
-    &__socials {
+    &__member {
       display: flex;
-      gap: 1.6rem;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      gap: 1.2rem;
+
+      &-img {
+        width: 16rem;
+        height: 16rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      & h4 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      & p {
+        font-size: 1.6rem;
+      }
+
+      &__socials {
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+        justify-content: center;
 
       & img:hover {
         transform: all 0.2s;
@@ -478,8 +473,7 @@ header {
   }
 }
 
-// thank-section
-
+/* Thank You Section */
 .thank-section {
   display: flex;
   align-items: center;
@@ -500,8 +494,7 @@ header {
   }
 }
 
-// join-us-section
-
+/* Join Us Section */
 .join-us-section {
   display: flex;
   align-items: center;
@@ -542,6 +535,7 @@ header {
   }
 }
 
+/* Footer Section */
 footer {
   padding: 11.2rem 22rem 2.7rem 22rem;
   display: flex;
@@ -549,8 +543,7 @@ footer {
   align-items: center;
   flex-direction: column;
 
-  // Here for the footer navigation links the style has been inherited form the nav
-  // links form the header nav__links in order to avoid code duplication.
+  // Footer navigation links inherit styles from header nav links to avoid duplication.
 
   .footer-navigation {
     padding-bottom: 5.65rem;
