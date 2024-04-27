@@ -1,13 +1,16 @@
+/* Global Imports */
 @import "utils/_colors.scss";
 @import "utils/typography";
 @import "utils/reset";
 
+/* Header Section */
 header {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+/* Navigation Section */
 .nav {
   display: flex;
   flex-direction: row;
@@ -19,7 +22,6 @@ header {
   width: 100%;
   padding: 0 3rem;
   height: auto;
-  border-bottom: 1px solid $dark-gray;
 
   &__logo {
     display: flex;
@@ -32,6 +34,10 @@ header {
       color: $black;
     }
   }
+}
+
+.nav-bottom-border {
+  border-bottom: 1px solid $light-white;
 }
 
 .nav__links {
@@ -50,24 +56,21 @@ header {
     width: 100%;
     gap: 3rem;
 
-    &__nav.active {
+    .active {
       border-bottom: 3px solid $green-mint;
     }
-  }
 
-  // style for the page nav bar active link:
+    &>li>a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1.6rem;
 
-  &__list > li > a {
-    text-decoration: none;
-    color: $black;
-    font-size: 1.6rem;
-
-    &:hover {
-      color: $dark-gray;
-      transition: all 0.3s ease;
+      &:hover {
+        color: $dark-gray;
+        transition: all 0.3s ease;
+      }
     }
-
-    // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
+// we will add something like border-bottom: 2px solid $mint for the selected state in the future.
   }
 }
 
@@ -97,7 +100,11 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 12rem 0 31rem 0;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
+  background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    ),
     url("../assets/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,8 +155,7 @@ header {
   }
 }
 
-// Our mission section
-
+/* Our Mission Section */
 .our-mission {
   display: flex;
   justify-content: center;
@@ -163,14 +169,14 @@ header {
       flex-direction: column;
       align-items: center;
       padding: 7rem 0;
-    }
 
-    &__title > h2 {
-      font-size: 3.2rem;
-      font-weight: 400;
-      line-height: 3.6rem;
-      text-align: center;
-      color: $black;
+      > h2 {
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 3.6rem;
+        text-align: center;
+        color: $black;
+      }
     }
 
     &__details {
@@ -211,8 +217,7 @@ header {
   }
 }
 
-// how-contribute section
-
+/* How Contribute Section */
 .how-contribute {
   display: flex;
   flex-direction: column;
@@ -246,18 +251,40 @@ header {
     padding-bottom: 4.2rem;
   }
 
-  &__jobs {
-    display: flex;
-    gap: 5.2rem;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 7rem;
-    position: relative;
+  // Swipper style
 
-    #arrow-left {
+  .swiper {
+    width: 100%;
+    max-width: 110rem;
+    height: auto;
+    position: static !important; 
+    display: flex !important; 
+
+    .swiper-wrapper {
+      .swiper-slide {
+        text-align: center;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          display: block;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    .swiper-button-prev {
       position: absolute;
-      top: 13rem;
-      left: -10rem;
+      top: 250rem;
+      left: 30rem;
       cursor: pointer;
       transform: scale(0.7);
 
@@ -265,13 +292,13 @@ header {
         filter: invert(50%);
       }
 
-      // to add in the future rule for disabled arrow filter: contrast(20%);
+      // Add future rule for disabled arrow: filter: contrast(20%);
     }
 
-    #arrow-right {
+    .swiper-button-next {
       position: absolute;
-      top: 13rem;
-      right: -10rem;
+      top: 250rem;
+      right: 30rem;
       transform: rotate(180deg) scale(0.7);
       cursor: pointer;
 
@@ -279,6 +306,14 @@ header {
         filter: invert(50%);
       }
     }
+  }
+
+  &__jobs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
+    position: relative;
   }
 
   &__job {
@@ -289,15 +324,16 @@ header {
     padding-bottom: 4rem;
     background-color: #fff;
 
-    & img {
+    img {
       width: 25rem;
     }
 
-    &__text {
+    .how-contribute__job__text {
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
-      padding-left: 2.4rem;
+      padding-left: 0.5rem;
+      align-items: flex-start;
 
       & h3 {
         font-size: 1.8rem;
@@ -311,8 +347,7 @@ header {
   }
 }
 
-// Why contribute section
-
+/* Why Contribute Section */
 .why-contribute {
   display: flex;
   align-items: center;
@@ -324,11 +359,11 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 5.2rem 0;
-  }
 
-  & h2 {
-    font-size: 3.2rem;
-    font-weight: 400;
+    & h2 {
+      font-size: 3.2rem;
+      font-weight: 400;
+    }
   }
 
   &__description {
@@ -365,8 +400,7 @@ header {
   }
 }
 
-// Team section
-
+/* Team Section */
 .team {
   display: flex;
   flex-direction: column;
@@ -395,48 +429,51 @@ header {
   }
 
   &__members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10rem;
-    padding: 7rem;
-    padding-bottom: 3rem;
-  }
-
-  &__member {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
+    justify-content: center;
+    gap: 8rem;
+    padding: 6rem;
+    padding-bottom: 3rem;
 
-    &-img {
-      width: 16rem;
-    }
-
-    & h4 {
-      font-size: 2rem;
-      font-weight: 500;
-    }
-
-    & p {
-      font-size: 1.6rem;
-    }
-
-    &__socials {
+    &__member {
       display: flex;
-      gap: 1.6rem;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      gap: 1.2rem;
+
+      &-img {
+        width: 16rem;
+        height: 16rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      & h4 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      & p {
+        font-size: 1.6rem;
+      }
+
+      &__socials {
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+        justify-content: center;
 
       & img:hover {
         transform: all 0.2s;
-        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
+        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg)
+          brightness(89%) contrast(88%);
       }
     }
   }
 }
 
-// thank-section
-
+/* Thank You Section */
 .thank-section {
   display: flex;
   align-items: center;
@@ -457,8 +494,7 @@ header {
   }
 }
 
-// join-us-section
-
+/* Join Us Section */
 .join-us-section {
   display: flex;
   align-items: center;
@@ -499,6 +535,7 @@ header {
   }
 }
 
+/* Footer Section */
 footer {
   padding: 11.2rem 22rem 2.7rem 22rem;
   display: flex;
@@ -506,8 +543,7 @@ footer {
   align-items: center;
   flex-direction: column;
 
-  // Here for the footer navigation links the style has been inherited form the nav
-  // links form the header nav__links in order to avoid code duplication.
+  // Footer navigation links inherit styles from header nav links to avoid duplication.
 
   .footer-navigation {
     padding-bottom: 5.65rem;
@@ -530,7 +566,7 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 2.4rem;
-      margin-bottom: 7.2rem;
+      margin-bottom: 5rem;
 
       li {
         cursor: pointer;
@@ -542,20 +578,21 @@ footer {
       }
 
       li a img:hover {
-        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
+        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+          brightness(85%) contrast(77%);
       }
     }
   }
 
   .footer-bottom {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5.3rem;
 
     p {
-      font-size: 1.4rem;
+      padding: 1rem;
+      font-size: 1.9rem;
     }
 
     h4 {
@@ -578,6 +615,7 @@ footer {
   }
 
   img:hover {
-    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+      brightness(85%) contrast(77%);
   }
 }
