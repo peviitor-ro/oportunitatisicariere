@@ -530,8 +530,9 @@ footer .footer-bottom h4 {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 28rem;
-  top: 80rem;
+  /* redirect btn position from bottom&right using viewport height and width */
+  bottom: 1vh;
+  right: 5vw;
 }
 .top-redirect-btn img {
   width: 5rem;
