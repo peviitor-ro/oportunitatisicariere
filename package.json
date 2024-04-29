@@ -7,6 +7,8 @@
     "node-sass": "^9.0.0"
   },
   "devDependencies": {
+    "stylelint": "^16.4.0",
+    "stylelint-prettier": "^5.0.0",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   }
