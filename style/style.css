@@ -102,8 +102,8 @@ a {
   width: 100%;
   gap: 3rem;
 }
-.nav__links__list__nav.active {
-  border-bottom: 3px solid var(--primary-color);
+.nav__links__list .active {
+  border-bottom: 3px solid #2f7973;
 }
 .nav__links__list > li > a {
   text-decoration: none;
@@ -262,33 +262,56 @@ a {
   font-size: var(--font-size-standard);
   padding-bottom: 4.2rem;
 }
+.how-contribute .swiper {
+  width: 100%;
+  max-width: 110rem;
+  height: auto;
+  position: static !important;
+  display: flex !important;
+}
+.how-contribute .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-contribute .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.how-contribute .swiper .swiper-button-prev,
+.how-contribute .swiper .swiper-button-next {
+  width: 9rem;
+  height: 9rem;
+}
+.how-contribute .swiper .swiper-button-prev {
+  position: absolute;
+  top: 250rem;
+  left: 30rem;
+  cursor: pointer;
+  transform: scale(0.7);
+}
+.how-contribute .swiper .swiper-button-prev:hover {
+  filter: invert(50%);
+}
+.how-contribute .swiper .swiper-button-next {
+  position: absolute;
+  top: 250rem;
+  right: 30rem;
+  transform: rotate(180deg) scale(0.7);
+  cursor: pointer;
+}
+.how-contribute .swiper .swiper-button-next:hover {
+  filter: invert(50%);
+}
 .how-contribute__jobs {
   display: flex;
-  gap: 5.2rem;
   align-items: center;
   justify-content: center;
   padding-bottom: 7rem;
   position: relative;
-}
-.how-contribute__jobs #arrow-left {
-  position: absolute;
-  top: 13rem;
-  left: -10rem;
-  cursor: pointer;
-  transform: scale(0.7);
-}
-.how-contribute__jobs #arrow-left:hover {
-  filter: var(--hover-filter);
-}
-.how-contribute__jobs #arrow-right {
-  position: absolute;
-  top: 13rem;
-  right: -10rem;
-  transform: rotate(180deg) scale(0.7);
-  cursor: pointer;
-}
-.how-contribute__jobs #arrow-right:hover {
-  filter: var(--hover-filter);
 }
 .how-contribute__job {
   display: flex;
@@ -301,17 +324,18 @@ a {
 .how-contribute__job img {
   width: 25rem;
 }
-.how-contribute__job__text {
+.how-contribute__job .how-contribute__job__text {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  padding-left: 2.4rem;
+  padding-left: 0.5rem;
+  align-items: flex-start;
 }
-.how-contribute__job__text h3 {
+.how-contribute__job .how-contribute__job__text h3 {
   font-size: 1.8rem;
   font-weight: var(--font-weight-normal);
 }
-.how-contribute__job__text a {
+.how-contribute__job .how-contribute__job__text a {
   font-size: 1.4rem;
 }
 
@@ -522,14 +546,17 @@ footer .footer-social__links {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  gap: 5rem;
   margin-bottom: 5rem;
 }
 
 footer .footer-social__links li {
   cursor: pointer;
 }
-
+footer .footer-social__links li a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 footer .footer-social__links li a img:hover {
   filter: var(--hover-filter);
 }
@@ -556,8 +583,9 @@ footer .footer-bottom h4 {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 28rem;
-  top: 80rem;
+  /* redirect btn position from bottom&right using viewport height and width */
+  bottom: 1vh;
+  right: 5vw;
 }
 
 .top-redirect-btn img {
