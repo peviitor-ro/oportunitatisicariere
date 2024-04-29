@@ -311,10 +311,7 @@ header {
   justify-content: center;
   padding: 7rem 34rem;
   gap: 3.5rem;
-  background-color: #f3f3f3;
-  /* Thank You Section */
-  /* Join Us Section */
-  /* Footer Section */ }
+  background-color: #f3f3f3; }
   .team h2 {
     font-size: 3.2rem;
     font-weight: 400;
@@ -357,99 +354,106 @@ header {
         .team__members__member__socials img:hover {
           transform: all 0.2s;
           filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%); }
-  .team .thank-section {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 15rem 0; }
-    .team .thank-section__final-logo {
-      padding-bottom: 3rem; }
-    .team .thank-section p {
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 2.2rem;
-      padding-left: 42rem;
-      padding-right: 42rem; }
-  .team .join-us-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 10rem;
-    background-color: #f7f7f7; }
-    .team .join-us-section h2 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      line-height: 3.4rem;
-      padding: 3rem 0; }
-    .team .join-us-section p {
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 2.2rem;
-      padding: 0 30rem 8rem 30rem; }
-    .team .join-us-section__button {
-      padding: 1rem 3.2rem;
-      border-radius: 0.8rem;
-      border: none;
-      font-size: 1.6rem;
-      color: white;
-      cursor: pointer;
-      font-weight: 600;
-      background-color: #2f7973; }
-      .team .join-us-section__button:hover {
-        transition: all 0.3s;
-        background-color: #1e524e; }
-  .team footer {
-    padding: 11.2rem 22rem 2.7rem 22rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .team footer .footer-navigation {
-      padding-bottom: 5.65rem; }
-    .team footer hr {
-      height: 0;
-      border: none;
-      border-top: 1px solid #000000;
-      width: 100%;
-      max-width: 100rem;
-      margin-bottom: 5.5rem; }
-    .team footer .footer-social__links {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 2.4rem;
-      margin-bottom: 5rem; }
-      .team footer .footer-social__links li {
-        cursor: pointer; }
-      .team footer .footer-social__links li a img {
-        width: 4rem;
-        height: 4rem; }
-      .team footer .footer-social__links li a img:hover {
-        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%); }
-    .team footer .footer-bottom {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .team footer .footer-bottom p {
-        padding: 1rem;
-        font-size: 1.9rem; }
-      .team footer .footer-bottom h4 {
-        font-size: 2rem; }
-  .team .top-redirect-btn {
-    cursor: pointer;
+
+/* Thank You Section */
+.thank-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 15rem 0; }
+  .thank-section__final-logo {
+    padding-bottom: 3rem; }
+  .thank-section p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    padding-left: 42rem;
+    padding-right: 42rem; }
+
+/* Join Us Section */
+.join-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10rem;
+  background-color: #f7f7f7; }
+  .join-us-section h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+    padding: 3rem 0; }
+  .join-us-section p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    padding: 0 30rem 8rem 30rem; }
+  .join-us-section__button {
+    padding: 1rem 3.2rem;
+    border-radius: 0.8rem;
     border: none;
-    position: fixed;
-    z-index: 99;
-    right: 28rem;
-    top: 80rem; }
-    .team .top-redirect-btn img {
-      width: 5rem;
-      height: 5rem; }
-    .team .top-redirect-btn img:hover {
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #2f7973; }
+    .join-us-section__button:hover {
+      transition: all 0.3s;
+      background-color: #1e524e; }
+
+/* Footer Section */
+footer {
+  padding: 11.2rem 22rem 2.7rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  footer .footer-navigation {
+    padding-bottom: 5.65rem; }
+  footer hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #000000;
+    width: 100%;
+    max-width: 100rem;
+    margin-bottom: 5.5rem; }
+  footer .footer-social__links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 5rem; }
+    footer .footer-social__links li {
+      cursor: pointer; }
+    footer .footer-social__links li a img {
+      width: 4rem;
+      height: 4rem; }
+    footer .footer-social__links li a img:hover {
       filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%); }
+  footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .footer-bottom p {
+      padding: 1rem;
+      font-size: 1.9rem; }
+    footer .footer-bottom h4 {
+      font-size: 2rem; }
+
+.top-redirect-btn {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  z-index: 99;
+  right: 28rem;
+  top: 80rem; }
+  .top-redirect-btn img {
+    width: 5rem;
+    height: 5rem; }
+  .top-redirect-btn img:hover {
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%); }
