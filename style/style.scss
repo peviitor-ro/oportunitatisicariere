@@ -78,8 +78,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  @media only screen and (min-width: 48em) {
+}
+  @media only screen and (max-width:800px) {
     .nav {
       display: block;
 
@@ -132,7 +132,6 @@ header {
       }
     }
   }
-}
 
 .btn--green {
   background-color: $green-mint;
