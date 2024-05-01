@@ -74,6 +74,66 @@ header {
   }
 }
 
+.responsive-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 48em) {
+    .nav {
+      display: block;
+
+      &__links {
+        background-color: #f3f3f3;
+        margin-top: 10px;
+      }
+
+      &__links__list {
+        display: none;
+      }
+
+      &__links__list.show {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      &__logo {
+        display: block;
+        margin-top: 25px;
+      }
+    }
+
+    .hamburger-menu-icon {
+      display: block;
+      margin-top: 15px;
+
+      &.hidden {
+        display: none;
+      }
+
+      > img {
+        height: 40px;
+      }
+    }
+
+    .close-menu-icon {
+      &.hidden {
+        display: none;
+      }
+
+      &.visible {
+        display: block;
+        margin-top: 15px;
+
+        > img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
 .btn--green {
   background-color: $green-mint;
 }

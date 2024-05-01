@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
   const navLinks = document.querySelectorAll(".nav__links__nav a");
+ 
 
   function highlightNavLink() {
     const scrollPosition = window.scrollY;
@@ -56,3 +57,42 @@ const toggleArrowVisibility = () => {
 };
 
 window.addEventListener('scroll', toggleArrowVisibility);
+
+// function toggleMenu() {
+//   const navLinksList = document.querySelector('.nav__links__list');
+//   const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
+//   const closeIcon = document.querySelector('.close-menu-icon');
+
+//   navLinksList.classList.toggle('show');
+//   hamburgerIcon.classList.toggle('hidden');
+//   closeIcon.classList.toggle('hidden');
+// }
+
+// document.querySelector('.hamburger-menu-icon').addEventListener('click', toggleMenu);
+// document.querySelector('.close-menu-icon').addEventListener('click', toggleMenu);
+
+
+function showMenuContent(){
+  const navLinksList = document.querySelector('.nav__links__list');
+  const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
+  const closeIcon = document.querySelector('.close-menu-icon');
+
+  navLinksList.classList.add('show')
+  hamburgerIcon.classList.toggle('hidden');
+  closeIcon.classList.add('visible');
+}
+
+document.querySelector('.hamburger-menu-icon').addEventListener('click', showMenuContent);
+
+function hideMenuContent() {
+  const navLinksList = document.querySelector('.nav__links__list');
+  const closeIcon = document.querySelector('.close-menu-icon');
+  const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
+
+  navLinksList.classList.remove('show')
+  closeIcon.classList.toggle('hidden');
+  closeIcon.classList.remove('visible');
+  hamburgerIcon.classList.toggle('hidden');
+
+}
+document.querySelector('.close-menu-icon').addEventListener('click', hideMenuContent);
