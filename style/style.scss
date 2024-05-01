@@ -154,6 +154,22 @@ header {
 
 // Hero section
 
+.hero__container {
+  background-color: #f8f8f8;
+  position: relative;
+  width: 1440px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &-watch {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -531,6 +547,7 @@ header {
     }
   }
 }
+}
 
 /* Thank You Section */
 .thank-section {
@@ -678,4 +695,4 @@ footer {
       brightness(85%) contrast(77%);
   }
 }
-}
+
