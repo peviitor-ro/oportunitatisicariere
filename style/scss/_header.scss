@@ -1,0 +1,97 @@
+/* Global Imports */
+@import "utils/_colors.scss";
+@import "utils/typography";
+@import "utils/reset";
+
+/* Header Section */
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Navigation Section */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  background-color: $white;
+  z-index: 99;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 3rem;
+  height: auto;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__title {
+      font-weight: 700;
+      font-size: 2rem;
+      color: $black;
+    }
+  }
+}
+
+.nav-bottom-border {
+  border-bottom: 1px solid $light-white;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+
+    .active {
+      border-bottom: 3px solid $green-mint;
+    }
+
+    &>li>a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1.6rem;
+
+      &:hover {
+        color: $dark-gray;
+        transition: all 0.3s ease;
+      }
+    }
+// we will add something like border-bottom: 2px solid $mint for the selected state in the future.
+  }
+}
+
+.btn--green {
+  background-color: $green-mint;
+}
+
+.join-btn {
+  padding: 1rem 3.2rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.6rem;
+  color: $white;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: $dark-mint;
+  }
+}
+
+/* Footer Section */
+

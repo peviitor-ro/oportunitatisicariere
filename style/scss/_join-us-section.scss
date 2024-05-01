@@ -1,0 +1,40 @@
+/* Join Us Section */
+.join-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10rem;
+  background-color: $greyish-white;
+
+  & h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+    padding: 3rem 0;
+  }
+
+  & p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    padding: 0 30rem 8rem 30rem;
+  }
+
+  &__button {
+    padding: 1rem 3.2rem;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: $green-mint;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: $dark-mint;
+    }
+  }
+}
