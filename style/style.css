@@ -1,10 +1,6 @@
 /* Global Imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 ::after,
 ::before {
@@ -30,40 +26,14 @@ a {
   text-decoration: none;
 }
 
-/* Global Imports */
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: "Roboto";
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Header Section */
+/* HEADER SECTION */
 header {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-/* Navigation Section */
+/* NAVIGATION SECTION */
 .nav {
   display: flex;
   flex-direction: row;
@@ -138,7 +108,7 @@ header {
   background-color: #1e524e;
 }
 
-/* Footer Section */
+/* HERO SECTION */
 .hero {
   display: flex;
   flex-direction: column;
@@ -188,7 +158,7 @@ header {
   background-color: #1e524e;
 }
 
-/* Our Mission Section */
+/* OUR MISSION SECTION */
 .our-mission {
   display: flex;
   justify-content: center;
@@ -240,7 +210,7 @@ header {
   transform-origin: 0 0;
 }
 
-/* How Contribute Section */
+/* HOW CONTRIBUTE SECTION */
 .how-contribute {
   display: flex;
   flex-direction: column;
@@ -347,7 +317,7 @@ header {
   font-size: 1.4rem;
 }
 
-/* Why Contribute Section */
+/* WHY CONTRIBUTE SECTION */
 .why-contribute {
   display: flex;
   align-items: center;
@@ -394,7 +364,7 @@ header {
   padding-top: 1.5rem;
 }
 
-/* Team Section */
+/* TEAM SECTION */
 .team {
   display: flex;
   flex-direction: column;
@@ -458,7 +428,7 @@ header {
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
 
-/* Thank You Section */
+/* THANK YOU SECTION */
 .thank-section {
   display: flex;
   align-items: center;
@@ -477,7 +447,7 @@ header {
   padding-right: 42rem;
 }
 
-/* Join Us Section */
+/* JOIN US SECTION */
 .join-us-section {
   display: flex;
   align-items: center;
@@ -514,33 +484,7 @@ header {
   background-color: #1e524e;
 }
 
-/* Global Imports */
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: "Roboto";
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Footer Section */
+/* FOOTER SECTION */
 footer {
   padding: 11.2rem 22rem 2.7rem 22rem;
   display: flex;
@@ -606,8 +550,4 @@ footer .footer-bottom h4 {
 }
 .top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-}
-
-/* Header Section */
-/* Navigation Section */
-/* Footer Section *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

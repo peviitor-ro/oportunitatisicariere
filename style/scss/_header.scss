@@ -1,16 +1,11 @@
-/* Global Imports */
-@import "../utils/colors";
-@import "../utils/typography";
-@import "../utils/reset";
-
-/* Header Section */
+/* HEADER SECTION */
 header {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-/* Navigation Section */
+/* NAVIGATION SECTION */
 .nav {
   display: flex;
   flex-direction: row;
@@ -92,6 +87,4 @@ header {
     background-color: $dark-mint;
   }
 }
-
-/* Footer Section */
 
