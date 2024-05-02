@@ -58,27 +58,15 @@ const toggleArrowVisibility = () => {
 
 window.addEventListener('scroll', toggleArrowVisibility);
 
-// function toggleMenu() {
-//   const navLinksList = document.querySelector('.nav__links__list');
-//   const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
-//   const closeIcon = document.querySelector('.close-menu-icon');
-
-//   navLinksList.classList.toggle('show');
-//   hamburgerIcon.classList.toggle('hidden');
-//   closeIcon.classList.toggle('hidden');
-// }
-
-// document.querySelector('.hamburger-menu-icon').addEventListener('click', toggleMenu);
-// document.querySelector('.close-menu-icon').addEventListener('click', toggleMenu);
-
-
+document.querySelector('.close-menu-icon').classList.add('hidden');
 function showMenuContent(){
   const navLinksList = document.querySelector('.nav__links__list');
   const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
   const closeIcon = document.querySelector('.close-menu-icon');
 
   navLinksList.classList.add('show')
-  hamburgerIcon.classList.toggle('hidden');
+  hamburgerIcon.classList.add('hidden');
+  closeIcon.classList.remove('hidden');
   closeIcon.classList.add('visible');
 }
 

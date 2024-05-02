@@ -1,5 +1,4 @@
 /* Global Imports */
-/* Global Imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
@@ -97,7 +96,7 @@ header {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 640px) {
   .nav {
     display: block;
   }
@@ -112,6 +111,27 @@ header {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__links__list li > a {
+    position: relative;
+  }
+  .nav__links__list li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    margin: -5px 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .nav__links__list li > a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
   }
   .nav__logo {
     display: block;
@@ -138,10 +158,138 @@ header {
     height: 30px;
   }
 }
-.btn--green {
-  background-color: #2f7973;
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: block;
+  }
+  .nav__links {
+    background-color: #f3f3f3;
+    margin-top: 10px;
+  }
+  .nav__links__list {
+    display: none;
+  }
+  .nav__links__list.show {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__links__list li > a {
+    position: relative;
+  }
+  .nav__links__list li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    margin: -5px 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .nav__links__list li > a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .nav__logo {
+    display: block;
+    margin-top: 25px;
+  }
+  .hamburger-menu-icon {
+    display: block;
+    margin-top: 15px;
+  }
+  .hamburger-menu-icon.hidden {
+    display: none;
+  }
+  .hamburger-menu-icon > img {
+    height: 40px;
+  }
+  .close-menu-icon.hidden {
+    display: none;
+  }
+  .close-menu-icon.visible {
+    display: block;
+    margin-top: 15px;
+  }
+  .close-menu-icon.visible > img {
+    height: 30px;
+  }
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    display: block;
+  }
+  .nav__links {
+    background-color: #f3f3f3;
+    margin-top: 10px;
+  }
+  .nav__links__list {
+    display: none;
+  }
+  .nav__links__list.show {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__links__list li > a {
+    position: relative;
+  }
+  .nav__links__list li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    margin: -5px 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .nav__links__list li > a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .nav__logo {
+    display: block;
+    margin-top: 25px;
+  }
+  .hamburger-menu-icon {
+    display: block;
+    margin-top: 15px;
+  }
+  .hamburger-menu-icon.hidden {
+    display: none;
+  }
+  .hamburger-menu-icon > img {
+    height: 40px;
+  }
+  .close-menu-icon.hidden {
+    display: none;
+  }
+  .close-menu-icon.visible {
+    display: block;
+    margin-top: 15px;
+  }
+  .close-menu-icon.visible > img {
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hamburger-menu-icon {
+    display: none;
+  }
+  .close-menu-icon {
+    display: none;
+  }
+}
 .join-btn {
   padding: 1rem 3.2rem;
   border-radius: 0.8rem;
@@ -154,6 +302,10 @@ header {
 .join-btn:hover {
   transition: all 0.3s;
   background-color: #1e524e;
+}
+
+.btn--green {
+  background-color: #2f7973;
 }
 
 .hero__container {
@@ -318,8 +470,7 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -435,9 +586,6 @@ header {
   padding: 7rem 34rem;
   gap: 3.5rem;
   background-color: #f3f3f3;
-  /* Thank You Section */
-  /* Join Us Section */
-  /* Footer Section */
 }
 .team h2 {
   font-size: 3.2rem;
@@ -471,8 +619,7 @@ header {
 .team__members__member-img {
   width: 16rem;
   height: 16rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
 .team__members__member h4 {
@@ -492,24 +639,28 @@ header {
   transform: all 0.2s;
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
-.team .thank-section {
+
+/* Thank You Section */
+.thank-section {
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   padding: 15rem 0;
 }
-.team .thank-section__final-logo {
+.thank-section__final-logo {
   padding-bottom: 3rem;
 }
-.team .thank-section p {
+.thank-section p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
   padding-left: 42rem;
   padding-right: 42rem;
 }
-.team .join-us-section {
+
+/* Join Us Section */
+.join-us-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,19 +669,19 @@ header {
   padding: 10rem;
   background-color: #f7f7f7;
 }
-.team .join-us-section h2 {
+.join-us-section h2 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.4rem;
   padding: 3rem 0;
 }
-.team .join-us-section p {
+.join-us-section p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
   padding: 0 30rem 8rem 30rem;
 }
-.team .join-us-section__button {
+.join-us-section__button {
   padding: 1rem 3.2rem;
   border-radius: 0.8rem;
   border: none;
@@ -540,21 +691,23 @@ header {
   font-weight: 600;
   background-color: #2f7973;
 }
-.team .join-us-section__button:hover {
+.join-us-section__button:hover {
   transition: all 0.3s;
   background-color: #1e524e;
 }
-.team footer {
+
+/* Footer Section */
+footer {
   padding: 11.2rem 22rem 2.7rem 22rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.team footer .footer-navigation {
+footer .footer-navigation {
   padding-bottom: 5.65rem;
 }
-.team footer hr {
+footer hr {
   height: 0;
   border: none;
   border-top: 1px solid #000000;
@@ -562,7 +715,7 @@ header {
   max-width: 100rem;
   margin-bottom: 5.5rem;
 }
-.team footer .footer-social__links {
+footer .footer-social__links {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -571,30 +724,31 @@ header {
   gap: 2.4rem;
   margin-bottom: 5rem;
 }
-.team footer .footer-social__links li {
+footer .footer-social__links li {
   cursor: pointer;
 }
-.team footer .footer-social__links li a img {
+footer .footer-social__links li a img {
   width: 4rem;
   height: 4rem;
 }
-.team footer .footer-social__links li a img:hover {
+footer .footer-social__links li a img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
 }
-.team footer .footer-bottom {
+footer .footer-bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.team footer .footer-bottom p {
+footer .footer-bottom p {
   padding: 1rem;
   font-size: 1.9rem;
 }
-.team footer .footer-bottom h4 {
+footer .footer-bottom h4 {
   font-size: 2rem;
 }
-.team .top-redirect-btn {
+
+.top-redirect-btn {
   cursor: pointer;
   border: none;
   position: fixed;
@@ -602,10 +756,10 @@ header {
   right: 28rem;
   top: 80rem;
 }
-.team .top-redirect-btn img {
+.top-redirect-btn img {
   width: 5rem;
   height: 5rem;
 }
-.team .top-redirect-btn img:hover {
+.top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-}/*# sourceMappingURL=style.css.map */
+}
