@@ -418,6 +418,7 @@ header {
 }
 .team__member-img {
   width: 16rem;
+  border-radius: 0.8rem;
 }
 .team__member h4 {
   font-size: 2rem;
