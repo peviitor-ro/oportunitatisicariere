@@ -417,6 +417,10 @@ header {
 }
 
 /* Team Section */
+// Define variables for reusable values
+$primary-color: #000000;
+$background-color: #f3f3f3;
+
 .team {
   display: flex;
   flex-direction: column;
@@ -424,70 +428,65 @@ header {
   justify-content: center;
   padding: 7rem 34rem;
   gap: 3.5rem;
-  background-color: $white;
+  background-color: $background-color;
 
-  & h2 {
+  h2 {
     font-size: 3.2rem;
     font-weight: 400;
     text-align: center;
-    color: $black;
+    color: $primary-color;
     margin-bottom: -0.5rem;
   }
 
-  &-line {
+  .team-line {
     transform: scale(0.6);
   }
 
-  & p {
+  p {
     font-size: 1.6rem;
     line-height: 130%;
     text-align: center;
   }
 
   &__members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8rem;
+    grid-row-gap: 3.2rem;
+  }
+
+  &__member {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 8rem;
-    padding: 6rem;
-    padding-bottom: 3rem;
+    gap: 1.2rem;
 
-    &__member {
+    &-img {
+      width: 16rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    &__socials {
       display: flex;
-      flex-direction: column;
+      gap: 1.6rem;
       align-items: center;
-      gap: 1.2rem;
+      justify-content: center;
 
-      &-img {
-        width: 16rem;
-        height: 16rem;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-
-      & h4 {
-        font-size: 2rem;
-        font-weight: 500;
-      }
-
-      & p {
-        font-size: 1.6rem;
-      }
-
-      &__socials {
-        display: flex;
-        gap: 1.6rem;
-        align-items: center;
-        justify-content: center;
-
-      & img:hover {
+      img:hover {
         transform: all 0.2s;
-        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg)
-          brightness(89%) contrast(88%);
+        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
       }
     }
   }
-}
 }
 
 /* Thank You Section */
@@ -582,7 +581,7 @@ footer {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      gap: 2.4rem;
+      gap: 5vw;
       margin-bottom: 5rem;
 
       li {
@@ -623,8 +622,8 @@ footer {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 28rem;
-  top: 80rem;
+  right: 2vw;
+  bottom: 2vh;
 
   img {
     width: 5rem;
