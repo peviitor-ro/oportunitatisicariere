@@ -3,6 +3,7 @@
 @import "utils/typography";
 @import "utils/reset";
 
+<<<<<<< HEAD
 /* Header Section */
 header {
     display: flex;
@@ -879,3 +880,14 @@ footer {
             brightness(85%) contrast(77%);
     }
 }
+=======
+@import "scss/_header";
+@import "scss/_hero";
+@import "scss/_our-mission";
+@import "scss/_how-contribute";
+@import "scss/_why-contribute";
+@import "scss/_team";
+@import "scss/_thank-section";
+@import "scss/_join-us-section";
+@import "scss/_footer";
+>>>>>>> main

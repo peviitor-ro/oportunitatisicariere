@@ -26,14 +26,14 @@ a {
   text-decoration: none;
 }
 
-/* Header Section */
+/* HEADER SECTION */
 header {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-/* Navigation Section */
+/* NAVIGATION SECTION */
 .nav {
   display: flex;
   flex-direction: row;
@@ -372,7 +372,7 @@ header {
   background-color: #1e524e;
 }
 
-/* Our Mission Section */
+/* OUR MISSION SECTION */
 .our-mission {
   display: flex;
   justify-content: center;
@@ -424,7 +424,7 @@ header {
   transform-origin: 0 0;
 }
 
-/* How Contribute Section */
+/* HOW CONTRIBUTE SECTION */
 .how-contribute {
   display: flex;
   flex-direction: column;
@@ -530,7 +530,7 @@ header {
   font-size: 1.4rem;
 }
 
-/* Why Contribute Section */
+/* WHY CONTRIBUTE SECTION */
 .why-contribute {
   display: flex;
   align-items: center;
@@ -577,7 +577,7 @@ header {
   padding-top: 1.5rem;
 }
 
-/* Team Section */
+/* TEAM SECTION */
 .team {
   display: flex;
   flex-direction: column;
@@ -640,7 +640,7 @@ header {
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
 
-/* Thank You Section */
+/* THANK YOU SECTION */
 .thank-section {
   display: flex;
   align-items: center;
@@ -659,7 +659,7 @@ header {
   padding-right: 42rem;
 }
 
-/* Join Us Section */
+/* JOIN US SECTION */
 .join-us-section {
   display: flex;
   align-items: center;
@@ -696,7 +696,7 @@ header {
   background-color: #1e524e;
 }
 
-/* Footer Section */
+/* FOOTER SECTION */
 footer {
   padding: 11.2rem 22rem 2.7rem 22rem;
   display: flex;
