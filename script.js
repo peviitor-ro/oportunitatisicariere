@@ -64,7 +64,8 @@ function showMenuContent(){
   const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
   const closeIcon = document.querySelector('.close-menu-icon');
 
-  navLinksList.classList.add('show')
+  navLinksList.classList.add('transition-effect');
+   navLinksList.classList.add('show')
   hamburgerIcon.classList.add('hidden');
   closeIcon.classList.remove('hidden');
   closeIcon.classList.add('visible');

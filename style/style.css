@@ -105,7 +105,7 @@ header {
     margin-top: 10px;
   }
   .nav__links__list {
-    display: none;
+    display: flex;
   }
   .nav__links__list.show {
     display: flex;
@@ -113,6 +113,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .nav__links__list.transition-effect {
+    transition: opacity 0.8s ease;
   }
   .nav__links__list li > a {
     position: relative;
