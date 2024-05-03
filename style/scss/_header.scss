@@ -124,14 +124,15 @@ header {
 
   .hamburger-menu-icon {
       display: block;
-      margin-top: 15px;
+      margin-top: 18px;
+      border:none;
 
       &.hidden {
           display: none;
       }
 
       > img {
-          height: 40px;
+          height: 35px;
       }
   }
 
@@ -142,10 +143,11 @@ header {
 
       &.visible {
           display: block;
-          margin-top: 15px;
+          margin-top: 18px;
+          border:none;
 
           > img {
-              height: 30px;
+              height: 25px;
           }
       }
   }
@@ -200,14 +202,15 @@ header {
 
   .hamburger-menu-icon {
       display:block;
-      margin-top: 15px;
+      margin-top: 18px;
+      border:none;
 
       &.hidden {
           display: none;
       }
 
       > img {
-          height: 40px;
+          height: 35px;
       }
   }
 
@@ -218,10 +221,11 @@ header {
 
       &.visible {
           display: block;
-          margin-top: 15px;
+          margin-top: 18px;
+          border:none;
 
           > img {
-              height: 30px;
+              height: 25px;
           }
       }
   }
@@ -276,14 +280,15 @@ header {
 
   .hamburger-menu-icon {
       display:block;
-      margin-top: 15px;
+      margin-top: 18px;
+      border:none;
 
       &.hidden {
           display: none;
       }
 
       > img {
-          height: 40px;
+          height: 35px;
       }
   }
 
@@ -294,10 +299,11 @@ header {
 
       &.visible {
           display: block;
-          margin-top: 15px;
+          margin-top: 18px;
+          border:none;
 
           > img {
-              height: 30px;
+              height: 25px;
           }
       }
   }

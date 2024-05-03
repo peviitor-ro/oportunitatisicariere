@@ -105,7 +105,7 @@ header {
     margin-top: 10px;
   }
   .nav__links__list {
-    display: flex;
+    display: none;
   }
   .nav__links__list.show {
     display: flex;
@@ -113,9 +113,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .nav__links__list.transition-effect {
-    transition: opacity 0.8s ease;
   }
   .nav__links__list li > a {
     position: relative;
@@ -142,23 +139,25 @@ header {
   }
   .hamburger-menu-icon {
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
+    border: none;
   }
   .hamburger-menu-icon.hidden {
     display: none;
   }
   .hamburger-menu-icon > img {
-    height: 40px;
+    height: 35px;
   }
   .close-menu-icon.hidden {
     display: none;
   }
   .close-menu-icon.visible {
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
+    border: none;
   }
   .close-menu-icon.visible > img {
-    height: 30px;
+    height: 25px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -204,23 +203,25 @@ header {
   }
   .hamburger-menu-icon {
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
+    border: none;
   }
   .hamburger-menu-icon.hidden {
     display: none;
   }
   .hamburger-menu-icon > img {
-    height: 40px;
+    height: 35px;
   }
   .close-menu-icon.hidden {
     display: none;
   }
   .close-menu-icon.visible {
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
+    border: none;
   }
   .close-menu-icon.visible > img {
-    height: 30px;
+    height: 25px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -266,23 +267,25 @@ header {
   }
   .hamburger-menu-icon {
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
+    border: none;
   }
   .hamburger-menu-icon.hidden {
     display: none;
   }
   .hamburger-menu-icon > img {
-    height: 40px;
+    height: 35px;
   }
   .close-menu-icon.hidden {
     display: none;
   }
   .close-menu-icon.visible {
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
+    border: none;
   }
   .close-menu-icon.visible > img {
-    height: 30px;
+    height: 25px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -311,21 +314,7 @@ header {
   background-color: #2f7973;
 }
 
-.hero__container {
-  background-color: #f8f8f8;
-  position: relative;
-  width: 1440px;
-  height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero__container-watch {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
+/* HERO SECTION */
 .hero {
   display: flex;
   flex-direction: column;

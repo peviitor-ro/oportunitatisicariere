@@ -65,10 +65,17 @@ function showMenuContent(){
   const closeIcon = document.querySelector('.close-menu-icon');
 
   navLinksList.classList.add('transition-effect');
-   navLinksList.classList.add('show')
+  navLinksList.classList.add('show')
   hamburgerIcon.classList.add('hidden');
   closeIcon.classList.remove('hidden');
   closeIcon.classList.add('visible');
+
+  navLinksList.addEventListener('click', function () {
+    navLinksList.classList.remove('show')
+    closeIcon.classList.remove('visible')
+    closeIcon.classList.add('hidden')
+    hamburgerIcon.classList.remove('hidden')
+  })
 }
 
 document.querySelector('.hamburger-menu-icon').addEventListener('click', showMenuContent);
