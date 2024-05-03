@@ -311,7 +311,21 @@ header {
   background-color: #2f7973;
 }
 
-/* HERO SECTION */
+.hero__container {
+  background-color: #f8f8f8;
+  position: relative;
+  width: 1440px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__container-watch {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
