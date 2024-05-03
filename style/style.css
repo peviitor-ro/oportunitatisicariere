@@ -364,7 +364,6 @@ header {
   padding-top: 1.5rem;
 }
 
-/* TEAM SECTION */
 .team {
   display: flex;
   flex-direction: column;
@@ -381,7 +380,7 @@ header {
   color: #000000;
   margin-bottom: -0.5rem;
 }
-.team-line {
+.team .team-line {
   transform: scale(0.6);
 }
 .team p {
@@ -397,33 +396,33 @@ header {
   padding: 6rem;
   padding-bottom: 3rem;
 }
-.team__members__member {
+.team__member {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.2rem;
 }
-.team__members__member-img {
+.team__member-img {
   width: 16rem;
   height: 16rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
-.team__members__member h4 {
+.team__member h4 {
   font-size: 2rem;
   font-weight: 500;
 }
-.team__members__member p {
+.team__member p {
   font-size: 1.6rem;
 }
-.team__members__member__socials {
+.team__member__socials {
   display: flex;
   gap: 1.6rem;
   align-items: center;
   justify-content: center;
 }
-.team__members__member__socials img:hover {
+.team__member__socials img:hover {
   transform: all 0.2s;
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
@@ -541,8 +540,8 @@ footer .footer-bottom h4 {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 28rem;
-  top: 80rem;
+  right: 2vw;
+  bottom: 2vh;
 }
 .top-redirect-btn img {
   width: 5rem;
