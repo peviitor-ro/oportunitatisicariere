@@ -387,6 +387,7 @@ header {
   padding: 7rem 34rem;
   gap: 3.5rem;
   background-color: #f3f3f3;
+  height: auto;
 }
 .team h2 {
   font-size: 3.2rem;
@@ -429,7 +430,7 @@ header {
 }
 .team__member__socials {
   display: flex;
-  gap: 1.6rem;
+  gap: 2.6rem;
   align-items: center;
   justify-content: center;
 }
