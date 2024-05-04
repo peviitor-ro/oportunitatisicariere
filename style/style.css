@@ -364,6 +364,47 @@ header {
   background-color: #1e524e;
 }
 
+@media screen and (max-width: 320px) {
+  .hero {
+    max-height: 471px;
+    padding-top: 63px;
+    padding-left: 53px;
+    padding-right: 53px;
+    background-size: 280% 150%;
+    background-position: bottom -35px right -115px;
+  }
+  .hero__content {
+    width: 245px;
+    height: 236px;
+    gap: 20px;
+  }
+  .hero__content__title {
+    width: 245px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 112%;
+    text-align: center;
+  }
+  .hero__content__description {
+    width: 243px;
+    height: 110px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0px;
+    text-align: center;
+  }
+  .hero__content__btn {
+    width: 181px;
+    height: 41px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #f3f3f3;
+    background-color: #2f7973;
+    font-size: 13px;
+  }
+}
 /* OUR MISSION SECTION */
 .our-mission {
   display: flex;
@@ -462,7 +503,8 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -754,4 +796,4 @@ footer .footer-bottom h4 {
 }
 .top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-}
+}/*# sourceMappingURL=style.css.map */

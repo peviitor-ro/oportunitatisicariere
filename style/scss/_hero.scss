@@ -58,3 +58,49 @@
     }
   }
 }
+
+@media screen and (max-width: $phone-size) {
+  .hero {
+    max-height: 471px;
+    padding-top: 63px;
+    padding-left: 53px;
+    padding-right: 53px;
+    background-size: 280% 150%;
+    background-position: bottom -35px right -115px;
+    
+    &__content {
+      width: 245px;
+      height: 236px;
+      gap: 20px;
+  
+      &__title {
+        width: 245px;
+        color: $black;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 112%;
+        text-align: center;
+      }
+  
+      &__description {
+        width: 243px;
+        height: 110px;
+        font-size: 15px; 
+        line-height: 22px;
+        text-align: center;
+        padding: 0px;
+        text-align: center;
+      }
+  
+      &__btn {
+        width: 181px;
+        height: 41px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        color: $white;
+        background-color: $green-mint;
+        font-size: 13px;
+      }
+    }
+  }
+}
