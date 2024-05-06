@@ -594,7 +594,7 @@ header {
     width: 7rem;
   }
   .why-contribute__reasons__reason p {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     padding-top: 1.4rem;
   }
 }
@@ -658,7 +658,7 @@ header {
     padding: 0 4rem;
   }
   .why-contribute__description p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.1rem;
   }
   .why-contribute__description p br {
@@ -678,7 +678,7 @@ header {
   }
   .why-contribute__reasons__reason p {
     font-size: 1.4rem;
-    line-height: 135.9%;
+    line-height: 136%;
   }
   .why-contribute__reasons__reason img {
     width: 5rem;
