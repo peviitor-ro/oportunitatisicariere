@@ -462,7 +462,8 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -471,7 +472,7 @@ header {
 }
 .how-contribute .swiper .swiper-button-prev {
   position: absolute;
-  top: 250rem;
+  top: 235rem;
   left: 30rem;
   cursor: pointer;
   transform: scale(0.7);
@@ -481,7 +482,7 @@ header {
 }
 .how-contribute .swiper .swiper-button-next {
   position: absolute;
-  top: 250rem;
+  top: 235rem;
   right: 30rem;
   transform: rotate(180deg) scale(0.7);
   cursor: pointer;
@@ -754,4 +755,4 @@ footer .footer-bottom h4 {
 }
 .top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-}
+}/*# sourceMappingURL=style.css.map */
