@@ -3,12 +3,15 @@ const carouselState = {
   slidesSpace: 40,
 };
 
-const endpointSizes = {
+const deviceSizes = {
   laptop: "(min-width: 1024px) and (max-width: 1398px)",
+  smallLaptop: "(min-width: 769px) and (max-width: 1024px)",
+  tablet: "(min-width: 320px) and (max-width: 768px)",
+  phone: "(max-width: 320px)",
 };
 
 //Avoid object properties values to be changed:
-Object.freeze(endpointSizes);
+Object.freeze(deviceSizes);
 
 function initializeSwiper(carouselConfig) {
   // Initialize Swiper and define the carousel structure:
@@ -29,21 +32,43 @@ function initializeSwiper(carouselConfig) {
 //Initialize swiper function for its first rendering on the page:
 initializeSwiper(carouselState);
 
-const laptopEndpoint = window.matchMedia(endpointSizes.laptop);
+const pageEndpoints = {
+  //We don't need a desktop endpoint since the desktop is default for carousel config:
+  laptop: window.matchMedia(deviceSizes.laptop),
+  smallLaptop: window.matchMedia(deviceSizes.smallLaptop),
+  tablet: window.matchMedia(deviceSizes.tablet),
+  phone: window.matchMedia(deviceSizes.phone),
+};
 
 function handleCarouselResponsiveness(responsiveEndpoint) {
-  if (responsiveEndpoint.matches) {
+  if (responsiveEndpoint.laptop.matches) {
     initializeSwiper({
       numOfSlides: 3,
       slidesSpace: 30,
     });
-  } else {
-    initializeSwiper(carouselState);
+  }
+
+  if (
+    responsiveEndpoint.smallLaptop.matches ||
+    responsiveEndpoint.tablet.matches
+  ) {
+    initializeSwiper({
+      numOfSlides: 1,
+      slidesSpace: 0,
+    });
+  }
+
+  if (responsiveEndpoint.phone.matches) {
+    initializeSwiper({
+      numOfSlides: 1,
+      slidesSpace: 0,
+    });
   }
 }
 
-handleCarouselResponsiveness(laptopEndpoint);
+handleCarouselResponsiveness(pageEndpoints);
 
+//add the rest fo the breakpoints(tablet, mobile etc) as the laptop one has:
 document.addEventListener("change", () => {
   handleCarouselResponsiveness(laptopEndpoint);
 });
