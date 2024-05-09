@@ -38,8 +38,8 @@
     width: 100%;
     max-width: 110rem;
     height: auto;
-    position: static !important; 
-    display: flex !important; 
+    position: static !important;
+    display: flex !important;
 
     .swiper-wrapper {
       .swiper-slide {
@@ -124,6 +124,44 @@
       & a {
         font-size: 1.4rem;
       }
+    }
+  }
+}
+
+//Responsiveness side:
+//breakpoint to handle arrows positions:
+
+
+//laptop:
+@media screen and (min-width: 1024px) and (max-width: 1398px) {
+  .how-contribute {
+    &__description {
+      padding: 4rem 22rem;
+    }
+  }
+}
+
+//small laptop and tablet:
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .how-contribute {
+    &__description {
+      padding: 3rem 9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 769px){
+  .how-contribute {
+    &__description {
+      padding: 3rem 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .how-contribute {
+    &__description {
+      padding: 3rem 1rem;
     }
   }
 }
