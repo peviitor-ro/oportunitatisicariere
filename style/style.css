@@ -462,7 +462,8 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -632,6 +633,39 @@ header {
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
 
+@media only screen and (max-width: 640px) {
+  .team {
+    padding: 7rem 12rem;
+  }
+  .team p {
+    font-size: 2.2rem;
+  }
+  .team__members {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .team {
+    padding: 7rem 12rem;
+  }
+  .team p {
+    font-size: 2rem;
+  }
+  .team__members {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .team {
+    padding: 7rem 12rem;
+  }
+  .team h2 {
+    font-size: 4rem;
+  }
+  .team p {
+    font-size: 2rem;
+  }
+}
 /* THANK YOU SECTION */
 .thank-section {
   display: flex;
@@ -754,4 +788,4 @@ footer .footer-bottom h4 {
 }
 .top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-}
+}/*# sourceMappingURL=style.css.map */
