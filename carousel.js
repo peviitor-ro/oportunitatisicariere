@@ -6,8 +6,9 @@ const carouselState = {
 const deviceSizes = {
   laptop: "(min-width: 1024px) and (max-width: 1398px)",
   smallLaptop: "(min-width: 769px) and (max-width: 1024px)",
-  tablet: "(min-width: 320px) and (max-width: 768px)",
-  phone: "(max-width: 320px)",
+  tablet: "(min-width: 640px) and (max-width: 768px)",
+  phone: "(min-width: 320px) and (max-width: 640px)",
+  smallPhone: "(max-width: 320px)",
 };
 
 //Avoid object properties values to be changed:
@@ -33,7 +34,7 @@ function initializeSwiper(carouselConfig) {
 initializeSwiper(carouselState);
 
 const pageEndpoints = {
-  //We don't need a desktop endpoint since the desktop is default for carousel config:
+  //We don't need a desktop endpoint since the desktop is default for carousel state config:
   laptop: window.matchMedia(deviceSizes.laptop),
   smallLaptop: window.matchMedia(deviceSizes.smallLaptop),
   tablet: window.matchMedia(deviceSizes.tablet),
@@ -52,8 +53,11 @@ function handleCarouselResponsiveness(responsiveEndpoint) {
     responsiveEndpoint.smallLaptop.matches ||
     responsiveEndpoint.tablet.matches
   ) {
+    document.querySelector(".swiper-button-prev").style.display = "none";
+    document.querySelector(".swiper-button-next").style.display = "none";
+
     initializeSwiper({
-      numOfSlides: 1,
+      numOfSlides: 2,
       slidesSpace: 0,
     });
   }
@@ -67,8 +71,3 @@ function handleCarouselResponsiveness(responsiveEndpoint) {
 }
 
 handleCarouselResponsiveness(pageEndpoints);
-
-//add the rest fo the breakpoints(tablet, mobile etc) as the laptop one has:
-document.addEventListener("change", () => {
-  handleCarouselResponsiveness(laptopEndpoint);
-});
