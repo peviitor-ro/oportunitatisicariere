@@ -59,7 +59,7 @@ $tablet-line-height-p: 25px;
     align-items: center;
     gap: 1.2rem;
 
-    &__desc{
+    &__desc {
       display: flex;
       flex-direction: column;
       gap: 1.2rem;
@@ -98,28 +98,29 @@ $tablet-line-height-p: 25px;
 
 // $tablet-size: 768px;
 @media only screen and (max-width: $tablet-size) {
-  .team{
-    justify-content: center;
-    p{
+  .team {
+    p {
       width: 100vw;
       font-size: $phone-font-size-p;
     }
 
+    // larger/wider for smaller screens
+
     &__members {
       flex-direction: column;
+      // swtiched from row to column for narrow screens
     }
-    &__member{
-      display: grid;
-  grid-template-columns: repeat(2, 210px);
-  gap: 1px 1px;
-      &-img{
-        margin-left: 50px;
-      }
 
-      &__desc{
+    &__member {
+      display: grid;
+      grid-template-columns: repeat(2, 210px);
+      gap: 1px 1px;
+      // changed individual member display in two columns
+
+      &__desc {
         align-items: center;
         justify-content: center;
-
+        // centered description elements
       }
     }
   }

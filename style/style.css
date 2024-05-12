@@ -749,9 +749,6 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  .team {
-    justify-content: center;
-  }
   .team p {
     width: 100vw;
     font-size: 16px;
@@ -763,9 +760,6 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 210px);
     gap: 1px 1px;
-  }
-  .team__member-img {
-    margin-left: 50px;
   }
   .team__member__desc {
     align-items: center;
