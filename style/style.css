@@ -608,6 +608,11 @@ header {
   align-items: center;
   gap: 1.2rem;
 }
+.team__member__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
 .team__member-img {
   width: 16rem;
   height: 16rem;
@@ -633,37 +638,28 @@ header {
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
 
-@media only screen and (max-width: 640px) {
-  .team {
-    padding: 7rem 12rem;
-  }
-  .team p {
-    font-size: 2.2rem;
-  }
-  .team__members {
-    flex-direction: column;
-  }
-}
 @media only screen and (max-width: 768px) {
   .team {
-    padding: 7rem 12rem;
+    justify-content: center;
   }
   .team p {
-    font-size: 2rem;
+    width: 100vw;
+    font-size: 16px;
   }
   .team__members {
     flex-direction: column;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .team {
-    padding: 7rem 12rem;
+  .team__member {
+    display: grid;
+    grid-template-columns: repeat(2, 210px);
+    gap: 1px 1px;
   }
-  .team h2 {
-    font-size: 4rem;
+  .team__member-img {
+    margin-left: 50px;
   }
-  .team p {
-    font-size: 2rem;
+  .team__member__desc {
+    align-items: center;
+    justify-content: center;
   }
 }
 /* THANK YOU SECTION */

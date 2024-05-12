@@ -1,15 +1,21 @@
-// Declare Variables
+@import "../utils/breakpoints";
+
+// Laptop, Desktop, and Widescreen
 $font-size-h2: 3.2rem;
 $font-size-p: 1.6rem;
 $font-size-h4: 2rem;
-// 640px Variables
-$sixforty-font-size-p: 2.2rem;
-// 768px Variables
-$sevensixeight-font-size-p: 2rem;
-// 1023px Max-Width Variables
-$tentwentythree-font-size-p: 2rem;
-$tentwentythree-font-size-h2: 4rem;
 
+// Phone Variables
+$phone-font-size-h2: 20px;
+$phone-font-size-p: 16px;
+$phone-font-size-h4: 22px;
+$phone-line-height-p: 22px;
+
+// Tablet Variables
+$tablet-font-size-h2: 22px;
+$tablet-font-size-p: 20px;
+$tablet-font-size-h4: 25px;
+$tablet-line-height-p: 25px;
 
 .team {
   display: flex;
@@ -21,7 +27,7 @@ $tentwentythree-font-size-h2: 4rem;
   background-color: #f3f3f3;
 
   h2 {
-    font-size: $font-size-h2;
+    font-size: 3.2rem;
     font-weight: 400;
     text-align: center;
     color: #000000;
@@ -33,7 +39,7 @@ $tentwentythree-font-size-h2: 4rem;
   }
 
   p {
-    font-size: $font-size-p;
+    font-size: 1.6rem;
     line-height: 130%;
     text-align: center;
   }
@@ -53,6 +59,12 @@ $tentwentythree-font-size-h2: 4rem;
     align-items: center;
     gap: 1.2rem;
 
+    &__desc{
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
     &-img {
       width: 16rem;
       height: 16rem;
@@ -62,12 +74,12 @@ $tentwentythree-font-size-h2: 4rem;
     }
 
     h4 {
-      font-size: $font-size-h4;
+      font-size: 2rem;
       font-weight: 500;
     }
 
     p {
-      font-size: $font-size-p;
+      font-size: 1.6rem;
     }
 
     &__socials {
@@ -84,42 +96,31 @@ $tentwentythree-font-size-h2: 4rem;
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .team {
-    padding: 7rem 12rem;
-
-    p {
-      font-size: $sixforty-font-size-p;
+// $tablet-size: 768px;
+@media only screen and (max-width: $tablet-size) {
+  .team{
+    justify-content: center;
+    p{
+      width: 100vw;
+      font-size: $phone-font-size-p;
     }
 
     &__members {
       flex-direction: column;
     }
-  }
-}
+    &__member{
+      display: grid;
+  grid-template-columns: repeat(2, 210px);
+  gap: 1px 1px;
+      &-img{
+        margin-left: 50px;
+      }
 
-@media only screen and (max-width: 768px) {
-  .team {
-    padding: 7rem 12rem;
+      &__desc{
+        align-items: center;
+        justify-content: center;
 
-    p {
-      font-size: $sevensixeight-font-size-p;
-    }
-
-    &__members {
-      flex-direction: column;
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .team {
-    padding: 7rem 12rem;
-    h2 {
-      font-size: $tentwentythree-font-size-h2;
-    }
-    p {
-      font-size: $tentwentythree-font-size-p;
+      }
     }
   }
 }
