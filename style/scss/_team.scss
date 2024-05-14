@@ -124,14 +124,14 @@ $tablet-line-height-p: 2rem;
       h4 {
         grid-column: 2;
         grid-row: 1; // Centered vertically
-        justify-self: center; // Centered horizontally
+        justify-self: left; // Centered horizontally
         font-size: $phone-font-size-h4;
       }
   
       p {
         grid-column: 2;
         grid-row: 2; // Centered vertically
-        justify-self: center; // Centered horizontally
+        justify-self: left; // Centered horizontally
         width: auto;
         font-size: $phone-font-size-p;
       }
@@ -139,7 +139,7 @@ $tablet-line-height-p: 2rem;
       &__socials {
         grid-column: 2;
         grid-row: 3; // Centered vertically
-        justify-self: center; // Centered horizontally
+        justify-self: left; // Centered horizontally
       }
     }
   }
