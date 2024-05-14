@@ -758,8 +758,8 @@ header {
   }
   .team__member {
     display: grid;
-    grid-template-columns: repeat(2, 40vw);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(3, 4rem);
   }
   .team__member-img {
     grid-column: 1;
