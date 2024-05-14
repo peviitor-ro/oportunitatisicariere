@@ -7,8 +7,8 @@ $font-size-h4: 2rem;
 
 // Phone Variables
 $phone-font-size-h2: 3.2rem;
-$phone-font-size-p: 1.8rem;
-$phone-font-size-h4: 2rem;
+$phone-font-size-p: 2.2rem;
+$phone-font-size-h4: 2.5rem;
 $phone-line-height-p: 2rem;
 
 // Tablet Variables
@@ -100,7 +100,7 @@ $tablet-line-height-p: 2rem;
 @media only screen and (max-width: $tablet-size) {
   .team {
     p {
-      width: 100vw;
+      width: 90vw;
       font-size: $phone-font-size-p;
     }
 
@@ -113,14 +113,33 @@ $tablet-line-height-p: 2rem;
 
     &__member {
       display: grid;
-      grid-template-columns: repeat(2, 210px);
-      gap: 1px 1px;
-      // changed individual member display in two columns
-
-      &__desc {
-        align-items: center;
-        justify-content: center;
-        // centered description elements
+      grid-template-columns: repeat(2, 40vw);
+      grid-template-rows: repeat(3, auto);
+  
+      &-img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+      }
+  
+      h4 {
+        grid-column: 2;
+        grid-row: 1; // Centered vertically
+        justify-self: center; // Centered horizontally
+        font-size: $phone-font-size-h4;
+      }
+  
+      p {
+        grid-column: 2;
+        grid-row: 2; // Centered vertically
+        justify-self: center; // Centered horizontally
+        width: auto;
+        font-size: $phone-font-size-p;
+      }
+  
+      &__socials {
+        grid-column: 2;
+        grid-row: 3; // Centered vertically
+        justify-self: center; // Centered horizontally
       }
     }
   }
