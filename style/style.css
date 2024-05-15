@@ -417,6 +417,9 @@ header {
 }
 
 @media only screen and (max-width: 320px) {
+  .our-mission {
+    margin-bottom: 30rem;
+  }
   .our-mission__content__title h2 {
     font-size: 2.2rem;
   }
@@ -431,7 +434,6 @@ header {
     padding: 0 2rem;
   }
   .our-mission__content__details .description p {
-    font-size: 1.4rem;
     margin-bottom: 2rem;
   }
   .our-mission__content__details .description img {
@@ -447,6 +449,9 @@ header {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .our-mission {
+    margin-bottom: 32rem;
+  }
   .our-mission__content__title h2 {
     font-size: 2.2rem;
   }
@@ -461,7 +466,6 @@ header {
     padding: 0 2rem;
   }
   .our-mission__content__details .description p {
-    font-size: 1.4rem;
     margin-bottom: 2rem;
   }
   .our-mission__content__details .description img {
@@ -477,6 +481,9 @@ header {
   }
 }
 @media screen and (min-width: 650px) and (max-width: 768px) {
+  .our-mission {
+    margin-bottom: 36rem;
+  }
   .our-mission__content__title h2 {
     font-size: 2.2rem;
   }
@@ -491,7 +498,6 @@ header {
     padding: 0 2rem;
   }
   .our-mission__content__details .description p {
-    font-size: 1.4rem;
     margin-bottom: 2rem;
   }
   .our-mission__content__details .description img {
@@ -521,6 +527,9 @@ header {
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .our-mission {
+    margin-bottom: 50rem;
+  }
   .our-mission__content__details {
     gap: 0px;
   }
@@ -571,7 +580,8 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -973,4 +983,4 @@ footer .footer-bottom h4 {
 }
 .top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-}
+}/*# sourceMappingURL=style.css.map */
