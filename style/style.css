@@ -288,7 +288,7 @@ header {
     height: 25px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
   .hamburger-menu-icon {
     display: none;
   }
@@ -416,6 +416,35 @@ header {
   transform-origin: 0 0;
 }
 
+@media only screen and (max-width: 640px) {
+  .our-mission__content__details {
+    display: block;
+  }
+  .our-mission__content__details .description {
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .our-mission__content__details {
+    display: block;
+  }
+  .our-mission__content__details .description {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .our-mission__content__details {
+    display: block;
+  }
+  .our-mission__content__details .description {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 1023px) and (max-width: 1150px) {
+  .our-mission__content__details {
+    gap: 0px;
+  }
+}
 /* HOW CONTRIBUTE SECTION */
 .how-contribute {
   display: flex;
@@ -462,8 +491,7 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -865,4 +893,4 @@ footer .footer-bottom h4 {
 }
 .top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-}/*# sourceMappingURL=style.css.map */
+}
