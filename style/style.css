@@ -580,6 +580,10 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 1.2rem; }
+    .team__member__desc {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem; }
     .team__member-img {
       width: 16rem;
       height: 16rem;
@@ -599,6 +603,35 @@ header {
       .team__member__socials img:hover {
         transform: all 0.2s;
         filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%); }
+
+@media only screen and (max-width: 768px) {
+  .team p {
+    width: 90vw;
+    font-size: 2.2rem; }
+  .team__members {
+    flex-direction: column; }
+  .team__member {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(3, 4rem); }
+    .team__member-img {
+      grid-column: 1;
+      grid-row: 1 / 3; }
+    .team__member h4 {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: left;
+      font-size: 2.5rem; }
+    .team__member p {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: left;
+      width: auto;
+      font-size: 2.2rem; }
+    .team__member__socials {
+      grid-column: 2;
+      grid-row: 3;
+      justify-self: left; } }
 
 /* THANK YOU SECTION */
 .thank-section {
