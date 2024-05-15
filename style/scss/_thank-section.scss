@@ -18,3 +18,59 @@
     padding-right: 42rem;
   }
 }
+
+@media only screen and (max-width:#{$phone-size}){
+  .thank-section{
+    display:flex;
+    align-items:center;
+    text-align:center;
+
+    & p{
+      line-height:2.4rem;
+      padding-left:0rem;
+      padding-right:0rem;
+    }
+  }
+}
+
+@media only screen and (min-width:#{$phone-size}) and (max-width:#{$tablet-size}){
+  .thank-section{
+    display:flex;
+    align-items:center;
+    text-align:center;
+
+    & p{
+      line-height:2.4rem;
+      padding: 0 10rem 2rem 10rem;
+
+    }
+  }
+}
+
+@media only screen and (min-width:#{$tablet-size}) and (max-width:#{$laptop-size}){
+   .thank-section{
+    display:flex;
+    align-items:center;
+    text-align:center;
+
+    & p{
+      line-height:2.4rem;
+       padding: 0 30rem 2rem 30rem;
+
+    }
+  }
+}
+
+@media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}){
+  .thank-section{
+    display:flex;
+    align-items:center;
+    text-align:center;
+
+    & p{
+      line-height:2.4rem;
+       padding: 0 30rem 2rem 30rem;
+
+    }
+  }
+}

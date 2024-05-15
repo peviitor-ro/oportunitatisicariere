@@ -1,40 +1,99 @@
 /* JOIN US SECTION */
 .join-us-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 10rem;
-  background-color: $greyish-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10rem;
+    background-color: $greyish-white;
 
-  & h2 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 3.4rem;
-    padding: 3rem 0;
-  }
-
-  & p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.2rem;
-    padding: 0 30rem 8rem 30rem;
-  }
-
-  &__button {
-    padding: 1rem 3.2rem;
-    border-radius: 0.8rem;
-    border: none;
-    font-size: 1.6rem;
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
-    background-color: $green-mint;
-
-    &:hover {
-      transition: all 0.3s;
-      background-color: $dark-mint;
+    & h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 3.4rem;
+        padding: 3rem 0;
     }
-  }
+
+    & p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        padding: 0 30rem 8rem 30rem;
+    }
+
+    &__button {
+        padding: 1rem 3.2rem;
+        border-radius: 0.8rem;
+        border: none;
+        font-size: 1.6rem;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+        background-color: $green-mint;
+
+        &:hover {
+            transition: all 0.3s;
+            background-color: $dark-mint;
+        }
+    }
+}
+
+@media only screen and (max-width:#{$phone-size}) {
+    .join-us-section {
+        padding: 3rem;
+
+        & p {
+            padding: 0rem;
+            line-height: 2.5rem;
+        }
+        & button {
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width:#{$phone-size}) and (max-width:500px){
+  .join-us-section {
+        padding: 3rem;
+
+        & p {
+            padding: 0 5rem 5rem 5rem;
+            line-height: 2.5rem;
+        }
+    
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:#{$tablet-size}){
+  .join-us-section {
+        padding: 3rem;
+
+        & p {
+            padding: 0 10rem 5rem 10rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width:#{$tablet-size}) and (max-width:#{$desktop-size}){
+   .join-us-section {
+        padding: 5rem;
+
+        & p {
+            padding: 0 15rem 5rem 15rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}){
+  .join-us-section {
+        padding: 5rem;
+
+        & p {
+            padding: 0 30rem 2rem 30rem;
+            line-height: 2.2rem;
+        }
+    }
 }
