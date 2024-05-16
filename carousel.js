@@ -5,7 +5,7 @@ const carouselState = {
 
 const deviceSizes = {
   laptop: "(min-width: 1024px) and (max-width: 1398px)",
-  smallLaptop: "(min-width: 769px) and (max-width: 1024px)",
+  smallLaptop: "(min-width: 769px) and (max-width: 1150px)",
   tablet: "(min-width: 640px) and (max-width: 768px)",
   phone: "(min-width: 320px) and (max-width: 640px)",
   smallPhone: "(max-width: 320px)",
@@ -45,7 +45,7 @@ function handleCarouselResponsiveness(responsiveEndpoint) {
   if (responsiveEndpoint.laptop.matches) {
     initializeSwiper({
       numOfSlides: 3,
-      slidesSpace: 30,
+      slidesSpace: 5,
     });
   }
 
@@ -53,16 +53,13 @@ function handleCarouselResponsiveness(responsiveEndpoint) {
     responsiveEndpoint.smallLaptop.matches ||
     responsiveEndpoint.tablet.matches
   ) {
-    // document.querySelector(".swiper-button-prev").style.display = "none";
-    // document.querySelector(".swiper-button-next").style.display = "none";
-
     initializeSwiper({
       numOfSlides: 2,
       slidesSpace: 0,
     });
   }
 
-  if (responsiveEndpoint.phone.matches) {
+  if (responsiveEndpoint.tablet.matches || responsiveEndpoint.phone.matches) {
     initializeSwiper({
       numOfSlides: 1,
       slidesSpace: 0,

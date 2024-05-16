@@ -567,14 +567,6 @@ header {
     right: 1rem;
   }
 }
-@media screen and (max-width: 1150px) {
-  .how-contribute .swiper .swiper-button-prev {
-    left: 0;
-  }
-  .how-contribute .swiper .swiper-button-next {
-    right: 0;
-  }
-}
 @media screen and (min-width: 1024px) and (max-width: 1398px) {
   .how-contribute__description {
     padding: 4rem 22rem;
@@ -585,22 +577,22 @@ header {
     padding: 3rem 9rem;
   }
   .how-contribute .swiper .swiper-button-prev {
-    top: 274rem;
+    top: 278rem;
     left: 3.8rem;
   }
   .how-contribute .swiper .swiper-button-next {
-    top: 274rem;
+    top: 278em;
     right: 3.8rem;
   }
 }
 @media screen and (min-width: 946px) and (max-width: 1150px) {
   .how-contribute .swiper .swiper-button-prev {
     top: 276rem;
-    left: 1.8rem;
+    left: -1rem;
   }
   .how-contribute .swiper .swiper-button-next {
     top: 276rem;
-    right: 1.8rem;
+    right: -1rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 926px) {
@@ -627,6 +619,14 @@ header {
   .how-contribute .swiper .swiper-button-next {
     top: 295rem;
     right: 0.8rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 302rem;
+  }
+  .how-contribute .swiper .swiper-button-next {
+    top: 302rem;
   }
 }
 @media screen and (max-width: 830px) {
