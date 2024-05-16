@@ -130,9 +130,70 @@
 
 //Responsiveness side:
 //breakpoint to handle arrows positions:
+@media screen and (max-width: 1880px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 235rem;
+    left: 18rem;
+  }
 
+  .how-contribute .swiper .swiper-button-next {
+    top: 235rem;
+    right: 18rem;
+  }
+}
 
-//laptop:
+@media screen and (max-width: 1646px) {
+  .how-contribute .swiper .swiper-button-prev {
+    left: 15rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    right: 15rem;
+  }
+}
+
+@media screen and (max-width: 1526px) {
+  .how-contribute .swiper .swiper-button-prev {
+    left: 8rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    right: 8rem;
+  }
+}
+
+@media screen and (max-width: 1526px) {
+  .how-contribute .swiper .swiper-button-prev {
+    left: 4rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 270rem;
+    left: 1rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 270rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .how-contribute .swiper .swiper-button-prev {
+    left: 0;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    right: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1398px) {
   .how-contribute {
     &__description {
@@ -141,12 +202,77 @@
   }
 }
 
-//small laptop and tablet:
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .how-contribute {
     &__description {
       padding: 3rem 9rem;
     }
+  }
+
+  .how-contribute .swiper .swiper-button-prev {
+    top: 274rem;
+    left: 3.8rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 274rem;
+    right: 3.8rem;
+  }
+}
+
+@media screen and (min-width: 946px) and (max-width: 1150px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 276rem;
+    left: 1.8rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 276rem;
+    right: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 926px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 283rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 283rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 290rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 290rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 295rem;
+    left: 0.8rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 295rem;
+    right: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 305rem;
+    left: 0.5rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 305rem;
+    right: 0.5rem;
   }
 }
 
@@ -155,6 +281,62 @@
     &__description {
       padding: 3rem 3rem;
     }
+  }
+
+  .how-contribute .swiper .swiper-button-prev {
+    top: 304rem;
+    left: -1.5rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 304rem;
+    right: -1.5rem;
+  }
+}
+
+@media  screen and (min-width: 320px) and (max-width: 640px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 307rem;
+    left: 6rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 307rem;
+    right: 6rem;
+  }
+}
+
+@media  screen and (max-width: 520px) {
+  .how-contribute .swiper .swiper-button-prev {
+    left: 3rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    right: 3rem;
+  }
+}
+
+@media  screen and (max-width: 465px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 312rem;
+    left: 1rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 312rem;
+    right: 1rem;
+  }
+}
+
+@media  screen and (max-width: 406px) {
+  .how-contribute .swiper .swiper-button-prev {
+    top: 314rem;
+    left: -1rem;
+  }
+
+  .how-contribute .swiper .swiper-button-next {
+    top: 314rem;
+    right: -1rem;
   }
 }
 

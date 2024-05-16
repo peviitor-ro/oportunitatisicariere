@@ -53,8 +53,8 @@ function handleCarouselResponsiveness(responsiveEndpoint) {
     responsiveEndpoint.smallLaptop.matches ||
     responsiveEndpoint.tablet.matches
   ) {
-    document.querySelector(".swiper-button-prev").style.display = "none";
-    document.querySelector(".swiper-button-next").style.display = "none";
+    // document.querySelector(".swiper-button-prev").style.display = "none";
+    // document.querySelector(".swiper-button-next").style.display = "none";
 
     initializeSwiper({
       numOfSlides: 2,
