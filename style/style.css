@@ -951,7 +951,7 @@ header {
   }
   .thank-section p {
     line-height: 2.4rem;
-    padding: 0 30rem 2rem 30rem;
+    padding: 0 10rem 2rem 10rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -962,7 +962,7 @@ header {
   }
   .thank-section p {
     line-height: 2.4rem;
-    padding: 0 30rem 2rem 30rem;
+    padding: 0 10rem 2rem 10rem;
   }
 }
 /* JOIN US SECTION */
