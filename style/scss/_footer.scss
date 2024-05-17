@@ -1,11 +1,11 @@
 /* FOOTER SECTION */
 footer {
-  padding: 0 80px;
+  padding: 0 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 35px;
+  gap: 2.18rem;
 
   // Footer navigation links inherit styles from header nav links to avoid duplication.
 
@@ -47,7 +47,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 35px;
+    padding-bottom: 2.18rem;
 
     p {
       padding: 1rem;
@@ -216,10 +216,10 @@ footer {
 
 @media (min-width: 769px) and (max-width: $laptop-size) {
   footer {
-    padding: 0 50px;
+    padding: 0 3.12rem;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
 
     hr {
       width: 100%;
@@ -227,7 +227,7 @@ footer {
     }
 
     .footer-bottom {
-      padding-bottom: 32px;
+      padding-bottom: 2rem;
       p {
         padding: 1rem;
         font-size: 1.9rem;

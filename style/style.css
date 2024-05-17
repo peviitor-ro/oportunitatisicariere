@@ -960,12 +960,12 @@ header {
 
 /* FOOTER SECTION */
 footer {
-  padding: 0 80px;
+  padding: 0 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 35px;
+  gap: 2.18rem;
 }
 footer hr {
   height: 0;
@@ -997,7 +997,7 @@ footer .footer-bottom {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 35px;
+  padding-bottom: 2.18rem;
 }
 footer .footer-bottom p {
   padding: 1rem;
@@ -1118,17 +1118,17 @@ footer .footer-bottom h4 {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   footer {
-    padding: 0 50px;
+    padding: 0 3.12rem;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
   }
   footer hr {
     width: 100%;
     max-width: 100rem;
   }
   footer .footer-bottom {
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
   }
   footer .footer-bottom p {
     padding: 1rem;
