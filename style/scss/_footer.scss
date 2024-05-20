@@ -1,61 +1,76 @@
 /* FOOTER SECTION */
+
+// Mobile size
 footer {
-  padding: 0 5rem;
+  padding: 0 1.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 2.18rem;
-
-  // Footer navigation links inherit styles from header nav links to avoid duplication.
+  gap: 1.5rem;
 
   hr {
     height: 0;
     border: none;
     border-top: 1px solid $black;
     width: 100%;
-    max-width: 100rem;
+    max-width: 14.93rem;
+  }
+
+  .footer-bottom {
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.87rem;
+    }
+
+    h4 {
+      font-size: 0.87rem;
+    }
   }
 
   .footer-social {
     &__links {
       list-style-type: none;
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 2.4rem;
+      gap: 0.68rem 1.5rem;
+      max-width: 9.25rem;
 
       li {
-        cursor: pointer;
-      }
+        a {
+          img {
+            width: 2rem;
+            height: 2rem;
+          }
 
-      li a img {
-        width: 4rem;
-        height: 4rem;
-      }
-
-      li a img:hover {
-        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
-          brightness(85%) contrast(77%);
+          img:hover {
+            filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+              brightness(85%) contrast(77%);
+          }
+        }
       }
     }
   }
+}
 
-  .footer-bottom {
+// Footer navigation links inherit styles from header nav links to avoid duplication.
+.footer-navigation {
+  nav {
+    background-color: white;
+  }
+  ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2.18rem;
-
-    p {
-      padding: 1rem;
-      font-size: 1.9rem;
-    }
-
-    h4 {
-      font-size: 2rem;
+    gap: 0.87rem;
+    background-color: white;
+    li {
+      a {
+        font-size: 0.87rem;
+      }
     }
   }
 }
@@ -65,12 +80,11 @@ footer {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 2vw;
+  right: 7vw;
   bottom: 2vh;
-
   img {
-    width: 5rem;
-    height: 5rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   img:hover {
@@ -79,78 +93,10 @@ footer {
   }
 }
 
-@media (max-width: $phone-size) {
-  footer {
-    padding: 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-
-    hr {
-      max-width: 14.93rem;
-    }
-
-    .footer-bottom {
-      p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.87rem;
-      }
-
-      h4 {
-        font-size: 0.87rem;
-      }
-    }
-
-    .footer-social {
-      &__links {
-        display: flex;
-        gap: 0.62rem;
-        flex-wrap: wrap;
-
-        li {
-          a {
-            img {
-              width: 2rem;
-              height: 2rem;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .footer-navigation {
-    nav {
-      background-color: white;
-    }
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.87rem;
-      background-color: white;
-      li {
-        a {
-          font-size: 0.87rem;
-        }
-      }
-    }
-  }
-
-  .top-redirect-btn {
-    img {
-      width: 2rem;
-      height: 2rem;
-    }
-  }
-}
-
+// Tablet size
 @media (min-width: 321px) and (max-width: $tablet-size) {
   footer {
-    padding: 0 5.31rem;
-    display: flex;
-    flex-direction: column;
+    padding: 0 5.3rem;
     gap: 2rem;
 
     hr {
@@ -158,30 +104,26 @@ footer {
     }
 
     .footer-bottom {
-      padding-bottom: 1.56rem;
+      padding-bottom: 1.5rem;
       p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.12rem;
+        font-size: 1.2rem;
       }
 
       h4 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
     }
 
     .footer-social {
       &__links {
-        display: flex;
+        max-width: 100%;
         gap: 0.87rem;
-        flex-wrap: wrap;
 
         li {
           a {
             img {
-              width: 4rem;
-              height: 4rem;
+              width: 2.5rem;
+              height: 2.5rem;
             }
           }
         }
@@ -190,17 +132,11 @@ footer {
   }
 
   .footer-navigation {
-    nav {
-      background-color: white;
-    }
     ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.87rem;
-      background-color: white;
+      gap: 1.5rem;
       li {
         a {
-          font-size: 1.25rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -214,67 +150,63 @@ footer {
   }
 }
 
-@media (min-width: 769px) and (max-width: $laptop-size) {
+// Laptop size
+
+@media (min-width: 769px) {
   footer {
-    padding: 0 3.12rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    padding: 11.2rem 22rem 2.7rem 22rem;
+    gap: 2.4rem;
 
     hr {
-      width: 100%;
-      max-width: 100rem;
+      max-width: 100%;
+    }
+    .footer-social {
+      &__links {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 2.4rem;
+
+        li {
+          cursor: pointer;
+        }
+
+        li a img {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
     }
 
     .footer-bottom {
-      padding-bottom: 2rem;
+      padding-bottom: 2.18rem;
+
       p {
         padding: 1rem;
         font-size: 1.9rem;
       }
 
       h4 {
-        font-size: 1.9rem;
-      }
-    }
-
-    .footer-social {
-      &__links {
-        display: flex;
-        gap: 2.4rem;
-        flex-wrap: wrap;
-
-        li {
-          a {
-            img {
-              width: 4rem;
-              height: 4rem;
-            }
-          }
-        }
+        font-size: 2rem;
       }
     }
   }
 
   .footer-navigation {
-    nav {
-      background-color: white;
-    }
     ul {
-      width: 100%;
-      display: flex;
       flex-direction: row;
-      gap: 3rem;
-      background-color: white;
+      gap: 1.5rem;
       li {
         a {
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
       }
     }
   }
 
   .top-redirect-btn {
+    right: 2vw;
+    bottom: 2vh;
+
     img {
       width: 5rem;
       height: 5rem;
