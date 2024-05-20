@@ -921,40 +921,27 @@ header {
 }
 
 @media only screen and (max-width: 320px) {
-  .thank-section {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
   .thank-section p {
-    line-height: 2.4rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .thank-section {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
   .thank-section p {
-    line-height: 2.4rem;
     padding: 0 10rem 2rem 10rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .thank-section {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
   .thank-section p {
-    line-height: 2.4rem;
     padding: 0 10rem 2rem 10rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .thank-section p {
+    padding: 0 10rem 2rem 10rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
   .thank-section {
     display: flex;
     align-items: center;
@@ -962,7 +949,6 @@ header {
   }
   .thank-section p {
     line-height: 2.4rem;
-    padding: 0 10rem 2rem 10rem;
   }
 }
 /* JOIN US SECTION */
