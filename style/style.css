@@ -273,13 +273,12 @@ header {
       line-height: 5.4rem;
       text-align: center;
       text-transform: uppercase; }
-    .hero__content__description {
+    .hero__content__description h3 {
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 2.8rem;
-      text-align: center;
-      padding: 0 37rem; }
-      .hero__content__description a {
+      text-align: center; }
+      .hero__content__description h3 a {
         font-weight: bold;
         color: #2f7973; }
     .hero__content__btn {
@@ -294,6 +293,84 @@ header {
       .hero__content__btn:hover {
         transition: all 0.3s;
         background-color: #1e524e; }
+
+@media screen and (min-width: 958px) and (max-width: 1024px) {
+  .hero {
+    padding: 12rem 0rem 31rem 0rem; }
+    .hero__content {
+      gap: 3rem; }
+      .hero__content__title {
+        font-size: 3.8rem;
+        font-weight: 500;
+        line-height: 4.4rem; } }
+
+@media screen and (min-width: 801px) and (max-width: 958px) {
+  .hero {
+    padding: 12rem 8rem 20rem 8rem; }
+    .hero__content {
+      gap: 2.8rem; }
+      .hero__content__title {
+        font-size: 3.4rem;
+        line-height: 4rem; }
+      .hero__content__description h3 {
+        font-size: 1.6rem; } }
+
+@media screen and (min-width: 361px) and (max-width: 800px) {
+  .hero {
+    padding: 7.2rem 5rem 18rem 5rem;
+    background-size: 140% 130%;
+    background-position: right 39% bottom;
+    filter: brightness(109%); }
+    .hero__content {
+      gap: 2rem; }
+      .hero__content__title {
+        padding: 0rem 0.1rem;
+        font-size: 2.6rem;
+        line-height: 112%; }
+      .hero__content__description {
+        text-align: center; }
+        .hero__content__description h3 {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          display: inline; }
+      .hero__content__btn {
+        padding: 1.2rem 2.4rem;
+        font-weight: 500;
+        font-size: 1.4rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .hero {
+    padding: 4.2rem 3.2rem 16rem 3.2rem;
+    background-size: 270% 130%;
+    background-position: right 18% bottom -1.5rem;
+    filter: brightness(108%); }
+    .hero__content {
+      gap: 2rem; }
+      .hero__content__title {
+        padding: 0rem 2rem;
+        font-size: 2.2rem;
+        line-height: 112%; }
+      .hero__content__description {
+        text-align: center;
+        padding: 0.3rem; }
+        .hero__content__description h3 {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          display: inline; }
+      .hero__content__btn {
+        padding: 1.2rem 2.4rem;
+        border-radius: 0.8rem;
+        font-weight: 500;
+        font-size: 1.4rem; } }
+
+@media (max-width: 320px) {
+  .hero {
+    padding: 4.2rem 3rem 16rem 3rem;
+    background-size: 280% 150%;
+    background-position: bottom -3.6rem right -11.4rem; }
+    .hero__content__title {
+      padding: 0rem 2.4rem;
+      font-size: 2rem; } }
 
 /* OUR MISSION SECTION */
 .our-mission {
