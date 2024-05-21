@@ -814,6 +814,19 @@ header {
     padding-left: 42rem;
     padding-right: 42rem; }
 
+@media only screen and (max-width: 320px) {
+  .thank-section p {
+    padding-left: 0rem;
+    padding-right: 0rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 1280px) {
+  .thank-section p {
+    padding: 0 10rem 2rem 10rem; } }
+
+@media only screen and (min-width: 1440px) {
+  .thank-section p {
+    line-height: 2.4rem; } }
+
 /* JOIN US SECTION */
 .join-us-section {
   display: flex;
@@ -845,6 +858,43 @@ header {
     .join-us-section__button:hover {
       transition: all 0.3s;
       background-color: #1e524e; }
+
+@media only screen and (max-width: 320px) {
+  .join-us-section {
+    padding: 3rem; }
+    .join-us-section p {
+      padding: 0rem;
+      line-height: 2.5rem; }
+    .join-us-section button {
+      margin-top: 3rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .join-us-section {
+    padding: 3rem; }
+    .join-us-section p {
+      padding: 0 5rem 5rem 5rem;
+      line-height: 2.5rem; } }
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .join-us-section {
+    padding: 3rem; }
+    .join-us-section p {
+      padding: 0 10rem 5rem 10rem;
+      line-height: 2.5rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .join-us-section {
+    padding: 5rem; }
+    .join-us-section p {
+      padding: 0 15rem 5rem 15rem;
+      line-height: 2.5rem; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .join-us-section {
+    padding: 5rem; }
+    .join-us-section p {
+      padding: 0 30rem 2rem 30rem;
+      line-height: 2.2rem; } }
 
 /* FOOTER SECTION */
 footer {
