@@ -967,9 +967,6 @@ footer {
   flex-direction: column;
   gap: 5.2rem;
 }
-footer .footer-navigation {
-  font-weight: 700;
-}
 footer .footer-navigation nav {
   background-color: white;
 }
@@ -997,10 +994,10 @@ footer .footer-social__links li {
 footer .footer-social__links li a img {
   width: 4rem;
   height: 4rem;
-  transition: all 0.3s ease;
 }
 footer .footer-social__links li a img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
+  transition: filter 0.3s ease;
 }
 footer .footer-bottom {
   display: flex;
@@ -1009,7 +1006,7 @@ footer .footer-bottom {
 }
 footer .footer-bottom p {
   padding: 1rem;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 footer .footer-bottom h4 {
   font-size: 2rem;

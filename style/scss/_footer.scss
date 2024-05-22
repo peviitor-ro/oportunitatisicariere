@@ -10,7 +10,6 @@ footer {
   // Footer navigation links inherit styles from header nav links to avoid duplication.
 
   .footer-navigation {
-    font-weight: 700;
     & nav {
       background-color: white;
       & ul {
@@ -43,12 +42,12 @@ footer {
       li a img {
         width: 4rem;
         height: 4rem;
-        transition: all 0.3s ease;
       }
 
       li a img:hover {
         filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
           brightness(85%) contrast(77%);
+        transition: filter 0.3s ease;
       }
     }
   }
@@ -60,7 +59,7 @@ footer {
 
     p {
       padding: 1rem;
-      font-size: 1.9rem;
+      font-size: 1.8rem;
     }
 
     h4 {
