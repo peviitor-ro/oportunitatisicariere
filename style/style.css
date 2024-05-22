@@ -960,12 +960,15 @@ header {
 
 /* FOOTER SECTION */
 footer {
-  padding: 11.2rem 8rem 2.7rem 8rem;
+  padding: 11.2rem 8rem 3.2rem 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 5.2rem;
+}
+footer .footer-navigation {
+  font-weight: 700;
 }
 footer .footer-navigation nav {
   background-color: white;
@@ -994,6 +997,7 @@ footer .footer-social__links li {
 footer .footer-social__links li a img {
   width: 4rem;
   height: 4rem;
+  transition: all 0.3s ease;
 }
 footer .footer-social__links li a img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
@@ -1001,8 +1005,7 @@ footer .footer-social__links li a img:hover {
 footer .footer-bottom {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 footer .footer-bottom p {
   padding: 1rem;
@@ -1023,6 +1026,7 @@ footer .footer-bottom h4 {
 .top-redirect-btn img {
   width: 5rem;
   height: 5rem;
+  transition: all 0.3s ease;
 }
 .top-redirect-btn img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
@@ -1030,96 +1034,92 @@ footer .footer-bottom h4 {
 
 @media (max-width: 320px) {
   footer {
-    padding: 0 1.5rem;
-    gap: 1.5rem;
+    padding: 3.2rem 1.4rem;
+    gap: 2.4rem;
   }
   footer hr {
     width: 100%;
-    max-width: 14.93rem;
+    max-width: 22rem;
   }
   footer .footer-bottom p {
-    font-size: 0.87rem;
+    font-size: 1.4rem;
   }
   footer .footer-bottom h4 {
-    font-size: 0.87rem;
+    font-size: 1.4rem;
   }
   footer .footer-social__links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.68rem 1.5rem;
-    max-width: 9.25rem;
+    gap: 1.1rem 2.4rem;
+    max-width: 14.8rem;
   }
   footer .footer-social__links li a img {
-    width: 2rem;
-    height: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
   }
   .footer-navigation ul {
     display: flex;
     flex-direction: column;
-    gap: 0.87rem;
+    gap: 1.4rem;
   }
   .footer-navigation ul li a {
-    font-size: 0.87rem;
+    font-size: 1.4rem;
   }
   .top-redirect-btn {
-    right: 7vw;
-    bottom: 2vh;
+    right: 2vw;
+    bottom: 0vh;
   }
   .top-redirect-btn img {
-    width: 2rem;
-    height: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
   }
 }
 @media (min-width: 321px) and (max-width: 768px) {
   footer {
-    padding: 0 5.3rem;
-    gap: 2rem;
+    padding: 3.2rem 2.4rem;
+    gap: 3.2rem;
   }
   footer hr {
-    max-width: 33.12rem;
-  }
-  footer .footer-bottom {
-    padding-bottom: 1.5rem;
+    max-width: 52rem;
   }
   footer .footer-bottom p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   footer .footer-bottom h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   footer .footer-social__links {
     max-width: 100%;
-    gap: 0.87rem;
+    gap: 1.4rem;
   }
   footer .footer-social__links li a img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
   }
   .footer-navigation ul {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.4rem;
   }
   .footer-navigation ul li a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .top-redirect-btn img {
-    width: 4rem;
-    height: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   footer {
-    padding: 0 5.3rem;
-    gap: 2.4rem;
+    padding: 10rem 8.4rem 3.2rem 8.4rem;
   }
   footer hr {
-    max-width: 100%;
+    max-width: 100rem;
   }
   footer .footer-social__links {
     max-width: 100%;
     flex-direction: row;
-    gap: 2.4rem;
+    gap: 3.2rem;
   }
   footer .footer-social__links li {
     cursor: pointer;
@@ -1129,11 +1129,11 @@ footer .footer-bottom h4 {
     height: 4rem;
   }
   footer .footer-bottom {
-    padding-bottom: 2.18rem;
+    padding-bottom: 3.2rem;
   }
   footer .footer-bottom p {
-    padding: 1rem;
-    font-size: 1.9rem;
+    padding: 1.6rem;
+    font-size: 1.6rem;
   }
   footer .footer-bottom h4 {
     font-size: 2rem;
@@ -1142,17 +1142,17 @@ footer .footer-bottom h4 {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    justify-content: space-between;
   }
   .footer-navigation ul li a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .top-redirect-btn {
     right: 2vw;
     bottom: 2vh;
   }
   .top-redirect-btn img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */

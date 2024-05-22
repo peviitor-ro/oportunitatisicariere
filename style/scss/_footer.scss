@@ -1,15 +1,16 @@
 /* FOOTER SECTION */
 footer {
-  padding: 11.2rem 8rem 2.7rem 8rem;
+  padding: 11.2rem 8rem 3.2rem 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 5.2rem;
 
   // Footer navigation links inherit styles from header nav links to avoid duplication.
 
   .footer-navigation {
+    font-weight: 700;
     & nav {
       background-color: white;
       & ul {
@@ -42,6 +43,7 @@ footer {
       li a img {
         width: 4rem;
         height: 4rem;
+        transition: all 0.3s ease;
       }
 
       li a img:hover {
@@ -54,8 +56,7 @@ footer {
   .footer-bottom {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 
     p {
       padding: 1rem;
@@ -79,6 +80,7 @@ footer {
   img {
     width: 5rem;
     height: 5rem;
+    transition: all 0.3s ease;
   }
 
   img:hover {
@@ -90,21 +92,21 @@ footer {
 // Mobile size
 @media (max-width: $phone-size) {
   footer {
-    padding: 0 1.5rem;
-    gap: 1.5rem;
+    padding: 3.2rem 1.4rem;
+    gap: 2.4rem;
 
     hr {
       width: 100%;
-      max-width: 14.93rem;
+      max-width: 22rem;
     }
 
     .footer-bottom {
       p {
-        font-size: 0.87rem;
+        font-size: 1.4rem;
       }
 
       h4 {
-        font-size: 0.87rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -112,14 +114,14 @@ footer {
       &__links {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.68rem 1.5rem;
-        max-width: 9.25rem;
+        gap: 1.1rem 2.4rem;
+        max-width: 14.8rem;
 
         li {
           a {
             img {
-              width: 2rem;
-              height: 2rem;
+              width: 3.2rem;
+              height: 3.2rem;
             }
           }
         }
@@ -131,21 +133,21 @@ footer {
     ul {
       display: flex;
       flex-direction: column;
-      gap: 0.87rem;
+      gap: 1.4rem;
       li {
         a {
-          font-size: 0.87rem;
+          font-size: 1.4rem;
         }
       }
     }
   }
 
   .top-redirect-btn {
-    right: 7vw;
-    bottom: 2vh;
+    right: 2vw;
+    bottom: 0vh;
     img {
-      width: 2rem;
-      height: 2rem;
+      width: 3.2rem;
+      height: 3.2rem;
     }
   }
 }
@@ -153,34 +155,33 @@ footer {
 // Tablet size
 @media (min-width: 321px) and (max-width: $tablet-size) {
   footer {
-    padding: 0 5.3rem;
-    gap: 2rem;
+    padding: 3.2rem 2.4rem;
+    gap: 3.2rem;
 
     hr {
-      max-width: 33.12rem;
+      max-width: 52rem;
     }
 
     .footer-bottom {
-      padding-bottom: 1.5rem;
       p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
 
       h4 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
     }
 
     .footer-social {
       &__links {
         max-width: 100%;
-        gap: 0.87rem;
+        gap: 1.4rem;
 
         li {
           a {
             img {
-              width: 2.5rem;
-              height: 2.5rem;
+              width: 3.2rem;
+              height: 3.2rem;
             }
           }
         }
@@ -192,10 +193,10 @@ footer {
     ul {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 2.4rem;
       li {
         a {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
         }
       }
     }
@@ -203,8 +204,8 @@ footer {
 
   .top-redirect-btn {
     img {
-      width: 4rem;
-      height: 4rem;
+      width: 3.2rem;
+      height: 3.2rem;
     }
   }
 }
@@ -212,17 +213,16 @@ footer {
 // Laptop size
 @media (min-width: 769px) and (max-width: $laptop-size) {
   footer {
-    padding: 0 5.3rem;
-    gap: 2.4rem;
+    padding: 10rem 8.4rem 3.2rem 8.4rem;
 
     hr {
-      max-width: 100%;
+      max-width: 100rem;
     }
     .footer-social {
       &__links {
         max-width: 100%;
         flex-direction: row;
-        gap: 2.4rem;
+        gap: 3.2rem;
 
         li {
           cursor: pointer;
@@ -236,11 +236,11 @@ footer {
     }
 
     .footer-bottom {
-      padding-bottom: 2.18rem;
+      padding-bottom: 3.2rem;
 
       p {
-        padding: 1rem;
-        font-size: 1.9rem;
+        padding: 1.6rem;
+        font-size: 1.6rem;
       }
 
       h4 {
@@ -254,10 +254,10 @@ footer {
       width: 100%;
       display: flex;
       flex-direction: row;
-      gap: 1.5rem;
+      justify-content: space-between;
       li {
         a {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
         }
       }
     }
@@ -268,8 +268,8 @@ footer {
     bottom: 2vh;
 
     img {
-      width: 5rem;
-      height: 5rem;
+      width: 4rem;
+      height: 4rem;
     }
   }
 }
