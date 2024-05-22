@@ -18,3 +18,28 @@
     padding-right: 42rem;
   }
 }
+
+@media only screen and (max-width:#{$phone-size}) {
+  .thank-section {
+    & p {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+}
+
+@media only screen and (min-width:#{$phone-size}) and (max-width:#{$desktop-size}) {
+  .thank-section {
+    & p {
+      padding: 0 10rem 2rem 10rem;
+    }
+  }
+}
+
+@media only screen and (min-width:#{$desktop-xxl-size}) {
+  .thank-section {
+    & p {
+      line-height: 2.4rem;
+    }
+  }
+}

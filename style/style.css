@@ -338,14 +338,13 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-.hero__content__description {
+.hero__content__description h3 {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.8rem;
   text-align: center;
-  padding: 0 37rem;
 }
-.hero__content__description a {
+.hero__content__description h3 a {
   font-weight: bold;
   color: #2f7973;
 }
@@ -364,6 +363,105 @@ header {
   background-color: #1e524e;
 }
 
+@media screen and (min-width: 958px) and (max-width: 1024px) {
+  .hero {
+    padding: 12rem 0rem 31rem 0rem;
+  }
+  .hero__content {
+    gap: 3rem;
+  }
+  .hero__content__title {
+    font-size: 3.8rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 958px) {
+  .hero {
+    padding: 12rem 8rem 20rem 8rem;
+  }
+  .hero__content {
+    gap: 2.8rem;
+  }
+  .hero__content__title {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+  .hero__content__description h3 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 800px) {
+  .hero {
+    padding: 7.2rem 5rem 18rem 5rem;
+    background-size: 140% 130%;
+    background-position: right 39% bottom;
+    filter: brightness(109%);
+  }
+  .hero__content {
+    gap: 2rem;
+  }
+  .hero__content__title {
+    padding: 0rem 0.1rem;
+    font-size: 2.6rem;
+    line-height: 112%;
+  }
+  .hero__content__description {
+    text-align: center;
+  }
+  .hero__content__description h3 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    display: inline;
+  }
+  .hero__content__btn {
+    padding: 1.2rem 2.4rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .hero {
+    padding: 4.2rem 3.2rem 16rem 3.2rem;
+    background-size: 270% 130%;
+    background-position: right 18% bottom -1.5rem;
+    filter: brightness(108%);
+  }
+  .hero__content {
+    gap: 2rem;
+  }
+  .hero__content__title {
+    padding: 0rem 2rem;
+    font-size: 2.2rem;
+    line-height: 112%;
+  }
+  .hero__content__description {
+    text-align: center;
+    padding: 0.3rem;
+  }
+  .hero__content__description h3 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    display: inline;
+  }
+  .hero__content__btn {
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 320px) {
+  .hero {
+    padding: 4.2rem 3rem 16rem 3rem;
+    background-size: 280% 150%;
+    background-position: bottom -3.6rem right -11.4rem;
+  }
+  .hero__content__title {
+    padding: 0rem 2.4rem;
+    font-size: 2rem;
+  }
+}
 /* OUR MISSION SECTION */
 .our-mission {
   display: flex;
@@ -1093,6 +1191,22 @@ header {
   padding-right: 42rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .thank-section p {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1280px) {
+  .thank-section p {
+    padding: 0 10rem 2rem 10rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .thank-section p {
+    line-height: 2.4rem;
+  }
+}
 /* JOIN US SECTION */
 .join-us-section {
   display: flex;
@@ -1130,6 +1244,54 @@ header {
   background-color: #1e524e;
 }
 
+@media only screen and (max-width: 320px) {
+  .join-us-section {
+    padding: 3rem;
+  }
+  .join-us-section p {
+    padding: 0rem;
+    line-height: 2.5rem;
+  }
+  .join-us-section button {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .join-us-section {
+    padding: 3rem;
+  }
+  .join-us-section p {
+    padding: 0 5rem 5rem 5rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .join-us-section {
+    padding: 3rem;
+  }
+  .join-us-section p {
+    padding: 0 10rem 5rem 10rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .join-us-section {
+    padding: 5rem;
+  }
+  .join-us-section p {
+    padding: 0 15rem 5rem 15rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .join-us-section {
+    padding: 5rem;
+  }
+  .join-us-section p {
+    padding: 0 30rem 2rem 30rem;
+    line-height: 2.2rem;
+  }
+}
 /* FOOTER SECTION */
 footer {
   padding: 11.2rem 22rem 2.7rem 22rem;
