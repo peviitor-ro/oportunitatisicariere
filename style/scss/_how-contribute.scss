@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $greyish-white;
+  position: relative;
 
   &__title {
     display: flex;
@@ -40,6 +41,7 @@
     height: auto;
     position: static !important;
     display: flex !important;
+    position: relative;
 
     .swiper-wrapper {
       .swiper-slide {
@@ -64,8 +66,8 @@
 
     .swiper-button-prev {
       position: absolute;
-      top: 235rem;
-      left: 30rem;
+      top: 50rem;
+      left: 5.5rem;
       cursor: pointer;
       transform: scale(0.7);
 
@@ -78,8 +80,8 @@
 
     .swiper-button-next {
       position: absolute;
-      top: 235rem;
-      right: 30rem;
+      top: 50rem;
+      right: 5.5rem;
       transform: rotate(180deg) scale(0.7);
       cursor: pointer;
 
@@ -128,63 +130,6 @@
   }
 }
 
-//Responsiveness side:
-//breakpoint to handle arrows positions:
-@media screen and (max-width: 1880px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 235rem;
-    left: 18rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 235rem;
-    right: 18rem;
-  }
-}
-
-@media screen and (max-width: 1646px) {
-  .how-contribute .swiper .swiper-button-prev {
-    left: 15rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    right: 15rem;
-  }
-}
-
-@media screen and (max-width: 1526px) {
-  .how-contribute .swiper .swiper-button-prev {
-    left: 8rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    right: 8rem;
-  }
-}
-
-@media screen and (max-width: 1526px) {
-  .how-contribute .swiper .swiper-button-prev {
-    left: 4rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    right: 4rem;
-  }
-}
-
-@media screen and (max-width: 1296px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 320rem;
-    left: 2rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 320rem;
-    right: 2rem;
-  }
-}
-
-
 @media screen and (min-width: 1024px) and (max-width: 1398px) {
   .how-contribute {
     &__description {
@@ -199,145 +144,13 @@
       padding: 3rem 9rem;
     }
   }
-
-  .how-contribute .swiper .swiper-button-prev {
-    top: 314rem;
-    left: 2rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 314em;
-    right: 2rem;
-  }
 }
 
-@media screen and (min-width: 946px) and (max-width: 1150px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 323rem;
-    left: 2rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 323rem;
-    right: 2rem;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 926px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 283rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 283rem;
-  }
-}
-
-@media screen and (max-width: 912px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 320rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 320rem;
-  }
-}
-
-@media screen and (max-width: 880px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 330rem;
-    left: 0.8rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 330rem;
-    right: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 335rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 335rem;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 335rem;
-    left: -0.5rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 335rem;
-    right: -0.5rem;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 769px){
+@media screen and (min-width: 320px) and (max-width: 769px) {
   .how-contribute {
     &__description {
       padding: 3rem 3rem;
     }
-  }
-
-  .how-contribute .swiper .swiper-button-prev {
-    top: 347rem;
-    left: 6.5rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 347rem;
-    right: 6.5rem;
-  }
-}
-
-@media  screen and (min-width: 640px) and (max-width: 769px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 342rem;
-    left: 6rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 342rem;
-    right: 6rem;
-  }
-}
-
-@media  screen and (max-width: 520px) {
-  .how-contribute .swiper .swiper-button-prev {
-    left: 3rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    right: 3rem;
-  }
-}
-
-@media  screen and (max-width: 465px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 351rem;
-    left: 2rem;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 351rem;
-    right: 2rem;
-  }
-}
-
-@media  screen and (max-width: 406px) {
-  .how-contribute .swiper .swiper-button-prev {
-    top: 355rem;
-    left: 0;
-  }
-
-  .how-contribute .swiper .swiper-button-next {
-    top: 355rem;
-    right: 0;
   }
 }
 
