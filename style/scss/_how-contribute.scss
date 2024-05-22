@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $greyish-white;
+  position: relative;
 
   &__title {
     display: flex;
@@ -38,8 +39,9 @@
     width: 100%;
     max-width: 110rem;
     height: auto;
-    position: static !important; 
-    display: flex !important; 
+    position: static !important;
+    display: flex !important;
+    position: relative;
 
     .swiper-wrapper {
       .swiper-slide {
@@ -64,8 +66,8 @@
 
     .swiper-button-prev {
       position: absolute;
-      top: 250rem;
-      left: 30rem;
+      top: 50rem;
+      left: 5.5rem;
       cursor: pointer;
       transform: scale(0.7);
 
@@ -78,8 +80,8 @@
 
     .swiper-button-next {
       position: absolute;
-      top: 250rem;
-      right: 30rem;
+      top: 50rem;
+      right: 5.5rem;
       transform: rotate(180deg) scale(0.7);
       cursor: pointer;
 
@@ -124,6 +126,38 @@
       & a {
         font-size: 1.4rem;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1398px) {
+  .how-contribute {
+    &__description {
+      padding: 4rem 22rem;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .how-contribute {
+    &__description {
+      padding: 3rem 9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+  .how-contribute {
+    &__description {
+      padding: 3rem 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .how-contribute {
+    &__description {
+      padding: 3rem 1rem;
     }
   }
 }
