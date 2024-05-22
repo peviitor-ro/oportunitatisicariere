@@ -508,7 +508,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  position: relative; }
   .how-contribute__title {
     display: flex;
     flex-direction: column;
@@ -533,7 +534,8 @@ header {
     max-width: 110rem;
     height: auto;
     position: static !important;
-    display: flex !important; }
+    display: flex !important;
+    position: relative; }
     .how-contribute .swiper .swiper-wrapper .swiper-slide {
       text-align: center;
       font-size: 1.8rem;
@@ -549,16 +551,16 @@ header {
       height: 9rem; }
     .how-contribute .swiper .swiper-button-prev {
       position: absolute;
-      top: 250rem;
-      left: 30rem;
+      top: 50rem;
+      left: 5.5rem;
       cursor: pointer;
       transform: scale(0.7); }
       .how-contribute .swiper .swiper-button-prev:hover {
         filter: invert(50%); }
     .how-contribute .swiper .swiper-button-next {
       position: absolute;
-      top: 250rem;
-      right: 30rem;
+      top: 50rem;
+      right: 5.5rem;
       transform: rotate(180deg) scale(0.7);
       cursor: pointer; }
       .how-contribute .swiper .swiper-button-next:hover {
@@ -589,6 +591,22 @@ header {
         font-weight: 400; }
       .how-contribute__job .how-contribute__job__text a {
         font-size: 1.4rem; }
+
+@media screen and (min-width: 1024px) and (max-width: 1398px) {
+  .how-contribute__description {
+    padding: 4rem 22rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .how-contribute__description {
+    padding: 3rem 9rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+  .how-contribute__description {
+    padding: 3rem 3rem; } }
+
+@media screen and (max-width: 320px) {
+  .how-contribute__description {
+    padding: 3rem 1rem; } }
 
 /* WHY CONTRIBUTE SECTION */
 .why-contribute {
