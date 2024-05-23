@@ -44,6 +44,7 @@ header {
   max-width: 1440px;
   width: 100%;
   padding: 0 3rem;
+  width: 100vw;
   height: auto;
 }
 .nav__logo {
@@ -320,15 +321,14 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 12rem 0 31rem 0;
-  background: linear-gradient(
-      to bottom,
-      rgb(255, 255, 255),
-      rgba(255, 255, 255, 0)
-    ),
-    url("../assets/hero-background.jpg");
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../assets/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+}
+.hero__container-logo {
+  width: 100vw;
+  height: auto;
 }
 .hero__content {
   display: flex;
@@ -686,7 +686,7 @@ header {
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -863,7 +863,7 @@ header {
   .why-contribute__reasons__reason:last-child:nth-child(3n-1) {
     grid-column-end: -2;
   }
-  .why-contribute__reasons__reason:nth-last-child(2):nth-child(3n + 1) {
+  .why-contribute__reasons__reason:nth-last-child(2):nth-child(3n+1) {
     grid-column-end: 4;
   }
   .why-contribute__reasons__reason img {
@@ -928,7 +928,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7rem 34rem;
+  padding: 7rem 0rem;
   gap: 3.5rem;
   background-color: #f3f3f3;
 }
@@ -988,8 +988,7 @@ header {
 }
 .team__member__socials img:hover {
   transform: all 0.2s;
-  filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg)
-    brightness(89%) contrast(88%);
+  filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
 
 @media only screen and (max-width: 768px) {
@@ -1186,8 +1185,7 @@ footer .footer-social__links li a img {
   height: 4rem;
 }
 footer .footer-social__links li a img:hover {
-  filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
-    brightness(85%) contrast(77%);
+  filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
   transition: filter 0.3s ease;
 }
 footer .footer-bottom {
@@ -1217,8 +1215,7 @@ footer .footer-bottom h4 {
   transition: all 0.3s ease;
 }
 .top-redirect-btn img:hover {
-  filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
-    brightness(85%) contrast(77%);
+  filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
 }
 
 @media (max-width: 320px) {
@@ -1344,5 +1341,4 @@ footer .footer-bottom h4 {
     width: 4rem;
     height: 4rem;
   }
-} /*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
