@@ -928,7 +928,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7rem 0rem;
+  padding: 7rem 1rem;
   gap: 3.5rem;
   background-color: #f3f3f3;
 }
@@ -991,7 +991,10 @@ header {
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .team {
+    padding: 7rem 10rem;
+  }
   .team p {
     width: 90vw;
     font-size: 2.2rem;
@@ -1025,6 +1028,22 @@ header {
     grid-column: 2;
     grid-row: 3;
     justify-self: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .team {
+    padding: 7rem 10rem;
+  }
+  .team p {
+    width: 80vw;
+    font-size: 1.6rem;
+  }
+  .team h4 {
+    font-size: 2rem;
+  }
+  .team p {
+    width: auto;
+    font-size: 1.6rem;
   }
 }
 /* THANK YOU SECTION */
