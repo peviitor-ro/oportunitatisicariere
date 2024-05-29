@@ -14,6 +14,11 @@
   background-size: cover;
   background-position: center bottom;
 
+  &__container-logo{
+    width: 100vw;
+    height: auto;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

@@ -90,15 +90,20 @@ $tablet-line-height-p: 2rem;
 
       img:hover {
         transform: all 0.2s;
-        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
+        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg)
+          brightness(89%) contrast(88%);
       }
     }
   }
 }
 
-// $tablet-size: 768px;
-@media only screen and (max-width: $tablet-size) {
+// Phone responsiveness
+// $phone-size: 320px
+// $tablet-size: 768px
+@media only screen and (min-width: $phone-size) and (max-width: $tablet-size) {
   .team {
+    padding: 7rem 10rem;
+
     p {
       width: 90vw;
       font-size: $phone-font-size-p;
@@ -115,19 +120,19 @@ $tablet-line-height-p: 2rem;
       display: grid;
       grid-template-columns: repeat(2, 20rem);
       grid-template-rows: repeat(3, 4rem);
-  
+
       &-img {
         grid-column: 1;
         grid-row: 1 / 3;
       }
-  
+
       h4 {
         grid-column: 2;
         grid-row: 1; // Centered vertically
         justify-self: left; // Centered horizontally
         font-size: $phone-font-size-h4;
       }
-  
+
       p {
         grid-column: 2;
         grid-row: 2; // Centered vertically
@@ -135,12 +140,43 @@ $tablet-line-height-p: 2rem;
         width: auto;
         font-size: $phone-font-size-p;
       }
-  
+
       &__socials {
         grid-column: 2;
         grid-row: 3; // Centered vertically
         justify-self: left; // Centered horizontally
       }
     }
+  }
+}
+
+// Tablet responsiveness
+// $tablet-size: 768px
+// $laptop-size: 1024px;
+@media only screen and (min-width: $tablet-size) and (max-width: $laptop-size) {
+  .team {
+    padding: 7rem 10rem;
+
+    p {
+      width: 80vw;
+      font-size: $tablet-font-size-p;
+    }
+
+    // larger/wider for smaller screens
+
+    h4 {
+      font-size: $tablet-font-size-h4;
+    }
+
+    p {
+      width: auto;
+      font-size: $tablet-font-size-p;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
+  .team {
+    padding: 7rem 30rem;
   }
 }
