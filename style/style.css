@@ -39,6 +39,7 @@ header {
   max-width: 1440px;
   width: 100%;
   padding: 0 3rem;
+  width: 100vw;
   height: auto; }
   .nav__logo {
     display: flex;
@@ -262,6 +263,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom; }
+  .hero__container-logo {
+    width: 100vw;
+    height: auto; }
   .hero__content {
     display: flex;
     flex-direction: column;
@@ -787,34 +791,52 @@ header {
         transform: all 0.2s;
         filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%); }
 
-@media only screen and (max-width: 768px) {
-  .team p {
-    width: 90vw;
-    font-size: 2.2rem; }
-  .team__members {
-    flex-direction: column; }
-  .team__member {
-    display: grid;
-    grid-template-columns: repeat(2, 20rem);
-    grid-template-rows: repeat(3, 4rem); }
-    .team__member-img {
-      grid-column: 1;
-      grid-row: 1 / 3; }
-    .team__member h4 {
-      grid-column: 2;
-      grid-row: 1;
-      justify-self: left;
-      font-size: 2.5rem; }
-    .team__member p {
-      grid-column: 2;
-      grid-row: 2;
-      justify-self: left;
-      width: auto;
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .team {
+    padding: 7rem 10rem; }
+    .team p {
+      width: 90vw;
       font-size: 2.2rem; }
-    .team__member__socials {
-      grid-column: 2;
-      grid-row: 3;
-      justify-self: left; } }
+    .team__members {
+      flex-direction: column; }
+    .team__member {
+      display: grid;
+      grid-template-columns: repeat(2, 20rem);
+      grid-template-rows: repeat(3, 4rem); }
+      .team__member-img {
+        grid-column: 1;
+        grid-row: 1 / 3; }
+      .team__member h4 {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: left;
+        font-size: 2.5rem; }
+      .team__member p {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: left;
+        width: auto;
+        font-size: 2.2rem; }
+      .team__member__socials {
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: left; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .team {
+    padding: 7rem 10rem; }
+    .team p {
+      width: 80vw;
+      font-size: 1.6rem; }
+    .team h4 {
+      font-size: 2rem; }
+    .team p {
+      width: auto;
+      font-size: 1.6rem; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .team {
+    padding: 7rem 30rem; } }
 
 /* THANK YOU SECTION */
 .thank-section {
