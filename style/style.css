@@ -668,6 +668,41 @@ header {
   font-size: 1.6rem;
   padding-bottom: 4.2rem;
 }
+.how-contribute__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.how-contribute__details a {
+  font-weight: 600;
+  color: #1e524e;
+}
+.how-contribute .contact_container__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 4.2rem;
+}
+.how-contribute .contact_container__info .small_info {
+  font-size: 1.4rem;
+}
+.how-contribute .contact_container__info .asociation_title {
+  font-size: 1.4rem;
+  color: #1e524e;
+  font-weight: 600;
+}
+.how-contribute .contact_container__info .important_info {
+  color: #1e524e;
+  font-size: 1.6rem;
+  font-weight: 600;
+  vertical-align: baseline;
+}
 .how-contribute .swiper {
   width: 100%;
   max-width: 110rem;
@@ -685,8 +720,7 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -747,22 +781,22 @@ header {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1398px) {
-  .how-contribute__description {
+  .how-contribute__description, .how-contribute__details {
     padding: 4rem 22rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .how-contribute__description {
+  .how-contribute__description, .how-contribute__details {
     padding: 3rem 9rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 769px) {
-  .how-contribute__description {
+  .how-contribute__description, .how-contribute__details {
     padding: 3rem 3rem;
   }
 }
 @media screen and (max-width: 320px) {
-  .how-contribute__description {
+  .how-contribute__description, .how-contribute__details {
     padding: 3rem 1rem;
   }
 }
@@ -1365,4 +1399,4 @@ footer .footer-bottom h4 {
     width: 4rem;
     height: 4rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1,163 +1,208 @@
 /* HOW CONTRIBUTE SECTION */
 .how-contribute {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $greyish-white;
-  position: relative;
-
-  &__title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5.2rem 0;
-
-    & h2 {
-      font-size: 3.2rem;
-      font-weight: 400;
-    }
-
-    & img {
-      transform: scale(1.3, 0.9);
-    }
-  }
-
-  &__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 42rem;
-    text-align: center;
-    font-size: 1.6rem;
-    padding-bottom: 4.2rem;
-  }
-
-  // Swipper style
-
-  .swiper {
-    width: 100%;
-    max-width: 110rem;
-    height: auto;
-    position: static !important;
-    display: flex !important;
+    background-color: $greyish-white;
     position: relative;
 
-    .swiper-wrapper {
-      .swiper-slide {
-        text-align: center;
-        font-size: 1.8rem;
+    &__title {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        padding: 5.2rem 0;
+
+        & h2 {
+            font-size: 3.2rem;
+            font-weight: 400;
+        }
+
+        & img {
+            transform: scale(1.3, 0.9);
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 42rem;
+        text-align: center;
+        font-size: 1.6rem;
+        padding-bottom: 4.2rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        font-size: 1.6rem;
+
+        a{
+          font-weight: 600;
+          color:$dark-mint;
+        }
+    }
+
+    .contact_container {
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 1.6rem;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 4.2rem;
+
+            .small_info{
+              font-size: 1.4rem;
+            }
+
+            .asociation_title {
+              font-size: 1.4rem;
+              color: $dark-mint;
+              font-weight:600;
+            }
+
+            .important_info {
+            color: $dark-mint;
+            font-size: 1.6rem;
+            font-weight: 600;
+            vertical-align: baseline;
+        }
+        }
+
+       
+    }
+
+    // Swipper style
+
+    .swiper {
+        width: 100%;
+        max-width: 110rem;
+        height: auto;
+        position: static !important;
+        display: flex !important;
+        position: relative;
+
+        .swiper-wrapper {
+            .swiper-slide {
+                text-align: center;
+                font-size: 1.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 9rem;
+            height: 9rem;
+        }
+
+        .swiper-button-prev {
+            position: absolute;
+            top: 50rem;
+            left: 5.5rem;
+            cursor: pointer;
+            transform: scale(0.7);
+
+            &:hover {
+                filter: invert(50%);
+            }
+
+            // Add future rule for disabled arrow: filter: contrast(20%);
+        }
+
+        .swiper-button-next {
+            position: absolute;
+            top: 50rem;
+            right: 5.5rem;
+            transform: rotate(180deg) scale(0.7);
+            cursor: pointer;
+
+            &:hover {
+                filter: invert(50%);
+            }
+        }
+    }
+
+    &__jobs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 7rem;
+        position: relative;
+    }
+
+    &__job {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2.4rem;
+        padding-bottom: 4rem;
+        background-color: #fff;
 
         img {
-          display: block;
-          object-fit: cover;
+            width: 25rem;
         }
-      }
+
+        .how-contribute__job__text {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            padding-left: 0.5rem;
+            align-items: flex-start;
+
+            & h3 {
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+
+            & a {
+                font-size: 1.4rem;
+            }
+        }
     }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      width: 9rem;
-      height: 9rem;
-    }
-
-    .swiper-button-prev {
-      position: absolute;
-      top: 50rem;
-      left: 5.5rem;
-      cursor: pointer;
-      transform: scale(0.7);
-
-      &:hover {
-        filter: invert(50%);
-      }
-
-      // Add future rule for disabled arrow: filter: contrast(20%);
-    }
-
-    .swiper-button-next {
-      position: absolute;
-      top: 50rem;
-      right: 5.5rem;
-      transform: rotate(180deg) scale(0.7);
-      cursor: pointer;
-
-      &:hover {
-        filter: invert(50%);
-      }
-    }
-  }
-
-  &__jobs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 7rem;
-    position: relative;
-  }
-
-  &__job {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 2.4rem;
-    padding-bottom: 4rem;
-    background-color: #fff;
-
-    img {
-      width: 25rem;
-    }
-
-    .how-contribute__job__text {
-      display: flex;
-      flex-direction: column;
-      gap: 2.4rem;
-      padding-left: 0.5rem;
-      align-items: flex-start;
-
-      & h3 {
-        font-size: 1.8rem;
-        font-weight: 400;
-      }
-
-      & a {
-        font-size: 1.4rem;
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1398px) {
-  .how-contribute {
-    &__description {
-      padding: 4rem 22rem;
+    .how-contribute {
+        &__description, &__details {
+            padding: 4rem 22rem;
+        }
     }
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .how-contribute {
-    &__description {
-      padding: 3rem 9rem;
+    .how-contribute {
+        &__description, &__details {
+            padding: 3rem 9rem;
+        }
     }
-  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 769px) {
-  .how-contribute {
-    &__description {
-      padding: 3rem 3rem;
+    .how-contribute {
+        &__description, &__details{
+            padding: 3rem 3rem;
+        }
     }
-  }
 }
 
 @media screen and (max-width: 320px) {
-  .how-contribute {
-    &__description {
-      padding: 3rem 1rem;
+    .how-contribute {
+        &__description, &__details {
+            padding: 3rem 1rem;
+        }
     }
-  }
 }
