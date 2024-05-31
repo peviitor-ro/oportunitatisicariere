@@ -41,10 +41,8 @@ header {
   position: fixed;
   background-color: #f3f3f3;
   z-index: 99;
-  max-width: 1440px;
-  width: 100%;
-  padding: 0 3rem;
-  width: 100vw;
+  padding: 1rem 3rem;
+  width: clamp(320px, 100%, 1440px);
   height: auto;
 }
 .nav__logo {
@@ -67,7 +65,6 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
 }
 .nav__links__list {
   list-style-type: none;
@@ -315,6 +312,46 @@ header {
   background-color: #2f7973;
 }
 
+.intro {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+.intro__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.intro__container-logo {
+  width: clamp(256px, 100%, 1024px);
+  height: auto;
+}
+.intro__container-watch {
+  position: absolute;
+  right: 0;
+  bottom: -40%;
+  width: clamp(126px, 100%, 496px);
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    height: 50vh;
+  }
+  .intro__container-watch {
+    width: 50%;
+    bottom: -30%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__container-watch {
+    width: 50%;
+  }
+}
 /* HERO SECTION */
 .hero {
   display: flex;
@@ -685,8 +722,7 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -760,10 +796,16 @@ header {
   .how-contribute__description {
     padding: 3rem 3rem;
   }
+  .how-contribute img {
+    transform: scale(1, 1);
+  }
 }
 @media screen and (max-width: 320px) {
   .how-contribute__description {
     padding: 3rem 1rem;
+  }
+  .how-contribute img {
+    transform: scale(1, 1);
   }
 }
 /* WHY CONTRIBUTE SECTION */
@@ -798,7 +840,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 25rem;
+  width: clamp(240px, 100%, 900px);
   padding-top: 0;
   padding-bottom: 15rem;
 }
@@ -993,7 +1035,7 @@ header {
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .team {
-    padding: 7rem 10rem;
+    padding: 7rem 0;
   }
   .team p {
     width: 90vw;
@@ -1001,15 +1043,19 @@ header {
   }
   .team__members {
     flex-direction: column;
+    padding: 3rem 0;
   }
   .team__member {
     display: grid;
-    grid-template-columns: repeat(2, 20rem);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, 4rem);
+    row-gap: 0;
   }
   .team__member-img {
     grid-column: 1;
-    grid-row: 1/3;
+    grid-row: 2/3;
+    width: 10rem;
+    height: 10rem;
   }
   .team__member h4 {
     grid-column: 2;

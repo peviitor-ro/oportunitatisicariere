@@ -18,7 +18,7 @@
     }
 
     & img {
-      transform: scale(1.3, 0.9);
+      transform: scale(1.3, 0.9); // Unresponsive on smaller screens added media query
     }
   }
 
@@ -151,6 +151,9 @@
     &__description {
       padding: 3rem 3rem;
     }
+    & img {
+      transform: scale(1, 1);
+    }
   }
 }
 
@@ -158,6 +161,9 @@
   .how-contribute {
     &__description {
       padding: 3rem 1rem;
+    }
+    & img {
+      transform: scale(1, 1);
     }
   }
 }
