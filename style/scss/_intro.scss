@@ -1,7 +1,8 @@
 .intro {
     display: flex;
     align-items: center;
-    height: 80vh;
+    margin-top: 9rem; 
+ height: 100vh;
     width: 100%;
 
     &__container {
@@ -14,8 +15,10 @@
     }
   
     &__container-logo {
-      width: clamp(256px, 100%, 1024px);
+      width: clamp(256px, 100%, 1072px);
       height: auto;
+      position: relative;
+      top: -10rem;
     }
   
     &__container-watch {
@@ -25,20 +28,61 @@
       width: clamp(126px, 100%, 496px);
       height: auto;
     }
+    &__cta {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background-image: url("../assets/chevron-down.svg");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+      filter: brightness(0) invert(0.7); // Lighter gray color for SVG
+      transition: filter 0.3s ease; // Smooth transition for filter
+
+      &:hover {
+        animation-play-state: paused;
+        filter: brightness(0) invert(0); // Change to black on hover
+      }
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+      easing: ease-in-out;
+    }
   }
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 769px) {
     .intro {
-      height: 50vh;
+     height: 30vh;
+      &__container-logo {
+        top: 0;
+      }
       &__container-watch {
-          width: 50%;
-          bottom: -30%;
+          width: 35%;
+          bottom: -10%;
+      }
+      &__cta {
+        display: none;
       }
     }
   }
   
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .intro {
+      margin-top: 0;
+      &__container-logo {
+        top: 0;
+      }
       &__container-watch {
           width: 50%;
       }
