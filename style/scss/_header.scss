@@ -13,10 +13,11 @@ header {
   position: fixed;
   background-color: $white;
   z-index: 99;
-  max-width: 1440px;
-  width: 100%;
-  padding: 0 3rem;
-  width: 100vw;
+//   max-width: 1440px;
+//   width: 100%;
+//   width: 100vw; //Two width values conflict
+padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0 
+  width: clamp(320px, 100%, 1440px); // Added width clamp to remove max-width and width lines
   height: auto;
 
   &__logo {
@@ -41,7 +42,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+//   padding: 1rem; // Added padding to parent element instead
 
   &__list {
       list-style-type: none;

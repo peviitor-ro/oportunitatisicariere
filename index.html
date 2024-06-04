@@ -77,18 +77,21 @@
           </ul>
         </div>
       </nav>
-      <div class="hero__container">
-        <img
+      <section class="intro">
+        <div class="intro__container">
+          <img
           src="./assets/logo-main.svg"
           alt="asociatia oportunitati si cariere"
-          class="hero__container-logo"
-        />
-        <img
+          class="intro__container-logo"
+          />
+          <img
           src="./assets/watch-acum.png"
           alt="watch image saying now"
-          class="hero__container-watch"
-        />
-      </div>
+          class="intro__container-watch"
+          />
+        </div>
+        <a href="#hero" class="intro__cta"></a>
+      </section>
       <!-- <img
                 src="./assets/hero-first.png"
                 alt="keyboard and watch with logo"
@@ -96,7 +99,7 @@
             /> -->
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__content">
           <h1 class="hero__content__title">
             Construiește-ți cariera în IT acum!
@@ -151,11 +154,10 @@
               </p>
               <img src="./assets/arrow-right-iframe.svg" alt="right arrow" />
             </div>
+            <!-- iframe reason for white gap on smaller tablets and phones -->
             <div class="search-engine">
               <iframe
                 src="https://peviitor.ro/"
-                width="700"
-                height="550"
                 frameborder="0"
                 scrolling="yes"
                 allowfullscreen

@@ -35,7 +35,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 25rem;
+    width: clamp(240px, 100%, 900px); // Changed padding with adaptive width
+    // padding: 25rem; // Removed this padding, responsive problem
     padding-top: 0;
     padding-bottom: 15rem;
 
