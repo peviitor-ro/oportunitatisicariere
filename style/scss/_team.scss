@@ -104,9 +104,13 @@ $tablet-line-height-p: 2rem;
   .team {
     padding: 7rem 0;
 
+    h2 {
+      font-size: 2.2rem; // Changed h2 font size to match the rest
+    }
+
     p {
       width: 90vw;
-      font-size: $phone-font-size-p;
+      font-size: $tablet-font-size-p; 
     }
 
     // larger/wider for smaller screens
