@@ -253,7 +253,6 @@ header {
 .intro {
   display: flex;
   align-items: center;
-  margin-top: 9rem;
   height: 100vh;
   width: 100%; }
   .intro__container {
@@ -262,17 +261,17 @@ header {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    height: 40vh;
+    background-image: url("../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     position: relative; }
-  .intro__container-logo {
-    width: clamp(256px, 100%, 1072px);
-    height: auto;
-    position: relative;
-    top: -10rem; }
   .intro__container-watch {
     position: absolute;
     right: 0;
-    bottom: -40%;
-    width: clamp(126px, 100%, 496px);
+    bottom: -75%;
+    width: clamp(164px, 100%, 572px);
     height: auto; }
   .intro__cta {
     position: absolute;
@@ -300,24 +299,30 @@ header {
     transform: translateY(-10px);
     easing: ease-in-out; } }
 
-@media only screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
+  .intro__container-watch {
+    bottom: -50%;
+    width: 50%; } }
+
+@media screen and (max-width: 769px) {
+  .intro__container-watch {
+    bottom: -25%; } }
+
+@media screen and (max-width: 426px) {
   .intro {
-    height: 30vh; }
-    .intro__container-logo {
-      top: 0; }
+    height: 40vh;
+    margin-top: 6rem; }
+    .intro__container {
+      background-size: 120%; }
     .intro__container-watch {
-      width: 35%;
-      bottom: -10%; }
+      bottom: 0; }
     .intro__cta {
       display: none; } }
 
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-  .intro {
-    margin-top: 0; }
-    .intro__container-logo {
-      top: 0; }
-    .intro__container-watch {
-      width: 50%; } }
+@media screen and (max-width: 376px) {
+  .intro__container-watch {
+    width: 55%;
+    bottom: 5%; } }
 
 /* HERO SECTION */
 .hero {
@@ -667,6 +672,8 @@ header {
     padding: 3rem 9rem; } }
 
 @media screen and (min-width: 320px) and (max-width: 769px) {
+  .how-contribute h2 {
+    font-size: 2.2rem; }
   .how-contribute__description {
     padding: 3rem 3rem; }
   .how-contribute img {
@@ -770,7 +777,7 @@ header {
       padding: 0rem; }
       .why-contribute__title h2 {
         padding: 0.8rem 3.95rem;
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 113%; }
       .why-contribute__title img {
         margin-top: -1rem;
@@ -860,9 +867,11 @@ header {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .team {
     padding: 7rem 0; }
+    .team h2 {
+      font-size: 2.2rem; }
     .team p {
       width: 90vw;
-      font-size: 2.2rem; }
+      font-size: 1.6rem; }
     .team__members {
       flex-direction: column;
       padding: 3rem 0; }
@@ -916,7 +925,7 @@ header {
   flex-direction: column;
   padding: 15rem 0; }
   .thank-section__final-logo {
-    padding-bottom: 3rem; }
+    margin-bottom: 3rem; }
   .thank-section p {
     font-size: 1.6rem;
     font-weight: 400;
@@ -930,8 +939,13 @@ header {
     padding-right: 0rem; } }
 
 @media only screen and (min-width: 320px) and (max-width: 1280px) {
-  .thank-section p {
-    padding: 0 10rem 2rem 10rem; } }
+  .thank-section {
+    padding: 12rem 0; }
+    .thank-section__final-logo {
+      margin-bottom: 6rem; }
+    .thank-section p {
+      padding: 0 7rem 2rem 7rem;
+      text-wrap: pretty; } }
 
 @media only screen and (min-width: 1440px) {
   .thank-section p {
@@ -980,9 +994,10 @@ header {
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .join-us-section {
-    padding: 3rem; }
+    padding: 3rem;
+    gap: 3rem; }
     .join-us-section p {
-      padding: 0 5rem 5rem 5rem;
+      padding: 0 3rem 5rem 3rem;
       line-height: 2.5rem; } }
 
 @media only screen and (min-width: 500px) and (max-width: 768px) {
