@@ -148,6 +148,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 769px) {
   .how-contribute {
+    h2 {
+      font-size: 2.2rem; // Changed h2 size to match the rest
+    }
     &__description {
       padding: 3rem 3rem;
     }

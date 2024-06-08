@@ -1,8 +1,7 @@
 .intro {
     display: flex;
     align-items: center;
-    margin-top: 9rem; 
- height: 100vh;
+    height: 100vh;
     width: 100%;
 
     &__container {
@@ -11,21 +10,19 @@
       flex-direction: row;
       align-items: center;
       width: 100%;
+      height: 40vh;
+      background-image: url("../assets/logo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
       position: relative;
-    }
-  
-    &__container-logo {
-      width: clamp(256px, 100%, 1072px);
-      height: auto;
-      position: relative;
-      top: -10rem;
     }
   
     &__container-watch {
       position: absolute;
       right: 0;
-      bottom: -40%;
-      width: clamp(126px, 100%, 496px);
+      bottom: -75%;
+      width: clamp(164px, 100%, 572px);
       height: auto;
     }
     &__cta {
@@ -61,30 +58,42 @@
     }
   }
   
-  @media only screen and (max-width: 769px) {
+  @media screen and (max-width: 1025px) {
     .intro {
-     height: 30vh;
-      &__container-logo {
-        top: 0;
+      &__container-watch {
+        bottom: -50%; // Adjust watch position for smaller screens
+        width: 50%; // Adjust watch size for smaller screens
+      } 
+    }
+  }
+  @media screen and (max-width: 769px) {
+    .intro {
+      &__container-watch {
+        bottom: -25%;
+      }
+    }
+  }
+  @media screen and (max-width: 426px) {
+    .intro {
+      height: 40vh;
+      margin-top: 6rem;
+
+      &__container {
+        background-size: 120%; // Adjust background size for smaller screens
       }
       &__container-watch {
-          width: 35%;
-          bottom: -10%;
+        bottom: 0; 
       }
-      &__cta {
+      &__cta{
         display: none;
       }
     }
   }
-  
-  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+  @media screen and (max-width: 376px) {
     .intro {
-      margin-top: 0;
-      &__container-logo {
-        top: 0;
-      }
       &__container-watch {
-          width: 50%;
+        width: 55%; 
+        bottom: 5%
       }
     }
   }
