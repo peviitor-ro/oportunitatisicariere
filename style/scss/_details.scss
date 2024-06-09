@@ -358,6 +358,13 @@
         gap: 1.2rem;
         align-items: start;
 
+        & img {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
         .contact__name,
         .contact__person {
           font-weight: 700;

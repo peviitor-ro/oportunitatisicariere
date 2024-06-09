@@ -38,8 +38,8 @@
     width: 100%;
     max-width: 110rem;
     height: auto;
-    position: static !important; 
-    display: flex !important; 
+    position: static !important;
+    display: flex !important;
 
     .swiper-wrapper {
       .swiper-slide {
@@ -107,6 +107,8 @@
 
     img {
       width: 25rem;
+      height: 25rem;
+      object-fit: cover;
     }
 
     .how-contribute__job__text {

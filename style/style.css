@@ -625,6 +625,9 @@ header {
 }
 .how-contribute__job img {
   width: 25rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute__job .how-contribute__job__text {
   display: flex;
@@ -1398,6 +1401,13 @@ footer .footer-bottom h4 {
   flex-direction: column;
   gap: 1.2rem;
   align-items: start;
+}
+.jd__container .jd__body .about .contact img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact__name,
 .jd__container .jd__body .about .contact .contact__person {
