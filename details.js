@@ -20,19 +20,20 @@ document.addEventListener("DOMContentLoaded", function () {
 function populateJobDetails(jobDetails) {
   document.querySelector(".title").textContent = jobDetails.title;
   document.querySelector(".employer").textContent += jobDetails.employer;
-  document.querySelector(".departament").textContent += jobDetails.departament;
+  document.querySelector(".departament").textContent += jobDetails.department;
   document.querySelector(".location").textContent = jobDetails.location;
-  document.querySelector(".workingHours").textContent = jobDetails.workingHours;
   document.querySelector(".jobType").textContent = jobDetails.jobType;
   document.querySelector(".experience").textContent = jobDetails.experience;
-  document.querySelector(".postedAt").textContent = jobDetails.postedAt;
   document.querySelector(".salary").textContent = jobDetails.salary;
   document.getElementById("jd").textContent = jobDetails.jobDescription;
 
   populateList("responsabilities", jobDetails.responsabilities);
   populateList("demands", jobDetails.demands);
-  populateList("offerings", jobDetails.oferings);
+  populateList("offerings", jobDetails.offerings);
   populateList("generalInfo", jobDetails.generalInfo);
+
+  // const recruiterPhoto = document.getElementById("recruiter-photo");
+  // recruiterPhoto.src = jobDetails.aboutEmployer.photo;
 
   document.getElementById("recruiter-photo").src =
     jobDetails.aboutEmployer.photo;
@@ -42,7 +43,6 @@ function populateJobDetails(jobDetails) {
     jobDetails.aboutEmployer.title;
   document.getElementById("phone").textContent +=
     jobDetails.aboutEmployer.phone;
-  document.getElementById("fax").textContent += jobDetails.aboutEmployer.fax;
   document.getElementById("email").textContent +=
     jobDetails.aboutEmployer.email;
   document.getElementById("address").textContent +=
