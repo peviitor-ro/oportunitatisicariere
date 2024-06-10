@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -67,23 +67,31 @@
               <a href="#team">Echipa</a>
             </li>
             <li>
-              <button class="join-btn btn--green">Alătură-te</button>
+              <button
+                onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
+                class="join-btn btn--green"
+              >
+                Alătură-te
+              </button>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="hero__container">
-        <img
+      <section class="intro">
+        <div class="intro__container">
+          <!-- <img
           src="./assets/logo-main.svg"
           alt="asociatia oportunitati si cariere"
-          class="hero__container-logo"
-        />
-        <img
-          src="./assets/watch-acum.png"
-          alt="watch image saying now"
-          class="hero__container-watch"
-        />
-      </div>
+          class="intro__container-logo"
+          /> -->
+          <img
+            src="./assets/watch-acum.png"
+            alt="watch image saying now"
+            class="intro__container-watch"
+          />
+        </div>
+        <a href="#hero" class="intro__cta"></a>
+      </section>
       <!-- <img
                 src="./assets/hero-first.png"
                 alt="keyboard and watch with logo"
@@ -91,18 +99,28 @@
             /> -->
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__content">
           <h1 class="hero__content__title">
             Construiește-ți cariera în IT acum!
           </h1>
-          <h3 class="hero__content__description">
-            Suntem o comunitate pasionata de IT, in care te poti dezvolta
-            personal si profesional. Hai sa contribuim impreuna la motorul de
-            cautare locuri de munca
-            <a href="#">peviitor.ro</a>.
-          </h3>
-          <button class="hero__content__btn">Vreau să fiu voluntar!</button>
+          <div class="hero__content__description">
+            <h3>
+              Suntem o comunitate pasionata de IT, in care te poti dezvolta
+              personal si profesional.
+            </h3>
+
+            <h3>
+              Hai sa contribuim impreuna la motorul de cautare locuri de munca
+              <a href="#">peviitor.ro</a>.
+            </h3>
+          </div>
+          <a
+            class="hero__content__btn"
+            href="https://discord.gg/KPMkdUfQNu"
+            target="_blank"
+            >Vreau să fiu voluntar!</a
+          >
         </div>
       </section>
       <section id="our-mission" class="our-mission">
@@ -136,11 +154,10 @@
               </p>
               <img src="./assets/arrow-right-iframe.svg" alt="right arrow" />
             </div>
+            <!-- iframe reason for white gap on smaller tablets and phones -->
             <div class="search-engine">
               <iframe
                 src="https://peviitor.ro/"
-                width="700"
-                height="550"
                 frameborder="0"
                 scrolling="yes"
                 allowfullscreen
@@ -294,6 +311,15 @@
                   alt="github icon"
                 />
               </a>
+              <a
+                href="https://discord.com/users/784091439993847870"
+                target="_blank"
+              >
+                <img
+                  src="./assets/social-media-icons/discord.svg"
+                  alt="github icon"
+                />
+              </a>
             </div>
           </div>
           <div class="team__member">
@@ -317,6 +343,15 @@
               <a href="https://github.com/irina-adam" target="_blank">
                 <img
                   src="./assets/social-media-icons/github_icon.svg"
+                  alt="github icon"
+                />
+              </a>
+              <a
+                href="https://discord.com/users/1158427820050088089"
+                target="_blank"
+              >
+                <img
+                  src="./assets/social-media-icons/discord.svg"
                   alt="github icon"
                 />
               </a>
@@ -345,6 +380,15 @@
                   alt="github icon"
                 />
               </a>
+              <a
+                href="https://discord.com/users/795619745063108650"
+                target="_blank"
+              >
+                <img
+                  src="./assets/social-media-icons/discord.svg"
+                  alt="github icon"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -369,8 +413,11 @@
       </section>
       <section class="join-us-section">
         <h2>
-          Ești pregătit să te alături echipei noastre de voluntari în IT? Hai să
-          ne cunoaștem!
+          Ești pregătit să te alături echipei noastre de voluntari?
+          <!-- Removed "în IT" for better text wraping-->
+          <!-- Added break for better title wrapping -->
+          <br />
+          Hai să ne cunoaștem!
         </h2>
         <p>
           Cu siguranță, te-am convins că voluntariatul în acest proiect este o
@@ -378,9 +425,13 @@
           și de a dobândi experiență practică într-un mediu colaborativ și
           stimulant. Te așteptăm cu brațele deschise în echipa noastră!
         </p>
-        <button type="submit" class="join-us-section__button">
+        <a
+          class="join-us-section__button"
+          href="https://discord.gg/KPMkdUfQNu"
+          target="_blank"
+        >
           Fii parte din echipa noastră!
-        </button>
+        </a>
       </section>
     </main>
     <footer>
@@ -425,7 +476,7 @@
             </a>
           </li>
           <li>
-            <a href="https://discord.gg/QDNeNaRt" target="_blank">
+            <a href="https://discord.gg/KPMkdUfQNu" target="_blank">
               <img src="./assets/social-media-icons/discord.svg" alt="" />
             </a>
           </li>

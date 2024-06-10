@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 13.5rem;
+  padding: 0 6rem;
   padding-bottom: 14rem;
 
   &__content {
@@ -24,13 +24,19 @@
 
     &__details {
       display: flex;
-      align-items: center;
-      gap: 12.4rem;
-
-      .description {
-        width: 47.5rem;
-        position: relative;
-
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+    
+      .description,
+      .search-engine {
+        flex: 1 1 48%; 
+        min-height: fit-content;
+        box-sizing: border-box;
+        padding: 1rem; 
+        margin: 0 auto;
+    
         p {
           font-size: 1.6rem;
           font-weight: 400;
@@ -38,22 +44,43 @@
           text-align: left;
           margin-bottom: 1.8rem;
         }
-
+      }
+    
+      .description {
+        position: relative;
         img {
           transform: rotate(180deg);
           position: absolute;
           right: 0;
+          bottom: 0;
         }
       }
-
+    
       .search-engine {
-        width: 52rem;
-        height: 37.5rem;
-        padding: 1rem;
-
-        & iframe {
-          transform: scale(0.75);
-          transform-origin: 0 0;
+        iframe {
+          width: 100%;
+          height: 380px;
+          // transform: scale(1, 0.9);  
+          // transform-origin: 0 0;
+          margin: 0 auto;
+        }
+      }
+    
+      @media (max-width: 769px) {
+        .description,
+        .search-engine {
+          flex: 1 1 100%; 
+          max-width: 100%; 
+          padding: 1rem 0; 
+        }
+    
+        .search-engine {
+          height: auto; 
+    
+          iframe {
+            transform: scale(1); 
+            transform-origin: center;
+          }
         }
       }
     }
@@ -62,6 +89,7 @@
 
 @media only screen and (max-width:#{$phone-size}) {
   .our-mission {
+    padding: 0 1rem;
     margin-bottom: 30rem;
 
     &__content {
@@ -87,16 +115,6 @@
             display: none;
           }
         }
-
-        .search-engine {
-          width: 30rem;
-          height: 0;
-          padding: 0;
-
-          iframe {
-            width: 43rem;
-          }
-        }
       }
     }
   }
@@ -104,7 +122,8 @@
 
 @media only screen and (min-width:#{$phone-size})  and (max-width:#{$tablet-size}) {
   .our-mission {
-    margin-bottom: 32rem;
+    padding: 0 1rem;
+    margin-bottom: 6rem;
 
     &__content {
       &__title h2 {
@@ -127,16 +146,6 @@
 
           img {
             display: none;
-          }
-        }
-
-        .search-engine {
-          width: 30rem;
-          height: 0;
-          padding: 0;
-
-          iframe {
-            width: 43rem;
           }
         }
       }
@@ -145,7 +154,7 @@
 }
 @media screen and (min-width:650px) and (max-width:#{$tablet-size}) {
   .our-mission {
-    margin-bottom: 36rem;
+    margin-bottom: 9rem;
 
     &__content {
       &__title h2 {
@@ -170,35 +179,20 @@
             display: none;
           }
         }
-
-        .search-engine {
-          width: 30rem;
-          height: 0;
-          padding: 0;
-
-          iframe {
-            width: 80vw;
-          }
-        }
       }
     }
   }
 }
 
-@media only screen and (min-width:#{$tablet-size}) and (max-width:#{$laptop-size}) {
+@media only screen and (max-width: 920px) {
   .our-mission {
     &__content {
       &__details {
         display: block;
 
         .description {
-          margin-left: 40px;
-
           img {
             display: none;
-          }
-          iframe {
-            width: 80vw;
           }
         }
       }
@@ -208,7 +202,7 @@
 
 @media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}) {
   .our-mission {
-    margin-bottom: 50rem;
+    // margin-bottom: 50rem;
 
     &__content {
       &__details {

@@ -14,6 +14,11 @@
   background-size: cover;
   background-position: center bottom;
 
+  &__container-logo{
+    width: 100vw;
+    height: auto;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -29,15 +34,15 @@
     }
 
     &__description {
+      & h3 {
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 2.8rem;
       text-align: center;
-      padding: 0 37rem;
-
-      a {
-        font-weight: bold;
-        color: $green-mint;
+        & a {
+          font-weight: bold;
+          color: $green-mint;
+        }
       }
     }
 
@@ -55,6 +60,128 @@
         transition: all 0.3s;
         background-color: $dark-mint;
       }
+    }
+  }
+}
+
+
+@media screen and (min-width: 958px) and (max-width: $laptop-size) { 
+  .hero {
+    padding: 12rem 0rem 31rem 0rem; 
+    &__content {
+      gap: 3rem;
+
+      &__title {
+        font-size: 3.8rem;
+        font-weight: 500;
+        line-height: 4.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 958px) {    
+    .hero {
+      padding: 12rem 8rem 20rem 8rem;    
+      &__content {
+        gap: 2.8rem;
+  
+        &__title {
+          font-size: 3.4rem;
+          line-height: 4rem;
+        }
+    
+        &__description {
+          & h3 {
+          font-size: 1.6rem;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 800px){  
+  .hero {
+    padding: 7.2rem 5rem 18rem 5rem;
+    background-size: 140% 130%;
+    background-position: right 39% bottom;
+    filter: brightness(109%);
+
+    &__content {
+      gap: 2rem;
+
+      &__title {
+        padding: 0rem 0.1rem;
+        font-size: 2.6rem;
+        line-height: 112%;
+      }
+
+      &__description {
+        text-align: center;
+        & h3 {
+          font-size: 1.6rem; 
+          line-height: 2.2rem;
+          display: inline;
+        }
+      }
+
+      &__btn {
+        padding: 1.2rem 2.4rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $phone-size) and (max-width: 360px){  
+  .hero {
+    padding: 4.2rem 3.2rem 16rem 3.2rem;
+    background-size: 270% 130%;
+    background-position: right 18% bottom -1.5rem;
+    filter: brightness(108%);
+
+    &__content {
+      gap: 2rem;
+
+      &__title {
+        padding: 0rem 2rem; 
+        font-size: 2.2rem;
+        line-height: 112%;
+      }
+
+      &__description {
+        text-align: center;
+        padding: 0.3rem;
+        & h3 {
+          font-size: 1.6rem; 
+          line-height: 2.2rem;
+          display: inline;
+        }
+      }
+
+      &__btn {
+        padding: 1.2rem 2.4rem;
+        border-radius: 0.8rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $phone-size) {  
+  .hero {
+    padding: 4.2rem 3rem 16rem 3rem;
+    background-size: 280% 150%;
+    background-position: bottom -3.6rem right -11.4rem;
+
+    &__content {
+      &__title {
+        padding: 0rem 2.4rem;
+        font-size: 2rem;
+      }
+
     }
   }
 }

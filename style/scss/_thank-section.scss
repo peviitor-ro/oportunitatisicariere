@@ -7,7 +7,7 @@
   padding: 15rem 0;
 
   &__final-logo {
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   & p {
@@ -16,5 +16,35 @@
     line-height: 2.2rem;
     padding-left: 42rem;
     padding-right: 42rem;
+  }
+}
+
+@media only screen and (max-width:#{$phone-size}) {
+  .thank-section {
+    & p {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+}
+
+@media only screen and (min-width:#{$phone-size}) and (max-width:#{$desktop-size}) {
+  .thank-section {
+    padding: 12rem 0; // Adjust padding acording to the margin of the logo
+    &__final-logo {
+      margin-bottom: 6rem; // Increase gap between logo and text
+    }
+    & p {
+      padding: 0 7rem 2rem 7rem; // X axis padding for better text wrap
+      text-wrap: pretty; // Prevent one word/row
+    }
+  }
+}
+
+@media only screen and (min-width:#{$desktop-xxl-size}) {
+  .thank-section {
+    & p {
+      line-height: 2.4rem;
+    }
   }
 }

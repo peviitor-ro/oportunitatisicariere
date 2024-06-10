@@ -1,15 +1,21 @@
 /* FOOTER SECTION */
 footer {
-  padding: 11.2rem 22rem 2.7rem 22rem;
+  padding: 11.2rem 8rem 3.2rem 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 5.2rem;
 
   // Footer navigation links inherit styles from header nav links to avoid duplication.
 
   .footer-navigation {
-    padding-bottom: 5.65rem;
+    & nav {
+      background-color: white;
+      & ul {
+        background-color: white;
+      }
+    }
   }
 
   hr {
@@ -18,7 +24,6 @@ footer {
     border-top: 1px solid $black;
     width: 100%;
     max-width: 100rem;
-    margin-bottom: 5.5rem;
   }
 
   .footer-social {
@@ -29,7 +34,6 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 2.4rem;
-      margin-bottom: 5rem;
 
       li {
         cursor: pointer;
@@ -43,6 +47,7 @@ footer {
       li a img:hover {
         filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
           brightness(85%) contrast(77%);
+        transition: filter 0.3s ease;
       }
     }
   }
@@ -50,12 +55,11 @@ footer {
   .footer-bottom {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 
     p {
       padding: 1rem;
-      font-size: 1.9rem;
+      font-size: 1.8rem;
     }
 
     h4 {
@@ -75,10 +79,196 @@ footer {
   img {
     width: 5rem;
     height: 5rem;
+    transition: all 0.3s ease;
   }
 
   img:hover {
     filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
       brightness(85%) contrast(77%);
+  }
+}
+
+// Mobile size
+@media (max-width: $phone-size) {
+  footer {
+    padding: 3.2rem 1.4rem;
+    gap: 2.4rem;
+
+    hr {
+      width: 100%;
+      max-width: 22rem;
+    }
+
+    .footer-bottom {
+      p {
+        font-size: 1.4rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+    }
+
+    .footer-social {
+      &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.1rem 2.4rem;
+        max-width: 14.8rem;
+
+        li {
+          a {
+            img {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-navigation {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      li {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .top-redirect-btn {
+    right: 2vw;
+    bottom: 0vh;
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+}
+
+// Tablet size
+@media (min-width: 321px) and (max-width: $tablet-size) {
+  footer {
+    padding: 3.2rem 2.4rem;
+    gap: 3.2rem;
+
+    hr {
+      max-width: 52rem;
+    }
+
+    .footer-bottom {
+      p {
+        font-size: 1.4rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+    }
+
+    .footer-social {
+      &__links {
+        max-width: 100%;
+        gap: 1.4rem;
+
+        li {
+          a {
+            img {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-navigation {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      li {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .top-redirect-btn {
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+}
+
+// Laptop size
+@media (min-width: 769px) and (max-width: $laptop-size) {
+  footer {
+    padding: 10rem 8.4rem 3.2rem 8.4rem;
+
+    hr {
+      max-width: 100rem;
+    }
+    .footer-social {
+      &__links {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 3.2rem;
+
+        li {
+          cursor: pointer;
+        }
+
+        li a img {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+
+    .footer-bottom {
+      padding-bottom: 3.2rem;
+
+      p {
+        padding: 1.6rem;
+        font-size: 1.6rem;
+      }
+
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .footer-navigation {
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .top-redirect-btn {
+    right: 2vw;
+    bottom: 2vh;
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 }

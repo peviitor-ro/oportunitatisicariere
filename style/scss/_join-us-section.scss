@@ -38,3 +38,62 @@
     }
   }
 }
+
+@media only screen and (max-width:#{$phone-size}) {
+  .join-us-section {
+    padding: 3rem;
+
+    & p {
+      padding: 0rem;
+      line-height: 2.5rem;
+    }
+    & button {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-width:#{$phone-size}) and (max-width:500px) {
+  .join-us-section {
+    padding: 3rem;
+    gap: 3rem; 
+
+    & p {
+      padding: 0 3rem 5rem 3rem; // Reduced X padding for better text wrapping
+      line-height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width:500px) and (max-width:#{$tablet-size}) {
+  .join-us-section {
+    padding: 3rem;
+
+    & p {
+      padding: 0 10rem 5rem 10rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width:#{$tablet-size}) and (max-width:#{$laptop-size}) {
+  .join-us-section {
+    padding: 5rem;
+
+    & p {
+      padding: 0 15rem 5rem 15rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}) {
+  .join-us-section {
+    padding: 5rem;
+
+    & p {
+      padding: 0 30rem 2rem 30rem;
+      line-height: 2.2rem;
+    }
+  }
+}
