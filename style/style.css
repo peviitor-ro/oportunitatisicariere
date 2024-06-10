@@ -471,6 +471,9 @@ header {
     align-items: flex-start;
     justify-content: center;
     gap: 1rem; }
+    .our-mission__content__details a {
+      font-weight: bold;
+      color: #2f7973; }
     .our-mission__content__details .description,
     .our-mission__content__details .search-engine {
       flex: 1 1 48%;
@@ -911,6 +914,7 @@ header {
       flex-direction: column;
       padding: 3rem 0; }
     .team__member {
+      width: 30rem;
       display: grid;
       grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(3, 4rem);
@@ -1105,7 +1109,8 @@ footer {
   position: fixed;
   z-index: 99;
   right: 2vw;
-  bottom: 2vh; }
+  bottom: 2vh;
+  opacity: 0; }
   .top-redirect-btn img {
     width: 5rem;
     height: 5rem;
