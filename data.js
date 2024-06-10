@@ -3,7 +3,7 @@ export const data = [
   {
     id: "onboarding-volunteer",
     title: "Onboarding Project Volunteer",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Human Resources Department",
     location: "România",
     jobType: "Telemunca",
@@ -20,7 +20,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: Entry-Level",
+      "Experiență: Entry-Level",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -51,11 +51,11 @@ export const data = [
   {
     id: "mobile-tester",
     title: "Mobile Tester",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Quality Assurance Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 1-5 ani / Mid Level",
+    experience: "Experiență 1-5 ani / Mid Level",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -68,7 +68,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: mid, 1-5 ani",
+      "Experiență: mid, 1-5 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -100,11 +100,11 @@ export const data = [
   {
     id: "mobile-developer",
     title: "Mobile Developer",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Development Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 2-7 ani / Mid-Level",
+    experience: "Experiență 2-7 ani / Mid-Level",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -117,7 +117,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: mid-level, 2-7 ani",
+      "Experiență: mid-level, 2-7 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -150,11 +150,11 @@ export const data = [
   {
     id: "usability-tester",
     title: "Usability Tester",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Quality Assurance Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 1-5 ani / Mid Level",
+    experience: "Experiență 1-5 ani / Mid Level",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -167,7 +167,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: mid, 1-5 ani",
+      "Experiență: mid, 1-5 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -199,11 +199,11 @@ export const data = [
   {
     id: "ux-expert",
     title: "UX Expert",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Design Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 3-10 ani / Mid-Senior / Senior Level",
+    experience: "Experiență 3-10 ani / Mid-Senior / Senior Level",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -216,7 +216,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: mid-senior, 3-10 ani",
+      "Experiență: mid-senior, 3-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -249,11 +249,11 @@ export const data = [
   {
     id: "test-lead",
     title: "Test Lead",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Quality Assurance Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 3-10 ani / Mid-Senior Level",
+    experience: "Experiență 3-10 ani / Mid-Senior Level",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -266,7 +266,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: mid-senior, 3-10 ani",
+      "Experiență: mid-senior, 3-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -299,11 +299,11 @@ export const data = [
   {
     id: "lead-developer",
     title: "Lead Developer",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Development Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 3-10 ani / Mid-Senior Level",
+    experience: "Experiență 3-10 ani / Mid-Senior Level",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -316,7 +316,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: mid-senior, 3-10 ani",
+      "Experiență: mid-senior, 3-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -329,7 +329,7 @@ export const data = [
       "Posibilitatea de a contribui intr-un proiect OPEN SOURCE",
     ],
     demands: [
-      "Experienta anterioara ca Developer (frontend, backend) şi cunoştinţe de arhitectura software",
+      "Experiență anterioara ca Developer (frontend, backend) şi cunoştinţe de arhitectura software",
       "Abilități puternice de programare și rezolvare a problemelor",
       "Cunoașterea și înțelegerea tehnicilor de dezvoltare Agile",
       "Experiență cu limbajele de programare relevante pentru proiect",
@@ -349,11 +349,11 @@ export const data = [
   {
     id: "assistant-manager",
     title: "Assistant Manager",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Administrative Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -366,7 +366,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: Junior-Senior, 0-10 ani",
+      "Experiență: Junior-Senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -403,11 +403,11 @@ export const data = [
   {
     id: "event-planner",
     title: "Event Planner",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Marketing Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -420,7 +420,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -453,11 +453,11 @@ export const data = [
   {
     id: "pr-specialist",
     title: "PR Specialist",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Communications Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -470,7 +470,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -503,11 +503,11 @@ export const data = [
   {
     id: "fundraiser",
     title: "Fundraiser",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Fundraising Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -520,7 +520,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: Junior-Senior, 0-10 ani",
+      "Experiență: Junior-Senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -554,11 +554,11 @@ export const data = [
   {
     id: "marketing-specialist",
     title: "Marketing Specialist",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Marketing Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -571,7 +571,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -604,11 +604,11 @@ export const data = [
   {
     id: "hr",
     title: "HR",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "Administrative Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -621,7 +621,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -654,11 +654,11 @@ export const data = [
   {
     id: "application-support-engineer",
     title: "Application Support Engineer",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -671,7 +671,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -704,11 +704,11 @@ export const data = [
   {
     id: "product-owner",
     title: "Product Owner",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -721,7 +721,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -755,11 +755,11 @@ export const data = [
   {
     id: "delivery-manager",
     title: "Delivery Manager",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -772,7 +772,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -804,11 +804,11 @@ export const data = [
   {
     id: "project-manager",
     title: "Project Manager",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -821,7 +821,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -854,11 +854,11 @@ export const data = [
   {
     id: "business-analyst",
     title: "Business Analyst",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -871,7 +871,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -907,11 +907,11 @@ export const data = [
   {
     id: "devops-github",
     title: "DevOPS for GitHub",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -924,7 +924,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -961,11 +961,11 @@ export const data = [
   {
     id: "devops-apache-solr",
     title: "DevOPS with Apache SOLR",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -978,7 +978,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1024,11 +1024,11 @@ export const data = [
   {
     id: "devops",
     title: "DevOPS",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1041,7 +1041,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1085,11 +1085,11 @@ export const data = [
   {
     id: "backend-developer-php",
     title: "Backend Developer with PHP",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1102,7 +1102,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1145,11 +1145,11 @@ export const data = [
   {
     id: "automation-tester-playwright",
     title: "Automation Tester with Playwright",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1162,7 +1162,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1206,11 +1206,11 @@ export const data = [
   {
     id: "automation-tester-selenium",
     title: "Automation Tester with Selenium",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1223,7 +1223,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1267,11 +1267,11 @@ export const data = [
   {
     id: "automation-tester-javascript",
     title: "Automation Tester with JavaScript",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1284,7 +1284,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1328,11 +1328,11 @@ export const data = [
   {
     id: "automation-tester-php",
     title: "Automation Tester with PHP",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1345,7 +1345,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1389,11 +1389,11 @@ export const data = [
   {
     id: "automation-tester-java",
     title: "Automation Tester with JAVA",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1406,7 +1406,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1450,11 +1450,11 @@ export const data = [
   {
     id: "automation-tester-python",
     title: "Automation Tester with Python",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1467,7 +1467,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1511,11 +1511,11 @@ export const data = [
   {
     id: "manual-tester",
     title: "Manual Tester",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1528,7 +1528,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1570,11 +1570,11 @@ export const data = [
   {
     id: "frontend-developer",
     title: "Frontend Developer",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1587,7 +1587,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1634,11 +1634,11 @@ export const data = [
   {
     id: "data-scientist",
     title: "Data Scientist",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1651,7 +1651,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1700,11 +1700,11 @@ export const data = [
   {
     id: "data-analyst",
     title: "Data Analyst",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-10 ani / Junior-Senior",
+    experience: "Experiență 0-10 ani / Junior-Senior",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1717,7 +1717,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior-senior, 0-10 ani",
+      "Experiență: junior-senior, 0-10 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1773,11 +1773,11 @@ export const data = [
   {
     id: "data-scraper",
     title: "Data Scraper",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-3 ani / Internship / Practica",
+    experience: "Experiență 0-3 ani / Internship / Practica",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1790,7 +1790,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior, 0-3 ani",
+      "Experiență: junior, 0-3 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [
@@ -1846,11 +1846,11 @@ export const data = [
   {
     id: "web-scraper",
     title: "Web Scraper",
-    employer: "ASOCIATIA OPORTUNITATI SI CARIERE",
+    employer: "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     department: "IT Department",
     location: "România",
     jobType: "Telemunca",
-    experience: "Experienta 0-3 ani / Internship / Practica",
+    experience: "Experiență 0-3 ani / Internship / Practica",
     salary: "voluntar",
     aboutEmployer: {
       photo: "./assets/sebi-pic.png",
@@ -1863,7 +1863,7 @@ export const data = [
     generalInfo: [
       "Durata: nedeterminata",
       "Tipul de job: norma intreaga",
-      "Experienta: junior, 0-3 ani",
+      "Experiență: junior, 0-3 ani",
       "Locatia: 100% Remote",
     ],
     offerings: [

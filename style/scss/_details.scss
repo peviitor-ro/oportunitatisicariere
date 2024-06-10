@@ -23,6 +23,11 @@
     margin-bottom: 2rem;
   }
 }
+.responsabilities h2,
+.offerings h2,
+.demands h2 {
+  padding-bottom: 1.2rem;
+}
 
 .back__wrapper {
   margin: 14rem 2rem 2rem 2rem;
@@ -221,7 +226,7 @@
         padding: 1.2rem 3.2rem;
         color: $white;
         font-size: 1.8rem;
-        font-weight: 500;
+        font-weight: 600;
         width: 100%;
         align-self: flex-end;
         cursor: pointer;
@@ -233,10 +238,6 @@
 
         @media (min-width: $tablet-size) {
           width: auto;
-        }
-
-        @media (min-width: $laptop-size) {
-          height: 5rem;
         }
       }
     }
@@ -403,8 +404,7 @@
       padding: 1.2rem 3.2rem;
       color: $white;
       font-size: 1.8rem;
-      font-weight: 500;
-      height: 5rem;
+      font-weight: 600;
       align-self: flex-end;
       cursor: pointer;
 
