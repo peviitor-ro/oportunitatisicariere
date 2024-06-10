@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
   const navLinks = document.querySelectorAll(".nav__links__nav a");
- 
 
   function highlightNavLink() {
     const scrollPosition = window.scrollY;
@@ -24,14 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function removeNavBottomBorder(){
+  function removeNavBottomBorder() {
     const scrollPosition = window.scrollY;
-    const navbar = document.querySelector('.nav');
+    const navbar = document.querySelector(".nav");
 
-    if(scrollPosition > 50){
-      navbar.classList.add('nav-bottom-border');
-    }else{
-      navbar.classList.remove('nav-bottom-border');
+    if (scrollPosition > 50) {
+      navbar.classList.add("nav-bottom-border");
+    } else {
+      navbar.classList.remove("nav-bottom-border");
     }
   }
 
@@ -46,49 +45,58 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Scroll-to-top button
-const scrollBtn = document.querySelector('.top-redirect-btn');
+const scrollBtn = document.querySelector(".top-redirect-btn");
 
 const toggleArrowVisibility = () => {
-    if (window.scrollY > 500) {
-        scrollBtn.style.opacity = '1';
-    } else {
-        scrollBtn.style.opacity = '0';
-    }
+  if (window.scrollY > 500) {
+    scrollBtn.style.opacity = "1";
+  } else {
+    scrollBtn.style.opacity = "0";
+  }
 };
 
-window.addEventListener('scroll', toggleArrowVisibility);
+window.addEventListener("scroll", toggleArrowVisibility);
 
-document.querySelector('.close-menu-icon').classList.add('hidden');
-function showMenuContent(){
-  const navLinksList = document.querySelector('.nav__links__list');
-  const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
-  const closeIcon = document.querySelector('.close-menu-icon');
+document.querySelector(".close-menu-icon").classList.add("hidden");
+function showMenuContent() {
+  const navLinksList = document.querySelector(".nav__links__list");
+  const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
+  const closeIcon = document.querySelector(".close-menu-icon");
 
-  navLinksList.classList.add('transition-effect');
-  navLinksList.classList.add('show')
-  hamburgerIcon.classList.add('hidden');
-  closeIcon.classList.remove('hidden');
-  closeIcon.classList.add('visible');
+  navLinksList.classList.add("transition-effect");
+  navLinksList.classList.add("show");
+  hamburgerIcon.classList.add("hidden");
+  closeIcon.classList.remove("hidden");
+  closeIcon.classList.add("visible");
 
-  navLinksList.addEventListener('click', function () {
-    navLinksList.classList.remove('show')
-    closeIcon.classList.remove('visible')
-    closeIcon.classList.add('hidden')
-    hamburgerIcon.classList.remove('hidden')
-  })
+  navLinksList.addEventListener("click", function () {
+    navLinksList.classList.remove("show");
+    closeIcon.classList.remove("visible");
+    closeIcon.classList.add("hidden");
+    hamburgerIcon.classList.remove("hidden");
+  });
 }
 
-document.querySelector('.hamburger-menu-icon').addEventListener('click', showMenuContent);
+document
+  .querySelector(".hamburger-menu-icon")
+  .addEventListener("click", showMenuContent);
 
 function hideMenuContent() {
-  const navLinksList = document.querySelector('.nav__links__list');
-  const closeIcon = document.querySelector('.close-menu-icon');
-  const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
+  const navLinksList = document.querySelector(".nav__links__list");
+  const closeIcon = document.querySelector(".close-menu-icon");
+  const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
 
-  navLinksList.classList.remove('show')
-  closeIcon.classList.toggle('hidden');
-  closeIcon.classList.remove('visible');
-  hamburgerIcon.classList.toggle('hidden');
-
+  navLinksList.classList.remove("show");
+  closeIcon.classList.toggle("hidden");
+  closeIcon.classList.remove("visible");
+  hamburgerIcon.classList.toggle("hidden");
 }
-document.querySelector('.close-menu-icon').addEventListener('click', hideMenuContent);
+document
+  .querySelector(".close-menu-icon")
+  .addEventListener("click", hideMenuContent);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const yearSpan = document.getElementById("current-year");
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = `© ${currentYear}`;
+});

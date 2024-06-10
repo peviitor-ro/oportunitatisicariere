@@ -46,7 +46,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un voluntar dedicat pentru a se alătura echipei noastre ca responsabil cu proiectul de onboarding. Rolul va include coordonarea și gestionarea proiectului de onboarding, revizuirea și actualizarea informațiilor prezentate în acest proces, precum și definirea și urmărirea îndeplinirii sarcinilor de onboarding. Dacă sunteți organizat, atent la detalii și pasionat de crearea unei experiențe de onboarding de succes, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/onboarding.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/onboarding.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "mobile-tester",
@@ -95,7 +95,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Mobile Tester dedicat pentru a se alătura echipei noastre. Rolul va include testarea aplicațiilor mobile, colaborarea cu echipa pentru a înțelege cerințele și a dezvolta testele corespunzătoare, precum și contribuția la îmbunătățirea proceselor și practicilor noastre de testare mobile. Cunoașterea uneltelor precum Appium, Apptim constituie un avantaj. Dacă aveți experiență relevantă în testarea mobile și sunteți pasionat de calitate și eficiență, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/mobile-t.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/mobile-t.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "mobile-developer",
@@ -145,7 +145,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Mobile Developer dedicat pentru a se alătura echipei noastre. Rolul va include dezvoltarea și îmbunătățirea aplicațiilor mobile, colaborarea cu echipa pentru a înțelege cerințele și a dezvolta soluții eficiente, și contribuția la îmbunătățirea proceselor și practicilor noastre de dezvoltare mobile. Dacă aveți experiență relevantă în dezvoltare mobile și sunteți pasionat de crearea de aplicații eficiente și user-friendly, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/mobile-d.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/mobile-d.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "usability-tester",
@@ -194,7 +194,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Usability Tester dedicat pentru a se alătura echipei noastre. Rolul va include testarea utilizării produselor, colaborarea cu echipa pentru a defini planuri de testare, și comunicarea efectivă a constatărilor și recomandărilor. Dacă aveți experiență relevantă în testarea utilizării și sunteți pasionat de îmbunătățirea experienței utilizatorilor, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/usability.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/usability.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "ux-expert",
@@ -244,7 +244,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un UX Expert dedicat pentru a se alătura echipei noastre. Rolul va include crearea de interfețe și experiențe de utilizator eficiente și accesibile, utilizarea uneltelor Figma, Zeplin, Photoshop, Canva, și colaborarea cu echipa pentru a înțelege cerințele și a realiza cele mai eficace soluții de design. Dacă aveți experiență relevantă în UX Design și sunteți un expert în utilizarea diverselor unelte de design, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/ux.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/ux.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "test-lead",
@@ -294,7 +294,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Test Lead dedicat pentru a se alătura echipei noastre. Rolul va include coordonarea echipei de testare, colaborarea cu diverse echipe pentru a asigura calitatea software-ului, aplicarea și îmbunătățirea metodologiei de testare, și asigurarea că toate standardele de calitate sunt respectate. Dacă aveți experiență relevantă și sunteți pasionat de asigurarea calitatii în software development, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/test-l.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/test-l.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "lead-developer",
@@ -344,7 +344,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Lead Developer dedicat pentru a se alătura echipei noastre. Rolul va include coordonarea echipei de dezvoltare, dezvoltarea software-ului și asigurarea unei arhitecturi optimizate. Dacă aveți experiență relevanta în dezvoltarea de software și doriți să vă dezvoltati abilitatile de conducere tehnică, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/lead-dev.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/lead-dev.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "assistant-manager",
@@ -398,7 +398,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Assistant Manager dedicat pentru a se alătura echipei noastre. Rolul va include înregistrarea documentelor, pregătirea rapoartelor, redactarea propunerilor de proiecte, respectarea reglementărilor GDPR și gestionarea documentelor contabile. Dacă aveți experiență relevantă într-un rol administrativ și contabil, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/asm.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/asm.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "event-planner",
@@ -448,7 +448,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Event Planner dedicat pentru a se alătura echipei noastre. Rolul va include organizarea de evenimente de tip team- building, hackathon și promovare a proiectului 'peviitor.ro', crearea și implementarea de strategii de organizare conform bugetului și coordonarea cu echipa și voluntarii pentru derularea evenimentelor.Dacă aveți experiență relevantă și sunteți pasionat de organizarea de evenimente, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/event.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/event.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "pr-specialist",
@@ -498,7 +498,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un PR Specialist dedicat pentru a se alătura echipei noastre. Rolul va include comunicarea cu companiile și promovarea proiectului nostru principal 'peviitor.ro' către tineri, crearea și implementarea de strategii de PR, precum și promovarea prin canalele de social media respectând GDPR. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/pr.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/pr.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "fundraiser",
@@ -549,7 +549,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Fundraiser dedicat pentru a se alătura echipei noastre. Veți fi responsabil pentru colectarea declarațiilor 230, obținerea contractelor de sponsorizare, implementarea proiectelor de fonduri de tip StartONG, aplicarea pentru proiecte cu fonduri europene nerambursabile și prin ADR Nord Vest. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/fundraiser.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/fundraiser.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "marketing-specialist",
@@ -599,7 +599,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Specialist Marketing creativ și dedicat pentru a se alătura echipei noastre. Acest rol implică crearea, implementarea și monitorizarea strategiilor de marketing, cercetarea pieței și crearea de conținut atractiv pentru campaniile de marketing. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/marketing.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/marketing.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "hr",
@@ -649,7 +649,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm o persoană pentru rolul de HR pentru a se alătura echipei noastre. Această persoană se va ocupa de recrutarea, selecția voluntarilor, implementarea strategiilor de HR, gestionarea proceselor de onboarding pentru voluntarii noi. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/hr.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/hr.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "application-support-engineer",
@@ -699,7 +699,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Application Support Engineer pentru a se alătura echipei noastre. Acest rol implică furnizarea de suport tehnic pentru diversele noastre aplicații, rezolvarea problemelor tehnice, comunicarea cu echipele interne și documentarea problemelor tehnice. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/ase.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/ase.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "product-owner",
@@ -750,7 +750,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Product Owner dedicat care să fie responsabil de succesul și direcția produsului nostru. Prioritățile acestui rol vor fi propunerea strategiei de produs, colaborarea strânsă cu echipa de dezvoltare, gestionarea riscurilor și asigurarea promovării corespunzătoare a produsului. Dacă aveți abilitățile necesare și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/pro.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/pro.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "delivery-manager",
@@ -799,7 +799,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Delivery Manager pentru a coordona și gestiona livrările de proiect. Rolul va implica asigurarea că proiectele sunt livrate la timp, comunicarea eficientă cu diversele părți interesate, gestionarea riscurilor și problemelor proiectelor. Dacă aveți experiență relevantă și sunteți un gânditor analitic, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/manager.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/manager.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "project-manager",
@@ -849,7 +849,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Project Manager pentru a coordona echipa noastră de voluntari. Acest rol implică dezvoltarea și implementarea planurilor de proiect, monitorizarea progresului, comunicarea eficientă și gestionarea potențialelor riscuri. Dacă aveți experiență și pasiune pentru acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/pr-manager.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/pr-manager.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "business-analyst",
@@ -902,7 +902,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Business Analyst care să identifice, înțeleagă și definească problemele de business în cadrul organizației noastre. Dacă aveți experiență relevantă și sunteți un gânditor analitic, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/ba.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/ba.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "devops-github",
@@ -956,7 +956,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un specialist DevOPS pentru GitHub pentru a se alătura echipei noastre. Rolul presupune verificarea problemelor de securitate pe GitHub, asigurarea eligibilității licenței, organizarea repository-urilor pe GitHub, lucru în echipă, definirea unei strategii de branching eficiente. Dacă aveți abilitățile necesare și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/dev-git.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/dev-git.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "devops-apache-solr",
@@ -1019,7 +1019,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un specialist DevOPS cu Apache SOLR pentru a se alătura echipei noastre. Rolul presupune instalarea, actualizarea și upgrade-ul ultimei versiuni Apache SOLR, setarea schema.xml, verificarea corectitudinii Search, optimizarea motorului de căutare și multe altele. Dacă sunteți pasionat de acest domeniu și aveți abilitățile necesare, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/dev-ap.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/dev-ap.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "devops",
@@ -1080,7 +1080,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un specialist DevOps pentru a se alătura echipei noastre. Rolul va implica o serie de responsabilități, inclusiv realizarea de backup-restore, instalarea și configurarea environmenturilor, asistarea developerilor și testerilor, realizarea deploy-ului de cod și monitorizarea și gestionarea serverelor. Dacă aveți abilitățile necesare și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/dev-n.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/dev-n.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "backend-developer-php",
@@ -1140,7 +1140,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Backend Developer cu cunoștințe de PHP pentru a se alătura echipei noastre. Rolul implică lucrul cu API-ul nostru scris în PHP, scrierea de cod curat și eficient, identificarea și repararea defecțiunilor și colaborarea cu echipa pentru a atinge obiectivele. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/be-php.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/be-php.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "automation-tester-playwright",
@@ -1201,7 +1201,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Automation Tester cu Playwright pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/tst-p.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/tst-p.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "automation-tester-selenium",
@@ -1262,7 +1262,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Automation Tester cu Selenium pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/tst-s.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/tst-s.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "automation-tester-javascript",
@@ -1323,7 +1323,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Automation Tester cu JavaScript pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/tst-js.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/tst-js.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "automation-tester-php",
@@ -1384,7 +1384,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Automation Tester cu PHP pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/tst-php.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/tst-php.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "automation-tester-java",
@@ -1445,7 +1445,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Automation Tester cu JAVA pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/tst-java.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/tst-java.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "automation-tester-python",
@@ -1506,7 +1506,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Automation Tester cu Python pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/tst-python.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/tst-python.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "manual-tester",
@@ -1565,7 +1565,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Manual Tester pasionat pentru a se alătura echipei noastre. Ca Manual Tester, veți fi responsabil pentru derularea de teste manuale, identificarea și raportarea bug-urilor, precum și pentru colaborarea cu echipa pentru a asigura că produsul final îndeplinește cerințele. Nu este necesară experiența anterioară, dar un plus ar fi cunoașterea unor concepte de bază legate de metodologiile de testare. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/manual.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/manual.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "frontend-developer",
@@ -1629,7 +1629,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Frontend Developer pasionat pentru a se alătura echipei noastre. Veți colabora îndeaproape cu echipa noastră UX, care va oferi design-urile utilizând tool-ul Figma. Ca Frontend Developer, veți participa la dezvoltarea și îmbunătățirea platformei noastre web. Veți lucra cu cele mai noi tehnologii din domeniu și veți avea ocazia să vă dezvoltați încontinuu abilitățile tehnice. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
-    image: "./assets/roles/frontend.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/frontend.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "data-scientist",
@@ -1695,7 +1695,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Data Scientist pasionat pentru a se alătura echipei noastre. Ca Data Scientist, veți face parte din echipa de dezvoltare a proiectului https://peviitor.ro care se ocupă cu procesarea și analiza unor cantități mari de date. Veți lucra cu date complexe și veți furniza informații care vor avea un impact direct asupra deciziilor strategice ale asociației.",
-    image: "./assets/roles/data-s.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/data-s.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "data-analyst",
@@ -1768,7 +1768,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un Data Analyst care să valideze și testeze datele preluate de scraper de pe website-urile companiilor și să publice rezultatele în motorul de căutare https://peviitor.ro. Poziția este una de tip voluntariat și se adresează la orice nivel de cunoștințe: de la junior la senior, 0-10 ani experiență. Cunoașterea unui limbaj de programare, de exemplu Python, Rust, Nim, JavaScript, Java sau PHP, prezintă un mare avantaj. Munca voastră face parte din portofoliul personal și timpul petrecut în cadrul acestui proiect constituie vechime validată de către recrutori în cadrul oricărui interviu. Vă oferim concursul și susținerea unei echipe de peste 500 de voluntari care se află în diferite stadii de pregătire. Vă așteptăm să dezvoltăm împreună proiectul https://peviitor.ro. Datele reprezintă locurile de muncă active din România, iar munca voastră va ajuta pe cei care își caută un loc de muncă. Inclusiv tu poți să te folosești de munca celorlalți voluntari și toți ne vom bucura împreună de realizările întregii echipe. Agregăm toate locurile de muncă în același loc: motor de căutare locuri de muncă - peviitor.ro.",
-    image: "./assets/roles/data-a.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/data-a.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "data-scraper",
@@ -1841,7 +1841,7 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un developer care să scrie un scraper pentru preluarea locurilor de muncă de pe website-ul companiei și să îl publice în motorul de căutare https://peviitor.ro. Poziția este una de tip voluntariat și se adresează oricărui nivel de cunoștințe: de la începător la avansat. Cunoașterea unui limbaj de programare, de exemplu Python, Rust, Nim, JavaScript, JAVA sau PHP prezintă un mare avantaj. Munca voastră face parte din portofoliul personal și timpul petrecut în cadrul acestui proiect constituie vechime validată de către recrutori în cadrul oricărui interviu. Vă oferim concursul și susținerea unei echipe de peste 500 de voluntari care se află în diferite stadii de pregătire. Vă așteptăm să dezvoltăm împreună proiectul https://peviitor.ro. Datele reprezintă locurile de muncă active din România, iar munca voastră va ajuta pe cei care își caută un loc de muncă. Inclusiv tu poți să te folosești de munca celorlalți voluntari deja și toți ne vom bucura împreună de realizările întregii echipe. Agregăm toate locurile de muncă în același loc: motor de căutare locuri de muncă - peviitor.ro.",
-    image: "./assets/roles/data-scr.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/data-scr.webp", // Adaugă calea către imaginea specifică jobului
   },
   {
     id: "web-scraper",
@@ -1914,6 +1914,6 @@ export const data = [
     ],
     jobDescription:
       "Căutăm un developer care să scrie un scraper pentru preluarea locurilor de muncă de pe website-ul companiei și să îl publice în motorul de căutare https://peviitor.ro. Poziția este una de tip voluntariat și se adresează oricărui nivel de cunoștințe: de la începător la avansat. Cunoașterea unui limbaj de programare, de exemplu Python, Rust, Nim, JavaScript, JAVA sau PHP prezintă un mare avantaj. Munca voastră face parte din portofoliul personal și timpul petrecut în cadrul acestui proiect constituie vechime validată de către recrutori în cadrul oricărui interviu. Vă oferim concursul și susținerea unei echipe de peste 500 de voluntari care se află în diferite stadii de pregătire. Vă așteptăm să dezvoltăm împreună proiectul https://peviitor.ro. Datele reprezintă locurile de muncă active din România, iar munca voastră va ajuta pe cei care își caută un loc de muncă. Inclusiv tu poți să te folosești de munca celorlalți voluntari deja și toți ne vom bucura împreună de realizările întregii echipe. Agregăm toate locurile de muncă în același loc: motor de căutare locuri de muncă - peviitor.ro.",
-    image: "./assets/roles/web-s.png", // Adaugă calea către imaginea specifică jobului
+    image: "./assets/roles/web-s.webp", // Adaugă calea către imaginea specifică jobului
   },
 ];
