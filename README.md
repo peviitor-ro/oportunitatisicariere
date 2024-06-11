@@ -64,6 +64,10 @@ To understand the visual layout and design of our project, you can view the Figm
 
 Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ## Contact
 
 If you have any questions, feel free to reach out to us. We appreciate your interest and look forward to your contributions.
