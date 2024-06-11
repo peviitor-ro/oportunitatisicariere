@@ -3,6 +3,14 @@
 Welcome to the main code repository for ASOCIATIA OPORTUNITATI SI CARIERE, an open-source project dedicated to developing the main website of our NGO. This project is built using HTML5, CSS3, SASS and Javascript. As an initiative driven by volunteers, we invite you to contribute and grow with us.
 
 [![Deploy Website](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml/badge.svg)](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml)
+<div align="center">
+  
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+[![GitHub Issues](https://img.shields.io/github/issues/peviitor-ro/oportunitatisicariere.svg)](https://github.com/peviitor-ro/oportunitatisicariere/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/peviitor-ro/oportunitatisicariere.svg)](https://github.com/peviitor-ro/oportunitatisicariere/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/peviitor-ro/oportunitatisicariere/blob/main/LICENSE)
+  
+</div>
 
 ## About the Project
 
