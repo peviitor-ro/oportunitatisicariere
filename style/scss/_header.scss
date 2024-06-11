@@ -11,11 +11,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
-  background-color: $white;
+  background-color: $white-smoke;
   z-index: 99;
-  //   max-width: 1440px;
-  //   width: 100%;
-  //   width: 100vw; //Two width values conflict
   padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
   width: clamp(
     320px,
@@ -28,17 +25,46 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: auto 0;
+    position: relative;
+
 
     &__title {
+      display: none;
       font-weight: 700;
       font-size: 2rem;
       color: $black;
     }
+  & .visible-title {
+    display: block;
   }
+
+  & .img-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+  }
+  }
+
+  // Hide logo while on intro section
+}
+
+.hamburger-menu {
+  margin: auto 0 auto auto;
 }
 
 .nav-bottom-border {
-  border-bottom: 1px solid $light-white;
+  // border-bottom: 1px solid $light-white;
+  // Changed border effect to elevation effect
+  box-shadow: 
+  0 8px 5px -4px rgba(0, 0, 0, 0.2), /* Top shadow */
+  0 8px 8px -4px rgba(0, 0, 0, 0.14), /* Bottom shadow */
+  0 8px 12px -4px rgba(0, 0, 0, 0.12);   /* Top shadow */
+
 }
 
 .nav__links {
@@ -128,10 +154,7 @@ header {
       }
     }
 
-    &__logo {
-      display: block;
-      margin-top: 25px;
-    }
+
   }
 
   .hamburger-menu-icon {
@@ -168,6 +191,13 @@ header {
 @media only screen and (max-width: 768px) {
   .nav {
     display: block;
+    padding: 0 3rem;
+
+    &__logo {
+    & .img-logo {
+      display: none;
+    }
+    }
 
     &__links {
       background-color: #f3f3f3;
@@ -206,9 +236,25 @@ header {
       }
     }
 
+    // In order for the logo to be hidden until scrolling after a certain treshold
+    // Remove following &__logo part of the code
     &__logo {
       display: block;
       margin-top: 25px;
+
+      // Remove the following &__title part of the code
+      // If you want the title to show
+      &__title {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        background-image: url("../assets/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-indent: -9999px; /* Move the text off-screen */
+      }
+
     }
   }
 
@@ -284,11 +330,12 @@ header {
       }
     }
 
-    &__logo {
-      display: block;
-      margin-top: 25px;
-    }
+    // &__logo {
+    //   display: block;
+    //   margin-top: 25px;
+    // }
   }
+
 
   .hamburger-menu-icon {
     display: block;
@@ -322,6 +369,8 @@ header {
 }
 
 @media only screen and (min-width: 1023px) {
+
+
   .hamburger-menu-icon {
     display: none;
   }
@@ -348,4 +397,8 @@ header {
 
 .btn--green {
   background-color: $green-mint;
+}
+
+@media only screen and (max-width: 1025px) {
+
 }

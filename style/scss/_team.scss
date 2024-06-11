@@ -59,11 +59,11 @@ $tablet-line-height-p: 2rem;
     align-items: center;
     gap: 1.2rem;
 
-    &__desc {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
+    // &__desc {
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: 1.2rem;
+    // }
 
     &-img {
       width: 16rem;
@@ -119,15 +119,13 @@ $tablet-line-height-p: 2rem;
       flex-direction: column;
       // swtiched from row to column for narrow screens
       padding: 3rem 0; // Changed padding from 6 rem
+      gap: 4rem; // Reduce gap for a better fit on smaller screens
     }
 
     &__member {
       width: 30rem;
       display: grid;
-      grid-template-columns: repeat(
-        2,
-        auto
-      ); // Unresponsive changed from 20rem to auto
+      grid-template-columns: 12rem 18rem; // Changed from repeat(2,auto) in order fo member cards to align properly
       grid-template-rows: repeat(3, 4rem);
       row-gap: 0; // Removed row gap for narrow screens
 
