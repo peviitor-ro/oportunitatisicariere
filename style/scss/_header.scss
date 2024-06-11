@@ -13,23 +13,27 @@ header {
   position: fixed;
   background-color: $white;
   z-index: 99;
-//   max-width: 1440px;
-//   width: 100%;
-//   width: 100vw; //Two width values conflict
-padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0 
-  width: clamp(320px, 100%, 1440px); // Added width clamp to remove max-width and width lines
+  //   max-width: 1440px;
+  //   width: 100%;
+  //   width: 100vw; //Two width values conflict
+  padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
+  width: clamp(
+    320px,
+    100%,
+    1440px
+  ); // Added width clamp to remove max-width and width lines
   height: auto;
 
   &__logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-      &__title {
-          font-weight: 700;
-          font-size: 2rem;
-          color: $black;
-      }
+    &__title {
+      font-weight: 700;
+      font-size: 2rem;
+      color: $black;
+    }
   }
 }
 
@@ -42,33 +46,39 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-//   padding: 1rem; // Added padding to parent element instead
+  //   padding: 1rem; // Added padding to parent element instead
 
   &__list {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      gap: 3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
 
-      .active {
-          border-bottom: 3px solid $green-mint;
+    .active {
+      border-bottom: 3px solid $green-mint;
+    }
+
+    & > li > a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1.6rem;
+
+      &:hover {
+        color: $dark-gray;
+        transition: all 0.3s ease;
       }
-
-      & > li > a {
-          text-decoration: none;
-          color: $black;
-          font-size: 1.6rem;
-
-          &:hover {
-              color: $dark-gray;
-              transition: all 0.3s ease;
-          }
-      }
-      // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
+    }
+    // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
   }
+}
+#our-mission,
+#how-contribute,
+#why-contribute,
+#team {
+  scroll-margin-top: 100px;
 }
 
 .responsive-navbar {
@@ -79,246 +89,246 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
 
 @media only screen and (max-width: 640px) {
   .nav {
+    display: block;
+
+    &__links {
+      background-color: #f3f3f3;
+      margin-top: 10px;
+    }
+
+    &__links__list {
+      display: none;
+    }
+
+    &__links__list.show {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__links__list li > a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        margin: -5px 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
+      }
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+
+    &__logo {
       display: block;
-
-      &__links {
-          background-color: #f3f3f3;
-          margin-top: 10px;
-      }
-
-      &__links__list {
-          display: none;
-      }
-
-      &__links__list.show {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-
-      &__links__list li > a {
-              position: relative;
-              &:before {
-                  content: "";
-                  position: absolute;
-                  width: 100%;
-                  height: 2px;
-                  bottom: 0;
-                  margin: -5px 0;
-                  background-color: black;
-                  visibility: hidden;
-                  transform: scaleX(0);
-                  transition: all 0.4s ease-in-out 0s;
-              }
-              &:hover:before {
-                  visibility: visible;
-                  transform: scaleX(1);
-              }
-          }
-
-      &__logo {
-          display: block;
-          margin-top: 25px;
-      }
+      margin-top: 25px;
+    }
   }
 
   .hamburger-menu-icon {
-      display: block;
-      margin-top: 18px;
-      border:none;
+    display: block;
+    margin-top: 18px;
+    border: none;
 
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      > img {
-          height: 35px;
-      }
+    > img {
+      height: 35px;
+    }
   }
 
   .close-menu-icon {
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      &.visible {
-          display: block;
-          margin-top: 18px;
-          border:none;
+    &.visible {
+      display: block;
+      margin-top: 18px;
+      border: none;
 
-          > img {
-              height: 25px;
-          }
+      > img {
+        height: 25px;
       }
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .nav {
+    display: block;
+
+    &__links {
+      background-color: #f3f3f3;
+      margin-top: 10px;
+    }
+
+    &__links__list {
+      display: none;
+    }
+
+    &__links__list.show {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__links__list li > a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        margin: -5px 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
+      }
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+
+    &__logo {
       display: block;
-
-      &__links {
-          background-color: #f3f3f3;
-          margin-top: 10px;
-      }
-
-      &__links__list {
-          display: none;
-      }
-
-      &__links__list.show {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-
-      &__links__list li > a {
-              position: relative;
-              &:before {
-                  content: "";
-                  position: absolute;
-                  width: 100%;
-                  height: 2px;
-                  bottom: 0;
-                  margin: -5px 0;
-                  background-color: black;
-                  visibility: hidden;
-                  transform: scaleX(0);
-                  transition: all 0.4s ease-in-out 0s;
-              }
-              &:hover:before {
-                  visibility: visible;
-                  transform: scaleX(1);
-              }
-          }
-
-      &__logo {
-          display: block;
-          margin-top: 25px;
-      }
+      margin-top: 25px;
+    }
   }
 
   .hamburger-menu-icon {
-      display:block;
-      margin-top: 18px;
-      border:none;
+    display: block;
+    margin-top: 18px;
+    border: none;
 
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      > img {
-          height: 35px;
-      }
+    > img {
+      height: 35px;
+    }
   }
 
   .close-menu-icon {
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      &.visible {
-          display: block;
-          margin-top: 18px;
-          border:none;
+    &.visible {
+      display: block;
+      margin-top: 18px;
+      border: none;
 
-          > img {
-              height: 25px;
-          }
+      > img {
+        height: 25px;
       }
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .nav {
+    display: block;
+
+    &__links {
+      background-color: #f3f3f3;
+      margin-top: 10px;
+    }
+
+    &__links__list {
+      display: none;
+    }
+
+    &__links__list.show {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__links__list li > a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        margin: -5px 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
+      }
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+
+    &__logo {
       display: block;
-
-      &__links {
-          background-color: #f3f3f3;
-          margin-top: 10px;
-      }
-
-      &__links__list {
-          display: none;
-      }
-
-      &__links__list.show {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-
-      &__links__list li > a {
-              position: relative;
-              &:before {
-                  content: "";
-                  position: absolute;
-                  width: 100%;
-                  height: 2px;
-                  bottom: 0;
-                  margin: -5px 0;
-                  background-color: black;
-                  visibility: hidden;
-                  transform: scaleX(0);
-                  transition: all 0.4s ease-in-out 0s;
-              }
-              &:hover:before {
-                  visibility: visible;
-                  transform: scaleX(1);
-              }
-          }
-
-      &__logo {
-          display: block;
-          margin-top: 25px;
-      }
+      margin-top: 25px;
+    }
   }
 
   .hamburger-menu-icon {
-      display:block;
-      margin-top: 18px;
-      border:none;
+    display: block;
+    margin-top: 18px;
+    border: none;
 
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      > img {
-          height: 35px;
-      }
+    > img {
+      height: 35px;
+    }
   }
 
   .close-menu-icon {
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      &.visible {
-          display: block;
-          margin-top: 18px;
-          border:none;
+    &.visible {
+      display: block;
+      margin-top: 18px;
+      border: none;
 
-          > img {
-              height: 25px;
-          }
+      > img {
+        height: 25px;
       }
+    }
   }
 }
 
 @media only screen and (min-width: 1023px) {
- .hamburger-menu-icon {
-  display:none;
- }
+  .hamburger-menu-icon {
+    display: none;
+  }
 
- .close-menu-icon {
-  display:none;
- }
+  .close-menu-icon {
+    display: none;
+  }
 }
 
 .join-btn {
@@ -331,8 +341,8 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
   font-weight: 600;
 
   &:hover {
-      transition: all 0.3s;
-      background-color: $dark-mint;
+    transition: all 0.3s;
+    background-color: $dark-mint;
   }
 }
 

@@ -88,6 +88,13 @@ header {
   transition: all 0.3s ease;
 }
 
+#our-mission,
+#how-contribute,
+#why-contribute,
+#team {
+  scroll-margin-top: 100px;
+}
+
 .responsive-navbar {
   display: flex;
   flex-direction: row;
@@ -814,6 +821,7 @@ header {
   height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 .how-contribute__job .how-contribute__job__text {
   display: flex;

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const jobElement = document.createElement("div");
     jobElement.classList.add("how-contribute__job", "swiper-slide");
     jobElement.innerHTML = `
-      <img src="${job.image}" alt="${job.title} Logo" />
+      <img src="${job.image}" alt="${job.title} Logo" onclick="location.href='details.html?id=${job.id}';"/>
       <div class="how-contribute__job__text">
         <h3>${job.title}</h3>
         <a href="details.html?id=${job.id}" class="detail-btn" data-id="${job.id}">Detalii</a>

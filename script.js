@@ -1,3 +1,7 @@
+// window.addEventListener("hashchange", function () {
+//   window.scrollTo(window.scrollX, window.scrollY - 100);
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
   const navLinks = document.querySelectorAll(".nav__links__nav a");
