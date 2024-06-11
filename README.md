@@ -60,6 +60,10 @@ To understand the visual layout and design of our project, you can view the Figm
 - Test your changes before submitting a pull request.
 - Respect the project's code of conduct.
 
+## Code of Conduct
+
+Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## Contact
 
 If you have any questions, feel free to reach out to us. We appreciate your interest and look forward to your contributions.
