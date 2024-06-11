@@ -5,6 +5,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
   const navLinks = document.querySelectorAll(".nav__links__nav a");
+  const navTitleLogo = document.querySelector(".nav__logo__title");
+  const navImgLogo = document.querySelector(".img-logo");
+  const introSection = document.querySelector(".intro");
+  const joinUsSection = document.querySelector(".join-us-section");
 
   function highlightNavLink() {
     const scrollPosition = window.scrollY;
@@ -37,6 +41,25 @@ document.addEventListener("DOMContentLoaded", () => {
       navbar.classList.remove("nav-bottom-border");
     }
   }
+
+  function toggleLogoVisibility() {
+    const introTreshold = introSection.getBoundingClientRect().bottom;
+    const footerTreshold = joinUsSection.getBoundingClientRect().top;
+    // Remove footerTreshold if you do not want the behavior to trigger
+    // As the footer comes into view
+    if (introTreshold < 72 && footerTreshold > 12) {
+       // Change the threshold value as needed 
+       // At 1 the navTitleLogo appears right at the next section
+       // At 400 it appears right after the intro logo
+      navTitleLogo.classList.add("visible-title"); 
+      navImgLogo.style.visibility = "hidden";
+      } else {
+        navTitleLogo.classList.remove("visible-title");
+        navImgLogo.style.visibility = "visible";
+    }
+  }
+
+  window.addEventListener('scroll', toggleLogoVisibility);
 
   // Trigger the function when the user scroll over the page:
   document.addEventListener("scroll", () => {
