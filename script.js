@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
   const navLinks = document.querySelectorAll(".nav__links__nav a");
   const navTitleLogo = document.querySelector(".nav__logo__title");
-  const introSection = document.querySelector(".intro");
+  const logoSection = document.querySelector(".intro__container__logo");
   const joinUsSection = document.querySelector(".join-us-section");
 
   function highlightNavLink() {
@@ -42,14 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function toggleLogoVisibility() {
-    const introTreshold = introSection.getBoundingClientRect().bottom;
+    const introTreshold = logoSection.getBoundingClientRect().bottom;
     const footerTreshold = joinUsSection.getBoundingClientRect().top;
     // Remove footerTreshold if you do not want the behavior to trigger
     // As the footer comes into view
-    if (introTreshold < 72 && footerTreshold > 12) {
+    if (introTreshold < 1 && footerTreshold > 12) {
        // Change the threshold value as needed 
-       // At 1 the navTitleLogo appears right at the next section
-       // At 400 it appears right after the intro logo
+       // At 1 the navTitleLogo appears right at the end of the section
       navTitleLogo.classList.add("visible-title"); 
       } else {
         navTitleLogo.classList.remove("visible-title");

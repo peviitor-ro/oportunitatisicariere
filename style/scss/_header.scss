@@ -34,9 +34,11 @@ header {
       font-size: 2rem;
       color: $dark-blue;
       transition: all .2s ease;
-    }
-    & .title-mint{
-      color: $green-mint;
+      }
+      & .title-mint{
+      font-family: $gelasio;
+      color: $dark-teal;
+      font-size: 1.8rem;
       }
     & .hidden-title {
       opacity: 0;
@@ -235,6 +237,9 @@ header {
     &__title {
       font-size: 1.7rem;
     }
+    & .title-mint{
+      font-size: 1.6rem;
+      }
   & .img-logo {
     width: 50px;
   height: 50px;
