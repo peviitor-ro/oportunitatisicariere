@@ -1,6 +1,8 @@
 /* Global Imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
 *,
 ::after,
 ::before {
@@ -51,7 +53,9 @@ header {
       color: #1d2b59;
       transition: all .2s ease; }
     .nav__logo .title-mint {
-      color: #2f7973; }
+      font-family: "Gelasio";
+      color: #2c6980;
+      font-size: 1.8rem; }
     .nav__logo .hidden-title {
       opacity: 0; }
     .nav__logo .visible-title {
@@ -183,6 +187,8 @@ header {
       margin-top: 1rem; }
       .nav__logo__title {
         font-size: 1.7rem; }
+      .nav__logo .title-mint {
+        font-size: 1.6rem; }
       .nav__logo .img-logo {
         width: 50px;
         height: 50px; }
@@ -283,11 +289,22 @@ header {
     align-items: center;
     width: 100%;
     height: 40vh;
-    background-image: url("../assets/intro-logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     position: relative; }
+    .intro__container__logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 4rem; }
+      .intro__container__logo img {
+        width: 240px;
+        height: 240px; }
+      .intro__container__logo h1 {
+        color: #1d2b59;
+        font-weight: 700; }
+      .intro__container__logo h1:nth-child(1) {
+        font-family: "Gelasio";
+        color: #2c6980;
+        font-weight: 400; }
   .intro__container-watch {
     position: absolute;
     right: 0;
@@ -326,23 +343,37 @@ header {
     width: 50%; } }
 
 @media screen and (max-width: 769px) {
-  .intro__container-watch {
+  .intro__container__logo {
+    font-size: 3rem; }
+    .intro__container__logo img {
+      width: 180px;
+      height: 180px; }
+  .intro__container__container-watch {
     bottom: -25%; } }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 769px) and (max-width: 540px) {
   .intro {
     height: 40vh;
-    margin-top: 6rem; }
-    .intro__container {
-      background-size: 120%; }
+    margin-top: 2rem; }
+    .intro__container__logo {
+      font-size: 2.5rem; }
+      .intro__container__logo img {
+        width: 140px;
+        height: 140px; }
     .intro__container-watch {
+      width: 40%;
       bottom: 0; }
     .intro__cta {
       display: none; } }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 769px) and (max-width: 426px) {
+  .intro__container__logo {
+    font-size: 2rem; }
+    .intro__container__logo img {
+      width: 120px;
+      height: 120px; }
   .intro__container-watch {
-    width: 55%;
+    width: 40%;
     bottom: 5%; } }
 
 /* HERO SECTION */
