@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
   const navLinks = document.querySelectorAll(".nav__links__nav a");
   const navTitleLogo = document.querySelector(".nav__logo__title");
-  const navImgLogo = document.querySelector(".img-logo");
   const introSection = document.querySelector(".intro");
   const joinUsSection = document.querySelector(".join-us-section");
 
@@ -52,10 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
        // At 1 the navTitleLogo appears right at the next section
        // At 400 it appears right after the intro logo
       navTitleLogo.classList.add("visible-title"); 
-      navImgLogo.style.visibility = "hidden";
       } else {
         navTitleLogo.classList.remove("visible-title");
-        navImgLogo.style.visibility = "visible";
     }
   }
 
