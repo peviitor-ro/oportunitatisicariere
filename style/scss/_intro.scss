@@ -11,13 +11,30 @@
       align-items: center;
       width: 100%;
       height: 40vh;
-      // background-image: url("../assets/logo.svg");
-      // Took the logo from the current website for a more clear and unblured image
-      background-image: url("../assets/intro-logo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
       position: relative;
+
+      &__logo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 4rem;
+
+        & img {
+          width: 240px;
+          height: 240px;
+        }
+        
+        & h1 {
+          color: $dark-blue;
+          font-weight: 700;
+          }
+          
+          & h1:nth-child(1) {
+            font-family: $gelasio;
+            color: $dark-teal;
+            font-weight: 400;
+        }
+      }
     }
   
     &__container-watch {
@@ -70,20 +87,39 @@
   }
   @media screen and (max-width: 769px) {
     .intro {
+
+      &__container {
+        &__logo{
+          font-size: 3rem;
+  
+          & img {
+            width: 180px;
+            height: 180px;
+          }
+        }
+
       &__container-watch {
         bottom: -25%;
       }
     }
   }
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 540px) {
     .intro {
       height: 40vh;
-      margin-top: 6rem;
+      margin-top: 2rem;
 
-      &__container {
-        background-size: 120%; // Adjust background size for smaller screens
+      &__container {      
+      &__logo{
+        font-size: 2.5rem;
+
+        & img {
+          width: 140px;
+          height: 140px;
+        }
       }
+    }
       &__container-watch {
+        width: 40%;
         bottom: 0; 
       }
       &__cta{
@@ -91,11 +127,23 @@
       }
     }
   }
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 426px) {
     .intro {
+      
+      &__container {      
+        &__logo{
+          font-size: 2rem;
+  
+          & img {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
       &__container-watch {
-        width: 55%; 
+        width: 40%; 
         bottom: 5%
       }
     }
   }
+}
