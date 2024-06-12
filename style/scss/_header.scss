@@ -13,12 +13,12 @@ header {
   position: fixed;
   background-color: $white-smoke;
   z-index: 99;
-  padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
+  padding: 1rem 2rem; 
   width: clamp(
     320px,
     100%,
     1440px
-  ); // Added width clamp to remove max-width and width lines
+); 
   height: auto;
 
   &__logo {
@@ -30,31 +30,29 @@ header {
 
 
     &__title {
-      display: none;
       font-weight: 700;
       font-size: 2rem;
-      color: $black;
+      color: $dark-blue;
+      transition: all .2s ease;
     }
-  & .visible-title {
-    display: block;
-  }
+    & .title-mint{
+      color: $green-mint;
+      }
+    & .hidden-title {
+      opacity: 0;
+      }
+    & .visible-title {
+      opacity: 1;
+      display: block;
+      }
 
   & .img-logo {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: inline-flex;
+    margin-right: 0.5rem;
     width: 60px;
     height: 60px;
   }
   }
-
   // Hide logo while on intro section
-}
-
-.hamburger-menu {
-  margin: auto 0 auto auto;
 }
 
 .nav-bottom-border {
@@ -91,6 +89,7 @@ header {
       text-decoration: none;
       color: $black;
       font-size: 1.6rem;
+      font-weight: 500;
 
       &:hover {
         color: $dark-gray;
@@ -191,13 +190,7 @@ header {
 @media only screen and (max-width: 768px) {
   .nav {
     display: block;
-    padding: 0 3rem;
-
-    &__logo {
-    & .img-logo {
-      display: none;
-    }
-    }
+    padding: 0 2rem;
 
     &__links {
       background-color: #f3f3f3;
@@ -236,27 +229,19 @@ header {
       }
     }
 
-    // In order for the logo to be hidden until scrolling after a certain treshold
-    // Remove following &__logo part of the code
     &__logo {
-      display: block;
-      margin-top: 25px;
-
-      // Remove the following &__title part of the code
-      // If you want the title to show
-      &__title {
-        display: inline-block;
-        width: 70px;
-        height: 70px;
-        background-image: url("../assets/logo.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        text-indent: -9999px; /* Move the text off-screen */
-      }
-
+      margin-top: 1rem;
+    
+    &__title {
+      font-size: 1.7rem;
     }
+  & .img-logo {
+    width: 50px;
+  height: 50px;
+}
+}
   }
+  
 
   .hamburger-menu-icon {
     display: block;
