@@ -12,7 +12,7 @@ We would like to extend our heartfelt thanks to the following individuals for th
 - **[Adelina Moroaca](https://github.com/AdelinaMoroaca)** - Contributed to the project by consistently taking initiative, and always offering valuable ideas. Adelina's proactive approach has significantly influenced the project's evolution and success.
 - **[Nitu Alexandru](https://github.com/NituAlexandru)** - Alexandru was instrumental in shaping a substantial part of our website. His ability to work independently and efficiently was remarkable, as he navigated tasks with minimal guidance, consistently delivering high-quality results.
 - **[Laurentiu Baluta](https://github.com/lalalaurentiu)** - Laurentiu helped with the deployment of the website and was always available to answer any questions. His support ensured a smooth and efficient deployment process.
-- **[Patricia Balint](https://www.instagram.com/balint_patricia03/)** - Patricia has been invaluable in answering questions and aiding in the continuous improvement of our design aesthetics. Her dedication has greatly contributed to its overall refinement.
+- **[Patricia Istrate](https://www.linkedin.com/in/patriciaistrate/)** - Patricia has been invaluable in answering questions and aiding in the continuous improvement of our design aesthetics. Her dedication has greatly contributed to its overall refinement.
 - **[Talida Ganciu](https://github.com/talidag)** - Talida served as the primary designer of the app, guiding the team throughout the development process. Her visionary design concepts and leadership were instrumental in shaping the app's overall direction and aesthetic appeal.
 
 Feel free to add your name to this list by contributing to the project!
