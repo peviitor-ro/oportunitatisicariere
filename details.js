@@ -56,5 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
           job.aboutEmployer.address;
       }
     })
-    .catch((error) => console.error("Error loading data:", error));
+    .catch((error) => {
+      {
+        throw new Error("Error loading data:", error);
+      }
+    });
 });
