@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build-css": "node-sass --include-path scss style/style.scss dist/style/style.css",
-    "build": "mkdir -p dist && cp index.html dist/index.html && cp details.html dist/details.html && cp jobCards.js dist/jobCards.js && cp details.js dist/details.js && cp script.js dist/script.js && cp carousel.js dist/carousel.js && cp -r assets dist/assets && npm run build-css"
+    "build": "mkdir -p dist && cp index.html dist/index.html && cp details.html dist/details.html && cp jobCards.js dist/jobCards.js && cp data.json dist/data.json && cp details.js dist/details.js && cp script.js dist/script.js && cp carousel.js dist/carousel.js && cp -r assets dist/assets && npm run build-css"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
