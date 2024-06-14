@@ -72,7 +72,7 @@
       top: 50rem;
       left: 5.5rem;
       cursor: pointer;
-      transform: scale(0.7);
+      transform: scale(0.7) translateY(0);
 
       &:hover {
         filter: invert(50%);
@@ -85,7 +85,7 @@
       position: absolute;
       top: 50rem;
       right: 5.5rem;
-      transform: rotate(180deg) scale(0.7);
+      transform: rotate(180deg) scale(0.7) translateY(0);
       cursor: pointer;
 
       &:hover {
@@ -221,6 +221,16 @@
     }
     & img {
       transform: scale(1, 1);
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  .swiper {
+    .swiper-button-prev {
+      transform: scale(0.7) translate(-90%, 80%) !important;
+    }
+    .swiper-button-next {
+      transform: rotate(180deg) scale(0.7) translate(-90%, -80%) !important;
     }
   }
 }

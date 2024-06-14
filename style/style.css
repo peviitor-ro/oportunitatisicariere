@@ -70,7 +70,6 @@ header {
 }
 .nav__logo .visible-title {
   opacity: 1;
-  display: block;
 }
 .nav__logo .img-logo {
   margin-right: 0.5rem;
@@ -858,7 +857,7 @@ header {
   top: 50rem;
   left: 5.5rem;
   cursor: pointer;
-  transform: scale(0.7);
+  transform: scale(0.7) translateY(0);
 }
 .how-contribute .swiper .swiper-button-prev:hover {
   filter: invert(50%);
@@ -867,7 +866,7 @@ header {
   position: absolute;
   top: 50rem;
   right: 5.5rem;
-  transform: rotate(180deg) scale(0.7);
+  transform: rotate(180deg) scale(0.7) translateY(0);
   cursor: pointer;
 }
 .how-contribute .swiper .swiper-button-next:hover {
@@ -976,6 +975,14 @@ header {
   }
   .how-contribute img {
     transform: scale(1, 1);
+  }
+}
+@media screen and (max-width: 426px) {
+  .swiper .swiper-button-prev {
+    transform: scale(0.7) translate(-90%, 80%) !important;
+  }
+  .swiper .swiper-button-next {
+    transform: rotate(180deg) scale(0.7) translate(-90%, -80%) !important;
   }
 }
 /* WHY CONTRIBUTE SECTION */
