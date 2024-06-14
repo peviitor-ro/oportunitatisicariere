@@ -17,5 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         jobContainer.appendChild(jobElement);
       });
     })
-    .catch((error) => console.error("Error loading JSON data:", error));
+    .catch((error) => {
+      throw new Error("Error loading JSON data:", error);
+    });
 });
