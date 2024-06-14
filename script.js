@@ -42,20 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function toggleLogoVisibility() {
-    const introTreshold = logoSection.getBoundingClientRect().bottom;
-    const footerTreshold = joinUsSection.getBoundingClientRect().top;
-    // Remove footerTreshold if you do not want the behavior to trigger
-    // As the footer comes into view
-    if (introTreshold < 1 && footerTreshold > 12) {
-       // Change the threshold value as needed 
-       // At 1 the navTitleLogo appears right at the end of the section
-      navTitleLogo.classList.add("visible-title"); 
+    if (logoSection && joinUsSection) {
+      const introTreshold = logoSection.getBoundingClientRect().bottom;
+      const footerTreshold = joinUsSection.getBoundingClientRect().top;
+      // Remove footerTreshold if you do not want the behavior to trigger
+      // As the footer comes into view
+      if (introTreshold < 1 && footerTreshold > 12) {
+        // Change the threshold value as needed
+        // At 1 the navTitleLogo appears right at the end of the section
+        navTitleLogo.classList.add("visible-title");
       } else {
         navTitleLogo.classList.remove("visible-title");
+      }
     }
   }
 
-  window.addEventListener('scroll', toggleLogoVisibility);
+  window.addEventListener("scroll", toggleLogoVisibility);
 
   // Trigger the function when the user scroll over the page:
   document.addEventListener("scroll", () => {

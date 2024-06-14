@@ -1,63 +1,60 @@
-// details.js
-import { data } from "./data.js";
-
-function getQueryParam(param) {
+document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
-}
+  const jobId = urlParams.get("id");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const jobId = getQueryParam("id");
-  const jobDetails = data.find((job) => job.id === jobId);
+  fetch("./data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const job = data.find((job) => job.id === jobId);
+      if (job) {
+        document.querySelector(".title").textContent = job.title;
+        document.querySelector(".employer").textContent += job.employer;
+        document.querySelector(".departament").textContent += job.department;
+        document.querySelector(".location").textContent = job.location;
+        document.querySelector(".jobType").textContent = job.jobType;
+        document.querySelector(".experience").textContent = job.experience;
+        document.querySelector(".salary").textContent = job.salary;
+        document.getElementById("jd").textContent = job.jobDescription;
 
-  if (jobDetails) {
-    populateJobDetails(jobDetails);
-  } else {
-    displayJobNotFound();
-  }
+        const responsabilities = document.getElementById("responsabilities");
+        job.responsabilities.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          responsabilities.appendChild(li);
+        });
+
+        const demands = document.getElementById("demands");
+        job.demands.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          demands.appendChild(li);
+        });
+
+        const offerings = document.getElementById("offerings");
+        job.offerings.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          offerings.appendChild(li);
+        });
+
+        const generalInfo = document.getElementById("generalInfo");
+        job.generalInfo.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          generalInfo.appendChild(li);
+        });
+
+        document.getElementById("recruiter-photo").src =
+          job.aboutEmployer.photo;
+        document.querySelector(".contact__person").textContent =
+          job.aboutEmployer.name;
+        document.querySelector(".contact__role").textContent =
+          job.aboutEmployer.title;
+        document.getElementById("phone").textContent += job.aboutEmployer.phone;
+        document.getElementById("email").textContent += job.aboutEmployer.email;
+        document.getElementById("address").textContent +=
+          job.aboutEmployer.address;
+      }
+    })
+    .catch((error) => console.error("Error loading data:", error));
 });
-
-function populateJobDetails(jobDetails) {
-  document.querySelector(".title").textContent = jobDetails.title;
-  document.querySelector(".employer").textContent += jobDetails.employer;
-  document.querySelector(".departament").textContent += jobDetails.department;
-  document.querySelector(".location").textContent = jobDetails.location;
-  document.querySelector(".jobType").textContent = jobDetails.jobType;
-  document.querySelector(".experience").textContent = jobDetails.experience;
-  document.querySelector(".salary").textContent = jobDetails.salary;
-  document.getElementById("jd").textContent = jobDetails.jobDescription;
-
-  populateList("responsabilities", jobDetails.responsabilities);
-  populateList("demands", jobDetails.demands);
-  populateList("offerings", jobDetails.offerings);
-  populateList("generalInfo", jobDetails.generalInfo);
-
-  // const recruiterPhoto = document.getElementById("recruiter-photo");
-  // recruiterPhoto.src = jobDetails.aboutEmployer.photo;
-
-  document.getElementById("recruiter-photo").src =
-    jobDetails.aboutEmployer.photo;
-  document.querySelector(".contact__person").textContent =
-    jobDetails.aboutEmployer.name;
-  document.querySelector(".contact__role").textContent =
-    jobDetails.aboutEmployer.title;
-  document.getElementById("phone").textContent +=
-    jobDetails.aboutEmployer.phone;
-  document.getElementById("email").textContent +=
-    jobDetails.aboutEmployer.email;
-  document.getElementById("address").textContent +=
-    jobDetails.aboutEmployer.address;
-}
-
-function populateList(elementId, items) {
-  const list = document.getElementById(elementId);
-  items.forEach((item) => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    list.appendChild(li);
-  });
-}
-
-function displayJobNotFound() {
-  document.querySelector(".title").textContent = "Job not found";
-}
