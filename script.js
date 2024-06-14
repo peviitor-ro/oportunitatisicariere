@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const logoSection = document.querySelector(".intro__container__logo");
   const joinUsSection = document.querySelector(".join-us-section");
 
+// Start with nav title disabled
+navTitleLogo.style.pointerEvents = "none";
+navTitleLogo.style.cursor = "none";
+
   function highlightNavLink() {
     const scrollPosition = window.scrollY;
 
@@ -52,6 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // At 1 the navTitleLogo appears right at the end of the section
         navTitleLogo.classList.add("visible-title");
       } else {
+        // Disable title and hide it
+        navTitleLogo.style.pointerEvents = "none";
+        navTitleLogo.style.cursor = "none";
         navTitleLogo.classList.remove("visible-title");
       }
     }

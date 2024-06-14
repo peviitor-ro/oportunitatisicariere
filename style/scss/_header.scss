@@ -13,12 +13,8 @@ header {
   position: fixed;
   background-color: $white-smoke;
   z-index: 99;
-  padding: 1rem 2rem; 
-  width: clamp(
-    320px,
-    100%,
-    1440px
-); 
+  padding: 1rem 2rem;
+  width: clamp(320px, 100%, 1440px);
   height: auto;
 
   &__logo {
@@ -28,31 +24,29 @@ header {
     margin: auto 0;
     position: relative;
 
-
     &__title {
       font-weight: 700;
       font-size: 2rem;
       color: $dark-blue;
-      transition: all .2s ease;
-      }
-      & .title-mint{
+      transition: all 0.2s ease;
+    }
+    & .title-mint {
       font-family: $gelasio;
       color: $dark-teal;
       font-size: 1.8rem;
-      }
+    }
     & .hidden-title {
       opacity: 0;
-      }
+    }
     & .visible-title {
       opacity: 1;
-      display: block;
-      }
+    }
 
-  & .img-logo {
-    margin-right: 0.5rem;
-    width: 60px;
-    height: 60px;
-  }
+    & .img-logo {
+      margin-right: 0.5rem;
+      width: 60px;
+      height: 60px;
+    }
   }
   // Hide logo while on intro section
 }
@@ -60,11 +54,9 @@ header {
 .nav-bottom-border {
   // border-bottom: 1px solid $light-white;
   // Changed border effect to elevation effect
-  box-shadow: 
-  0 8px 5px -4px rgba(0, 0, 0, 0.2), /* Top shadow */
-  0 8px 8px -4px rgba(0, 0, 0, 0.14), /* Bottom shadow */
-  0 8px 12px -4px rgba(0, 0, 0, 0.12);   /* Top shadow */
-
+  box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.2),
+    /* Top shadow */ 0 8px 8px -4px rgba(0, 0, 0, 0.14),
+    /* Bottom shadow */ 0 8px 12px -4px rgba(0, 0, 0, 0.12); /* Top shadow */
 }
 
 .nav__links {
@@ -154,8 +146,6 @@ header {
         transform: scaleX(1);
       }
     }
-
-
   }
 
   .hamburger-menu-icon {
@@ -233,20 +223,19 @@ header {
 
     &__logo {
       margin-top: 1rem;
-    
-    &__title {
-      font-size: 1.7rem;
-    }
-    & .title-mint{
-      font-size: 1.6rem;
+
+      &__title {
+        font-size: 1.7rem;
       }
-  & .img-logo {
-    width: 50px;
-  height: 50px;
-}
-}
+      & .title-mint {
+        font-size: 1.6rem;
+      }
+      & .img-logo {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
-  
 
   .hamburger-menu-icon {
     display: block;
@@ -326,7 +315,6 @@ header {
     // }
   }
 
-
   .hamburger-menu-icon {
     display: block;
     margin-top: 18px;
@@ -359,8 +347,6 @@ header {
 }
 
 @media only screen and (min-width: 1023px) {
-
-
   .hamburger-menu-icon {
     display: none;
   }
@@ -390,5 +376,4 @@ header {
 }
 
 @media only screen and (max-width: 1025px) {
-
 }
