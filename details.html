@@ -1,22 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style/style.css" />
     <meta name="referrer" content="origin" />
+
+    <title>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</title>
+    <!-- import favicon logo files -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
   </head>
 
   <body>
     <div class="details-app">
       <!-- Header -->
       <header id="top-redirect">
-        <nav class="nav nav__details">
+        <nav class="nav">
           <div class="responsive-navbar">
             <div class="nav__logo">
-              <a class="nav__logo__title" href="/index.html">
-                ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE
+              <img class="img-logo" src="./assets/logo.png" alt="logo image" />
+              <a class="nav__logo__title visible-title" href="/index.html#">
+                <span class="title-mint"> ASOCIAȚIA </span>
+                <br />
+                OPORTUNITĂȚI ȘI CARIERE
               </a>
             </div>
-
             <div class="hamburger-menu">
               <button class="hamburger-menu-icon">
                 <img
@@ -49,7 +72,12 @@
                 <a href="/index.html#team">Echipa</a>
               </li>
               <li>
-                <button class="join-btn btn--green">Alătură-te</button>
+                <button
+                  onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
+                  class="join-btn btn--green"
+                >
+                  Alătură-te
+                </button>
               </li>
             </ul>
           </div>
