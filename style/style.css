@@ -667,6 +667,7 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
+  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -845,7 +846,8 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
@@ -890,7 +892,8 @@ header {
 .how-contribute__job img {
   width: 25rem;
   height: 25rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
 }
 .how-contribute__job .how-contribute__job__text {
@@ -1598,6 +1601,11 @@ footer .footer-bottom h4 {
     height: 4rem;
   }
 }
+.details-app .nav__logo a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba(107, 107, 107, 0.35);
   margin: 0 2rem;
@@ -1636,6 +1644,8 @@ footer .footer-bottom h4 {
 
 .back__wrapper {
   margin: 14rem 2rem 2rem 2rem;
+  display: flex;
+  align-items: center;
 }
 .back__wrapper a {
   display: flex;
@@ -1921,7 +1931,8 @@ footer .footer-bottom h4 {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 .jd__container .jd__body .list > li {
   padding: 0.2rem;
@@ -1975,7 +1986,8 @@ footer .footer-bottom h4 {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact__name,
 .jd__container .jd__body .about .contact .contact__person {
