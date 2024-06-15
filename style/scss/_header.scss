@@ -77,6 +77,7 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
   justify-content: space-between;
 }
 
+
 @media only screen and (max-width: 640px) {
   .nav {
       display: block;
@@ -339,3 +340,30 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
 .btn--green {
   background-color: $green-mint;
 }
+
+@media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
+    .nav {
+        
+ 
+        &__links__list {
+
+            display: none;
+            height: calc(100vh - 60px); 
+            // background-color: bisque;
+
+            // &__social {
+            //     display: flex;
+            //     flex-direction: column;
+            //     // background-color: aqua;
+            //     border: 2px solid red;
+
+            // }
+        }
+  
+  
+    }
+}
+
+// @media (max-width: $phone-size){
+
+// }

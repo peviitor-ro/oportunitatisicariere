@@ -312,6 +312,12 @@ header {
   background-color: #2f7973;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav__links__list {
+    display: none;
+    height: calc(100vh - 60px);
+  }
+}
 .intro {
   display: flex;
   align-items: center;
@@ -579,6 +585,7 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
+  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -757,7 +764,8 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-contribute .swiper .swiper-button-prev,
 .how-contribute .swiper .swiper-button-next {
