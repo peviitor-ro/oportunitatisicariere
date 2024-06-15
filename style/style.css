@@ -1278,6 +1278,10 @@ footer {
       width: 4rem;
       height: 4rem; } }
 
+.details-app .nav__logo a {
+  pointer-events: auto !important;
+  cursor: pointer !important; }
+
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba(107, 107, 107, 0.35);
   margin: 0 2rem;
@@ -1305,7 +1309,9 @@ footer {
   padding-bottom: 1.2rem; }
 
 .back__wrapper {
-  margin: 14rem 2rem 2rem 2rem; }
+  margin: 14rem 2rem 2rem 2rem;
+  display: flex;
+  align-items: center; }
   .back__wrapper a {
     display: flex;
     align-items: center;
