@@ -826,7 +826,67 @@ header {
   padding: 0 42rem;
   text-align: center;
   font-size: 1.6rem;
-  padding-bottom: 4.2rem;
+  padding-bottom: 3rem;
+}
+.how-contribute .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.how-contribute .input-wrapper input {
+  padding: 1rem;
+  border: 2px solid #c1dcdc;
+  background-color: #f7f7f7;
+  outline: none;
+  border-radius: 10px;
+}
+.how-contribute .input-wrapper input:is(:focus, :valid) {
+  border: 2px solid #1d2b59;
+}
+.how-contribute .input-wrapper input:is(:focus, :valid) + .placeholder {
+  transform: translateY(-2rem);
+  font-size: 1.4rem;
+  color: #2f7973;
+}
+.how-contribute .input-wrapper .placeholder {
+  position: absolute;
+  background-color: #f7f7f7;
+  color: #6b6b6b;
+  font-size: 1.2rem;
+  left: 1.2rem;
+  padding: 0 4px;
+  transition: all 0.2s ease-in;
+}
+.how-contribute .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.how-contribute .input-wrapper input {
+  padding: 1rem;
+  border: 2px solid #c1dcdc;
+  background-color: #f7f7f7;
+  outline: none;
+  border-radius: 10px;
+}
+.how-contribute .input-wrapper input:is(:focus, :valid) {
+  border: 2px solid #1d2b59;
+}
+.how-contribute .input-wrapper input:is(:focus, :valid) + .placeholder {
+  transform: translateY(-2rem);
+  font-size: 1.4rem;
+  color: #2f7973;
+}
+.how-contribute .input-wrapper .placeholder {
+  position: absolute;
+  background-color: #f7f7f7;
+  color: #6b6b6b;
+  font-size: 1.2rem;
+  left: 1.2rem;
+  padding: 0 4px;
+  transition: all 0.2s ease-in;
 }
 .how-contribute .swiper {
   width: 100%;

@@ -33,7 +33,75 @@
     padding: 0 42rem;
     text-align: center;
     font-size: 1.6rem;
-    padding-bottom: 4.2rem;
+    padding-bottom: 3rem;
+  }
+
+  & .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    input {
+      padding: 1rem;
+      border: 2px solid $mint;
+      background-color: $greyish-white;
+      outline: none;
+      border-radius: 10px;
+      &:is(:focus, :valid) {
+        border: 2px solid $dark-blue;
+      }
+
+      &:is(:focus, :valid) + .placeholder {
+        transform: translateY(-2rem);
+        font-size: 1.4rem;
+        color: $green-mint;
+      }
+    }
+
+    .placeholder {
+      position: absolute;
+      background-color: $greyish-white;
+      color: $dark-gray;
+      font-size: 1.2rem;
+      left: 1.2rem;
+      padding: 0 4px;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  & .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    input {
+      padding: 1rem;
+      border: 2px solid $mint;
+      background-color: $greyish-white;
+      outline: none;
+      border-radius: 10px;
+      &:is(:focus, :valid) {
+        border: 2px solid $dark-blue;
+      }
+
+      &:is(:focus, :valid) + .placeholder {
+        transform: translateY(-2rem);
+        font-size: 1.4rem;
+        color: $green-mint;
+      }
+    }
+
+    .placeholder {
+      position: absolute;
+      background-color: $greyish-white;
+      color: $dark-gray;
+      font-size: 1.2rem;
+      left: 1.2rem;
+      padding: 0 4px;
+      transition: all 0.2s ease-in;
+    }
   }
 
   // Swipper style
@@ -47,6 +115,8 @@
     position: relative;
 
     .swiper-wrapper {
+      // Enable this to center filtered cards if there are less than 4 results
+      // justify-content: space-around;
       .swiper-slide {
         text-align: center;
         font-size: 1.8rem;
