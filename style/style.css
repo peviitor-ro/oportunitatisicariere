@@ -805,6 +805,7 @@ header {
   align-items: center;
   background-color: #f7f7f7;
   position: relative;
+  padding: 1rem;
 }
 .how-contribute__title {
   display: flex;
@@ -816,8 +817,18 @@ header {
   font-size: 3.2rem;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  .how-contribute__title h2 {
+    font-size: 2.2rem;
+  }
+}
 .how-contribute__title img {
   transform: scale(1.3, 0.9);
+}
+@media screen and (max-width: 768px) {
+  .how-contribute__title img {
+    transform: scale(1, 1);
+  }
 }
 .how-contribute__description {
   display: flex;
@@ -829,50 +840,179 @@ header {
   font-size: 1.6rem;
   padding-bottom: 4.2rem;
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .how-contribute__description {
+    padding: 4rem 22rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .how-contribute__description {
+    padding: 3rem 9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .how-contribute__description {
+    padding: 3rem 3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .how-contribute__description {
+    padding: 3rem 1rem;
+  }
+}
 .how-contribute .swiper {
-  width: 100%;
+  width: 90%;
   max-width: 110rem;
   height: auto;
-  position: static !important;
   display: flex !important;
   position: relative;
+}
+.how-contribute .swiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-bottom: 3rem;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 1.8rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  height: 37rem;
+  padding-bottom: 3rem;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
   display: block;
+  width: 100%;
+  height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
-.how-contribute .swiper .swiper-button-prev,
-.how-contribute .swiper .swiper-button-next {
+.how-contribute .swiper .swiper-wrapper .swiper-slide h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.how-contribute .swiper .swiper-wrapper .swiper-slide a {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  background-color: #2f7973;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.how-contribute .swiper .swiper-wrapper .swiper-slide a:hover {
+  background-color: #215450;
+}
+.how-contribute .how-contribute-img__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.how-contribute .how-contribute-img__container .swiper-button-prev,
+.how-contribute .how-contribute-img__container .swiper-button-next {
+  display: flex;
+  flex-direction: row;
   width: 9rem;
   height: 9rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
 }
-.how-contribute .swiper .swiper-button-prev {
-  position: absolute;
-  top: 50rem;
-  left: 5.5rem;
-  cursor: pointer;
-  transform: scale(0.7) translateY(0);
+@media screen and (max-width: 768px) {
+  .how-contribute .how-contribute-img__container .swiper-button-prev,
+  .how-contribute .how-contribute-img__container .swiper-button-next {
+    width: 7rem;
+    height: 7rem;
+  }
 }
-.how-contribute .swiper .swiper-button-prev:hover {
+@media screen and (max-width: 320px) {
+  .how-contribute .how-contribute-img__container .swiper-button-prev,
+  .how-contribute .how-contribute-img__container .swiper-button-next {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.how-contribute .how-contribute-img__container .swiper-button-prev:hover {
   filter: invert(50%);
 }
-.how-contribute .swiper .swiper-button-next {
-  position: absolute;
-  top: 50rem;
-  right: 5.5rem;
-  transform: rotate(180deg) scale(0.7) translateY(0);
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  .how-contribute .how-contribute-img__container .swiper-button-prev {
+    left: 1rem;
+  }
 }
-.how-contribute .swiper .swiper-button-next:hover {
+@media screen and (max-width: 450px) {
+  .how-contribute .how-contribute-img__container .swiper-button-prev {
+    left: 2rem;
+  }
+}
+.how-contribute .how-contribute-img__container .swiper-button-next {
+  transform: rotate(180deg) translateY(-6%);
+}
+.how-contribute .how-contribute-img__container .swiper-button-next:hover {
   filter: invert(50%);
+}
+@media screen and (max-width: 768px) {
+  .how-contribute .how-contribute-img__container .swiper-button-next {
+    right: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .how-contribute .how-contribute-img__container .swiper-button-next {
+    right: 2rem;
+  }
+}
+.how-contribute .how-contribute-img__container .search-input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+  display: flex;
+  align-self: flex-start;
+  outline: none;
+  border: solid 0.1rem #2f7973;
+  color: #2f7973;
+}
+.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
+  color: #2f7973;
+  opacity: 0.6;
+}
+.how-contribute .how-contribute-img__container .search-input::placeholder {
+  color: #2f7973;
+  opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+  .how-contribute .how-contribute-img__container .search-input {
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .how-contribute .how-contribute-img__container .search-input {
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    margin-top: 0.6rem;
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .how-contribute .how-contribute-img__container .search-input {
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    margin-top: -1rem;
+  }
 }
 .how-contribute__jobs {
   display: flex;
@@ -880,35 +1020,6 @@ header {
   justify-content: center;
   padding-bottom: 7rem;
   position: relative;
-}
-.how-contribute__job {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 2.4rem;
-  padding-bottom: 4rem;
-  background-color: #fff;
-}
-.how-contribute__job img {
-  width: 25rem;
-  height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-}
-.how-contribute__job .how-contribute__job__text {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  padding-left: 0.5rem;
-  align-items: flex-start;
-}
-.how-contribute__job .how-contribute__job__text h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-.how-contribute__job .how-contribute__job__text a {
-  font-size: 1.4rem;
 }
 .how-contribute__details {
   display: flex;
@@ -951,43 +1062,6 @@ header {
   font-weight: 600;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1398px) {
-  .how-contribute__description {
-    padding: 4rem 22rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .how-contribute__description {
-    padding: 3rem 9rem;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 769px) {
-  .how-contribute h2 {
-    font-size: 2.2rem;
-  }
-  .how-contribute__description {
-    padding: 3rem 3rem;
-  }
-  .how-contribute img {
-    transform: scale(1, 1);
-  }
-}
-@media screen and (max-width: 320px) {
-  .how-contribute__description {
-    padding: 3rem 1rem;
-  }
-  .how-contribute img {
-    transform: scale(1, 1);
-  }
-}
-@media screen and (max-width: 426px) {
-  .swiper .swiper-button-prev {
-    transform: scale(0.7) translate(-90%, 80%) !important;
-  }
-  .swiper .swiper-button-next {
-    transform: rotate(180deg) scale(0.7) translate(-90%, -80%) !important;
-  }
-}
 /* WHY CONTRIBUTE SECTION */
 .why-contribute {
   display: flex;
