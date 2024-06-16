@@ -316,6 +316,16 @@ header {
   .nav__links__list {
     display: none;
     height: calc(100vh - 60px);
+    padding-top: 25vh;
+    gap: 1.4rem;
+  }
+  .nav__links__list #socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    margin-top: 14rem;
   }
 }
 .intro {

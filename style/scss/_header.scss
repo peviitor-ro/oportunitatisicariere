@@ -320,6 +320,8 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
  .close-menu-icon {
   display:none;
  }
+
+
 }
 
 .join-btn {
@@ -343,24 +345,21 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
 
 @media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
     .nav {
-        
- 
         &__links__list {
-
             display: none;
-            height: calc(100vh - 60px); 
-            // background-color: bisque;
-
-            // &__social {
-            //     display: flex;
-            //     flex-direction: column;
-            //     // background-color: aqua;
-            //     border: 2px solid red;
-
-            // }
+            height: calc(100vh - 60px);
+            padding-top: 25vh;
+            gap: 1.4rem;
+    
+            & #socialLinks{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                list-style-type: none;
+                margin-top: 14rem;
+            }
         }
-  
-  
     }
 }
 

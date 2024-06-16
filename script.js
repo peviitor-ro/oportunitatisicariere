@@ -107,11 +107,6 @@ function createNewSubList() {
       { href: "https://dev.to/t/peviitor", src: "./assets/social-media-icons/dev_icon.svg", text: "dev" }
   ];
 
-  //style that will be added in SASS
-  newList.style.display = 'flex';
-  newList.style.gap = '20px';
-  newList.style.listStyleType = 'none';
-
   newItems.forEach(item => {
       const li = document.createElement('li');
       const a = document.createElement('a');
@@ -122,8 +117,8 @@ function createNewSubList() {
 
       img.src = item.src;
       img.alt = item.text;
-      img.style.width = '24px'; 
-      img.style.height = '24px';
+      img.style.width = '1.8rem'; 
+      img.style.height = '1.8rem';
 
       a.appendChild(img);
       li.appendChild(a);
@@ -136,6 +131,7 @@ function createNewSubList() {
 
 function insertNewListBeforeButton() {
   const navList = document.querySelector('.nav__links__list.nav__links__nav');
+
   const items = navList.children;
 
   let buttonListItem;
@@ -147,6 +143,7 @@ function insertNewListBeforeButton() {
   }
 
   const newList = createNewSubList();
+  newList.id ='socialLinks';
 
   if (buttonListItem) {
       navList.insertBefore(newList, buttonListItem);
