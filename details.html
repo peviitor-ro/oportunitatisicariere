@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style/style.css" />
+    <meta name="referrer" content="origin" />
+
+    <title>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</title>
+    <!-- import favicon logo files -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+  </head>
+
+  <body>
+    <div class="details-app">
+      <!-- Header -->
+      <header id="top-redirect">
+        <nav class="nav">
+          <div class="responsive-navbar">
+            <div class="nav__logo">
+              <img class="img-logo" src="./assets/logo.png" alt="logo image" />
+              <a class="nav__logo__title visible-title" href="/index.html#">
+                <span class="title-mint"> ASOCIAȚIA </span>
+                <br />
+                OPORTUNITĂȚI ȘI CARIERE
+              </a>
+            </div>
+            <div class="hamburger-menu">
+              <button class="hamburger-menu-icon">
+                <img
+                  id="icon-hamburger"
+                  src="./assets/hamburger-icon.png"
+                  alt="Hamburger Menu"
+                />
+              </button>
+              <button class="close-menu-icon">
+                <img
+                  id="icon-close"
+                  src="./assets/close.png"
+                  alt="Close Menu"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="nav__links">
+            <ul class="nav__links__list nav__links__nav">
+              <li>
+                <a href="/index.html#our-mission">Misiunea noastră</a>
+              </li>
+              <li>
+                <a href="/index.html#how-contribute">Cum poți ajuta tu?</a>
+              </li>
+              <li>
+                <a href="/index.html#why-contribute">De ce să ajuți?</a>
+              </li>
+              <li>
+                <a href="/index.html#team">Echipa</a>
+              </li>
+              <li>
+                <button
+                  onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
+                  class="join-btn btn--green"
+                >
+                  Alătură-te
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="jd">
+        <main class="main">
+          <div class="back__wrapper">
+            <a href="/" class="backBtn">
+              <img src="./assets/details-assets/arrowLeft.svg" alt="Back" />
+              <p class="backTxt">Înapoi la locurile de muncă</p>
+            </a>
+          </div>
+          <!-- Job -->
+          <div class="jd__container">
+            <div class="jd__header">
+              <div class="jd__main">
+                <div class="titles">
+                  <h1 class="title"></h1>
+                  <div class="title__details">
+                    <p class="employer">Angajator:&nbsp;</p>
+                    <p class="departament">Departament:&nbsp;</p>
+                  </div>
+                </div>
+                <div class="subtitles">
+                  <div class="info">
+                    <div class="item">
+                      <img
+                        src="./assets/details-assets/map.svg"
+                        alt="Location Icon"
+                      />
+                      <span class="location"></span>
+                    </div>
+                    <!-- <div class="item">
+                      <img
+                        src="./assets/details-assets/clock.svg"
+                        alt="Working Hours Icon"
+                      />
+                      <span class="workingHours"></span>
+                    </div> -->
+                    <div class="item">
+                      <img
+                        src="./assets/details-assets/building.svg"
+                        alt="Job Type Icon"
+                      />
+                      <span class="jobType"></span>
+                    </div>
+                    <div class="item">
+                      <img
+                        src="./assets/details-assets/briefcase.svg"
+                        alt="Experience Icon"
+                      />
+                      <span class="experience"></span>
+                    </div>
+                    <!-- <div class="item">
+                      <img
+                        src="./assets/details-assets/clipboard.svg"
+                        alt="Posted At Icon"
+                      />
+                      <span class="postedAt"></span>
+                    </div> -->
+                    <div class="item">
+                      <img
+                        src="./assets/details-assets/money.svg"
+                        alt="Salary Icon"
+                      />
+                      <span class="salary"></span>
+                    </div>
+                  </div>
+                  <button
+                    class="applyBtn"
+                    onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
+                  >
+                    Aplică
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="jd__body">
+              <div class="description">
+                <h2 class="description__header">Descrierea meseriei</h2>
+                <p id="jd"></p>
+              </div>
+
+              <div class="responsabilities">
+                <h2 class="description__header under">Responsabilități</h2>
+                <ul class="list" id="responsabilities"></ul>
+              </div>
+              <div class="demands">
+                <h2 class="description__header under">Cerințe</h2>
+                <ul class="list" id="demands"></ul>
+              </div>
+              <div class="offerings">
+                <h2 class="description__header under">Ce oferim</h2>
+                <ul class="list" id="offerings"></ul>
+              </div>
+              <div class="general__info">
+                <h2 class="description__header under">
+                  Alte informații (opțional)
+                </h2>
+                <ul class="list" id="generalInfo"></ul>
+              </div>
+              <hr />
+              <div class="about">
+                <div class="contact">
+                  <p class="contact__name under">Persoană de contact</p>
+                  <img id="recruiter-photo" src="" alt="Recruiter" />
+                  <div>
+                    <p class="contact__person"></p>
+                    <p class="contact__role"></p>
+                  </div>
+                </div>
+                <div class="general__info">
+                  <p class="contact__name under">Date de contact</p>
+                  <ul class="list" id="contact__list">
+                    <li id="phone">Telefon:&nbsp;</li>
+                    <li id="email">Email:&nbsp;</li>
+                    <li id="address">Adresă:&nbsp;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="jd__apply">
+              <button
+                class="applyBtn"
+                onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
+              >
+                Aplică
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer class="details-footer-container">
+      <hr class="details-footer-line" />
+      <div class="details-footer-bottom">
+        <p id="current-year"></p>
+        <a href="/index.html">
+          <h4>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</h4>
+        </a>
+      </div>
+    </footer>
+    <a href="#top-redirect" class="top-redirect-btn">
+      <img src="./assets//arrow-up.svg" alt="" />
+    </a>
+    <script type="module" src="details.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

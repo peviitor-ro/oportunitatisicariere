@@ -35,9 +35,12 @@
       <nav class="nav">
         <div class="responsive-navbar">
           <div class="nav__logo">
-            <a class="nav__logo__title" href="#"
-              >ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</a
-            >
+            <img class="img-logo" src="./assets/logo.png" alt="logo image" />
+            <a class="nav__logo__title hidden-title" href="#">
+              <span class="title-mint"> ASOCIAȚIA </span>
+              <br />
+              OPORTUNITĂȚI ȘI CARIERE
+            </a>
           </div>
           <div class="hamburger-menu">
             <button class="hamburger-menu-icon">
@@ -80,11 +83,18 @@
       </nav>
       <section class="intro">
         <div class="intro__container">
-          <img
-            src="./assets/logo-main.svg"
-            alt="asociatia oportunitati si cariere"
-            class="intro__container-logo"
-          />
+          <div class="intro__container__logo">
+            <img
+              src="./assets/logo.png"
+              alt="logo image"
+              class="intro__container__logo-image"
+            />
+            <div class="intro__container__logo__title">
+              <h1>ASOCIAȚIA</h1>
+              <h1>OPORTUNITĂȚI</h1>
+              <h1>ȘI CARIERE</h1>
+            </div>
+          </div>
           <img
             src="./assets/watch-acum.png"
             alt="watch image saying now"
@@ -93,11 +103,6 @@
         </div>
         <a href="#hero" class="intro__cta"></a>
       </section>
-      <!-- <img
-                src="./assets/hero-first.png"
-                alt="keyboard and watch with logo"
-                class="hero-first-bk"
-            /> -->
     </header>
     <main>
       <section class="hero" id="hero">
@@ -107,13 +112,13 @@
           </h1>
           <div class="hero__content__description">
             <h3>
-              Suntem o comunitate pasionata de IT, in care te poti dezvolta
-              personal si profesional.
+              Suntem o comunitate pasionată de IT, în care te poți dezvolta
+              personal și profesional.
             </h3>
 
             <h3>
-              Hai sa contribuim impreuna la motorul de cautare locuri de munca
-              <a href="#">peviitor.ro</a>.
+              Hai să contribuim împreună la motorul de căutare locuri de muncă
+              <a href="https://peviitor.ro/" target="_blank">peviitor.ro</a>.
             </h3>
           </div>
           <a
@@ -137,9 +142,10 @@
                 locurilor de muncă în România, indiferent de platformă.
               </p>
               <p>
-                Astfel, s-a născut site-ul peviitor.ro, care oferă
-                utilizatorilor posibilitatea de a găsi locuri de muncă de la
-                sute de companii.
+                Astfel, s-a născut site-ul
+                <a href="https://peviitor.ro/" target="_blank">peviitor.ro</a>,
+                care oferă utilizatorilor posibilitatea de a găsi locuri de
+                muncă de la sute de companii.
               </p>
               <p>
                 Echipa noastră de voluntari a dezvoltat motorul de căutare
@@ -200,55 +206,63 @@
             alt="arrow-right"
             id="arrow-right"
           />
-          <div class="swiper-wrapper">
-            <div class="how-contribute__job swiper-slide">
-              <img src="./assets/fe-job.png" alt="job-logo" />
-              <div class="how-contribute__job__text">
-                <h3>Frontend Developer</h3>
-                <a href="#">Detalii</a>
-              </div>
-            </div>
-            <div class="how-contribute__job swiper-slide">
-              <img src="./assets/be-job.png" alt="laptop" />
-              <div class="how-contribute__job__text">
-                <h3>Frontend Developer</h3>
-                <a href="#">Detalii</a>
-              </div>
-            </div>
-            <div class="how-contribute__job swiper-slide">
-              <img src="./assets/ba-job.png" alt="statistics" />
-              <div class="how-contribute__job__text">
-                <h3>Business Analyst</h3>
-                <a href="#">Detalii</a>
-              </div>
-            </div>
-            <div class="how-contribute__job swiper-slide">
-              <img src="./assets/ui-job.png" alt="drawings" />
-              <div class="how-contribute__job__text">
-                <h3>UI/UX Designer</h3>
-                <a href="#">Detalii</a>
-              </div>
-            </div>
-            <div class="how-contribute__job swiper-slide">
-              <img src="./assets/ui-job.png" alt="drawings" />
-              <div class="how-contribute__job__text">
-                <h3>QA Tester</h3>
-                <a href="#">Detalii</a>
-              </div>
-            </div>
-            <div class="how-contribute__job swiper-slide">
-              <img src="./assets/ui-job.png" alt="drawings" />
-              <div class="how-contribute__job__text">
-                <h3>Scrum master</h3>
-                <a href="#">Detalii</a>
-              </div>
-            </div>
+          <!-- JOBS -->
+          <div class="swiper-wrapper"></div>
+          <!-- JOBS -->
+        </div>
+        <div class="how-contribute__details">
+          <p>
+            Pentru a continua să oferim acest serviciu gratuit și să-l
+            îmbunătățim constant, avem nevoie de sprijinul vostru. <br />Orice
+            contribuție, ne ajută să acoperim costurile de operare și să
+            investim în dezvoltarea de noi funcționalități.
+          </p>
+          <p>
+            Dacă dorești să ne susții printr-o donație, te rugăm să folosești
+            datele de contact și IBAN-ul de mai jos. <br />Îți mulțumim pentru
+            generozitate și pentru faptul că ne ajuți să facem o diferență reală
+            în viețile oamenilor!
+          </p>
+          <p>
+            De asemenea, ne poți sprijini redirecționând impozitul pe venit
+            accesând
+            <span>
+              <a
+                href="https://redirectioneaza.ro/asociatia-oportunitati-si-cariere/"
+                target="_blank"
+              >
+                link-ul acesta.
+              </a>
+            </span>
+          </p>
+        </div>
+        <div class="contact_container">
+          <div class="contact_container__info">
+            <p>
+              <span class="small_info">IBAN: </span>
+              <span class="important_info">RO35BTRLRONCRT0625982901</span>
+            </p>
+            <p>
+              <span class="small_info">CIF: </span>
+              <span class="important_info">45718478</span>
+            </p>
+            <p>
+              <span class="small_info">Email: </span>
+              <a class="important_info" href="mailto: aocpeviitor@gmail.com"
+                >aocpeviitor@gmail.com</a
+              >
+            </p>
+            <p>
+              <span class="asociation_title"
+                >ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</span
+              >
+            </p>
           </div>
         </div>
       </section>
       <section id="why-contribute" class="why-contribute">
         <div class="why-contribute__title">
-          <h2>De ce sa ajuți?</h2>
+          <h2>De ce să ajuți?</h2>
           <img src="./assets/underline.svg" alt="" />
         </div>
         <div class="why-contribute__description">
@@ -455,8 +469,11 @@
       </section>
       <section class="join-us-section">
         <h2>
-          Ești pregătit să te alături echipei noastre de voluntari în IT? Hai să
-          ne cunoaștem!
+          Ești pregătit să te alături echipei noastre de voluntari?
+          <!-- Removed "în IT" for better text wraping-->
+          <!-- Added break for better title wrapping -->
+          <br />
+          Hai să ne cunoaștem!
         </h2>
         <p>
           Cu siguranță, te-am convins că voluntariatul în acest proiect este o
@@ -489,9 +506,9 @@
             <li>
               <a href="#team"> Echipa </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#terms"> Terms </a>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -541,7 +558,7 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        <p>© 2024</p>
+        <p id="current-year"></p>
         <a href="#">
           <h4>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</h4>
         </a>
@@ -557,5 +574,6 @@
       defer
     ></script>
     <script src="carousel.js" defer></script>
+    <script type="module" src="jobCards.js"></script>
   </body>
 </html>

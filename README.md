@@ -1,23 +1,85 @@
-# oportunitatisicariere
+[![Deploy Website](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml/badge.svg)](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml)
+[![pages-build-deployment](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/pages/pages-build-deployment)
+# ASOCIATIA OPORTUNITATI SI CARIERE
 
-Check out the final [Figma Design](https://www.figma.com/file/1fvOj1ECStKxx8VPenYX0u/oportunitatisicariere-final?type=design&node-id=1%3A23&mode=design&t=k9qLaYTLhwbiW9qE-1). 
-
-UI for oportunitatisicariere.ro
-
-
-
-# IMPORTANT:
-# How to install and use SASS Preprocessor steps:
-1. Install node_modules folder using: **npm install** command using the terminal inside of the project folder.
-2. Run: **npm run build-css** command in the terminal
-3. Run: **npm run build** command in the terminal
+Welcome to the main code repository for ASOCIATIA OPORTUNITATI SI CARIERE, an open-source project dedicated to developing the main website of our NGO. This project is built using HTML5, CSS3, SASS and Javascript. As an initiative driven by volunteers, we invite you to contribute and grow with us.
 
 
+<div align="center">
 
-# For an enhancement workflow, we can use Live Server VS Code extension:
-# How to install and use:
-1. On the VS Code Extensions menu on the left side panel, click on the extensions button.
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+[![GitHub Issues](https://img.shields.io/github/issues/peviitor-ro/oportunitatisicariere.svg)](https://github.com/peviitor-ro/oportunitatisicariere/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/peviitor-ro/oportunitatisicariere.svg)](https://github.com/peviitor-ro/oportunitatisicariere/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/peviitor-ro/oportunitatisicariere/blob/main/LICENSE)
+  
+</div>
 
-2. Search for "live server" and on the results, install Live Server extension by RitWick Dey by hitting install button from its page after opening.
+## About the Project
 
-3. On the bottom-right side of the VS Code there is a button called "Go Live", click on it to launch the live server on localhost by serving index.html file.
+This project is designed to effectively communicate the activities of our NGO through an engaging website. Volunteers are at the heart of our mission, learning and growing as they contribute. By participating, you'll have the opportunity to expand your skills across various engineering disciplines. If you're driven by passion and a desire to grow, we welcome you to join us in making an impact.
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/peviitor-ro/oportunitatisicariere.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd oportunitatisicariere
+    ```
+3. Install any dependencies (if applicable):
+    ```sh
+    npm install
+    ```
+
+## How to Develop
+
+1. Fork the repository and create a new branch:
+    ```sh
+    git checkout -b <branch_name>
+    ```
+2. Make your changes and commit them:
+    ```sh
+    git commit -m "Your detailed description of the changes"
+    ```
+3. Push to the branch:
+    ```sh
+    git push origin <branch_name>
+    ```
+4. Create a Pull Request.
+
+## Improvements
+
+We are continuously looking for ways to improve this project. You can contribute by:
+- Enhancing the UI/UX
+- Adding new features
+- Improving existing functionalities
+- Writing documentation
+- Fixing bugs
+
+## Figma Design
+
+To understand the visual layout and design of our project, you can view the Figma design:
+- [Asociatia Oportunitati si Cariere Design](https://www.figma.com/file/1fvOj1ECStKxx8VPenYX0u/oportunitatisicariere-final?type=design&node-id=1%3A23&mode=design&t=k9qLaYTLhwbiW9qE-1)
+
+## Contribution Guidelines
+
+- Follow the project's coding standards.
+- Write clear and concise commit messages.
+- Test your changes before submitting a pull request.
+- Respect the project's code of conduct.
+
+## Code of Conduct
+
+Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions, feel free to reach out to us. We appreciate your interest and look forward to your contributions.

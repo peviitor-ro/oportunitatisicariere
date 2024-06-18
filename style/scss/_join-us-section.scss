@@ -56,9 +56,10 @@
 @media only screen and (min-width:#{$phone-size}) and (max-width:500px) {
   .join-us-section {
     padding: 3rem;
+    gap: 3rem; 
 
     & p {
-      padding: 0 5rem 5rem 5rem;
+      padding: 0 3rem 5rem 3rem; // Reduced X padding for better text wrapping
       line-height: 2.5rem;
     }
   }

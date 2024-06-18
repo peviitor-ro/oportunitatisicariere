@@ -11,30 +11,56 @@ header {
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
-  background-color: $white;
+  background-color: $white-smoke;
   z-index: 99;
-//   max-width: 1440px;
-//   width: 100%;
-//   width: 100vw; //Two width values conflict
-padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0 
-  width: clamp(320px, 100%, 1440px); // Added width clamp to remove max-width and width lines
+  padding: 1rem 2rem;
+  width: clamp(320px, 100%, 1440px);
   height: auto;
 
   &__logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 0;
+    position: relative;
 
-      &__title {
-          font-weight: 700;
-          font-size: 2rem;
-          color: $black;
-      }
+    &__title {
+      font-weight: 700;
+      font-size: 2rem;
+      color: $dark-blue;
+      transition: all 0.2s ease;
+    }
+    & .title-mint {
+      font-family: $gelasio;
+      color: $dark-teal;
+      font-size: 1.8rem;
+    }
+    & .hidden-title {
+      opacity: 0;
+    }
+    & .visible-title {
+      opacity: 1;
+    }
+
+    & .img-logo {
+      margin-right: 0.5rem;
+      width: 60px;
+      height: 60px;
+    }
   }
+
+  & #socialLinks{
+    display: none;
+  }
+  // Hide logo while on intro section
 }
 
 .nav-bottom-border {
-  border-bottom: 1px solid $light-white;
+  // border-bottom: 1px solid $light-white;
+  // Changed border effect to elevation effect
+  box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.2),
+    /* Top shadow */ 0 8px 8px -4px rgba(0, 0, 0, 0.14),
+    /* Bottom shadow */ 0 8px 12px -4px rgba(0, 0, 0, 0.12); /* Top shadow */
 }
 
 .nav__links {
@@ -42,33 +68,40 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-//   padding: 1rem; // Added padding to parent element instead
+  //   padding: 1rem; // Added padding to parent element instead
 
   &__list {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      gap: 3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
 
-      .active {
-          border-bottom: 3px solid $green-mint;
+    .active {
+      border-bottom: 3px solid $green-mint;
+    }
+
+    & > li > a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1.6rem;
+      font-weight: 500;
+
+      &:hover {
+        color: $dark-gray;
+        transition: all 0.3s ease;
       }
-
-      & > li > a {
-          text-decoration: none;
-          color: $black;
-          font-size: 1.6rem;
-
-          &:hover {
-              color: $dark-gray;
-              transition: all 0.3s ease;
-          }
-      }
-      // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
+    }
+    // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
   }
+}
+#our-mission,
+#how-contribute,
+#why-contribute,
+#team {
+  scroll-margin-top: 100px;
 }
 
 .responsive-navbar {
@@ -80,246 +113,252 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
 
 @media only screen and (max-width: 640px) {
   .nav {
-      display: block;
+    display: block;
 
-      &__links {
-          background-color: #f3f3f3;
-          margin-top: 10px;
+    &__links {
+      background-color: #f3f3f3;
+      margin-top: 10px;
+    }
+
+    &__links__list {
+      display: none;
+    }
+
+    &__links__list.show {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__links__list li > a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        margin: -5px 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
       }
-
-      &__links__list {
-          display: none;
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
       }
-
-      &__links__list.show {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-
-      &__links__list li > a {
-              position: relative;
-              &:before {
-                  content: "";
-                  position: absolute;
-                  width: 100%;
-                  height: 2px;
-                  bottom: 0;
-                  margin: -5px 0;
-                  background-color: black;
-                  visibility: hidden;
-                  transform: scaleX(0);
-                  transition: all 0.4s ease-in-out 0s;
-              }
-              &:hover:before {
-                  visibility: visible;
-                  transform: scaleX(1);
-              }
-          }
-
-      &__logo {
-          display: block;
-          margin-top: 25px;
-      }
+    }
   }
 
   .hamburger-menu-icon {
-      display: block;
-      margin-top: 18px;
-      border:none;
+    display: block;
+    margin-top: 18px;
+    border: none;
 
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      > img {
-          height: 35px;
-      }
+    > img {
+      height: 35px;
+    }
   }
 
   .close-menu-icon {
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      &.visible {
-          display: block;
-          margin-top: 18px;
-          border:none;
+    &.visible {
+      display: block;
+      margin-top: 18px;
+      border: none;
 
-          > img {
-              height: 25px;
-          }
+      > img {
+        height: 25px;
       }
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .nav {
-      display: block;
+    display: block;
+    padding: 0 2rem;
 
-      &__links {
-          background-color: #f3f3f3;
-          margin-top: 10px;
+    &__links {
+      background-color: #f3f3f3;
+      margin-top: 10px;
+    }
+
+    &__links__list {
+      display: none;
+    }
+
+    &__links__list.show {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__links__list li > a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        margin: -5px 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
       }
-
-      &__links__list {
-          display: none;
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
       }
+    }
 
-      &__links__list.show {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+    &__logo {
+      margin-top: 1rem;
+
+      &__title {
+        font-size: 1.7rem;
       }
-
-      &__links__list li > a {
-              position: relative;
-              &:before {
-                  content: "";
-                  position: absolute;
-                  width: 100%;
-                  height: 2px;
-                  bottom: 0;
-                  margin: -5px 0;
-                  background-color: black;
-                  visibility: hidden;
-                  transform: scaleX(0);
-                  transition: all 0.4s ease-in-out 0s;
-              }
-              &:hover:before {
-                  visibility: visible;
-                  transform: scaleX(1);
-              }
-          }
-
-      &__logo {
-          display: block;
-          margin-top: 25px;
+      & .title-mint {
+        font-size: 1.6rem;
       }
+      & .img-logo {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
 
   .hamburger-menu-icon {
-      display:block;
-      margin-top: 18px;
-      border:none;
+    display: block;
+    margin-top: 18px;
+    border: none;
 
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      > img {
-          height: 35px;
-      }
+    > img {
+      height: 35px;
+    }
   }
 
   .close-menu-icon {
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      &.visible {
-          display: block;
-          margin-top: 18px;
-          border:none;
+    &.visible {
+      display: block;
+      margin-top: 18px;
+      border: none;
 
-          > img {
-              height: 25px;
-          }
+      > img {
+        height: 25px;
       }
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .nav {
-      display: block;
+    display: block;
 
-      &__links {
-          background-color: #f3f3f3;
-          margin-top: 10px;
+    &__links {
+      background-color: #f3f3f3;
+      margin-top: 10px;
+    }
+
+    &__links__list {
+      display: none;
+    }
+
+    &__links__list.show {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__links__list li > a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        margin: -5px 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
       }
-
-      &__links__list {
-          display: none;
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
       }
+    }
 
-      &__links__list.show {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-
-      &__links__list li > a {
-              position: relative;
-              &:before {
-                  content: "";
-                  position: absolute;
-                  width: 100%;
-                  height: 2px;
-                  bottom: 0;
-                  margin: -5px 0;
-                  background-color: black;
-                  visibility: hidden;
-                  transform: scaleX(0);
-                  transition: all 0.4s ease-in-out 0s;
-              }
-              &:hover:before {
-                  visibility: visible;
-                  transform: scaleX(1);
-              }
-          }
-
-      &__logo {
-          display: block;
-          margin-top: 25px;
-      }
+    // &__logo {
+    //   display: block;
+    //   margin-top: 25px;
+    // }
   }
 
   .hamburger-menu-icon {
-      display:block;
-      margin-top: 18px;
-      border:none;
+    display: block;
+    margin-top: 18px;
+    border: none;
 
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      > img {
-          height: 35px;
-      }
+    > img {
+      height: 35px;
+    }
   }
 
   .close-menu-icon {
-      &.hidden {
-          display: none;
-      }
+    &.hidden {
+      display: none;
+    }
 
-      &.visible {
-          display: block;
-          margin-top: 18px;
-          border:none;
+    &.visible {
+      display: block;
+      margin-top: 18px;
+      border: none;
 
-          > img {
-              height: 25px;
-          }
+      > img {
+        height: 25px;
       }
+    }
   }
 }
 
 @media only screen and (min-width: 1023px) {
- .hamburger-menu-icon {
-  display:none;
- }
+  .hamburger-menu-icon {
+    display: none;
+  }
 
- .close-menu-icon {
-  display:none;
- }
+  .close-menu-icon {
+    display: none;
+  }
 }
 
 .join-btn {
@@ -332,8 +371,8 @@ padding: 1rem 3rem; // Changed top and bottom padding to 1rem from 0
   font-weight: 600;
 
   &:hover {
-      transition: all 0.3s;
-      background-color: $dark-mint;
+    transition: all 0.3s;
+    background-color: $dark-mint;
   }
 }
 

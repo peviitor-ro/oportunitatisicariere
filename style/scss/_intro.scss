@@ -1,90 +1,167 @@
 .intro {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  &__container {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin-top: 9rem; 
- height: 100vh;
     width: 100%;
+    height: 40vh;
+    position: relative;
 
-    &__container {
+    &__logo {
       display: flex;
-      justify-content: center;
-      flex-direction: row;
       align-items: center;
-      width: 100%;
-      position: relative;
-    }
-  
-    &__container-logo {
-      width: clamp(256px, 100%, 1072px);
-      height: auto;
-      position: relative;
-      top: -10rem;
-    }
-  
-    &__container-watch {
-      position: absolute;
-      right: 0;
-      bottom: -40%;
-      width: clamp(126px, 100%, 496px);
-      height: auto;
-    }
-    &__cta {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateY(-50%);
-      width: 48px;
-      height: 48px;
-      background-image: url("../assets/chevron-down.svg");
-      background-size: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      cursor: pointer;
-      animation: bounce 2s infinite;
-      filter: brightness(0) invert(0.7); // Lighter gray color for SVG
-      transition: filter 0.3s ease; // Smooth transition for filter
+      gap: 1rem;
+      font-size: 5.2rem;
+      line-height: 140%;
 
-      &:hover {
-        animation-play-state: paused;
-        filter: brightness(0) invert(0); // Change to black on hover
+      & img {
+        width: 270px;
+        height: 270px;
+      }
+
+      & h1 {
+        color: $dark-blue;
+        font-weight: 700;
+      }
+
+      & h1:first-child {
+        font-family: $gelasio;
+        color: $dark-teal;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 130%;
       }
     }
   }
 
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-      easing: ease-in-out;
+  &__container-watch {
+    position: absolute;
+    right: 0;
+    bottom: -75%;
+    width: clamp(164px, 100%, 572px);
+    height: auto;
+  }
+  &__cta {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-image: url("../assets/chevron-down.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    filter: brightness(0) invert(0.7); // Lighter gray color for SVG
+    transition: filter 0.3s ease; // Smooth transition for filter
+
+    &:hover {
+      animation-play-state: paused;
+      filter: brightness(0) invert(0); // Change to black on hover
     }
   }
-  
-  @media only screen and (max-width: 769px) {
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    easing: ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .intro {
+    &__container {
+      &__logo {
+        font-size: 3.8rem;
+
+        & img {
+          width: 180px;
+          height: 180px;
+        }
+
+        & h1:first-child {
+          font-size: 3.6rem;
+        }
+      }
+    }
+    &__container-watch {
+      width: 45%;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .intro {
+    &__container {
+      &__logo {
+        font-size: 3rem;
+
+        & img {
+          width: 180px;
+          height: 180px;
+        }
+      }
+
+      &__container-watch {
+        bottom: -25%;
+      }
+    }
+  }
+  @media screen and (max-width: 540px) {
     .intro {
-     height: 30vh;
-      &__container-logo {
-        top: 0;
+      height: 40vh;
+      margin-top: 2rem;
+
+      &__container {
+        &__logo {
+          font-size: 2.5rem;
+
+          & img {
+            width: 140px;
+            height: 140px;
+          }
+        }
       }
       &__container-watch {
-          width: 35%;
-          bottom: -10%;
+        width: 40%;
+        bottom: 0;
       }
       &__cta {
         display: none;
       }
     }
   }
-  
-  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+  @media screen and (max-width: 426px) {
     .intro {
-      margin-top: 0;
-      &__container-logo {
-        top: 0;
+      &__container {
+        &__logo {
+          font-size: 2rem;
+
+          & img {
+            width: 90px;
+            height: 90px;
+          }
+          & h1:first-child {
+            font-size: 1.8rem;
+          }
+        }
       }
       &__container-watch {
-          width: 50%;
+        width: 35%;
+        bottom: 15%;
       }
     }
   }
+}
