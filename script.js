@@ -117,8 +117,6 @@ function createNewSubList() {
 
       img.src = item.src;
       img.alt = item.text;
-      img.style.width = '1.8rem'; 
-      img.style.height = '1.8rem';
 
       a.appendChild(img);
       li.appendChild(a);
@@ -145,8 +143,10 @@ function insertNewListBeforeButton() {
   const newList = createNewSubList();
   newList.id ='socialLinks';
 
-  if (buttonListItem) {
+  if (buttonListItem && window.matchMedia("(max-width: 768px)").matches) {
       navList.insertBefore(newList, buttonListItem);
+  } else {
+    socialLinks.style.visibility = 'hidden';
   }
 }
 
