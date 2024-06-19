@@ -5,6 +5,7 @@
   align-items: center;
   background-color: $greyish-white;
   position: relative;
+  padding: 1rem;
 
   &__title {
     display: flex;
@@ -12,16 +13,21 @@
     align-items: center;
     padding: 5.2rem 0;
 
-    & h2 {
+    h2 {
       font-size: 3.2rem;
       font-weight: 400;
+
+      @media screen and (max-width: $tablet-size) {
+        font-size: 2.2rem;
+      }
     }
 
-    & img {
-      transform: scale(
-        1.3,
-        0.9
-      ); // Unresponsive on smaller screens added media query
+    img {
+      transform: scale(1.3, 0.9);
+
+      @media screen and (max-width: $tablet-size) {
+        transform: scale(1, 1);
+      }
     }
   }
 
@@ -34,62 +40,171 @@
     text-align: center;
     font-size: 1.6rem;
     padding-bottom: 4.2rem;
+
+    @media screen and (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
+      padding: 4rem 22rem;
+    }
+
+    @media screen and (min-width: $tablet-size) and (max-width: $laptop-size) {
+      padding: 3rem 9rem;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      padding: 3rem 3rem;
+    }
+
+    @media screen and (max-width: $phone-size) {
+      padding: 3rem 1rem;
+    }
   }
 
-  // Swipper style
-
+  // Swiper style
   .swiper {
-    width: 100%;
+    width: 90%;
     max-width: 110rem;
     height: auto;
-    position: static !important;
     display: flex !important;
     position: relative;
 
     .swiper-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      padding-bottom: 3rem;
+
       .swiper-slide {
         text-align: center;
         font-size: 1.8rem;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        gap: 2rem;
+        background-color: #fff;
+        padding: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        height: 37rem;
+        padding-bottom: 3rem;
 
         img {
           display: block;
+          width: 100%;
+          height: 25rem;
           object-fit: cover;
+          border-radius: 5px 5px 0 0;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        a {
+          font-size: 1.4rem;
+          padding: 0.5rem 1rem;
+          background-color: $green-mint;
+          color: white;
+          text-decoration: none;
+          border-radius: 0.5rem;
+        }
+
+        a:hover {
+          background-color: darken($green-mint, 10%);
         }
       }
     }
+  }
+  .how-contribute-img__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
     .swiper-button-prev,
     .swiper-button-next {
+      display: flex;
+      flex-direction: row;
       width: 9rem;
       height: 9rem;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 3;
+      @media screen and (max-width: $tablet-size) {
+        width: 7rem;
+        height: 7rem;
+      }
+
+      @media screen and (max-width: $phone-size) {
+        width: 5rem;
+        height: 5rem;
+      }
     }
 
     .swiper-button-prev {
-      position: absolute;
-      top: 50rem;
-      left: 5.5rem;
-      cursor: pointer;
-      transform: scale(0.7) translateY(0);
+      &:hover {
+        filter: invert(50%);
+      }
+
+      @media screen and (max-width: $tablet-size) {
+        left: 1rem;
+      }
+
+      @media screen and (max-width: 450px) {
+        left: 2rem;
+      }
+    }
+
+    .swiper-button-next {
+      transform: rotate(180deg) translateY(-6%);
 
       &:hover {
         filter: invert(50%);
       }
 
-      // Add future rule for disabled arrow: filter: contrast(20%);
+      @media screen and (max-width: $tablet-size) {
+        right: 1rem;
+      }
+
+      @media screen and (max-width: 450px) {
+        right: 2rem;
+      }
     }
 
-    .swiper-button-next {
-      position: absolute;
-      top: 50rem;
-      right: 5.5rem;
-      transform: rotate(180deg) scale(0.7) translateY(0);
-      cursor: pointer;
+    .search-input {
+      padding: 0.5rem;
+      font-size: 2rem;
+      border: 0.1rem solid #ccc;
+      border-radius: 0.5rem;
+      margin-top: 0.8rem;
+      display: flex;
+      align-self: flex-start;
+      outline: none;
+      border: solid 0.1rem $green-mint;
+      color: $green-mint;
 
-      &:hover {
-        filter: invert(50%);
+      &::placeholder {
+        color: $green-mint;
+        opacity: 0.6;
+      }
+
+      @media screen and (max-width: $tablet-size) {
+        font-size: 1.8rem;
+        padding: 0.4rem;
+        margin-top: 0;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 1.8rem;
+        padding: 0.4rem;
+        margin-top: 0.6rem;
+        width: 15rem;
+      }
+      @media screen and (max-width: $phone-size) {
+        font-size: 1.6rem;
+        padding: 0.3rem;
+        margin-top: -1rem;
       }
     }
   }
@@ -100,39 +215,6 @@
     justify-content: center;
     padding-bottom: 7rem;
     position: relative;
-  }
-
-  &__job {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 2.4rem;
-    padding-bottom: 4rem;
-    background-color: #fff;
-
-    img {
-      width: 25rem;
-      height: 25rem;
-      object-fit: cover;
-      cursor: pointer;
-    }
-
-    .how-contribute__job__text {
-      display: flex;
-      flex-direction: column;
-      gap: 2.4rem;
-      padding-left: 0.5rem;
-      align-items: flex-start;
-
-      & h3 {
-        font-size: 1.8rem;
-        font-weight: 400;
-      }
-
-      & a {
-        font-size: 1.4rem;
-      }
-    }
   }
 
   &__details {
@@ -180,57 +262,6 @@
       color: $dark-mint;
       font-size: 2rem;
       font-weight: 600;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1398px) {
-  .how-contribute {
-    &__description {
-      padding: 4rem 22rem;
-    }
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .how-contribute {
-    &__description {
-      padding: 3rem 9rem;
-    }
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 769px) {
-  .how-contribute {
-    h2 {
-      font-size: 2.2rem; // Changed h2 size to match the rest
-    }
-    &__description {
-      padding: 3rem 3rem;
-    }
-    & img {
-      transform: scale(1, 1);
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .how-contribute {
-    &__description {
-      padding: 3rem 1rem;
-    }
-    & img {
-      transform: scale(1, 1);
-    }
-  }
-}
-@media screen and (max-width: 426px) {
-  .swiper {
-    .swiper-button-prev {
-      transform: scale(0.7) translate(-90%, 80%) !important;
-    }
-    .swiper-button-next {
-      transform: rotate(180deg) scale(0.7) translate(-90%, -80%) !important;
     }
   }
 }
