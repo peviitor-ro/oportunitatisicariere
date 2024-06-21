@@ -9,22 +9,22 @@ footer {
 
   // Footer navigation links inherit styles from header nav links to avoid duplication.
 
-  .footer-navigation {
-    & nav {
-      background-color: white;
-      & ul {
-        background-color: white;
-      }
-    }
-  }
+  // .footer-navigation {
+  //   & nav {
+  //     background-color: white;
+  //     & ul {
+  //       background-color: white;
+  //     }
+  //   }
+  // }
 
-  hr {
-    height: 0;
-    border: none;
-    border-top: 1px solid $black;
-    width: 100%;
-    max-width: 100rem;
-  }
+  // hr {
+  //   height: 0;
+  //   border: none;
+  //   border-top: 1px solid $black;
+  //   width: 100%;
+  //   max-width: 100rem;
+  // }
 
   .footer-social {
     &__links {
