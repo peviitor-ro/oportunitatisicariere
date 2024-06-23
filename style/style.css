@@ -30,6 +30,10 @@ header {
   align-items: center;
   flex-direction: column; }
 
+#icon-hamburger,
+#icon-close {
+  background-color: transparent; }
+
 /* NAVIGATION SECTION */
 .nav {
   display: flex;
@@ -66,8 +70,7 @@ header {
       height: 60px; }
 
 .nav-bottom-border {
-  box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.2), 0 8px 8px -4px rgba(0, 0, 0, 0.14), 0 8px 12px -4px rgba(0, 0, 0, 0.12);
-  /* Top shadow */ }
+  box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.2), 0 8px 8px -4px rgba(0, 0, 0, 0.14), 0 8px 12px -4px rgba(0, 0, 0, 0.12); }
 
 .nav__links {
   display: flex;
@@ -1144,7 +1147,7 @@ header {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.2rem;
-    padding: 0 30rem 8rem 30rem; }
+    padding: 0 30rem 4rem 30rem; }
   .join-us-section__button {
     padding: 1rem 3.2rem;
     border-radius: 0.8rem;
@@ -1204,16 +1207,6 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 5.2rem; }
-  footer .footer-navigation nav {
-    background-color: white; }
-    footer .footer-navigation nav ul {
-      background-color: white; }
-  footer hr {
-    height: 0;
-    border: none;
-    border-top: 1px solid #000000;
-    width: 100%;
-    max-width: 100rem; }
   footer .footer-social__links {
     list-style-type: none;
     display: flex;
