@@ -5,6 +5,11 @@ header {
   flex-direction: column;
 }
 
+#icon-hamburger,
+#icon-close {
+  background-color: transparent;
+}
+
 /* NAVIGATION SECTION */
 .nav {
   display: flex;
@@ -60,7 +65,7 @@ header {
   // Changed border effect to elevation effect
   box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.2),
     /* Top shadow */ 0 8px 8px -4px rgba(0, 0, 0, 0.14),
-    /* Bottom shadow */ 0 8px 12px -4px rgba(0, 0, 0, 0.12); /* Top shadow */
+    /* Bottom shadow */ 0 8px 12px -4px rgba(0, 0, 0, 0.12);
 }
 
 .nav__links {

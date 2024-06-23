@@ -86,6 +86,7 @@
         border-radius: 0.5rem;
         height: 37rem;
         padding-bottom: 3rem;
+        width: 95%;
 
         img {
           display: block;
@@ -114,7 +115,33 @@
         }
       }
     }
+
+    .no-result {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 5px;
+      color: #721c24;
+      height: 37rem; // Same height as .swiper-slide
+      text-align: center;
+      flex-direction: column;
+
+      .no-result__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h3 {
+          font-size: 1.8rem;
+          margin: 0;
+        }
+      }
+    }
   }
+
   .how-contribute-img__container {
     display: flex;
     align-items: center;
@@ -132,6 +159,7 @@
       align-items: center;
       position: relative;
       z-index: 3;
+
       @media screen and (max-width: $tablet-size) {
         width: 7rem;
         height: 7rem;
