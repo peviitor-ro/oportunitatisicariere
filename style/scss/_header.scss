@@ -92,6 +92,7 @@ header {
       &:hover {
         color: $dark-gray;
         transition: all 0.3s ease;
+        // border-bottom: 2px solid $green-mint;
       }
     }
     // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
@@ -385,26 +386,31 @@ header {
         &__links__list {
             display: none;
             height: calc(100vh - 60px);
-            padding-top: 14rem;
-            gap: 1rem;
+            padding-top: 10rem;
+            gap: 2rem;
 
             & li > a{
-             font-size: 2rem;
+             font-size: 3rem;
              font-weight: 500;
             }
     
             & #socialLinks{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 0.8rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 0.6rem;
+                column-gap: 1rem;
                 list-style-type: none;
-                margin-top: 14rem;
+                margin-top: 6rem;
+                // padding-top: 2rem;
 
                 img {
-                    width: 2.1rem;
-                    height: 2.1rem;
+                    width: 4rem;
+                    height: 4rem;
                 }
+            }
+
+            & #socialLinks > li > a:hover{
+              border-bottom: 2px solid $green-mint;              
             }
 
             & .join-btn {

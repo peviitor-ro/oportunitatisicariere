@@ -350,24 +350,28 @@ header {
   .nav__links__list {
     display: none;
     height: calc(100vh - 60px);
-    padding-top: 14rem;
-    gap: 1rem;
+    padding-top: 10rem;
+    gap: 2rem;
   }
   .nav__links__list li > a {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
   }
   .nav__links__list #socialLinks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.6rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
     list-style-type: none;
-    margin-top: 14rem;
+    margin-top: 6rem;
   }
   .nav__links__list #socialLinks img {
-    width: 2.1rem;
-    height: 2.1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .nav__links__list #socialLinks > li > a:hover {
+    border-bottom: 2px solid #2f7973;
   }
   .nav__links__list .join-btn {
     font-size: 2.4rem;
