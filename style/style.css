@@ -709,7 +709,8 @@ header {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 0.5rem;
         height: 37rem;
-        padding-bottom: 3rem; }
+        padding-bottom: 3rem;
+        width: 95%; }
         .how-contribute .swiper .swiper-wrapper .swiper-slide img {
           display: block;
           width: 100%;
@@ -728,6 +729,25 @@ header {
           border-radius: 0.5rem; }
         .how-contribute .swiper .swiper-wrapper .swiper-slide a:hover {
           background-color: #215450; }
+    .how-contribute .swiper .no-result {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 5px;
+      color: #721c24;
+      height: 37rem;
+      text-align: center;
+      flex-direction: column; }
+      .how-contribute .swiper .no-result .no-result__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; }
+        .how-contribute .swiper .no-result .no-result__text h3 {
+          font-size: 1.8rem;
+          margin: 0; }
   .how-contribute .how-contribute-img__container {
     display: flex;
     align-items: center;
