@@ -379,10 +379,17 @@ header {
 }
 @media (max-width: 320px) {
   .nav__links__list {
-    padding-top: 10rem;
+    padding-top: 7rem;
+    gap: 1.8rem;
+  }
+  .nav__links__list li > a {
+    font-size: 2.6rem;
   }
   .nav__links__list #socialLinks {
-    gap: 0.6rem;
+    margin-top: 6rem;
+    row-gap: 0.6rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
   }
   .nav__links__list .join-btn {
     font-size: 2.2rem;

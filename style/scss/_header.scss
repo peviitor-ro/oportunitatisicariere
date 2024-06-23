@@ -423,10 +423,17 @@ header {
 @media (max-width: $phone-size){
     .nav {
         &__links__list {
-            padding-top: 10rem;
+            padding-top: 7rem;
+            gap: 1.8rem;
     
+            & li > a{
+              font-size: 2.6rem;
+            }
+
             & #socialLinks{
-                gap: 0.6rem;                      
+              margin-top: 6rem;
+              row-gap: 0.6rem;
+              column-gap: 1.2rem;                   
             }
 
             & .join-btn {
