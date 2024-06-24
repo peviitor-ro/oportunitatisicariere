@@ -281,17 +281,37 @@ header {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: $tablet-size) and (max-width: 1023px) {
   .nav {
     display: block;
-
-    &__links {
-      background-color: $white-smoke;
-      margin-top: 10px;
-    }
-
     &__links__list {
       display: none;
+      height: calc(100vh - 30px);
+      gap: 2.2rem;
+      background-color: $white-smoke;
+
+      & li > a{
+        font-size: 2.8rem;
+        font-weight: 500;
+      }
+
+      & #socialLinks{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2.4rem;
+        column-gap: 3.2rem;
+        list-style-type: none;
+        margin-top: 6.4rem;
+
+        img {
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+      }
+
+      & .join-btn {
+          font-size: 2.8rem;
+      }
     }
 
     &__links__list.show {
@@ -391,15 +411,13 @@ header {
 @media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
     .nav {
         &__links__list {
-            display: none;
-            height: calc(100vh - 60px);
+            height: calc(100vh - 10px);
             gap: 2rem;
             background-color: $white-smoke;
 
 
             & li > a{
              font-size: 2.4rem;
-             font-weight: 500;
             }
     
             & #socialLinks{
@@ -411,8 +429,8 @@ header {
                 margin-top: 6rem;
 
                 img {
-                    width: 4rem;
-                    height: 4rem;
+                  width: 4rem;
+                  height: 4rem;
                 }
             }
 
@@ -426,7 +444,7 @@ header {
 @media (max-width: $phone-size){
     .nav {
         &__links__list {
-            padding-top: 7rem;
+            padding-top: 2rem;
             gap: 1.8rem;
 
             & #socialLinks{
