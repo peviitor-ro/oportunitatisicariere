@@ -5,9 +5,8 @@ header {
   flex-direction: column;
 }
 
-#icon-hamburger,
-#icon-close {
-  background-color: transparent;
+.close-menu-icon, .hamburger-menu-icon {
+  background-color: $white-smoke;
 }
 
 /* NAVIGATION SECTION */
@@ -35,14 +34,17 @@ header {
       color: $dark-blue;
       transition: all 0.2s ease;
     }
+
     & .title-mint {
       font-family: $gelasio;
       color: $dark-teal;
       font-size: 1.8rem;
     }
+
     & .hidden-title {
       opacity: 0;
     }
+
     & .visible-title {
       opacity: 1;
     }
@@ -52,6 +54,10 @@ header {
       width: 60px;
       height: 60px;
     }
+  }
+
+  & #socialLinks{
+    display: none;
   }
   // Hide logo while on intro section
 }
@@ -98,6 +104,7 @@ header {
     // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
   }
 }
+
 #our-mission,
 #how-contribute,
 #why-contribute,
@@ -110,6 +117,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 @media only screen and (max-width: 640px) {
   .nav {
@@ -215,7 +223,7 @@ header {
         height: 2px;
         bottom: 0;
         margin: -5px 0;
-        background-color: black;
+        background-color: $green-mint;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
@@ -273,17 +281,37 @@ header {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: $tablet-size) and (max-width: 1023px) {
   .nav {
     display: block;
-
-    &__links {
-      background-color: #f3f3f3;
-      margin-top: 10px;
-    }
-
     &__links__list {
       display: none;
+      height: calc(100vh - 30px);
+      gap: 2.2rem;
+      background-color: $white-smoke;
+
+      & li > a{
+        font-size: 2.8rem;
+        font-weight: 500;
+      }
+
+      & #socialLinks{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2.4rem;
+        column-gap: 3.2rem;
+        list-style-type: none;
+        margin-top: 6.4rem;
+
+        img {
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+      }
+
+      & .join-btn {
+          font-size: 2.8rem;
+      }
     }
 
     &__links__list.show {
@@ -303,7 +331,7 @@ header {
         height: 2px;
         bottom: 0;
         margin: -5px 0;
-        background-color: black;
+        background-color: $green-mint;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
@@ -380,5 +408,54 @@ header {
   background-color: $green-mint;
 }
 
-@media only screen and (max-width: 1025px) {
+@media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
+    .nav {
+        &__links__list {
+            height: calc(100vh - 10px);
+            gap: 2rem;
+            background-color: $white-smoke;
+
+
+            & li > a{
+             font-size: 2.4rem;
+            }
+    
+            & #socialLinks{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 2rem;
+                column-gap: 3rem;
+                list-style-type: none;
+                margin-top: 6rem;
+
+                img {
+                  width: 4rem;
+                  height: 4rem;
+                }
+            }
+
+            & .join-btn {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $phone-size){
+    .nav {
+        &__links__list {
+            padding-top: 2rem;
+            gap: 1.8rem;
+
+            & #socialLinks{
+              margin-top: 6rem;
+              row-gap: 1.6rem;
+              column-gap: 2.6rem;                  
+            }
+
+            & .join-btn {
+                font-size: 2.2rem;
+            }
+        }
+    }
 }
