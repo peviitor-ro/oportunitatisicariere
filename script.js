@@ -123,9 +123,65 @@ function hideMenuContent() {
   closeIcon.classList.remove("visible");
   hamburgerIcon.classList.toggle("hidden");
 }
-document
-  .querySelector(".close-menu-icon")
-  .addEventListener("click", hideMenuContent);
+
+document.querySelector('.close-menu-icon').addEventListener('click', hideMenuContent);
+
+
+
+function createNewSubList() {
+  const newList = document.createElement('ul');
+
+  const newItems = [
+      { href: "https://www.linkedin.com/company/asociatia-oportunitati-si-cariere/", src: "./assets/social-media-icons/linkedin_icon.svg", text: "linkedin" },
+      { href: "https://www.instagram.com/peviitor.ro/", src: './assets/social-media-icons/instagram_icon.svg',text: "instagram" },
+      { href: "https://discord.gg/KPMkdUfQNu", src: './assets/social-media-icons/discord.svg', text: "discord" },
+      { href: "https://github.com/peviitor-ro/oportunitatisicariere/issues", src: './assets/social-media-icons/github_icon.svg', text: "github" },
+      { href: "https://meet.jit.si/PEVIITOR.RO", src: "./assets/jitsi.svg", text: "jit" },
+      { href: "https://dev.to/t/peviitor", src: "./assets/social-media-icons/dev_icon.svg", text: "dev" }
+  ];
+
+  newItems.forEach(item => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      const img = document.createElement('img');
+
+      a.href = item.href;
+      a.target = 'blank';
+
+      img.src = item.src;
+      img.alt = item.text;
+
+      a.appendChild(img);
+      li.appendChild(a);
+      newList.appendChild(li);
+  });
+
+  return newList;
+}
+
+
+function insertNewListBeforeButton() {
+  const navList = document.querySelector('.nav__links__list.nav__links__nav');
+
+  const items = navList.children;
+
+  let buttonListItem;
+  for (let item of items) {
+      if (item.querySelector('button')) {
+          buttonListItem = item;
+          break;
+      }
+  }
+
+  const newList = createNewSubList();
+  newList.id ='socialLinks';
+
+  if (buttonListItem){
+      navList.insertBefore(newList, buttonListItem);
+  }
+}
+
+insertNewListBeforeButton();
 
 document.addEventListener("DOMContentLoaded", function () {
   const yearSpan = document.getElementById("current-year");
