@@ -1337,9 +1337,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 6rem;
   padding: 6rem;
   padding-bottom: 3rem;
+  padding-top: 3rem;
+  width: 283px;
 }
 .team__member {
   display: flex;
@@ -1372,7 +1374,37 @@ header {
   filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
 }
 
+.core-4 {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.banner-core {
+  position: relative;
+}
+
+.team__banner {
+  position: relative;
+  text-align: center;
+}
+.team__banner p {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  font-size: 2rem;
+  margin-top: 2.2rem;
+  position: absolute;
+  left: 13rem;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .core-4 {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .team {
     padding: 7rem 0;
   }
@@ -1383,17 +1415,30 @@ header {
     width: 90vw;
     font-size: 1.6rem;
   }
+  .team__banner {
+    transform: scale(0.9);
+  }
+  .team__banner p {
+    font-size: 2.2rem;
+    left: 14rem;
+    top: 0rem;
+    width: auto;
+  }
   .team__members {
     flex-direction: column;
     padding: 3rem 0;
     gap: 4rem;
   }
+  .team__members__core {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
   .team__member {
-    width: 30rem;
     display: grid;
     grid-template-columns: 12rem 18rem;
     grid-template-rows: repeat(3, 4rem);
     row-gap: 0;
+    width: 32rem;
   }
   .team__member-img {
     grid-column: 1;
@@ -1405,14 +1450,17 @@ header {
     grid-column: 2;
     grid-row: 1;
     justify-self: left;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 20rem;
   }
   .team__member p {
     grid-column: 2;
     grid-row: 2;
     justify-self: left;
-    width: auto;
-    font-size: 2.2rem;
+    width: 25rem;
+    text-align: start;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
   .team__member__socials {
     grid-column: 2;
@@ -1427,6 +1475,13 @@ header {
   .team p {
     width: 80vw;
     font-size: 1.6rem;
+  }
+  .team__banner img {
+    transform: scale(0.9);
+  }
+  .team__banner p {
+    left: 15rem;
+    top: 0.4rem;
   }
   .team h4 {
     font-size: 2rem;
