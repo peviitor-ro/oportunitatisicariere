@@ -48,9 +48,11 @@ $tablet-line-height-p: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8rem;
+    gap: 6rem;
     padding: 6rem;
     padding-bottom: 3rem;
+    padding-top: 3rem;
+    width: 283px;
   }
 
   &__member {
@@ -58,12 +60,6 @@ $tablet-line-height-p: 2rem;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
-
-    // &__desc {
-    //   display: flex;
-    //   flex-direction: column;
-    //   gap: 1.2rem;
-    // }
 
     &-img {
       width: 16rem;
@@ -97,20 +93,59 @@ $tablet-line-height-p: 2rem;
   }
 }
 
-// Phone responsiveness
-// $phone-size: 320px
-// $tablet-size: 768px
+.core-4 {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.banner-core {
+  position: relative;
+}
+
+.team__banner {
+  position: relative;
+  text-align: center;
+
+  & p {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-size: 2rem;
+    margin-top: 2.2rem;
+    position: absolute;
+    left: 13rem;
+  }
+}
+
 @media only screen and (min-width: $phone-size) and (max-width: $tablet-size) {
+  .core-4 {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .team {
     padding: 7rem 0;
 
     h2 {
-      font-size: 2.2rem; // Changed h2 font size to match the rest
+      font-size: 2.2rem;
     }
 
     p {
       width: 90vw;
       font-size: $tablet-font-size-p;
+    }
+
+    &__banner {
+      transform: scale(0.9);
+    }
+
+    &__banner p {
+      font-size: 2.2rem;
+      left: 14rem;
+      top: 0rem;
+      width: auto;
     }
 
     // larger/wider for smaller screens
@@ -120,14 +155,19 @@ $tablet-line-height-p: 2rem;
       // swtiched from row to column for narrow screens
       padding: 3rem 0; // Changed padding from 6 rem
       gap: 4rem; // Reduce gap for a better fit on smaller screens
+
+      &__core {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+      }
     }
 
     &__member {
-      width: 30rem;
       display: grid;
       grid-template-columns: 12rem 18rem; // Changed from repeat(2,auto) in order fo member cards to align properly
       grid-template-rows: repeat(3, 4rem);
       row-gap: 0; // Removed row gap for narrow screens
+      width: 32rem;
 
       &-img {
         grid-column: 1;
@@ -140,15 +180,18 @@ $tablet-line-height-p: 2rem;
         grid-column: 2;
         grid-row: 1; // Centered vertically
         justify-self: left; // Centered horizontally
-        font-size: $phone-font-size-h4;
+        font-size: 2rem;
+        width: 20rem;
       }
 
       p {
         grid-column: 2;
         grid-row: 2; // Centered vertically
         justify-self: left; // Centered horizontally
-        width: auto;
-        font-size: $phone-font-size-p;
+        width: 25rem;
+        text-align: start;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
       }
 
       &__socials {
@@ -160,9 +203,6 @@ $tablet-line-height-p: 2rem;
   }
 }
 
-// Tablet responsiveness
-// $tablet-size: 768px
-// $laptop-size: 1024px;
 @media only screen and (min-width: $tablet-size) and (max-width: $laptop-size) {
   .team {
     padding: 7rem 10rem;
@@ -173,6 +213,16 @@ $tablet-line-height-p: 2rem;
     }
 
     // larger/wider for smaller screens
+
+    &__banner img {
+      transform: scale(0.9);
+    }
+
+    &__banner p {
+      // font-size: 2rem;
+      left: 15rem;
+      top: 0.4rem;
+    }
 
     h4 {
       font-size: $tablet-font-size-h4;
