@@ -2291,7 +2291,7 @@ footer .footer-bottom h4 {
 .redirect-btn {
   margin-top: 3%;
   padding: 20px;
-  width: 20%;
+  min-width: 20%;
   color: white;
   background-color: #2f7973;
   border: none;
