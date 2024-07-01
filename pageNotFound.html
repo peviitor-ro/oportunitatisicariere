@@ -20,9 +20,15 @@
                     <img class="vector-line" src="assets/404-page-assets/img_1.png" alt="vectorLine">
                     <p class="normal-p">Oops! Pagina pe care o cauți nu pare să existe.</p><br>
                     <p class="normal-p">Este posibil ca linkul pe care l-ai urmat să fie greșit sau pagina să fi fost eliminată.</p>
-                    <button class="redirect-btn">Mergi la pagina principală</button>
+                    <button class="redirect-btn" onclick="redirectToHome()">Mergi la pagina principală</button>
             </div>
             </div>
         </main>
+        <script>
+            function redirectToHome(){
+                window.location.href = 'index.html'
+            }
+        </script>
+
     </body>
 </html>
