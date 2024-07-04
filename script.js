@@ -76,20 +76,9 @@ navTitleLogo.style.cursor = "none";
   highlightNavLink();
 });
 
-// Scroll-to-top button
-const scrollBtn = document.querySelector(".top-redirect-btn");
-
-const toggleArrowVisibility = () => {
-  if (window.scrollY > 500) {
-    scrollBtn.style.opacity = "1";
-  } else {
-    scrollBtn.style.opacity = "0";
-  }
-};
-
-window.addEventListener("scroll", toggleArrowVisibility);
 
 document.querySelector(".close-menu-icon").classList.add("hidden");
+
 function showMenuContent() {
   const navLinksList = document.querySelector(".nav__links__list");
   const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
@@ -100,6 +89,10 @@ function showMenuContent() {
   hamburgerIcon.classList.add("hidden");
   closeIcon.classList.remove("hidden");
   closeIcon.classList.add("visible");
+
+  if(hamburgerIcon.classList.contains('hidden')){
+    scrollBtn.style.display = 'none';
+  }
 
   navLinksList.addEventListener("click", function () {
     navLinksList.classList.remove("show");
@@ -117,7 +110,10 @@ function hideMenuContent() {
   const navLinksList = document.querySelector(".nav__links__list");
   const closeIcon = document.querySelector(".close-menu-icon");
   const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
-
+  
+  if(hamburgerIcon.classList.contains('hidden')){
+    document.body.style.overflow = ''; 
+  }
   navLinksList.classList.remove("show");
   closeIcon.classList.toggle("hidden");
   closeIcon.classList.remove("visible");
@@ -188,3 +184,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentYear = new Date().getFullYear();
   yearSpan.textContent = `© ${currentYear}`;
 });
+
+
+// Scroll-to-top button
+  const scrollBtn = document.querySelector(".top-redirect-btn");
+  const closeIcon = document.querySelector(".close-menu-icon");
+
+const toggleArrowVisibility = () => {
+
+ if (window.scrollY > 500 && window.matchMedia("(min-width: 1023px)").matches) {
+    scrollBtn.style.opacity = "1";
+    document.body.style.overflow = ''; 
+
+  } else if(window.scrollY > 500 && closeIcon.classList.contains('hidden') && window.matchMedia("(min-width: 320px) and (max-width: 1023px)").matches){
+    scrollBtn.style.opacity = "1";
+    document.body.style.overflow = '';
+    scrollBtn.style.display = '';
+    
+  } else if(window.scrollY > 500 && closeIcon.classList.contains('visible') && window.matchMedia("(min-width: 320px) and (max-width: 1023px)").matches){
+    scrollBtn.style.opacity = "0";
+    document.body.style.overflow = 'hidden'; 
+    scrollBtn.style.display = 'none';
+
+  } else {
+    scrollBtn.style.opacity = "0";
+    scrollBtn.style.display = '';
+    document.body.style.overflow = '';
+  }
+};
+
+window.addEventListener("scroll", toggleArrowVisibility);
