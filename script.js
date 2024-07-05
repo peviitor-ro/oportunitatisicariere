@@ -90,9 +90,11 @@ function showMenuContent() {
   closeIcon.classList.remove("hidden");
   closeIcon.classList.add("visible");
 
-  if(hamburgerIcon.classList.contains('hidden')){
+  if(closeIcon.classList.contains('visible')){
     scrollBtn.style.display = 'none';
-  }
+    document.body.style.height = '100%'; 
+    document.body.style.overflow = 'hidden'; 
+  } 
 
   navLinksList.addEventListener("click", function () {
     navLinksList.classList.remove("show");
@@ -114,6 +116,7 @@ function hideMenuContent() {
   if(hamburgerIcon.classList.contains('hidden')){
     document.body.style.overflow = ''; 
   }
+
   navLinksList.classList.remove("show");
   closeIcon.classList.toggle("hidden");
   closeIcon.classList.remove("visible");
@@ -192,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const toggleArrowVisibility = () => {
 
- if (window.scrollY > 500 && window.matchMedia("(min-width: 1023px)").matches) {
+  if (window.scrollY > 500 && window.matchMedia("(min-width: 1023px)").matches) {
     scrollBtn.style.opacity = "1";
     document.body.style.overflow = ''; 
 
@@ -200,11 +203,7 @@ const toggleArrowVisibility = () => {
     scrollBtn.style.opacity = "1";
     document.body.style.overflow = '';
     scrollBtn.style.display = '';
-    
-  } else if(window.scrollY > 500 && closeIcon.classList.contains('visible') && window.matchMedia("(min-width: 320px) and (max-width: 1023px)").matches){
-    scrollBtn.style.opacity = "0";
-    document.body.style.overflow = 'hidden'; 
-    scrollBtn.style.display = 'none';
+    scrollBtn.style.visibility = "visible";
 
   } else {
     scrollBtn.style.opacity = "0";
