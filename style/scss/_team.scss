@@ -133,7 +133,6 @@ $tablet-line-height-p: 2rem;
     }
 
     p {
-      width: 90vw;
       font-size: $tablet-font-size-p;
     }
 
@@ -143,7 +142,6 @@ $tablet-line-height-p: 2rem;
 
     &__banner p {
       font-size: 2.2rem;
-      left: 14rem;
       top: 0rem;
       width: auto;
     }
@@ -188,7 +186,6 @@ $tablet-line-height-p: 2rem;
         grid-column: 2;
         grid-row: 2; // Centered vertically
         justify-self: left; // Centered horizontally
-        width: 25rem;
         text-align: start;
         font-size: 1.8rem;
         margin-bottom: 1rem;
@@ -199,6 +196,21 @@ $tablet-line-height-p: 2rem;
         grid-row: 3; // Centered vertically
         justify-self: left; // Centered horizontally
       }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .team {
+    &__banner {
+      transform: scale(0.8);
+    }
+  }
+}
+@media screen and (max-width: 346px) {
+  .team {
+    &__banner {
+      transform: scale(0.7);
     }
   }
 }

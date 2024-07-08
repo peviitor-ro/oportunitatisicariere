@@ -282,8 +282,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.4rem;
-    -moz-column-gap: 3.2rem;
-         column-gap: 3.2rem;
+    column-gap: 3.2rem;
     list-style-type: none;
     margin-top: 6.4rem;
   }
@@ -382,8 +381,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
     list-style-type: none;
     margin-top: 6rem;
   }
@@ -403,8 +401,7 @@ header {
   .nav__links__list #socialLinks {
     margin-top: 6rem;
     row-gap: 1.6rem;
-    -moz-column-gap: 2.6rem;
-         column-gap: 2.6rem;
+    column-gap: 2.6rem;
   }
   .nav__links__list .join-btn {
     font-size: 2.2rem;
@@ -734,7 +731,6 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
-  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -960,8 +956,7 @@ header {
   display: block;
   width: 100%;
   height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide h3 {
@@ -1073,10 +1068,6 @@ header {
   outline: none;
   border: solid 0.1rem #2f7973;
   color: #2f7973;
-}
-.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
-  color: #2f7973;
-  opacity: 0.6;
 }
 .how-contribute .how-contribute-img__container .search-input::placeholder {
   color: #2f7973;
@@ -1412,7 +1403,6 @@ header {
     font-size: 2.2rem;
   }
   .team p {
-    width: 90vw;
     font-size: 1.6rem;
   }
   .team__banner {
@@ -1420,7 +1410,6 @@ header {
   }
   .team__banner p {
     font-size: 2.2rem;
-    left: 14rem;
     top: 0rem;
     width: auto;
   }
@@ -1457,7 +1446,6 @@ header {
     grid-column: 2;
     grid-row: 2;
     justify-self: left;
-    width: 25rem;
     text-align: start;
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -1466,6 +1454,16 @@ header {
     grid-column: 2;
     grid-row: 3;
     justify-self: left;
+  }
+}
+@media screen and (max-width: 426px) {
+  .team__banner {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 346px) {
+  .team__banner {
+    transform: scale(0.7);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1502,7 +1500,7 @@ header {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 15rem 0;
+  padding: 15rem 2rem;
 }
 .thank-section__final-logo {
   margin-bottom: 3rem;
@@ -1511,8 +1509,7 @@ header {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
-  padding-left: 42rem;
-  padding-right: 42rem;
+  max-width: 620px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -1523,7 +1520,7 @@ header {
 }
 @media only screen and (min-width: 320px) and (max-width: 1280px) {
   .thank-section {
-    padding: 12rem 0;
+    padding: 12rem 2;
   }
   .thank-section__final-logo {
     margin-bottom: 6rem;
@@ -2137,8 +2134,7 @@ footer .footer-bottom h4 {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 .jd__container .jd__body .list > li {
   padding: 0.2rem;
@@ -2192,8 +2188,7 @@ footer .footer-bottom h4 {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact__name,
 .jd__container .jd__body .about .contact .contact__person {
