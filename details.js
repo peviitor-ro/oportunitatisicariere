@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("address").textContent +=
           job.aboutEmployer.address;
       }
+      checkPath(data);
     })
     .catch((error) => {
       {
@@ -62,3 +63,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
+function checkPath(data) {
+  const path = window.location.href;
+  const pathId = path.split("=");
+  let matchFound = false;
+
+  for (let job of data) {
+    if (job.id === pathId[pathId.length - 1]) {
+      matchFound = true;
+      break;
+    }
+  }
+
+  if (!matchFound) {
+    window.location.href = "pageNotFound.html";
+  }
+}
