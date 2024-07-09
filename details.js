@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("address").textContent +=
           job.aboutEmployer.address;
       }
-      checkPath(data);
+      checkPath(data); // Call the function to check if the path matches any of the job IDs
     })
     .catch((error) => {
       {
@@ -63,19 +63,40 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
-function checkPath(data) {
-  const path = window.location.href;
-  const pathId = path.split("=");
-  let matchFound = false;
 
-  for (let job of data) {
-    if (job.id === pathId[pathId.length - 1]) {
-      matchFound = true;
-      break;
+// Check if the path matches any of the job IDs
+// function checkPath(data) {
+//   const path = window.location.href;
+//   const pathId = path.split("=");
+//   let matchFound = false;
+
+//   for (let job of data) {
+//     if (job.id === pathId[pathId.length - 1]) {
+//       matchFound = true;
+//       break;
+//     }
+//   }
+
+//   if (!matchFound) {
+//     window.location.href = "pageNotFound.html";
+//   }
+// }
+function checkPath(data, idKey = "id") {
+  try {
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("Invalid data provided");
     }
-  }
 
-  if (!matchFound) {
-    window.location.href = "pageNotFound.html";
+    const path = new URLSearchParams(window.location.search);
+    const pathId = path.get(idKey);
+
+    // Check if pathId exists in the data array
+    const matchFound = data.some((job) => job[idKey] === pathId);
+
+    if (!matchFound) {
+      window.location.href = "pageNotFound.html";
+    }
+  } catch (error) {
+    console.error("Error in checkPath:", error.message);
   }
 }
