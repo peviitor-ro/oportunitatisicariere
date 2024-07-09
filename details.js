@@ -64,23 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Check if the path matches any of the job IDs
-// function checkPath(data) {
-//   const path = window.location.href;
-//   const pathId = path.split("=");
-//   let matchFound = false;
-
-//   for (let job of data) {
-//     if (job.id === pathId[pathId.length - 1]) {
-//       matchFound = true;
-//       break;
-//     }
-//   }
-
-//   if (!matchFound) {
-//     window.location.href = "pageNotFound.html";
-//   }
-// }
 function checkPath(data, idKey = "id") {
   try {
     if (!Array.isArray(data) || data.length === 0) {
@@ -90,7 +73,6 @@ function checkPath(data, idKey = "id") {
     const path = new URLSearchParams(window.location.search);
     const pathId = path.get(idKey);
 
-    // Check if pathId exists in the data array
     const matchFound = data.some((job) => job[idKey] === pathId);
 
     if (!matchFound) {
