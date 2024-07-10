@@ -1,72 +1,72 @@
 $scale-desktop: 0.75;
-$scale-laptop: 0.50;
+$scale-laptop: 0.5;
 $scale-tablet: 0.375;
 
-.main-container-error{
+.main-container-error {
   width: 100%;
-  height:80%;
+  min-height: 80vh;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 6rem;
+}
+.text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.text-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.phone-image{
+.phone-image {
   padding-top: 2%;
   background-size: cover;
   background-repeat: no-repeat;
-  height:30%;
-  width:30%;
+  height: 30%;
+  width: 30%;
   position: relative;
 }
-.vector-line{
-  height:20%;
-  width:80%;
+.vector-line {
+  height: 20%;
+  width: 80%;
   margin-top: -1%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
-.header-first{
+.header-first {
   font-size: 88px;
   font-family: Roboto, serif;
   position: relative;
-  @media(max-width: $desktop-size){
+  @media (max-width: $desktop-size) {
     font-size: 88px * $scale-desktop;
-
   }
-  @media(max-width: $laptop-size){
+  @media (max-width: $laptop-size) {
     font-size: 88px * $scale-laptop;
   }
-  @media(max-width: $tablet-size){
+  @media (max-width: $tablet-size) {
     font-size: 88px * $scale-tablet;
   }
 }
-.normal-p{
+.normal-p {
   font-size: 24px;
   font-family: Roboto, serif;
   position: relative;
-  margin:1rem;
-  @media(max-width: $desktop-size){
+  margin: 1rem;
+  @media (max-width: $desktop-size) {
     font-size: 24px * $scale-desktop;
     margin-left: 2rem;
     margin-right: 2rem;
   }
-
 }
-.redirect-btn{
+.redirect-btn {
   margin-top: 3%;
-  padding:2rem;
-  min-width:20%;
-  color:white;
+  padding: 2rem;
+  min-width: 20%;
+  color: white;
   background-color: $green-mint;
   border: none;
   font-size: 1.8rem;
@@ -74,10 +74,17 @@ $scale-tablet: 0.375;
   transition: background-color 0.3s;
   position: relative;
 }
-.redirect-btn:hover{
+.redirect-btn:hover {
   background-color: $dark-mint;
   position: relative;
 }
-.space{
+.space {
   margin-top: 8rem;
+}
+
+@media only screen and (max-width: 426px) {
+  .main-container-error {
+    min-height: 60vh;
+    margin-bottom: 4rem;
+  }
 }
