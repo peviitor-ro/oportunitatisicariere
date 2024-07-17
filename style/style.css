@@ -2246,4 +2246,106 @@ footer .footer-bottom h4 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.main-container-error {
+  width: 100%;
+  min-height: 80vh;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 6rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.phone-image {
+  padding-top: 2%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30%;
+  width: 30%;
+  position: relative;
+}
+
+.vector-line {
+  height: 20%;
+  width: 80%;
+  margin-top: -1%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-first {
+  font-size: 88px;
+  font-family: Roboto, serif;
+  position: relative;
+}
+@media (max-width: 1280px) {
+  .header-first {
+    font-size: 66px;
+  }
+}
+@media (max-width: 1024px) {
+  .header-first {
+    font-size: 44px;
+  }
+}
+@media (max-width: 768px) {
+  .header-first {
+    font-size: 33px;
+  }
+}
+
+.normal-p {
+  font-size: 24px;
+  font-family: Roboto, serif;
+  position: relative;
+  margin: 1rem;
+}
+@media (max-width: 1280px) {
+  .normal-p {
+    font-size: 18px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.redirect-btn {
+  margin-top: 3%;
+  padding: 2rem;
+  min-width: 20%;
+  color: white;
+  background-color: #2f7973;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.redirect-btn:hover {
+  background-color: #1e524e;
+  position: relative;
+}
+
+.space {
+  margin-top: 8rem;
+}
+
+@media only screen and (max-width: 426px) {
+  .main-container-error {
+    min-height: 60vh;
+    margin-bottom: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

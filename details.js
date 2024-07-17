@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("address").textContent +=
           job.aboutEmployer.address;
       }
+      checkPath(data); // Call the function to check if the path matches any of the job IDs
     })
     .catch((error) => {
       {
@@ -62,3 +63,22 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
+
+function checkPath(data, idKey = "id") {
+  try {
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("Invalid data provided");
+    }
+
+    const path = new URLSearchParams(window.location.search);
+    const pathId = path.get(idKey);
+
+    const matchFound = data.some((job) => job[idKey] === pathId);
+
+    if (!matchFound) {
+      window.location.href = "pageNotFound.html";
+    }
+  } catch (error) {
+    console.error("Error in checkPath:", error.message);
+  }
+}
