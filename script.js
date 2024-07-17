@@ -76,18 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
   highlightNavLink();
 });
 
-// Scroll-to-top button
-const scrollBtn = document.querySelector(".top-redirect-btn");
-
-const toggleArrowVisibility = () => {
-  if (window.scrollY > 500) {
-    scrollBtn.style.opacity = "1";
-  } else {
-    scrollBtn.style.opacity = "0";
-  }
-};
-
-window.addEventListener("scroll", toggleArrowVisibility);
 
 function showMenuContent() {
   const navLinksList = document.querySelector(".nav__links__list");
@@ -99,6 +87,12 @@ function showMenuContent() {
   hamburgerIcon.classList.add("hidden");
   closeIcon.classList.remove("hidden");
   closeIcon.classList.add("visible");
+
+  if(closeIcon.classList.contains('visible')){
+    scrollBtn.style.display = 'none';
+    document.body.style.height = '100%'; 
+    document.body.style.overflow = 'hidden'; 
+  } 
 
   navLinksList.addEventListener("click", function () {
     navLinksList.classList.remove("show");
@@ -116,6 +110,10 @@ function hideMenuContent() {
   const navLinksList = document.querySelector(".nav__links__list");
   const closeIcon = document.querySelector(".close-menu-icon");
   const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
+  
+  if(hamburgerIcon.classList.contains('hidden')){
+    document.body.style.overflow = ''; 
+  }
 
   navLinksList.classList.remove("show");
   closeIcon.classList.toggle("hidden");
@@ -210,3 +208,29 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentYear = new Date().getFullYear();
   yearSpan.textContent = `© ${currentYear}`;
 });
+
+
+// Scroll-to-top button
+  const scrollBtn = document.querySelector(".top-redirect-btn");
+  const closeIcon = document.querySelector(".close-menu-icon");
+
+const toggleArrowVisibility = () => {
+
+  if (window.scrollY > 500 && window.matchMedia("(min-width: 1023px)").matches) {
+    scrollBtn.style.opacity = "1";
+    document.body.style.overflow = ''; 
+
+  } else if(window.scrollY > 500 && closeIcon.classList.contains('hidden') && window.matchMedia("(min-width: 320px) and (max-width: 1023px)").matches){
+    scrollBtn.style.opacity = "1";
+    document.body.style.overflow = '';
+    scrollBtn.style.display = '';
+    scrollBtn.style.visibility = "visible";
+
+  } else {
+    scrollBtn.style.opacity = "0";
+    scrollBtn.style.display = '';
+    document.body.style.overflow = '';
+  }
+};
+
+window.addEventListener("scroll", toggleArrowVisibility);
