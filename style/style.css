@@ -30,7 +30,8 @@ header {
   align-items: center;
   flex-direction: column; }
 
-.close-menu-icon, .hamburger-menu-icon {
+.close-menu-icon,
+.hamburger-menu-icon {
   background-color: #f5f5f5; }
 
 /* NAVIGATION SECTION */
@@ -55,6 +56,9 @@ header {
       font-size: 2rem;
       color: #1d2b59;
       transition: all 0.2s ease; }
+    .nav__logo .logo-redirect {
+      pointer-events: auto !important;
+      cursor: pointer !important; }
     .nav__logo .title-mint {
       font-family: "Gelasio";
       color: #2c6980;
@@ -1435,10 +1439,6 @@ footer {
     .top-redirect-btn img {
       width: 4rem;
       height: 4rem; } }
-
-.details-app .nav__logo a {
-  pointer-events: auto !important;
-  cursor: pointer !important; }
 
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba(107, 107, 107, 0.35);
