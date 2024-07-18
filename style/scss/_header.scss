@@ -5,7 +5,8 @@ header {
   flex-direction: column;
 }
 
-.close-menu-icon, .hamburger-menu-icon {
+.close-menu-icon,
+.hamburger-menu-icon {
   background-color: $white-smoke;
 }
 
@@ -35,6 +36,11 @@ header {
       transition: all 0.2s ease;
     }
 
+    .logo-redirect {
+      pointer-events: auto !important;
+      cursor: pointer !important;
+    }
+
     & .title-mint {
       font-family: $gelasio;
       color: $dark-teal;
@@ -56,7 +62,7 @@ header {
     }
   }
 
-  & #socialLinks{
+  & #socialLinks {
     display: none;
   }
   // Hide logo while on intro section
@@ -117,7 +123,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 @media only screen and (max-width: 640px) {
   .nav {
@@ -290,12 +295,12 @@ header {
       gap: 2.2rem;
       background-color: $white-smoke;
 
-      & li > a{
+      & li > a {
         font-size: 2.8rem;
         font-weight: 500;
       }
 
-      & #socialLinks{
+      & #socialLinks {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 2.4rem;
@@ -304,13 +309,13 @@ header {
         margin-top: 6.4rem;
 
         img {
-            width: 4.4rem;
-            height: 4.4rem;
+          width: 4.4rem;
+          height: 4.4rem;
         }
       }
 
       & .join-btn {
-          font-size: 2.8rem;
+        font-size: 2.8rem;
       }
     }
 
@@ -409,53 +414,52 @@ header {
 }
 
 @media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
-    .nav {
-        &__links__list {
-            height: calc(100vh - 10px);
-            gap: 2rem;
-            background-color: $white-smoke;
+  .nav {
+    &__links__list {
+      height: calc(100vh - 10px);
+      gap: 2rem;
+      background-color: $white-smoke;
 
+      & li > a {
+        font-size: 2.4rem;
+      }
 
-            & li > a{
-             font-size: 2.4rem;
-            }
-    
-            & #socialLinks{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                row-gap: 2rem;
-                column-gap: 3rem;
-                list-style-type: none;
-                margin-top: 6rem;
+      & #socialLinks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2rem;
+        column-gap: 3rem;
+        list-style-type: none;
+        margin-top: 6rem;
 
-                img {
-                  width: 4rem;
-                  height: 4rem;
-                }
-            }
-
-            & .join-btn {
-                font-size: 2.4rem;
-            }
+        img {
+          width: 4rem;
+          height: 4rem;
         }
+      }
+
+      & .join-btn {
+        font-size: 2.4rem;
+      }
     }
+  }
 }
 
-@media (max-width: $phone-size){
-    .nav {
-        &__links__list {
-            padding-top: 2rem;
-            gap: 1.8rem;
+@media (max-width: $phone-size) {
+  .nav {
+    &__links__list {
+      padding-top: 2rem;
+      gap: 1.8rem;
 
-            & #socialLinks{
-              margin-top: 6rem;
-              row-gap: 1.6rem;
-              column-gap: 2.6rem;                  
-            }
+      & #socialLinks {
+        margin-top: 6rem;
+        row-gap: 1.6rem;
+        column-gap: 2.6rem;
+      }
 
-            & .join-btn {
-                font-size: 2.2rem;
-            }
-        }
+      & .join-btn {
+        font-size: 2.2rem;
+      }
     }
+  }
 }
