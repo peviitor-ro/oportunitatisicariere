@@ -1,1 +1,157 @@
-<h1>404 Page Test</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 page</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="responsive-navbar">
+        <div class="nav__logo">
+          <img class="img-logo" src="./assets/logo.png" alt="logo image" />
+          <a
+            class="nav__logo__title visible-title logo-redirect"
+            href="/index.html#"
+          >
+            <span class="title-mint"> ASOCIAȚIA </span>
+            <br />
+            OPORTUNITĂȚI ȘI CARIERE
+          </a>
+        </div>
+        <div class="hamburger-menu">
+          <button class="hamburger-menu-icon">
+            <img
+              id="icon-hamburger"
+              src="./assets/hamburger-icon.png"
+              alt="Hamburger Menu"
+            />
+          </button>
+          <button class="close-menu-icon hidden">
+            <img id="icon-close" src="./assets/close.png" alt="Close Menu" />
+          </button>
+        </div>
+      </div>
+      <div class="nav__links">
+        <ul class="nav__links__list nav__links__nav">
+          <li>
+            <a href="/index.html#our-mission">Misiunea noastră</a>
+          </li>
+          <li>
+            <a href="/index.html#how-contribute">Cum poți ajuta tu?</a>
+          </li>
+          <li>
+            <a href="/index.html#why-contribute">De ce să ajuți?</a>
+          </li>
+          <li>
+            <a href="/index.html#team">Echipa</a>
+          </li>
+          <li>
+            <button
+              onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
+              class="join-btn btn--green"
+            >
+              Alătură-te
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="space"></div> -->
+    <main>
+      <div class="main-container-error">
+        <img
+          class="phone-image"
+          src="assets/404-page-assets/phonebettersize.png"
+          alt="404 Error Image"
+        />
+        <div class="text-container">
+          <p class="header-first">Pagina nu a fost gasita</p>
+          <img
+            class="vector-line"
+            src="assets/404-page-assets/img_1.png"
+            alt="vectorLine"
+          />
+          <p class="normal-p">
+            Oops! Pagina pe care o cauți nu pare să existe.
+          </p>
+          <br />
+          <p class="normal-p">
+            Este posibil ca linkul pe care l-ai urmat să fie greșit sau pagina
+            să fi fost eliminată.
+          </p>
+          <button class="redirect-btn" onclick="redirectToHome()">
+            Mergi la pagina principală
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-social">
+        <ul id="social" class="footer-social__links">
+          <li>
+            <a
+              href="https://www.linkedin.com/company/asociatia-oportunitati-si-cariere/"
+              target="_blank"
+            >
+              <img src="./assets/social-media-icons/linkedin_icon.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/peviitor.ro/" target="_blank">
+              <img
+                src="./assets/social-media-icons/instagram_icon.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/KPMkdUfQNu" target="_blank">
+              <img src="./assets/social-media-icons/discord.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/peviitor-ro/oportunitatisicariere/issues"
+              target="_blank"
+            >
+              <img src="./assets/social-media-icons/github_icon.svg" alt="" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://meet.jit.si/PEVIITOR.RO" target="_blank">
+              <img src="./assets/jitsi.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://dev.to/t/oportunitatisicariere/latest"
+              target="_blank"
+            >
+              <img src="./assets/social-media-icons/dev_icon.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p id="current-year"></p>
+        <a href="#">
+          <h4>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</h4>
+        </a>
+      </div>
+    </footer>
+    <script>
+      function redirectToHome() {
+        window.location.href = "index.html";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
