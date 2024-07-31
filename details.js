@@ -76,7 +76,7 @@ function checkPath(data, idKey = "id") {
     const matchFound = data.some((job) => job[idKey] === pathId);
 
     if (!matchFound) {
-      window.location.href = "pageNotFound.html";
+      window.location.href = "404.html";
     }
   } catch (error) {
     console.error("Error in checkPath:", error.message);
