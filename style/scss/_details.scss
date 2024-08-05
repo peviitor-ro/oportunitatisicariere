@@ -286,6 +286,7 @@
         @media (min-width: $desktop-xxl-size) {
           font-size: 3.4rem;
         }
+        
       }
 
       .under {
@@ -294,6 +295,35 @@
         font-weight: 700;
         line-height: 2.7rem;
         color: $black;
+      }
+    }
+
+    .description,
+    .responsabilities,
+    .demands,
+    .offerings,
+    .general__info,
+    .about {
+      h2 {
+        font-size: 2.6rem;
+        line-height: 3.9rem;
+        color: $black;
+  
+        @media (min-width: $tablet-size) {
+          font-size: 2.8rem;
+        }
+  
+        @media (min-width: $laptop-size) {
+          font-size: 3rem;
+        }
+  
+        @media (min-width: $desktop-size) {
+          font-size: 3.2rem;
+        }
+  
+        @media (min-width: $desktop-xxl-size) {
+          font-size: 3.4rem;
+        }
       }
     }
 
