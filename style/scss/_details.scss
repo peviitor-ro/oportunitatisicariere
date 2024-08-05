@@ -267,24 +267,24 @@
       }
 
       .description__header {
-        font-size: 2.6rem;
+        font-size: 2.6rem !important;
         line-height: 3.9rem;
         color: $black;
 
         @media (min-width: $tablet-size) {
-          font-size: 2.8rem;
+          font-size: 2.8rem !important;
         }
 
         @media (min-width: $laptop-size) {
-          font-size: 3rem;
+          font-size: 3rem !important;
         }
 
         @media (min-width: $desktop-size) {
-          font-size: 3.2rem;
+          font-size: 3.2rem !important;
         }
 
         @media (min-width: $desktop-xxl-size) {
-          font-size: 3.4rem;
+          font-size: 3.4rem !important;
         }
         
       }
