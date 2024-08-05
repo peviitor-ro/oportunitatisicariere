@@ -1662,6 +1662,47 @@ footer {
         font-weight: 700;
         line-height: 2.7rem;
         color: #000000; }
+    .jd__container .jd__body .description h2,
+    .jd__container .jd__body .responsabilities h2,
+    .jd__container .jd__body .demands h2,
+    .jd__container .jd__body .offerings h2,
+    .jd__container .jd__body .general__info h2,
+    .jd__container .jd__body .about h2 {
+      font-size: 2.6rem;
+      line-height: 3.9rem;
+      color: #000000; }
+      @media (min-width: 768px) {
+        .jd__container .jd__body .description h2,
+        .jd__container .jd__body .responsabilities h2,
+        .jd__container .jd__body .demands h2,
+        .jd__container .jd__body .offerings h2,
+        .jd__container .jd__body .general__info h2,
+        .jd__container .jd__body .about h2 {
+          font-size: 2.8rem; } }
+      @media (min-width: 1024px) {
+        .jd__container .jd__body .description h2,
+        .jd__container .jd__body .responsabilities h2,
+        .jd__container .jd__body .demands h2,
+        .jd__container .jd__body .offerings h2,
+        .jd__container .jd__body .general__info h2,
+        .jd__container .jd__body .about h2 {
+          font-size: 3rem; } }
+      @media (min-width: 1280px) {
+        .jd__container .jd__body .description h2,
+        .jd__container .jd__body .responsabilities h2,
+        .jd__container .jd__body .demands h2,
+        .jd__container .jd__body .offerings h2,
+        .jd__container .jd__body .general__info h2,
+        .jd__container .jd__body .about h2 {
+          font-size: 3.2rem; } }
+      @media (min-width: 1440px) {
+        .jd__container .jd__body .description h2,
+        .jd__container .jd__body .responsabilities h2,
+        .jd__container .jd__body .demands h2,
+        .jd__container .jd__body .offerings h2,
+        .jd__container .jd__body .general__info h2,
+        .jd__container .jd__body .about h2 {
+          font-size: 3.4rem; } }
     .jd__container .jd__body .list {
       font-size: 1.8rem;
       font-weight: 400;
