@@ -30,7 +30,7 @@
 }
 
 .back__wrapper {
-  margin: 14rem 2rem 2rem 2rem;
+  // margin: 14rem 2rem 2rem 2rem;
   display: flex;
   align-items: center;
 
@@ -45,19 +45,19 @@
   }
 
   @media (min-width: $tablet-size) {
-    margin: 13rem 3rem 3rem 3rem;
+    margin: 3rem 3rem 3rem 3rem;
   }
 
   @media (min-width: $laptop-size) {
-    margin: 12rem 4rem 4rem 4rem;
+    margin: 2rem 4rem 4rem 4rem;
   }
 
   @media (min-width: $desktop-size) {
-    margin: 12rem 5rem 5rem 5rem;
+    margin: 2rem 5rem 5rem 5rem;
   }
 
   @media (min-width: $desktop-xxl-size) {
-    margin: 12rem 6rem 6rem 6rem;
+    margin: 2rem 6rem 6rem 6rem;
   }
 }
 

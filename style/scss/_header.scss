@@ -3,6 +3,11 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .close-menu-icon,
@@ -15,9 +20,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
+  // position: fixed;
+
   background-color: $white-smoke;
-  z-index: 99;
   padding: 1rem 2rem;
   width: clamp(320px, 100%, 1440px);
   height: auto;
