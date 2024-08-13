@@ -1118,10 +1118,12 @@ header {
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .core-4 {
+    margin-top: 0;
     flex-direction: column;
-    gap: 2rem; }
+    gap: 4rem;
+    margin-bottom: 4rem; }
   .team {
-    padding: 7rem 0; }
+    padding: 7rem 0 3.5rem 0; }
     .team h2 {
       font-size: 2.2rem; }
     .team p {
@@ -1134,7 +1136,7 @@ header {
       width: auto; }
     .team__members {
       flex-direction: column;
-      padding: 3rem 0;
+      padding: 0;
       gap: 4rem; }
       .team__members__core {
         grid-template-columns: repeat(1, 1fr);
