@@ -13,7 +13,7 @@ function loadContent() {
   const page = routes[path];
 
   if (!page) {
-    window.location.href = "pageNotFound.html";
+    window.location.href = "404.html";
   }
 }
 
