@@ -12,8 +12,8 @@ function loadContent() {
   const path = window.location.hash.substring(1);
   const page = routes[path];
   
-  console.log("Current path:", path);
-  console.log("Resolved page:", page);
+  console.info("Current path:", path);
+  console.info("Resolved page:", page);
 
   if (!page) {
     window.location.href = "404.html";
