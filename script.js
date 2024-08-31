@@ -80,6 +80,7 @@ function showMenuContent() {
   const navLinksList = document.querySelector(".nav__links__list");
   const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
   const closeIcon = document.querySelector(".close-menu-icon");
+  const navTitleLogo = document.querySelector(".nav__logo__title");
 
   navLinksList.classList.add("transition-effect");
   navLinksList.classList.add("show");
@@ -88,10 +89,11 @@ function showMenuContent() {
   closeIcon.classList.add("visible");
 
   if (closeIcon.classList.contains("visible")) {
+    navTitleLogo.classList.add("visible-title");
     scrollBtn.style.display = "none";
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
-  }
+  } 
 
   navLinksList.addEventListener("click", function () {
     navLinksList.classList.remove("show");
@@ -109,11 +111,13 @@ function hideMenuContent() {
   const navLinksList = document.querySelector(".nav__links__list");
   const closeIcon = document.querySelector(".close-menu-icon");
   const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
+  const navTitleLogo = document.querySelector(".nav__logo__title");
 
   if (hamburgerIcon.classList.contains("hidden")) {
     document.body.style.overflow = "";
   }
-
+  
+  navTitleLogo.classList.remove("visible-title");
   navLinksList.classList.remove("show");
   closeIcon.classList.toggle("hidden");
   closeIcon.classList.remove("visible");
