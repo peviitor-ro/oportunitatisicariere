@@ -74,12 +74,22 @@
 
 @media only screen and (min-width:#{$phone-size}) and (max-width:500px) {
   .join-us-section {
-    padding: 3rem;
-    gap: 3rem;
+    padding: 3rem 0 4rem 0;
+    gap: 0rem;
 
     & p {
-      padding: 0 3rem 5rem 3rem; // Reduced X padding for better text wrapping
+      padding: 0 3rem 0rem 3rem; // Reduced X padding for better text wrapping
       line-height: 2.5rem;
+    }
+
+    & h3 {
+      padding-top: 1rem;
+    }
+
+    & ul {
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+      gap: 1.2rem;
     }
   }
 }
@@ -100,7 +110,7 @@
     padding: 5rem;
 
     & p {
-      padding: 0 15rem 5rem 15rem;
+      padding: 0 10rem 5rem 10rem;
       line-height: 2.5rem;
     }
   }
@@ -111,7 +121,7 @@
     padding: 5rem;
 
     & p {
-      padding: 0 30rem 2rem 30rem;
+      padding: 0 20rem 2rem 20rem;
       line-height: 2.2rem;
     }
   }
