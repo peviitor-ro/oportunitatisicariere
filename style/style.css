@@ -1239,19 +1239,32 @@ header {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 10rem;
+  padding: 8rem;
   background-color: #f7f7f7; }
   .join-us-section h2 {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.4rem;
     padding: 3rem 0; }
+  .join-us-section h3 {
+    font-size: 1.8rem;
+    padding-bottom: 1.6rem; }
   .join-us-section p {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.2rem;
-    padding: 0 30rem 4rem 30rem; }
+    padding: 0 30rem 2rem 30rem; }
+  .join-us-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; }
+    .join-us-section ul li {
+      font-size: 1.4rem; }
+      .join-us-section ul li span {
+        font-weight: bold; }
   .join-us-section__button {
+    margin-top: 1rem;
     padding: 1rem 3.2rem;
     border-radius: 0.8rem;
     border: none;
