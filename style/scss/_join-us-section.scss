@@ -5,7 +5,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 10rem;
+  padding: 8rem;
   background-color: $greyish-white;
 
   & h2 {
@@ -15,14 +15,33 @@
     padding: 3rem 0;
   }
 
+  & h3 {
+    font-size: 1.8rem;
+    padding-bottom: 1.6rem;
+  }
+
   & p {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.2rem;
-    padding: 0 30rem 4rem 30rem;
+    padding: 0 30rem 2rem 30rem;
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    & li {
+      font-size: 1.4rem;
+      & span {
+        font-weight: bold;
+      }
+    }
   }
 
   &__button {
+    margin-top: 1rem;
     padding: 1rem 3.2rem;
     border-radius: 0.8rem;
     border: none;
