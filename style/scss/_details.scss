@@ -267,33 +267,32 @@
       }
 
       .description__header {
-        font-size: 2.6rem !important;
-        line-height: 3.9rem;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
         color: $black;
 
         @media (min-width: $tablet-size) {
-          font-size: 2.8rem !important;
+          font-size: 2.8rem;
         }
 
         @media (min-width: $laptop-size) {
-          font-size: 3rem !important;
+          font-size: 3rem;
         }
 
         @media (min-width: $desktop-size) {
-          font-size: 3.2rem !important;
+          font-size: 3.2rem;
         }
 
         @media (min-width: $desktop-xxl-size) {
-          font-size: 3.4rem !important;
+          font-size: 3.4rem;
         }
-        
       }
 
       .under {
         text-decoration: underline;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 700;
-        line-height: 2.7rem;
+        line-height: 2.4rem;
         color: $black;
       }
     }
@@ -305,22 +304,22 @@
     .general__info,
     .about {
       h2 {
-        font-size: 2.6rem;
-        line-height: 3.9rem;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
         color: $black;
-  
+
         @media (min-width: $tablet-size) {
           font-size: 2.8rem;
         }
-  
+
         @media (min-width: $laptop-size) {
           font-size: 3rem;
         }
-  
+
         @media (min-width: $desktop-size) {
           font-size: 3.2rem;
         }
-  
+
         @media (min-width: $desktop-xxl-size) {
           font-size: 3.4rem;
         }
@@ -334,6 +333,7 @@
       padding-left: 2rem;
       width: 100%;
       color: $dark-gray;
+      line-height: 2.4rem;
 
       #email {
         width: 100%;
@@ -468,4 +468,3 @@
     gap: 1rem;
   }
 }
-
