@@ -1851,9 +1851,13 @@ footer .footer-bottom h4 {
   margin: 0 2rem;
   border-radius: 3rem;
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
 }
 @media (min-width: 768px) {
   .main {
+    row-gap: 0;
     padding-bottom: 4rem;
     margin-bottom: 2rem;
   }
@@ -1885,6 +1889,7 @@ footer .footer-bottom h4 {
 .back__wrapper {
   display: flex;
   align-items: center;
+  margin-left: 2rem;
 }
 .back__wrapper a {
   display: flex;
@@ -1917,7 +1922,7 @@ footer .footer-bottom h4 {
 }
 
 .jd__container {
-  gap: 5.4rem;
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
@@ -2110,7 +2115,7 @@ footer .footer-bottom h4 {
 .jd__container .jd__body {
   display: flex;
   flex-direction: column;
-  gap: 3.4rem;
+  gap: 3rem;
 }
 .jd__container .jd__body .description {
   display: flex;
@@ -2273,8 +2278,8 @@ footer .footer-bottom h4 {
   align-items: start;
 }
 .jd__container .jd__body .about .contact img {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2312,10 +2317,16 @@ footer .footer-bottom h4 {
   font-weight: 600;
   align-self: flex-end;
   cursor: pointer;
+  width: 100%;
 }
 .jd__container .jd__apply .applyBtn:hover {
   transition: all 0.3s;
   background-color: #1e524e;
+}
+@media (min-width: 768px) {
+  .jd__container .jd__apply .applyBtn {
+    width: auto;
+  }
 }
 
 .details-footer-container {
