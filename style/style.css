@@ -1365,6 +1365,7 @@ header {
 .team__member h4 {
   font-size: 2rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 .team__member p {
   font-size: 1.6rem;
@@ -1404,6 +1405,11 @@ header {
   margin-top: 2.2rem;
   position: absolute;
   left: 13rem;
+}
+
+.img-position {
+    position: relative;
+    object-position: 0% 0%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -1472,6 +1478,9 @@ header {
     grid-row: 3;
     justify-self: left;
   }
+  .team__member.testing {
+    grid-template-rows: 4rem 2rem 4rem;
+  }
 }
 @media screen and (max-width: 426px) {
   .team__banner {
@@ -1505,10 +1514,17 @@ header {
     width: auto;
     font-size: 1.6rem;
   }
+  .core-4 {
+    padding-bottom: 4rem;
+    gap: 2rem;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .team {
     padding: 7rem 30rem;
+  }
+  .core-4 {
+    padding-bottom: 4rem;
   }
 }
 /* THANK YOU SECTION */
@@ -1550,6 +1566,9 @@ header {
 @media only screen and (min-width: 1440px) {
   .thank-section p {
     line-height: 2.4rem;
+  }
+  .core-4 {
+    padding-bottom: 4rem;
   }
 }
 /* JOIN US SECTION */
