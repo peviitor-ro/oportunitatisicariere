@@ -3,8 +3,12 @@
   margin: 0 2rem;
   border-radius: 3rem;
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
 
   @media (min-width: $tablet-size) {
+    row-gap: 0;
     padding-bottom: 4rem;
     margin-bottom: 2rem;
   }
@@ -30,9 +34,9 @@
 }
 
 .back__wrapper {
-  // margin: 14rem 2rem 2rem 2rem;
   display: flex;
   align-items: center;
+  margin-left: 2rem;
 
   a {
     display: flex;
@@ -62,7 +66,7 @@
 }
 
 .jd__container {
-  gap: 5.4rem;
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
@@ -248,7 +252,7 @@
   .jd__body {
     display: flex;
     flex-direction: column;
-    gap: 3.4rem;
+    gap: 3rem;
 
     .description {
       display: flex;
@@ -267,33 +271,32 @@
       }
 
       .description__header {
-        font-size: 2.6rem !important;
-        line-height: 3.9rem;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
         color: $black;
 
         @media (min-width: $tablet-size) {
-          font-size: 2.8rem !important;
+          font-size: 2.8rem;
         }
 
         @media (min-width: $laptop-size) {
-          font-size: 3rem !important;
+          font-size: 3rem;
         }
 
         @media (min-width: $desktop-size) {
-          font-size: 3.2rem !important;
+          font-size: 3.2rem;
         }
 
         @media (min-width: $desktop-xxl-size) {
-          font-size: 3.4rem !important;
+          font-size: 3.4rem;
         }
-        
       }
 
       .under {
         text-decoration: underline;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 700;
-        line-height: 2.7rem;
+        line-height: 2.4rem;
         color: $black;
       }
     }
@@ -305,22 +308,22 @@
     .general__info,
     .about {
       h2 {
-        font-size: 2.6rem;
-        line-height: 3.9rem;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
         color: $black;
-  
+
         @media (min-width: $tablet-size) {
           font-size: 2.8rem;
         }
-  
+
         @media (min-width: $laptop-size) {
           font-size: 3rem;
         }
-  
+
         @media (min-width: $desktop-size) {
           font-size: 3.2rem;
         }
-  
+
         @media (min-width: $desktop-xxl-size) {
           font-size: 3.4rem;
         }
@@ -334,6 +337,7 @@
       padding-left: 2rem;
       width: 100%;
       color: $dark-gray;
+      line-height: 2.4rem;
 
       #email {
         width: 100%;
@@ -392,8 +396,8 @@
         align-items: start;
 
         & img {
-          height: 150px;
-          width: 150px;
+          height: 100px;
+          width: 100px;
           border-radius: 50%;
           object-fit: cover;
         }
@@ -439,10 +443,15 @@
       font-weight: 600;
       align-self: flex-end;
       cursor: pointer;
+      width: 100%;
 
       &:hover {
         transition: all 0.3s;
         background-color: $dark-mint;
+      }
+
+      @media (min-width: $tablet-size) {
+        width: auto;
       }
     }
   }
@@ -468,4 +477,3 @@
     gap: 1rem;
   }
 }
-
