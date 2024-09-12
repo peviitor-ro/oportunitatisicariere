@@ -1848,7 +1848,7 @@ footer .footer-bottom h4 {
 }
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba(107, 107, 107, 0.35);
-  margin: 0 2rem;
+  margin: 2rem;
   border-radius: 3rem;
   padding-bottom: 3rem;
   display: flex;
@@ -1875,8 +1875,6 @@ footer .footer-bottom h4 {
 @media (min-width: 1440px) {
   .main {
     padding-bottom: 7rem;
-    margin: 0;
-    margin-bottom: 2rem;
   }
 }
 
@@ -1902,22 +1900,22 @@ footer .footer-bottom h4 {
 }
 @media (min-width: 768px) {
   .back__wrapper {
-    margin: 3rem 3rem 3rem 3rem;
+    margin: 1rem 3rem;
   }
 }
 @media (min-width: 1024px) {
   .back__wrapper {
-    margin: 2rem 4rem 4rem 4rem;
+    margin: 1rem 4rem;
   }
 }
 @media (min-width: 1280px) {
   .back__wrapper {
-    margin: 2rem 5rem 5rem 5rem;
+    margin: 1rem 5rem;
   }
 }
 @media (min-width: 1440px) {
   .back__wrapper {
-    margin: 2rem 6rem 6rem 6rem;
+    margin: 1rem 6rem;
   }
 }
 
@@ -2332,6 +2330,7 @@ footer .footer-bottom h4 {
 .details-footer-container {
   padding: 0;
   width: 100%;
+  gap: 0;
 }
 .details-footer-container .details-footer-line {
   border-top: solid 0.1rem rgba(107, 107, 107, 0.1882352941);

@@ -1,6 +1,6 @@
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba($dark-gray, 0.35);
-  margin: 0 2rem;
+  margin: 2rem;
   border-radius: 3rem;
   padding-bottom: 3rem;
   display: flex;
@@ -23,8 +23,6 @@
 
   @media (min-width: $desktop-xxl-size) {
     padding-bottom: 7rem;
-    margin: 0;
-    margin-bottom: 2rem;
   }
 }
 .responsabilities h2,
@@ -49,19 +47,19 @@
   }
 
   @media (min-width: $tablet-size) {
-    margin: 3rem 3rem 3rem 3rem;
+    margin: 1rem 3rem;
   }
 
   @media (min-width: $laptop-size) {
-    margin: 2rem 4rem 4rem 4rem;
+    margin: 1rem 4rem;
   }
 
   @media (min-width: $desktop-size) {
-    margin: 2rem 5rem 5rem 5rem;
+    margin: 1rem 5rem;
   }
 
   @media (min-width: $desktop-xxl-size) {
-    margin: 2rem 6rem 6rem 6rem;
+    margin: 1rem 6rem;
   }
 }
 
@@ -460,6 +458,7 @@
 .details-footer-container {
   padding: 0;
   width: 100%;
+  gap: 0;
 
   .details-footer-line {
     border-top: solid 0.1rem #6b6b6b30;
