@@ -288,8 +288,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.4rem;
-    -moz-column-gap: 3.2rem;
-         column-gap: 3.2rem;
+    column-gap: 3.2rem;
     list-style-type: none;
     margin-top: 6.4rem;
   }
@@ -388,8 +387,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
     list-style-type: none;
     margin-top: 6rem;
   }
@@ -409,8 +407,7 @@ header {
   .nav__links__list #socialLinks {
     margin-top: 6rem;
     row-gap: 1.6rem;
-    -moz-column-gap: 2.6rem;
-         column-gap: 2.6rem;
+    column-gap: 2.6rem;
   }
   .nav__links__list .join-btn {
     font-size: 2.2rem;
@@ -740,7 +737,6 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
-  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -966,8 +962,7 @@ header {
   display: block;
   width: 100%;
   height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide h3 {
@@ -1079,10 +1074,6 @@ header {
   outline: none;
   border: solid 0.1rem #2f7973;
   color: #2f7973;
-}
-.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
-  color: #2f7973;
-  opacity: 0.6;
 }
 .how-contribute .how-contribute-img__container .search-input::placeholder {
   color: #2f7973;
@@ -1355,6 +1346,10 @@ header {
   align-items: center;
   gap: 1.2rem;
 }
+.team__member .img-position {
+  position: relative;
+  object-position: 0% 0%;
+}
 .team__member-img {
   width: 16rem;
   height: 16rem;
@@ -1407,11 +1402,6 @@ header {
   left: 13rem;
 }
 
-.img-position {
-    position: relative;
-    object-position: 0% 0%;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .core-4 {
     margin-top: 0;
@@ -1452,6 +1442,9 @@ header {
     row-gap: 0;
     width: 32rem;
   }
+  .team__member.testing {
+    grid-template-rows: 4rem 2rem 4rem;
+  }
   .team__member-img {
     grid-column: 1;
     grid-row: 2/3;
@@ -1477,9 +1470,6 @@ header {
     grid-column: 2;
     grid-row: 3;
     justify-self: left;
-  }
-  .team__member.testing {
-    grid-template-rows: 4rem 2rem 4rem;
   }
 }
 @media screen and (max-width: 426px) {
@@ -1527,6 +1517,11 @@ header {
     padding-bottom: 4rem;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .core-4 {
+    padding-bottom: 4rem;
+  }
+}
 /* THANK YOU SECTION */
 .thank-section {
   display: flex;
@@ -1566,9 +1561,6 @@ header {
 @media only screen and (min-width: 1440px) {
   .thank-section p {
     line-height: 2.4rem;
-  }
-  .core-4 {
-    padding-bottom: 4rem;
   }
 }
 /* JOIN US SECTION */
@@ -2239,8 +2231,7 @@ footer .footer-bottom h4 {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 .jd__container .jd__body .list > li {
   padding: 0.2rem;
@@ -2294,8 +2285,7 @@ footer .footer-bottom h4 {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact__name,
 .jd__container .jd__body .about .contact .contact__person {
@@ -2455,4 +2445,6 @@ footer .footer-bottom h4 {
     min-height: 60vh;
     margin-bottom: 4rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
