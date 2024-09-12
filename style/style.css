@@ -1859,12 +1859,16 @@ footer .footer-bottom h4 {
 }
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba(107, 107, 107, 0.35);
-  margin: 0 2rem;
+  margin: 2rem;
   border-radius: 3rem;
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
 }
 @media (min-width: 768px) {
   .main {
+    row-gap: 0;
     padding-bottom: 4rem;
     margin-bottom: 2rem;
   }
@@ -1882,8 +1886,6 @@ footer .footer-bottom h4 {
 @media (min-width: 1440px) {
   .main {
     padding-bottom: 7rem;
-    margin: 0;
-    margin-bottom: 2rem;
   }
 }
 
@@ -1896,6 +1898,7 @@ footer .footer-bottom h4 {
 .back__wrapper {
   display: flex;
   align-items: center;
+  margin-left: 2rem;
 }
 .back__wrapper a {
   display: flex;
@@ -1908,27 +1911,27 @@ footer .footer-bottom h4 {
 }
 @media (min-width: 768px) {
   .back__wrapper {
-    margin: 3rem 3rem 3rem 3rem;
+    margin: 1rem 3rem;
   }
 }
 @media (min-width: 1024px) {
   .back__wrapper {
-    margin: 2rem 4rem 4rem 4rem;
+    margin: 1rem 4rem;
   }
 }
 @media (min-width: 1280px) {
   .back__wrapper {
-    margin: 2rem 5rem 5rem 5rem;
+    margin: 1rem 5rem;
   }
 }
 @media (min-width: 1440px) {
   .back__wrapper {
-    margin: 2rem 6rem 6rem 6rem;
+    margin: 1rem 6rem;
   }
 }
 
 .jd__container {
-  gap: 5.4rem;
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
@@ -2121,7 +2124,7 @@ footer .footer-bottom h4 {
 .jd__container .jd__body {
   display: flex;
   flex-direction: column;
-  gap: 3.4rem;
+  gap: 3rem;
 }
 .jd__container .jd__body .description {
   display: flex;
@@ -2138,35 +2141,35 @@ footer .footer-bottom h4 {
   color: #6b6b6b;
 }
 .jd__container .jd__body .description .description__header {
-  font-size: 2.6rem !important;
-  line-height: 3.9rem;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
   color: #000000;
 }
 @media (min-width: 768px) {
   .jd__container .jd__body .description .description__header {
-    font-size: 2.8rem !important;
+    font-size: 2.8rem;
   }
 }
 @media (min-width: 1024px) {
   .jd__container .jd__body .description .description__header {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
 }
 @media (min-width: 1280px) {
   .jd__container .jd__body .description .description__header {
-    font-size: 3.2rem !important;
+    font-size: 3.2rem;
   }
 }
 @media (min-width: 1440px) {
   .jd__container .jd__body .description .description__header {
-    font-size: 3.4rem !important;
+    font-size: 3.4rem;
   }
 }
 .jd__container .jd__body .description .under {
   text-decoration: underline;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 2.7rem;
+  line-height: 2.4rem;
   color: #000000;
 }
 .jd__container .jd__body .description h2,
@@ -2175,8 +2178,8 @@ footer .footer-bottom h4 {
 .jd__container .jd__body .offerings h2,
 .jd__container .jd__body .general__info h2,
 .jd__container .jd__body .about h2 {
-  font-size: 2.6rem;
-  line-height: 3.9rem;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
   color: #000000;
 }
 @media (min-width: 768px) {
@@ -2226,6 +2229,7 @@ footer .footer-bottom h4 {
   padding-left: 2rem;
   width: 100%;
   color: #6b6b6b;
+  line-height: 2.4rem;
 }
 .jd__container .jd__body .list #email {
   width: 100%;
@@ -2282,8 +2286,8 @@ footer .footer-bottom h4 {
   align-items: start;
 }
 .jd__container .jd__body .about .contact img {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -2320,15 +2324,22 @@ footer .footer-bottom h4 {
   font-weight: 600;
   align-self: flex-end;
   cursor: pointer;
+  width: 100%;
 }
 .jd__container .jd__apply .applyBtn:hover {
   transition: all 0.3s;
   background-color: #1e524e;
 }
+@media (min-width: 768px) {
+  .jd__container .jd__apply .applyBtn {
+    width: auto;
+  }
+}
 
 .details-footer-container {
   padding: 0;
   width: 100%;
+  gap: 0;
 }
 .details-footer-container .details-footer-line {
   border-top: solid 0.1rem rgba(107, 107, 107, 0.1882352941);
