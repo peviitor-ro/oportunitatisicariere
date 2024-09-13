@@ -1074,6 +1074,9 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 1.2rem; }
+    .team__member .img-position {
+      position: relative;
+      object-position: 0% 0%; }
     .team__member-img {
       width: 16rem;
       height: 16rem;
@@ -1082,7 +1085,8 @@ header {
       border-radius: 50%; }
     .team__member h4 {
       font-size: 2rem;
-      font-weight: 500; }
+      font-weight: 500;
+      white-space: nowrap; }
     .team__member p {
       font-size: 1.6rem; }
     .team__member__socials {
@@ -1147,6 +1151,8 @@ header {
       grid-template-rows: repeat(3, 4rem);
       row-gap: 0;
       width: 32rem; }
+      .team__member.testing {
+        grid-template-rows: 4rem 2rem 4rem; }
       .team__member-img {
         grid-column: 1;
         grid-row: 2 / 3;
@@ -1193,11 +1199,20 @@ header {
       font-size: 2rem; }
     .team p {
       width: auto;
-      font-size: 1.6rem; } }
+      font-size: 1.6rem; }
+  .core-4 {
+    padding-bottom: 4rem;
+    gap: 2rem; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .team {
-    padding: 7rem 30rem; } }
+    padding: 7rem 30rem; }
+  .core-4 {
+    padding-bottom: 4rem; } }
+
+@media only screen and (min-width: 1440px) {
+  .core-4 {
+    padding-bottom: 4rem; } }
 
 /* THANK YOU SECTION */
 .thank-section {
