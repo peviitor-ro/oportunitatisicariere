@@ -40,9 +40,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: clamp(240px, 100%, 900px); // Changed padding with adaptive width
-    // padding: 25rem; // Removed this padding, responsive problem
     padding-top: 0;
-    // padding-bottom: 15rem;
 
     &__reason {
       display: flex;
@@ -103,8 +101,6 @@
     padding: 2rem 0rem;
   
     &__title {
-    //   padding: 2.2rem 0rem;
-
       h2 {
         font-size: 3.2rem;
       }
@@ -147,12 +143,7 @@
 
 @media screen and (min-width: $phone-size) and (max-width: $tablet-size){
   .why-contribute{
-    // gap: 2.4rem;
-    // padding: 2.4rem 0;
-
-    &__title {
-    //   padding: 0rem; 
-      
+    &__title {      
       & h2 {
         padding: 0.8rem 3.95rem;
         font-size: 3.2rem; // Changed h2 size to match the rest
@@ -168,7 +159,6 @@
 
     &__description {
       padding: 0 4rem;
-    //   gap: 0.8rem;
 
       & p {
         font-size: 1.6rem;

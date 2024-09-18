@@ -1340,7 +1340,6 @@ header {
 }
 .team__members {
   gap: 6rem;
-  width: 283px;
 }
 .team__title {
   padding: 7rem 0 3.5rem;
@@ -1433,7 +1432,6 @@ header {
   .team__members__core {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    width: 283px;
   }
   .team__member {
     display: grid;
@@ -1441,7 +1439,6 @@ header {
     grid-template-rows: repeat(3, 4rem);
     row-gap: 0;
     gap: 0;
-    width: 32rem;
   }
   .team__member.testing {
     grid-template-rows: 4rem 2rem 4rem;
@@ -1458,7 +1455,6 @@ header {
     justify-self: left;
     font-size: 1.8rem;
     font-weight: bold;
-    width: 20rem;
   }
   .team__member p {
     grid-column: 2;
@@ -1476,12 +1472,12 @@ header {
 }
 @media screen and (max-width: 426px) {
   .team__banner {
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
 }
 @media screen and (max-width: 346px) {
   .team__banner {
-    transform: scale(0.7);
+    transform: scale(0.6);
   }
   .team .banner-core {
     transform: scale(0.8);
