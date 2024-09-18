@@ -15,11 +15,6 @@
     padding: 3rem 0;
   }
 
-  & h3 {
-    font-size: 1.8rem;
-    padding-bottom: 1.6rem;
-  }
-
   & p {
     font-size: 1.6rem;
     font-weight: 400;
@@ -27,21 +22,78 @@
     padding: 0 30rem 2rem 30rem;
   }
 
-  & ul {
-    list-style: none;
+  & .meeting-title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+    padding: 0.4rem 0 0.1rem;
+  }
+
+  &__meeting-subtitle{
+    font-size: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  &__meeting-list {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    & li {
-      font-size: 1.4rem;
-      & span {
-        font-weight: bold;
+    gap: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+
+    & .meeting-item {
+      display: flex;
+      justify-content: flex-start;
+
+      & .day-container {
+        display: flex;
+        gap: 0.6rem;
+        margin-right: 3rem;
+
+        .meeting-link {
+          display: flex;
+          align-items: center;
+        }
+      
+        .meeting-logo {
+          width: 38px;
+          height: 38px;
+        }
+
+        & .day-details {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+  
+          & .day-time {
+            font-weight: bold;
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+          }
+        }
+      }
+
+      & .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      
+        & .team {
+          padding: 0rem;
+        }
+  
+        & .team-type {
+          font-weight: bold;
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+        }
       }
     }
   }
 
   &__button {
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 1rem 3.2rem;
     border-radius: 0.8rem;
     border: none;
@@ -69,6 +121,18 @@
     & button {
       margin-top: 3rem;
     }
+
+    .meeting-title{
+      padding-top: 1.6rem;
+    }
+
+    &__meeting-subtitle{
+      padding: 0rem 0rem 1.6rem;
+    }
+
+    &__button {
+      margin-top: 0rem;
+    }
   }
 }
 
@@ -90,6 +154,14 @@
       padding: 1rem 0;
       margin-bottom: 1rem;
       gap: 1.2rem;
+    }
+
+    .meeting-title{
+      padding-top: 1.6rem;
+    }
+
+    &__button {
+      margin-top: 1.8rem;
     }
   }
 }

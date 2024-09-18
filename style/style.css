@@ -288,7 +288,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.4rem;
-    column-gap: 3.2rem;
+    -moz-column-gap: 3.2rem;
+         column-gap: 3.2rem;
     list-style-type: none;
     margin-top: 6.4rem;
   }
@@ -387,7 +388,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
     list-style-type: none;
     margin-top: 6rem;
   }
@@ -407,7 +409,8 @@ header {
   .nav__links__list #socialLinks {
     margin-top: 6rem;
     row-gap: 1.6rem;
-    column-gap: 2.6rem;
+    -moz-column-gap: 2.6rem;
+         column-gap: 2.6rem;
   }
   .nav__links__list .join-btn {
     font-size: 2.2rem;
@@ -737,6 +740,7 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
+  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -962,7 +966,8 @@ header {
   display: block;
   width: 100%;
   height: 25rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide h3 {
@@ -1074,6 +1079,10 @@ header {
   outline: none;
   border: solid 0.1rem #2f7973;
   color: #2f7973;
+}
+.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
+  color: #2f7973;
+  opacity: 0.6;
 }
 .how-contribute .how-contribute-img__container .search-input::placeholder {
   color: #2f7973;
@@ -1348,7 +1357,8 @@ header {
 }
 .team__member .img-position {
   position: relative;
-  object-position: 0% 0%;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
 }
 .team__member-img {
   width: 16rem;
@@ -1579,30 +1589,72 @@ header {
   line-height: 3.4rem;
   padding: 3rem 0;
 }
-.join-us-section h3 {
-  font-size: 1.8rem;
-  padding-bottom: 1.6rem;
-}
 .join-us-section p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
   padding: 0 30rem 2rem 30rem;
 }
-.join-us-section ul {
-  list-style: none;
+.join-us-section .meeting-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  padding: 0.4rem 0 0.1rem;
+}
+.join-us-section__meeting-subtitle {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+.join-us-section__meeting-list {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.2rem;
 }
-.join-us-section ul li {
-  font-size: 1.4rem;
+.join-us-section__meeting-list .meeting-item {
+  display: flex;
+  justify-content: flex-start;
 }
-.join-us-section ul li span {
+.join-us-section__meeting-list .meeting-item .day-container {
+  display: flex;
+  gap: 0.6rem;
+  margin-right: 3rem;
+}
+.join-us-section__meeting-list .meeting-item .day-container .meeting-link {
+  display: flex;
+  align-items: center;
+}
+.join-us-section__meeting-list .meeting-item .day-container .meeting-logo {
+  width: 38px;
+  height: 38px;
+}
+.join-us-section__meeting-list .meeting-item .day-container .day-details {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.join-us-section__meeting-list .meeting-item .day-container .day-details .day-time {
   font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+.join-us-section__meeting-list .meeting-item .team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.join-us-section__meeting-list .meeting-item .team-container .team {
+  padding: 0rem;
+}
+.join-us-section__meeting-list .meeting-item .team-container .team-type {
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
 }
 .join-us-section__button {
-  margin-top: 1rem;
+  margin-top: 3rem;
   padding: 1rem 3.2rem;
   border-radius: 0.8rem;
   border: none;
@@ -1628,6 +1680,15 @@ header {
   .join-us-section button {
     margin-top: 3rem;
   }
+  .join-us-section .meeting-title {
+    padding-top: 1.6rem;
+  }
+  .join-us-section__meeting-subtitle {
+    padding: 0rem 0rem 1.6rem;
+  }
+  .join-us-section__button {
+    margin-top: 0rem;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .join-us-section {
@@ -1645,6 +1706,12 @@ header {
     padding: 1rem 0;
     margin-bottom: 1rem;
     gap: 1.2rem;
+  }
+  .join-us-section .meeting-title {
+    padding-top: 1.6rem;
+  }
+  .join-us-section__button {
+    margin-top: 1.8rem;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 768px) {
@@ -2235,7 +2302,8 @@ footer .footer-bottom h4 {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 .jd__container .jd__body .list > li {
   padding: 0.2rem;
@@ -2289,7 +2357,8 @@ footer .footer-bottom h4 {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact__name,
 .jd__container .jd__body .about .contact .contact__person {
@@ -2456,6 +2525,4 @@ footer .footer-bottom h4 {
     min-height: 60vh;
     margin-bottom: 4rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
