@@ -22,12 +22,12 @@ $tablet-line-height-p: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7rem 34rem;
-  gap: 3.5rem;
+  padding-bottom: 3rem;
+//   gap: 3.5rem;
   background-color: #f3f3f3;
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     text-align: center;
     color: #000000;
@@ -35,24 +35,33 @@ $tablet-line-height-p: 2rem;
   }
 
   .team-line {
-    transform: scale(0.6);
+    width: 23rem;
   }
 
   p {
+    width: auto;
     font-size: 1.6rem;
     line-height: 130%;
     text-align: center;
   }
 
+  p:nth-child(2) {
+    padding: 0 1rem;
+  }
+
   &__members {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     gap: 6rem;
-    padding: 6rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    // padding: 6rem;
+    // padding-bottom: 3rem;
+    // padding-top: 3rem;
     width: 283px;
+  }
+
+  &__title {
+    padding: 7rem 0 3.5rem;
   }
 
   &__member {
@@ -60,6 +69,7 @@ $tablet-line-height-p: 2rem;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
+    padding-top: 3rem;
     
     .img-position {
         position: relative;
@@ -100,11 +110,11 @@ $tablet-line-height-p: 2rem;
 }
 
 .core-4 {
-  display: flex;
+//   display: flex;
   gap: 6rem;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 5rem;
 }
 
 .banner-core {
@@ -114,6 +124,7 @@ $tablet-line-height-p: 2rem;
 .team__banner {
   position: relative;
   text-align: center;
+  margin-top: 3rem;
 
   & p {
     text-align: center;
@@ -131,10 +142,10 @@ $tablet-line-height-p: 2rem;
     margin-top: 0;
     flex-direction: column;
     gap: 4rem;
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
   }
   .team {
-    padding: 7rem 0 3.5rem 0;
+    // padding: 7rem 0 3.5rem 0;
 
     h2 {
       font-size: 2.2rem;
@@ -165,6 +176,7 @@ $tablet-line-height-p: 2rem;
       &__core {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
+        width: 283px;
       }
     }
 
@@ -173,6 +185,7 @@ $tablet-line-height-p: 2rem;
       grid-template-columns: 12rem 18rem; // Changed from repeat(2,auto) in order fo member cards to align properly
       grid-template-rows: repeat(3, 4rem);
       row-gap: 0; // Removed row gap for narrow screens
+      gap: 0;
       width: 32rem;
 
       &.testing {
@@ -190,7 +203,8 @@ $tablet-line-height-p: 2rem;
         grid-column: 2;
         grid-row: 1; // Centered vertically
         justify-self: left; // Centered horizontally
-        font-size: 2rem;
+        font-size: 1.8rem;
+        font-weight: bold;
         width: 20rem;
       }
 
@@ -199,7 +213,7 @@ $tablet-line-height-p: 2rem;
         grid-row: 2; // Centered vertically
         justify-self: left; // Centered horizontally
         text-align: start;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
       }
 
@@ -224,12 +238,30 @@ $tablet-line-height-p: 2rem;
     &__banner {
       transform: scale(0.7);
     }
+    .banner-core {
+        transform: scale(0.8);
+    }
   }
 }
 
-@media only screen and (min-width: $tablet-size) and (max-width: $laptop-size) {
+@media only screen and (min-width: $tablet-size) {
   .team {
-    padding: 7rem 10rem;
+    padding: 1rem 10rem;
+
+    p:nth-child(2) {
+        padding-bottom: 3rem;
+    }
+
+    &__members {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+
+    .team__title h2 {
+        font-size: 3.2rem;
+    }
 
     p {
       width: 80vw;
@@ -249,7 +281,7 @@ $tablet-line-height-p: 2rem;
     }
 
     h4 {
-      font-size: $tablet-font-size-h4;
+      font-size: 1.9rem;
     }
 
     p {
@@ -259,23 +291,26 @@ $tablet-line-height-p: 2rem;
   }
 
   .core-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 4rem;
     gap: 2rem;
   }
 }
 
-@media only screen and (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
+@media only screen and (min-width: $laptop-size) {
   .team {
-    padding: 7rem 30rem;
+    // padding: 7rem 30rem;
+
+    .team__title h2 {
+        font-size: 3.2rem;
+    }
   }
 
   .core-4 {
     padding-bottom: 4rem;
+    gap: 6rem;
   }
 }
 
-@media only screen and (min-width: $desktop-xxl-size) {
-  .core-4 {
-      padding-bottom: 4rem;
-  }
-}

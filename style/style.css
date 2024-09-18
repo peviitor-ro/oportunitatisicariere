@@ -50,7 +50,7 @@ header {
   justify-content: space-between;
   background-color: #f5f5f5;
   padding: 1rem 2rem;
-  width: clamp(320px, 100%, 1440px);
+  width: clamp(250px, 100%, 1440px);
   height: auto;
 }
 .nav__logo {
@@ -520,7 +520,7 @@ header {
     margin-top: 2rem;
   }
   .intro__container__logo {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
   .intro__container__logo img {
     width: 140px;
@@ -536,7 +536,7 @@ header {
 }
 @media screen and (max-width: 769px) and (max-width: 426px) {
   .intro__container__logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .intro__container__logo img {
     width: 90px;
@@ -707,14 +707,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem;
-  padding-bottom: 14rem;
+  padding: 0 6rem 3rem;
+}
+.our-mission img {
+  width: 23rem;
 }
 .our-mission__content__title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7rem 0;
+  padding: 7rem 0 3.5rem;
 }
 .our-mission__content__title > h2 {
   font-size: 3.2rem;
@@ -783,7 +785,6 @@ header {
 @media only screen and (max-width: 320px) {
   .our-mission {
     padding: 0 1rem;
-    margin-bottom: 30rem;
   }
   .our-mission__content__title h2 {
     font-size: 2.2rem;
@@ -808,7 +809,6 @@ header {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .our-mission {
     padding: 0 1rem;
-    margin-bottom: 6rem;
   }
   .our-mission__content__title h2 {
     font-size: 2.2rem;
@@ -832,7 +832,7 @@ header {
 }
 @media screen and (min-width: 650px) and (max-width: 768px) {
   .our-mission {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
   }
   .our-mission__content__title h2 {
     font-size: 2.2rem;
@@ -874,13 +874,13 @@ header {
   align-items: center;
   background-color: #f7f7f7;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem;
 }
 .how-contribute__title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5.2rem 0;
+  padding: 7rem 0 3.5rem;
 }
 .how-contribute__title h2 {
   font-size: 3.2rem;
@@ -892,7 +892,7 @@ header {
   }
 }
 .how-contribute__title img {
-  transform: scale(1.3, 0.9);
+  width: 23rem;
 }
 @media screen and (max-width: 768px) {
   .how-contribute__title img {
@@ -911,22 +911,22 @@ header {
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .how-contribute__description {
-    padding: 4rem 22rem;
+    padding: 1rem 22rem 4rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .how-contribute__description {
-    padding: 3rem 9rem;
+    padding: 1rem 3rem 9rem;
   }
 }
 @media screen and (max-width: 768px) {
   .how-contribute__description {
-    padding: 3rem 3rem;
+    padding: 0 3rem 3rem;
   }
 }
 @media screen and (max-width: 320px) {
   .how-contribute__description {
-    padding: 3rem 1rem;
+    padding: 0 1rem 3rem;
   }
 }
 .how-contribute .swiper {
@@ -1116,7 +1116,7 @@ header {
   gap: 2rem;
   text-align: center;
   font-size: 1.6rem;
-  padding: 3rem 6rem;
+  padding: 3rem 1rem;
 }
 .how-contribute__details a {
   font-weight: 600;
@@ -1133,7 +1133,6 @@ header {
   font-size: 1.8rem;
   justify-content: center;
   text-align: center;
-  padding-bottom: 8rem;
 }
 .contact_container__info .small_info {
   font-size: 1.4rem;
@@ -1145,8 +1144,13 @@ header {
 }
 .contact_container__info .important_info {
   color: #1e524e;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
+}
+@media screen and (min-width: 320px) {
+  .contact_container__info .important_info {
+    font-size: 2rem;
+  }
 }
 
 /* WHY CONTRIBUTE SECTION */
@@ -1160,11 +1164,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5.2rem 0;
+  padding: 7rem 0 3.5rem;
 }
 .why-contribute__title h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 400;
+}
+.why-contribute__title img {
+  width: 23rem;
 }
 .why-contribute__description {
   display: flex;
@@ -1183,7 +1190,6 @@ header {
   flex-wrap: wrap;
   width: clamp(240px, 100%, 900px);
   padding-top: 0;
-  padding-bottom: 15rem;
 }
 .why-contribute__reasons__reason {
   display: flex;
@@ -1198,9 +1204,15 @@ header {
   padding-top: 1.5rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1398px) {
+@media screen and (min-width: 1024px) {
+  .why-contribute {
+    padding-bottom: 3rem;
+  }
   .why-contribute__title {
-    padding: 3.5rem 0;
+    padding: 7rem 0 3.5rem;
+  }
+  .why-contribute__title h2 {
+    font-size: 3.2rem;
   }
   .why-contribute__description {
     padding: 0 15rem 4rem 15rem;
@@ -1226,11 +1238,11 @@ header {
   .why-contribute {
     padding: 2rem 0rem;
   }
-  .why-contribute__title {
-    padding: 2.2rem 0rem;
+  .why-contribute__title h2 {
+    font-size: 3.2rem;
   }
   .why-contribute__description {
-    padding: 0 10rem 3rem 10rem;
+    padding: 1rem 10rem 3rem 10rem;
     gap: 0.4rem;
   }
   .why-contribute__reasons {
@@ -1257,16 +1269,9 @@ header {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .why-contribute {
-    gap: 2.4rem;
-    padding: 2.4rem 0;
-  }
-  .why-contribute__title {
-    padding: 0rem;
-  }
   .why-contribute__title h2 {
     padding: 0.8rem 3.95rem;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     line-height: 113%;
   }
   .why-contribute__title img {
@@ -1276,17 +1281,17 @@ header {
   }
   .why-contribute__description {
     padding: 0 4rem;
-    gap: 0.8rem;
   }
   .why-contribute__description p {
     font-size: 1.6rem;
     line-height: 2.2rem;
+    margin-bottom: 2rem;
   }
   .why-contribute__reasons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
-    padding-bottom: 0rem;
+    padding-bottom: 3rem;
   }
   .why-contribute__reasons__reason {
     padding: 0rem;
@@ -1311,40 +1316,41 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7rem 34rem;
-  gap: 3.5rem;
+  padding-bottom: 3rem;
   background-color: #f3f3f3;
 }
 .team h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 400;
   text-align: center;
   color: #000000;
   margin-bottom: -0.5rem;
 }
 .team .team-line {
-  transform: scale(0.6);
+  width: 23rem;
 }
 .team p {
+  width: auto;
   font-size: 1.6rem;
   line-height: 130%;
   text-align: center;
 }
+.team p:nth-child(2) {
+  padding: 0 1rem;
+}
 .team__members {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 6rem;
-  padding: 6rem;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
   width: 283px;
+}
+.team__title {
+  padding: 7rem 0 3.5rem;
 }
 .team__member {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.2rem;
+  padding-top: 3rem;
 }
 .team__member .img-position {
   position: relative;
@@ -1377,11 +1383,7 @@ header {
 }
 
 .core-4 {
-  display: flex;
   gap: 6rem;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
 }
 
 .banner-core {
@@ -1391,6 +1393,7 @@ header {
 .team__banner {
   position: relative;
   text-align: center;
+  margin-top: 3rem;
 }
 .team__banner p {
   text-align: center;
@@ -1407,10 +1410,6 @@ header {
     margin-top: 0;
     flex-direction: column;
     gap: 4rem;
-    margin-bottom: 4rem;
-  }
-  .team {
-    padding: 7rem 0 3.5rem 0;
   }
   .team h2 {
     font-size: 2.2rem;
@@ -1434,12 +1433,14 @@ header {
   .team__members__core {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    width: 283px;
   }
   .team__member {
     display: grid;
     grid-template-columns: 12rem 18rem;
     grid-template-rows: repeat(3, 4rem);
     row-gap: 0;
+    gap: 0;
     width: 32rem;
   }
   .team__member.testing {
@@ -1455,7 +1456,8 @@ header {
     grid-column: 2;
     grid-row: 1;
     justify-self: left;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     width: 20rem;
   }
   .team__member p {
@@ -1463,7 +1465,7 @@ header {
     grid-row: 2;
     justify-self: left;
     text-align: start;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   .team__member__socials {
@@ -1481,10 +1483,25 @@ header {
   .team__banner {
     transform: scale(0.7);
   }
+  .team .banner-core {
+    transform: scale(0.8);
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .team {
-    padding: 7rem 10rem;
+    padding: 1rem 10rem;
+  }
+  .team p:nth-child(2) {
+    padding-bottom: 3rem;
+  }
+  .team__members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+  .team .team__title h2 {
+    font-size: 3.2rem;
   }
   .team p {
     width: 80vw;
@@ -1498,28 +1515,27 @@ header {
     top: 0.4rem;
   }
   .team h4 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .team p {
     width: auto;
     font-size: 1.6rem;
   }
   .core-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 4rem;
     gap: 2rem;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .team {
-    padding: 7rem 30rem;
+@media only screen and (min-width: 1024px) {
+  .team .team__title h2 {
+    font-size: 3.2rem;
   }
   .core-4 {
     padding-bottom: 4rem;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .core-4 {
-    padding-bottom: 4rem;
+    gap: 6rem;
   }
 }
 /* THANK YOU SECTION */
@@ -1528,7 +1544,7 @@ header {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 15rem 2rem;
+  padding: 7.5rem 2rem 3rem;
 }
 .thank-section__final-logo {
   margin-bottom: 3rem;
