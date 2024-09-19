@@ -22,11 +22,10 @@ $tablet-line-height-p: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3rem;
   background-color: #f3f3f3;
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     font-weight: 400;
     text-align: center;
     color: #000000;
@@ -133,10 +132,6 @@ $tablet-line-height-p: 2rem;
     gap: 4rem;
   }
   .team {
-    h2 {
-      font-size: 2.2rem;
-    }
-
     p {
       font-size: $tablet-font-size-p;
     }
@@ -243,6 +238,12 @@ $tablet-line-height-p: 2rem;
         align-items: center;
         justify-content: center;
         padding-bottom: 4rem;
+
+        &__core {
+            > :last-child {
+                padding-bottom: 0; 
+            }
+        }
     }
 
     .team__title h2 {

@@ -12,7 +12,7 @@
     padding: 7rem 0 3.5rem;
 
     & h2 {
-      font-size: 2.2rem;
+      font-size: 3.2rem;
       font-weight: 400;
     }
 
@@ -60,7 +60,6 @@
 
 @media screen and (min-width: $laptop-size){
   .why-contribute {
-    padding-bottom: 3rem;
 
     &__title {
       padding: 7rem 0 3.5rem;
@@ -98,7 +97,6 @@
 
 @media screen and (min-width: 769px) and (max-width: $laptop-size){
   .why-contribute {
-    padding: 2rem 0rem;
   
     &__title {
       h2 {
@@ -171,7 +169,6 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2.4rem;
-      padding-bottom: 3rem;
 
       &__reason {
         padding: 0rem;

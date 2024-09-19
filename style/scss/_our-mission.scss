@@ -3,11 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem 3rem;
+  padding: 0 6rem;
 
-  & img {
-    width: 23rem;
-  }
 
   &__content {
     &__title {
@@ -22,6 +19,10 @@
         line-height: 3.6rem;
         text-align: center;
         color: $black;
+      }
+
+      > img {
+        width: 23rem;
       }
     }
 
@@ -130,10 +131,6 @@
     padding: 0 1rem;
 
     &__content {
-      &__title h2 {
-        font-size: 2.2rem;
-      }
-
       &__details {
         display: block;
         text-align: left;

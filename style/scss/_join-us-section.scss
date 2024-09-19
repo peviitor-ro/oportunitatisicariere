@@ -5,14 +5,13 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 8rem;
   background-color: $greyish-white;
 
   & h2 {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.4rem;
-    padding: 3rem 0;
+    padding: 7rem 0 3rem;
   }
 
   & h3 {
@@ -74,7 +73,6 @@
 
 @media only screen and (min-width:#{$phone-size}) and (max-width:500px) {
   .join-us-section {
-    padding: 3rem 0 4rem 0;
     gap: 0rem;
 
     & p {
@@ -107,7 +105,7 @@
 
 @media only screen and (min-width:#{$tablet-size}) and (max-width:#{$laptop-size}) {
   .join-us-section {
-    padding: 5rem;
+    padding: 0 5rem;
 
     & p {
       padding: 0 10rem 5rem 10rem;
@@ -118,7 +116,7 @@
 
 @media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}) {
   .join-us-section {
-    padding: 5rem;
+    padding: 0 5rem;
 
     & p {
       padding: 0 20rem 2rem 20rem;

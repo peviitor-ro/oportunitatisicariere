@@ -707,10 +707,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem 3rem;
-}
-.our-mission img {
-  width: 23rem;
+  padding: 0 6rem;
 }
 .our-mission__content__title {
   display: flex;
@@ -724,6 +721,9 @@ header {
   line-height: 3.6rem;
   text-align: center;
   color: #000000;
+}
+.our-mission__content__title > img {
+  width: 23rem;
 }
 .our-mission__content__details {
   display: flex;
@@ -810,9 +810,6 @@ header {
   .our-mission {
     padding: 0 1rem;
   }
-  .our-mission__content__title h2 {
-    font-size: 2.2rem;
-  }
   .our-mission__content__details {
     display: block;
     text-align: left;
@@ -874,7 +871,7 @@ header {
   align-items: center;
   background-color: #f7f7f7;
   position: relative;
-  padding: 1rem 1rem 3rem;
+  padding: 0 1rem;
 }
 .how-contribute__title {
   display: flex;
@@ -885,11 +882,6 @@ header {
 .how-contribute__title h2 {
   font-size: 3.2rem;
   font-weight: 400;
-}
-@media screen and (max-width: 768px) {
-  .how-contribute__title h2 {
-    font-size: 2.2rem;
-  }
 }
 .how-contribute__title img {
   width: 23rem;
@@ -1167,7 +1159,7 @@ header {
   padding: 7rem 0 3.5rem;
 }
 .why-contribute__title h2 {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 400;
 }
 .why-contribute__title img {
@@ -1205,9 +1197,6 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
-  .why-contribute {
-    padding-bottom: 3rem;
-  }
   .why-contribute__title {
     padding: 7rem 0 3.5rem;
   }
@@ -1235,9 +1224,6 @@ header {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .why-contribute {
-    padding: 2rem 0rem;
-  }
   .why-contribute__title h2 {
     font-size: 3.2rem;
   }
@@ -1291,7 +1277,6 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
-    padding-bottom: 3rem;
   }
   .why-contribute__reasons__reason {
     padding: 0rem;
@@ -1316,11 +1301,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3rem;
   background-color: #f3f3f3;
 }
 .team h2 {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 400;
   text-align: center;
   color: #000000;
@@ -1410,9 +1394,6 @@ header {
     flex-direction: column;
     gap: 4rem;
   }
-  .team h2 {
-    font-size: 2.2rem;
-  }
   .team p {
     font-size: 1.6rem;
   }
@@ -1496,6 +1477,9 @@ header {
     justify-content: center;
     padding-bottom: 4rem;
   }
+  .team__members__core > :last-child {
+    padding-bottom: 0;
+  }
   .team .team__title h2 {
     font-size: 3.2rem;
   }
@@ -1540,7 +1524,10 @@ header {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 7.5rem 2rem 3rem;
+  padding: 0 2rem;
+}
+.thank-section img {
+  padding-top: 7rem;
 }
 .thank-section__final-logo {
   margin-bottom: 3rem;
@@ -1582,14 +1569,13 @@ header {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 8rem;
   background-color: #f7f7f7;
 }
 .join-us-section h2 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.4rem;
-  padding: 3rem 0;
+  padding: 7rem 0 3rem;
 }
 .join-us-section h3 {
   font-size: 1.8rem;
@@ -1643,7 +1629,6 @@ header {
 }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .join-us-section {
-    padding: 3rem 0 4rem 0;
     gap: 0rem;
   }
   .join-us-section p {
@@ -1670,7 +1655,7 @@ header {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .join-us-section {
-    padding: 5rem;
+    padding: 0 5rem;
   }
   .join-us-section p {
     padding: 0 10rem 5rem 10rem;
@@ -1679,7 +1664,7 @@ header {
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .join-us-section {
-    padding: 5rem;
+    padding: 0 5rem;
   }
   .join-us-section p {
     padding: 0 20rem 2rem 20rem;
