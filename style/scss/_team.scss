@@ -25,7 +25,7 @@ $tablet-line-height-p: 2rem;
   background-color: #f3f3f3;
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     text-align: center;
     color: #000000;
@@ -49,7 +49,6 @@ $tablet-line-height-p: 2rem;
 
   &__members {
     gap: 6rem;
-    // width: 283px;
   }
 
   &__title {
@@ -157,7 +156,6 @@ $tablet-line-height-p: 2rem;
       &__core {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        // width: 283px;
       }
     }
 
@@ -167,7 +165,6 @@ $tablet-line-height-p: 2rem;
       grid-template-rows: repeat(3, 4rem);
       row-gap: 0; // Removed row gap for narrow screens
       gap: 0;
-    //   width: 32rem;
 
       &.testing {
         grid-template-rows: 4rem 2rem 4rem;
@@ -186,7 +183,6 @@ $tablet-line-height-p: 2rem;
         justify-self: left; // Centered horizontally
         font-size: 1.8rem;
         font-weight: bold;
-        // width: 20rem;
       }
 
       p {
@@ -286,12 +282,6 @@ $tablet-line-height-p: 2rem;
 }
 
 @media only screen and (min-width: $laptop-size) {
-  .team {
-    .team__title h2 {
-        font-size: 3.2rem;
-    }
-  }
-
   .core-4 {
     padding-bottom: 4rem;
     gap: 6rem;

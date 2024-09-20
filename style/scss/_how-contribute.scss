@@ -14,7 +14,7 @@
     padding: 7rem 0 3.5rem;
 
     h2 {
-      font-size: 3.2rem;
+      font-size: 2.2rem;
       font-weight: 400;
     }
 
@@ -291,4 +291,10 @@
       }
     }
   }
+}
+
+@media only screen and (min-width:#{$tablet-size}) {
+    .how-contribute h2 {
+        font-size: 3.2rem;
+    }
 }

@@ -14,7 +14,7 @@
       padding: 7rem 0 3.5rem;
 
       > h2 {
-        font-size: 3.2rem;
+        font-size: 2.2rem;
         font-weight: 400;
         line-height: 3.6rem;
         text-align: center;
@@ -99,10 +99,6 @@
     padding: 0 1rem;
 
     &__content {
-      &__title h2 {
-        font-size: 2.2rem;
-      }
-
       &__details {
         display: block;
         text-align: left;
@@ -159,10 +155,6 @@
     margin-bottom: 3rem;
 
     &__content {
-      &__title h2 {
-        font-size: 2.2rem;
-      }
-
       &__details {
         display: block;
         text-align: left;
@@ -210,4 +202,10 @@
       }
     }
   }
+}
+
+@media only screen and (min-width:#{$tablet-size}) {
+    .our-mission h2 {
+        font-size: 3.2rem;
+    }
 }

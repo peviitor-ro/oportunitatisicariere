@@ -716,7 +716,7 @@ header {
   padding: 7rem 0 3.5rem;
 }
 .our-mission__content__title > h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 3.6rem;
   text-align: center;
@@ -786,9 +786,6 @@ header {
   .our-mission {
     padding: 0 1rem;
   }
-  .our-mission__content__title h2 {
-    font-size: 2.2rem;
-  }
   .our-mission__content__details {
     display: block;
     text-align: left;
@@ -831,9 +828,6 @@ header {
   .our-mission {
     margin-bottom: 3rem;
   }
-  .our-mission__content__title h2 {
-    font-size: 2.2rem;
-  }
   .our-mission__content__details {
     display: block;
     text-align: left;
@@ -864,6 +858,11 @@ header {
     gap: 0px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .our-mission h2 {
+    font-size: 3.2rem;
+  }
+}
 /* HOW CONTRIBUTE SECTION */
 .how-contribute {
   display: flex;
@@ -880,7 +879,7 @@ header {
   padding: 7rem 0 3.5rem;
 }
 .how-contribute__title h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 .how-contribute__title img {
@@ -1145,6 +1144,11 @@ header {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .how-contribute h2 {
+    font-size: 3.2rem;
+  }
+}
 /* WHY CONTRIBUTE SECTION */
 .why-contribute {
   display: flex;
@@ -1159,7 +1163,7 @@ header {
   padding: 7rem 0 3.5rem;
 }
 .why-contribute__title h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 .why-contribute__title img {
@@ -1200,9 +1204,6 @@ header {
   .why-contribute__title {
     padding: 7rem 0 3.5rem;
   }
-  .why-contribute__title h2 {
-    font-size: 3.2rem;
-  }
   .why-contribute__description {
     padding: 0 15rem 4rem 15rem;
     gap: 0.2rem;
@@ -1224,9 +1225,6 @@ header {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .why-contribute__title h2 {
-    font-size: 3.2rem;
-  }
   .why-contribute__description {
     padding: 1rem 10rem 3rem 10rem;
     gap: 0.4rem;
@@ -1257,7 +1255,6 @@ header {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .why-contribute__title h2 {
     padding: 0.8rem 3.95rem;
-    font-size: 3.2rem;
     line-height: 113%;
   }
   .why-contribute__title img {
@@ -1296,6 +1293,11 @@ header {
     gap: 1rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .why-contribute h2 {
+    font-size: 3.2rem;
+  }
+}
 .team {
   display: flex;
   flex-direction: column;
@@ -1304,7 +1306,7 @@ header {
   background-color: #f3f3f3;
 }
 .team h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 400;
   text-align: center;
   color: #000000;
@@ -1510,9 +1512,6 @@ header {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .team .team__title h2 {
-    font-size: 3.2rem;
-  }
   .core-4 {
     padding-bottom: 4rem;
     gap: 6rem;

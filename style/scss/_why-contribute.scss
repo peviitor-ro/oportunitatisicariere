@@ -12,7 +12,7 @@
     padding: 7rem 0 3.5rem;
 
     & h2 {
-      font-size: 3.2rem;
+      font-size: 2.2rem;
       font-weight: 400;
     }
 
@@ -63,10 +63,6 @@
 
     &__title {
       padding: 7rem 0 3.5rem;
-
-      h2 {
-        font-size: 3.2rem;
-      }
     }
 
     &__description {
@@ -96,14 +92,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: $laptop-size){
-  .why-contribute {
-  
-    &__title {
-      h2 {
-        font-size: 3.2rem;
-      }
-    }
-  
+  .why-contribute { 
     &__description {
       padding: 1rem 10rem 3rem 10rem;
       gap: 0.4rem;
@@ -144,7 +133,6 @@
     &__title {      
       & h2 {
         padding: 0.8rem 3.95rem;
-        font-size: 3.2rem; // Changed h2 size to match the rest
         line-height: 113%;
       }
 
@@ -194,4 +182,10 @@
       gap: 1rem;
     }
   }
+}
+
+@media only screen and (min-width:#{$tablet-size}) {
+    .why-contribute h2 {
+        font-size: 3.2rem;
+    }
 }
