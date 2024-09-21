@@ -23,6 +23,7 @@ $tablet-line-height-p: 2rem;
   align-items: center;
   justify-content: center;
   background-color: #f3f3f3;
+  padding: 0 3.2rem 2.4rem;
 
   h2 {
     font-size: 2.2rem;
@@ -43,16 +44,12 @@ $tablet-line-height-p: 2rem;
     text-align: center;
   }
 
-  p:nth-child(2) {
-    padding: 0 1rem;
-  }
-
   &__members {
     gap: 6rem;
   }
 
   &__title {
-    padding: 7rem 0 3.5rem;
+    padding: 2.4rem 0 2rem;
   }
 
   &__member {
@@ -234,12 +231,6 @@ $tablet-line-height-p: 2rem;
         align-items: center;
         justify-content: center;
         padding-bottom: 4rem;
-
-        &__core {
-            > :last-child {
-                padding-bottom: 0; 
-            }
-        }
     }
 
     .team__title h2 {
@@ -282,6 +273,12 @@ $tablet-line-height-p: 2rem;
 }
 
 @media only screen and (min-width: $laptop-size) {
+  .team {
+    padding-bottom: 4rem;
+  }
+  .team__title {
+    padding: 7rem 0 3.5rem;
+  }
   .core-4 {
     padding-bottom: 4rem;
     gap: 6rem;

@@ -3,15 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem;
-
+  padding: 0 3.2rem 2.4rem;
 
   &__content {
     &__title {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 7rem 0 3.5rem;
+      padding: 2.4rem 0 2rem;
 
       > h2 {
         font-size: 2.2rem;
@@ -96,8 +95,6 @@
 
 @media only screen and (max-width:#{$phone-size}) {
   .our-mission {
-    padding: 0 1rem;
-
     &__content {
       &__details {
         display: block;
@@ -124,8 +121,6 @@
 
 @media only screen and (min-width:#{$phone-size})  and (max-width:#{$tablet-size}) {
   .our-mission {
-    padding: 0 1rem;
-
     &__content {
       &__details {
         display: block;
@@ -135,7 +130,6 @@
           width: auto;
           margin: 0 auto;
           white-space: normal;
-          padding: 0 2rem;
 
           p {
             margin-bottom: 2rem;
@@ -194,8 +188,18 @@
   }
 }
 
+@media only screen and (min-width:#{$tablet-size}) {
+    .our-mission {
+        padding: 2.4rem 6rem;
+    }
+    .our-mission h2 {
+        font-size: 3.2rem;
+    }
+}
+
 @media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}) {
   .our-mission {
+    padding: 7rem 13.5rem;
     &__content {
       &__details {
         gap: 0px;
@@ -204,8 +208,4 @@
   }
 }
 
-@media only screen and (min-width:#{$tablet-size}) {
-    .our-mission h2 {
-        font-size: 3.2rem;
-    }
-}
+
