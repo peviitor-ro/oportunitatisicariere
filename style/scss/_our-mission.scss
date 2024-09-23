@@ -3,22 +3,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem;
-  padding-bottom: 14rem;
+  padding: 0 3.2rem 2.4rem;
 
   &__content {
     &__title {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 7rem 0;
+      padding: 2.4rem 0 2rem;
 
       > h2 {
-        font-size: 3.2rem;
+        font-size: 2.2rem;
         font-weight: 400;
         line-height: 3.6rem;
         text-align: center;
         color: $black;
+      }
+
+      > img {
+        width: 23rem;
       }
     }
 
@@ -65,8 +68,6 @@
         iframe {
           width: 100%;
           height: 380px;
-          // transform: scale(1, 0.9);
-          // transform-origin: 0 0;
           margin: 0 auto;
         }
       }
@@ -94,14 +95,7 @@
 
 @media only screen and (max-width:#{$phone-size}) {
   .our-mission {
-    padding: 0 1rem;
-    margin-bottom: 30rem;
-
     &__content {
-      &__title h2 {
-        font-size: 2.2rem;
-      }
-
       &__details {
         display: block;
         text-align: left;
@@ -127,14 +121,7 @@
 
 @media only screen and (min-width:#{$phone-size})  and (max-width:#{$tablet-size}) {
   .our-mission {
-    padding: 0 1rem;
-    margin-bottom: 6rem;
-
     &__content {
-      &__title h2 {
-        font-size: 2.2rem;
-      }
-
       &__details {
         display: block;
         text-align: left;
@@ -143,7 +130,6 @@
           width: auto;
           margin: 0 auto;
           white-space: normal;
-          padding: 0 2rem;
 
           p {
             margin-bottom: 2rem;
@@ -157,15 +143,12 @@
     }
   }
 }
+
 @media screen and (min-width:650px) and (max-width:#{$tablet-size}) {
   .our-mission {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
 
     &__content {
-      &__title h2 {
-        font-size: 2.2rem;
-      }
-
       &__details {
         display: block;
         text-align: left;
@@ -205,10 +188,18 @@
   }
 }
 
+@media only screen and (min-width:#{$tablet-size}) {
+    .our-mission {
+        padding: 2.4rem 6rem;
+    }
+    .our-mission h2 {
+        font-size: 3.2rem;
+    }
+}
+
 @media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}) {
   .our-mission {
-    // margin-bottom: 50rem;
-
+    padding: 7rem 13.5rem;
     &__content {
       &__details {
         gap: 0px;
@@ -216,3 +207,5 @@
     }
   }
 }
+
+

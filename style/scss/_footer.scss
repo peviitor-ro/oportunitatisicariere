@@ -89,7 +89,7 @@ footer {
 }
 
 // Mobile size
-@media (max-width: $phone-size) {
+@media (max-width: $tablet-size) {
   footer {
     padding: 3.2rem 1.4rem;
     gap: 2.4rem;
@@ -173,9 +173,6 @@ footer {
 
     .footer-social {
       &__links {
-        max-width: 100%;
-        gap: 1.4rem;
-
         li {
           a {
             img {
