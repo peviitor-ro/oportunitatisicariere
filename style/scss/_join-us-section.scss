@@ -22,16 +22,17 @@
     padding: 0 30rem 2rem 30rem;
   }
 
-  & .meeting-title{
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 3.4rem;
-    padding: 0.4rem 0 0.1rem;
-  }
+  &__title-container{
+    margin-bottom: 3rem;
 
-  &__meeting-subtitle{
-    font-size: 2rem;
-    padding-bottom: 3rem;
+    & .title{
+      font-size: 2.2rem;
+      padding: 0rem;
+    }
+  
+    & .team-line{
+      width: 28rem;
+    }
   }
 
   &__meeting-list {
@@ -49,7 +50,7 @@
       & .day-container {
         display: flex;
         gap: 0.6rem;
-        margin-right: 3rem;
+        margin-right: 2rem;
 
         .meeting-link {
           display: flex;
@@ -62,6 +63,7 @@
         }
 
         & .day-details {
+          margin-left: 1rem;
           text-align: left;
           display: flex;
           flex-direction: column;
@@ -110,43 +112,37 @@
   }
 }
 
-@media only screen and (max-width:#{$phone-size}) {
+@media only screen and (max-width:$phone-size) {
   .join-us-section {
-    padding: 3rem;
-
     & p {
-      padding: 0rem;
       line-height: 2.5rem;
     }
-    & button {
-      margin-top: 3rem;
-    }
 
-    .meeting-title{
-      padding-top: 1.6rem;
-    }
+    &__title-container{
+      margin: 3rem 0 1.6rem;
 
-    &__meeting-subtitle{
-      padding: 0rem 0rem 1.6rem;
-    }
-
-    &__button {
-      margin-top: 0rem;
+      .title{
+        padding: 0 2.7rem;
+      }
+      & .team-line{
+        width: 22rem;
+      }
     }
   }
 }
 
-@media only screen and (min-width:#{$phone-size}) and (max-width:500px) {
+@media only screen and (min-width: $phone-size) and (max-width:500px) {
   .join-us-section {
     gap: 0rem;
 
-    & p {
-      padding: 0 3rem 0rem 3rem; // Reduced X padding for better text wrapping
-      line-height: 2.5rem;
+    & h2{
+      padding: 0 3rem;
+      margin: 3rem 0;
     }
 
-    & h3 {
-      padding-top: 1rem;
+    & p {
+      padding: 0 2.5rem;
+      line-height: 2.5rem;
     }
 
     & ul {
@@ -155,8 +151,8 @@
       gap: 1.2rem;
     }
 
-    .meeting-title{
-      padding-top: 1.6rem;
+    .title{
+      margin: 2rem 0 0;
     }
 
     &__button {
@@ -165,12 +161,12 @@
   }
 }
 
-@media only screen and (min-width:500px) and (max-width:#{$tablet-size}) {
+@media only screen and (min-width:500px) and (max-width: $tablet-size ) {
   .join-us-section {
     padding: 3rem;
 
     & p {
-      padding: 0 10rem 5rem 10rem;
+      padding: 0 5rem 5rem 5rem;
       line-height: 2.5rem;
     }
   }

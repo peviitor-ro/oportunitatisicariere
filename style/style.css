@@ -1604,15 +1604,15 @@ header {
   line-height: 2.2rem;
   padding: 0 30rem 2rem 30rem;
 }
-.join-us-section .meeting-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.4rem;
-  padding: 0.4rem 0 0.1rem;
+.join-us-section__title-container {
+  margin-bottom: 3rem;
 }
-.join-us-section__meeting-subtitle {
-  font-size: 2rem;
-  padding-bottom: 3rem;
+.join-us-section__title-container .title {
+  font-size: 2.2rem;
+  padding: 0rem;
+}
+.join-us-section__title-container .team-line {
+  width: 28rem;
 }
 .join-us-section__meeting-list {
   display: flex;
@@ -1629,7 +1629,7 @@ header {
 .join-us-section__meeting-list .meeting-item .day-container {
   display: flex;
   gap: 0.6rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 .join-us-section__meeting-list .meeting-item .day-container .meeting-link {
   display: flex;
@@ -1640,6 +1640,7 @@ header {
   height: 38px;
 }
 .join-us-section__meeting-list .meeting-item .day-container .day-details {
+  margin-left: 1rem;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -1679,44 +1680,38 @@ header {
 }
 
 @media only screen and (max-width: 320px) {
-  .join-us-section {
-    padding: 3rem;
-  }
   .join-us-section p {
-    padding: 0rem;
     line-height: 2.5rem;
   }
-  .join-us-section button {
-    margin-top: 3rem;
+  .join-us-section__title-container {
+    margin: 3rem 0 1.6rem;
   }
-  .join-us-section .meeting-title {
-    padding-top: 1.6rem;
+  .join-us-section__title-container .title {
+    padding: 0 2.7rem;
   }
-  .join-us-section__meeting-subtitle {
-    padding: 0rem 0rem 1.6rem;
-  }
-  .join-us-section__button {
-    margin-top: 0rem;
+  .join-us-section__title-container .team-line {
+    width: 22rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .join-us-section {
     gap: 0rem;
   }
-  .join-us-section p {
-    padding: 0 3rem 0rem 3rem;
-    line-height: 2.5rem;
+  .join-us-section h2 {
+    padding: 0 3rem;
+    margin: 3rem 0;
   }
-  .join-us-section h3 {
-    padding-top: 1rem;
+  .join-us-section p {
+    padding: 0 2.5rem;
+    line-height: 2.5rem;
   }
   .join-us-section ul {
     padding: 1rem 0;
     margin-bottom: 1rem;
     gap: 1.2rem;
   }
-  .join-us-section .meeting-title {
-    padding-top: 1.6rem;
+  .join-us-section .title {
+    margin: 2rem 0 0;
   }
   .join-us-section__button {
     margin-top: 1.8rem;
@@ -1727,7 +1722,7 @@ header {
     padding: 3rem;
   }
   .join-us-section p {
-    padding: 0 10rem 5rem 10rem;
+    padding: 0 5rem 5rem 5rem;
     line-height: 2.5rem;
   }
 }
