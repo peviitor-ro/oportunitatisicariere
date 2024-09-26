@@ -15,11 +15,6 @@
     padding: 2.4rem 0;
   }
 
-  & h3 {
-    font-size: 1.8rem;
-    padding-bottom: 1.6rem;
-  }
-
   & p {
     font-size: 1.6rem;
     font-weight: 400;
@@ -27,21 +22,80 @@
     padding: 0 30rem 2rem 30rem;
   }
 
-  & ul {
-    list-style: none;
+  &__title-container{
+    margin-bottom: 3rem;
+
+    & .title{
+      font-size: 2.2rem;
+      padding: 0rem;
+    }
+  
+    & .team-line{
+      width: 28rem;
+    }
+  }
+
+  &__meeting-list {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    & li {
-      font-size: 1.4rem;
-      & span {
-        font-weight: bold;
+    gap: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+
+    & .meeting-item {
+      display: flex;
+      justify-content: flex-start;
+
+      & .day-container {
+        display: flex;
+        gap: 0.6rem;
+        margin-right: 2rem;
+
+        .meeting-link {
+          display: flex;
+          align-items: center;
+        }
+      
+        .meeting-logo {
+          width: 38px;
+          height: 38px;
+        }
+
+        & .day-details {
+          margin-left: 1rem;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+  
+          & .day-time {
+            font-weight: bold;
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+          }
+        }
+      }
+
+      & .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      
+        & .team {
+          padding: 0rem;
+        }
+  
+        & .team-type {
+          font-weight: bold;
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+        }
       }
     }
   }
 
   &__button {
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 1rem 3.2rem;
     border-radius: 0.8rem;
     border: none;
@@ -58,31 +112,37 @@
   }
 }
 
-@media only screen and (max-width:#{$phone-size}) {
+@media only screen and (max-width:$phone-size) {
   .join-us-section {
-    padding: 3rem;
-
     & p {
-      padding: 0rem;
       line-height: 2.5rem;
     }
-    & button {
-      margin-top: 3rem;
+
+    &__title-container{
+      margin: 3rem 0 1.6rem;
+
+      .title{
+        padding: 0 2.7rem;
+      }
+      & .team-line{
+        width: 22rem;
+      }
     }
   }
 }
 
-@media only screen and (min-width:#{$phone-size}) and (max-width:500px) {
+@media only screen and (min-width: $phone-size) and (max-width:500px) {
   .join-us-section {
     gap: 0rem;
 
-    & p {
-      padding: 0 3rem 0rem 3rem; // Reduced X padding for better text wrapping
-      line-height: 2.5rem;
+    & h2{
+      padding: 0 3rem;
+      margin: 3rem 0;
     }
 
-    & h3 {
-      padding-top: 1rem;
+    & p {
+      padding: 0 2.5rem;
+      line-height: 2.5rem;
     }
 
     & ul {
@@ -90,15 +150,23 @@
       margin-bottom: 1rem;
       gap: 1.2rem;
     }
+
+    .title{
+      margin: 2rem 0 0;
+    }
+
+    &__button {
+      margin-top: 1.8rem;
+    }
   }
 }
 
-@media only screen and (min-width:500px) and (max-width:#{$tablet-size}) {
+@media only screen and (min-width:500px) and (max-width: $tablet-size ) {
   .join-us-section {
     padding: 3rem;
 
     & p {
-      padding: 0 10rem 5rem 10rem;
+      padding: 0 5rem 5rem 5rem;
       line-height: 2.5rem;
     }
   }
