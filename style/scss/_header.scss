@@ -24,7 +24,7 @@ header {
 
   background-color: $white-smoke;
   padding: 1rem 2rem;
-  width: clamp(320px, 100%, 1440px);
+  width: clamp(250px, 100%, 1440px);
   height: auto;
 
   &__logo {
@@ -351,11 +351,6 @@ header {
         transform: scaleX(1);
       }
     }
-
-    // &__logo {
-    //   display: block;
-    //   margin-top: 25px;
-    // }
   }
 
   .hamburger-menu-icon {
