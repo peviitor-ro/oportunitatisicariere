@@ -54,6 +54,14 @@
         font-size: 2rem;
         text-align: center;
         padding-top: 1.5rem;
+        inline-size: 10rem;
+      }
+
+      &:last-child {  
+        p {
+          overflow-wrap: break-word;
+          inline-size: 8rem;
+        }
       }
     }
   }
@@ -122,7 +130,14 @@
         }
   
         & p {
+          inline-size: 12rem;
           padding: 1.5rem 0.3rem 0.3rem 0.3rem;
+        }
+
+        &:last-child {  
+          p {
+            inline-size: 10rem;
+          }
         }
       }
     }
@@ -162,12 +177,19 @@
         gap: 0.9rem;
   
         & p {
+          inline-size: 8rem;
           font-size: 1.4rem;
           line-height: 136%;
         }
 
         & img {
           width: 5rem;
+        }
+
+        &:last-child {  
+          p {
+            inline-size: 7rem;
+          }
         }
       }
     }
