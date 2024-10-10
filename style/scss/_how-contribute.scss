@@ -255,6 +255,10 @@
     font-size: 1.6rem;
     padding: 2rem 2rem;
 
+      span {
+        display: inline-block;
+      }
+
     a {
       font-weight: 600;
       color: $dark-mint;

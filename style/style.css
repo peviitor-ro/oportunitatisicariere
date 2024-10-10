@@ -65,6 +65,7 @@ header {
   font-size: 2rem;
   color: #1d2b59;
   transition: all 0.2s ease;
+  inline-size: 25rem;
 }
 .nav__logo .logo-redirect {
   pointer-events: auto !important;
@@ -239,7 +240,15 @@ header {
   }
   .nav__logo__title {
     font-size: 1.7rem;
+    inline-size: 22rem;
   }
+}
+@media only screen and (max-width: 768px) and (min-width: 320px) and (max-width: 351px) {
+  .nav__logo__title {
+    inline-size: 20rem;
+  }
+}
+@media only screen and (max-width: 768px) {
   .nav__logo .title-mint {
     font-size: 1.6rem;
   }
@@ -1122,6 +1131,9 @@ header {
   font-size: 1.6rem;
   padding: 2rem 2rem;
 }
+.how-contribute__details span {
+  display: inline-block;
+}
 .how-contribute__details a {
   font-weight: 600;
   color: #1e524e;
@@ -1212,6 +1224,11 @@ header {
   font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
+  inline-size: 10rem;
+}
+.why-contribute__reasons__reason:last-child p {
+  overflow-wrap: break-word;
+  inline-size: 8rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1266,7 +1283,11 @@ header {
     width: 6rem;
   }
   .why-contribute__reasons__reason p {
+    inline-size: 12rem;
     padding: 1.5rem 0.3rem 0.3rem 0.3rem;
+  }
+  .why-contribute__reasons__reason:last-child p {
+    inline-size: 10rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -1294,11 +1315,15 @@ header {
     gap: 0.9rem;
   }
   .why-contribute__reasons__reason p {
+    inline-size: 8rem;
     font-size: 1.4rem;
     line-height: 136%;
   }
   .why-contribute__reasons__reason img {
     width: 5rem;
+  }
+  .why-contribute__reasons__reason:last-child p {
+    inline-size: 7rem;
   }
 }
 @media (max-width: 320px) {
@@ -1558,6 +1583,9 @@ header {
   line-height: 2.2rem;
   max-width: 620px;
 }
+.thank-section p span {
+  display: inline-block;
+}
 
 @media only screen and (max-width: 320px) {
   .thank-section p {
@@ -1597,6 +1625,24 @@ header {
   font-weight: 700;
   line-height: 3.4rem;
   padding: 2.4rem 0;
+}
+.join-us-section > h2 {
+  inline-size: 60rem;
+}
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  .join-us-section > h2 {
+    inline-size: 45rem;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .join-us-section > h2 {
+    inline-size: 40rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .join-us-section > h2 {
+    inline-size: 30rem;
+  }
 }
 .join-us-section p {
   font-size: 1.6rem;
