@@ -39,6 +39,7 @@ header {
       font-size: 2rem;
       color: $dark-blue;
       transition: all 0.2s ease;
+      inline-size: 25rem;
     }
 
     .logo-redirect {
@@ -249,6 +250,11 @@ header {
 
       &__title {
         font-size: 1.7rem;
+        inline-size: 22rem;
+
+        @media screen and (min-width: $phone-size) and (max-width: 351px) {
+          inline-size: 20rem;
+        }
       }
       & .title-mint {
         font-size: 1.6rem;
