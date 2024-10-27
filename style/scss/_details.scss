@@ -476,3 +476,23 @@
     gap: 1rem;
   }
 }
+
+#top-redirect-details-page {
+  right: 4vw;
+  bottom: 0.2vh;
+  @media (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
+    right: 2vw;
+  }
+
+  @media (min-width: 769px) and (max-width: $laptop-size){
+    right: 2.6vw;
+  }
+
+  @media (min-width: 500px) and  (max-width: $tablet-size) {
+    right: 4.2vw;
+  }
+
+  @media (min-width: $phone-size) and (max-width: 500px) {
+    right: 5.6vw;
+  }
+}
