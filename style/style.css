@@ -1448,15 +1448,28 @@ footer {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 2vw;
-  bottom: 2vh;
-  opacity: 0; }
+  opacity: 0;
+  bottom: 2vh; }
   .top-redirect-btn img {
     width: 5rem;
     height: 5rem;
     transition: all 0.3s ease; }
   .top-redirect-btn img:hover {
     filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%); }
+
+#top-redirect-main-page {
+  right: 3vw; }
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    #top-redirect-main-page {
+      right: 2vw; } }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #top-redirect-main-page {
+      right: 1.8vw;
+      bottom: 1.8vh; } }
+  @media (max-width: 768px) {
+    #top-redirect-main-page {
+      right: 1.2vw;
+      bottom: 1.2vh; } }
 
 @media (max-width: 768px) {
   footer {
@@ -1483,12 +1496,9 @@ footer {
     gap: 1.4rem; }
     .footer-navigation ul li a {
       font-size: 1.4rem; }
-  .top-redirect-btn {
-    right: 2vw;
-    bottom: 0vh; }
-    .top-redirect-btn img {
-      width: 3.2rem;
-      height: 3.2rem; } }
+  .top-redirect-btn img {
+    width: 3.2rem;
+    height: 3.2rem; } }
 
 @media (min-width: 321px) and (max-width: 768px) {
   footer {
@@ -1541,12 +1551,9 @@ footer {
     justify-content: space-between; }
     .footer-navigation ul li a {
       font-size: 1.4rem; }
-  .top-redirect-btn {
-    right: 2vw;
-    bottom: 2vh; }
-    .top-redirect-btn img {
-      width: 4rem;
-      height: 4rem; } }
+  .top-redirect-btn img {
+    width: 4rem;
+    height: 4rem; } }
 
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba(107, 107, 107, 0.35);
@@ -1917,6 +1924,22 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem; }
+
+#top-redirect-details-page {
+  right: 4vw;
+  bottom: 0.2vh; }
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    #top-redirect-details-page {
+      right: 2vw; } }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #top-redirect-details-page {
+      right: 2.6vw; } }
+  @media (min-width: 500px) and (max-width: 768px) {
+    #top-redirect-details-page {
+      right: 4.2vw; } }
+  @media (min-width: 320px) and (max-width: 500px) {
+    #top-redirect-details-page {
+      right: 5.6vw; } }
 
 .main-container-error {
   width: 100%;
