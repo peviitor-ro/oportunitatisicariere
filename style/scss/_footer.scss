@@ -73,9 +73,8 @@ footer {
   border: none;
   position: fixed;
   z-index: 99;
-  right: 2vw;
-  bottom: 2vh;
   opacity: 0;
+  bottom: 2vh;
   img {
     width: 5rem;
     height: 5rem;
@@ -85,6 +84,23 @@ footer {
   img:hover {
     filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
       brightness(85%) contrast(77%);
+  }
+}
+
+#top-redirect-main-page {
+  right: 3vw;
+  @media (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
+    right: 2vw;
+  }
+
+  @media (min-width: 769px) and (max-width: $laptop-size) {
+    right: 1.8vw;
+    bottom: 1.8vh;
+  }
+
+  @media (max-width: $tablet-size) {
+    right: 1.2vw;
+    bottom: 1.2vh;
   }
 }
 
@@ -142,8 +158,8 @@ footer {
   }
 
   .top-redirect-btn {
-    right: 2vw;
-    bottom: 0vh;
+    // right: 2vw;
+    // bottom: 0vh;
     img {
       width: 3.2rem;
       height: 3.2rem;
@@ -260,8 +276,8 @@ footer {
   }
 
   .top-redirect-btn {
-    right: 2vw;
-    bottom: 2vh;
+    // right: 2vw;
+    // bottom: 2vh;
 
     img {
       width: 4rem;
