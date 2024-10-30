@@ -17,6 +17,51 @@ $tablet-font-size-p: 1.6rem;
 $tablet-font-size-h4: 2rem;
 $tablet-line-height-p: 2rem;
 
+#team-navbar {
+  display: flex;
+  gap: 0.75rem;
+
+  .team-nav-btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.8rem;
+    border: 1px solid $green-mint;
+    color: $green-mint;
+    background-color: $white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $green-mint;
+      color: $white;
+    }
+  }
+
+  .active {
+    background-color: $green-mint;
+    color: $white;
+
+    &:hover {
+      background-color: $dark-mint;
+      border-color: $dark-mint;
+    }
+  }
+}
+
+#team-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .team__member {
+    flex: 1 0 20%;
+  }
+}
+
 .team {
   display: flex;
   flex-direction: column;
@@ -58,10 +103,10 @@ $tablet-line-height-p: 2rem;
     align-items: center;
     gap: 1.2rem;
     padding-top: 3rem;
-    
+
     .img-position {
-        position: relative;
-        object-position: 0% 0%;
+      position: relative;
+      object-position: 0% 0%;
     }
 
     &-img {
@@ -213,7 +258,7 @@ $tablet-line-height-p: 2rem;
       transform: scale(0.6);
     }
     .banner-core {
-        transform: scale(0.8);
+      transform: scale(0.8);
     }
   }
 }
@@ -223,18 +268,18 @@ $tablet-line-height-p: 2rem;
     padding: 1rem 10rem;
 
     p:nth-child(2) {
-        padding-bottom: 3rem;
+      padding-bottom: 3rem;
     }
 
     &__members {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 4rem;
     }
 
     .team__title h2 {
-        font-size: 3.2rem;
+      font-size: 3.2rem;
     }
 
     p {
@@ -284,4 +329,3 @@ $tablet-line-height-p: 2rem;
     gap: 6rem;
   }
 }
-

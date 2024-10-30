@@ -1328,6 +1328,46 @@ header {
     font-size: 3.2rem;
   }
 }
+#team-navbar {
+  display: flex;
+  gap: 0.75rem;
+}
+#team-navbar .team-nav-btn {
+  font-size: 1.6rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.8rem;
+  border: 1px solid #2f7973;
+  color: #2f7973;
+  background-color: #f3f3f3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#team-navbar .team-nav-btn:hover {
+  background-color: #2f7973;
+  color: #f3f3f3;
+}
+#team-navbar .active {
+  background-color: #2f7973;
+  color: #f3f3f3;
+}
+#team-navbar .active:hover {
+  background-color: #1e524e;
+  border-color: #1e524e;
+}
+
+#team-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#team-wrapper .team__member {
+  flex: 1 0 20%;
+}
+
 .team {
   display: flex;
   flex-direction: column;
@@ -2595,6 +2635,4 @@ footer .footer-bottom h4 {
     min-height: 60vh;
     margin-bottom: 4rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
