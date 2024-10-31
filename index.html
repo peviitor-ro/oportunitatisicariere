@@ -27,6 +27,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</title>
     <!-- import favicon logo files -->
     <link
@@ -111,56 +112,60 @@
               src="./assets/logo.png"
               alt="logo image"
               class="intro__container__logo-image"
+              data-aos="zoom-in-right"
+              data-aos-duration="500"
             />
             <div class="intro__container__logo__title">
-              <h1>ASOCIAȚIA</h1>
-              <h1>OPORTUNITĂȚI</h1>
-              <h1>ȘI CARIERE</h1>
+              <h1 data-aos="zoom-in-down" data-aos-duration="800">ASOCIAȚIA</h1>
+              <h1 data-aos="zoom-in-up" data-aos-duration="600">OPORTUNITĂȚI</h1>
+              <h1 data-aos="zoom-in-up" data-aos-duration="600">ȘI CARIERE</h1>
             </div>
           </div>
           <img
             src="./assets/watch-acum.png"
             alt="watch image saying now"
             class="intro__container-watch"
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
           />
         </div>
         <a href="#our-mission" class="intro__cta"></a>
       </section>
 
-      <section id="our-mission" class="our-mission">
+      <section id="our-mission" class="our-mission" data-aos="fade-up">
         <div class="our-mission__content">
-          <div class="our-mission__content__title">
+          <div class="our-mission__content__title" data-aos="zoom-in-up" data-aos-duration="1000">
             <h2>Misiunea noastră</h2>
             <img src="./assets/underline.svg" alt="text-underline" />
           </div>
           <div class="our-mission__content__details">
             <div class="description">
-              <p>
+              <p data-aos="fade-right" data-aos-duration="1000">
                 Misiunea noastră este să simplificăm procesul de căutare a
                 locurilor de muncă în România, indiferent de platformă.
               </p>
-              <p>
+              <p data-aos="fade-right"  data-aos-duration="1100">
                 Astfel, s-a născut site-ul
                 <a href="https://peviitor.ro/" target="_blank">peviitor.ro</a>,
                 care oferă utilizatorilor posibilitatea de a găsi locuri de
                 muncă de la sute de companii.
               </p>
-              <p>
+              <p data-aos="fade-right" data-aos-duration="1200">
                 Echipa noastră de voluntari a dezvoltat motorul de căutare
                 alăturat. Te provocăm să îl încerci și să descoperi următoarea
                 ta oportunitate profesională sau să vezi ce am realizat
                 împreună.
               </p>
-              <p>
+              <p data-aos="fade-right" data-aos-duration="1300">
                 Asociația Oportunități și Cariere oferă o șansă de a lucra
                 într-un proiect real, atât pentru dezvoltatorii la început de
                 carieră, cât și pentru cei mai experimentați în căutare de
                 provocări profesionale sau dornici să își ofere ajutorul altora.
               </p>
-              <img src="./assets/arrow-right-iframe.svg" alt="right arrow" />
+              <img src="./assets/arrow-right-iframe.svg" alt="right arrow"/>
             </div>
             <!-- iframe reason for white gap on smaller tablets and phones -->
-            <div class="search-engine">
+            <div class="search-engine" data-aos="fade-left" data-aos-duration="1200">
               <a href="https://peviitor.ro/" target="_blank">
                 <img src="assets/peviitor.webp" alt="racheta" class="search-engine-img">
               </a>
@@ -168,12 +173,13 @@
           </div>
         </div>
       </section>
-      <section id="how-contribute" class="how-contribute">
-        <div class="how-contribute__title">
+
+      <section id="how-contribute" class="how-contribute" data-aos="fade-up">
+        <div class="how-contribute__title" data-aos="zoom-in-up" data-aos-duration="1000">
           <h2>Cum poți ajuta tu?</h2>
           <img src="./assets/underline.svg" alt="text-underline" />
         </div>
-        <div class="how-contribute__description">
+        <div class="how-contribute__description" data-aos="fade-up" data-aos-duration="1100">
           <p>
             Cu determinare și cu implicarea unor voluntari pasionați, am reușit
             să aducem laolaltă locuri de muncă de la peste 700 de companii,
@@ -209,7 +215,7 @@
           />
         </div>
 
-        <div class="how-contribute__details">
+        <div class="how-contribute__details" data-aos="zoom-in" data-aos-duration="1000">
           <p>
             Pentru a continua să oferim acest serviciu gratuit și să-l
             îmbunătățim constant, avem nevoie de sprijinul vostru. 
@@ -260,8 +266,8 @@
           </div>
         </div>
       </section>
-      <section id="why-contribute" class="why-contribute">
-        <div class="why-contribute__title">
+      <section id="why-contribute" class="why-contribute" data-aos="fade-up">
+        <div class="why-contribute__title" data-aos="zoom-in-up" data-aos-duration="1000">
           <h2>De ce să ajuți?</h2>
           <img src="./assets/underline.svg" alt="" />
         </div>
@@ -276,54 +282,56 @@
             într-un proiect real sunt nenumărate, unele dintre acestea includ:
           </p>
         </div>
-        <div class="why-contribute__reasons">
-          <div class="why-contribute__reasons__reason">
+        <div class="why-contribute__reasons" data-aos="fade-up">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500">
             <img src="./assets/reason1.png" alt="portofolio" />
             <p>
               Construirea 
               portofoliului
             </p>
           </div>
-          <div class="why-contribute__reasons__reason">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <img src="./assets/reason2.png" alt="portofolio" />
             <p>Networking</p>
           </div>
-          <div class="why-contribute__reasons__reason">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <img src="./assets/reason3.png" alt="portofolio" />
             <p>
               Expriență 
               practică
             </p>
           </div>
-          <div class="why-contribute__reasons__reason">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <img src="./assets/reason4.png" alt="portofolio" />
             <p>
               Impactul 
               social
             </p>
           </div>
-          <div class="why-contribute__reasons__reason">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <img src="./assets/reason5.png" alt="portofolio" />
             <p>
               Dezvoltarea
               abilităților
             </p>
           </div>
-          <div class="why-contribute__reasons__reason">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <img src="./assets/reason6.png" alt="portofolio" />
             <p>
               Satisfacția
               personală
             </p>
           </div>
-          <div class="why-contribute__reasons__reason">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <img src="./assets/reason7.png" alt="portofolio" />
             <p>
               Colaborarea
               într-o echipă
             </p>
           </div>
-          <div class="why-contribute__reasons__reason">
+          <div class="why-contribute__reasons__reason" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <img src="./assets/reason8.png" alt="portofolio" />
             <p>
               Mentorat
@@ -332,8 +340,8 @@
           </div>
         </div>
       </section>
-      <section id="team" class="team">
-        <div class="team__title">
+      <section id="team" class="team" data-aos="fade-up">
+        <div class="team__title" data-aos="zoom-in-up" data-aos-duration="1000">
           <h2>Echipa</h2>
           <img
             src="./assets/underline.svg"
@@ -347,12 +355,12 @@
           unită, hotărâtă să aducă o schimbare semnificativă în comunitatea
           noastră!
         </p>
-        <div class="team__banner">
+        <div class="team__banner" data-aos="zoom-in" data-aos-duration="1000">
           <p class="">Membrii fondatori</p>
           <img src="./assets/banner.svg" alt="" class="banner-core" />
         </div>
         <div class="team__members">
-          <div class="team__member">
+          <div class="team__member" data-aos="zoom-in-up" data-aos-duration="800">
             <img src="./assets/sebi-pic.png" alt="" class="team__member-img" />
             <h4>Sebastian Boga</h4>
             <p>Președinte</p>
@@ -382,7 +390,7 @@
               </a>
             </div>
           </div>
-          <div class="team__member">
+          <div class="team__member" data-aos="zoom-in-up" data-aos-duration="800">
             <img
               src="./assets/Irina-Adam.png"
               alt=""
@@ -417,7 +425,7 @@
               </a>
             </div>
           </div>
-          <div class="team__member">
+          <div class="team__member" data-aos="zoom-in-up" data-aos-duration="800">
             <img
               src="./assets/Sergiu-Avram.png"
               alt=""
@@ -1169,13 +1177,16 @@
             </div>
         </div>
       </section>
+
       <section class="thank-section">
         <img
           src="./assets/final-logo.png"
           alt="final-logo"
           class="thank-section__final-logo"
+          data-aos="zoom-in-down"
+          data-aos-duration="800"
         />
-        <p>
+        <p data-aos="fade-up" data-aos-duration="1000">
           Trebuie să subliniem că există mulți alți colegi dedicați care au
           participat la proiect, unii dintre ei rămânând pe termen lung, iar
           alții contribuind pe o perioadă mai scurtă.
@@ -1185,11 +1196,11 @@
         </p>
       </section>
       <section class="join-us-section">
-        <h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000">
           Ești pregătit să te alături echipei noastre de voluntari?
           Hai să ne cunoaștem!
         </h2>
-        <p>
+        <p  data-aos="zoom-in" data-aos-duration="1000">
           Alătură-te și dezvoltă-ți abilitățile IT într-un mediu colaborativ,
           alături de o echipă dinamică. Organizăm întâlniri zilnice pe platforma
           <a href="https://meet.jit.si/PEVIITOR.RO">Jitsi</a>, unde putem
@@ -1204,14 +1215,14 @@
           învăța și a contribui împreună la succesul proiectului nostru!
         </p> -->
         
-        <div class="join-us-section__title-container">
+        <div class="join-us-section__title-container" data-aos="zoom-in-up" data-aos-duration="800">
           <h2 class="title">ÎNTÂLNIRI SĂPTĂMÂNALE</h2>
           <img src="./assets/underline.svg" alt="text-underline" 
             class="team-line"          
           />
         </div>
 
-        <ul class="join-us-section__meeting-list">
+        <ul class="join-us-section__meeting-list"  data-aos="zoom-in-up" data-aos-duration="800">
           <li class="meeting-item">
             <div class="day-container">
               <a class="meeting-link" href="https://meet.jit.si/PEVIITOR.RO" target="_blank" rel="noopener noreferrer">
@@ -1307,6 +1318,9 @@
           class="join-us-section__button"
           href="https://discord.gg/KPMkdUfQNu"
           target="_blank"
+          data-aos-duration="800"
+          data-aos="fade-zoom-in"
+          data-aos-delay="100"
         >
           Fii parte din echipa noastră!
         </a>
@@ -1337,33 +1351,33 @@
       <!-- <hr /> -->
       <div class="footer-social">
         <ul id="social" class="footer-social__links">
-          <li>
+          <li data-aos="fade-up" data-aos-duration="1000">
             <a href="https://www.linkedin.com/company/asociatia-oportunitati-si-cariere/" target="_blank">
               <img src="./assets/social-media-icons/linkedin_icon.svg" alt="linkedin" />
             </a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-duration="1000">
             <a href="https://www.instagram.com/peviitor.ro/" target="_blank" >
               <img src="./assets/social-media-icons/instagram_icon.svg" alt="instagram"/>
             </a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-duration="1000">
             <a href="https://discord.gg/KPMkdUfQNu" target="_blank">
               <img src="./assets/social-media-icons/discord.svg" alt="discord" />
             </a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-duration="1000">
             <a href="https://github.com/peviitor-ro/oportunitatisicariere/issues" target="_blank">
               <img src="./assets/social-media-icons/github_icon.svg" alt="github" />
             </a>
           </li>
 
-          <li>
+          <li data-aos="fade-up" data-aos-duration="1000">
             <a href="https://meet.jit.si/PEVIITOR.RO" target="_blank">
               <img src="./assets/jitsi.svg" alt="jitsi" />
             </a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-duration="1000">
             <a href="https://dev.to/t/oportunitatisicariere/latest" target="_blank">
               <img src="./assets/social-media-icons/dev_icon.svg" alt="dev" />
             </a>
@@ -1380,6 +1394,8 @@
     <a href="#" class="top-redirect-btn" id="top-redirect-main-page">
       <img src="./assets//arrow-up.svg" alt="arrow-up" />
     </a>
+    
+
     <script src="script.js" defer></script>
     <!-- Swiper JS Script -->
     <script
@@ -1389,5 +1405,13 @@
     <script src="carousel.js" defer></script>
     <script type="module" src="jobCards.js"></script>
     <script src="script_404.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+      AOS.init({once: false,
+        offset: 50, 
+        easing: 'ease-in-out',
+      });
+    </script>
+
   </body>
 </html>
