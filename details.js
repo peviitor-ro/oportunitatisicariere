@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".contact__role").textContent =
           job.aboutEmployer.title;
         document.getElementById("phone").textContent += job.aboutEmployer.phone;
-        document.getElementById("email").textContent += job.aboutEmployer.email;
+        document.getElementById("email").innerHTML +=
+          `<a href="mailto:${job.aboutEmployer.email}">${job.aboutEmployer.email}</a>`;
         document.getElementById("address").textContent +=
           job.aboutEmployer.address;
       }
