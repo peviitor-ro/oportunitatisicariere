@@ -4,6 +4,7 @@ const routes = {
   "our-mission": "ourMission",
   "how-contribute": "howContribute",
   "why-contribute": "whyContribute",
+  teamRooster: "team-rooster",
   team: "team",
 };
 

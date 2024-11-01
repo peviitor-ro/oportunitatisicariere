@@ -71,13 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {
         button.textContent = team;
 
         if (!firstButton) firstButton = button;
+        button.addEventListener("click", () => {
+          window.location.href = "#teamRooster"; // Redirecționează utilizatorul către URL
+      });
 
         // Adaugăm event listener pentru selectarea echipei
         button.addEventListener("click", () => {
             // Scoate clasa active de la toate butoanele și o adaugă doar celui curent
             document.querySelectorAll(".team-nav-btn").forEach(btn => btn.classList.remove("active"));
             button.classList.add("active");
-            
 
             // Afișează doar membrii echipei selectate
             displayTeamMembers(team);

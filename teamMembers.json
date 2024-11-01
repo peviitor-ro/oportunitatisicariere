@@ -83,6 +83,18 @@
     }
   },
   {
+    "name": "Rares Irimus",
+    "avatar": "./assets/contributors/rares-irimus.webp",
+    "position": "Scrapper",
+    "team": "Scrapping",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/raresirimus/",
+      "github": "https://github.com/RaresCode",
+      "discord": "https://discord.com/users/939250630239846490"
+    }
+  },
+  {
     "name": "Alexandra Ifrim",
     "avatar": "./assets/contributors/alexandra-ifrim.webp",
     "position": "Backend Developer",
@@ -333,6 +345,18 @@
       "linkedin": "https://www.linkedin.com/in/ana-maria-talmacel-a96722274/",
       "github": "https://github.com/talmacelanamaria",
       "discord": "https://discordapp.com/users/1257214914813100065"
+    }
+  },
+  {
+    "name": "Madalina Andon",
+    "avatar": "./assets/contributors/madalina-andon.webp",
+    "position": "Manual tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/madalina-andon/",
+      "github": "https://github.com/MadalinaCodes",
+      "discord": "https://discordapp.com/users/694204138099179640"
     }
   }
 ]
