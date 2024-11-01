@@ -8,57 +8,57 @@ const teamNavigation = document.querySelector("#team-navbar");
 const membersWrapper = document.querySelector("#team-wrapper");
 
 function displayTeamMembers(team) {
-    membersWrapper.innerHTML = "";  // Golim continutul anterior
+  membersWrapper.innerHTML = "";  // Golim continutul anterior
 
-    // Filtrarea membrilor dupa echipe
-    const filteredMembers = team === "All" 
-        ? teamMembers 
-        : teamMembers.filter(member => member.team === team);
-    
-    // Afisarea membrilor
-    for (let member of filteredMembers) {
-        // Crearea card
-        const card = document.createElement("div");
-        card.classList.add("team__member");
+  // Filtrarea membrilor dupa echipe
+  const filteredMembers = team === "All" 
+      ? teamMembers 
+      : teamMembers.filter(member => member.team === team);
 
-        // Creare continut card
-        card.innerHTML = `
-           <img
-                  src="${member.avatar}"
-                  alt=""
-                  class="team__member-img"
-                />
-                <h4>${member.name}</h4>
-                <p>${member.position}</p>
-                <div class="team__member__socials">
-                ${member.socials.linkedin ? `<a
-                    href="${member.socials.linkedin}"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/social-media-icons/linkedin_icon.svg"
-                      alt="linkedin icon"
-                  /></a>` : ""}
-                ${member.socials.github ? `<a href="${member.socials.github}" target="_blank">
-                    <img
-                      src="./assets/social-media-icons/github_icon.svg"
-                      alt="github icon"
-                    />
-                  </a>` : ""}
-                ${member.socials.discord ? `<a
-                    href="${member.socials.discord}"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/social-media-icons/discord.svg"
-                      alt="discord icon"
-                    />
-                  </a>` : ""}`;
+  // Sortare pentru a avea teamLead-ii la început
+  const sortedMembers = filteredMembers.sort((a, b) => b.teamLead - a.teamLead);
 
-        // Adaugare card in wrapperup pentru membrii
-        membersWrapper.appendChild(card);
-    }
+  // Afisarea membrilor
+  for (let member of sortedMembers) {
+      // Crearea card
+      const card = document.createElement("div");
+      card.classList.add("team__member");
+
+      // Adaugare clasa "team-leader" daca membrul este teamLead
+      if (member.teamLead) {
+          card.classList.add("team-leader");
+      }
+
+      // Creare continut card
+      card.innerHTML = `
+         <img
+                src="${member.avatar}"
+                alt=""
+                class="team__member-img"
+              />
+              <h4>${member.name}</h4>
+              <p>${member.position}</p>
+              <div class="team__member__socials">
+              ${member.socials.linkedin ? `
+                <span>
+                <a
+                href="${member.socials.linkedin}"
+                target="_blank"
+                ></a></span>
+                ` : ""}
+              ${member.socials.github ? `<span><a href="${member.socials.github}" target="_blank">
+
+                </a></span>` : ""}
+              ${member.socials.discord ? `<span><a
+                  href="${member.socials.discord}"
+                  target="_blank"
+                ></a></span>` : ""}`;
+
+      // Adaugare card in wrapperul pentru membrii
+      membersWrapper.appendChild(card);
+  }
 }
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Scoate clasa active de la toate butoanele și o adaugă doar celui curent
             document.querySelectorAll(".team-nav-btn").forEach(btn => btn.classList.remove("active"));
             button.classList.add("active");
+            
 
             // Afișează doar membrii echipei selectate
             displayTeamMembers(team);
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (firstButton) {
         firstButton.classList.add("active");
 
-        // Afișează membrii pentru "Membrii Principali"
+        // Afișează membrii cu echipele din textContent-ul butonului activat
         displayTeamMembers(firstButton.textContent); 
     }
 });

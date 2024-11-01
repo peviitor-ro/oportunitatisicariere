@@ -17,58 +17,14 @@ $tablet-font-size-p: 1.6rem;
 $tablet-font-size-h4: 2rem;
 $tablet-line-height-p: 2rem;
 
-#team-navbar {
-  display: flex;
-  gap: 0.75rem;
-
-  .team-nav-btn {
-    font-size: 1.6rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.8rem;
-    border: 1px solid $green-mint;
-    color: $green-mint;
-    background-color: $white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $green-mint;
-      color: $white;
-    }
-  }
-
-  .active {
-    background-color: $green-mint;
-    color: $white;
-
-    &:hover {
-      background-color: $dark-mint;
-      border-color: $dark-mint;
-    }
-  }
-}
-
-#team-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-
-  .team__member {
-    flex: 1 0 20%;
-  }
-}
-
 .team {
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
   background-color: #f3f3f3;
-  padding: 0 3.2rem 2.4rem;
 
   h2 {
     font-size: 2.2rem;
@@ -78,31 +34,97 @@ $tablet-line-height-p: 2rem;
     margin-bottom: -0.5rem;
   }
 
+  p {
+    font-size: 1.6rem;
+  }
+
   .team-line {
     width: 23rem;
   }
 
-  p {
+  &__description {
     width: auto;
     font-size: 1.6rem;
     line-height: 130%;
     text-align: center;
+    text-wrap: balance; // Wrap text evenly
+  }
+
+  &__members-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    #team-navbar {
+      position: sticky;
+      top: 8.5rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      z-index: 10;
+
+      .team-nav-btn {
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.8rem;
+        border: 2px solid $green-mint;
+        color: $green-mint;
+        background-color: $white;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $green-mint;
+          color: $white;
+        }
+      }
+
+      .active {
+        background-color: $green-mint;
+        color: $white;
+
+        &:hover {
+          background-color: $dark-mint;
+          border-color: $dark-mint;
+        }
+      }
+    }
   }
 
   &__members {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 6rem;
+    padding: 2rem 0;
   }
 
-  &__title {
-    padding: 2.4rem 0 2rem;
+  .team-leader {
+    img {
+      padding-bottom: 2px;
+      border: 3px solid $green-mint;
+      border-bottom: none;
+      background-color: #ffd700;
+    }
   }
 
   &__member {
+    flex: 1 0 25%;
+    max-width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
-    padding-top: 3rem;
 
     .img-position {
       position: relative;
@@ -123,124 +145,95 @@ $tablet-line-height-p: 2rem;
       white-space: nowrap;
     }
 
-    p {
-      font-size: 1.6rem;
-    }
-
     &__socials {
       display: flex;
-      gap: 1.6rem;
+      gap: 0.8rem;
       align-items: center;
       justify-content: center;
 
-      img:hover {
-        transform: all 0.2s;
-        filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg)
-          brightness(89%) contrast(88%);
+      span {
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          border-color: #4b4b4b;
+          box-shadow: 0px 4px 12px #0000001a;
+        }
+
+        a {
+          width: 46px;
+          height: 46px;
+          color: $white;
+          border-radius: 50%;
+          background-color: #4b4b4b; /* Culoarea implicita a svg-ului */
+          mask-size: 32px 32px;
+          mask-repeat: no-repeat;
+          mask-position: center;
+          transition: all 0.2s ease-in-out;
+        }
+
+        /* Setarea iconitelor */
+        &:nth-child(1) a {
+          mask-size: 28px 28px;
+          mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+        }
+
+        &:nth-child(2) a {
+          mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+        }
+
+        &:nth-child(3) a {
+          mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+        }
+
+        /* Culori on hover pentru svg-uri */
+        &:nth-child(1):hover a {
+          background-color: #0a66c2; /* Culoare LinkedIn */
+        }
+
+        &:nth-child(2):hover a {
+          background-color: #000000; /* Culoare GitHub */
+        }
+
+        &:nth-child(3):hover a {
+          background-color: #738adb; /* Culoare Discord */
+        }
       }
     }
   }
-}
-
-.core-4 {
-  gap: 6rem;
-}
-
-.banner-core {
-  position: relative;
 }
 
 .team__banner {
   position: relative;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 
   & p {
+    position: absolute;
+    left: 50%;
+    font-size: 1.8rem;
+    top: 2.5rem;
+    transform: translateX(-50%);
     text-align: center;
     color: white;
     z-index: 2;
-    font-size: 2rem;
-    margin-top: 2.2rem;
-    position: absolute;
-    left: 13rem;
   }
 }
 
 @media only screen and (min-width: $phone-size) and (max-width: $tablet-size) {
-  .core-4 {
-    margin-top: 0;
-    flex-direction: column;
-    gap: 4rem;
-  }
   .team {
-    p {
-      font-size: $tablet-font-size-p;
-    }
-
     &__banner {
       transform: scale(0.9);
     }
 
-    &__banner p {
-      font-size: 2.2rem;
-      top: 0rem;
-      width: auto;
-    }
-
-    // larger/wider for smaller screens
-
     &__members {
-      flex-direction: column;
-      // swtiched from row to column for narrow screens
-      padding: 0; // Changed padding from 6 rem
-      gap: 4rem; // Reduce gap for a better fit on smaller screens
-
-      &__core {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-      }
-    }
-
-    &__member {
-      display: grid;
-      grid-template-columns: 12rem 18rem; // Changed from repeat(2,auto) in order fo member cards to align properly
-      grid-template-rows: repeat(3, 4rem);
-      row-gap: 0; // Removed row gap for narrow screens
-      gap: 0;
-
-      &.testing {
-        grid-template-rows: 4rem 2rem 4rem;
-      }
-
-      &-img {
-        grid-column: 1;
-        grid-row: 2 / 3; // Changed from 1/3 to 2/3 to center the image
-        width: 10rem; // Unresponsive changed form 16rem to 10rem
-        height: 10rem; // Unresponsive changed form 16rem to 10rem
-      }
-
-      h4 {
-        grid-column: 2;
-        grid-row: 1; // Centered vertically
-        justify-self: left; // Centered horizontally
-        font-size: 1.8rem;
-        font-weight: bold;
-      }
-
-      p {
-        grid-column: 2;
-        grid-row: 2; // Centered vertically
-        justify-self: left; // Centered horizontally
-        text-align: start;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-
-      &__socials {
-        grid-column: 2;
-        grid-row: 3; // Centered vertically
-        justify-self: left; // Centered horizontally
-      }
+      gap: 2rem;
+      row-gap: 4rem;
     }
   }
 }
@@ -249,6 +242,11 @@ $tablet-line-height-p: 2rem;
   .team {
     &__banner {
       transform: scale(0.6);
+
+      p {
+        top: 2rem;
+        font-size: 2.2rem;
+      }
     }
   }
 }
@@ -265,67 +263,16 @@ $tablet-line-height-p: 2rem;
 
 @media only screen and (min-width: $tablet-size) {
   .team {
-    padding: 1rem 10rem;
-
-    p:nth-child(2) {
-      padding-bottom: 3rem;
-    }
-
-    &__members {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 4rem;
-    }
-
     .team__title h2 {
       font-size: 3.2rem;
     }
-
-    p {
-      width: 80vw;
-      font-size: $tablet-font-size-p;
-    }
-
-    // larger/wider for smaller screens
 
     &__banner img {
       transform: scale(0.9);
     }
 
-    &__banner p {
-      left: 15rem;
-      top: 0.4rem;
-    }
-
     h4 {
       font-size: 1.9rem;
     }
-
-    p {
-      width: auto;
-      font-size: $tablet-font-size-p;
-    }
-  }
-
-  .core-4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 4rem;
-    gap: 2rem;
-  }
-}
-
-@media only screen and (min-width: $laptop-size) {
-  .team {
-    padding-bottom: 4rem;
-  }
-  .team__title {
-    padding: 7rem 0 3.5rem;
-  }
-  .core-4 {
-    padding-bottom: 4rem;
-    gap: 6rem;
   }
 }

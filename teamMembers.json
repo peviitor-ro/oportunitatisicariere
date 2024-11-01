@@ -3,7 +3,7 @@
     "name": "Adriana Cionca",
     "avatar": "./assets/contributors/adriana-cionca.webp",
     "position": "Project Manager",
-    "team": "Membrii principali",
+    "team": "Principali",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/adriana-cionca-63b14620a/",
@@ -14,7 +14,7 @@
   {
     "name": "Talida Ganciu",
     "avatar": "./assets/contributors/talida-ganciu.webp",
-    "position": "Frontend Lead",
+    "position": "Front-end Lead",
     "team": "Front-end",
     "teamLead": true,
     "socials": {
@@ -27,7 +27,7 @@
     "name": "Patricia Istrate",
     "avatar": "./assets/contributors/patricia-istrate.webp",
     "position": "UI/UX Expert",
-    "team": "Membrii principali",
+    "team": "Principali",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/patriciaistrate/",
@@ -38,7 +38,7 @@
     "name": "Laurentiu Baluta",
     "avatar": "./assets/contributors/laurentiu-baluta.webp",
     "position": "CTO",
-    "team": "Membrii principali",
+    "team": "Principali",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/laurentiu-baluta-3153b9217/",
@@ -62,7 +62,7 @@
     "name": "Adelina Guliman",
     "avatar": "./assets/contributors/adelina-guliman.webp",
     "position": "Test Manager",
-    "team": "Membrii principali",
+    "team": "Principali",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/adelina-guliman-111631286/",
@@ -75,7 +75,7 @@
     "avatar": "./assets/contributors/rares-irimus.webp",
     "position": "Automation Test Lead",
     "team": "Testare",
-    "teamLead": false,
+    "teamLead": true,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/raresirimus/",
       "github": "https://github.com/RaresCode",
@@ -98,7 +98,7 @@
     "name": "Alex Stefan",
     "avatar": "./assets/contributors/alex-stefan.webp",
     "position": "DevOps",
-    "team": "DevOps",
+    "team": "Principali",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/alex-stefan99/",
@@ -110,7 +110,7 @@
     "name": "Lavinia Avram",
     "avatar": "./assets/contributors/avram-lavinia.webp",
     "position": "Pentester",
-    "team": "Membrii principali",
+    "team": "Principali",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/lavinia-malina-783a10231/",
@@ -122,7 +122,7 @@
     "name": "Florin Nistor",
     "avatar": "./assets/contributors/florin-nistor.webp",
     "position": "Data Quality Manager",
-    "team": "Membrii principali",
+    "team": "Principali",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/florin-nistor-b9a766252/",
@@ -134,8 +134,8 @@
     "name": "Diana Dragoi",
     "avatar": "./assets/contributors/diana-dragoi.webp",
     "position": "Data Quality Test Lead",
-    "team": "Membrii principali",
-    "teamLead": false,
+    "team": "Testare",
+    "teamLead": true,
     "socials": {
       "linkedin": "https://ro.linkedin.com/in/diana-lavinia-dragoi",
       "github": "https://github.com/DeedeeDL",
@@ -249,6 +249,90 @@
       "linkedin": "https://www.linkedin.com/in/georgiana-redenstein/",
       "github": "https://github.com/Georgianaredenstein",
       "discord": "https://discord.com/users/1027873494110842892"
+    }
+  },
+  {
+    "name": "Adelina Moroacă",
+    "avatar": "./assets/contributors/adelina-moroaca.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/adelina-moroaca/",
+      "github": "https://github.com/AdelinaMoroaca",
+      "discord": "https://discordapp.com/users/940937990551785543"
+    }
+  },
+  {
+    "name": "Marian Ciobanu",
+    "avatar": "./assets/contributors/marian-ciobanu.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ciobanu-marian-296268252/",
+      "github": "https://github.com/CbnMarian",
+      "discord": "https://discordapp.com/users/208673995858378752"
+    }
+  },
+  {
+    "name": "Grigore Herța",
+    "avatar": "./assets/contributors/grigore-herta.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/grigore-herta-b50118234/",
+      "github": "https://github.com/Grigore13",
+      "discord": ""
+    }
+  },
+  {
+    "name": "Niculina Romanta",
+    "avatar": "./assets/contributors/niculina-romanta.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/niculina-romanta-390608230/",
+      "github": "https://github.com/Niki2222",
+      "discord": "https://discordapp.com/users/879738133611175936"
+    }
+  },
+  {
+    "name": "Adrian Doinea",
+    "avatar": "./assets/contributors/adrian-doinea.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/adrian-doinea/",
+      "github": "https://github.com/adriandoinea",
+      "discord": "https://discordapp.com/users/1077190332275507290"
+    }
+  },
+  {
+    "name": "Andrei Barari",
+    "avatar": "./assets/contributors/andrei-barari.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/andrei-barari-29946489/",
+      "github": "https://github.com/AndreiBarari",
+      "discord": "https://discordapp.com/users/180978616065064960"
+    }
+  },
+  {
+    "name": "Ana-Maria Talmacel",
+    "avatar": "./assets/contributors/anamaria-talmacel.webp",
+    "position": "Manual tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ana-maria-talmacel-a96722274/",
+      "github": "https://github.com/talmacelanamaria",
+      "discord": "https://discordapp.com/users/1257214914813100065"
     }
   }
 ]
