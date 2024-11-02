@@ -18,7 +18,7 @@ $tablet-font-size-h4: 2rem;
 $tablet-line-height-p: 2rem;
 
 .team {
-  padding: 3rem 1rem;
+  padding: 7rem 1rem 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@ $tablet-line-height-p: 2rem;
 
     #team-navbar {
       position: sticky;
-      top: 8.5rem;
+      top: 9rem;
       width: 100%;
       display: flex;
       align-items: center;
@@ -72,8 +72,7 @@ $tablet-line-height-p: 2rem;
       .team-nav-btn {
         font-size: 1.6rem;
         font-weight: 600;
-        letter-spacing: 1px;
-        padding: 0.5rem 0.75rem;
+        padding: 0.5rem 1rem;
         border-radius: 0.8rem;
         border: 2px solid $green-mint;
         color: $green-mint;
@@ -110,11 +109,27 @@ $tablet-line-height-p: 2rem;
   }
 
   .team-leader {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      background-image: url("../assets/lead-crown.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     img {
-      padding-bottom: 2px;
+      position: relative;
+      padding-top: 2px;
       border: 3px solid $green-mint;
-      border-bottom: none;
-      background-color: #ffd700;
+      border-top: none;
+      background-color: $royal-gold;
     }
   }
 
@@ -157,12 +172,12 @@ $tablet-line-height-p: 2rem;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          border-color: #4b4b4b;
-          box-shadow: 0px 4px 12px #0000001a;
+          background-color: #ededed;
+          box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
         }
 
         a {
@@ -170,7 +185,7 @@ $tablet-line-height-p: 2rem;
           height: 46px;
           color: $white;
           border-radius: 50%;
-          background-color: #4b4b4b; /* Culoarea implicita a svg-ului */
+          background-color: $darker-gray; /* Culoarea implicita a svg-ului */
           mask-size: 32px 32px;
           mask-repeat: no-repeat;
           mask-position: center;
@@ -193,15 +208,15 @@ $tablet-line-height-p: 2rem;
 
         /* Culori on hover pentru svg-uri */
         &:nth-child(1):hover a {
-          background-color: #0a66c2; /* Culoare LinkedIn */
+          background-color: $linkedin-blue; /* Culoare LinkedIn */
         }
 
         &:nth-child(2):hover a {
-          background-color: #000000; /* Culoare GitHub */
+          background-color: $black; /* Culoare GitHub */
         }
 
         &:nth-child(3):hover a {
-          background-color: #738adb; /* Culoare Discord */
+          background-color: $discord-purple; /* Culoare Discord */
         }
       }
     }
@@ -225,18 +240,18 @@ $tablet-line-height-p: 2rem;
   }
 }
 
-@media only screen and (min-width: $phone-size) and (max-width: $tablet-size) {
-  .team {
-    &__banner {
-      transform: scale(0.9);
-    }
+// @media only screen and (min-width: $phone-size) and (max-width: $tablet-size) {
+//   .team {
+//     &__banner {
+//       transform: scale(0.9);
+//     }
 
-    &__members {
-      gap: 2rem;
-      row-gap: 4rem;
-    }
-  }
-}
+//     &__members {
+//       gap: 2rem;
+//       row-gap: 4rem;
+//     }
+//   }
+// }
 
 @media screen and (max-width: 426px) {
   .team {
@@ -250,10 +265,14 @@ $tablet-line-height-p: 2rem;
     }
   }
 }
-@media screen and (max-width: 346px) {
+@media screen and (max-width: 376px) {
   .team {
     &__banner {
-      transform: scale(0.6);
+      transform: scale(0.8);
+      p {
+        top: 2.3rem;
+        font-size: 1.8rem;
+      }
     }
     .banner-core {
       transform: scale(0.8);

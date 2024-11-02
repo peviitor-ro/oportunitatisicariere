@@ -24,6 +24,18 @@
     }
   },
   {
+    "name": "Talida Ganciu",
+    "avatar": "./assets/contributors/talida-ganciu.webp",
+    "position": "Front-end Lead",
+    "team": "Principali",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/mihaela-talida-g-66532716a/",
+      "github": "https://github.com/talidag",
+      "discord": "https://discord.com/users/1123986908914139147"
+    }
+  },
+  {
     "name": "Patricia Istrate",
     "avatar": "./assets/contributors/patricia-istrate.webp",
     "position": "UI/UX Expert",
@@ -47,11 +59,35 @@
     }
   },
   {
+    "name": "Laurentiu Baluta",
+    "avatar": "./assets/contributors/laurentiu-baluta.webp",
+    "position": "Back-end Lead",
+    "team": "Back-end",
+    "teamLead": true,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/laurentiu-baluta-3153b9217/",
+      "github": "https://github.com/lalalaurentiu",
+      "discord": "https://discord.com/users/443431920320249856"
+    }
+  },
+  {
     "name": "Andrei Cojocaru",
     "avatar": "./assets/contributors/andrei-cojocaru.webp",
     "position": "Scraping Lead",
     "team": "Scrapping",
     "teamLead": true,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/andrei-cojocaru-985932204/",
+      "github": "https://github.com/andreireporter13",
+      "discord": "https://discord.com/users/728326602618044438"
+    }
+  },
+  {
+    "name": "Andrei Cojocaru",
+    "avatar": "./assets/contributors/andrei-cojocaru.webp",
+    "position": "Scraping Lead",
+    "team": "Principali",
+    "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/andrei-cojocaru-985932204/",
       "github": "https://github.com/andreireporter13",
@@ -95,9 +131,21 @@
     }
   },
   {
+    "name": "Rares Irimus",
+    "avatar": "./assets/contributors/rares-irimus.webp",
+    "position": "Automation Test Lead",
+    "team": "Principali",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/raresirimus/",
+      "github": "https://github.com/RaresCode",
+      "discord": "https://discord.com/users/939250630239846490"
+    }
+  },
+  {
     "name": "Alexandra Ifrim",
     "avatar": "./assets/contributors/alexandra-ifrim.webp",
-    "position": "Backend Developer",
+    "position": "Back-end developer",
     "team": "Back-end",
     "teamLead": false,
     "socials": {
@@ -155,9 +203,21 @@
     }
   },
   {
+    "name": "Diana Dragoi",
+    "avatar": "./assets/contributors/diana-dragoi.webp",
+    "position": "Data Quality Test Lead",
+    "team": "Principali",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://ro.linkedin.com/in/diana-lavinia-dragoi",
+      "github": "https://github.com/DeedeeDL",
+      "discord": "https://discord.com/users/930881772374360084"
+    }
+  },
+  {
     "name": "Beatrix Racasanu",
     "avatar": "./assets/contributors/beatrix-racasanu.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -169,7 +229,7 @@
   {
     "name": "Elena Istratescu",
     "avatar": "./assets/contributors/elena-istratescu.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -182,7 +242,7 @@
   {
     "name": "Catalina Ion",
     "avatar": "./assets/contributors/catalina-ion.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -194,7 +254,7 @@
   {
     "name": "Ionut Pintilie",
     "avatar": "./assets/contributors/ionut-pintilie.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -206,7 +266,7 @@
   {
     "name": "Bogdan Dumitrache",
     "avatar": "./assets/contributors/bogdan-dumitrache.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -218,7 +278,7 @@
   {
     "name": "Camelia Melinte",
     "avatar": "./assets/contributors/camelia-melinte.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -230,7 +290,7 @@
   {
     "name": "Cristian Zidarescu",
     "avatar": "./assets/contributors/cristian-zidarescu.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -242,7 +302,7 @@
   {
     "name": "Razvan Gradea",
     "avatar": "./assets/contributors/razvan-gradea.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
@@ -254,13 +314,25 @@
   {
     "name": "Georgiana Redenstein",
     "avatar": "./assets/contributors/georgiana-redenstein.webp",
-    "position": "Tester",
+    "position": "Manual Tester",
     "team": "Testare",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/georgiana-redenstein/",
       "github": "https://github.com/Georgianaredenstein",
       "discord": "https://discord.com/users/1027873494110842892"
+    }
+  },
+  {
+    "name": "Andreea Dima",
+    "avatar": "./assets/contributors/andreea-dima.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/andreea-valentina-dima/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "github": "https://github.com/Luvnrj",
+      "discord": "https://discord.com/users/1245250057263906928"
     }
   },
   {
@@ -357,6 +429,126 @@
       "linkedin": "https://www.linkedin.com/in/madalina-andon/",
       "github": "https://github.com/MadalinaCodes",
       "discord": "https://discordapp.com/users/694204138099179640"
+    }
+  },
+  {
+    "name": "Cristina Apostol",
+    "avatar": "./assets/contributors/cristina-apostol.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/cristina-apostol-7a3286a3/",
+      "github": "https://github.com/CrisA24",
+      "discord": "https://discordapp.com/users/1249757700842324048"
+    }
+  },
+  {
+    "name": "Lucian Lodin",
+    "avatar": "./assets/contributors/lucian-lodin.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "www.linkedin.com/in/lodin-lucian-30527a294",
+      "github": "https://github.com/LucianLCI",
+      "discord": "https://discordapp.com/users/1008413517621248090"
+    }
+  },
+  {
+    "name": "Caterina Bocaniciu",
+    "avatar": "./assets/contributors/caterina-bocaniciu.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/caterina-bocaniciu-121033305",
+      "github": "",
+      "discord": "https://discordapp.com/users/1159540890331791452"
+    }
+  },
+  {
+    "name": "Loredana Pelle",
+    "avatar": "./assets/contributors/loredana-pelle.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/loredana-pelle?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "github": "https://github.com/Lore78",
+      "discord": "https://discordapp.com/users/1222629327116435517"
+    }
+  },
+  {
+    "name": "Carmen Steliana Ut",
+    "avatar": "./assets/contributors/carmen-steliana.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/carmen-ut/",
+      "github": "https://github.com/CarmenSteliana",
+      "discord": "https://discordapp.com/users/1256989150847041618"
+    }
+  },
+  {
+    "name": "Georgiana Radu",
+    "avatar": "./assets/contributors/georgiana-radu.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "http://linkedin.com/in/georgiana-radu-58266b318",
+      "github": "",
+      "discord": "https://discordapp.com/users/1215009048219623424"
+    }
+  },
+  {
+    "name": "Radu Lutu",
+    "avatar": "./assets/contributors/radu-lutu.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/radu-l-b37409252/",
+      "github": "https://github.com/RaduLutu",
+      "discord": "https://discordapp.com/users/1281279200950747211"
+    }
+  },
+  {
+    "name": "Andreea Plugaru",
+    "avatar": "./assets/contributors/person-placeholder.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/andreea-plugaru-1a496ba8",
+      "github": "https://github.com/aplugaru",
+      "discord": "https://discordapp.com/users/1145392030873288784"
+    }
+  },
+  {
+    "name": "Roxana Danalache",
+    "avatar": "./assets/contributors/roxana-danalache.webp",
+    "position": "Manual Tester",
+    "team": "Testare",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "http://www.linkedin.com/in/roxana-danalache",
+      "github": "https://github.com/RoxanaDanalache",
+      "discord": "https://discordapp.com/users/1263147842193850472"
+    }
+  },
+  {
+    "name": "Alina Floroiu",
+    "avatar": "./assets/contributors/alina-floroiu.webp",
+    "position": "Junior PHP developer",
+    "team": "Back-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/alina-floroiu-6238a5295/",
+      "github": "https://github.com/alina712",
+      "discord": "https://discordapp.com/users/309072560472195076"
     }
   }
 ]
