@@ -2508,6 +2508,11 @@ footer .footer-bottom h4 {
   }
 }
 
+.nav {
+  position: fixed;
+  z-index: 10;
+}
+
 .main-container-error {
   width: 100%;
   min-height: 80vh;
@@ -2597,10 +2602,6 @@ footer .footer-bottom h4 {
 .redirect-btn:hover {
   background-color: #1e524e;
   position: relative;
-}
-
-.space {
-  margin-top: 8rem;
 }
 
 @media only screen and (max-width: 426px) {
