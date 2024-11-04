@@ -298,8 +298,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.4rem;
-    -moz-column-gap: 3.2rem;
-         column-gap: 3.2rem;
+    column-gap: 3.2rem;
     list-style-type: none;
     margin-top: 6.4rem;
   }
@@ -398,8 +397,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
     list-style-type: none;
     margin-top: 6rem;
   }
@@ -419,8 +417,7 @@ header {
   .nav__links__list #socialLinks {
     margin-top: 6rem;
     row-gap: 1.6rem;
-    -moz-column-gap: 2.6rem;
-         column-gap: 2.6rem;
+    column-gap: 2.6rem;
   }
   .nav__links__list .join-btn {
     font-size: 2.2rem;
@@ -752,7 +749,6 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
-  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -971,8 +967,7 @@ header {
   display: block;
   width: 100%;
   height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide h3 {
@@ -1084,10 +1079,6 @@ header {
   outline: none;
   border: solid 0.1rem #2f7973;
   color: #2f7973;
-}
-.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
-  color: #2f7973;
-  opacity: 0.6;
 }
 .how-contribute .how-contribute-img__container .search-input::placeholder {
   color: #2f7973;
@@ -1339,12 +1330,13 @@ header {
   }
 }
 .team {
+  padding: 7rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
   background-color: #f3f3f3;
-  padding: 0 3.2rem 2.4rem;
 }
 .team h2 {
   font-size: 2.2rem;
@@ -1353,32 +1345,109 @@ header {
   color: #000000;
   margin-bottom: -0.5rem;
 }
+.team p {
+  font-size: 1.6rem;
+}
 .team .team-line {
   width: 23rem;
 }
-.team p {
+.team__description {
   width: auto;
   font-size: 1.6rem;
   line-height: 130%;
   text-align: center;
+  text-wrap: balance;
+}
+.team__members-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.team__members-wrapper #team-navbar {
+  position: sticky;
+  top: 9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  z-index: 10;
+}
+.team__members-wrapper #team-navbar .team-nav-btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: 2px solid #2f7973;
+  color: #2f7973;
+  background-color: #f3f3f3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.team__members-wrapper #team-navbar .team-nav-btn:hover {
+  background-color: #2f7973;
+  color: #f3f3f3;
+}
+.team__members-wrapper #team-navbar .active {
+  background-color: #2f7973;
+  color: #f3f3f3;
+}
+.team__members-wrapper #team-navbar .active:hover {
+  background-color: #1e524e;
+  border-color: #1e524e;
+}
+.team #team-wrapper {
+  max-width: 920px;
 }
 .team__members {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 6rem;
+  row-gap: 4rem;
+  padding: 2rem 0;
 }
-.team__title {
-  padding: 2.4rem 0 2rem;
+.team .team-leader {
+  position: relative;
+}
+.team .team-leader::after {
+  content: "";
+  position: absolute;
+  bottom: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 60px;
+  background-image: url("../assets/avatar-frame.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team .team-leader img {
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 3px solid #1d2b59;
+  border-top: none;
+  border-bottom: none;
+  background-color: #2f7973;
 }
 .team__member {
+  flex: 1 0 25%;
+  max-width: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.2rem;
-  padding-top: 3rem;
 }
 .team__member .img-position {
   position: relative;
-  -o-object-position: 0% 0%;
-     object-position: 0% 0%;
+  object-position: 0% 0%;
 }
 .team__member-img {
   width: 16rem;
@@ -1392,171 +1461,104 @@ header {
   font-weight: 500;
   white-space: nowrap;
 }
-.team__member p {
-  font-size: 1.6rem;
-}
 .team__member__socials {
   display: flex;
-  gap: 1.6rem;
+  gap: 0.5rem;
   align-items: center;
   justify-content: center;
 }
-.team__member__socials img:hover {
-  transform: all 0.2s;
-  filter: invert(41%) sepia(45%) saturate(514%) hue-rotate(126deg) brightness(89%) contrast(88%);
+.team__member__socials span {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  /* Setarea iconitelor */
+  /* Culori on hover pentru svg-uri */
 }
-
-.core-4 {
-  gap: 6rem;
+.team__member__socials span:hover {
+  background-color: #ededed;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1254901961), -2px -2px 12px #f3f3f3;
 }
-
-.banner-core {
-  position: relative;
+.team__member__socials span a {
+  width: 46px;
+  height: 46px;
+  color: #f3f3f3;
+  border-radius: 50%;
+  background-color: #4b4b4b; /* Culoarea implicita a svg-ului */
+  mask-size: 32px 32px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transition: all 0.2s ease-in-out;
+}
+.team__member__socials span:nth-child(1) a {
+  mask-size: 28px 28px;
+  mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+}
+.team__member__socials span:nth-child(2) a {
+  mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+}
+.team__member__socials span:nth-child(3) a {
+  mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+}
+.team__member__socials span:nth-child(1):hover a {
+  background-color: #0a66c2; /* Culoare LinkedIn */
+}
+.team__member__socials span:nth-child(2):hover a {
+  background-color: #000000; /* Culoare GitHub */
+}
+.team__member__socials span:nth-child(3):hover a {
+  background-color: #738adb; /* Culoare Discord */
 }
 
 .team__banner {
   position: relative;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .team__banner p {
+  position: absolute;
+  left: 50%;
+  font-size: 1.8rem;
+  top: 2.5rem;
+  transform: translateX(-50%);
   text-align: center;
   color: white;
   z-index: 2;
-  font-size: 2rem;
-  margin-top: 2.2rem;
-  position: absolute;
-  left: 13rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .core-4 {
-    margin-top: 0;
-    flex-direction: column;
-    gap: 4rem;
-  }
-  .team p {
-    font-size: 1.6rem;
-  }
-  .team__banner {
-    transform: scale(0.9);
-  }
-  .team__banner p {
-    font-size: 2.2rem;
-    top: 0rem;
-    width: auto;
-  }
-  .team__members {
-    flex-direction: column;
-    padding: 0;
-    gap: 4rem;
-  }
-  .team__members__core {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .team__member {
-    display: grid;
-    grid-template-columns: 12rem 18rem;
-    grid-template-rows: repeat(3, 4rem);
-    row-gap: 0;
-    gap: 0;
-  }
-  .team__member.testing {
-    grid-template-rows: 4rem 2rem 4rem;
-  }
-  .team__member-img {
-    grid-column: 1;
-    grid-row: 2/3;
-    width: 10rem;
-    height: 10rem;
-  }
-  .team__member h4 {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: left;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  .team__member p {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: left;
-    text-align: start;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .team__member__socials {
-    grid-column: 2;
-    grid-row: 3;
-    justify-self: left;
-  }
-}
 @media screen and (max-width: 426px) {
   .team__banner {
     transform: scale(0.6);
   }
+  .team__banner p {
+    top: 2rem;
+    font-size: 2.2rem;
+  }
 }
-@media screen and (max-width: 346px) {
+@media screen and (max-width: 376px) {
   .team__banner {
-    transform: scale(0.6);
+    transform: scale(0.8);
+  }
+  .team__banner p {
+    top: 2.3rem;
+    font-size: 1.8rem;
   }
   .team .banner-core {
     transform: scale(0.8);
   }
 }
 @media only screen and (min-width: 768px) {
-  .team {
-    padding: 1rem 10rem;
-  }
-  .team p:nth-child(2) {
-    padding-bottom: 3rem;
-  }
-  .team__members {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 4rem;
-  }
   .team .team__title h2 {
     font-size: 3.2rem;
-  }
-  .team p {
-    width: 80vw;
-    font-size: 1.6rem;
   }
   .team__banner img {
     transform: scale(0.9);
   }
-  .team__banner p {
-    left: 15rem;
-    top: 0.4rem;
-  }
   .team h4 {
     font-size: 1.9rem;
-  }
-  .team p {
-    width: auto;
-    font-size: 1.6rem;
-  }
-  .core-4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 4rem;
-    gap: 2rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .team {
-    padding-bottom: 4rem;
-  }
-  .team__title {
-    padding: 7rem 0 3.5rem;
-  }
-  .core-4 {
-    padding-bottom: 4rem;
-    gap: 6rem;
   }
 }
 /* THANK YOU SECTION */
@@ -2360,8 +2362,7 @@ footer .footer-bottom h4 {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 .jd__container .jd__body .list > li {
   padding: 0.2rem;
@@ -2415,8 +2416,7 @@ footer .footer-bottom h4 {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact__name,
 .jd__container .jd__body .about .contact .contact__person {
