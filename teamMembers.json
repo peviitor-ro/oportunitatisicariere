@@ -434,8 +434,8 @@
   {
     "name": "Cristina Apostol",
     "avatar": "./assets/contributors/cristina-apostol.webp",
-    "position": "Front-end developer",
-    "team": "Front-end",
+    "position": "Manual Tester",
+    "team": "Testare",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/cristina-apostol-7a3286a3/",
@@ -549,6 +549,18 @@
       "linkedin": "https://www.linkedin.com/in/alina-floroiu-6238a5295/",
       "github": "https://github.com/alina712",
       "discord": "https://discordapp.com/users/309072560472195076"
+    }
+  },
+  {
+    "name": "Cristi Olteanu",
+    "avatar": "./assets/contributors/cristi-olteanu.webp",
+    "position": "Python scrapper",
+    "team": "Scrapping",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/cristi-olteanu-03937718b/",
+      "github": "https://github.com/cristiol",
+      "discord": "https://discordapp.com/users/1148983001800253511"
     }
   }
 ]
