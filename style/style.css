@@ -1942,6 +1942,10 @@ footer {
     #top-redirect-details-page {
       right: 5.6vw; } }
 
+.nav {
+  position: fixed;
+  z-index: 10; }
+
 .main-container-error {
   width: 100%;
   min-height: 80vh;
@@ -2016,9 +2020,6 @@ footer {
 .redirect-btn:hover {
   background-color: #1e524e;
   position: relative; }
-
-.space {
-  margin-top: 8rem; }
 
 @media only screen and (max-width: 426px) {
   .main-container-error {
