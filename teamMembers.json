@@ -562,5 +562,17 @@
       "github": "https://github.com/cristiol",
       "discord": "https://discordapp.com/users/1148983001800253511"
     }
+  }, 
+  {
+    "name": "Anca Matei",
+    "avatar": "./assets/contributors/anca-matei.webp",
+    "position": "Front-end developer",
+    "team": "Front-end",
+    "teamLead": false,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/anca-m-matei/",
+      "github": "https://github.com/Anca2022",
+      "discord": "https://discordapp.com/users/1192550014610849903"
+    }
   }
 ]
