@@ -191,6 +191,18 @@
     }
   },
   {
+    "name": "Florin Nistor",
+    "avatar": "./assets/contributors/florin-nistor.webp",
+    "position": "Data Quality Lead",
+    "team": "Data Quality",
+    "teamLead": true,
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/florin-nistor-b9a766252/",
+      "github": "https://github.com/Florin201092",
+      "discord": "https://discord.com/users/1219216349184790601"
+    }
+  },
+  {
     "name": "Diana Dragoi",
     "avatar": "./assets/contributors/diana-dragoi.webp",
     "position": "Data Quality Test Lead",
