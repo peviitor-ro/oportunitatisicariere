@@ -74,7 +74,7 @@
     "name": "Andrei Cojocaru",
     "avatar": "./assets/contributors/andrei-cojocaru.webp",
     "position": "Scraping Lead",
-    "team": "Scrapping",
+    "team": "Scraping",
     "teamLead": true,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/andrei-cojocaru-985932204/",
@@ -121,8 +121,8 @@
   {
     "name": "Rares Irimus",
     "avatar": "./assets/contributors/rares-irimus.webp",
-    "position": "Scrapper",
-    "team": "Scrapping",
+    "position": "Scraper",
+    "team": "Scraping",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/raresirimus/",
@@ -566,8 +566,8 @@
   {
     "name": "Cristi Olteanu",
     "avatar": "./assets/contributors/cristi-olteanu.webp",
-    "position": "Python scrapper",
-    "team": "Scrapping",
+    "position": "Python Scraper",
+    "team": "Scraping",
     "teamLead": false,
     "socials": {
       "linkedin": "https://www.linkedin.com/in/cristi-olteanu-03937718b/",
