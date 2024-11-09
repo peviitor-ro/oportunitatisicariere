@@ -1,3 +1,5 @@
+const redirectBtn = document.getElementById("redirect-btn");
+
 // Object to store routes
 const routes = {
   "": "home", // Default route for home
@@ -23,3 +25,10 @@ window.addEventListener("load", loadContent);
 
 // Update content when the hash changes
 window.addEventListener("hashchange", loadContent);
+
+
+function redirectToHome() {
+  window.location.href = "index.html";
+}
+
+redirectBtn.addEventListener("click", redirectToHome);
