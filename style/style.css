@@ -1386,7 +1386,6 @@ header {
 .team__members-wrapper #team-navbar {
   position: sticky;
   top: 9rem;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
