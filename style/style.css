@@ -1391,10 +1391,12 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
   z-index: 10;
+  border-radius: 0.8rem;
+  background-color: #f3f3f3;
 }
 .team__members-wrapper #team-navbar .team-nav-btn {
+  margin: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
