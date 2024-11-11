@@ -59,17 +59,18 @@ $tablet-line-height-p: 2rem;
     gap: 3rem;
 
     #team-navbar {
-      position: sticky;
+      position: sticky; 
       top: 9rem;
-      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 0.75rem;
       z-index: 10;
+      border-radius: 0.8rem;
+      background-color: $white;
 
       .team-nav-btn {
+        margin: 1rem;
         font-size: 1.6rem;
         font-weight: 600;
         padding: 0.5rem 1rem;
