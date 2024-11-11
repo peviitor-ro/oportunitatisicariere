@@ -99,8 +99,8 @@
       "avatar": "./assets/contributors/adelina-guliman.webp",
       "roles": [
         {
-          "team": "Principali",
-          "position": "Test Manager",
+          "team": "Testare",
+          "position": "Manual Tester",
           "teamLead": false
         }
       ],
