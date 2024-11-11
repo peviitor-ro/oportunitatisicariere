@@ -144,6 +144,11 @@
           "team": "Back-end",
           "position": "Back-end developer",
           "teamLead": false
+        },
+        {
+          "team": "Principali",
+          "position": "Back-end developer",
+          "teamLead": false
         }
       ],
       "socials": {
