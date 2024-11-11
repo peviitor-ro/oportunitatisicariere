@@ -272,6 +272,11 @@
         "team": "Testare",
         "position": "Manual Tester",
         "teamLead": false
+      },
+      {
+        "team": "Data Quality",
+        "position": "Data Quality Tester",
+        "teamLead": false
       }
     ],
     "socials": {

@@ -11,7 +11,7 @@ function loadTeamMembers() {
       teamMembers = data;
       initializeTeams(); // Initiazare echipe dupa ce datele devin disponibile
     })
-    .catch((error) => console.error("Eroare la încărcarea JSON:", error));
+    .catch((error) => console.error("Eroare la încarcarea JSON:", error));
 }
 
 // Functie pentru initializarea echipelor
@@ -23,9 +23,9 @@ function initializeTeams() {
     ),
   ];
 
-  let firstButton = null; // Variabilă pentru a retine primul buton creat
+  let firstButton = null; // Variabila pentru a retine primul buton creat
 
-  // Generăm butoanele de navigare pentru echipe
+  // Generam butoanele de navigare pentru echipe
   for (let team of teams) {
     const button = document.createElement("button");
     button.classList.add("team-nav-btn");
@@ -48,7 +48,7 @@ function initializeTeams() {
       displayTeamMembers(team);
     });
 
-    // Adăugăm butonul în bara de navigare echipe
+    // Adaugam butonul în bara de navigare echipe
     teamNavigation.appendChild(button);
   }
 
@@ -62,7 +62,7 @@ function initializeTeams() {
 
 // Functia de afisare a membrilor echipei
 function displayTeamMembers(selectedTeam) {
-  membersWrapper.innerHTML = ""; // Golim continutul anterior pentru afisarea doar a membrilor corespunzători
+  membersWrapper.innerHTML = ""; // Golim continutul anterior pentru afisarea doar a membrilor corespunzatori
 
   // Filtrarea membrilor care apartin echipei selectate
   const filteredMembers = teamMembers.filter((member) =>
@@ -77,7 +77,7 @@ function displayTeamMembers(selectedTeam) {
     const bIsLeader = b.roles.some(
       (role) => role.team === selectedTeam && role.teamLead
     );
-    return bIsLeader - aIsLeader; // Sortare descrescătoare pe baza `teamLead`
+    return bIsLeader - aIsLeader; // Sortare descrescatoare pe baza `teamLead`
   });
 
   // Afisarea membrilor
@@ -88,7 +88,7 @@ function displayTeamMembers(selectedTeam) {
       const card = document.createElement("div");
       card.classList.add("team__member");
 
-      // Adăugarea clasei `team-leader`
+      // Adaugarea clasei `team-leader`
       if (role.teamLead) {
         card.classList.add("team-leader");
       }
@@ -120,11 +120,11 @@ function displayTeamMembers(selectedTeam) {
                   }
                   </div>
                   `;
-      // Adăugarea cardului în wrapper-ul pentru membrii
+      // Adaugarea cardului în wrapper-ul pentru membrii
       membersWrapper.appendChild(card);
     }
   }
 }
 
-// Încărcarea membrilor după încărcarea paginii
+// Încarcarea membrilor dupa încarcarea paginii
 document.addEventListener("DOMContentLoaded", loadTeamMembers);
