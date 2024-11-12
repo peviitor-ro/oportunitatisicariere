@@ -511,6 +511,11 @@
         "team": "Testare",
         "position": "Manual Tester",
         "teamLead": false
+      },
+      {
+        "team": "Data Quality",
+        "position": "Data Quality Tester",
+        "teamLead": false
       }
     ],
     "socials": {
@@ -580,6 +585,11 @@
       {
         "team": "Testare",
         "position": "Manual Tester",
+        "teamLead": false
+      },
+      {
+        "team": "Data Quality",
+        "position": "Data Quality Tester",
         "teamLead": false
       }
     ],
@@ -746,6 +756,11 @@
         "team": "Testare",
         "position": "Manual Tester",
         "teamLead": false
+      },
+      {
+        "team": "Data Quality",
+        "position": "Data Quality Tester",
+        "teamLead": false
       }
     ],
     "socials": {
@@ -761,6 +776,11 @@
       {
         "team": "Testare",
         "position": "Manual Tester",
+        "teamLead": false
+      },
+      {
+        "team": "Data Quality",
+        "position": "Data Quality Tester",
         "teamLead": false
       }
     ],
@@ -784,6 +804,22 @@
       "linkedin": "https://www.linkedin.com/in/iurie-chigai/",
       "github": "https://github.com/IurieChi",
       "discord": "https://discordapp.com/users/1203821486536659031"
+    }
+  },
+  {
+    "name": "Dinu Marian Catalin",
+    "avatar": "./assets/contributors/marian-dinu.webp",
+    "roles":[
+      {
+        "team": "Testare",
+        "position": "Manual Tester",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/dinu-marian-catalin/",
+      "github": "https://github.com/dmariancatalin",
+      "discord": "https://discordapp.com/users/259391751913996298"
     }
   }
 ]
