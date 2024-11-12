@@ -578,7 +578,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 3.2rem 2.4rem; }
+  padding: 0 3.2rem 2.4rem;
+  overflow: hidden; }
   .our-mission__content__title {
     display: flex;
     flex-direction: column;
