@@ -8,6 +8,7 @@ const routes = {
   "why-contribute": "whyContribute",
   teamRooster: "team-rooster",
   team: "team",
+  "schedule": "schedule"
 };
 
 // Load content based on the current hash
@@ -17,6 +18,15 @@ function loadContent() {
 
   if (!page) {
     window.location.href = "404.html";
+  }
+  
+  if(path){
+    //setTimeout - să aiba timp să se încarce conținutul generat dinamic de pe index.html
+    setTimeout( ()=>{
+      const targetElement = document.querySelector(`#${path}`);
+      // Scroll to the target element
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }, 400)
   }
 }
 
