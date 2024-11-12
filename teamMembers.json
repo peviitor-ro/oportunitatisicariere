@@ -63,8 +63,8 @@
         },
         {
           "team": "Back-end",
-          "position": "Back-end Lead",
-          "teamLead": true
+          "position": "Back-end developer",
+          "teamLead": false
         }
       ],
       "socials": {
@@ -142,12 +142,12 @@
       "roles": [
         {
           "team": "Back-end",
-          "position": "Back-end developer",
-          "teamLead": false
+          "position": "Back-end Lead",
+          "teamLead": true
         },
         {
           "team": "Principali",
-          "position": "Back-end developer",
+          "position": "Back-end Lead",
           "teamLead": false
         }
       ],
