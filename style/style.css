@@ -280,7 +280,7 @@ header {
     height: 25px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
   .nav {
     display: block;
   }
@@ -359,7 +359,10 @@ header {
     height: 25px;
   }
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1160px) {
+  .nav .nav__links .nav__links__list:first-of-type {
+    margin-left: 4rem;
+  }
   .hamburger-menu-icon {
     display: none;
   }

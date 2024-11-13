@@ -3,8 +3,6 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  
   position: sticky;
   top: 0;
   z-index: 99;
@@ -113,7 +111,6 @@ header {
         transition: all 0.3s ease;
       }
     }
-    // we will add something like border-bottom: 2px solid $mint for the selected state in the future.
   }
 }
 
@@ -297,7 +294,7 @@ header {
   }
 }
 
-@media only screen and (min-width: $tablet-size) and (max-width: 1023px) {
+@media only screen and (min-width: $tablet-size) and (max-width: 1160px) {
   .nav {
     display: block;
     &__links__list {
@@ -390,7 +387,10 @@ header {
   }
 }
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1160px) {
+  .nav .nav__links .nav__links__list:first-of-type{
+    margin-left:4rem;
+  }
   .hamburger-menu-icon {
     display: none;
   }
