@@ -821,5 +821,21 @@
       "github": "https://github.com/dmariancatalin",
       "discord": "https://discordapp.com/users/259391751913996298"
     }
+  },
+  {
+    "name": "Radu Spatacean",
+    "avatar": "./assets/contributors/radu-spatacean.webp",
+    "roles":[
+      {
+        "team": "Principali",
+        "position": "Scrum Master",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/radu-spatacean-a8b070226/",
+      "github": "https://github.com/raduviorel-collab",
+      "discord": "https://discordapp.com/users/1260157158671126580"
+    }
   }
 ]
