@@ -1,11 +1,36 @@
 [
-  
+    {
+      "name": "Sebastian Boga",
+      "avatar": "./assets/contributors/sebastian-boga.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "Product Owner",
+          "teamLead": false
+        },
+        {
+          "team": "Back-end",
+          "position": "Back-end Developer",
+          "teamLead": false
+        },
+        {
+          "team": "QA",
+          "position": "QA Manager",
+          "teamLead": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+      }
+    },
     {
       "name": "Adriana Cionca",
       "avatar": "./assets/contributors/adriana-cionca.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Project Manager",
           "teamLead": false
         }
@@ -26,7 +51,7 @@
           "teamLead": true
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Front-end Lead",
           "teamLead": false
         }
@@ -42,13 +67,14 @@
       "avatar": "./assets/contributors/patricia-istrate.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "UI/UX Expert",
           "teamLead": false
         }
       ],
       "socials": {
         "linkedin": "https://www.linkedin.com/in/patriciaistrate/",
+        "github": "https://sites.google.com/view/patriciaistrateportfolio/home",
         "discord": "https://discord.com/users/1167459382653632643"
       }
     },
@@ -57,13 +83,13 @@
       "avatar": "./assets/contributors/laurentiu-baluta.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "CTO",
           "teamLead": false
         },
         {
           "team": "Back-end",
-          "position": "Back-end developer",
+          "position": "Back-end Developer",
           "teamLead": false
         }
       ],
@@ -83,7 +109,7 @@
           "teamLead": true
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Scraping Lead",
           "teamLead": false
         }
@@ -99,7 +125,7 @@
       "avatar": "./assets/contributors/adelina-guliman.webp",
       "roles": [
         {
-          "team": "Testare",
+          "team": "QA",
           "position": "Manual Tester",
           "teamLead": false
         }
@@ -115,7 +141,7 @@
       "avatar": "./assets/contributors/rares-irimus.webp",
       "roles": [
         {
-          "team": "Testare",
+          "team": "QA",
           "position": "Automation Test Lead",
           "teamLead": true
         },
@@ -125,7 +151,7 @@
           "teamLead": false
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Automation Test Lead",
           "teamLead": false
         }
@@ -146,7 +172,7 @@
           "teamLead": true
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Back-end Lead",
           "teamLead": false
         }
@@ -162,7 +188,7 @@
       "avatar": "./assets/contributors/alex-stefan.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "DevOps",
           "teamLead": false
         }
@@ -178,7 +204,7 @@
       "avatar": "./assets/contributors/avram-lavinia.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Pentester",
           "teamLead": false
         }
@@ -194,13 +220,13 @@
       "avatar": "./assets/contributors/florin-nistor.webp",
       "roles": [
         {
-          "team": "Principali",
-          "position": "Data Quality Manager",
+          "team": "Core",
+          "position": "Data Quality Test Lead",
           "teamLead": false
         },
         {
           "team": "Data Quality",
-          "position": "Data Quality Lead",
+          "position": "Data Quality Test Lead",
           "teamLead": true
         }
       ],
@@ -215,13 +241,13 @@
       "avatar": "./assets/contributors/diana-dragoi.webp",
       "roles": [
         {
-          "team": "Testare",
-          "position": "Data Quality Test Lead",
+          "team": "QA",
+          "position": "Manual Test Lead",
           "teamLead": true
         },
         {
-          "team": "Principali",
-          "position": "Data Quality Test Lead",
+          "team": "Core",
+          "position": "Manual Test Lead",
           "teamLead": false
         }
       ],
@@ -236,7 +262,7 @@
     "avatar": "./assets/contributors/beatrix-racasanu.webp",
     "roles": [
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -257,7 +283,7 @@
     "avatar": "./assets/contributors/elena-istratescu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -274,7 +300,7 @@
     "avatar": "./assets/contributors/catalina-ion.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -295,7 +321,7 @@
     "avatar": "./assets/contributors/ionut-pintilie.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -311,7 +337,7 @@
     "avatar": "./assets/contributors/bogdan-dumitrache.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -327,7 +353,7 @@
     "avatar": "./assets/contributors/camelia-melinte.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -343,7 +369,7 @@
     "avatar": "./assets/contributors/cristian-zidarescu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -364,7 +390,7 @@
     "avatar": "./assets/contributors/razvan-gradea.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -380,7 +406,7 @@
     "avatar": "./assets/contributors/georgiana-redenstein.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -396,7 +422,7 @@
     "avatar": "./assets/contributors/andreea-dima.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -413,7 +439,7 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end developer",
+        "position": "Front-end Developer",
         "teamLead": false
       }
     ],
@@ -429,7 +455,7 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end developer",
+        "position": "Front-end Developer",
         "teamLead": false
       }
     ],
@@ -445,14 +471,14 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end developer",
+        "position": "Front-end Developer",
         "teamLead": false
       }
     ],
     "socials": {
       "linkedin": "https://www.linkedin.com/in/grigore-herta-b50118234/",
       "github": "https://github.com/Grigore13",
-      "discord": ""
+      "discord": "https://discordapp.com/users/956838123806023720"
     }
   },
   {
@@ -461,7 +487,7 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end developer",
+        "position": "Front-end Developer",
         "teamLead": false
       }
     ],
@@ -477,7 +503,7 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end developer",
+        "position": "Front-end Developer",
         "teamLead": false
       }
     ],
@@ -493,7 +519,7 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end developer",
+        "position": "Front-end Developer",
         "teamLead": false
       }
     ],
@@ -508,7 +534,7 @@
     "avatar": "./assets/contributors/anamaria-talmacel.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -529,7 +555,7 @@
     "avatar": "./assets/contributors/madalina-andon.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -546,7 +572,7 @@
     "avatar": "./assets/contributors/cristina-apostol.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -567,7 +593,7 @@
     "avatar": "./assets/contributors/lucian-lodin.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -583,7 +609,7 @@
     "avatar": "./assets/contributors/caterina-bocaniciu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -604,7 +630,7 @@
     "avatar": "./assets/contributors/loredana-pelle.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -625,7 +651,7 @@
     "avatar": "./assets/contributors/carmen-steliana.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -641,7 +667,7 @@
     "avatar": "./assets/contributors/georgiana-radu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -657,7 +683,7 @@
     "avatar": "./assets/contributors/radu-lutu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -673,7 +699,7 @@
     "avatar": "./assets/contributors/person-placeholder.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -689,7 +715,7 @@
     "avatar": "./assets/contributors/roxana-danalache.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -706,7 +732,7 @@
     "roles":[
       {
         "team": "Back-end",
-        "position": "Junior PHP developer",
+        "position": "Junior PHP Developer",
         "teamLead": false
       }
     ],
@@ -738,7 +764,7 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end developer",
+        "position": "Front-end Developer",
         "teamLead": false
       }
     ],
@@ -753,7 +779,7 @@
     "avatar": "./assets/contributors/daniela-popa.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -774,7 +800,7 @@
     "avatar": "./assets/contributors/livia-hriscu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -811,7 +837,7 @@
     "avatar": "./assets/contributors/marian-dinu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -827,7 +853,7 @@
     "avatar": "./assets/contributors/radu-spatacean.webp",
     "roles":[
       {
-        "team": "Principali",
+        "team": "Core",
         "position": "Scrum Master",
         "teamLead": false
       }
@@ -836,6 +862,22 @@
       "linkedin": "https://www.linkedin.com/in/radu-spatacean-a8b070226/",
       "github": "https://github.com/raduviorel-collab",
       "discord": "https://discordapp.com/users/1260157158671126580"
+    }
+  },
+  {
+    "name": "Alexandru Coca",
+    "avatar": "./assets/contributors/alexandru-coca.webp",
+    "roles":[
+      {
+        "team": "Back-end",
+        "position": "Junior PHP Developer",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/gheorghe-alexandru-coca-a3516a214/",
+      "github": "https://github.com/AlexandruCoca99",
+      "discord": "https://discord.com/users/125541351700824064"
     }
   }
 ]
