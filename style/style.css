@@ -724,6 +724,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0 3.2rem 2.4rem;
+  overflow: hidden;
 }
 .our-mission__content__title {
   display: flex;
@@ -2015,7 +2016,7 @@ footer .footer-bottom h4 {
 }
 .main {
   box-shadow: 0 0.1rem 1.8rem 0 rgba(107, 107, 107, 0.35);
-  margin: 2rem;
+  margin: 12rem 2rem 2rem;
   border-radius: 3rem;
   padding-bottom: 3rem;
   display: flex;
