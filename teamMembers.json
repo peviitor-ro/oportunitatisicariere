@@ -4,7 +4,7 @@
       "avatar": "./assets/contributors/sebastian-boga.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Product Owner",
           "teamLead": false
         },
@@ -14,7 +14,7 @@
           "teamLead": false
         },
         {
-          "team": "Testare",
+          "team": "QA",
           "position": "QA Manager",
           "teamLead": true
         }
@@ -30,7 +30,7 @@
       "avatar": "./assets/contributors/adriana-cionca.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Project Manager",
           "teamLead": false
         }
@@ -51,7 +51,7 @@
           "teamLead": true
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Front-end Lead",
           "teamLead": false
         }
@@ -67,14 +67,14 @@
       "avatar": "./assets/contributors/patricia-istrate.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "UI/UX Expert",
           "teamLead": false
         }
       ],
       "socials": {
         "linkedin": "https://www.linkedin.com/in/patriciaistrate/",
-        "github": "",
+        "github": "https://sites.google.com/view/patriciaistrateportfolio/home",
         "discord": "https://discord.com/users/1167459382653632643"
       }
     },
@@ -83,7 +83,7 @@
       "avatar": "./assets/contributors/laurentiu-baluta.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "CTO",
           "teamLead": false
         },
@@ -109,7 +109,7 @@
           "teamLead": true
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Scraping Lead",
           "teamLead": false
         }
@@ -125,7 +125,7 @@
       "avatar": "./assets/contributors/adelina-guliman.webp",
       "roles": [
         {
-          "team": "Testare",
+          "team": "QA",
           "position": "Manual Tester",
           "teamLead": false
         }
@@ -141,7 +141,7 @@
       "avatar": "./assets/contributors/rares-irimus.webp",
       "roles": [
         {
-          "team": "Testare",
+          "team": "QA",
           "position": "Automation Test Lead",
           "teamLead": true
         },
@@ -151,7 +151,7 @@
           "teamLead": false
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Automation Test Lead",
           "teamLead": false
         }
@@ -172,7 +172,7 @@
           "teamLead": true
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Back-end Lead",
           "teamLead": false
         }
@@ -188,7 +188,7 @@
       "avatar": "./assets/contributors/alex-stefan.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "DevOps",
           "teamLead": false
         }
@@ -204,7 +204,7 @@
       "avatar": "./assets/contributors/avram-lavinia.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Pentester",
           "teamLead": false
         }
@@ -220,7 +220,7 @@
       "avatar": "./assets/contributors/florin-nistor.webp",
       "roles": [
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Data Quality Test Lead",
           "teamLead": false
         },
@@ -241,12 +241,12 @@
       "avatar": "./assets/contributors/diana-dragoi.webp",
       "roles": [
         {
-          "team": "Testare",
+          "team": "QA",
           "position": "Manual Test Lead",
           "teamLead": true
         },
         {
-          "team": "Principali",
+          "team": "Core",
           "position": "Manual Test Lead",
           "teamLead": false
         }
@@ -262,7 +262,7 @@
     "avatar": "./assets/contributors/beatrix-racasanu.webp",
     "roles": [
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -283,7 +283,7 @@
     "avatar": "./assets/contributors/elena-istratescu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -300,7 +300,7 @@
     "avatar": "./assets/contributors/catalina-ion.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -321,7 +321,7 @@
     "avatar": "./assets/contributors/ionut-pintilie.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -337,7 +337,7 @@
     "avatar": "./assets/contributors/bogdan-dumitrache.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -353,7 +353,7 @@
     "avatar": "./assets/contributors/camelia-melinte.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -369,7 +369,7 @@
     "avatar": "./assets/contributors/cristian-zidarescu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -390,7 +390,7 @@
     "avatar": "./assets/contributors/razvan-gradea.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -406,7 +406,7 @@
     "avatar": "./assets/contributors/georgiana-redenstein.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -422,7 +422,7 @@
     "avatar": "./assets/contributors/andreea-dima.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -534,7 +534,7 @@
     "avatar": "./assets/contributors/anamaria-talmacel.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -555,7 +555,7 @@
     "avatar": "./assets/contributors/madalina-andon.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -572,7 +572,7 @@
     "avatar": "./assets/contributors/cristina-apostol.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -593,7 +593,7 @@
     "avatar": "./assets/contributors/lucian-lodin.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -609,7 +609,7 @@
     "avatar": "./assets/contributors/caterina-bocaniciu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -630,7 +630,7 @@
     "avatar": "./assets/contributors/loredana-pelle.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -651,7 +651,7 @@
     "avatar": "./assets/contributors/carmen-steliana.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -667,7 +667,7 @@
     "avatar": "./assets/contributors/georgiana-radu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -683,7 +683,7 @@
     "avatar": "./assets/contributors/radu-lutu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -699,7 +699,7 @@
     "avatar": "./assets/contributors/person-placeholder.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -715,7 +715,7 @@
     "avatar": "./assets/contributors/roxana-danalache.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -779,7 +779,7 @@
     "avatar": "./assets/contributors/daniela-popa.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -800,7 +800,7 @@
     "avatar": "./assets/contributors/livia-hriscu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       },
@@ -837,7 +837,7 @@
     "avatar": "./assets/contributors/marian-dinu.webp",
     "roles":[
       {
-        "team": "Testare",
+        "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
       }
@@ -853,7 +853,7 @@
     "avatar": "./assets/contributors/radu-spatacean.webp",
     "roles":[
       {
-        "team": "Principali",
+        "team": "Core",
         "position": "Scrum Master",
         "teamLead": false
       }
