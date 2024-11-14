@@ -221,7 +221,7 @@
       "roles": [
         {
           "team": "Principali",
-          "position": "Data Quality Manager",
+          "position": "Data Quality Test Lead",
           "teamLead": false
         },
         {
@@ -247,7 +247,7 @@
         },
         {
           "team": "Principali",
-          "position": "Data Quality Test Lead",
+          "position": "Manual Test Lead",
           "teamLead": false
         }
       ],
@@ -862,6 +862,22 @@
       "linkedin": "https://www.linkedin.com/in/radu-spatacean-a8b070226/",
       "github": "https://github.com/raduviorel-collab",
       "discord": "https://discordapp.com/users/1260157158671126580"
+    }
+  },
+  {
+    "name": "Alexandru Coca",
+    "avatar": "./assets/contributors/alexandru-coca.webp",
+    "roles":[
+      {
+        "team": "Back-end",
+        "position": "Junior PHP Developer",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/gheorghe-alexandru-coca-a3516a214/",
+      "github": "https://github.com/AlexandruCoca99",
+      "discord": "https://discord.com/users/125541351700824064"
     }
   }
 ]
