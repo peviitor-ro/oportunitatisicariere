@@ -3,8 +3,10 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: sticky;
+  // position: sticky; // Position sticky does not work well with firefox
+  position: fixed;
   top: 0;
+  left: 50%; // Added left property in order to center the header for fixed position
   z-index: 99;
 }
 
@@ -388,8 +390,8 @@ header {
 }
 
 @media only screen and (min-width: 1160px) {
-  .nav .nav__links .nav__links__list:first-of-type{
-    margin-left:4rem;
+  .nav .nav__links .nav__links__list:first-of-type {
+    margin-left: 4rem;
   }
   .hamburger-menu-icon {
     display: none;
