@@ -7,7 +7,9 @@
   flex-direction: column;
   row-gap: 1.6rem;
 
-
+  @media (max-width: $tablet-size) {
+    margin-top: 10rem;
+  }
 
   @media (min-width: $tablet-size) {
     row-gap: 0;
