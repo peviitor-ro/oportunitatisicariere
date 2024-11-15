@@ -54,6 +54,11 @@
           "team": "Core",
           "position": "Front-end Lead",
           "teamLead": false
+        },
+        {
+          "team": "UI/UX",
+          "position": "UI/UX Developer",
+          "teamLead": false
         }
       ],
       "socials": {
@@ -70,6 +75,11 @@
           "team": "Core",
           "position": "UI/UX Expert",
           "teamLead": false
+        },
+        {
+          "team": "UI/UX",
+          "position": "UI/UX Lead",
+          "teamLead": true
         }
       ],
       "socials": {
@@ -90,6 +100,21 @@
         {
           "team": "Back-end",
           "position": "Back-end Developer",
+          "teamLead": false
+        },
+        {
+          "team": "Front-end",
+          "position": "Front-end Developer",
+          "teamLead": false
+        },
+        {
+          "team": "Scraping",
+          "position": "Scraper Developer",
+          "teamLead": false
+        },
+        {
+          "team": "Data Quality",
+          "position": "Data Quality Tester",
           "teamLead": false
         }
       ],
