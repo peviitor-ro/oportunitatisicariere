@@ -126,13 +126,6 @@ header {
   transition: all 0.3s ease;
 }
 
-#our-mission,
-#how-contribute,
-#why-contribute,
-#team {
-  scroll-margin-top: 80px;
-}
-
 .responsive-navbar {
   display: flex;
   flex-direction: row;
