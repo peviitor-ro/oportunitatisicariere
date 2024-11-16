@@ -240,3 +240,24 @@ const toggleArrowVisibility = () => {
 };
 
 window.addEventListener("scroll", toggleArrowVisibility);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav__links__nav a");
+    const arrowLink = document.querySelector(".intro__cta");
+    const links = [...navLinks, arrowLink];
+  
+    links.forEach(link => {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+        const headerHeight = 82.4;
+  
+        // Derulează pagina până la secțiunea dorită, ținând cont de înălțimea header-ului
+        window.scrollTo({
+          top: targetSection.offsetTop - headerHeight, 
+          behavior: "smooth"
+        });
+      });
+    });
+  });
