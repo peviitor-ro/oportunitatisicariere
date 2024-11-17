@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Remove footerTreshold if you do not want the behavior to trigger
     // As the footer comes into view
-    if (introTreshold < 1 && footerTreshold > 12) {
+    if (introTreshold < 100 && footerTreshold > -300) {
       // Enable title and make it visible
       navTitleLogo.style.pointerEvents = "auto";
       navTitleLogo.style.cursor = "pointer";
