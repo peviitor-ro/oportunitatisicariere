@@ -904,5 +904,21 @@
       "github": "https://github.com/AlexandruCoca99",
       "discord": "https://discord.com/users/125541351700824064"
     }
+  },
+  {
+    "name": "Andrei Marin",
+    "avatar": "./assets/contributors/andrei-marin.webp",
+    "roles":[
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/andrei-ionut-marin-20493670/",
+      "github": "https://github.com/Andrei89Marin",
+      "discord": "https://discord.com/users/833281357530660864"
+    }
   }
 ]
