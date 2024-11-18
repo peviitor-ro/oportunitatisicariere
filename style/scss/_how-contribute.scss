@@ -9,6 +9,9 @@
 
   @media only screen and (min-width: $laptop-size) {
         padding-bottom: 4rem;
+        p {
+          width: 860px;
+        }
     }
 
   &__title {
