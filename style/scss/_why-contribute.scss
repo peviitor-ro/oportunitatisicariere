@@ -217,3 +217,9 @@
         font-size: 3.2rem;
     }
 }
+
+@media only screen and (min-width:#{$laptop-size}) {
+  .why-contribute__description p {
+    width: 860px;
+  }
+}

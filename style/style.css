@@ -430,6 +430,11 @@ header {
     font-size: 2.2rem;
   }
 }
+@media (min-width: 1024px) {
+  #team > p {
+    width: 860px;
+  }
+}
 .intro {
   display: flex;
   align-items: center;
@@ -894,6 +899,9 @@ header {
   .how-contribute {
     padding-bottom: 4rem;
   }
+  .how-contribute p {
+    width: 860px;
+  }
 }
 .how-contribute__title {
   display: flex;
@@ -1351,6 +1359,11 @@ header {
     font-size: 3.2rem;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .why-contribute__description p {
+    width: 860px;
+  }
+}
 .team {
   padding: 7rem 3rem;
   display: flex;
@@ -1615,7 +1628,7 @@ header {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
-  max-width: 620px;
+  width: 860px;
 }
 .thank-section p span {
   display: inline-block;
@@ -1820,8 +1833,9 @@ header {
     padding: 8.3rem 5rem;
   }
   .join-us-section p {
-    padding: 0 20rem 2rem 20rem;
+    padding: 0 0 2rem;
     line-height: 2.2rem;
+    width: 860px;
   }
 }
 /* FOOTER SECTION */
