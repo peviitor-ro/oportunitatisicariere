@@ -1617,6 +1617,9 @@ header {
   .thank-section {
     padding: 10.7rem 0;
   }
+  .thank-section p {
+    width: 860px;
+  }
 }
 .thank-section img {
   padding-top: 2.4rem;
@@ -1628,7 +1631,7 @@ header {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
-  width: 860px;
+  max-width: 620px;
 }
 .thank-section p span {
   display: inline-block;
