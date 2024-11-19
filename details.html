@@ -182,12 +182,20 @@
                       <span class="salary"></span>
                     </div>
                   </div>
-                  <button
-                    class="applyBtn"
-                    onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
-                  >
-                    Aplică
-                  </button>
+                  <div class="cta-buttons">
+                    <button
+                      class="applyBtn"
+                      onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
+                    >
+                      Aplică
+                    </button>
+                    <button
+                      class="applyBtn go-to-team-btn"
+                    >
+                      Vezi echipa
+                    </button>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -243,6 +251,11 @@
               >
                 Aplică
               </button>
+              <button
+                class="applyBtn go-to-team-btn"
+              >
+                Vezi echipa
+              </button>
             </div>
           </div>
         </main>
@@ -265,7 +278,8 @@
     >
       <img src="./assets//arrow-up.svg" alt="" />
     </a>
-    <script type="module" src="details.js"></script>
+    <script src="details.js"></script>
+    <!-- !!!! era <script type="module" src="details.js"></script>  -->
     <script src="script.js" defer></script>
   </body>
 </html>
