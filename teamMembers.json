@@ -920,5 +920,21 @@
       "github": "https://github.com/Andrei89Marin",
       "discord": "https://discord.com/users/833281357530660864"
     }
+  },
+  {
+    "name": "Robert Burcea",
+    "avatar": "./assets/contributors/robert-burcea.webp",
+    "roles":[
+      {
+        "team": "Front-end",
+        "position": "Front-end Developer",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/robert-burcea-0a1a4933/",
+      "github": "https://github.com/robert-burcea",
+      "discord": "https://discord.com/users/688769576690909311"
+    }
   }
 ]
