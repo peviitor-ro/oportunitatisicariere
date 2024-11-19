@@ -1,4 +1,4 @@
-const redirectBtn = document.getElementById("redirect-btn");
+const redirectBtn = document.getElementById("redirect-btn")
 
 // Object to store routes
 const routes = {
@@ -26,7 +26,7 @@ function loadContent() {
       const targetElement = document.querySelector(`#${path}`);
       // Scroll to the target element
       targetElement.scrollIntoView({ behavior: 'smooth' });
-    }, 400)
+    }, 300)
   }
 }
 
@@ -41,4 +41,4 @@ function redirectToHome() {
   window.location.href = "index.html";
 }
 
-redirectBtn.addEventListener("click", redirectToHome);
+redirectBtn?.addEventListener("click", redirectToHome);
