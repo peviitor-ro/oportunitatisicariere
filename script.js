@@ -46,12 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function toggleLogoVisibility() {
-    const introTreshold = logoSection.getBoundingClientRect().bottom;
+    if(logoSection && joinUsSection) {
+      const introTreshold = logoSection.getBoundingClientRect().bottom;
     const footerTreshold = joinUsSection.getBoundingClientRect().top;
 
     // Remove footerTreshold if you do not want the behavior to trigger
     // As the footer comes into view
-    if (introTreshold < 1 && footerTreshold > 12) {
+    if (introTreshold < 100 && footerTreshold > -300) {
       // Enable title and make it visible
       navTitleLogo.style.pointerEvents = "auto";
       navTitleLogo.style.cursor = "pointer";
@@ -61,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navTitleLogo.style.pointerEvents = "none";
       navTitleLogo.style.cursor = "none";
       navTitleLogo.classList.remove("visible-title");
+    }
     }
   }
 
@@ -217,25 +219,27 @@ const scrollBtn = document.querySelector(".top-redirect-btn");
 const closeIcon = document.querySelector(".close-menu-icon");
 
 const toggleArrowVisibility = () => {
-  if (
-    window.scrollY > 500 &&
-    window.matchMedia("(min-width: 1023px)").matches
-  ) {
-    scrollBtn.style.opacity = "1";
-    document.body.style.overflow = "";
-  } else if (
-    window.scrollY > 500 &&
-    closeIcon.classList.contains("hidden") &&
-    window.matchMedia("(min-width: 320px) and (max-width: 1023px)").matches
-  ) {
-    scrollBtn.style.opacity = "1";
-    document.body.style.overflow = "";
-    scrollBtn.style.display = "";
-    scrollBtn.style.visibility = "visible";
-  } else {
-    scrollBtn.style.opacity = "0";
-    scrollBtn.style.display = "";
-    document.body.style.overflow = "";
+  if(scrollBtn && closeIcon) {
+    if (
+      window.scrollY > 500 &&
+      window.matchMedia("(min-width: 1023px)").matches
+    ) {
+      scrollBtn.style.opacity = "1";
+      document.body.style.overflow = "";
+    } else if (
+      window.scrollY > 500 &&
+      closeIcon.classList.contains("hidden") &&
+      window.matchMedia("(min-width: 320px) and (max-width: 1023px)").matches
+    ) {
+      scrollBtn.style.opacity = "1";
+      document.body.style.overflow = "";
+      scrollBtn.style.display = "";
+      scrollBtn.style.visibility = "visible";
+    } else {
+      scrollBtn.style.opacity = "0";
+      scrollBtn.style.display = "";
+      document.body.style.overflow = "";
+    }
   }
 };
 
