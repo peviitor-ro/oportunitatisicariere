@@ -471,3 +471,9 @@ header {
     }
   }
 }
+
+@media (min-width: $laptop-size) {
+  #team > p {
+    width: 860px;
+  }
+}
