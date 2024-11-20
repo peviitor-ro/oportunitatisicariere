@@ -2,6 +2,7 @@
   {
     "id": "onboarding-volunteer",
     "title": "Onboarding Project Volunteer",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Human Resources Department",
     "location": "România",
@@ -49,6 +50,7 @@
   {
     "id": "mobile-tester",
     "title": "Mobile Tester",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Quality Assurance Department",
     "location": "România",
@@ -97,6 +99,7 @@
   {
     "id": "mobile-developer",
     "title": "Mobile Developer",
+    "team":"Front-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Development Department",
     "location": "România",
@@ -146,6 +149,7 @@
   {
     "id": "usability-tester",
     "title": "Usability Tester",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Quality Assurance Department",
     "location": "România",
@@ -194,6 +198,7 @@
   {
     "id": "ux-expert",
     "title": "UX Expert",
+    "team":"UI/UX",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Design Department",
     "location": "România",
@@ -243,6 +248,7 @@
   {
     "id": "test-lead",
     "title": "Test Lead",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Quality Assurance Department",
     "location": "România",
@@ -292,6 +298,7 @@
   {
     "id": "lead-developer",
     "title": "Lead Developer",
+    "team":"Front-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Development Department",
     "location": "România",
@@ -341,6 +348,7 @@
   {
     "id": "assistant-manager",
     "title": "Assistant Manager",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Administrative Department",
     "location": "România",
@@ -394,6 +402,7 @@
   {
     "id": "event-planner",
     "title": "Event Planner",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Marketing Department",
     "location": "România",
@@ -443,6 +452,7 @@
   {
     "id": "pr-specialist",
     "title": "PR Specialist",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Communications Department",
     "location": "România",
@@ -492,6 +502,7 @@
   {
     "id": "fundraiser",
     "title": "Fundraiser",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Fundraising Department",
     "location": "România",
@@ -542,6 +553,7 @@
   {
     "id": "marketing-specialist",
     "title": "Marketing Specialist",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Marketing Department",
     "location": "România",
@@ -591,6 +603,7 @@
   {
     "id": "hr",
     "title": "HR",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Administrative Department",
     "location": "România",
@@ -640,6 +653,7 @@
   {
     "id": "application-support-engineer",
     "title": "Application Support Engineer",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -689,6 +703,7 @@
   {
     "id": "product-owner",
     "title": "Product Owner",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -739,6 +754,7 @@
   {
     "id": "delivery-manager",
     "title": "Delivery Manager",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -787,6 +803,7 @@
   {
     "id": "project-manager",
     "title": "Project Manager",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -836,6 +853,7 @@
   {
     "id": "business-analyst",
     "title": "Business Analyst",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -888,6 +906,7 @@
   {
     "id": "devops-github",
     "title": "DevOPS for GitHub",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -941,6 +960,7 @@
   {
     "id": "devops-apache-solr",
     "title": "DevOPS with Apache SOLR",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1003,6 +1023,7 @@
   {
     "id": "devops",
     "title": "DevOPS",
+    "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1063,6 +1084,7 @@
   {
     "id": "backend-developer-php",
     "title": "Backend Developer with PHP",
+    "team":"Back-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1122,6 +1144,7 @@
   {
     "id": "automation-tester-playwright",
     "title": "Automation Tester with Playwright",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1182,6 +1205,7 @@
   {
     "id": "automation-tester-selenium",
     "title": "Automation Tester with Selenium",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1242,6 +1266,7 @@
   {
     "id": "automation-tester-javascript",
     "title": "Automation Tester with JavaScript",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1302,6 +1327,7 @@
   {
     "id": "automation-tester-php",
     "title": "Automation Tester with PHP",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1362,6 +1388,7 @@
   {
     "id": "automation-tester-java",
     "title": "Automation Tester with JAVA",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1422,6 +1449,7 @@
   {
     "id": "automation-tester-python",
     "title": "Automation Tester with Python",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1482,6 +1510,7 @@
   {
     "id": "manual-tester",
     "title": "Manual Tester",
+    "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1540,6 +1569,7 @@
   {
     "id": "frontend-developer",
     "title": "Frontend Developer",
+    "team":"Front-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1603,6 +1633,7 @@
   {
     "id": "data-scientist",
     "title": "Data Scientist",
+    "team":"Data Quality",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1668,6 +1699,7 @@
   {
     "id": "data-analyst",
     "title": "Data Analyst",
+    "team":"Data Quality",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1740,6 +1772,7 @@
   {
     "id": "data-scraper",
     "title": "Data Scraper",
+    "team":"Data Quality",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",
@@ -1812,6 +1845,7 @@
   {
     "id": "web-scraper",
     "title": "Web Scraper",
+    "team":"Scraping",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
     "location": "România",

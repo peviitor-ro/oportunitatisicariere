@@ -1732,23 +1732,12 @@ footer {
     .jd__container .jd__main .subtitles {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
       justify-content: space-between; }
       @media (min-width: 768px) {
         .jd__container .jd__main .subtitles {
           flex-direction: row;
-          gap: 3rem; }
-          .jd__container .jd__main .subtitles .applyBtn {
-            width: auto; } }
-      @media (min-width: 1024px) {
-        .jd__container .jd__main .subtitles {
-          gap: 4rem; } }
-      @media (min-width: 1280px) {
-        .jd__container .jd__main .subtitles {
-          gap: 5rem; } }
-      @media (min-width: 1440px) {
-        .jd__container .jd__main .subtitles {
-          gap: 6rem; } }
+          gap: 10rem; } }
       .jd__container .jd__main .subtitles .info {
         display: flex;
         flex-direction: column;
@@ -1761,23 +1750,32 @@ footer {
           .jd__container .jd__main .subtitles .info .item .img {
             stroke: #6b6b6b;
             fill: #6b6b6b; }
-      .jd__container .jd__main .subtitles .applyBtn {
-        background-color: #2f7973;
-        border: none;
-        border-radius: 0.8rem;
-        padding: 1.2rem 3.2rem;
-        color: #f3f3f3;
-        font-size: 1.8rem;
-        font-weight: 600;
-        width: 100%;
-        align-self: flex-end;
-        cursor: pointer; }
-        .jd__container .jd__main .subtitles .applyBtn:hover {
-          transition: all 0.3s;
-          background-color: #1e524e; }
+      .jd__container .jd__main .subtitles .cta-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem; }
+        .jd__container .jd__main .subtitles .cta-buttons .applyBtn {
+          background-color: #2f7973;
+          border: none;
+          border-radius: 0.8rem;
+          padding: 1.2rem 3.2rem;
+          color: #f3f3f3;
+          font-size: 1.8rem;
+          font-weight: 600;
+          width: clamp(230px, 48%, 100%);
+          align-self: flex-end;
+          cursor: pointer; }
+          .jd__container .jd__main .subtitles .cta-buttons .applyBtn:hover {
+            transition: all 0.3s;
+            background-color: #1e524e; }
         @media (min-width: 768px) {
-          .jd__container .jd__main .subtitles .applyBtn {
-            width: auto; } }
+          .jd__container .jd__main .subtitles .cta-buttons {
+            flex-grow: 1;
+            justify-content: flex-end; }
+            .jd__container .jd__main .subtitles .cta-buttons .applyBtn {
+              width: 230px; } }
   .jd__container .jd__body {
     display: flex;
     flex-direction: column;
@@ -1924,8 +1922,11 @@ footer {
         text-decoration: underline; }
   .jd__container .jd__apply {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 100%; }
+    width: 100%;
+    gap: 2rem; }
     .jd__container .jd__apply .applyBtn {
       background-color: #2f7973;
       border: none;
@@ -1936,13 +1937,13 @@ footer {
       font-weight: 600;
       align-self: flex-end;
       cursor: pointer;
-      width: 100%; }
+      width: clamp(238px, 48%, 100%); }
       .jd__container .jd__apply .applyBtn:hover {
         transition: all 0.3s;
         background-color: #1e524e; }
       @media (min-width: 768px) {
         .jd__container .jd__apply .applyBtn {
-          width: auto; } }
+          width: 238px; } }
 
 .details-footer-container {
   padding: 0;
