@@ -1,4 +1,4 @@
-const redirectBtn = document.getElementById("redirect-btn")
+const redirectBtn = document.getElementById("redirect-btn");
 
 // Object to store routes
 const routes = {
@@ -6,9 +6,9 @@ const routes = {
   "our-mission": "ourMission",
   "how-contribute": "howContribute",
   "why-contribute": "whyContribute",
-  teamRooster: "team-rooster",
+  listaEchipe: "team-rooster",
   team: "team",
-  "schedule": "schedule"
+  schedule: "schedule",
 };
 
 // Load content based on the current hash
@@ -19,14 +19,14 @@ function loadContent() {
   if (!page) {
     window.location.href = "404.html";
   }
-  
-  if(path){
+
+  if (path) {
     //setTimeout - să aiba timp să se încarce conținutul generat dinamic de pe index.html
-    setTimeout( ()=>{
+    setTimeout(() => {
       const targetElement = document.querySelector(`#${path}`);
       // Scroll to the target element
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }, 300)
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }, 300);
   }
 }
 
@@ -35,7 +35,6 @@ window.addEventListener("load", loadContent);
 
 // Update content when the hash changes
 window.addEventListener("hashchange", loadContent);
-
 
 function redirectToHome() {
   window.location.href = "index.html";

@@ -33,7 +33,7 @@ function initializeTeams() {
 
     if (!firstButton) firstButton = button;
     button.addEventListener("click", () => {
-      window.location.href = "#teamRooster"; // Redirectionare spre începutul sectiunii de afisare a echipei
+      window.location.href = "#listaEchipe"; // Redirectionare spre începutul sectiunii de afisare a echipei
     });
 
     // Event listener pentru selectarea echipei
