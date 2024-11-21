@@ -27,6 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- End of OpenGraph Metadata -->
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</title>
     <!-- import favicon logo files -->
     <link
@@ -119,7 +120,7 @@
         </nav>
       </header>
       <div class="jd">
-        <main class="main">
+        <main class="main" data-aos="fade-up" data-aos-duration="1000">
           <div class="back__wrapper">
             <a href="/#how-contribute" class="backBtn">
               <img src="./assets/details-assets/arrowLeft.svg" alt="Back" />
@@ -202,49 +203,125 @@
 
             <div class="jd__body">
               <div class="description">
-                <h2 class="description__header">Descrierea meseriei</h2>
-                <p id="jd"></p>
+                <h2
+                  class="description__header"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Descrierea meseriei
+                </h2>
+                <p id="jd" data-aos="fade-up" data-aos-duration="1100"></p>
               </div>
 
               <div class="responsabilities">
-                <h2 class="description__header under">Responsabilități</h2>
-                <ul class="list" id="responsabilities"></ul>
+                <h2
+                  class="description__header under"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Responsabilități
+                </h2>
+                <ul
+                  class="list"
+                  id="responsabilities"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                ></ul>
               </div>
               <div class="demands">
-                <h2 class="description__header under">Cerințe</h2>
-                <ul class="list" id="demands"></ul>
+                <h2
+                  class="description__header under"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Cerințe
+                </h2>
+                <ul
+                  class="list"
+                  id="demands"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                ></ul>
               </div>
               <div class="offerings">
-                <h2 class="description__header under">Ce oferim</h2>
-                <ul class="list" id="offerings"></ul>
+                <h2
+                  class="description__header under"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Ce oferim
+                </h2>
+                <ul
+                  class="list"
+                  id="offerings"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                ></ul>
               </div>
               <div class="general__info">
-                <h2 class="description__header under">
+                <h2
+                  class="description__header under"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   Alte informații (opțional)
                 </h2>
-                <ul class="list" id="generalInfo"></ul>
+                <ul
+                  class="list"
+                  id="generalInfo"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                ></ul>
               </div>
               <hr />
               <div class="about">
                 <div class="general__info">
-                  <p class="contact__name under">Date de contact</p>
+                  <p
+                    class="contact__name under"
+                    data-aos="fade-up"
+                    data-aos-duration="900"
+                  >
+                    Date de contact
+                  </p>
                   <ul class="list" id="contact__list">
-                    <li id="phone">Telefon:&nbsp;</li>
-                    <li id="email">Email:&nbsp;</li>
-                    <li id="address">Adresă:&nbsp;</li>
+                    <li id="phone" data-aos="fade-up" data-aos-duration="1000">
+                      Telefon:&nbsp;
+                    </li>
+                    <li id="email" data-aos="fade-up" data-aos-duration="1100">
+                      Email:&nbsp;
+                    </li>
+                    <li
+                      id="address"
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                    >
+                      Adresă:&nbsp;
+                    </li>
                   </ul>
                 </div>
                 <div class="contact">
-                  <p class="contact__name under">Persoană de contact</p>
-                  <img id="recruiter-photo" src="" alt="Recruiter" />
-                  <div>
+                  <p
+                    class="contact__name under"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    Persoană de contact
+                  </p>
+                  <img
+                    id="recruiter-photo"
+                    src=""
+                    alt="Recruiter"
+                    data-aos="flip-left"
+                    data-aos-duration="1100"
+                  />
+                  <div data-aos="fade-up" data-aos-duration="1100">
                     <p class="contact__person"></p>
                     <p class="contact__role"></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="jd__apply">
+            <div class="jd__apply" data-aos="zoom-in" data-aos-duration="1000">
               <button
                 class="applyBtn"
                 onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
@@ -263,7 +340,11 @@
     </div>
     <footer class="details-footer-container">
       <hr class="details-footer-line" />
-      <div class="details-footer-bottom">
+      <div
+        class="details-footer-bottom"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <p id="current-year"></p>
         <a href="/index.html">
           <h4>ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE</h4>
@@ -280,5 +361,9 @@
     </a>
     <script src="details.js"></script>
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: false, offset: 50, easing: "ease-in-out" });
+    </script>
   </body>
 </html>
