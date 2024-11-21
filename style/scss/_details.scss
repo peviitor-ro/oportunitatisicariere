@@ -185,28 +185,12 @@
     .subtitles {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
       justify-content: space-between;
 
       @media (min-width: $tablet-size) {
         flex-direction: row;
-        gap: 3rem;
-
-        .applyBtn {
-          width: auto;
-        }
-      }
-
-      @media (min-width: $laptop-size) {
-        gap: 4rem;
-      }
-
-      @media (min-width: $desktop-size) {
-        gap: 5rem;
-      }
-
-      @media (min-width: $desktop-xxl-size) {
-        gap: 6rem;
+        gap: 10rem;
       }
 
       .info {
@@ -227,25 +211,36 @@
         }
       }
 
-      .applyBtn {
-        background-color: $green-mint;
-        border: none;
-        border-radius: 0.8rem;
-        padding: 1.2rem 3.2rem;
-        color: $white;
-        font-size: 1.8rem;
-        font-weight: 600;
-        width: 100%;
-        align-self: flex-end;
-        cursor: pointer;
+      .cta-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
 
-        &:hover {
-          transition: all 0.3s;
-          background-color: $dark-mint;
+        .applyBtn {
+          background-color: $green-mint;
+          border: none;
+          border-radius: 0.8rem;
+          padding: 1.2rem 3.2rem;
+          color: $white;
+          font-size: 1.8rem;
+          font-weight: 600;
+          width: clamp(230px, 48%, 100%);
+          align-self: flex-end;
+          cursor: pointer;
+  
+          &:hover {
+            transition: all 0.3s;
+            background-color: $dark-mint;
+          }
         }
-
         @media (min-width: $tablet-size) {
-          width: auto;
+          flex-grow:1;
+          justify-content: flex-end;
+          .applyBtn {
+            width:230px; 
+          }
         }
       }
     }
@@ -432,8 +427,11 @@
 
   .jd__apply {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    gap: 2rem;
 
     .applyBtn {
       background-color: $green-mint;
@@ -445,7 +443,7 @@
       font-weight: 600;
       align-self: flex-end;
       cursor: pointer;
-      width: 100%;
+      width: clamp(238px, 48%, 100%);
 
       &:hover {
         transition: all 0.3s;
@@ -453,7 +451,7 @@
       }
 
       @media (min-width: $tablet-size) {
-        width: auto;
+        width: 238px; 
       }
     }
   }

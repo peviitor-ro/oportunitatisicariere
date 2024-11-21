@@ -1,3 +1,6 @@
+const goToTeamBtns = document.getElementsByClassName("go-to-team-btn");
+let preferredTeam;
+
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const jobId = urlParams.get("id");
@@ -7,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       const job = data.find((job) => job.id === jobId);
       if (job) {
+        preferredTeam = job.team;
         document.querySelector(".title").textContent = job.title;
         document.querySelector(".employer").textContent += job.employer;
         document.querySelector(".departament").textContent += job.department;
@@ -51,8 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".contact__role").textContent =
           job.aboutEmployer.title;
         document.getElementById("phone").textContent += job.aboutEmployer.phone;
-        document.getElementById("email").innerHTML +=
-          `<a href="mailto:${job.aboutEmployer.email}">${job.aboutEmployer.email}</a>`;
+        document.getElementById(
+          "email"
+        ).innerHTML += `<a href="mailto:${job.aboutEmployer.email}">${job.aboutEmployer.email}</a>`;
         document.getElementById("address").textContent +=
           job.aboutEmployer.address;
       }
@@ -64,6 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
+
+for (let i = 0; i < goToTeamBtns.length; i++) {
+  goToTeamBtns[i].addEventListener("click", goToTeam);
+}
 
 function checkPath(data, idKey = "id") {
   try {
@@ -82,4 +91,9 @@ function checkPath(data, idKey = "id") {
   } catch (error) {
     console.error("Error in checkPath:", error.message);
   }
+}
+
+function goToTeam() {
+  sessionStorage.setItem("preferredTeam", preferredTeam);
+  window.location.href = "/index.html#listaEchipe";
 }

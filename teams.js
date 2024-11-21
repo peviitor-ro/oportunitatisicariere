@@ -2,6 +2,8 @@ const teamNavigation = document.querySelector("#team-navbar");
 const membersWrapper = document.querySelector("#team-wrapper");
 
 let teamMembers = []; // Vector gol pentru datele din json
+let preferredTeam = sessionStorage.getItem("preferredTeam"); // pentru cand navigarea se face dinspre pagina Detalii
+let hasActiveBtn = false;
 
 // Functie de fetch pentru datele din json
 function loadTeamMembers() {
@@ -50,10 +52,19 @@ function initializeTeams() {
 
     // Adaugam butonul în bara de navigare echipe
     teamNavigation.appendChild(button);
+
+    //cand navigam dinspre pagina Detalii vrem ca butonul selectat sa corespunda echipei potrivite
+    //verificam daca echipa transmisa dinspre pag Detalii are corespondent in echipele din listaEchipe
+    if (preferredTeam === team) {
+      button.classList.add("active");
+      hasActiveBtn = true;
+      displayTeamMembers(team);
+    }
   }
 
   // Setarea primului buton generat ca fiind activ, standard membrii "Principali"
-  if (firstButton) {
+  // daca nu avem deja o echipa 'preferata' - cand navigam dinspre pag Detalii
+  if ((!preferredTeam || !hasActiveBtn) && firstButton) {
     firstButton.classList.add("active");
     // Apelarea functiei de afisare a membrilor echipei selectate, în functie de butonul activat
     displayTeamMembers(firstButton.textContent);
