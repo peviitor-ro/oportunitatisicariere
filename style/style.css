@@ -342,6 +342,10 @@ header {
     .nav__links__list .join-btn {
       font-size: 2.2rem; } }
 
+@media (min-width: 1024px) {
+  #team > p {
+    width: 860px; } }
+
 .intro {
   display: flex;
   align-items: center;
@@ -713,7 +717,9 @@ header {
   padding: 0 3.2rem 2.4rem; }
   @media only screen and (min-width: 1024px) {
     .how-contribute {
-      padding-bottom: 4rem; } }
+      padding-bottom: 4rem; }
+      .how-contribute p {
+        width: 860px; } }
   .how-contribute__title {
     display: flex;
     flex-direction: column;
@@ -1273,7 +1279,9 @@ header {
   padding: 0 4.9rem 2.4rem; }
   @media only screen and (min-width: 1024px) {
     .thank-section {
-      padding: 10.7rem 0; } }
+      padding: 10.7rem 0; }
+      .thank-section p {
+        width: 860px; } }
   .thank-section img {
     padding-top: 2.4rem; }
   .thank-section__final-logo {
@@ -1440,8 +1448,9 @@ header {
   .join-us-section {
     padding: 8.3rem 5rem; }
     .join-us-section p {
-      padding: 0 20rem 2rem 20rem;
-      line-height: 2.2rem; } }
+      padding: 0 0 2rem;
+      line-height: 2.2rem;
+      width: 860px; } }
 
 /* FOOTER SECTION */
 footer {
