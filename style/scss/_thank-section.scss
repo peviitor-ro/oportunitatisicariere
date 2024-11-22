@@ -8,6 +8,10 @@
 
   @media only screen and (min-width: $laptop-size) {
     padding: 10.7rem 0;
+
+    p {
+      width: 860px;
+    }
   }
 
   img {
