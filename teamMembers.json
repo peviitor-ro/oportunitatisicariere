@@ -89,7 +89,7 @@
       }
     },
     {
-      "name": "Laurentiu Baluta",
+      "name": "Laurențiu Băluță",
       "avatar": "./assets/contributors/laurentiu-baluta.webp",
       "roles": [
         {
@@ -162,7 +162,7 @@
       }
     },
     {
-      "name": "Rares Irimus",
+      "name": "Rareș Irimus",
       "avatar": "./assets/contributors/rares-irimus.webp",
       "roles": [
         {
@@ -209,7 +209,7 @@
       }
     },
     {
-      "name": "Alex Stefan",
+      "name": "Alex Ștefan",
       "avatar": "./assets/contributors/alex-stefan.webp",
       "roles": [
         {
@@ -262,7 +262,7 @@
       }
     },
     {
-      "name": "Diana Dragoi",
+      "name": "Diana Drăgoi",
       "avatar": "./assets/contributors/diana-dragoi.webp",
       "roles": [
         {
@@ -283,7 +283,7 @@
       }
     },
   {
-    "name": "Beatrix Racasanu",
+    "name": "Beatrix Răcășanu",
     "avatar": "./assets/contributors/beatrix-racasanu.webp",
     "roles": [
       {
@@ -321,7 +321,7 @@
     }
   },
   {
-    "name": "Catalina Ion",
+    "name": "Cătălina Ion",
     "avatar": "./assets/contributors/catalina-ion.webp",
     "roles":[
       {
@@ -342,7 +342,7 @@
     }
   },
   {
-    "name": "Ionut Pintilie",
+    "name": "Ionuț Pintilie",
     "avatar": "./assets/contributors/ionut-pintilie.webp",
     "roles":[
       {
@@ -390,7 +390,7 @@
     }
   },
   {
-    "name": "Cristian Zidarescu",
+    "name": "Cristian Zidărescu",
     "avatar": "./assets/contributors/cristian-zidarescu.webp",
     "roles":[
       {
@@ -411,7 +411,7 @@
     }
   },
   {
-    "name": "Razvan Gradea",
+    "name": "Răzvan Gradea",
     "avatar": "./assets/contributors/razvan-gradea.webp",
     "roles":[
       {
@@ -576,7 +576,7 @@
     }
   },
   {
-    "name": "Madalina Andon",
+    "name": "Mădălina Andon",
     "avatar": "./assets/contributors/madalina-andon.webp",
     "roles":[
       {
@@ -858,7 +858,7 @@
     }
   },
   {
-    "name": "Dinu Marian Catalin",
+    "name": "Dinu Marian Cătălin",
     "avatar": "./assets/contributors/marian-dinu.webp",
     "roles":[
       {
