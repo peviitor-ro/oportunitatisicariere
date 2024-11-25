@@ -95,5 +95,5 @@ function checkPath(data, idKey = "id") {
 
 function goToTeam() {
   sessionStorage.setItem("preferredTeam", preferredTeam);
-  window.location.href = "/index.html#listaEchipe";
+  window.location.href = "/index.html#teamList";
 }
