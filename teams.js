@@ -35,7 +35,7 @@ function initializeTeams() {
 
     if (!firstButton) firstButton = button;
     button.addEventListener("click", () => {
-      window.location.href = "#listaEchipe"; // Redirectionare spre începutul sectiunii de afisare a echipei
+      window.location.href = "#teamList"; // Redirectionare spre începutul sectiunii de afisare a echipei
     });
 
     // Event listener pentru selectarea echipei
@@ -54,7 +54,7 @@ function initializeTeams() {
     teamNavigation.appendChild(button);
 
     //cand navigam dinspre pagina Detalii vrem ca butonul selectat sa corespunda echipei potrivite
-    //verificam daca echipa transmisa dinspre pag Detalii are corespondent in echipele din listaEchipe
+    //verificam daca echipa transmisa dinspre pag Detalii are corespondent in echipele din teamList
     if (preferredTeam === team) {
       button.classList.add("active");
       hasActiveBtn = true;
