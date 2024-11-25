@@ -6,7 +6,7 @@ const routes = {
   "our-mission": "ourMission",
   "how-contribute": "howContribute",
   "why-contribute": "whyContribute",
-  listaEchipe: "team-rooster",
+  teamList: "team-rooster",
   team: "team",
   schedule: "schedule",
 };
