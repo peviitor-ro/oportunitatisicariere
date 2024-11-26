@@ -1722,6 +1722,27 @@ header {
   gap: 0.6rem;
   margin-right: 2rem;
 }
+.join-us-section__meeting-list .meeting-item .day-container a[data-tooltip] {
+  position: relative;
+}
+.join-us-section__meeting-list .meeting-item .day-container a[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 90%;
+  right: 90%;
+  padding: 0.1rem 0.7rem;
+  border: 1px solid #2f7973;
+  border-radius: 0.25rem;
+  background-color: white;
+  color: #2f7973;
+  font-size: 1.25rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.join-us-section__meeting-list .meeting-item .day-container a[data-tooltip]:hover::after {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
 .join-us-section__meeting-list .meeting-item .day-container .meeting-link {
   display: flex;
   align-items: center;
@@ -1858,6 +1879,8 @@ footer .footer-social__links li {
 }
 footer .footer-social__links li a[data-tooltip] {
   position: relative;
+  z-index: 1;
+  isolation: isolate;
 }
 footer .footer-social__links li a[data-tooltip]::after {
   content: attr(data-tooltip);
@@ -1872,10 +1895,12 @@ footer .footer-social__links li a[data-tooltip]::after {
   font-size: 1.25rem;
   opacity: 0;
   transition: opacity 0.5s ease;
+  z-index: 3;
 }
 footer .footer-social__links li a[data-tooltip]:hover::after {
   opacity: 1;
   transition: opacity 0.5s ease;
+  z-index: 3;
 }
 footer .footer-social__links li a img {
   width: 4rem;
