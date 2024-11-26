@@ -1,4 +1,5 @@
 /* FOOTER SECTION */
+
 footer {
   padding: 11.2rem 8rem 3.2rem 8rem;
   display: flex;
@@ -37,6 +38,27 @@ footer {
 
       li {
         cursor: pointer;
+        a[data-tooltip]{
+          position:relative; 
+        }
+        a[data-tooltip]::after{
+          content:attr(data-tooltip);
+          position:absolute; 
+          top:90%;
+          left:70%; 
+          padding:0.5rem;
+          border: 1px solid $green-mint;  
+          border-radius: 0.25rem;
+          background-color:white;
+          color:$green-mint;
+          font-size: 1.25rem;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+        a[data-tooltip]:hover::after{
+          opacity:1; 
+          transition: opacity 0.5s ease;
+        }
       }
 
       li a img {

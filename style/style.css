@@ -1856,6 +1856,27 @@ footer .footer-social__links {
 footer .footer-social__links li {
   cursor: pointer;
 }
+footer .footer-social__links li a[data-tooltip] {
+  position: relative;
+}
+footer .footer-social__links li a[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  padding: 0.5rem;
+  border: 1px solid #2f7973;
+  border-radius: 0.25rem;
+  background-color: white;
+  color: #2f7973;
+  font-size: 1.25rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+footer .footer-social__links li a[data-tooltip]:hover::after {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
 footer .footer-social__links li a img {
   width: 4rem;
   height: 4rem;
