@@ -784,22 +784,6 @@
     }
   }, 
   {
-    "name": "Anca Matei",
-    "avatar": "./assets/contributors/anca-matei.webp",
-    "roles":[
-      {
-        "team": "Front-end",
-        "position": "Front-end Developer",
-        "teamLead": false
-      }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/anca-m-matei/",
-      "github": "https://github.com/Anca2022",
-      "discord": "https://discordapp.com/users/1192550014610849903"
-    }
-  },
-  {
     "name": "Daniela Popa",
     "avatar": "./assets/contributors/daniela-popa.webp",
     "roles":[
