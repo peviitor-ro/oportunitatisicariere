@@ -1600,6 +1600,84 @@ header {
     font-size: 1.9rem;
   }
 }
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.stories-title {
+  display: flex;
+  flex-direction: column;
+}
+.stories-title h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  margin-bottom: -0.5rem;
+  padding-top: 7rem;
+}
+.stories-title img {
+  transform: scale(0.7);
+}
+.stories-text {
+  padding: 7rem;
+  font-size: 1.6rem;
+  line-height: 130%;
+  text-wrap: balance;
+}
+.stories-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stories-individual {
+  display: flex;
+  flex-direction: row;
+}
+.stories-left {
+  width: 49.2rem;
+  height: 51.7rem;
+  background-color: #2f7973;
+  color: #f3f3f3;
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 12rem 7rem 0 7rem;
+  position: relative;
+  line-height: 130%;
+  text-wrap: balance;
+}
+.stories-left img {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  filter: invert(43%) sepia(21%) saturate(964%) hue-rotate(126deg) brightness(91%) contrast(91%);
+}
+.stories-name {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.stories-name p {
+  color: lightgray;
+}
+.stories-right img {
+  width: 34.8rem;
+  height: 51.7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stories-extra {
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
+  color: #1e524e;
+  font-size: 4.4rem;
+  padding-left: 25rem;
+  line-height: 80%;
+}
+
 /* THANK YOU SECTION */
 .thank-section {
   display: flex;
