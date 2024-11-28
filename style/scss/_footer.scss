@@ -38,14 +38,18 @@ footer {
 
       li {
         cursor: pointer;
+
         a[data-tooltip]{
           position:relative; 
         }
+
         a[data-tooltip]::after{
           content:attr(data-tooltip);
           position:absolute; 
-          top:90%;
-          left:70%; 
+          z-index:10; 
+          top:110%;
+          left:100%; 
+          transform: translateX(-20%);
           padding:0.5rem;
           border: 1px solid $green-mint;  
           border-radius: 0.25rem;
@@ -53,23 +57,28 @@ footer {
           color:$green-mint;
           font-size: 1.25rem;
           opacity: 0;
+          pointer-events: none;
           transition: opacity 0.5s ease;
         }
+
         a[data-tooltip]:hover::after{
           opacity:1; 
           transition: opacity 0.5s ease;
+          z-index:10; 
         }
-      }
 
-      li a img {
+        a img {
         width: 4rem;
         height: 4rem;
-      }
+        position: relative; 
+        z-index:1; 
+        }
 
-      li a img:hover {
+        a img:hover {
         filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
           brightness(85%) contrast(77%);
         transition: filter 0.3s ease;
+        }
       }
     }
   }
