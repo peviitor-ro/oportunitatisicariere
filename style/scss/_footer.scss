@@ -40,8 +40,6 @@ footer {
         cursor: pointer;
         a[data-tooltip]{
           position:relative; 
-          z-index:1;
-          isolation: isolate;
         }
         a[data-tooltip]::after{
           content:attr(data-tooltip);
@@ -56,25 +54,22 @@ footer {
           font-size: 1.25rem;
           opacity: 0;
           transition: opacity 0.5s ease;
-          z-index:3;
         }
         a[data-tooltip]:hover::after{
           opacity:1; 
           transition: opacity 0.5s ease;
-          z-index:3;
         }
-        a img {
-          // position:relative;
-          width: 4rem;
-          height: 4rem;
-          // z-index:0;
-        }
-  
-        a img:hover {
-          filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
-            brightness(85%) contrast(77%);
-          transition: filter 0.3s ease;
-        }
+      }
+
+      li a img {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      li a img:hover {
+        filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+          brightness(85%) contrast(77%);
+        transition: filter 0.3s ease;
       }
     }
   }
