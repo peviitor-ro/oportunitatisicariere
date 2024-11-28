@@ -5,7 +5,8 @@
   },
   "dependencies": {
     "braces": "^3.0.3",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "tippy.js": "^6.3.7"
   },
   "devDependencies": {
     "stylelint": "^16.4.0",

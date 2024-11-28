@@ -1,4 +1,17 @@
 /* FOOTER SECTION */
+/* styles for tooltip */
+.tippy-box[data-theme~='tooltip-footer-theme'] {
+  background-color: white;
+  color: $green-mint;
+  border: 1px solid $green-mint;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  .tippy-arrow {
+    color: transparent;
+  }
+}
+
 footer {
   padding: 11.2rem 8rem 3.2rem 8rem;
   display: flex;
@@ -37,17 +50,17 @@ footer {
 
       li {
         cursor: pointer;
-      }
-
-      li a img {
+    
+        a img {
         width: 4rem;
         height: 4rem;
-      }
+        }
 
-      li a img:hover {
+        a img:hover {
         filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
           brightness(85%) contrast(77%);
         transition: filter 0.3s ease;
+        }
       }
     }
   }
