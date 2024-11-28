@@ -244,3 +244,11 @@ const toggleArrowVisibility = () => {
 };
 
 window.addEventListener("scroll", toggleArrowVisibility);
+
+//Tooltip for footer links
+tippy('[data-tippy-content]', {
+  placement: 'bottom-start',
+  delay: 100,
+  followCursor: 'horizontal',
+  theme: 'tooltip-footer-theme',
+}); 
