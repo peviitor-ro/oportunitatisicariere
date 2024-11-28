@@ -1837,6 +1837,19 @@ header {
   }
 }
 /* FOOTER SECTION */
+/* styles for tooltip */
+.tippy-box[data-theme~=tooltip-footer-theme] {
+  background-color: white;
+  color: #2f7973;
+  border: 1px solid #2f7973;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.tippy-box[data-theme~=tooltip-footer-theme] .tippy-arrow {
+  color: transparent;
+}
+
 footer {
   padding: 11.2rem 8rem 3.2rem 8rem;
   display: flex;
@@ -1856,36 +1869,9 @@ footer .footer-social__links {
 footer .footer-social__links li {
   cursor: pointer;
 }
-footer .footer-social__links li a[data-tooltip] {
-  position: relative;
-}
-footer .footer-social__links li a[data-tooltip]::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  z-index: 10;
-  top: 110%;
-  left: 100%;
-  transform: translateX(-20%);
-  padding: 0.5rem;
-  border: 1px solid #2f7973;
-  border-radius: 0.25rem;
-  background-color: white;
-  color: #2f7973;
-  font-size: 1.25rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
-}
-footer .footer-social__links li a[data-tooltip]:hover::after {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  z-index: 10;
-}
 footer .footer-social__links li a img {
   width: 4rem;
   height: 4rem;
-  position: relative;
-  z-index: 1;
 }
 footer .footer-social__links li a img:hover {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
