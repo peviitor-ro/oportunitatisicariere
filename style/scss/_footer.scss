@@ -1,5 +1,5 @@
 /* FOOTER SECTION */
-/* styles for tooltip */
+/* styles for tooltip - footer links*/
 .tippy-box[data-theme~='tooltip-footer-theme'] {
   background-color: white;
   color: $green-mint;
@@ -7,6 +7,7 @@
   border-radius: 8px;
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translate(20%, 25%);
   .tippy-arrow {
     color: transparent;
   }

@@ -1,4 +1,17 @@
 /* JOIN US SECTION */
+/* styles for tooltip - jitsi links in Întâlniri săptămânale*/
+.tippy-box[data-theme~='tooltip-jitsi-theme'] {
+  background-color: white;
+  color: $green-mint;
+  border: 1px solid $green-mint;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateX(-120%);
+  .tippy-arrow {
+    color: transparent;
+  }
+}
 .join-us-section {
   display: flex;
   align-items: center;
