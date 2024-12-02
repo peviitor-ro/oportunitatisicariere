@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Global Imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
@@ -1656,6 +1657,25 @@ header {
   }
 }
 /* JOIN US SECTION */
+/* styles for tooltip - jitsi links in Întâlniri săptămânale*/
+.tippy-box[data-theme~=tooltip-jitsi-theme] {
+  background-color: white;
+  color: #2f7973;
+  border: 1px solid #2f7973;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateX(-120%);
+}
+.tippy-box[data-theme~=tooltip-jitsi-theme] .tippy-arrow {
+  color: transparent;
+}
+@media (max-width: 768px) {
+  .tippy-box[data-theme~=tooltip-jitsi-theme] {
+    transform: translateX(10%);
+  }
+}
+
 .join-us-section {
   display: flex;
   align-items: center;
@@ -1837,7 +1857,7 @@ header {
   }
 }
 /* FOOTER SECTION */
-/* styles for tooltip */
+/* styles for tooltip - footer links*/
 .tippy-box[data-theme~=tooltip-footer-theme] {
   background-color: white;
   color: #2f7973;
@@ -1845,6 +1865,7 @@ header {
   border-radius: 8px;
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translate(20%, 25%);
 }
 .tippy-box[data-theme~=tooltip-footer-theme] .tippy-arrow {
   color: transparent;
@@ -2565,19 +2586,6 @@ footer .footer-bottom h4 {
   #top-redirect-details-page {
     right: 5.6vw;
   }
-}
-
-/* styles for tooltip */
-.tippy-box[data-theme~=tooltip-footer-theme] {
-  background-color: white;
-  color: #2f7973;
-  border: 1px solid #2f7973;
-  border-radius: 8px;
-  font-size: 1.4rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-.tippy-box[data-theme~=tooltip-footer-theme] .tippy-arrow {
-  color: transparent;
 }
 
 .nav {
