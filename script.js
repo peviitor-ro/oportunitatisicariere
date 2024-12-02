@@ -253,6 +253,7 @@ tippy('.footer-link', {
   followCursor: true,
   theme: 'tooltip-footer-theme',
 }); 
+
 //Tooltip for Jitsi Meets
 tippy('.meeting-link', {
   content: '[data-tippy-content]',
@@ -261,7 +262,6 @@ tippy('.meeting-link', {
   followCursor: true,
   theme: 'tooltip-jitsi-theme',
 }); 
-
 
 
 function redirectLinks() {
@@ -280,11 +280,8 @@ function redirectLinks() {
       const [targetPage, targetId] = href.split("#");
       const headerHeight = 85;
 
-
       if (targetPage && targetPage !== window.location.pathname) {
-        console.log(` ${window.location.href}`);
-        // window.location.href = `${targetPage}#${targetId}`;
-        window.location.href;
+        window.location.href = `${targetPage}#${targetId}`;
         return;
       }
 
@@ -292,10 +289,11 @@ function redirectLinks() {
 
       // If already on the correct page or no targetPage, scroll to the section
       if (targetSection) {
+        const offset = targetPage !== window.location.pathname ? headerHeight : 20;
         window.scrollTo({
-          top: targetSection.offsetTop - headerHeight,
+          top: targetSection.offsetTop - offset,
+          behavior: "smooth"
         });
-        console.log(`Scrolling to section: ${targetId}, ${window.location.href}`);
       } else {
         console.warn(`Target section not found: ${targetId}`);
       }
@@ -304,3 +302,4 @@ function redirectLinks() {
 }
 
 window.addEventListener("load", redirectLinks);
+

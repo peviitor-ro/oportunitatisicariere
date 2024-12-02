@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+:target {
+  padding-top: 10rem !important;
+}
+
 /* HEADER SECTION */
 header {
   display: flex;
