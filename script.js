@@ -246,9 +246,18 @@ const toggleArrowVisibility = () => {
 window.addEventListener("scroll", toggleArrowVisibility);
 
 //Tooltip for footer links
-tippy('[data-tippy-content]', {
+tippy('.footer-link', {
+  content: '[data-tippy-content]',
   placement: 'bottom-start',
   delay: 100,
-  followCursor: 'horizontal',
+  followCursor: true,
   theme: 'tooltip-footer-theme',
+}); 
+//Tooltip for Jitsi Meets
+tippy('.meeting-link', {
+  content: '[data-tippy-content]',
+  placement: 'bottom-start',
+  delay: 100,
+  followCursor: true,
+  theme: 'tooltip-jitsi-theme',
 }); 
