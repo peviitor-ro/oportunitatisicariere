@@ -261,3 +261,46 @@ tippy('.meeting-link', {
   followCursor: true,
   theme: 'tooltip-jitsi-theme',
 }); 
+
+
+
+function redirectLinks() {
+  const navLinks = document.querySelectorAll(".nav__links__nav a");
+  const arrowLink = document.querySelector(".intro__cta");
+  const links = [...navLinks];
+
+  if (arrowLink) {
+    links.push(arrowLink);
+  }
+
+  links.forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      const href = this.getAttribute("href");
+      const [targetPage, targetId] = href.split("#");
+      const headerHeight = 85;
+
+
+      if (targetPage && targetPage !== window.location.pathname) {
+        console.log(` ${window.location.href}`);
+        // window.location.href = `${targetPage}#${targetId}`;
+        window.location.href;
+        return;
+      }
+
+      const targetSection = document.getElementById(targetId);
+
+      // If already on the correct page or no targetPage, scroll to the section
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - headerHeight,
+        });
+        console.log(`Scrolling to section: ${targetId}, ${window.location.href}`);
+      } else {
+        console.warn(`Target section not found: ${targetId}`);
+      }
+    });
+  });
+}
+
+window.addEventListener("load", redirectLinks);

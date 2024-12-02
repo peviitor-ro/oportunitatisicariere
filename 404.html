@@ -32,63 +32,65 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <div class="responsive-navbar">
-        <div class="nav__logo">
-          <a href="./index.html#">
-            <img class="img-logo" src="./assets/logo.png" alt="logo image" />
-          </a>
-          <a
-            class="nav__logo__title visible-title logo-redirect"
-            href="/index.html#"
-          >
-            <span class="title-mint"> ASOCIAȚIA </span>
-            <br />
-            OPORTUNITĂȚI ȘI CARIERE
-          </a>
-        </div>
-        <div class="hamburger-menu">
-          <button class="hamburger-menu-icon">
-            <img
-              id="icon-hamburger"
-              src="./assets/hamburger-icon.png"
-              alt="Hamburger Menu"
-            />
-          </button>
-          <button class="close-menu-icon hidden">
-            <img id="icon-close" src="./assets/close.png" alt="Close Menu" />
-          </button>
-        </div>
-      </div>
-      <div class="nav__links">
-        <ul class="nav__links__list nav__links__nav">
-          <li>
-            <a href="/index.html#our-mission">Misiunea noastră</a>
-          </li>
-          <li>
-            <a href="/index.html#how-contribute">Cum poți ajuta tu?</a>
-          </li>
-          <li>
-            <a href="/index.html#why-contribute">De ce să ajuți?</a>
-          </li>
-          <li>
-            <a href="/index.html#team">Echipa</a>
-          </li>
-          <li>
-            <a href="/index.html#schedule">Întâlniri</a>
-          </li>
-          <li>
-            <button
-              onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
-              class="join-btn btn--green"
+    <header id="top-redirect">
+      <nav class="nav">
+        <div class="responsive-navbar">
+          <div class="nav__logo">
+            <a href="./index.html#">
+              <img class="img-logo" src="./assets/logo.png" alt="logo image" />
+            </a>
+            <a
+              class="nav__logo__title visible-title logo-redirect"
+              href="/index.html#"
             >
-              Alătură-te
+              <span class="title-mint"> ASOCIAȚIA </span>
+              <br />
+              OPORTUNITĂȚI ȘI CARIERE
+            </a>
+          </div>
+          <div class="hamburger-menu">
+            <button class="hamburger-menu-icon">
+              <img
+                id="icon-hamburger"
+                src="./assets/hamburger-icon.png"
+                alt="Hamburger Menu"
+              />
             </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- <div class="space"></div> -->
+            <button class="close-menu-icon hidden">
+              <img id="icon-close" src="./assets/close.png" alt="Close Menu" />
+            </button>
+          </div>
+        </div>
+        <div class="nav__links">
+          <ul class="nav__links__list nav__links__nav">
+            <li>
+              <a href="./index.html#our-mission">Misiunea noastră</a>
+            </li>
+            <li>
+              <a href="./index.html#how-contribute">Cum poți ajuta tu?</a>
+            </li>
+            <li>
+              <a href="./index.html#why-contribute">De ce să ajuți?</a>
+            </li>
+            <li>
+              <a href="./index.html#team">Echipa</a>
+            </li>
+            <li>
+              <a href="./index.html#schedule">Întâlniri</a>
+            </li>
+            <li>
+              <button
+                onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
+                class="join-btn btn--green"
+              >
+                Alătură-te
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <div class="main-container-error">
         <img
@@ -134,7 +136,8 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/peviitor.ro/" 
+            <a
+              href="https://www.instagram.com/peviitor.ro/"
               target="_blank"
               data-tippy-content="Instagram"
               class="footer-link"
@@ -146,7 +149,8 @@
             </a>
           </li>
           <li>
-            <a href="https://discord.gg/KPMkdUfQNu" 
+            <a
+              href="https://discord.gg/KPMkdUfQNu"
               target="_blank"
               data-tippy-content="Discord"
               class="footer-link"
@@ -171,9 +175,10 @@
             </a>
           </li>
           <li>
-            <a href="https://meet.jit.si/PEVIITOR.RO" 
+            <a
+              href="https://meet.jit.si/PEVIITOR.RO"
               target="_blank"
-              data-tippy-content="Conectare Jitsi" 
+              data-tippy-content="Conectare Jitsi"
               class="footer-link"
             >
               <img src="./assets/jitsi.svg" alt="jitsi" />
@@ -201,6 +206,6 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="script_404.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

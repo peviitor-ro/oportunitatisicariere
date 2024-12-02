@@ -7,7 +7,7 @@ header {
   position: fixed;
   top: 0;
   left: 50%; // Added left property in order to center the header for fixed position
-  z-index: 99;
+  z-index: 1000;
 }
 
 .close-menu-icon,
@@ -119,8 +119,9 @@ header {
 #our-mission,
 #how-contribute,
 #why-contribute,
-#team {
-  scroll-margin-top: 100px;
+#team,
+#schedule {
+  scroll-margin-top: 50px;
 }
 
 .responsive-navbar {
