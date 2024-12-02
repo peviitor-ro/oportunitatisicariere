@@ -2567,6 +2567,19 @@ footer .footer-bottom h4 {
   }
 }
 
+/* styles for tooltip */
+.tippy-box[data-theme~=tooltip-footer-theme] {
+  background-color: white;
+  color: #2f7973;
+  border: 1px solid #2f7973;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.tippy-box[data-theme~=tooltip-footer-theme] .tippy-arrow {
+  color: transparent;
+}
+
 .nav {
   position: fixed;
   z-index: 10;
