@@ -11,6 +11,9 @@
   .tippy-arrow {
     color: transparent;
   }
+  @media(max-width: $tablet-size){
+    transform: translateX(10%);
+  }
 }
 .join-us-section {
   display: flex;

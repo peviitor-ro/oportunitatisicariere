@@ -1670,6 +1670,11 @@ header {
 .tippy-box[data-theme~=tooltip-jitsi-theme] .tippy-arrow {
   color: transparent;
 }
+@media (max-width: 768px) {
+  .tippy-box[data-theme~=tooltip-jitsi-theme] {
+    transform: translateX(10%);
+  }
+}
 
 .join-us-section {
   display: flex;
