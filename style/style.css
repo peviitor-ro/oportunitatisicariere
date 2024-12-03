@@ -1632,6 +1632,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 920px;
+  height: 600px;
+  margin-top: 5rem;
 }
 .stories-individual {
   display: flex;
@@ -1677,6 +1680,16 @@ header {
   font-size: 4.4rem;
   padding-left: 25rem;
   line-height: 80%;
+}
+.stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+  right: -3rem;
+  top: 40%;
+}
+.stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical .swiper-pagination-bullet {
+  width: 8px;
+  height: 20px;
+  border-radius: 1rem;
+  background: #1e524e;
 }
 
 /* THANK YOU SECTION */
