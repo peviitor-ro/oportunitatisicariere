@@ -1698,22 +1698,34 @@ header {
 }
 
 @media (max-width: 1024px) {
+  .stories {
+    padding-bottom: 10rem;
+  }
+  .stories-text {
+    padding-bottom: 0;
+  }
   .stories-container {
     height: 700px;
+    margin-top: 0;
   }
   .stories-individual {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  .stories-right {
+    z-index: 100;
+  }
   .stories-right img {
-    margin-top: -12rem;
+    margin-bottom: -17rem;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    transform: scale(0.6);
+    transform: scale(0.5);
+    border-radius: 30rem;
   }
   .stories-left {
+    order: 2;
     height: auto;
     text-align: center;
     padding: 4rem;
