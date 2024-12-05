@@ -4,23 +4,23 @@
     "avatar": "./assets/contributors/patricia-istrate.webp",
     "role": "UI/UX Designer",
     "text": "Colaborarea cu o echipă care a reprezentat și clientul a fost atât satisfăcătoare, cât și provocatoare. Schimbările frecvente și gestionarea feedback-ului mi-au îmbunătățit abilitățile de colaborare și capacitatea de a evidenția soluții practice. Crearea unui produs pentru utilizatori reali a fost o experiență valoroasă, iar această colaborare m-a ajutat să devin mai flexibilă, să argumentez deciziile și sfaturile pe baza research-ului, făcându-mă un designer mai bun."
-  }, 
+  },
+  {
+    "name": "Talida Ganciu",
+    "avatar": "./assets/contributors/talida-ganciu.webp",
+    "role": "Frontend Developer",
+    "text": "Acum mai bine de un an am început ca voluntar într-un proiect, dorind să învăt și să mă dezvolt. De atunci, am acumulat multă experiență și am cunoscut oameni valoroși. Un mentor senior frontend m-a ghidat pe parcurs și m-a ajutat să mă perfecționez. Datorită conexiunilor făcute, am primit nu doar oportunități de invățare, ci și proiecte plătite, care mi-au deschis noi uși în carieră."
+  },
   {
     "name": "Patricia Istrate",
     "avatar": "./assets/contributors/patricia-istrate.webp",
     "role": "UI/UX Designer",
     "text": "Colaborarea cu o echipă care a reprezentat și clientul a fost atât satisfăcătoare, cât și provocatoare. Schimbările frecvente și gestionarea feedback-ului mi-au îmbunătățit abilitățile de colaborare și capacitatea de a evidenția soluții practice. Crearea unui produs pentru utilizatori reali a fost o experiență valoroasă, iar această colaborare m-a ajutat să devin mai flexibilă, să argumentez deciziile și sfaturile pe baza research-ului, făcându-mă un designer mai bun."
-  }, 
+  },
   {
-    "name": "Patricia Istrate",
-    "avatar": "./assets/contributors/patricia-istrate.webp",
-    "role": "UI/UX Designer",
-    "text": "Colaborarea cu o echipă care a reprezentat și clientul a fost atât satisfăcătoare, cât și provocatoare. Schimbările frecvente și gestionarea feedback-ului mi-au îmbunătățit abilitățile de colaborare și capacitatea de a evidenția soluții practice. Crearea unui produs pentru utilizatori reali a fost o experiență valoroasă, iar această colaborare m-a ajutat să devin mai flexibilă, să argumentez deciziile și sfaturile pe baza research-ului, făcându-mă un designer mai bun."
-  }, 
-  {
-    "name": "Patricia Istrate",
-    "avatar": "./assets/contributors/patricia-istrate.webp",
-    "role": "UI/UX Designer",
-    "text": "Colaborarea cu o echipă care a reprezentat și clientul a fost atât satisfăcătoare, cât și provocatoare. Schimbările frecvente și gestionarea feedback-ului mi-au îmbunătățit abilitățile de colaborare și capacitatea de a evidenția soluții practice. Crearea unui produs pentru utilizatori reali a fost o experiență valoroasă, iar această colaborare m-a ajutat să devin mai flexibilă, să argumentez deciziile și sfaturile pe baza research-ului, făcându-mă un designer mai bun."
+    "name": "Talida Ganciu",
+    "avatar": "./assets/contributors/talida-ganciu.webp",
+    "role": "Frontend Developer",
+    "text": "Acum mai bine de un an am început ca voluntar într-un proiect, dorind să învăt și să mă dezvolt. De atunci, am acumulat multă experiență și am cunoscut oameni valoroși. Un mentor senior frontend m-a ghidat pe parcurs și m-a ajutat să mă perfecționez. Datorită conexiunilor făcute, am primit nu doar oportunități de invățare, ci și proiecte plătite, care mi-au deschis noi uși în carieră."
   }
 ]

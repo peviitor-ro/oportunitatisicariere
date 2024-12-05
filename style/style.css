@@ -1692,6 +1692,45 @@ header {
   background: #1e524e;
 }
 
+@media (max-width: 1024px) {
+  .stories-container {
+    height: 700px;
+  }
+  .stories-individual {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .stories-right img {
+    margin-top: -12rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    transform: scale(0.6);
+  }
+  .stories-left {
+    height: auto;
+    text-align: center;
+    padding: 4rem;
+    padding-top: 6rem;
+    width: auto;
+    max-width: 51.7rem;
+  }
+  .stories-left .stories-extra {
+    font-size: 2.4rem;
+    width: 40rem;
+    bottom: 2rem;
+  }
+  .stories-left img {
+    transform: scale(0.5);
+    left: 0;
+    top: 0;
+  }
+  .stories-left p {
+    font-size: 1.6rem;
+    text-wrap: balance;
+  }
+}
 /* THANK YOU SECTION */
 .thank-section {
   display: flex;

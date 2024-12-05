@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const storySwiper = new Swiper(".stories-container", {
           effect: "cards",
-          cardsEffect:{
+          cardsEffect: {
             rotate: 40,
             depth: 400,
             modifier: 3,
@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
             clickable: true,
           },
           speed: 1000,
-          direction: 'vertical',
+          direction: "vertical",
           autoplay: {
-            delay: 5000, //viteza cu care se schimba slideurile 
+            delay: 5000, //viteza cu care se schimba slideurile
           },
         });
       })
