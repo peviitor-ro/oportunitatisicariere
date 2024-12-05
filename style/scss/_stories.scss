@@ -14,21 +14,22 @@
       font-size: 2.2rem;
       font-weight: 400;
       text-align: center;
-      color: #000000;
+      color: $black;
       margin-bottom: -0.5rem;
       padding-top: 7rem;
     }
 
     & img {
-      transform: scale(0.7);
+      transform: scale(0.9);
     }
   }
 
   &-text {
-    padding: 7rem;
+    padding: 3.5rem;
     font-size: 1.6rem;
     line-height: 130%;
     text-wrap: balance;
+    width: 100rem;
   }
 
   &-container {
@@ -103,22 +104,37 @@
 
 @media (max-width: $laptop-size) {
   .stories {
+    padding-bottom: 10rem;
+    &-text {
+      padding: 3rem;
+      padding-bottom: -2rem;
+      width: auto;
+    }
     &-container {
       height: 700px;
+      margin-top: 0;
     }
     &-individual {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: -9rem;
     }
+
+    &-right {
+      z-index: 100;
+    }
+
     &-right img {
-      margin-top: -12rem;
+      margin-bottom: -17rem;
       object-fit: cover;
       width: 100%;
-      transform: scale(0.6);
+      transform: scale(0.5);
+      border-radius: 30rem;
     }
 
     &-left {
+      order: 2;
       height: auto;
       text-align: center;
       padding: 4rem;
@@ -143,5 +159,17 @@
         text-wrap: balance;
       }
     }
+  }
+}
+
+@media only screen and (min-width:#{$tablet-size}) {
+  .stories h2 {
+    font-size: 3.2rem;
+  }
+}
+
+@media only screen and (max-width:#{$tablet-size}) {
+  .stories-title img {
+    transform: scale(0.6);
   }
 }

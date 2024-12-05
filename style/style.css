@@ -1625,13 +1625,14 @@ header {
   padding-top: 7rem;
 }
 .stories-title img {
-  transform: scale(0.7);
+  transform: scale(0.9);
 }
 .stories-text {
-  padding: 7rem;
+  padding: 3.5rem;
   font-size: 1.6rem;
   line-height: 130%;
   text-wrap: balance;
+  width: 100rem;
 }
 .stories-container {
   display: flex;
@@ -1698,22 +1699,37 @@ header {
 }
 
 @media (max-width: 1024px) {
+  .stories {
+    padding-bottom: 10rem;
+  }
+  .stories-text {
+    padding: 3rem;
+    padding-bottom: -2rem;
+    width: auto;
+  }
   .stories-container {
     height: 700px;
+    margin-top: 0;
   }
   .stories-individual {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -9rem;
+  }
+  .stories-right {
+    z-index: 100;
   }
   .stories-right img {
-    margin-top: -12rem;
+    margin-bottom: -17rem;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    transform: scale(0.6);
+    transform: scale(0.5);
+    border-radius: 30rem;
   }
   .stories-left {
+    order: 2;
     height: auto;
     text-align: center;
     padding: 4rem;
@@ -1734,6 +1750,16 @@ header {
   .stories-left p {
     font-size: 1.6rem;
     text-wrap: balance;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .stories h2 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .stories-title img {
+    transform: scale(0.6);
   }
 }
 /* THANK YOU SECTION */
