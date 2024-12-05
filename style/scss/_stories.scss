@@ -14,7 +14,7 @@
       font-size: 2.2rem;
       font-weight: 400;
       text-align: center;
-      color: #000000;
+      color: $black;
       margin-bottom: -0.5rem;
       padding-top: 7rem;
     }
@@ -25,10 +25,11 @@
   }
 
   &-text {
-    padding: 7rem;
+    padding: 3.5rem;
     font-size: 1.6rem;
     line-height: 130%;
     text-wrap: balance;
+    width: 100rem;
   }
 
   &-container {
@@ -105,7 +106,9 @@
   .stories {
     padding-bottom: 10rem;
     &-text {
-      padding-bottom: 0;
+      padding: 3rem;
+      padding-bottom: -2rem;
+      width: auto;
     }
     &-container {
       height: 700px;
@@ -115,6 +118,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: -9rem;
     }
 
     &-right {
@@ -155,5 +159,11 @@
         text-wrap: balance;
       }
     }
+  }
+}
+
+@media only screen and (min-width:#{$tablet-size}) {
+  .stories h2 {
+    font-size: 3.2rem;
   }
 }

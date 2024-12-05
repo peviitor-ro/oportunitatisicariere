@@ -1628,10 +1628,11 @@ header {
   transform: scale(0.7);
 }
 .stories-text {
-  padding: 7rem;
+  padding: 3.5rem;
   font-size: 1.6rem;
   line-height: 130%;
   text-wrap: balance;
+  width: 100rem;
 }
 .stories-container {
   display: flex;
@@ -1702,7 +1703,9 @@ header {
     padding-bottom: 10rem;
   }
   .stories-text {
-    padding-bottom: 0;
+    padding: 3rem;
+    padding-bottom: -2rem;
+    width: auto;
   }
   .stories-container {
     height: 700px;
@@ -1712,6 +1715,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -9rem;
   }
   .stories-right {
     z-index: 100;
@@ -1746,6 +1750,11 @@ header {
   .stories-left p {
     font-size: 1.6rem;
     text-wrap: balance;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .stories h2 {
+    font-size: 3.2rem;
   }
 }
 /* THANK YOU SECTION */
