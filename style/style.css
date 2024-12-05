@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+:target {
+  padding-top: 10rem !important;
+}
+
 /* HEADER SECTION */
 header {
   display: flex;
@@ -38,7 +42,7 @@ header {
   position: fixed;
   top: 0;
   left: 50%;
-  z-index: 99;
+  z-index: 1000;
 }
 
 .close-menu-icon,
@@ -130,8 +134,9 @@ header {
 #our-mission,
 #how-contribute,
 #why-contribute,
-#team {
-  scroll-margin-top: 100px;
+#team,
+#schedule {
+  scroll-margin-top: 50px;
 }
 
 .responsive-navbar {
@@ -2724,6 +2729,7 @@ footer .footer-bottom h4 {
 }
 
 .main-container-error {
+  margin-top: 2rem;
   width: 100%;
   min-height: 80vh;
   margin-bottom: 8rem;
