@@ -59,7 +59,7 @@ $tablet-line-height-p: 2rem;
     gap: 3rem;
 
     #team-navbar {
-      position: sticky; 
+      position: sticky;
       top: 9rem;
       display: flex;
       align-items: center;
@@ -184,7 +184,9 @@ $tablet-line-height-p: 2rem;
 
         &:hover {
           background-color: #ededed;
-          box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
+          box-shadow:
+            2px 2px 6px #00000020,
+            -2px -2px 12px $white;
         }
 
         a {

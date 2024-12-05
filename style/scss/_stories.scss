@@ -1,0 +1,147 @@
+@import "../utils/colors";
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      text-align: center;
+      color: #000000;
+      margin-bottom: -0.5rem;
+      padding-top: 7rem;
+    }
+
+    & img {
+      transform: scale(0.7);
+    }
+  }
+
+  &-text {
+    padding: 7rem;
+    font-size: 1.6rem;
+    line-height: 130%;
+    text-wrap: balance;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 920px;
+    height: 600px;
+    margin-top: 5rem;
+  }
+  &-individual {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-left {
+    width: 49.2rem;
+    height: 51.7rem;
+    background-color: $green-mint;
+    color: $white;
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 12rem 7rem 0 7rem;
+    position: relative;
+    line-height: 130%;
+    text-wrap: balance;
+
+    & img {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+      filter: invert(43%) sepia(21%) saturate(964%) hue-rotate(126deg)
+        brightness(91%) contrast(91%);
+    }
+  }
+
+  &-name {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    & p {
+      color: lightgray;
+    }
+  }
+
+  &-right img {
+    width: 34.8rem;
+    height: 51.7rem;
+    object-fit: cover;
+  }
+
+  &-extra {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    color: $dark-mint;
+    font-size: 4.4rem;
+    padding-left: 25rem;
+    line-height: 80%;
+  }
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+    right: -3rem;
+    top: 40%;
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 20px;
+      border-radius: 1rem;
+      background: $dark-mint;
+    }
+  }
+}
+
+@media (max-width: $laptop-size) {
+  .stories {
+    &-container {
+      height: 700px;
+    }
+    &-individual {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &-right img {
+      margin-top: -12rem;
+      object-fit: cover;
+      width: 100%;
+      transform: scale(0.6);
+    }
+
+    &-left {
+      height: auto;
+      text-align: center;
+      padding: 4rem;
+      padding-top: 6rem;
+      width: auto;
+      max-width: 51.7rem;
+
+      .stories-extra {
+        font-size: 2.4rem;
+        width: 40rem;
+        bottom: 2rem;
+      }
+
+      & img {
+        transform: scale(0.5);
+        left: 0;
+        top: 0;
+      }
+
+      & p {
+        font-size: 1.6rem;
+        text-wrap: balance;
+      }
+    }
+  }
+}

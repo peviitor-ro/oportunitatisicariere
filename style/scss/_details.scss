@@ -67,6 +67,55 @@
   }
 }
 
+.jd__header {
+  position: relative;
+}
+
+.jd__volunteer {
+  transform: scale(0.7);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+@media (max-width: 770px) {
+  .jd__volunteer {
+    transform: scale(0.7);
+    bottom: 7rem;
+    top: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .jd__volunteer {
+    transform: scale(0.6);
+    bottom: 14rem;
+    top: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .jd__volunteer {
+    transform: scale(0.4);
+    right: -4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .jd__volunteer {
+    transform: scale(0.4);
+    right: -4rem;
+    bottom: 19rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .jd__volunteer {
+    transform: scale(0.3);
+    right: -6rem;
+  }
+}
+
 .jd__container {
   gap: 3rem;
   display: flex;
@@ -211,7 +260,7 @@
         }
       }
 
-      .cta-buttons{
+      .cta-buttons {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -229,17 +278,17 @@
           width: clamp(230px, 48%, 100%);
           align-self: flex-end;
           cursor: pointer;
-  
+
           &:hover {
             transition: all 0.3s;
             background-color: $dark-mint;
           }
         }
         @media (min-width: $tablet-size) {
-          flex-grow:1;
+          flex-grow: 1;
           justify-content: flex-end;
           .applyBtn {
-            width:230px; 
+            width: 230px;
           }
         }
       }
@@ -451,7 +500,7 @@
       }
 
       @media (min-width: $tablet-size) {
-        width: 238px; 
+        width: 238px;
       }
     }
   }
@@ -486,11 +535,11 @@
     right: 2vw;
   }
 
-  @media (min-width: 769px) and (max-width: $laptop-size){
+  @media (min-width: 769px) and (max-width: $laptop-size) {
     right: 2.6vw;
   }
 
-  @media (min-width: 500px) and  (max-width: $tablet-size) {
+  @media (min-width: 500px) and (max-width: $tablet-size) {
     right: 4.2vw;
   }
 
