@@ -20,7 +20,7 @@
     }
 
     & img {
-      transform: scale(0.7);
+      transform: scale(0.9);
     }
   }
 
@@ -165,5 +165,11 @@
 @media only screen and (min-width:#{$tablet-size}) {
   .stories h2 {
     font-size: 3.2rem;
+  }
+}
+
+@media only screen and (max-width:#{$tablet-size}) {
+  .stories-title img {
+    transform: scale(0.6);
   }
 }

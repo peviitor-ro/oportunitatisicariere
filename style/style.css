@@ -1625,7 +1625,7 @@ header {
   padding-top: 7rem;
 }
 .stories-title img {
-  transform: scale(0.7);
+  transform: scale(0.9);
 }
 .stories-text {
   padding: 3.5rem;
@@ -1755,6 +1755,11 @@ header {
 @media only screen and (min-width: 768px) {
   .stories h2 {
     font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .stories-title img {
+    transform: scale(0.6);
   }
 }
 /* THANK YOU SECTION */
