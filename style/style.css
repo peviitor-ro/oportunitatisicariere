@@ -2274,6 +2274,50 @@ footer .footer-bottom h4 {
   }
 }
 
+.jd__header {
+  position: relative;
+}
+
+.jd__volunteer {
+  transform: scale(0.7);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+@media (max-width: 770px) {
+  .jd__volunteer {
+    transform: scale(0.7);
+    bottom: 7rem;
+    top: auto;
+  }
+}
+@media (max-width: 640px) {
+  .jd__volunteer {
+    transform: scale(0.6);
+    bottom: 14rem;
+    top: auto;
+  }
+}
+@media (max-width: 530px) {
+  .jd__volunteer {
+    transform: scale(0.4);
+    right: -4rem;
+  }
+}
+@media (max-width: 450px) {
+  .jd__volunteer {
+    transform: scale(0.4);
+    right: -4rem;
+    bottom: 19rem;
+  }
+}
+@media (max-width: 320px) {
+  .jd__volunteer {
+    transform: scale(0.3);
+    right: -6rem;
+  }
+}
 .jd__container {
   gap: 3rem;
   display: flex;
