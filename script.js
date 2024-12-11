@@ -245,8 +245,11 @@ const toggleArrowVisibility = () => {
 
 window.addEventListener("scroll", toggleArrowVisibility);
 
+//we check if we are in the main page to prevent errors in the scope of script.js
+let footer  = document.getElementsByClassName("footer-social")[0];
+
 //Tooltip for footer links
-tippy('.footer-link', {
+footer && tippy('.footer-link', {
   content: '[data-tippy-content]',
   placement: 'bottom-start',
   delay: 100,
@@ -255,13 +258,13 @@ tippy('.footer-link', {
 }); 
 
 //Tooltip for Jitsi Meets
-tippy('.meeting-link', {
+footer && tippy('.meeting-link', {
   content: '[data-tippy-content]',
   placement: 'bottom-start',
   delay: 100,
   followCursor: true,
   theme: 'tooltip-jitsi-theme',
-}); 
+});  
 
 
 function redirectLinks() {
