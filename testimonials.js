@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
           speed: 1000,
           direction: "vertical",
           autoplay: {
-            delay: 10000, //viteza cu care se schimba slideurile
+            delay: 45000, //viteza cu care se schimba slideurile
           },
         });
       })
