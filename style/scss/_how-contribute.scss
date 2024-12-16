@@ -77,18 +77,13 @@
 
       .swiper-slide {
         text-align: center;
-        font-size: 1.8rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
         background-color: #fff;
-        padding: 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 0.5rem;
         height: 37rem;
-        padding-bottom: 3rem;
         width: 95%;
 
         img {
@@ -96,25 +91,35 @@
           width: 100%;
           height: 25rem;
           object-fit: cover;
-          border-radius: 5px 5px 0 0;
+          border-radius: 0.5rem 0.5rem 0 0;
         }
 
-        h3 {
-          font-size: 1.8rem;
-          margin-bottom: 1rem;
-        }
+        .how-contribute__job__text {
+          width: 100%;
+          height: 8rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2rem;
 
-        a {
-          font-size: 1.4rem;
-          padding: 0.5rem 1rem;
-          background-color: $green-mint;
-          color: white;
-          text-decoration: none;
-          border-radius: 0.5rem;
-        }
+          &__title {
+            font-size: 1.8rem;
+            padding: 0 2rem;
+          }
 
-        a:hover {
-          background-color: darken($green-mint, 10%);
+          &__detail-btn {
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+            background-color: $green-mint;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+
+            &:hover {
+              background-color: darken($green-mint, 10%);
+            }
+          }
         }
       }
     }
@@ -125,7 +130,7 @@
       align-items: center;
       background-color: #f8d7da;
       border: 1px solid #f5c6cb;
-      border-radius: 5px;
+      border-radius: 0.5rem;
       color: #721c24;
       height: 37rem; // Same height as .swiper-slide
       text-align: center;
@@ -139,6 +144,7 @@
 
         h3 {
           font-size: 1.8rem;
+          padding: 0 2rem;
           margin: 0;
         }
       }

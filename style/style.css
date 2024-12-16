@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-:target {
+section:target {
   padding-top: 10rem !important;
 }
 
@@ -972,18 +972,13 @@ header {
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
-  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
   background-color: #fff;
-  padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   height: 37rem;
-  padding-bottom: 3rem;
   width: 95%;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide img {
@@ -992,13 +987,22 @@ header {
   height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
-.how-contribute .swiper .swiper-wrapper .swiper-slide h3 {
+.how-contribute .swiper .swiper-wrapper .swiper-slide .how-contribute__job__text {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.how-contribute .swiper .swiper-wrapper .swiper-slide .how-contribute__job__text__title {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  padding: 0 2rem;
 }
-.how-contribute .swiper .swiper-wrapper .swiper-slide a {
+.how-contribute .swiper .swiper-wrapper .swiper-slide .how-contribute__job__text__detail-btn {
   font-size: 1.4rem;
   padding: 0.5rem 1rem;
   background-color: #2f7973;
@@ -1006,7 +1010,7 @@ header {
   text-decoration: none;
   border-radius: 0.5rem;
 }
-.how-contribute .swiper .swiper-wrapper .swiper-slide a:hover {
+.how-contribute .swiper .swiper-wrapper .swiper-slide .how-contribute__job__text__detail-btn:hover {
   background-color: #215450;
 }
 .how-contribute .swiper .no-result {
@@ -1015,7 +1019,7 @@ header {
   align-items: center;
   background-color: #f8d7da;
   border: 1px solid #f5c6cb;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: #721c24;
   height: 37rem;
   text-align: center;
@@ -1029,6 +1033,7 @@ header {
 }
 .how-contribute .swiper .no-result .no-result__text h3 {
   font-size: 1.8rem;
+  padding: 0 2rem;
   margin: 0;
 }
 .how-contribute .how-contribute-img__container {

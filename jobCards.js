@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
         jobElement.innerHTML = `
           <img src="${job.image}" alt="${job.title} Logo" />
           <div class="how-contribute__job__text">
-            <h3>${job.title}</h3>
-            <a href="details.html?id=${job.id}" class="detail-btn" data-id="${job.id}">Detalii</a>
+            <h3 class="how-contribute__job__text__title">${job.title}</h3>
+            <a href="details.html?id=${job.id}" class="how-contribute__job__text__detail-btn" data-id="${job.id}">Detalii</a>
           </div>
         `;
         jobContainer.appendChild(jobElement);
