@@ -36,16 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to add or remove the nav-bottom-border class
   // Remove if you want the flag to be always visible
-  // function removeNavBottomBorder() {
-  //   const scrollPosition = window.scrollY;
-  //   const navbar = document.querySelector(".nav");
+  function removeNavBottomBorder() {
+    const scrollPosition = window.scrollY;
+    const navbar = document.querySelector(".nav");
 
-  //   if (scrollPosition > 50) {
-  //     navbar.classList.add("nav-bottom-border");
-  //   } else {
-  //     navbar.classList.remove("nav-bottom-border");
-  //   }
-  // }
+    if (scrollPosition > 50) {
+      navbar.classList.add("nav-bottom-border");
+    } else {
+      navbar.classList.remove("nav-bottom-border");
+    }
+  }
 
   function toggleLogoVisibility() {
     if (logoSection && joinUsSection) {
