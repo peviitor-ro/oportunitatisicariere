@@ -80,6 +80,26 @@ header {
   box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.2),
     /* Top shadow */ 0 8px 8px -4px rgba(0, 0, 0, 0.14),
     /* Bottom shadow */ 0 8px 12px -4px rgba(0, 0, 0, 0.12);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(
+      to right,
+      $ro-blue 0%,
+      $ro-blue 33.33%,
+      $ro-yellow 33.33%,
+      $ro-yellow 66.66%,
+      $ro-red 66.66%,
+      $ro-red 100%
+    );
+    filter: blur(2px);
+    z-index: -1;
+  }
 }
 
 .nav__links {

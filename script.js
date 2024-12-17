@@ -34,35 +34,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function removeNavBottomBorder() {
-    const scrollPosition = window.scrollY;
-    const navbar = document.querySelector(".nav");
+  // Function to add or remove the nav-bottom-border class
+  // Remove if you want the flag to be always visible
+  // function removeNavBottomBorder() {
+  //   const scrollPosition = window.scrollY;
+  //   const navbar = document.querySelector(".nav");
 
-    if (scrollPosition > 50) {
-      navbar.classList.add("nav-bottom-border");
-    } else {
-      navbar.classList.remove("nav-bottom-border");
-    }
-  }
+  //   if (scrollPosition > 50) {
+  //     navbar.classList.add("nav-bottom-border");
+  //   } else {
+  //     navbar.classList.remove("nav-bottom-border");
+  //   }
+  // }
 
   function toggleLogoVisibility() {
-    if(logoSection && joinUsSection) {
+    if (logoSection && joinUsSection) {
       const introTreshold = logoSection.getBoundingClientRect().bottom;
-    const footerTreshold = joinUsSection.getBoundingClientRect().top;
+      const footerTreshold = joinUsSection.getBoundingClientRect().top;
 
-    // Remove footerTreshold if you do not want the behavior to trigger
-    // As the footer comes into view
-    if (introTreshold < 100 && footerTreshold > -300) {
-      // Enable title and make it visible
-      navTitleLogo.style.pointerEvents = "auto";
-      navTitleLogo.style.cursor = "pointer";
-      navTitleLogo.classList.add("visible-title");
-    } else {
-      // Disable title and hide it
-      navTitleLogo.style.pointerEvents = "none";
-      navTitleLogo.style.cursor = "none";
-      navTitleLogo.classList.remove("visible-title");
-    }
+      // Remove footerTreshold if you do not want the behavior to trigger
+      // As the footer comes into view
+      if (introTreshold < 100 && footerTreshold > -300) {
+        // Enable title and make it visible
+        navTitleLogo.style.pointerEvents = "auto";
+        navTitleLogo.style.cursor = "pointer";
+        navTitleLogo.classList.add("visible-title");
+      } else {
+        // Disable title and hide it
+        navTitleLogo.style.pointerEvents = "none";
+        navTitleLogo.style.cursor = "none";
+        navTitleLogo.classList.remove("visible-title");
+      }
     }
   }
 
@@ -95,7 +97,7 @@ function showMenuContent() {
     scrollBtn.style.display = "none";
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
-  } 
+  }
 
   navLinksList.addEventListener("click", function () {
     navLinksList.classList.remove("show");
@@ -118,7 +120,7 @@ function hideMenuContent() {
   if (hamburgerIcon.classList.contains("hidden")) {
     document.body.style.overflow = "";
   }
-  
+
   navTitleLogo.classList.remove("visible-title");
   navLinksList.classList.remove("show");
   closeIcon.classList.toggle("hidden");
@@ -219,7 +221,7 @@ const scrollBtn = document.querySelector(".top-redirect-btn");
 const closeIcon = document.querySelector(".close-menu-icon");
 
 const toggleArrowVisibility = () => {
-  if(scrollBtn && closeIcon) {
+  if (scrollBtn && closeIcon) {
     if (
       window.scrollY > 500 &&
       window.matchMedia("(min-width: 1023px)").matches
@@ -246,26 +248,27 @@ const toggleArrowVisibility = () => {
 window.addEventListener("scroll", toggleArrowVisibility);
 
 //we check if we are in the main page to prevent errors in the scope of script.js
-let footer  = document.getElementsByClassName("footer-social")[0];
+let footer = document.getElementsByClassName("footer-social")[0];
 
 //Tooltip for footer links
-footer && tippy('.footer-link', {
-  content: '[data-tippy-content]',
-  placement: 'bottom-start',
-  delay: 100,
-  followCursor: true,
-  theme: 'tooltip-footer-theme',
-}); 
+footer &&
+  tippy(".footer-link", {
+    content: "[data-tippy-content]",
+    placement: "bottom-start",
+    delay: 100,
+    followCursor: true,
+    theme: "tooltip-footer-theme",
+  });
 
 //Tooltip for Jitsi Meets
-footer && tippy('.meeting-link', {
-  content: '[data-tippy-content]',
-  placement: 'bottom-start',
-  delay: 100,
-  followCursor: true,
-  theme: 'tooltip-jitsi-theme',
-});  
-
+footer &&
+  tippy(".meeting-link", {
+    content: "[data-tippy-content]",
+    placement: "bottom-start",
+    delay: 100,
+    followCursor: true,
+    theme: "tooltip-jitsi-theme",
+  });
 
 function redirectLinks() {
   const navLinks = document.querySelectorAll(".nav__links__nav a");
@@ -276,8 +279,8 @@ function redirectLinks() {
     links.push(arrowLink);
   }
 
-  links.forEach(link => {
-    link.addEventListener("click", function(event) {
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
       event.preventDefault();
       const href = this.getAttribute("href");
       const [targetPage, targetId] = href.split("#");
@@ -292,10 +295,11 @@ function redirectLinks() {
 
       // If already on the correct page or no targetPage, scroll to the section
       if (targetSection) {
-        const offset = targetPage !== window.location.pathname ? headerHeight : 20;
+        const offset =
+          targetPage !== window.location.pathname ? headerHeight : 20;
         window.scrollTo({
           top: targetSection.offsetTop - offset,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       } else {
         console.warn(`Target section not found: ${targetId}`);
@@ -305,4 +309,3 @@ function redirectLinks() {
 }
 
 window.addEventListener("load", redirectLinks);
-
