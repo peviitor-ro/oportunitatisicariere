@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       const job = data.find((job) => job.id === jobId);
+
+      if (job.isHiring === false) {
+        // Redirect to 404 if not hiring for mentioned position
+        window.location.href = "404.html";
+        return;
+      }
+
       if (job) {
         preferredTeam = job.team;
         document.querySelector(".title").textContent = job.title;
