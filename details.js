@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       const job = data.find((job) => job.id === jobId);
 
+      if (!job) {
+        // Redirect to 404 if job not found in data
+        window.location.href = "404.html";
+        return;
+      }
       if (job.isHiring === false) {
         // Redirect to 404 if not hiring for mentioned position
         window.location.href = "404.html";
