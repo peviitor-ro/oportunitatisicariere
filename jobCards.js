@@ -24,7 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderJobs(data) {
     jobContainer.innerHTML = "";
-    if (data.length === 0) {
+
+    // Filter out inactive jobs
+    const activeJobs = data.filter((job) => job.isHiring);
+
+    if (activeJobs.length === 0) {
       const noResultElement = document.createElement("div");
       noResultElement.classList.add(
         "how-contribute__job",
@@ -38,7 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       jobContainer.appendChild(noResultElement);
     } else {
-      data.forEach((job) => {
+      activeJobs.forEach((job) => {
+        if (!job.isHiring) return;
         const jobElement = document.createElement("div");
         jobElement.classList.add("how-contribute__job", "swiper-slide");
         jobElement.innerHTML = `
