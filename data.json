@@ -2,6 +2,7 @@
   {
     "id": "onboarding-volunteer",
     "title": "Onboarding Project Volunteer",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Human Resources Department",
@@ -50,6 +51,7 @@
   {
     "id": "mobile-tester",
     "title": "Mobile Tester",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Quality Assurance Department",
@@ -99,6 +101,7 @@
   {
     "id": "mobile-developer",
     "title": "Mobile Developer",
+    "isHiring": true,
     "team":"Front-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Development Department",
@@ -149,6 +152,7 @@
   {
     "id": "usability-tester",
     "title": "Usability Tester",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Quality Assurance Department",
@@ -198,6 +202,7 @@
   {
     "id": "ux-expert",
     "title": "UX Expert",
+    "isHiring": true,
     "team":"UI/UX",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Design Department",
@@ -248,6 +253,7 @@
   {
     "id": "test-lead",
     "title": "Test Lead",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Quality Assurance Department",
@@ -298,6 +304,7 @@
   {
     "id": "lead-developer",
     "title": "Lead Developer",
+    "isHiring": true,
     "team":"Front-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Development Department",
@@ -348,6 +355,7 @@
   {
     "id": "assistant-manager",
     "title": "Assistant Manager",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Administrative Department",
@@ -402,6 +410,7 @@
   {
     "id": "event-planner",
     "title": "Event Planner",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Marketing Department",
@@ -452,6 +461,7 @@
   {
     "id": "pr-specialist",
     "title": "PR Specialist",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Communications Department",
@@ -502,6 +512,7 @@
   {
     "id": "fundraiser",
     "title": "Fundraiser",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Fundraising Department",
@@ -553,6 +564,7 @@
   {
     "id": "marketing-specialist",
     "title": "Marketing Specialist",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Marketing Department",
@@ -603,6 +615,7 @@
   {
     "id": "hr",
     "title": "HR",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "Administrative Department",
@@ -653,6 +666,7 @@
   {
     "id": "application-support-engineer",
     "title": "Application Support Engineer",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -703,6 +717,7 @@
   {
     "id": "product-owner",
     "title": "Product Owner",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -754,6 +769,7 @@
   {
     "id": "delivery-manager",
     "title": "Delivery Manager",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -803,6 +819,7 @@
   {
     "id": "project-manager",
     "title": "Project Manager",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -853,6 +870,7 @@
   {
     "id": "business-analyst",
     "title": "Business Analyst",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -906,6 +924,7 @@
   {
     "id": "devops-github",
     "title": "DevOPS for GitHub",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -960,6 +979,7 @@
   {
     "id": "devops-apache-solr",
     "title": "DevOPS with Apache SOLR",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1023,6 +1043,7 @@
   {
     "id": "devops",
     "title": "DevOPS",
+    "isHiring": true,
     "team":"",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1084,6 +1105,7 @@
   {
     "id": "backend-developer-php",
     "title": "Backend Developer with PHP",
+    "isHiring": true,
     "team":"Back-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1144,6 +1166,7 @@
   {
     "id": "automation-tester-playwright",
     "title": "Automation Tester with Playwright",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1205,6 +1228,7 @@
   {
     "id": "automation-tester-selenium",
     "title": "Automation Tester with Selenium",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1266,6 +1290,7 @@
   {
     "id": "automation-tester-javascript",
     "title": "Automation Tester with JavaScript",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1327,6 +1352,7 @@
   {
     "id": "automation-tester-php",
     "title": "Automation Tester with PHP",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1388,6 +1414,7 @@
   {
     "id": "automation-tester-java",
     "title": "Automation Tester with JAVA",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1449,6 +1476,7 @@
   {
     "id": "automation-tester-python",
     "title": "Automation Tester with Python",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1510,6 +1538,7 @@
   {
     "id": "manual-tester",
     "title": "Manual Tester",
+    "isHiring": true,
     "team":"QA",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1569,6 +1598,7 @@
   {
     "id": "frontend-developer",
     "title": "Frontend Developer",
+    "isHiring": true,
     "team":"Front-end",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1633,6 +1663,7 @@
   {
     "id": "data-scientist",
     "title": "Data Scientist",
+    "isHiring": true,
     "team":"Data Quality",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1699,6 +1730,7 @@
   {
     "id": "data-analyst",
     "title": "Data Analyst",
+    "isHiring": true,
     "team":"Data Quality",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1772,6 +1804,7 @@
   {
     "id": "data-scraper",
     "title": "Data Scraper",
+    "isHiring": true,
     "team":"Data Quality",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
@@ -1845,6 +1878,7 @@
   {
     "id": "web-scraper",
     "title": "Web Scraper",
+    "isHiring": true,
     "team":"Scraping",
     "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
     "department": "IT Department",
