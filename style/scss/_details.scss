@@ -259,40 +259,6 @@
           }
         }
       }
-
-      // .cta-buttons {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   align-items: center;
-      //   flex-wrap: wrap;
-      //   gap: 2rem;
-
-      //   .applyBtn {
-      //     background-color: $green-mint;
-      //     border: none;
-      //     border-radius: 0.8rem;
-      //     padding: 1.2rem 3.2rem;
-      //     color: $white;
-      //     font-size: 1.8rem;
-      //     font-weight: 600;
-      //     width: clamp(230px, 48%, 100%);
-      //     align-self: flex-end;
-      //     cursor: pointer;
-
-      //     &:hover {
-      //       transition: all 0.3s;
-      //       background-color: $dark-mint;
-      //     }
-      //   }
-      //   @media (min-width: $tablet-size) {
-      //     flex-grow: 1;
-      //     justify-content: flex-end;
-      //     .applyBtn {
-      //       width: 230px;
-      //     }
-      //   }
-      // }
     }
   }
 
@@ -478,14 +444,13 @@
                 height: 36px;
                 color: $white;
                 border-radius: 50%;
-                background-color: $darker-gray; /* Culoarea implicita a svg-ului */
+                background-color: $darker-gray;
                 mask-size: 32px 32px;
                 mask-repeat: no-repeat;
                 mask-position: center;
                 transition: all 0.2s ease-in-out;
               }
 
-              /* Setarea iconitelor */
               &:nth-child(1) a {
                 mask-size: 28px 28px;
                 mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
@@ -499,17 +464,16 @@
                 mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
               }
 
-              /* Culori on hover pentru svg-uri */
               &:nth-child(1):hover a {
-                background-color: $linkedin-blue; /* Culoare LinkedIn */
+                background-color: $linkedin-blue;
               }
 
               &:nth-child(2):hover a {
-                background-color: $black; /* Culoare GitHub */
+                background-color: $black;
               }
 
               &:nth-child(3):hover a {
-                background-color: $discord-purple; /* Culoare Discord */
+                background-color: $discord-purple;
               }
             }
           }
@@ -550,7 +514,6 @@
   }
 
   .cta-btn-group {
-    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -567,14 +530,13 @@
       font-size: 1.8rem;
       font-weight: 600;
       cursor: pointer;
-      width: 240px;
+      width: 100%;
       transition: all 0.3s;
 
       &:hover {
         background-color: $dark-mint;
       }
 
-      // Highlight the first child as a secondary button
       &:first-child {
         background-color: transparent;
         border: 2px solid $green-mint;

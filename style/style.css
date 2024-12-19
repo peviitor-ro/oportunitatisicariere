@@ -2673,8 +2673,6 @@ footer .footer-bottom h4 {
   border-radius: 50%;
   border: 2px solid transparent;
   transition: all 0.2s ease-in-out;
-  /* Setarea iconitelor */
-  /* Culori on hover pentru svg-uri */
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:hover {
   background-color: #ededed;
@@ -2685,7 +2683,7 @@ footer .footer-bottom h4 {
   height: 36px;
   color: #f3f3f3;
   border-radius: 50%;
-  background-color: #4b4b4b; /* Culoarea implicita a svg-ului */
+  background-color: #4b4b4b;
   mask-size: 32px 32px;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -2702,13 +2700,13 @@ footer .footer-bottom h4 {
   mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1):hover a {
-  background-color: #0a66c2; /* Culoare LinkedIn */
+  background-color: #0a66c2;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(2):hover a {
-  background-color: #000000; /* Culoare GitHub */
+  background-color: #000000;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(3):hover a {
-  background-color: #738adb; /* Culoare Discord */
+  background-color: #738adb;
 }
 .jd__container .jd__body .about .contact .contact__name,
 .jd__container .jd__body .about .contact .contact__person {
@@ -2739,7 +2737,6 @@ footer .footer-bottom h4 {
   }
 }
 .jd__container .cta-btn-group {
-  padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -2756,7 +2753,7 @@ footer .footer-bottom h4 {
   font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
-  width: 240px;
+  width: 100%;
   transition: all 0.3s;
 }
 .jd__container .cta-btn-group .applyBtn:hover {
