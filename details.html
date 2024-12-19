@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style/style.css" />
@@ -188,14 +188,14 @@
                       <span class="salary"></span>
                     </div>
                   </div>
-                  <div class="cta-buttons">
+                  <div class="cta-btn-group">
+                    <button class="applyBtn go-to-team-btn">Vezi echipa</button>
                     <button
                       class="applyBtn"
                       onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
                     >
                       Aplică
                     </button>
-                    <button class="applyBtn go-to-team-btn">Vezi echipa</button>
                   </div>
                 </div>
               </div>
@@ -273,69 +273,105 @@
                   data-aos-duration="1100"
                 ></ul>
               </div>
-              <hr />
+
               <div class="about">
-                <div class="general__info">
-                  <p
-                    class="contact__name under"
-                    data-aos="fade-up"
-                    data-aos-duration="900"
-                  >
-                    Date de contact
-                  </p>
-                  <ul class="list" id="contact__list">
-                    <li id="phone" data-aos="fade-up" data-aos-duration="1000">
-                      Telefon:&nbsp;
-                    </li>
-                    <li id="email" data-aos="fade-up" data-aos-duration="1100">
-                      Email:&nbsp;
-                    </li>
-                    <li
-                      id="address"
+                <div
+                  class="contact"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  <div class="contact-profile">
+                    <img
+                      id="recruiter-photo"
+                      src=""
+                      alt="Recruiter"
+                      data-aos="flip-left"
+                      data-aos-duration="1100"
+                    />
+                    <div class="employer-socials">
+                      <span
+                        ><a id="employer-linkedin" href="" target="_blank"></a
+                      ></span>
+                      <span
+                        ><a id="employer-github" href="" target="_blank"></a
+                      ></span>
+                      <span
+                        ><a id="employer-discord" href="" target="_blank"></a
+                      ></span>
+                    </div>
+                    <!-- <p class="contact__person"></p> -->
+                    <!-- <p class="contact__role"></p> -->
+                  </div>
+
+                  <div class="contact-info">
+                    <p
+                      class="contact__name under"
                       data-aos="fade-up"
-                      data-aos-duration="1200"
+                      data-aos-duration="900"
                     >
-                      Adresă:&nbsp;
-                    </li>
-                  </ul>
-                </div>
-                <div class="contact">
-                  <p
-                    class="contact__name under"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    Persoană de contact
-                  </p>
-                  <img
-                    id="recruiter-photo"
-                    src=""
-                    alt="Recruiter"
-                    data-aos="flip-left"
-                    data-aos-duration="1100"
-                  />
-                  <div data-aos="fade-up" data-aos-duration="1100">
-                    <p class="contact__person"></p>
-                    <p class="contact__role"></p>
+                      Date de contact:
+                    </p>
+                    <p
+                      class="contact__name under contact__person"
+                      data-aos="fade-up"
+                      data-aos-duration="900"
+                    >
+                      <!-- Contact name -->
+                    </p>
+                    <p
+                      class="contact__name under contact__role"
+                      data-aos="fade-up"
+                      data-aos-duration="900"
+                    >
+                      <!-- Contact role -->
+                    </p>
+
+                    <ul class="list" id="contact__list">
+                      <li
+                        id="location"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        Țară:&nbsp;
+                      </li>
+                      <li
+                        id="address"
+                        data-aos="fade-up"
+                        data-aos-duration="1100"
+                      >
+                        Adresă:&nbsp;
+                      </li>
+                      <li
+                        id="email"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        Email:&nbsp;
+                      </li>
+                    </ul>
                   </div>
                 </div>
+
+                <div
+                  class="cta-btn-group"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <button class="applyBtn go-to-team-btn">Vezi echipa</button>
+                  <button
+                    class="applyBtn"
+                    onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
+                  >
+                    Aplică
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="jd__apply" data-aos="zoom-in" data-aos-duration="1000">
-              <button
-                class="applyBtn"
-                onclick="window.open('https://discord.gg/KPMkdUfQNu', '_blank')"
-              >
-                Aplică
-              </button>
-              <button class="applyBtn go-to-team-btn">Vezi echipa</button>
             </div>
           </div>
         </main>
       </div>
     </div>
     <footer class="details-footer-container">
-      <hr class="details-footer-line" />
       <div
         class="details-footer-bottom"
         data-aos="fade-up"
