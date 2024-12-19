@@ -66,12 +66,21 @@ document.addEventListener("DOMContentLoaded", () => {
           job.aboutEmployer.name;
         document.querySelector(".contact__role").textContent =
           job.aboutEmployer.title;
-        document.getElementById("phone").textContent += job.aboutEmployer.phone;
+        document.getElementById("location").textContent += job.location;
         document.getElementById(
           "email"
         ).innerHTML += `<a href="mailto:${job.aboutEmployer.email}">${job.aboutEmployer.email}</a>`;
         document.getElementById("address").textContent +=
           job.aboutEmployer.address;
+        document
+          .getElementById("employer-linkedin")
+          .setAttribute("href", job.aboutEmployer.linkedin);
+        document
+          .getElementById("employer-github")
+          .setAttribute("href", job.aboutEmployer.github);
+        document
+          .getElementById("employer-discord")
+          .setAttribute("href", job.aboutEmployer.discord);
       }
       checkPath(data); // Call the function to check if the path matches any of the job IDs
     })
