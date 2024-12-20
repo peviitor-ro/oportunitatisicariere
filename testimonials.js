@@ -38,13 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           grabCursor: true,
           rewind: true,
-          mousewheel: true,
+          mousewheel: {
+            forceToAxis: true,
+          },
           pagination: {
             el: ".stories-pagination",
             clickable: true,
           },
           speed: 1000,
-          direction: "vertical",
+          direction: "horizontal",
           autoplay: {
             delay: 45000, //viteza cu care se schimba slideurile
           },
