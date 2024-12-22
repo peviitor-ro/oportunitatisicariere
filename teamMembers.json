@@ -464,8 +464,8 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end Developer",
-        "teamLead": false
+        "position": "Front-end Lead",
+        "teamLead": true
       }
     ],
     "socials": {
@@ -544,8 +544,8 @@
     "roles":[
       {
         "team": "Front-end",
-        "position": "Front-end Developer",
-        "teamLead": false
+        "position": "Front-end Lead",
+        "teamLead": true
       }
     ],
     "socials": {
