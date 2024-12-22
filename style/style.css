@@ -1835,11 +1835,11 @@ footer {
   right: 1rem;
   top: 1rem; }
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   .jd__volunteer {
     transform: scale(0.7);
     bottom: 7rem;
-    top: auto; } }
+    top: 25%; } }
 
 @media (max-width: 640px) {
   .jd__volunteer {
@@ -1969,32 +1969,6 @@ footer {
           .jd__container .jd__main .subtitles .info .item .img {
             stroke: #6b6b6b;
             fill: #6b6b6b; }
-      .jd__container .jd__main .subtitles .cta-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem; }
-        .jd__container .jd__main .subtitles .cta-buttons .applyBtn {
-          background-color: #2f7973;
-          border: none;
-          border-radius: 0.8rem;
-          padding: 1.2rem 3.2rem;
-          color: #f3f3f3;
-          font-size: 1.8rem;
-          font-weight: 600;
-          width: clamp(230px, 48%, 100%);
-          align-self: flex-end;
-          cursor: pointer; }
-          .jd__container .jd__main .subtitles .cta-buttons .applyBtn:hover {
-            transition: all 0.3s;
-            background-color: #1e524e; }
-        @media (min-width: 768px) {
-          .jd__container .jd__main .subtitles .cta-buttons {
-            flex-grow: 1;
-            justify-content: flex-end; }
-            .jd__container .jd__main .subtitles .cta-buttons .applyBtn {
-              width: 230px; } }
   .jd__container .jd__body {
     display: flex;
     flex-direction: column;
@@ -2102,28 +2076,74 @@ footer {
       @media (min-width: 1440px) {
         .jd__container .jd__body .list {
           font-size: 2.6rem; } }
-    .jd__container .jd__body hr {
-      border: 0.1rem solid rgba(0, 0, 0, 0.2);
-      width: 70vw; }
     .jd__container .jd__body > div:last-child {
       gap: 3.4rem; }
     .jd__container .jd__body .general__info {
       display: flex;
       flex-direction: column;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+      padding-bottom: 1.5rem;
       gap: 1.2rem; }
     .jd__container .jd__body .about {
       display: flex;
-      flex-direction: column; }
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
       .jd__container .jd__body .about .contact {
         display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
         align-items: start; }
-        .jd__container .jd__body .about .contact img {
-          height: 100px;
-          width: 100px;
-          border-radius: 50%;
-          object-fit: cover; }
+        .jd__container .jd__body .about .contact .contact-profile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem; }
+          .jd__container .jd__body .about .contact .contact-profile img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            object-fit: cover; }
+          .jd__container .jd__body .about .contact .contact-profile .employer-socials {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center; }
+            .jd__container .jd__body .about .contact .contact-profile .employer-socials span {
+              width: auto;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              border: 2px solid transparent;
+              transition: all 0.2s ease-in-out; }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span:hover {
+                background-color: #ededed;
+                box-shadow: 2px 2px 6px #00000020, -2px -2px 12px #f3f3f3; }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span a {
+                width: 36px;
+                height: 36px;
+                color: #f3f3f3;
+                border-radius: 50%;
+                background-color: #4b4b4b;
+                mask-size: 32px 32px;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                transition: all 0.2s ease-in-out; }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1) a {
+                mask-size: 28px 28px;
+                mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg"); }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(2) a {
+                mask-image: url("../assets/social-media-icons/contributor-github-icon.svg"); }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(3) a {
+                mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg"); }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1):hover a {
+                background-color: #0a66c2; }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(2):hover a {
+                background-color: #000000; }
+              .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(3):hover a {
+                background-color: #738adb; }
         .jd__container .jd__body .about .contact .contact__name,
         .jd__container .jd__body .about .contact .contact__person {
           font-weight: 700;
@@ -2131,22 +2151,28 @@ footer {
           line-height: 2.7rem; }
         .jd__container .jd__body .about .contact .contact__role {
           font-weight: 400;
-          font-size: 1.8rem;
+          font-size: 1.7rem;
           color: #6b6b6b; }
+        @media screen and (max-width: 520px) {
+          .jd__container .jd__body .about .contact {
+            justify-content: center; } }
       .jd__container .jd__body .about .general__info .contact__name,
       .jd__container .jd__body .about .general__info .contact__person {
         font-weight: 700;
         font-size: 1.8rem;
         line-height: 2.7rem;
         text-decoration: underline; }
-  .jd__container .jd__apply {
+      @media screen and (max-width: 768px) {
+        .jd__container .jd__body .about {
+          justify-content: center; } }
+  .jd__container .cta-btn-group {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
-    width: 100%;
-    gap: 2rem; }
-    .jd__container .jd__apply .applyBtn {
+    flex-wrap: wrap;
+    gap: 1rem; }
+    .jd__container .cta-btn-group .applyBtn {
       background-color: #2f7973;
       border: none;
       border-radius: 0.8rem;
@@ -2154,15 +2180,19 @@ footer {
       color: #f3f3f3;
       font-size: 1.8rem;
       font-weight: 600;
-      align-self: flex-end;
       cursor: pointer;
-      width: clamp(238px, 48%, 100%); }
-      .jd__container .jd__apply .applyBtn:hover {
-        transition: all 0.3s;
+      width: 100%;
+      transition: all 0.3s; }
+      .jd__container .cta-btn-group .applyBtn:hover {
         background-color: #1e524e; }
-      @media (min-width: 768px) {
-        .jd__container .jd__apply .applyBtn {
-          width: 238px; } }
+      .jd__container .cta-btn-group .applyBtn:first-child {
+        background-color: transparent;
+        border: 2px solid #2f7973;
+        color: #2f7973; }
+        .jd__container .cta-btn-group .applyBtn:first-child:hover {
+          background-color: #1e524e;
+          border-color: #1e524e;
+          color: #f3f3f3; }
 
 .details-footer-container {
   padding: 0;
