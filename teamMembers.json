@@ -465,7 +465,7 @@
       {
         "team": "Front-end",
         "position": "Front-end Developer",
-        "teamLead": false
+        "teamLead": true
       }
     ],
     "socials": {
@@ -545,7 +545,7 @@
       {
         "team": "Front-end",
         "position": "Front-end Developer",
-        "teamLead": false
+        "teamLead": true
       }
     ],
     "socials": {
