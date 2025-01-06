@@ -466,6 +466,11 @@
         "team": "Front-end",
         "position": "Front-end Lead",
         "teamLead": true
+      },
+      {
+        "team": "Core",
+        "position": "Front-end Lead",
+        "teamLead": false
       }
     ],
     "socials": {
@@ -546,6 +551,11 @@
         "team": "Front-end",
         "position": "Front-end Lead",
         "teamLead": true
+      },
+      {
+        "team": "Core",
+        "position": "Front-end Lead",
+        "teamLead": false
       }
     ],
     "socials": {
@@ -935,6 +945,22 @@
       "linkedin": "https://www.linkedin.com/in/robert-burcea-0a1a4933/",
       "github": "https://github.com/robert-burcea",
       "discord": "https://discord.com/users/688769576690909311"
+    }
+  },
+  {
+    "name": "Robert Popescu",
+    "avatar": "./assets/contributors/volunteer.webp",
+    "roles":[
+      {
+        "team": "Front-end",
+        "position": "Front-end Developer",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/porobertdev",
+      "github": "https://github.com/porobertdev",
+      "discord": "https://discord.com/users/400402196346306560"
     }
   }
 ]

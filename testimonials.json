@@ -28,5 +28,11 @@
     "avatar": "./assets/contributors/adelina-guliman-third-photo.webp",
     "role": "Quality Assurance Tester",
     "text": "Când am pășit în această comunitate, eram plină de emoții și incertitudini după o reconversie profesională. Am găsit o echipă extraordinară, care m-a susținut și m-a ajutat să cresc, iar cu experiența de aici am reușit să îmi găsesc jobul mult visat. Recomand acest proiect oricui nu știe de unde să înceapă."
+  },
+  {
+    "name": "Loredana Pelle",
+    "avatar": "./assets/contributors/loredana-pelle.webp",
+    "role": "QA Engineer",
+    "text": "De aproape 6 luni îmi doream mult să pun în practică cunoștințele teoretice acumulate la un curs de testare manuală. Nu m-am așteptat să găsesc o echipă de oameni atât de faini, pasionați și mai ales dispuși să împărtășească din cunoștințele lor. Am testat și aplicat de pe www.peviitor.ro și de aproximativ o săptămână lucrez ca QA Engineer. Peviitor.ro investești în viitorul tău!"
   }
 ]
