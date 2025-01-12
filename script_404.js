@@ -9,6 +9,7 @@ const routes = {
   teamList: "team-rooster",
   team: "team",
   schedule: "schedule",
+  stories: "stories",
 };
 
 // Load content based on the current hash
