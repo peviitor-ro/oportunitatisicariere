@@ -214,8 +214,13 @@
       "roles": [
         {
           "team": "Core",
-          "position": "DevOps",
+          "position": "DevOps Lead",
           "teamLead": false
+        },
+        {
+          "team": "DevOps",
+          "position": "DevOps Lead",
+          "teamLead": true
         }
       ],
       "socials": {
@@ -961,6 +966,22 @@
       "linkedin": "https://www.linkedin.com/in/porobertdev",
       "github": "https://github.com/porobertdev",
       "discord": "https://discord.com/users/400402196346306560"
+    }
+  },
+  {
+    "name": "Mirela-Estera Stoica",
+    "avatar": "./assets/contributors/mirela-stoica.webp",
+    "roles":[
+      {
+        "team": "DevOps",
+        "position": "DevOps",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/mirela-estera-stoica-b36492182/",
+      "github": "https://github.com/stoicamirela",
+      "discord": "https://discord.com/users/1326603739594887249"
     }
   }
 ]
