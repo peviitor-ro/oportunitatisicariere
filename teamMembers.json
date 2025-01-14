@@ -570,12 +570,17 @@
     }
   },
   {
-    "name": "Ana-Maria Talmacel",
+    "name": "Ana-Maria Tălmăcel",
     "avatar": "./assets/contributors/anamaria-talmacel.webp",
     "roles":[
       {
         "team": "QA",
-        "position": "Manual Tester",
+        "position": "Manual Test Lead",
+        "teamLead": true
+      },
+      {
+        "team": "Core",
+        "position": "Manual Test Lead",
         "teamLead": false
       },
       {
