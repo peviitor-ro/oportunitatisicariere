@@ -1392,8 +1392,7 @@ header {
       order: 2;
       height: auto;
       text-align: center;
-      padding: 4rem;
-      padding-top: 6rem;
+      padding: 6rem 4rem;
       width: auto;
       max-width: 51.7rem; }
       .stories-left .stories-extra {
@@ -1412,7 +1411,17 @@ header {
   .stories h2 {
     font-size: 3.2rem; } }
 
+@media only screen and (max-width: 426px) {
+  .stories-left {
+    height: 460px; }
+  .swiper.swiper-cards {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden !important; } }
+
 @media only screen and (max-width: 768px) {
+  .stories-container {
+    height: 720px; }
   .stories-title img {
     transform: scale(0.6); } }
 
