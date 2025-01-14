@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           grabCursor: true,
           rewind: true,
-          mousewheel: true,
+          mousewheel: false, // (A) Deactivate mousewheel for screens smaller than 425
           pagination: {
             el: ".stories-pagination",
             clickable: true,
@@ -46,7 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
           speed: 1000,
           direction: "vertical",
           autoplay: {
-            delay: 45000, //viteza cu care se schimba slideurile
+            delay: 45000, // Slider autoplay in miliseconds
+          },
+          breakpoints: {
+            425: {
+              mousewheel: true, // (A) Activate mousewheel for screens bigger than 425
+            },
           },
         });
       })
