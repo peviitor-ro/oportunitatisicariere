@@ -1767,12 +1767,6 @@ header {
   .stories-container {
     height: 720px;
   }
-  .stories-container .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
-    top: -12rem;
-    right: 50%;
-    transform: translateX(50%);
-    transform: rotate(-90deg);
-  }
   .stories-title img {
     transform: scale(0.6);
   }

@@ -167,29 +167,29 @@
   }
 }
 
-// Media queries for smaller screens
+// (A) Media queries for smaller screens
 @media only screen and (max-width: 426px) {
   .stories {
     &-left {
-      height: 460px; // Expands height to display the whole element
+      height: 460px; // (A) Expands height to display the whole element
     }
   }
   .swiper.swiper-cards {
     display: flex;
     flex-direction: column;
-    overflow: hidden !important; // fixes the white gap on smaller screens
+    overflow: hidden !important; // (A) fixes the white gap on smaller screens
   }
 }
 
 @media only screen and (max-width:#{$tablet-size}) {
   .stories-container {
-    height: 720px;
-    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
-      top: -12rem;
-      right: 50%;
-      transform: translateX(50%);
-      transform: rotate(-90deg);
-    }
+    height: 720px; // (A)
+    //   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+    //     top: -12rem;
+    //     right: 50%;
+    //     transform: translateX(50%);
+    //     transform: rotate(-90deg);
+    //   }
   }
   .stories-title img {
     transform: scale(0.6);
