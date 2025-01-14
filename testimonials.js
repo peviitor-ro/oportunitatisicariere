@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           grabCursor: true,
           rewind: true,
-          mousewheel: true,
+          mousewheel: false, // deactivate mousewheel
           pagination: {
             el: ".stories-pagination",
             clickable: true,
@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
           direction: "vertical",
           autoplay: {
             delay: 45000, //viteza cu care se schimba slideurile
+          },
+          breakpoints: {
+            426: {
+              mousewheel: true, // activate mousewheel de la 426px in sus
+            },
           },
         });
       })

@@ -316,8 +316,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.4rem;
-    -moz-column-gap: 3.2rem;
-         column-gap: 3.2rem;
+    column-gap: 3.2rem;
     list-style-type: none;
     margin-top: 6.4rem;
   }
@@ -379,7 +378,6 @@ header {
 }
 @media only screen and (min-width: 1280px) {
   .nav .nav__links .nav__links__list:first-of-type li {
-    min-width: -moz-fit-content;
     min-width: fit-content;
   }
   .hamburger-menu-icon {
@@ -420,8 +418,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
     list-style-type: none;
     margin-top: 6rem;
   }
@@ -441,8 +438,7 @@ header {
   .nav__links__list #socialLinks {
     margin-top: 6rem;
     row-gap: 1.6rem;
-    -moz-column-gap: 2.6rem;
-         column-gap: 2.6rem;
+    column-gap: 2.6rem;
   }
   .nav__links__list .join-btn {
     font-size: 2.2rem;
@@ -780,7 +776,6 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
-  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -997,8 +992,7 @@ header {
   display: block;
   width: 100%;
   height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide .how-contribute__job__text {
@@ -1120,10 +1114,6 @@ header {
   outline: none;
   border: solid 0.1rem #2f7973;
   color: #2f7973;
-}
-.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
-  color: #2f7973;
-  opacity: 0.6;
 }
 .how-contribute .how-contribute-img__container .search-input::placeholder {
   color: #2f7973;
@@ -1501,8 +1491,7 @@ header {
 }
 .team__member .img-position {
   position: relative;
-  -o-object-position: 0% 0%;
-     object-position: 0% 0%;
+  object-position: 0% 0%;
 }
 .team__member-img {
   width: 16rem;
@@ -1543,27 +1532,20 @@ header {
   color: #f3f3f3;
   border-radius: 50%;
   background-color: #4b4b4b; /* Culoarea implicita a svg-ului */
-  -webkit-mask-size: 32px 32px;
-          mask-size: 32px 32px;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-size: 32px 32px;
+  mask-repeat: no-repeat;
+  mask-position: center;
   transition: all 0.2s ease-in-out;
 }
 .team__member__socials span:nth-child(1) a {
-  -webkit-mask-size: 28px 28px;
-          mask-size: 28px 28px;
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+  mask-size: 28px 28px;
+  mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
 }
 .team__member__socials span:nth-child(2) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
 }
 .team__member__socials span:nth-child(3) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
 }
 .team__member__socials span:nth-child(1):hover a {
   background-color: #0a66c2; /* Culoare LinkedIn */
@@ -1692,8 +1674,7 @@ header {
 .stories-right img {
   width: 34.8rem;
   height: 51.7rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .stories-extra {
   position: absolute;
@@ -1739,8 +1720,7 @@ header {
   }
   .stories-right img {
     margin-bottom: -17rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100%;
     transform: scale(0.5);
     border-radius: 30rem;
@@ -1749,8 +1729,7 @@ header {
     order: 2;
     height: auto;
     text-align: center;
-    padding: 4rem;
-    padding-top: 6rem;
+    padding: 6rem 4rem;
     width: auto;
     max-width: 51.7rem;
   }
@@ -1774,7 +1753,26 @@ header {
     font-size: 3.2rem;
   }
 }
+@media only screen and (max-width: 426px) {
+  .stories-left {
+    height: 460px;
+  }
+  .swiper.swiper-cards {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden !important;
+  }
+}
 @media only screen and (max-width: 768px) {
+  .stories-container {
+    height: 720px;
+  }
+  .stories-container .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+    top: -12rem;
+    right: 50%;
+    transform: translateX(50%);
+    transform: rotate(-90deg);
+  }
   .stories-title img {
     transform: scale(0.6);
   }
@@ -2627,8 +2625,7 @@ footer .footer-bottom h4 {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 .jd__container .jd__body .list > li {
   padding: 0.2rem;
@@ -2689,8 +2686,7 @@ footer .footer-bottom h4 {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials {
   display: flex;
@@ -2717,27 +2713,20 @@ footer .footer-bottom h4 {
   color: #f3f3f3;
   border-radius: 50%;
   background-color: #4b4b4b;
-  -webkit-mask-size: 32px 32px;
-          mask-size: 32px 32px;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-size: 32px 32px;
+  mask-repeat: no-repeat;
+  mask-position: center;
   transition: all 0.2s ease-in-out;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1) a {
-  -webkit-mask-size: 28px 28px;
-          mask-size: 28px 28px;
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+  mask-size: 28px 28px;
+  mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(2) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(3) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1):hover a {
   background-color: #0a66c2;

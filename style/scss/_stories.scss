@@ -137,8 +137,7 @@
       order: 2;
       height: auto;
       text-align: center;
-      padding: 4rem;
-      padding-top: 6rem;
+      padding: 6rem 4rem;
       width: auto;
       max-width: 51.7rem;
 
@@ -168,7 +167,30 @@
   }
 }
 
+// Media queries for smaller screens
+@media only screen and (max-width: 426px) {
+  .stories {
+    &-left {
+      height: 460px; // Expands height to display the whole element
+    }
+  }
+  .swiper.swiper-cards {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden !important; // fixes the white gap on smaller screens
+  }
+}
+
 @media only screen and (max-width:#{$tablet-size}) {
+  .stories-container {
+    height: 720px;
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+      top: -12rem;
+      right: 50%;
+      transform: translateX(50%);
+      transform: rotate(-90deg);
+    }
+  }
   .stories-title img {
     transform: scale(0.6);
   }
