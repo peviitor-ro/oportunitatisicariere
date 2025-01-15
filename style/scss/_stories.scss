@@ -158,6 +158,10 @@
         text-wrap: balance;
       }
     }
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+      right: 5rem;
+      top: 45%;
+    }
   }
 }
 
@@ -167,31 +171,32 @@
   }
 }
 
-// (A) Media queries for smaller screens
-@media only screen and (max-width: 426px) {
-  .stories {
-    &-left {
-      height: 460px; // (A) Expands height to display the whole element
-    }
-  }
-  .swiper.swiper-cards {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden !important; // (A) fixes the white gap on smaller screens
-  }
-}
-
 @media only screen and (max-width:#{$tablet-size}) {
-  .stories-container {
-    height: 720px; // (A)
-    //   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
-    //     top: -12rem;
-    //     right: 50%;
-    //     transform: translateX(50%);
-    //     transform: rotate(-90deg);
-    //   }
+  .stories {
+    &-container {
+      overflow: unset !important;
+
+      .swiper-slide {
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+      right: 50%;
+      top: 85%;
+      transform: rotate(-90deg) translateX(-50%);
+    }
   }
   .stories-title img {
     transform: scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .stories {
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+      top: 90%;
+    }
   }
 }

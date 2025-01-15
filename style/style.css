@@ -1747,28 +1747,37 @@ header {
     font-size: 1.6rem;
     text-wrap: balance;
   }
+  .stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+    right: 5rem;
+    top: 45%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .stories h2 {
     font-size: 3.2rem;
   }
 }
-@media only screen and (max-width: 426px) {
-  .stories-left {
-    height: 460px;
-  }
-  .swiper.swiper-cards {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden !important;
-  }
-}
 @media only screen and (max-width: 768px) {
   .stories-container {
-    height: 720px;
+    overflow: unset !important;
+  }
+  .stories-container .swiper-slide {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+    right: 50%;
+    top: 85%;
+    transform: rotate(-90deg) translateX(-50%);
   }
   .stories-title img {
     transform: scale(0.6);
+  }
+}
+@media only screen and (max-width: 426px) {
+  .stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+    top: 90%;
   }
 }
 /* THANK YOU SECTION */
