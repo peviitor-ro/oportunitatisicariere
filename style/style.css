@@ -29,6 +29,21 @@ a {
 section:target {
   padding-top: 10rem !important; }
 
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0); }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0); } }
+
 /* HEADER SECTION */
 header {
   display: flex;
@@ -1469,7 +1484,7 @@ header {
 
 /* JOIN US SECTION */
 /* styles for tooltip - jitsi links in Întâlniri săptămânale*/
-.tippy-box[data-theme~='tooltip-jitsi-theme'] {
+.tippy-box[data-theme~="tooltip-jitsi-theme"] {
   background-color: white;
   color: #2f7973;
   border: 1px solid #2f7973;
@@ -1477,10 +1492,10 @@ header {
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translateX(-120%); }
-  .tippy-box[data-theme~='tooltip-jitsi-theme'] .tippy-arrow {
+  .tippy-box[data-theme~="tooltip-jitsi-theme"] .tippy-arrow {
     color: transparent; }
   @media (max-width: 768px) {
-    .tippy-box[data-theme~='tooltip-jitsi-theme'] {
+    .tippy-box[data-theme~="tooltip-jitsi-theme"] {
       transform: translateX(10%); } }
 
 .join-us-section {
@@ -1533,12 +1548,35 @@ header {
         display: flex;
         gap: 0.6rem;
         margin-right: 2rem; }
-        .join-us-section__meeting-list .meeting-item .day-container .meeting-link {
-          display: flex;
-          align-items: center; }
-        .join-us-section__meeting-list .meeting-item .day-container .meeting-logo {
-          width: 38px;
-          height: 38px; }
+        .join-us-section__meeting-list .meeting-item .day-container .meeting-icon {
+          width: auto;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 2px solid transparent;
+          transition: all 0.2s ease-in-out; }
+          .join-us-section__meeting-list .meeting-item .day-container .meeting-icon:hover {
+            background-color: #ededed;
+            box-shadow: 2px 2px 6px #00000020, -2px -2px 12px #f3f3f3; }
+          .join-us-section__meeting-list .meeting-item .day-container .meeting-icon .meeting-link {
+            display: flex;
+            align-items: center;
+            width: 42px;
+            height: 42px;
+            color: #f3f3f3;
+            border-radius: 50%;
+            background-color: #4b4b4b;
+            /* Culoarea implicita a svg-ului */
+            mask-size: 32px 32px;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            transition: all 0.2s ease-in-out;
+            mask-size: 42px 42px;
+            mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg"); }
+          .join-us-section__meeting-list .meeting-item .day-container .meeting-icon:hover .meeting-link {
+            background-color: #0a66c2;
+            animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
         .join-us-section__meeting-list .meeting-item .day-container .day-details {
           margin-left: 1rem;
           text-align: left;
