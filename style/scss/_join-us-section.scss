@@ -84,15 +84,17 @@
         display: flex;
         gap: 0.6rem;
         margin-right: 2rem;
+        align-items: center;
+        justify-content: center;
 
         .meeting-icon {
-          width: auto;
+          width: 42px;
+          height: 42px;
           display: inline-flex;
-          align-items: center;
-          justify-content: center;
           border-radius: 50%;
           border: 2px solid transparent;
           transition: all 0.2s ease-in-out;
+
 
           &:hover {
             background-color: #ededed;
@@ -100,6 +102,7 @@
           }
 
           .meeting-link {
+            padding: 0.2rem;
             display: flex;
             align-items: center;
             width: 42px;
@@ -120,26 +123,22 @@
             animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
           }
         }
-        // .meeting-link {
-        //   display: flex;
-        //   align-items: center;
-        // }
-
-        // .meeting-logo {
-        //   width: 38px;
-        //   height: 38px;
-        // }
 
         & .day-details {
           margin-left: 1rem;
           text-align: left;
           display: flex;
           flex-direction: column;
+          gap: 0.2rem;
 
           & .day-time {
             font-weight: bold;
             font-size: 2.2rem;
             line-height: 2.2rem;
+          }
+
+          & .hidden {
+            visibility: hidden;
           }
         }
       }
@@ -148,6 +147,8 @@
         display: flex;
         flex-direction: column;
         align-items: start;
+        margin-left: 1rem;
+        gap: 0.2rem;
 
         & .team {
           padding: 0rem;
@@ -199,13 +200,15 @@
   }
 }
 
+
+
 @media only screen and (min-width: $phone-size) and (max-width: 500px) {
   .join-us-section {
     gap: 0rem;
 
     & h2 {
       padding: 0 3rem;
-      margin: 3rem 0;
+      margin: 3rem 1rem;
     }
 
     & p {
@@ -213,18 +216,36 @@
       line-height: 2.5rem;
     }
 
-    & ul {
-      padding: 1rem 0;
-      margin-bottom: 1rem;
-      gap: 1.2rem;
+    &__meeting-list {
+      gap: 1rem;
+
+      & .meeting-item {
+        & .day-container {
+          & .day-details {
+            & .day-time {
+              font-size: 2rem; 
+            }
+          }
+        }
+
+        & .team-container {
+          & .team-type {
+            font-size: 2rem;
+          }
+        }
+      }
     }
 
-    .title {
-      margin: 2rem 0 0;
+    &__title-container {
+      margin: 1.6rem 0 0rem;
+
+      .title {
+        margin: 2rem 0 0;
+      }
     }
 
     &__button {
-      margin-top: 1.8rem;
+      margin-top: 1.4rem;
     }
   }
 }
