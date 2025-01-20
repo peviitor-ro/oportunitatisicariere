@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           speed: 1000,
           direction: "vertical",
+          preventInteractionOnTransition: true,
           autoplay: {
             delay: 45000, // Slider autoplay in miliseconds
           },
