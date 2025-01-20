@@ -23,6 +23,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto";
+  overflow-x: hidden;
 }
 
 a {
@@ -1729,7 +1730,10 @@ header {
   background: #1e524e;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .swiper-sline {
+    width: 50vw;
+  }
   .stories {
     padding-bottom: 10rem;
   }
@@ -1747,15 +1751,17 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: -9rem;
+    margin-left: -50rem;
+    height: auto;
   }
   .stories-right {
     z-index: 100;
+    width: 100%;
   }
   .stories-right img {
     margin-bottom: -17rem;
     -o-object-fit: cover;
        object-fit: cover;
-    width: 100%;
     transform: scale(0.5);
     border-radius: 30rem;
   }
@@ -1766,6 +1772,7 @@ header {
     padding: 6rem 4rem;
     width: auto;
     max-width: 51.7rem;
+    width: 90vw;
   }
   .stories-left .stories-extra {
     font-size: 2.4rem;
@@ -1788,9 +1795,6 @@ header {
   }
 }
 @media only screen and (max-width: 426px) {
-  .stories-left {
-    height: 460px;
-  }
   .swiper.swiper-cards {
     display: flex;
     flex-direction: column;
