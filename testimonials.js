@@ -44,14 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
             clickable: true,
           },
           speed: 1000,
-          direction: "vertical",
-          preventInteractionOnTransition: true,
+          direction: "horizontal",
           autoplay: {
             delay: 45000, // Slider autoplay in miliseconds
           },
           breakpoints: {
-            425: {
-              mousewheel: true, // (A) Activate mousewheel for screens bigger than 425
+            768: {
+              direction: "vertical", // Horizontal for medium screens
+              mousewheel: false, // Disable mousewheel for larger screens
             },
           },
         });
