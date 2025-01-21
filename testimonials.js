@@ -28,33 +28,50 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>`;
         });
 
-        const storySwiper = new Swiper(".stories-container", {
-          effect: "cards",
-          cardsEffect: {
-            rotate: 40,
-            depth: 400,
-            modifier: 3,
-            slideShadows: false,
-          },
-          grabCursor: true,
-          rewind: true,
-          mousewheel: false, // (A) Deactivate mousewheel for screens smaller than 425
-          pagination: {
-            el: ".stories-pagination",
-            clickable: true,
-          },
-          speed: 1000,
-          direction: "vertical",
-          preventInteractionOnTransition: true,
-          autoplay: {
-            delay: 45000, // Slider autoplay in miliseconds
-          },
-          breakpoints: {
-            425: {
-              mousewheel: true, // (A) Activate mousewheel for screens bigger than 425
+        let storySwiper;
+
+        function initSwiper() {
+          const isMobile = window.innerWidth < 1024;
+
+          if (storySwiper) {
+            storySwiper.destroy(true, true);
+          }
+
+          storySwiper = new Swiper(".stories-container", {
+            effect: isMobile ? "slide" : "cards",
+            cardsEffect: isMobile
+              ? undefined
+              : {
+                  rotate: 40,
+                  depth: 400,
+                  modifier: 3,
+                  slideShadows: false,
+                },
+            grabCursor: true,
+            rewind: false,
+            mousewheel: false,
+            pagination: isMobile
+              ? false // Disable pagination on mobile
+              : {
+                  el: ".stories-pagination",
+                  clickable: true,
+                },
+            speed: 1000,
+            direction: "horizontal",
+            preventInteractionOnTransition: true,
+            autoplay: {
+              delay: 45000,
+              disableOnInteraction: true,
             },
-          },
-        });
+            touchReleaseOnEdges: true,
+          });
+        }
+
+        // Initialize Swiper on page load
+        initSwiper();
+
+        // Reinitialize Swiper on window resize
+        window.addEventListener("resize", initSwiper);
       })
       .catch((error) => console.error("Eroare la încarcarea JSON:", error));
   }
