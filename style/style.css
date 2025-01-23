@@ -256,7 +256,7 @@ header {
     .close-menu-icon.visible > img {
       height: 25px; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1282px) {
   .nav {
     display: block; }
     .nav__links__list {
@@ -318,7 +318,7 @@ header {
     .close-menu-icon.visible > img {
       height: 25px; } }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1282px) {
   .nav .nav__links .nav__links__list:first-of-type li {
     min-width: fit-content; }
   .hamburger-menu-icon {
