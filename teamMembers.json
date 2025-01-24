@@ -116,6 +116,11 @@
           "team": "Data Quality",
           "position": "Data Quality Tester",
           "teamLead": false
+        },
+        {
+          "team": "Cybersecurity",
+          "position": "CTO",
+          "teamLead": false
         }
       ],
       "socials": {
@@ -237,6 +242,11 @@
           "team": "Core",
           "position": "Pentester",
           "teamLead": false
+        },
+        {
+          "team": "Cybersecurity",
+          "position": "Pentester",
+          "teamLead": false
         }
       ],
       "socials": {
@@ -299,6 +309,11 @@
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
+        "teamLead": false
+      },
+      {
+        "team": "Cybersecurity",
+        "position": "Data Protection Officer",
         "teamLead": false
       }
     ],
@@ -747,6 +762,11 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false
+      },
+      {
+        "team": "Cybersecurity",
+        "position": "",
+        "teamLead": false
       }
     ],
     "socials": {
@@ -987,6 +1007,22 @@
       "linkedin": "https://www.linkedin.com/in/mirela-estera-stoica-b36492182/",
       "github": "https://github.com/stoicamirela",
       "discord": "https://discord.com/users/1326603739594887249"
+    }
+  },
+  {
+    "name": "Braviceanu-Badea Clarisse",
+    "avatar": "./assets/contributors/person-placeholder.webp",
+    "roles":[
+      {
+        "team": "Cybersecurity",
+        "position": "Junior Security Analyst",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/clarisse-braviceanu-badea-66a286339/",
+      "github": "https://github.com/cclaryc",
+      "discord": "http://discordapp.com/users/423167095581179904"
     }
   }
 ]
