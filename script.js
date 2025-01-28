@@ -138,32 +138,32 @@ function createNewSubList() {
   const newItems = [
     {
       href: "https://www.linkedin.com/company/asociatia-oportunitati-si-cariere/",
-      src: "./assets/social-media-icons/linkedin_icon.svg",
+      src: "./assets/social-media-icons/bxl-linkedin-square.svg",
       text: "linkedin",
     },
     {
       href: "https://www.instagram.com/peviitor.ro/",
-      src: "./assets/social-media-icons/instagram_icon.svg",
+      src: "./assets/social-media-icons/bxl-instagram-alt.svg", 
       text: "instagram",
     },
     {
       href: "https://discord.gg/KPMkdUfQNu",
-      src: "./assets/social-media-icons/discord.svg",
+      src: "./assets/social-media-icons/bxl-discord-alt.svg",
       text: "discord",
     },
     {
       href: "https://github.com/peviitor-ro/oportunitatisicariere/issues",
-      src: "./assets/social-media-icons/github_icon.svg",
+      src: "./assets/social-media-icons/bxl-github.svg",
       text: "github",
     },
     {
       href: "https://meet.jit.si/PEVIITOR.RO",
-      src: "./assets/jitsi.svg",
+      src: "./assets/social-media-icons/bxl-jitsi.svg",
       text: "jit",
     },
     {
       href: "https://dev.to/t/peviitor",
-      src: "./assets/social-media-icons/dev_icon.svg",
+      src: "./assets/social-media-icons/bxl-dev-to.svg",
       text: "dev",
     },
   ];
