@@ -34,6 +34,20 @@ section:target {
   padding-top: 10rem !important;
 }
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
 /* HEADER SECTION */
 header {
   display: flex;
@@ -298,7 +312,7 @@ header {
     height: 25px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1282px) {
   .nav {
     display: block;
   }
@@ -377,7 +391,7 @@ header {
     height: 25px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1282px) {
   .nav .nav__links .nav__links__list:first-of-type li {
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -1704,11 +1718,7 @@ header {
   padding-left: 25rem;
   line-height: 80%;
 }
-.stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
-  right: -3rem;
-  top: 40%;
-}
-.stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical .swiper-pagination-bullet {
+.stories .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
   width: 8px;
   height: 20px;
   border-radius: 1rem;
@@ -1725,8 +1735,9 @@ header {
     width: auto;
   }
   .stories-container {
-    height: 700px;
     margin-top: 0;
+    max-width: 90vw;
+    height: auto;
   }
   .stories-individual {
     flex-direction: column;
@@ -1749,7 +1760,7 @@ header {
     order: 2;
     height: auto;
     text-align: center;
-    padding: 6rem 4rem;
+    padding: 6rem 2rem;
     width: auto;
     max-width: 51.7rem;
   }
@@ -1766,29 +1777,6 @@ header {
   .stories-left p {
     font-size: 1.6rem;
     text-wrap: balance;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .stories h2 {
-    font-size: 3.2rem;
-  }
-}
-@media only screen and (max-width: 426px) {
-  .stories-left {
-    height: 460px;
-  }
-  .swiper.swiper-cards {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .stories-container {
-    height: 720px;
-  }
-  .stories-title img {
-    transform: scale(0.6);
   }
 }
 /* THANK YOU SECTION */
@@ -1931,30 +1919,67 @@ header {
   display: flex;
   gap: 0.6rem;
   margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
 }
-.join-us-section__meeting-list .meeting-item .day-container .meeting-link {
+.join-us-section__meeting-list .meeting-item .day-container .meeting-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.join-us-section__meeting-list .meeting-item .day-container .meeting-icon:hover {
+  background-color: #ededed;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1254901961), -2px -2px 12px #f3f3f3;
+}
+.join-us-section__meeting-list .meeting-item .day-container .meeting-icon .meeting-link {
+  padding: 0.2rem;
   display: flex;
   align-items: center;
+  width: 42px;
+  height: 42px;
+  color: #f3f3f3;
+  border-radius: 50%;
+  background-color: #4b4b4b; /* Culoarea implicita a svg-ului */
+  -webkit-mask-size: 32px 32px;
+          mask-size: 32px 32px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  transition: all 0.2s ease-in-out;
+  -webkit-mask-size: 42px 42px;
+          mask-size: 42px 42px;
+  -webkit-mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
+          mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
 }
-.join-us-section__meeting-list .meeting-item .day-container .meeting-logo {
-  width: 38px;
-  height: 38px;
+.join-us-section__meeting-list .meeting-item .day-container .meeting-icon:hover .meeting-link {
+  background-color: #0a66c2;
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 .join-us-section__meeting-list .meeting-item .day-container .day-details {
   margin-left: 1rem;
   text-align: left;
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
 }
 .join-us-section__meeting-list .meeting-item .day-container .day-details .day-time {
   font-weight: bold;
   font-size: 2.2rem;
   line-height: 2.2rem;
 }
+.join-us-section__meeting-list .meeting-item .day-container .day-details .hidden {
+  visibility: hidden;
+}
 .join-us-section__meeting-list .meeting-item .team-container {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-left: 1rem;
+  gap: 0.2rem;
 }
 .join-us-section__meeting-list .meeting-item .team-container .team {
   padding: 0rem;
@@ -2000,22 +2025,29 @@ header {
   }
   .join-us-section h2 {
     padding: 0 3rem;
-    margin: 3rem 0;
+    margin: 3rem 1rem;
   }
   .join-us-section p {
     padding: 0 2.5rem;
     line-height: 2.5rem;
   }
-  .join-us-section ul {
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-    gap: 1.2rem;
+  .join-us-section__meeting-list {
+    gap: 1rem;
   }
-  .join-us-section .title {
+  .join-us-section__meeting-list .meeting-item .day-container .day-details .day-time {
+    font-size: 2rem;
+  }
+  .join-us-section__meeting-list .meeting-item .team-container .team-type {
+    font-size: 2rem;
+  }
+  .join-us-section__title-container {
+    margin: 1.6rem 0 0rem;
+  }
+  .join-us-section__title-container .title {
     margin: 2rem 0 0;
   }
   .join-us-section__button {
-    margin-top: 1.8rem;
+    margin-top: 1.4rem;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 768px) {

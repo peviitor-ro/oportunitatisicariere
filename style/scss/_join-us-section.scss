@@ -1,6 +1,6 @@
 /* JOIN US SECTION */
 /* styles for tooltip - jitsi links in Întâlniri săptămânale*/
-.tippy-box[data-theme~='tooltip-jitsi-theme'] {
+.tippy-box[data-theme~="tooltip-jitsi-theme"] {
   background-color: white;
   color: $green-mint;
   border: 1px solid $green-mint;
@@ -11,7 +11,7 @@
   .tippy-arrow {
     color: transparent;
   }
-  @media(max-width: $tablet-size){
+  @media (max-width: $tablet-size) {
     transform: translateX(10%);
   }
 }
@@ -33,7 +33,7 @@
   }
 
   > h2 {
-    inline-size:clamp(30rem, 60rem, 70rem);
+    inline-size: clamp(30rem, 60rem, 70rem);
 
     @media screen and (min-width: 500px) and (max-width: 650px) {
       inline-size: clamp(30rem, 45rem, 60rem);
@@ -55,15 +55,15 @@
     padding: 0 30rem 2rem 30rem;
   }
 
-  &__title-container{
+  &__title-container {
     margin-bottom: 3rem;
 
-    & .title{
+    & .title {
       font-size: 2.2rem;
       padding: 0rem;
     }
-  
-    & .team-line{
+
+    & .team-line {
       width: 28rem;
     }
   }
@@ -84,15 +84,44 @@
         display: flex;
         gap: 0.6rem;
         margin-right: 2rem;
+        align-items: center;
+        justify-content: center;
 
-        .meeting-link {
-          display: flex;
-          align-items: center;
-        }
-      
-        .meeting-logo {
-          width: 38px;
-          height: 38px;
+        .meeting-icon {
+          width: 42px;
+          height: 42px;
+          display: inline-flex;
+          border-radius: 50%;
+          border: 2px solid transparent;
+          transition: all 0.2s ease-in-out;
+
+
+          &:hover {
+            background-color: #ededed;
+            box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
+          }
+
+          .meeting-link {
+            padding: 0.2rem;
+            display: flex;
+            align-items: center;
+            width: 42px;
+            height: 42px;
+            color: $white;
+            border-radius: 50%;
+            background-color: $darker-gray; /* Culoarea implicita a svg-ului */
+            mask-size: 32px 32px;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            transition: all 0.2s ease-in-out;
+            mask-size: 42px 42px;
+            mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
+          }
+
+          &:hover .meeting-link {
+            background-color: $linkedin-blue;
+            animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          }
         }
 
         & .day-details {
@@ -100,11 +129,16 @@
           text-align: left;
           display: flex;
           flex-direction: column;
-  
+          gap: 0.2rem;
+
           & .day-time {
             font-weight: bold;
             font-size: 2.2rem;
             line-height: 2.2rem;
+          }
+
+          & .hidden {
+            visibility: hidden;
           }
         }
       }
@@ -113,11 +147,13 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-      
+        margin-left: 1rem;
+        gap: 0.2rem;
+
         & .team {
           padding: 0rem;
         }
-  
+
         & .team-type {
           font-weight: bold;
           font-size: 2.2rem;
@@ -145,32 +181,34 @@
   }
 }
 
-@media only screen and (max-width:$phone-size) {
+@media only screen and (max-width: $phone-size) {
   .join-us-section {
     & p {
       line-height: 2.5rem;
     }
 
-    &__title-container{
+    &__title-container {
       margin: 3rem 0 1.6rem;
 
-      .title{
+      .title {
         padding: 0 2.7rem;
       }
-      & .team-line{
+      & .team-line {
         width: 22rem;
       }
     }
   }
 }
 
-@media only screen and (min-width: $phone-size) and (max-width:500px) {
+
+
+@media only screen and (min-width: $phone-size) and (max-width: 500px) {
   .join-us-section {
     gap: 0rem;
 
-    & h2{
+    & h2 {
       padding: 0 3rem;
-      margin: 3rem 0;
+      margin: 3rem 1rem;
     }
 
     & p {
@@ -178,23 +216,41 @@
       line-height: 2.5rem;
     }
 
-    & ul {
-      padding: 1rem 0;
-      margin-bottom: 1rem;
-      gap: 1.2rem;
+    &__meeting-list {
+      gap: 1rem;
+
+      & .meeting-item {
+        & .day-container {
+          & .day-details {
+            & .day-time {
+              font-size: 2rem; 
+            }
+          }
+        }
+
+        & .team-container {
+          & .team-type {
+            font-size: 2rem;
+          }
+        }
+      }
     }
 
-    .title{
-      margin: 2rem 0 0;
+    &__title-container {
+      margin: 1.6rem 0 0rem;
+
+      .title {
+        margin: 2rem 0 0;
+      }
     }
 
     &__button {
-      margin-top: 1.8rem;
+      margin-top: 1.4rem;
     }
   }
 }
 
-@media only screen and (min-width:500px) and (max-width: $tablet-size ) {
+@media only screen and (min-width: 500px) and (max-width: $tablet-size) {
   .join-us-section {
     padding: 3rem;
 
