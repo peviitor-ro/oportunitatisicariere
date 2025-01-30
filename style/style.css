@@ -824,7 +824,6 @@ header {
   flex-direction: column;
   justify-content: start;
   width: calc(100% - 80px);
-  width: 480px;
   padding: 1rem;
   opacity: 0;
   transform: translateY(30px);
