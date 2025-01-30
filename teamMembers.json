@@ -246,7 +246,7 @@
         {
           "team": "Cybersecurity",
           "position": "Pentester",
-          "teamLead": false
+          "teamLead": true
         }
       ],
       "socials": {
@@ -765,7 +765,7 @@
       },
       {
         "team": "Cybersecurity",
-        "position": "",
+        "position": "Junior Security Analyst",
         "teamLead": false
       }
     ],
@@ -1010,8 +1010,8 @@
     }
   },
   {
-    "name": "Braviceanu-Badea Clarisse",
-    "avatar": "./assets/contributors/person-placeholder.webp",
+    "name": "Brăviceanu-Badea Clarisse",
+    "avatar": "./assets/contributors/braviceanu-badea-clarisse.webp",
     "roles":[
       {
         "team": "Cybersecurity",
@@ -1023,6 +1023,38 @@
       "linkedin": "https://www.linkedin.com/in/clarisse-braviceanu-badea-66a286339/",
       "github": "https://github.com/cclaryc",
       "discord": "http://discordapp.com/users/423167095581179904"
+    }
+  },
+  {
+    "name": "Alexandra Meghesan",
+    "avatar": "./assets/contributors/alexandra-meghesan.webp",
+    "roles":[
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/alexandra-meghesan-9a3451148/",
+      "github": "https://github.com/Alexandra9621",
+      "discord": "http://discordapp.com/users/1124296512067866644"
+    }
+  },
+  {
+    "name": "Alexandru Fabian",
+    "avatar": "./assets/contributors/alexandru-fabian.webp",
+    "roles":[
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "./index.html#teamList",
+      "github": "https://github.com/AlexandruFBN",
+      "discord": "http://discordapp.com/users/1037064672534351872"
     }
   }
 ]
