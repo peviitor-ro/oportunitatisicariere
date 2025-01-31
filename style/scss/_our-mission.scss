@@ -25,6 +25,26 @@
     > img {
       width: 23rem;
     }
+
+    // Fade in and out animation for title content on change
+    /* Clasa care ascunde titlul înainte de animație */
+    .title-change {
+      opacity: 0;
+      animation: fadeOutIn 0.3s ease-in-out forwards; /* 'forwards' pentru a păstra starea finală după animație */
+    }
+
+    /* Definirea keyframes pentru fade-out și fade-in */
+    @keyframes fadeOutIn {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   }
 
   &__details {

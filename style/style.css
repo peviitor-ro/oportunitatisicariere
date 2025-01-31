@@ -766,6 +766,8 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 2.4rem 0;
+  /* Clasa care ascunde titlul înainte de animație */
+  /* Definirea keyframes pentru fade-out și fade-in */
 }
 .our-mission__content__title > h2 {
   font-size: 2.2rem;
@@ -776,6 +778,21 @@ header {
 }
 .our-mission__content__title > img {
   width: 23rem;
+}
+.our-mission__content__title .title-change {
+  opacity: 0;
+  animation: fadeOutIn 0.3s ease-in-out forwards; /* 'forwards' pentru a păstra starea finală după animație */
+}
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .our-mission__content__details {
   display: flex;

@@ -138,32 +138,32 @@ function createNewSubList() {
   const newItems = [
     {
       href: "https://www.linkedin.com/company/asociatia-oportunitati-si-cariere/",
-      src: "./assets/social-media-icons/linkedin_icon.svg",
+      src: "./assets/social-media-icons/bxl-linkedin-square.svg",
       text: "linkedin",
     },
     {
       href: "https://www.instagram.com/peviitor.ro/",
-      src: "./assets/social-media-icons/instagram_icon.svg",
+      src: "./assets/social-media-icons/bxl-instagram-alt.svg",
       text: "instagram",
     },
     {
       href: "https://discord.gg/KPMkdUfQNu",
-      src: "./assets/social-media-icons/discord.svg",
+      src: "./assets/social-media-icons/bxl-discord-alt.svg",
       text: "discord",
     },
     {
       href: "https://github.com/peviitor-ro/oportunitatisicariere/issues",
-      src: "./assets/social-media-icons/github_icon.svg",
+      src: "./assets/social-media-icons/bxl-github.svg",
       text: "github",
     },
     {
       href: "https://meet.jit.si/PEVIITOR.RO",
-      src: "./assets/jitsi.svg",
+      src: "./assets/social-media-icons/bxl-jitsi.svg",
       text: "jit",
     },
     {
       href: "https://dev.to/t/peviitor",
-      src: "./assets/social-media-icons/dev_icon.svg",
+      src: "./assets/social-media-icons/bxl-dev-to.svg",
       text: "dev",
     },
   ];
@@ -309,3 +309,38 @@ function redirectLinks() {
 }
 
 window.addEventListener("load", redirectLinks);
+
+// Our mission slide and title section
+
+const checkboxes = document.querySelectorAll("input[name='slide']");
+const titleElement = document.querySelector(
+  ".our-mission__content__title__heading"
+);
+
+// Title option for each slide
+const missionTitles = {
+  viziune: "Viziunea noastră",
+  misiune: "Misiunea noastră",
+  valori: "Valorile noastre",
+};
+
+// Add event listener to each checkbox
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", () => {
+    // Removes animation fade-in-out for title before change
+    titleElement.classList.remove("title-change");
+    if (checkbox.checked) {
+      // Hides the title element on checkbox
+      titleElement.style.opacity = "0";
+
+      // Adds a small delay in order for the fade-out animation to finish
+      setTimeout(() => {
+        // Change title content based on checkbox
+        titleElement.textContent = missionTitles[checkbox.id] || ""; // Changes title content based on checkbox
+
+        // Add animation fade-in-out for title on checkbox
+        titleElement.classList.add("title-change");
+      }, 100);
+    }
+  });
+});
