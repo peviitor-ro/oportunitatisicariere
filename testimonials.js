@@ -39,11 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
           storySwiper = new Swiper(".stories-container", {
             effect: isMobile ? "slide" : "cards",
-            // navigation: isMobile ? { nextEl: '.swiper-button-prev', prevEl: '.swiper-button-prev'} : false,
-            navigation: isMobile ? {
-              nextEl: ".stories-button-next",
-              prevEl: ".stories-button-prev",
-            } : undefined,
             cardsEffect: isMobile
               ? undefined
               : {
@@ -69,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
               disableOnInteraction: true,
             },
             touchReleaseOnEdges: true,
-          });
+          }); 
         }
 
         // Initialize Swiper on page load
