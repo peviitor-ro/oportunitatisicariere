@@ -1752,6 +1752,7 @@ header {
     margin-bottom: -17rem;
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
     transform: scale(0.5);
     border-radius: 30rem;
   }
