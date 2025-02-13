@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
               disableOnInteraction: true,
             },
             touchReleaseOnEdges: true,
-          });
+          }); 
         }
 
         // Initialize Swiper on page load

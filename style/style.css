@@ -1757,7 +1757,6 @@ header {
   }
   .stories-left {
     order: 2;
-    height: auto;
     text-align: center;
     padding: 6rem 2rem;
     width: auto;
