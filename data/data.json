@@ -1,0 +1,2054 @@
+[
+  {
+    "id": "onboarding-volunteer",
+    "title": "Onboarding Project Volunteer",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Human Resources Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Entry-Level",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: Entry-Level",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a dezvoltă abilități pentru planificarea și executarea proiectelor",
+      "Oportunitatea de a lucra cu diverse echipe și proiecte",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Competențe solide de organizare și coordonare a proiectelor",
+      "Înțelegere a procesului de onboarding",
+      "Mari competențe de comunicare și lucrul în echipă",
+      "Atenție la detalii și capacitatea de a gestiona mai multe sarcini simultan"
+    ],
+    "responsabilities": [
+      "Coordonarea și gestionarea proiectului de onboarding",
+      "Revizuirea și actualizarea informațiilor prezentate în procesul de onboarding",
+      "Definirea și revizuirea îndeplinirii activităților de onboarding",
+      "Lucrul în strânsă colaborare cu diverse echipe pentru a asigura un proces de onboarding eficient și eficace"
+    ],
+    "jobDescription": "Căutăm un voluntar dedicat pentru a se alătura echipei noastre ca responsabil cu proiectul de onboarding. Rolul va include coordonarea și gestionarea proiectului de onboarding, revizuirea și actualizarea informațiilor prezentate în acest proces, precum și definirea și urmărirea îndeplinirii sarcinilor de onboarding. Dacă sunteți organizat, atent la detalii și pasionat de crearea unei experiențe de onboarding de succes, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/onboarding.webp"
+  },
+  {
+    "id": "mobile-tester",
+    "title": "Mobile Tester",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Quality Assurance Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 1-5 ani / Mid Level",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: mid, 1-5 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a contribui la îmbunătățirea calității aplicațiilor mobile",
+      "Oportunitatea de a lucra într-un mediu dinamic și creativ",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară ca Mobile Tester",
+      "Înțelegerea bunelor practici de testare mobile",
+      "Experiență cu Appium, Apptim constituie un avantaj",
+      "Abilități puternice de rezolvare a problemelor",
+      "Abilitatea de a lucra într-o echipă și de a comunica eficient"
+    ],
+    "responsabilities": [
+      "Testarea aplicațiilor mobile pentru a identifica și rezolva problemele",
+      "Colaborarea cu echipa pentru a înțelege cerințele și a dezvolta testele corespondente",
+      "Raportarea eficientă și completă a constatărilor și recomandărilor",
+      "Contribuția la îmbunătățirea continuă a proceselor și practicilor de testare mobile"
+    ],
+    "jobDescription": "Căutăm un Mobile Tester dedicat pentru a se alătura echipei noastre. Rolul va include testarea aplicațiilor mobile, colaborarea cu echipa pentru a înțelege cerințele și a dezvolta testele corespunzătoare, precum și contribuția la îmbunătățirea proceselor și practicilor noastre de testare mobile. Cunoașterea uneltelor precum Appium, Apptim constituie un avantaj. Dacă aveți experiență relevantă în testarea mobile și sunteți pasionat de calitate și eficiență, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/mobile-t.webp"
+  },
+  {
+    "id": "mobile-developer",
+    "title": "Mobile Developer",
+    "isHiring": true,
+    "team":"Front-end",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Development Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 2-7 ani / Mid-Level",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: mid-level, 2-7 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a contribui la îmbunătățirea calității aplicațiilor mobile",
+      "Oportunitatea de a lucra într-un mediu dinamic și creativ",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară ca Mobile Developer",
+      "Cunoștințe puternice de limbaje de programare pentru mobile (de exemplu Swift, Java, Kotlin, Dart etc.)",
+      "Înțelegerea bunelor practici de dezvoltare mobile",
+      "Abilități puternice de rezolvare a problemelor",
+      "Abilitatea de a lucra într-o echipă și de a comunica eficient"
+    ],
+    "responsabilities": [
+      "Dezvoltarea și îmbunătățirea aplicațiilor mobile",
+      "Colaborarea cu echipa pentru a înțelege cerințele și a dezvolta cele mai bune soluții",
+      "Identificarea și corectarea bug-urilor și a altor problemelor",
+      "Participarea la procesul full life cycle al dezvoltării produselor mobile",
+      "Contribuția la îmbunătățirea continuă a proceselor și practicilor de dezvoltare"
+    ],
+    "jobDescription": "Căutăm un Mobile Developer dedicat pentru a se alătura echipei noastre. Rolul va include dezvoltarea și îmbunătățirea aplicațiilor mobile, colaborarea cu echipa pentru a înțelege cerințele și a dezvolta soluții eficiente, și contribuția la îmbunătățirea proceselor și practicilor noastre de dezvoltare mobile. Dacă aveți experiență relevantă în dezvoltare mobile și sunteți pasionat de crearea de aplicații eficiente și user-friendly, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/mobile-d.webp"
+  },
+  {
+    "id": "usability-tester",
+    "title": "Usability Tester",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Quality Assurance Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 1-5 ani / Mid Level",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: mid, 1-5 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a contribui la îmbunătățirea experienței utilizatorilor",
+      "Oportunitatea de a lucra într-o echipă dinamică și creativă",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență în testarea utilizării sau un rol similar",
+      "Înțelegerea bunelor practici de UX și UI",
+      "Abilități puternice de observare și de a acorda atenție detaliilor",
+      "Abilitatea de a comunica eficient constatările și recomandările"
+    ],
+    "responsabilities": [
+      "Testarea utilizării produselor și identificarea problemelor de utilizare și accesibilitate",
+      "Colaborarea cu echipa pentru a înțelege obiectivele și a determina ce trebuie testat",
+      "Crearea și implementarea planurilor și scenariilor de testare a utilizării",
+      "Raportarea eficientă și completă a constatărilor și recomandărilor",
+      "Contribuția la îmbunătățirea continuă a proceselor și practicilor de testare a utilizării"
+    ],
+    "jobDescription": "Căutăm un Usability Tester dedicat pentru a se alătura echipei noastre. Rolul va include testarea utilizării produselor, colaborarea cu echipa pentru a defini planuri de testare, și comunicarea efectivă a constatărilor și recomandărilor. Dacă aveți experiență relevantă în testarea utilizării și sunteți pasionat de îmbunătățirea experienței utilizatorilor, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/usability.webp"
+  },
+  {
+    "id": "ux-expert",
+    "title": "UX Expert",
+    "isHiring": true,
+    "team":"UI/UX",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Design Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 3-10 ani / Mid-Senior / Senior Level",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: mid-senior, 3-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltarea abilităților de UX Design",
+      "Oportunitatea de a lucra cu diverse echipe și proiecte",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență profesională și abilități solide în UX Design",
+      "Abilități bune de utilizare a uneltelor Figma, Zeplin, Photoshop, Canva",
+      "Înțelegerea profundă a bunelor practici de UX",
+      "Competențe puternice în rezolvarea problemelor și gândire analitică",
+      "Abilitatea de a colabora eficient cu echipele de dezvoltare și management"
+    ],
+    "responsabilities": [
+      "Crearea de interfețe și experiențe de utilizator eficiente și accesibile",
+      "Colaborarea cu echipa pentru a înțelege cerințele și a crea cele mai eficace soluții de design",
+      "Utilizarea instrumentelor Figma, Zeplin, Photoshop, Canva pentru a realiza design-uri de înaltă calitate",
+      "Adaptarea și îmbunătățirea continuă a practicilor și proceselor de UX",
+      "Prezentarea și explicarea conceptelor de design către diverse părți interesate"
+    ],
+    "jobDescription": "Căutăm un UX Expert dedicat pentru a se alătura echipei noastre. Rolul va include crearea de interfețe și experiențe de utilizator eficiente și accesibile, utilizarea uneltelor Figma, Zeplin, Photoshop, Canva, și colaborarea cu echipa pentru a înțelege cerințele și a realiza cele mai eficace soluții de design. Dacă aveți experiență relevantă în UX Design și sunteți un expert în utilizarea diverselor unelte de design, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/ux.webp"
+  },
+  {
+    "id": "test-lead",
+    "title": "Test Lead",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Quality Assurance Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 3-10 ani / Mid-Senior Level",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: mid-senior, 3-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltarea abilităților de leadership",
+      "Oportunitatea de a lucra cu o diversitate de echipe (Manual Testing, Automation Testing, Development team, Management team, Delivery Management and DevOPS team)",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară într-un rol similare (de ex. QA Lead, Test Manager) și abilități de coordonare a echipei",
+      "Cunoștințe solide în metodologia de testare",
+      "Experiență cu unelte de testare manuală și automatizată",
+      "Abilitatea de a comunica eficient cu diverse echipe (dezvoltare, management, DevOps etc.)",
+      "Orientare către rezultate și atenție la detalii"
+    ],
+    "responsabilities": [
+      "Coordonarea echipei de testare, inclusiv Manual Testing și Automation Testing",
+      "Colaborarea cu echipele de dezvoltare, management, livrare și DevOps pentru a asigura calitatea produsului",
+      "Aplicarea și îmbunătățirea metodologiei de testare",
+      "Urmarirea și raportarea progresului în testare",
+      "Asigurarea că toate standardele de calitate sunt respectate"
+    ],
+    "jobDescription": "Căutăm un Test Lead dedicat pentru a se alătura echipei noastre. Rolul va include coordonarea echipei de testare, colaborarea cu diverse echipe pentru a asigura calitatea software-ului, aplicarea și îmbunătățirea metodologiei de testare, și asigurarea că toate standardele de calitate sunt respectate. Dacă aveți experiență relevantă și sunteți pasionat de asigurarea calitatii în software development, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/test-l.webp"
+  },
+  {
+    "id": "lead-developer",
+    "title": "Lead Developer",
+    "isHiring": true,
+    "team":"Front-end",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Development Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 3-10 ani / Mid-Senior Level",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: mid-senior, 3-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltarea abilităților de conducere tehnică",
+      "Oportunitatea de a lucra într-un mediu dinamic şi tehnologic avansat",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioara ca Developer (frontend, backend) şi cunoştinţe de arhitectura software",
+      "Abilități puternice de programare și rezolvare a problemelor",
+      "Cunoașterea și înțelegerea tehnicilor de dezvoltare Agile",
+      "Experiență cu limbajele de programare relevante pentru proiect",
+      "Abilitatea de a ghida și asista echipa de dezvoltare"
+    ],
+    "responsabilities": [
+      "Coordonarea echipei de dezvoltare și asigurarea calității lucrarilor",
+      "Dezvoltare de software atât pentru partea de backend, cât și de frontend",
+      "Colaborarea cu echipa pentru dezvoltarea unor soluții tehnic innovative",
+      "Asigurarea arhitecturii software optime",
+      "Comunicare eficientă cu alte departamente pentru înțelegerea cerințelor"
+    ],
+    "jobDescription": "Căutăm un Lead Developer dedicat pentru a se alătura echipei noastre. Rolul va include coordonarea echipei de dezvoltare, dezvoltarea software-ului și asigurarea unei arhitecturi optimizate. Dacă aveți experiență relevanta în dezvoltarea de software și doriți să vă dezvoltati abilitatile de conducere tehnică, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/lead-dev.webp"
+  },
+  {
+    "id": "assistant-manager",
+    "title": "Assistant Manager",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Administrative Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: Junior-Senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltarea abilităților administrative",
+      "Oportunitatea de a lucra într-un mediu structurat",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară într-un rol administrativ sau de management",
+      "Competențe puternice de organizare și atenție la detalii",
+      "Cunoaștere a principiilor de contabilitate",
+      "Competențe relaționale, de negociere și lucru cu furnizorii",
+      "Abilitatea de a redacta și a înțelege documente oficiale",
+      "Cunoștințe despre GDPR",
+      "Orientare către rezultate"
+    ],
+    "responsabilities": [
+      "Înregistrarea documentelor într-un registru de intrări ieșiri",
+      "Pregătirea rapoartelor privind starea ONG-ului, meetingurile fondatorilor și situația financiară lunară",
+      "Redactarea propunerilor de proiecte pentru aprobare",
+      "Crearea altor rapoarte specifice pentru ONG-uri",
+      "Respectarea reglementărilor GDPR în toate activitățile",
+      "Gestionarea relației cu contabilul și asigurarea că toate documentele contabile sunt predate la timp",
+      "Semnarea documentelor pentru contabilitate"
+    ],
+    "jobDescription": "Căutăm un Assistant Manager dedicat pentru a se alătura echipei noastre. Rolul va include înregistrarea documentelor, pregătirea rapoartelor, redactarea propunerilor de proiecte, respectarea reglementărilor GDPR și gestionarea documentelor contabile. Dacă aveți experiență relevantă într-un rol administrativ și contabil, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/asm.webp"
+  },
+  {
+    "id": "event-planner",
+    "title": "Event Planner",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Marketing Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltarea abilităților de organizare a evenimentelor",
+      "Oportunitatea de a lucra într-un mediu creativ",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară în organizarea evenimentelor",
+      "Abilități puternice de organizare",
+      "Abilități de negociere și relaționare cu furnizorii",
+      "Abilitatea de a dezvolta și implementa strategii de organizare a evenimentelor",
+      "Orientare către rezultate"
+    ],
+    "responsabilities": [
+      "Organizarea evenimentelor de tip: team-building, hackathon",
+      "Promovarea proiectului motor de căutare locuri de muncă 'peviitor.ro' prin organizarea de evenimente",
+      "Crearea și implementarea strategiilor de organizare a evenimentelor în funcție de buget",
+      "Lucrul cu furnizorii pentru a asigura necesarul pentru evenimente",
+      "Coordonarea cu echipa și voluntarii pentru derularea evenimentelor"
+    ],
+    "jobDescription": "Căutăm un Event Planner dedicat pentru a se alătura echipei noastre. Rolul va include organizarea de evenimente de tip team- building, hackathon și promovare a proiectului 'peviitor.ro', crearea și implementarea de strategii de organizare conform bugetului și coordonarea cu echipa și voluntarii pentru derularea evenimentelor. Dacă aveți experiență relevantă și sunteți pasionat de organizarea de evenimente, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/event.webp"
+  },
+  {
+    "id": "pr-specialist",
+    "title": "PR Specialist",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Communications Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltarea abilităților de PR și comunicare",
+      "Oportunitatea de a lucra pentru un proiect cu impact asupra tinerilor",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară în PR sau comunicare",
+      "Cunoștințe despre GDPR și social media (LinkedIn, Instagram, Facebook, Discord)",
+      "Abilități puternice de comunicare",
+      "Abilitatea de a dezvolta și implementa strategii de PR",
+      "Orientare către rezultate"
+    ],
+    "responsabilities": [
+      "Comunicarea cu companiile și promovarea proiectului principal 'peviitor.ro'",
+      "Crearea și implementarea strategiilor de PR",
+      "Promovarea proiectului 'peviitor.ro' către tineri",
+      "Promovarea prin LinkedIn, Instagram, Facebook, Discord cu respectarea GDPR",
+      "Monitorizarea și adaptarea strategiilor de PR pentru a maximiza vizibilitatea proiectului"
+    ],
+    "jobDescription": "Căutăm un PR Specialist dedicat pentru a se alătura echipei noastre. Rolul va include comunicarea cu companiile și promovarea proiectului nostru principal 'peviitor.ro' către tineri, crearea și implementarea de strategii de PR, precum și promovarea prin canalele de social media respectând GDPR. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/pr.webp"
+  },
+  {
+    "id": "fundraiser",
+    "title": "Fundraiser",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Fundraising Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: Junior-Senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități de fundraising",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară în fundraising",
+      "Cunoștințe despre multiple surse de finanțare (declarațiile 230, contracte de sponsorizare, proiecte StartONG, fonduri europene nerambursabile, proiecte prin ADR Nord Vest, finanțare de la Consilii Județene și locale)",
+      "Abilități puternice de comunicare",
+      "Abilitatea de a dezvolta și implementa strategii de fundraising",
+      "Orientare către rezultate"
+    ],
+    "responsabilities": [
+      "Colectare declarații 230",
+      "Obținere contracte de sponsorizare",
+      "Implementare proiecte de fonduri de tip StartONG",
+      "Aplicare pentru proiecte cu fonduri europene nerambursabile",
+      "Derulare proiecte prin ADR Nord Vest",
+      "Căutarea altor surse de fonduri de la Consilii Județene și locale",
+      "Maximizarea oportunităților de finanțare pentru organizație"
+    ],
+    "jobDescription": "Căutăm un Fundraiser dedicat pentru a se alătura echipei noastre. Veți fi responsabil pentru colectarea declarațiilor 230, obținerea contractelor de sponsorizare, implementarea proiectelor de fonduri de tip StartONG, aplicarea pentru proiecte cu fonduri europene nerambursabile și prin ADR Nord Vest. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/fundraiser.webp"
+  },
+  {
+    "id": "marketing-specialist",
+    "title": "Marketing Specialist",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Marketing Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a lucra într-un mediu creativ și dinamic",
+      "Dezvoltarea abilităților de marketing",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență anterioară în marketing",
+      "Cunoștințe de bază în digital marketing",
+      "Creativitate și abilități puternice de comunicare",
+      "Abilitatea de a dezvolta și implementa strategii de marketing",
+      "Orientare către rezultate"
+    ],
+    "responsabilities": [
+      "Crearea, implementarea, monitorizarea și îmbunătățirea strategiilor de marketing",
+      "Colaborarea cu echipa pentru a dezvolta campanii de marketing creative",
+      "Monitorizarea și analiza performanței campaniilor de marketing",
+      "Cercetarea pieței pentru a identifica noi oportunități de marketing",
+      "Crearea de conținut atractiv pentru campaniile de marketing"
+    ],
+    "jobDescription": "Căutăm un Specialist Marketing creativ și dedicat pentru a se alătura echipei noastre. Acest rol implică crearea, implementarea și monitorizarea strategiilor de marketing, cercetarea pieței și crearea de conținut atractiv pentru campaniile de marketing. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/marketing.webp"
+  },
+  {
+    "id": "hr",
+    "title": "HR",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "Administrative Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a lucra într-un mediu dinamic și de colaborare",
+      "Dezvoltare abilități de HR",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități puternice de organizare și prioritizare",
+      "Bune abilități de comunicare și interpersonale",
+      "Capacitatea de a lua decizii etice și corecte",
+      "Abilitatea de a dezvolta strategii de retenție și recrutare",
+      "Orientat către rezultate"
+    ],
+    "responsabilities": [
+      "Recrutarea și selecția voluntarilor",
+      "Dezvoltarea și implementarea strategiilor de HR",
+      "Gestionarea proceselor de onboarding pentru voluntari noi",
+      "Crearea și menținerea unui mediu de lucru pozitiv",
+      "Asigurarea complianței cu legile și reglementările de resurse umane"
+    ],
+    "jobDescription": "Căutăm o persoană pentru rolul de HR pentru a se alătura echipei noastre. Această persoană se va ocupa de recrutarea, selecția voluntarilor, implementarea strategiilor de HR, gestionarea proceselor de onboarding pentru voluntarii noi. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/hr.webp"
+  },
+  {
+    "id": "application-support-engineer",
+    "title": "Application Support Engineer",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a lucra cu diverse tehnologii",
+      "Dezvoltare abilități de rezolvare a problemelor",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență în suportul aplicațiilor",
+      "Cunoașterea unuia sau mai multor limbaje de programare",
+      "Bune abilități de comunicare",
+      "Abilitatea de a rezolva probleme tehnice complexe",
+      "Abilitatea de a gestiona și prioritiza multiple sarcini"
+    ],
+    "responsabilities": [
+      "Furnizarea suportului tehnic pentru diverse aplicații",
+      "Rezolvarea problemelor tehnice",
+      "Comunicarea cu echipele interne pentru a rezolva problemele tehnice",
+      "Documentarea și urmărirea problemelor tehnice",
+      "Actualizarea și mentenanța bazelor de date"
+    ],
+    "jobDescription": "Căutăm un Application Support Engineer pentru a se alătura echipei noastre. Acest rol implică furnizarea de suport tehnic pentru diversele noastre aplicații, rezolvarea problemelor tehnice, comunicarea cu echipele interne și documentarea problemelor tehnice. Dacă aveți experiență relevantă și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/ase.webp"
+  },
+  {
+    "id": "product-owner",
+    "title": "Product Owner",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a influența direcția și succesul produselor",
+      "Dezvoltare abilități de leadership",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Dezvoltarea de produse din faza incipientă până la lansare",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență de muncă ca Product Owner",
+      "Abilitatea de a lucra cu echipe Agile",
+      "Abilitatea de a lua decizii asupra priorităților de dezvoltare a produsului",
+      "Excelente abilități de comunicare și prezentare",
+      "Gândire strategică și focus pe rezultate"
+    ],
+    "responsabilities": [
+      "Propune strategia de producție și direcția produsului",
+      "Colaborarea strânsă cu echipa de dezvoltare pentru a defini și prioritiza funcționalitățile produsului",
+      "Răspunde de succesul produsului, fiind principalul punct de contact pentru orice întrebare legată de produs",
+      "Lucrează cu echipa de marketing pentru a asigura promovarea corespunzătoare a produsului",
+      "Gestionează riscurile și problemele apărute în cadrul dezvoltării produsului"
+    ],
+    "jobDescription": "Căutăm un Product Owner dedicat care să fie responsabil de succesul și direcția produsului nostru. Prioritățile acestui rol vor fi propunerea strategiei de produs, colaborarea strânsă cu echipa de dezvoltare, gestionarea riscurilor și asigurarea promovării corespunzătoare a produsului. Dacă aveți abilitățile necesare și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/pro.webp"
+  },
+  {
+    "id": "delivery-manager",
+    "title": "Delivery Manager",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități de management",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități solide de gestionare a timpului și prioritizare",
+      "Experiență în gestionarea livrărilor de proiect",
+      "Cunoștințe solide de project management",
+      "Bune abilități de comunicare",
+      "Abilitatea de a lua decizii rapide și informate"
+    ],
+    "responsabilities": [
+      "Coordonarea și gestionarea livrărilor de proiect",
+      "Asigurarea că proiectele sunt livrate la timp și că respectă așteptările clientului",
+      "Ținerea sub control a riscurilor și a problemelor proiectelor",
+      "Comunicarea eficientă cu echipa, sponsorii de proiect și părțile interesate",
+      "Implementarea de proceduri și procese pentru îmbunătățirea eficienței livrărilor"
+    ],
+    "jobDescription": "Căutăm un Delivery Manager pentru a coordona și gestiona livrările de proiect. Rolul va implica asigurarea că proiectele sunt livrate la timp, comunicarea eficientă cu diversele părți interesate, gestionarea riscurilor și problemelor proiectelor. Dacă aveți experiență relevantă și sunteți un gânditor analitic, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/manager.webp"
+  },
+  {
+    "id": "project-manager",
+    "title": "Project Manager",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Oportunitatea de a coordona o echipă de voluntari",
+      "Dezvoltare abilități de management",
+      "Muncă în echipă",
+      "Networking cu persoane cu același interes",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități puternice de coordonare a echipei",
+      "Abilități dovedite de gestionare a timpului și prioritizare",
+      "Bune abilități de comunicare",
+      "Experiență în lucrul cu diverse persoane și echipe",
+      "O atitudine proactivă, cu gândire critică și înzestrată cu abilități de rezolvare a problemelor"
+    ],
+    "responsabilities": [
+      "Coordonarea echipei de voluntari",
+      "Dezvoltarea și implementarea planurilor de proiect",
+      "Monitorizarea progresului și adaptarea planurilor conform necesităților",
+      "Comunicarea eficientă a stării proiectului către diverse părți interesate",
+      "Identificarea și gestionarea potențialelor riscuri și probleme ale proiectului"
+    ],
+    "jobDescription": "Căutăm un Project Manager pentru a coordona echipa noastră de voluntari. Acest rol implică dezvoltarea și implementarea planurilor de proiect, monitorizarea progresului, comunicarea eficientă și gestionarea potențialelor riscuri. Dacă aveți experiență și pasiune pentru acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/pr-manager.webp"
+  },
+  {
+    "id": "business-analyst",
+    "title": "Business Analyst",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice și de business",
+      "Muncă în echipă",
+      "Influențarea directă a deciziilor de business",
+      "Proiecte complexe și provocatoare",
+      "Dezvoltare personală și profesională",
+      "Traininguri despre metodologiile de analiză",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilitatea de a înțelege și defini problemele de business",
+      "Experiență în crearea de soluții eficiente pentru problemele de business",
+      "Bune abilități de comunicare",
+      "Persoană proactivă și orientată către rezultate",
+      "Atenție la detalii și gândire critică"
+    ],
+    "responsabilities": [
+      "Revizuirea și definirea problemelor de business",
+      "Crearea de soluții eficiente pentru problemele de business",
+      "Comunicarea cu diferitele departamente pentru a înțelege mai bine problemele și necesitățile acestora",
+      "Prezentarea de rapoarte periodice cu privire la progresul realizat",
+      "Identificarea și monitorizarea indicatorilor de performanță"
+    ],
+    "jobDescription": "Căutăm un Business Analyst care să identifice, înțeleagă și definească problemele de business în cadrul organizației noastre. Dacă aveți experiență relevantă și sunteți un gânditor analitic, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/ba.webp"
+  },
+  {
+    "id": "devops-github",
+    "title": "DevOPS for GitHub",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în munca cu GitHub",
+      "Networking cu persoane cu același interes",
+      "Influențarea procesului de dezvoltare",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență cu GitHub",
+      "Cunoașterea problemelor de securitate pe GitHub",
+      "Cunoștințe despre licențiere eligibile",
+      "Abilitatea de a organiza repository-uri pe GitHub",
+      "Experiență cu lucrul în echipă",
+      "Cunoașterea unei strategii de branching eficiente",
+      "Experiență în implementarea unei strategii de code review"
+    ],
+    "responsabilities": [
+      "Verificarea problemelor de securitate pe GitHub",
+      "Asigurarea eligibilității licenței",
+      "Organizarea repository-urilor pe GitHub",
+      "Lucrul în echipă",
+      "Definirea unei strategii de branching eficiente",
+      "Implementarea unei strategii de code review"
+    ],
+    "jobDescription": "Căutăm un specialist DevOPS pentru GitHub pentru a se alătura echipei noastre. Rolul presupune verificarea problemelor de securitate pe GitHub, asigurarea eligibilității licenței, organizarea repository-urilor pe GitHub, lucru în echipă, definirea unei strategii de branching eficiente. Dacă aveți abilitățile necesare și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/dev-git.webp"
+  },
+  {
+    "id": "devops-apache-solr",
+    "title": "DevOPS with Apache SOLR",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă cu Apache SOLR",
+      "Networking cu persoane cu același interes",
+      "Influențarea procesului de căutare",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență substanțială cu Apache SOLR",
+      "Cunoașterea setării schema.xml",
+      "Abilitatea de a verifica corectitudinea Search",
+      "Cunoașterea optimizării motorului de căutare",
+      "Abilitatea de a defini shard-uri",
+      "Cunoașterea Apache SOLR Cloud, Apache Zookeeper",
+      "Abilitatea de a face setări pentru SOLR-Zookeeper pentru un environment de producție",
+      "Cunoașterea extinderii rețelei de noduri care oferă scalabilitatea Apache SOLR",
+      "Capabilitatea de a oferi consistență în căutare",
+      "Experiență în optimizarea căutării cu SOLR",
+      "Cunoașterea răspunsurilor relevante, fuzzy search"
+    ],
+    "responsabilities": [
+      "Instalare, update, upgrade a ultimei versiuni Apache SOLR",
+      "Setarea schema.xml",
+      "Verificarea corectitudinii Search",
+      "Optimizarea motorului de căutare",
+      "Realizarea de backup-restore",
+      "Definirea shard-urilor",
+      "Lucrul cu Apache SOLR Cloud, Apache Zookeeper",
+      "Setări pentru SOLR-Zookeeper pentru un environment de producție adevărat",
+      "Extinderea rețelei de noduri care oferă scalabilitatea Apache SOLR",
+      "Asigurarea consistenței în căutare",
+      "Optimizarea căutării cu SOLR"
+    ],
+    "jobDescription": "Căutăm un specialist DevOPS cu Apache SOLR pentru a se alătura echipei noastre. Rolul presupune instalarea, actualizarea și upgrade-ul ultimei versiuni Apache SOLR, setarea schema.xml, verificarea corectitudinii Search, optimizarea motorului de căutare și multe altele. Dacă sunteți pasionat de acest domeniu și aveți abilitățile necesare, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/dev-ap.webp"
+  },
+  {
+    "id": "devops",
+    "title": "DevOPS",
+    "isHiring": true,
+    "team":"",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Influențarea procesului de dezvoltare",
+      "Oportunitatea de a lucra pe multiple environmenturi",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Experiență cu backup-restore",
+      "Capacitatea de a instala și configura environmenturi (dev, qa, prod)",
+      "Experiență în asistarea developerilor în setarea locală",
+      "Experiență cu deploy la cod pe diferite environmenturi",
+      "Cunoștințe de monitorizare și gestionare a serverelor",
+      "Experiență cu sisteme de versionare a codului (ex: git, github)",
+      "Abilitatea de a crea și implementa strategii de code review",
+      "Abilități excelente de comunicare"
+    ],
+    "responsabilities": [
+      "Realizarea de backup-restore-uri",
+      "Instalarea și configurarea environmenturilor dev, qa, prod",
+      "Asistarea developerilor în setarea locală",
+      "Realizarea deploy-ului de cod pe diferite environmenturi",
+      "Monitorizarea și gestionarea funcționării serverelor",
+      "Verificarea funcționării întregului sistem",
+      "Asigurarea în permanență a salvării codului pe github",
+      "Crearea și implementarea strategiilor de code review",
+      "Setările de git și github",
+      "Asistarea testerilor și developerilor cu orice întrebări sau probleme"
+    ],
+    "jobDescription": "Căutăm un specialist DevOps pentru a se alătura echipei noastre. Rolul va implica o serie de responsabilități, inclusiv realizarea de backup-restore, instalarea și configurarea environmenturilor, asistarea developerilor și testerilor, realizarea deploy-ului de cod și monitorizarea și gestionarea serverelor. Dacă aveți abilitățile necesare și sunteți pasionat de acest domeniu, așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/dev-n.webp"
+  },
+  {
+    "id": "backend-developer-php",
+    "title": "Backend Developer with PHP",
+    "isHiring": true,
+    "team":"Back-end",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă cu API în PHP",
+      "Networking cu persoane cu același interes",
+      "Contribuții la un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre tehnologiile și metodologiile folosite",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Cunoștințe solide de PHP",
+      "Experiență în lucrul cu API-uri",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru programare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Dezvoltarea și întreținerea API-ului scris în PHP",
+      "Scrierea de cod curat și eficient",
+      "Identificarea și repararea defecțiunilor",
+      "Integrarea datelor de la server-side",
+      "Colaborarea cu echipa pentru a atinge obiectivele",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Backend Developer cu cunoștințe de PHP pentru a se alătura echipei noastre. Rolul implică lucrul cu API-ul nostru scris în PHP, scrierea de cod curat și eficient, identificarea și repararea defecțiunilor și colaborarea cu echipa pentru a atinge obiectivele. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/be-php.webp"
+  },
+  {
+    "id": "automation-tester-playwright",
+    "title": "Automation Tester with Playwright",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitatea de a împărtăși rezultatele testării cu echipa",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre metodologiile de testare și tehnologiile folosite",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Atenție la detalii și abilități organizatorice excelente",
+      "Cunoștințe solide de Playwright",
+      "Experiență cu un limbaj de programare (ex: JavaScript, Python)",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru testare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Crearea, menținerea și îmbunătățirea framework-urilor de testare automatizată",
+      "Scrierea de scripturi de testare folosind Playwright",
+      "Identificarea, înregistrarea, documentarea și urmărirea defecțiunilor",
+      "Colaborarea cu echipa pentru a asigura calitatea produselor dezvoltate",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Automation Tester cu Playwright pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/tst-p.webp"
+  },
+  {
+    "id": "automation-tester-selenium",
+    "title": "Automation Tester with Selenium",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitatea de a împărtăși rezultatele testării cu echipa",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre metodologiile de testare și tehnologiile folosite",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Atenție la detalii și abilități organizatorice excelente",
+      "Cunoștințe solide de Selenium",
+      "Experiență cu un limbaj de programare (ex: Java, Python, JavaScript)",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru testare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Crearea, menținerea și îmbunătățirea framework-urilor de testare automatizată",
+      "Scrierea de scripturi de testare folosind Selenium",
+      "Identificarea, înregistrarea, documentarea și urmărirea defecțiunilor",
+      "Colaborarea cu echipa pentru a asigura calitatea produselor dezvoltate",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Automation Tester cu Selenium pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/tst-s.webp"
+  },
+  {
+    "id": "automation-tester-javascript",
+    "title": "Automation Tester with JavaScript",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitatea de a împărtăși rezultatele testării cu echipa",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre metodologiile de testare și tehnologiile folosite",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Atenție la detalii și abilități organizatorice excelente",
+      "Cunoștințe solide de JavaScript",
+      "Cunoașterea unui framework de testare precum Jest, Mocha, Cypress",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru testare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Crearea, menținerea și îmbunătățirea framework-urilor de testare automatizată",
+      "Scrierea de scripturi de testare în JavaScript",
+      "Identificarea, înregistrarea, documentarea și urmărirea defecțiunilor",
+      "Colaborarea cu echipa pentru a asigura calitatea produselor dezvoltate",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Automation Tester cu JavaScript pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/tst-js.webp"
+  },
+  {
+    "id": "automation-tester-php",
+    "title": "Automation Tester with PHP",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitatea de a împărtăși rezultatele testării cu echipa",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre metodologiile de testare și tehnologiile folosite",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Atenție la detalii și abilități organizatorice excelente",
+      "Cunoștințe solide de PHP",
+      "Cunoașterea unui framework de testare precum PHPUnit",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru testare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Crearea, menținerea și îmbunătățirea framework-urilor de testare automatizată",
+      "Scrierea de scripturi de testare în PHP",
+      "Identificarea, înregistrarea, documentarea și urmărirea defecțiunilor",
+      "Colaborarea cu echipa pentru a asigura calitatea produselor dezvoltate",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Automation Tester cu PHP pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/tst-php.webp"
+  },
+  {
+    "id": "automation-tester-java",
+    "title": "Automation Tester with JAVA",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitatea de a împărtăși rezultatele testării cu echipa",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre metodologiile de testare și tehnologiile folosite",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Atenție la detalii și abilități organizatorice excelente",
+      "Cunoștințe solide de JAVA",
+      "Cunoașterea unui framework de testare precum Selenium, JUnit, TestNG",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru testare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Crearea, menținerea și îmbunătățirea framework-urilor de testare automatizată",
+      "Scrierea de scripturi de testare în JAVA",
+      "Identificarea, înregistrarea, documentarea și urmărirea defecțiunilor",
+      "Colaborarea cu echipa pentru a asigura calitatea produselor dezvoltate",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Automation Tester cu JAVA pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/tst-java.webp"
+  },
+  {
+    "id": "automation-tester-python",
+    "title": "Automation Tester with Python",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitatea de a împărtăși rezultatele testării cu echipa",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre metodologiile de testare și tehnologiile folosite",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Atenție la detalii și abilități organizatorice excelente",
+      "Cunoștințe solide de Python",
+      "Cunoașterea unui framework de testare precum Selenium, PyTest, Unittest",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru testare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Crearea, menținerea și îmbunătățirea framework-urilor de testare automatizată",
+      "Scrierea de scripturi de testare în Python",
+      "Identificarea, înregistrarea, documentarea și urmărirea defecțiunilor",
+      "Colaborarea cu echipa pentru a asigura calitatea produselor dezvoltate",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Automation Tester cu Python pentru a se alătura echipei noastre. Rolul presupune crearea, menținerea și îmbunătățirea sistemelor de testare automatizată, identificarea și urmărirea defecțiunilor și colaborarea cu echipa pentru a asigura calitatea produselor. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/tst-python.webp"
+  },
+  {
+    "id": "manual-tester",
+    "title": "Manual Tester",
+    "isHiring": true,
+    "team":"QA",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitatea de a împărtăși rezultatele testării cu echipa",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre metodologiile de testare",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a contribui într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Abilități de gândire analitică și de rezolvare a problemelor",
+      "Atenție la detalii și abilități organizatorice excelente",
+      "Cunoștințe de operare PC",
+      "Abilități bune de comunicare, atât scrisă cât și verbală",
+      "Pasiune pentru testare și calitate",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Derularea de teste manuale pe diferite platforme și dispozitive",
+      "Identificarea și raportarea bug-urilor către echipa de dezvoltare",
+      "Colaborarea cu echipa pentru a asigura că produsul final îndeplinește cerințele",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Manual Tester pasionat pentru a se alătura echipei noastre. Ca Manual Tester, veți fi responsabil pentru derularea de teste manuale, identificarea și raportarea bug-urilor, precum și pentru colaborarea cu echipa pentru a asigura că produsul final îndeplinește cerințele. Nu este necesară experiența anterioară, dar un plus ar fi cunoașterea unor concepte de bază legate de metodologiile de testare. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/manual.webp"
+  },
+  {
+    "id": "frontend-developer",
+    "title": "Frontend Developer",
+    "isHiring": true,
+    "team":"Front-end",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitate de sharing a detaliilor tehnice în echipă",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre tehnologiile care le folosim în proiect",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de lucrare cu ReactJS, HTML5, CSS3, NEXT.js, JavaScript vanilla, Node.js",
+      "Posibilitatea de a lucra cu design-uri oferite de echipa UX folosind Figma",
+      "Posibilitatea contribuției într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Cunoștințe solide de ReactJS, HTML5, CSS3",
+      "Cunoștințe de NEXT.js, JavaScript vanilla, Node.js",
+      "Abilități de lucru cu Figma",
+      "Abilități bune de comunicare",
+      "Pasiune în IT",
+      "Dorința de afirmare",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Dezvoltarea de componente noi folosind React.js",
+      "Traducerea design-ului și wireframes în cod de înaltă calitate",
+      "Optimizarea componentelor pentru performanță maximă",
+      "Întreținerea codului și a design-ului",
+      "Colaborarea cu echipa de backend și cu cei responsabili cu design-ul",
+      "Lucrul cu echipa de UX pentru a implementa design-uri realizate în Figma"
+    ],
+    "jobDescription": "Căutăm un Frontend Developer pasionat pentru a se alătura echipei noastre. Veți colabora îndeaproape cu echipa noastră UX, care va oferi design-urile utilizând tool-ul Figma. Ca Frontend Developer, veți participa la dezvoltarea și îmbunătățirea platformei noastre web. Veți lucra cu cele mai noi tehnologii din domeniu și veți avea ocazia să vă dezvoltați încontinuu abilitățile tehnice. Așteptăm cu nerăbdare să vă alăturați echipei noastre!",
+    "image": "./assets/roles/frontend.webp"
+  },
+  {
+    "id": "data-scientist",
+    "title": "Data Scientist",
+    "isHiring": true,
+    "team":"Data Quality",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Muncă în echipă",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitate de sharing a detaliilor tehnice în echipă",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre tehnologiile care le folosim în proiect",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a lucra cu seturi mari de date",
+      "Posibilitatea de luare decizii individuale",
+      "Un mediu în care poți să îți testezi cunoștințele",
+      "Posibilitatea de a corecta erorile",
+      "Munca ta va fi vizibilă public",
+      "Posibilitatea contribuției într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență în lucrul cu Apache SOLR",
+      "Cunoștințe de Python",
+      "Abilități bune de comunicare",
+      "Pasiune în IT",
+      "Dorința de afirmare",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Proiectează, dezvoltă și implementează modele de învățare automată",
+      "Dezvoltă algoritmi predictivi și statistici pentru analize complexe",
+      "Utilizează tehnici de învățare automată și statistici pentru a analiza și interpreta rezultatele modelului",
+      "Optimizează și tunează modele de învățare automată pe măsură ce acestea sunt rulate în producție",
+      "Colaborează cu echipele de inginerie pentru a implementa modele în producție",
+      "Întreține documentația pentru modelele de date și procesele de lucru"
+    ],
+    "jobDescription": "Căutăm un Data Scientist pasionat pentru a se alătura echipei noastre. Ca Data Scientist, veți face parte din echipa de dezvoltare a proiectului https://peviitor.ro care se ocupă cu procesarea și analiza unor cantități mari de date. Veți lucra cu date complexe și veți furniza informații care vor avea un impact direct asupra deciziilor strategice ale asociației.",
+    "image": "./assets/roles/data-s.webp"
+  },
+  {
+    "id": "data-analyst",
+    "title": "Data Analyst",
+    "isHiring": true,
+    "team":"Data Quality",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-10 ani / Junior-Senior",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior-senior, 0-10 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Descoperirea toolurilor OPEN SOURCE legate de dezvoltare software",
+      "Muncă în echipă",
+      "Identitate și apartenență",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitate de sharing a detaliilor tehnice în echipă",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre tehnologiile care le folosim în proiect",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Ascultarea cu atenție a datelor generate de scraper și validarea lor",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de a lucra cu seturi mari de date",
+      "Posibilitatea de luare decizii individuale",
+      "Un mediu în care poți să îți testezi cunoștințele",
+      "Posibilitatea de a corecta erorile",
+      "Munca ta va fi vizibilă public",
+      "Posibilitatea contribuției într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență în HTML, CSS, JavaScript",
+      "Experiență în lucrul cu Apache SOLR",
+      "Cunoștințe de Python pentru a invalida/anula datele greșite",
+      "Abilități bune de comunicare",
+      "Pasiune în IT",
+      "Dorința de afirmare",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Identificarea secțiunii de cariere de pe website-urile companiilor",
+      "Validarea datelor generate de scraper",
+      "Testarea datelor scrapuite împreună cu echipa de testare",
+      "Publicarea rezultatelor testelor pe GitHub",
+      "Automatizarea testării datelor cu GitHub Actions",
+      "Integrarea rezultatelor cu Validatorul (admin)",
+      "Prezentarea rezultatelor echipei",
+      "Comunicarea în interiorul echipei",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un Data Analyst care să valideze și testeze datele preluate de scraper de pe website-urile companiilor și să publice rezultatele în motorul de căutare https://peviitor.ro. Poziția este una de tip voluntariat și se adresează la orice nivel de cunoștințe: de la junior la senior, 0-10 ani experiență. Cunoașterea unui limbaj de programare, de exemplu Python, Rust, Nim, JavaScript, Java sau PHP, prezintă un mare avantaj. Munca voastră face parte din portofoliul personal și timpul petrecut în cadrul acestui proiect constituie vechime validată de către recrutori în cadrul oricărui interviu. Vă oferim concursul și susținerea unei echipe de peste 500 de voluntari care se află în diferite stadii de pregătire. Vă așteptăm să dezvoltăm împreună proiectul https://peviitor.ro. Datele reprezintă locurile de muncă active din România, iar munca voastră va ajuta pe cei care își caută un loc de muncă. Inclusiv tu poți să te folosești de munca celorlalți voluntari și toți ne vom bucura împreună de realizările întregii echipe. Agregăm toate locurile de muncă în același loc: motor de căutare locuri de muncă - peviitor.ro.",
+    "image": "./assets/roles/data-a.webp"
+  },
+  {
+    "id": "data-scraper",
+    "title": "Data Scraper",
+    "isHiring": true,
+    "team":"Data Quality",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-3 ani / Internship / Practica",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior, 0-3 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Descoperirea toolurilor OPEN SOURCE legate de dezvoltare software",
+      "Muncă în echipă",
+      "Identitate și apartenență",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitate de sharing a detaliilor tehnice în echipă",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre tehnologiile care le folosim în proiect",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Posibilitatea de confirmare a cunoștințelor acumulate",
+      "Accesul la o bază de date cu locurile de muncă pe care împreună le agregăm în același loc",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de luare decizii individuale",
+      "Un mediu în care poți să îți testezi cunoștințele",
+      "Posibilitatea de a greși",
+      "Asignarea unei echipe întregi de suport care te ajută cu testarea, validarea erorilor, automatizarea execuției codului, livrarea datelor în producție",
+      "Munca ta va fi vizibilă public",
+      "Posibilitatea contribuției într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență în HTML, CSS, JavaScript",
+      "Cunoștințe de Python, JavaScript, JAVA, Nim sau Rust în care poți să scrii un scraper web",
+      "Abilități bune de comunicare",
+      "Pasiune în IT",
+      "Dorința de afirmare",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Identificarea secțiunii de cariere de pe website-urile companiilor",
+      "Dezvoltarea scraperului web",
+      "Testarea datelor scrapuite împreună cu echipa de testare",
+      "Publicarea scraperului pe GitHub",
+      "Automatizarea scraperului cu GitHub Actions",
+      "Integrarea scraperului cu Validatorul (admin)",
+      "Prezentarea scraperului echipei de scraperiști",
+      "Comunicarea în interiorul echipei",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un developer care să scrie un scraper pentru preluarea locurilor de muncă de pe website-ul companiei și să îl publice în motorul de căutare https://peviitor.ro. Poziția este una de tip voluntariat și se adresează oricărui nivel de cunoștințe: de la începător la avansat. Cunoașterea unui limbaj de programare, de exemplu Python, Rust, Nim, JavaScript, JAVA sau PHP prezintă un mare avantaj. Munca voastră face parte din portofoliul personal și timpul petrecut în cadrul acestui proiect constituie vechime validată de către recrutori în cadrul oricărui interviu. Vă oferim concursul și susținerea unei echipe de peste 500 de voluntari care se află în diferite stadii de pregătire. Vă așteptăm să dezvoltăm împreună proiectul https://peviitor.ro. Datele reprezintă locurile de muncă active din România, iar munca voastră va ajuta pe cei care își caută un loc de muncă. Inclusiv tu poți să te folosești de munca celorlalți voluntari deja și toți ne vom bucura împreună de realizările întregii echipe. Agregăm toate locurile de muncă în același loc: motor de căutare locuri de muncă - peviitor.ro.",
+    "image": "./assets/roles/data-scr.webp"
+  },
+  {
+    "id": "web-scraper",
+    "title": "Web Scraper",
+    "isHiring": true,
+    "team":"Scraping",
+    "employer": "ASOCIAȚIA OPORTUNITĂȚI ȘI CARIERE",
+    "department": "IT Department",
+    "location": "România",
+    "jobType": "Telemuncă",
+    "experience": "Experiență 0-3 ani / Internship / Practica",
+    "salary": "voluntar",
+    "aboutEmployer": {
+      "photo": "./assets/sebi-pic.png",
+      "name": "Sebastian Boga",
+      "title": "Președinte",
+      "phone": "0741 025 447",
+      "email": "aocpeviitor@gmail.com",
+      "address": "Zimbor, nr. 215, jud. Sălaj",
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
+    },
+    "generalInfo": [
+      "Durată: nedeterminată",
+      "Tipul de job: normă întreagă",
+      "Experiență: junior, 0-3 ani",
+      "Locația: 100% Remote"
+    ],
+    "offerings": [
+      "Dezvoltare abilități tehnice",
+      "Descoperirea toolurilor OPEN SOURCE legate de dezvoltare software",
+      "Muncă în echipă",
+      "Identitate și apartenență",
+      "Experiență în muncă",
+      "Networking cu persoane cu același interes",
+      "Posibilitate de sharing a detaliilor tehnice în echipă",
+      "Muncă reală pe un proiect în producție",
+      "Dezvoltarea responsabilității",
+      "Muncă bazată pe task-uri",
+      "Traininguri despre tehnologiile pe care le folosim în proiect",
+      "Meetinguri tehnice orientate pe departament",
+      "O comunitate de peste 500 de persoane pe Discord",
+      "Posibilitatea de afirmare profesională",
+      "Posibilitatea de confirmare a cunoștințelor acumulate",
+      "Accesul la o bază de date cu locurile de muncă pe care împreună le agregăm în același loc",
+      "Responsabilitate",
+      "Ownership",
+      "Posibilitatea de luare decizii individuale",
+      "Un mediu în care poți să îți testezi cunoștințele",
+      "Posibilitatea de a greși",
+      "Asignarea unei echipe întregi de suport care te ajută cu testarea, validarea erorilor, automatizarea execuției codului, livrarea datelor în producție",
+      "Munca ta va fi vizibilă public",
+      "Posibilitatea contribuției într-un proiect OPEN SOURCE"
+    ],
+    "demands": [
+      "Experiență în HTML, CSS, JavaScript",
+      "Cunoștințe de Python, JavaScript, JAVA, Nim sau Rust în care poți să scrii un scraper web",
+      "Abilități bune de comunicare",
+      "Pasiune în IT",
+      "Dorința de afirmare",
+      "Dorința de a lucra în echipă",
+      "Deschiderea de a învăța lucruri noi"
+    ],
+    "responsabilities": [
+      "Identificarea secțiunii de cariere de pe website-urile companiilor",
+      "Dezvoltarea scraperului web",
+      "Testarea datelor scrapuite împreună cu echipa de testare",
+      "Publicarea scraperului pe GitHub",
+      "Automatizarea scraperului cu GitHub Actions",
+      "Integrarea scraperului cu Validatorul (admin)",
+      "Prezentarea scraperului echipei de scraperiști",
+      "Comunicarea în interiorul echipei",
+      "Participarea la ședințele săptămânale"
+    ],
+    "jobDescription": "Căutăm un developer care să scrie un scraper pentru preluarea locurilor de muncă de pe website-ul companiei și să îl publice în motorul de căutare https://peviitor.ro. Poziția este una de tip voluntariat și se adresează oricărui nivel de cunoștințe: de la începător la avansat. Cunoașterea unui limbaj de programare, de exemplu Python, Rust, Nim, JavaScript, JAVA sau PHP prezintă un mare avantaj. Munca voastră face parte din portofoliul personal și timpul petrecut în cadrul acestui proiect constituie vechime validată de către recrutori în cadrul oricărui interviu. Vă oferim concursul și susținerea unei echipe de peste 500 de voluntari care se află în diferite stadii de pregătire. Vă așteptăm să dezvoltăm împreună proiectul https://peviitor.ro. Datele reprezintă locurile de muncă active din România, iar munca voastră va ajuta pe cei care își caută un loc de muncă. Inclusiv tu poți să te folosești de munca celorlalți voluntari deja și toți ne vom bucura împreună de realizările întregii echipe. Agregăm toate locurile de muncă în același loc: motor de căutare locuri de muncă - peviitor.ro.",
+    "image": "./assets/roles/web-s.webp"
+  }
+]
