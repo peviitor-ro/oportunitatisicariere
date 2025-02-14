@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const jobId = urlParams.get("id");
 
-  fetch("./data.json")
+  fetch("./data/data.json")
     .then((response) => response.json())
     .then((data) => {
       const job = data.find((job) => job.id === jobId);
