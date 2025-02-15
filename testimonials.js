@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const storiesContainer = document.querySelector(".stories-wrapper");
 
   function loadTestimonials() {
-    fetch("./data/testimonials.json")
+    fetch("data/testimonials.json")
       .then((response) => response.json())
       .then((data) => {
         data.forEach((testimonial) => {
