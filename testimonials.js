@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const storiesContainer = document.querySelector(".stories-wrapper");
-  const baseURL =
-    window.location.hostname === "127.0.0.1"
-      ? "/oportunitatisicariere" // Development path
-      : ""; // Production path (root)
 
   if (!storiesContainer) {
     console.error("Error: .stories-wrapper not found in the DOM!");
@@ -11,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function loadTestimonials() {
-    fetch(`${baseURL}/data/testimonials.json`)
+    fetch("data/testimonials.json")
       .then((response) => response.json())
       .then((data) => {
         data.forEach((testimonial) => {
