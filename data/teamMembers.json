@@ -47,12 +47,7 @@
       "roles": [
         {
           "team": "Front-end",
-          "position": "Front-end Lead",
-          "teamLead": true
-        },
-        {
-          "team": "Core",
-          "position": "Front-end Lead",
+          "position": "Front-end Developer",
           "teamLead": false
         },
         {
