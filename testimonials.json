@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Patricia Istrate",
+    "avatar": "./assets/contributors/patricia-istrate.webp",
+    "role": "UI/UX Designer",
+    "text": "Colaborarea cu o echipă care a reprezentat și clientul a fost atât satisfăcătoare, cât și provocatoare. Schimbările frecvente și gestionarea feedback-ului mi-au îmbunătățit abilitățile de colaborare și capacitatea de a evidenția soluții practice. Crearea unui produs pentru utilizatori reali a fost o experiență valoroasă, iar această colaborare m-a ajutat să devin mai flexibilă, să argumentez deciziile și sfaturile pe baza research-ului, făcându-mă un designer mai bun."
+  },
+  {
+    "name": "Talida Ganciu",
+    "avatar": "./assets/contributors/talida-ganciu.webp",
+    "role": "Frontend Developer",
+    "text": "Acum mai bine de un an am început ca voluntar într-un proiect, dorind să învăt și să mă dezvolt. De atunci, am acumulat multă experiență și am cunoscut oameni valoroși. Un mentor senior frontend m-a ghidat pe parcurs și m-a ajutat să mă perfecționez. Datorită conexiunilor făcute, am primit nu doar oportunități de invățare, ci și proiecte plătite, care mi-au deschis noi uși în carieră."
+  },
+  {
+    "name": "Andrei Cojocaru",
+    "avatar": "./assets/contributors/andrei-cojocaru.webp",
+    "role": "Scraper Developer",
+    "text": "Proiectul peviitor.ro a fost o adevărată schimbare de direcție pentru mine. Prin resursele și sprijinul oferit, am reușit să învăț programare, o abilitate pe care o consideram greu accesibilă înainte. Lecțiile structurate și exemplele practice m-au ajutat să înțeleg concepte complicate, iar comunitatea mi-a oferit încrederea de a pune întrebări și de a progresa constant."
+  },
+  {
+    "name": "Adriana Cionca",
+    "avatar": "./assets/contributors/adriana-cionca-second-photo.webp",
+    "role": "Project Manager & QA Analist",
+    "text": "Am avut privilegiul de a face parte dintr-o echipă unită și dedicată. După 9 luni de muncă și învățare continuă în cadrul proiectului, am reușit să mă angajez în domeniu. Sentimentul de apartenență față de acest proiect m-au motivat să rămân implicată în continuare, ajutând noii colegi să se integreze și să se dezvolte așa cum am făcut și eu."
+  },
+  {
+    "name": "Adelina Guliman",
+    "avatar": "./assets/contributors/adelina-guliman-third-photo.webp",
+    "role": "Quality Assurance Tester",
+    "text": "Când am pășit în această comunitate, eram plină de emoții și incertitudini după o reconversie profesională. Am găsit o echipă extraordinară, care m-a susținut și m-a ajutat să cresc, iar cu experiența de aici am reușit să îmi găsesc jobul mult visat. Recomand acest proiect oricui nu știe de unde să înceapă."
+  },
+  {
+    "name": "Loredana Pelle",
+    "avatar": "./assets/contributors/loredana-pelle-second-photo.webp",
+    "role": "QA Engineer Manual",
+    "text": "Un curs de testare manuală m-a făcut să-mi doresc o schimbare. Iar Asociația Oportunități și Cariere a făcut posibil ca acest vis să devină realitate. Am găsit aici o echipă de oameni faini, pasionați și dispuși să împărtășească din cunoștințele lor. Am testat și aplicat de pe peviitor.ro și de mai puțin de o lună lucrez ca și QA Engineer. Peviitor.ro - investești în viitorul tău!"
+  },
+  {
+    "name": "Dan Paun",
+    "avatar": "./assets/contributors/dan-paun.webp",
+    "role": "QA Engineer",
+    "text": "Pot spune că am primit și eu o oportunitate de a învăța și a crește în cadrul acestei echipe formate din oameni faini. Fără sprijinul, răbdarea și încrederea lor, nu aș fi reușit să ajung în acest punct al carierei mele. Fiecare sfat, fiecare învățătură și fiecare moment de încurajare m-au ajutat să mă dezvolt profesional. Astăzi, ocup rolul de QA Engineer în cadrul unei companii de renume."
+  },
+  {
+    "name": "Sergiu Avram",
+    "avatar": "./assets/contributors/sergiu-avram.webp",
+    "role": "Frontend Developer",
+    "text": "Proiectul peviitor.ro m-a ajutat să recâștig încrederea în abilitățile mele de programator. După 2.5 ani de tutoriale, proiecte personale și respingeri la toate interviurile, am început să îmi pierd speranța. În urma feedback-ului pozitiv și încurajator din partea echipei peviitor.ro mi-am recăpătat încrederea în abilitățile mele de programator și am obținut primul meu job în domeniu."
+  },
+  {
+    "name": "Rareș Irimus",
+    "avatar": "./assets/contributors/rares-irimus.webp",
+    "role": "QA Automation",
+    "text": "Ca voluntar la Asociația Oportunități și Cariere, am dobândit o serie de abilitați valoroase iar implicarea mea nu doar că a impresionat angajatorii, ci a demonstrat și faptul că posed abilitați tehnice solide și o motivație puternică de a excela. Aceste calități mi-au deschis drumul către un job în QA Automation, reușind astfel să transform o pasiune într-o carieră de succes, care îmi oferă satisfacție profesională și oportunități de creștere constantă."
+  }
+]
