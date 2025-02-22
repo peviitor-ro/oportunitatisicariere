@@ -1051,5 +1051,21 @@
       "github": "https://github.com/AlexandruFBN",
       "discord": "http://discordapp.com/users/1037064672534351872"
     }
+  },
+  {
+    "name": "Mihaela Adam",
+    "avatar": "./assets/contributors/mihaela-adam.webp",
+    "roles":[
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/mihaela-adam-2b9a0325a/",
+      "github": "https://github.com/mihaelaadam/",
+      "discord": "http://discordapp.com/users/1272851227276873861"
+    }
   }
 ]
