@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let jobsData = [];
 
-  fetch("./data.json")
+  fetch("data/data.json")
     .then((response) => response.json())
     .then((data) => {
       jobsData = data;

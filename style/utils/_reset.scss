@@ -31,6 +31,7 @@ section:target {
   padding-top: 10rem !important;
 }
 
+// Shake animation for "Intalniri" jitsi icon
 @keyframes shake {
   10%,
   90% {
@@ -50,3 +51,95 @@ section:target {
     transform: translate3d(2px, 0, 0);
   }
 }
+
+// Underlined heading global style
+.underlined-heading {
+  position: relative;
+  display: flex;
+  justify-self: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 24px;
+    transform: rotate(-3deg);
+    background: url("../assets/underline.svg") no-repeat center/contain;
+  }
+
+  h2 {
+    padding: 0 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+    text-align: center;
+    color: $black;
+  }
+}
+
+@media only screen and (min-width: #{$tablet-size}) {
+  .underlined-heading {
+    &::after {
+      bottom: -18px;
+    }
+
+    h2 {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+// Global styles for highlighted text
+.hg-text {
+  color: $green-mint;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+// Global styles for buttons
+// Primary
+.custom-btn {
+  padding: 1.2rem 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  @extend .custom-btn;
+  color: $white;
+  background-color: $green-mint;
+  border: none;
+
+  &:hover {
+    background-color: $dark-mint;
+  }
+}
+
+.btn-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 0.8rem;
+  background: url("../assets/rocket.svg") no-repeat center/contain;
+  color: $white;
+}
+
+// @media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
+//   .custom-btn {
+//     font-size: 2.4rem;
+//   }
+// }
+
+// @media (max-width: $phone-size) {
+//   .custom-btn {
+//     font-size: 2.2rem;
+//   }
+// }

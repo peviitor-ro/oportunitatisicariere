@@ -312,35 +312,35 @@ window.addEventListener("load", redirectLinks);
 
 // Our mission slide and title section
 
-const checkboxes = document.querySelectorAll("input[name='slide']");
-const titleElement = document.querySelector(
-  ".our-mission__content__title__heading"
-);
+// const checkboxes = document.querySelectorAll("input[name='slide']");
+// const titleElement = document.querySelector(
+//   ".our-mission__content__title__heading"
+// );
 
-// Title option for each slide
-const missionTitles = {
-  viziune: "Viziunea noastră",
-  misiune: "Misiunea noastră",
-  valori: "Valorile noastre",
-};
+// // Title option for each slide
+// const missionTitles = {
+//   viziune: "Viziunea noastră",
+//   misiune: "Misiunea noastră",
+//   valori: "Valorile noastre",
+// };
 
-// Add event listener to each checkbox
-checkboxes.forEach((checkbox) => {
-  checkbox.addEventListener("change", () => {
-    // Removes animation fade-in-out for title before change
-    titleElement.classList.remove("title-change");
-    if (checkbox.checked) {
-      // Hides the title element on checkbox
-      titleElement.style.opacity = "0";
+// // Add event listener to each checkbox
+// checkboxes.forEach((checkbox) => {
+//   checkbox.addEventListener("change", () => {
+//     // Removes animation fade-in-out for title before change
+//     titleElement.classList.remove("title-change");
+//     if (checkbox.checked) {
+//       // Hides the title element on checkbox
+//       titleElement.style.opacity = "0";
 
-      // Adds a small delay in order for the fade-out animation to finish
-      setTimeout(() => {
-        // Change title content based on checkbox
-        titleElement.textContent = missionTitles[checkbox.id] || ""; // Changes title content based on checkbox
+//       // Adds a small delay in order for the fade-out animation to finish
+//       setTimeout(() => {
+//         // Change title content based on checkbox
+//         titleElement.textContent = missionTitles[checkbox.id] || ""; // Changes title content based on checkbox
 
-        // Add animation fade-in-out for title on checkbox
-        titleElement.classList.add("title-change");
-      }, 100);
-    }
-  });
-});
+//         // Add animation fade-in-out for title on checkbox
+//         titleElement.classList.add("title-change");
+//       }, 100);
+//     }
+//   });
+// });

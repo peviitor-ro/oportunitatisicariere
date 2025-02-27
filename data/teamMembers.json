@@ -47,12 +47,7 @@
       "roles": [
         {
           "team": "Front-end",
-          "position": "Front-end Lead",
-          "teamLead": true
-        },
-        {
-          "team": "Core",
-          "position": "Front-end Lead",
+          "position": "Front-end Developer",
           "teamLead": false
         },
         {
@@ -1055,6 +1050,38 @@
       "linkedin": "./index.html#teamList",
       "github": "https://github.com/AlexandruFBN",
       "discord": "http://discordapp.com/users/1037064672534351872"
+    }
+  },
+  {
+    "name": "Mihaela Adam",
+    "avatar": "./assets/contributors/mihaela-adam.webp",
+    "roles":[
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/mihaela-adam-2b9a0325a/",
+      "github": "https://github.com/mihaelaadam/",
+      "discord": "http://discordapp.com/users/1272851227276873861"
+    }
+  },
+  {
+    "name": "Alin Dumbravă",
+    "avatar": "./assets/contributors/alin-dumbrava.webp",
+    "roles":[
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/dumbrava-alin/",
+      "github": "https://github.com/aLinDC",
+      "discord": "http://discordapp.com/users/203244469582036992"
     }
   }
 ]

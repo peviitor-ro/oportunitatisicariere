@@ -7,7 +7,7 @@ let hasActiveBtn = false;
 
 // Functie de fetch pentru datele din json
 function loadTeamMembers() {
-  fetch("./teamMembers.json")
+  fetch("data/teamMembers.json")
     .then((response) => response.json())
     .then((data) => {
       teamMembers = data;

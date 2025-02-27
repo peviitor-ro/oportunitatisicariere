@@ -48,6 +48,74 @@ section:target {
     transform: translate3d(2px, 0, 0);
   }
 }
+.underlined-heading {
+  position: relative;
+  display: flex;
+  justify-self: center;
+}
+.underlined-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  height: 24px;
+  transform: rotate(-3deg);
+  background: url("../assets/underline.svg") no-repeat center/contain;
+}
+.underlined-heading h2 {
+  padding: 0 1.8rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  text-align: center;
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+  .underlined-heading::after {
+    bottom: -18px;
+  }
+  .underlined-heading h2 {
+    font-size: 3.2rem;
+  }
+}
+.hg-text {
+  color: #2f7973;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.custom-btn, .primary-btn {
+  padding: 1.2rem 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  color: #f3f3f3;
+  background-color: #2f7973;
+  border: none;
+}
+.primary-btn:hover {
+  background-color: #1e524e;
+}
+
+.btn-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 0.8rem;
+  background: url("../assets/rocket.svg") no-repeat center/contain;
+  color: #f3f3f3;
+}
+
 /* HEADER SECTION */
 header {
   display: flex;
@@ -390,7 +458,7 @@ header {
     height: 25px;
   }
 }
-@media only screen and (min-width: 1282px) {
+@media only screen and (min-width: 1283px) {
   .nav .nav__links .nav__links__list:first-of-type li {
     min-width: fit-content;
   }
@@ -804,10 +872,10 @@ header {
   display: flex;
   align-items: flex-start;
   width: 80px;
-  height: 60dvh;
+  height: 72dvh;
   background-color: #f7f7f7;
+  border: 2px solid #f7f7f7;
   overflow: hidden;
-  cursor: pointer;
   transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
 }
 .our-mission__content__details .slide-card:nth-child(2) {
@@ -822,7 +890,6 @@ header {
   display: flex;
   flex-wrap: nowrap;
   height: 100%;
-  color: #6b6b6b;
 }
 .our-mission__content__details .slide-card .row .icon {
   display: flex;
@@ -835,6 +902,7 @@ header {
   color: #f3f3f3;
   background: #2f7973;
   border-radius: 50%;
+  cursor: pointer;
 }
 .our-mission__content__details .slide-card .row .description {
   display: flex;
@@ -846,20 +914,34 @@ header {
   transform: translateY(30px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.our-mission__content__details .slide-card .row .description h4 {
-  font-size: 2rem;
-  margin: 14px;
+.our-mission__content__details .slide-card .row .description .slide-title {
+  font-size: 2.4rem;
+  margin: 1.2rem 0.4rem;
 }
-.our-mission__content__details .slide-card .row .description p {
-  font-size: 1.2rem;
-  color: #6b6b6b;
-  padding-top: 5px;
+.our-mission__content__details .slide-card .row .description .slide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  height: 100%;
+  width: 600px;
+  padding-top: 12px;
+}
+.our-mission__content__details .slide-card .row .description .slide-content p {
+  font-size: 1.4rem;
+}
+.our-mission__content__details .slide-card .row .description .slide-content a {
+  margin: auto auto 1.2rem auto;
+}
+@media only screen and (max-width: 760px) {
+  .our-mission__content__details .slide-card .row .description .slide-content {
+    width: 100%;
+  }
 }
 .our-mission__content__details input {
   display: none;
 }
 .our-mission__content__details input:checked + .slide-card {
-  width: 480px;
+  width: 720px;
   background-color: #fff;
 }
 .our-mission__content__details input:checked + .slide-card .row .icon {
@@ -878,7 +960,7 @@ header {
     font-size: 3.2rem;
   }
 }
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 920px) {
   .our-mission__content {
     align-items: flex-start;
     justify-content: center;
@@ -889,7 +971,13 @@ header {
   }
   .our-mission__content__details input:checked + .slide-card {
     width: 90dvw;
-    height: 480px;
+    height: 86dvh;
+  }
+  .our-mission__content__details input:checked + .slide-card:nth-child(2) {
+    height: 88dvh;
+  }
+  .our-mission__content__details input:checked + .slide-card:nth-child(4) {
+    height: 72dvh;
   }
   .our-mission__content__details .slide-card {
     width: 90dvw;
@@ -1737,7 +1825,6 @@ header {
   }
   .stories-left {
     order: 2;
-    height: auto;
     text-align: center;
     padding: 6rem 2rem;
     width: auto;
