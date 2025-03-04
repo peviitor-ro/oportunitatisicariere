@@ -3,28 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 3.2rem 2.4rem;
+  padding: 3.2rem 2.4rem;
   overflow: hidden;
 
   &__content {
-    &__title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2.4rem 0 2rem;
-
-      > h2 {
-        font-size: 2.2rem;
-        font-weight: 400;
-        line-height: 3.6rem;
-        text-align: center;
-        color: $black;
-      }
-
-      > img {
-        width: 23rem;
-      }
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     &__details {
       display: flex;
@@ -184,9 +169,6 @@
 @media only screen and (min-width:#{$tablet-size}) {
   .our-mission {
     padding: 2.4rem 6rem;
-  }
-  .our-mission h2 {
-    font-size: 3.2rem;
   }
 }
 

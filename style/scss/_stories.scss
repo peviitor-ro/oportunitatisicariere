@@ -5,24 +5,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  &-title {
-    display: flex;
-    flex-direction: column;
-
-    & h2 {
-      font-size: 2.2rem;
-      font-weight: 400;
-      text-align: center;
-      color: $black;
-      margin-bottom: -0.5rem;
-      padding-top: 7rem;
-    }
-
-    & img {
-      transform: scale(0.9);
-    }
-  }
+  gap: 1.6rem;
+  padding: 3.2rem 2.4rem;
 
   &-text {
     padding: 3.5rem;
