@@ -5,106 +5,152 @@
   align-items: center;
   padding: 0 3.2rem 2.4rem;
   overflow: hidden;
+}
 
-  &__content {
-    &__title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2.4rem 0 2rem;
+.our-mission__content {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.4rem 0;
 
-      > h2 {
-        font-size: 2.2rem;
-        font-weight: 400;
-        line-height: 3.6rem;
-        text-align: center;
-        color: $black;
-      }
-
-      > img {
-        width: 23rem;
-      }
+    > h2 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      line-height: 3.6rem;
+      text-align: center;
+      color: $black;
     }
 
-    &__details {
+    > img {
+      width: 23rem;
+    }
+
+    // Fade in and out animation for title content on change
+    /* Clasa care ascunde titlul înainte de animație */
+    .title-change {
+      opacity: 0;
+      animation: fadeOutIn 0.3s ease-in-out forwards; /* 'forwards' pentru a păstra starea finală după animație */
+    }
+
+    /* Definirea keyframes pentru fade-out și fade-in */
+    @keyframes fadeOutIn {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 1rem;
+
+    .slide-card {
       display: flex;
-      flex-wrap: wrap;
       align-items: flex-start;
-      justify-content: center;
-      gap: 1rem;
+      width: 80px;
+      height: 72dvh;
+      background-color: $greyish-white;
+      border: 2px solid $greyish-white;
+      overflow: hidden;
+      transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
 
-      & a {
-        font-weight: bold;
-        color: $green-mint;
+      &:nth-child(2) {
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
       }
 
-      .description,
-      .search-engine {
-        flex: 1 1 48%;
-        min-height: fit-content;
-        box-sizing: border-box;
-        padding: 1rem;
-        margin: 0 auto;
+      &:last-child {
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+      }
 
-        p {
-          font-size: 1.6rem;
-          font-weight: 400;
-          line-height: 2.2rem;
-          text-align: left;
-          margin-bottom: 1.8rem;
+      .row {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 100%;
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          margin: 15px;
+          font-size: 2rem;
+          color: $white;
+          background: $green-mint;
+          border-radius: 50%;
+          cursor: pointer;
         }
-      }
-
-      .description {
-        position: relative;
-        img {
-          transform: rotate(180deg);
-          position: absolute;
-          right: 0;
-          bottom: 0;
-        }
-      }
-
-      .search-engine-img {
-        width: 100%;
-        margin: 0 auto;
-      }
-
-      @media (max-width: 769px) {
-        .description,
-        .search-engine {
-          flex: 1 1 100%;
-          max-width: 100%;
-          padding: 1rem 0;
-        }
-
-        .search-engine {
-          height: auto;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width:#{$phone-size}) {
-  .our-mission {
-    &__content {
-      &__details {
-        display: block;
-        text-align: left;
 
         .description {
-          width: 100vw;
-          margin: 0 auto;
-          white-space: normal;
-          padding: 0 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          width: calc(100% - 80px);
 
-          p {
-            margin-bottom: 2rem;
+          padding: 1rem;
+          opacity: 0;
+          transform: translateY(30px);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+
+          .slide-title {
+            font-size: 2.4rem;
+            margin: 1.2rem 0.4rem;
           }
 
-          img {
-            display: none;
+          .slide-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            height: 100%;
+            width: 600px;
+            padding-top: 12px;
+
+            p {
+              font-size: 1.4rem;
+            }
+
+            a {
+              margin: auto auto 1.2rem auto;
+            }
+          }
+
+          @media only screen and (max-width: 760px) {
+            .slide-content {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked {
+      & + .slide-card {
+        width: 720px;
+        background-color: #fff;
+
+        .row {
+          .icon {
+            background-color: $dark-mint;
+          }
+
+          .description {
+            opacity: 1;
+            transform: translateY(0);
           }
         }
       }
@@ -112,97 +158,66 @@
   }
 }
 
-@media only screen and (min-width:#{$phone-size})  and (max-width:#{$tablet-size}) {
-  .our-mission {
-    &__content {
-      &__details {
-        display: block;
-        text-align: left;
-
-        .description {
-          width: auto;
-          margin: 0 auto;
-          white-space: normal;
-
-          p {
-            margin-bottom: 2rem;
-          }
-
-          img {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width:650px) and (max-width:#{$tablet-size}) {
-  .our-mission {
-    margin-bottom: 3rem;
-
-    &__content {
-      &__details {
-        display: block;
-        text-align: left;
-
-        .description {
-          width: auto;
-          margin: 0 auto;
-          white-space: normal;
-          padding: 0 2rem;
-
-          p {
-            margin-bottom: 2rem;
-          }
-
-          img {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .our-mission {
-    &__content {
-      &__details {
-        display: block;
-
-        .description {
-          img {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width:#{$tablet-size}) {
+@media only screen and (min-width: #{$tablet-size}) {
   .our-mission {
     padding: 2.4rem 6rem;
-  }
-  .our-mission h2 {
-    font-size: 3.2rem;
-  }
-}
 
-@media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}) {
-  .our-mission {
-    padding: 7rem 13.5rem;
-    &__content {
-      &__details {
-        gap: 0px;
-      }
+    h2 {
+      font-size: 3.2rem;
     }
   }
 }
 
-@media only screen and (min-width: #{$desktop-size}) {
-  .search-engine img {
-    min-height: 330px;
+@media only screen and (max-width: 920px) {
+  .our-mission__content {
+    align-items: flex-start;
+    justify-content: center;
+
+    &__details {
+      flex-direction: column;
+      margin: 0 auto;
+
+      input:checked + .slide-card {
+        width: 90dvw;
+        height: 86dvh; // use nth-child to add appropriate height based on content
+
+        // First slide
+        &:nth-child(2) {
+          height: 88dvh;
+        }
+        // Second slide
+        &:nth-child(4) {
+          height: 72dvh;
+        }
+      }
+
+      .slide-card {
+        width: 90dvw;
+        height: 8dvh;
+
+        &:nth-child(2) {
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+          border-bottom-left-radius: 0;
+        }
+
+        &:last-child {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 2rem;
+          border-bottom-left-radius: 2rem;
+        }
+
+        .row {
+          .icon {
+            margin: 10px;
+          }
+
+          .description {
+            opacity: 1;
+            transform: translate(0);
+          }
+        }
+      }
+    }
   }
 }
