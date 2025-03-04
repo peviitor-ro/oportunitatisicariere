@@ -521,33 +521,9 @@
     flex-wrap: wrap;
     gap: 1rem;
 
-    .applyBtn {
-      background-color: $green-mint;
-      border: none;
-      border-radius: 0.8rem;
+    button {
       padding: 1.2rem 3.2rem;
-      color: $white;
-      font-size: 1.8rem;
-      font-weight: 600;
-      cursor: pointer;
       width: 100%;
-      transition: all 0.3s;
-
-      &:hover {
-        background-color: $dark-mint;
-      }
-
-      &:first-child {
-        background-color: transparent;
-        border: 2px solid $green-mint;
-        color: $green-mint;
-
-        &:hover {
-          background-color: $dark-mint;
-          border-color: $dark-mint;
-          color: $white;
-        }
-      }
     }
   }
 }
