@@ -30,7 +30,7 @@ function initializeTeams() {
   // Generam butoanele de navigare pentru echipe
   for (let team of teams) {
     const button = document.createElement("button");
-    button.classList.add("team-nav-btn");
+    button.classList.add("team-btn");
     button.textContent = team;
 
     if (!firstButton) firstButton = button;
@@ -42,7 +42,7 @@ function initializeTeams() {
     button.addEventListener("click", () => {
       // Gestionarea clasei de active pentru butonul activat
       document
-        .querySelectorAll(".team-nav-btn")
+        .querySelectorAll(".team-btn")
         .forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
