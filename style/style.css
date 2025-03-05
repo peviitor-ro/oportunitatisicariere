@@ -2077,7 +2077,6 @@ footer .footer-bottom h4 {
     display: flex;
     flex-wrap: wrap;
     gap: 1.1rem 2.4rem;
-    max-width: 14.8rem;
   }
   footer .footer-social__links li a img {
     width: 3.2rem;
