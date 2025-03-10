@@ -8,6 +8,7 @@
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translate(20%, 25%);
+
   .tippy-arrow {
     color: #000000;
   }
@@ -99,6 +100,7 @@ footer {
   z-index: 99;
   opacity: 0;
   bottom: 2vh;
+
   img {
     width: 5rem;
     height: 5rem;
@@ -106,13 +108,13 @@ footer {
   }
 
   img:hover {
-    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
-      brightness(85%) contrast(77%);
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
   }
 }
 
 #top-redirect-main-page {
   right: 3vw;
+
   @media (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
     right: 2vw;
   }
@@ -173,6 +175,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 1.4rem;
+
       li {
         a {
           font-size: 1.4rem;
@@ -182,6 +185,7 @@ footer {
   }
 
   .top-redirect-btn {
+
     // right: 2vw;
     // bottom: 0vh;
     img {
@@ -230,6 +234,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
+
       li {
         a {
           font-size: 1.4rem;
@@ -254,6 +259,7 @@ footer {
     hr {
       max-width: 100rem;
     }
+
     .footer-social {
       &__links {
         max-width: 100%;
@@ -291,6 +297,7 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
       li {
         a {
           font-size: 1.4rem;
