@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -84,7 +84,7 @@
             <li>
               <button
                 onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
-                class="join-btn btn--green"
+                class="primary-btn"
               >
                 Alătură-te
               </button>
@@ -102,12 +102,14 @@
           alt="404 Error Image"
         />
         <div class="text-container">
-          <p class="header-first">Pagina nu a fost gasită</p>
-          <img
-            class="vector-line"
-            src="assets/404-page-assets/img_1.png"
-            alt="vectorLine"
-          />
+          <div class="underlined-title">
+            <h2 class="title">Pagină inexistentă</h2>
+            <img
+              class="underline"
+              src="./assets/underline.svg"
+              alt="vectorLine"
+            />
+          </div>
           <p class="normal-p">
             Oops! Pagina pe care o cauți nu pare să existe.
           </p>
@@ -116,7 +118,7 @@
             Este posibil ca linkul pe care l-ai urmat să fie greșit sau pagina
             să fi fost eliminată.
           </p>
-          <button class="redirect-btn" id="redirect-btn">
+          <button class="primary-btn" id="redirect-btn">
             Mergi la pagina principală
           </button>
         </div>
@@ -184,9 +186,10 @@
               data-tippy-content="Conectare Jitsi"
               class="footer-link"
             >
-              <img src="./assets/social-media-icons/bxl-jitsi.svg" 
-              alt="jitsi"
-               />
+              <img
+                src="./assets/social-media-icons/bxl-jitsi.svg"
+                alt="jitsi"
+              />
             </a>
           </li>
           <li>
@@ -196,9 +199,7 @@
               data-tippy-content="dev.to"
               class="footer-link"
             >
-              <img src="./assets/social-media-icons/bxl-dev-to.svg" 
-              alt="dev"
-              />
+              <img src="./assets/social-media-icons/bxl-dev-to.svg" alt="dev" />
             </a>
           </li>
         </ul>
