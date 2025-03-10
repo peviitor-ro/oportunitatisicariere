@@ -50,3 +50,97 @@ section:target {
     transform: translate3d(2px, 0, 0);
   }
 }
+
+// Global styles for buttons
+.custom-btn {
+  padding: 1.2rem 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+// Primary
+.primary-btn {
+  @extend .custom-btn;
+  color: $white;
+  background-color: $green-mint;
+  border: none;
+
+  &:hover {
+    background-color: $dark-mint;
+  }
+}
+
+// Secondary
+.secondary-btn {
+  @extend .custom-btn;
+  color: $green-mint;
+  background-color: $white;
+  border: 2px solid $green-mint;
+
+  &:hover {
+    color: $white;
+    background-color: $dark-mint;
+    border-color: $dark-mint;
+  }
+}
+
+// Job button
+.job-btn {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  @extend .primary-btn;
+}
+
+// Team navigation
+.team-btn {
+  margin: 1rem 0.5rem;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  @extend .secondary-btn;
+}
+
+// Button icon
+.btn-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 0.8rem;
+  background: url("../assets/rocket.svg") no-repeat center/contain;
+  color: $white;
+}
+
+// Underlined title global style
+.underlined-title {
+  align-self: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    text-align: center;
+    color: $black;
+  }
+  .underline {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (min-width:#{$tablet-size}) {
+  .underlined-title {
+    .title {
+      font-size: 3.2rem;
+    }
+  }
+}

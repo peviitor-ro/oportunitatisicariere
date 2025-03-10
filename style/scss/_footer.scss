@@ -1,6 +1,6 @@
 /* FOOTER SECTION */
 /* styles for tooltip - footer links*/
-.tippy-box[data-theme~='tooltip-footer-theme'] {
+.tippy-box[data-theme~="tooltip-footer-theme"] {
   background-color: #000000;
   color: #ffffff;
   border: none;
@@ -8,6 +8,7 @@
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translate(20%, 25%);
+
   .tippy-arrow {
     color: #000000;
   }
@@ -52,7 +53,7 @@ footer {
       li {
         display: inline-block;
         margin: 0 1rem;
-      
+
         a {
           display: flex;
           align-items: center;
@@ -61,12 +62,12 @@ footer {
           height: 5.6rem;
           border-radius: 50%;
           transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  
+
           &:hover {
             background-color: rgba(237, 237, 237, 1);
             box-shadow: 0.15rem 0.3rem 0.3rem rgba(136, 136, 136, 0.25);
           }
-  
+
           img {
             width: 4rem;
             height: 4rem;
@@ -99,6 +100,7 @@ footer {
   z-index: 99;
   opacity: 0;
   bottom: 2vh;
+
   img {
     width: 5rem;
     height: 5rem;
@@ -106,13 +108,13 @@ footer {
   }
 
   img:hover {
-    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
-      brightness(85%) contrast(77%);
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
   }
 }
 
 #top-redirect-main-page {
   right: 3vw;
+
   @media (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
     right: 2vw;
   }
@@ -126,7 +128,6 @@ footer {
     right: 1.2vw;
     bottom: 1.2vh;
   }
-  
 }
 
 // Mobile size
@@ -155,6 +156,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 1.1rem 2.4rem;
+        // max-width: 14.8rem; //#fixed mobile icon for wrap
 
         li {
           a {
@@ -173,6 +175,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 1.4rem;
+
       li {
         a {
           font-size: 1.4rem;
@@ -182,6 +185,7 @@ footer {
   }
 
   .top-redirect-btn {
+
     // right: 2vw;
     // bottom: 0vh;
     img {
@@ -230,6 +234,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
+
       li {
         a {
           font-size: 1.4rem;
@@ -254,6 +259,7 @@ footer {
     hr {
       max-width: 100rem;
     }
+
     .footer-social {
       &__links {
         max-width: 100%;
@@ -291,6 +297,7 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
       li {
         a {
           font-size: 1.4rem;

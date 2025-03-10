@@ -345,10 +345,6 @@ header {
           height: 4.4rem;
         }
       }
-
-      & .join-btn {
-        font-size: 2.8rem;
-      }
     }
 
     &__links__list.show {
@@ -412,7 +408,7 @@ header {
 }
 
 @media only screen and (min-width: 1283px) {
-  .nav .nav__links .nav__links__list:first-of-type {    
+  .nav .nav__links .nav__links__list:first-of-type {
     li {
       min-width: fit-content;
     }
@@ -424,25 +420,6 @@ header {
   .close-menu-icon {
     display: none;
   }
-}
-
-.join-btn {
-  padding: 1rem 3.2rem;
-  border-radius: 0.8rem;
-  border: none;
-  font-size: 1.6rem;
-  color: $white;
-  cursor: pointer;
-  font-weight: 600;
-
-  &:hover {
-    transition: all 0.3s;
-    background-color: $dark-mint;
-  }
-}
-
-.btn--green {
-  background-color: $green-mint;
 }
 
 @media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
@@ -469,10 +446,6 @@ header {
           height: 4rem;
         }
       }
-
-      & .join-btn {
-        font-size: 2.4rem;
-      }
     }
   }
 }
@@ -487,10 +460,6 @@ header {
         margin-top: 6rem;
         row-gap: 1.6rem;
         column-gap: 2.6rem;
-      }
-
-      & .join-btn {
-        font-size: 2.2rem;
       }
     }
   }
