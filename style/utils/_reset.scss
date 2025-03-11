@@ -32,19 +32,23 @@ section:target {
 }
 
 @keyframes shake {
+
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
   }
+
   20%,
   80% {
     transform: translate3d(1px, 0, 0);
   }
+
   30%,
   50%,
   70% {
     transform: translate3d(-2px, 0, 0);
   }
+
   40%,
   60% {
     transform: translate3d(2px, 0, 0);
@@ -58,7 +62,8 @@ section:target {
   align-items: center;
   justify-content: center;
   width: fit-content;
-  border-radius: 0.8rem;
+  border-radius: 1.2rem;
+  letter-spacing: 0.1rem;
   font-size: 1.6rem;
   font-weight: 600;
   transition: all 0.3s;
@@ -94,15 +99,15 @@ section:target {
 // Job button
 .job-btn {
   font-size: 1.4rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.6rem;
   @extend .primary-btn;
 }
 
 // Team navigation
 .team-btn {
-  margin: 1rem 0.5rem;
-  font-size: 1.4rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
+  padding: 0.6rem 0.8rem;
+  margin: 0.8rem 0.3rem;
   @extend .secondary-btn;
 }
 
@@ -131,13 +136,14 @@ section:target {
     text-align: center;
     color: $black;
   }
+
   .underline {
     width: 100%;
     display: block;
   }
 }
 
-@media only screen and (min-width:#{$tablet-size}) {
+@media only screen and (min-width: $tablet-size) {
   .underlined-title {
     .title {
       font-size: 3.2rem;
