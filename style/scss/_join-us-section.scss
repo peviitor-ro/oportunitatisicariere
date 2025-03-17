@@ -1,5 +1,4 @@
 /* JOIN US SECTION */
-/* styles for tooltip - jitsi links in Întâlniri săptămânale*/
 .tippy-box[data-theme~="tooltip-jitsi-theme"] {
   background-color: white;
   color: $green-mint;
@@ -8,9 +7,11 @@
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translateX(-120%);
+
   .tippy-arrow {
     color: transparent;
   }
+
   @media (max-width: $tablet-size) {
     transform: translateX(10%);
   }
@@ -32,7 +33,7 @@
     line-height: 3.4rem;
   }
 
-  > h2 {
+  >h2 {
     inline-size: clamp(30rem, 60rem, 70rem);
 
     @media screen and (min-width: 500px) and (max-width: 650px) {
@@ -95,7 +96,8 @@
             height: 42px;
             color: $white;
             border-radius: 50%;
-            background-color: $darker-gray; /* Culoarea implicita a svg-ului */
+            background-color: $darker-gray;
+            /* Culoarea implicita a svg-ului */
             mask-size: 32px 32px;
             mask-repeat: no-repeat;
             mask-position: center;
@@ -166,6 +168,7 @@
       .title {
         padding: 0 2.7rem;
       }
+
       & .team-line {
         width: 22rem;
       }
