@@ -100,7 +100,7 @@
             <li>
               <button
                 onclick="window.open('//discord.gg/KPMkdUfQNu', '_blank')"
-                class="join-btn btn--green"
+                class="primary-btn"
               >
                 Alătură-te
               </button>
@@ -143,12 +143,16 @@
       <section id="our-mission" class="our-mission" data-aos="fade-up">
         <div class="our-mission__content">
           <div
-            class="our-mission__content__title"
+            class="underlined-title"
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            <h2>Misiunea noastră</h2>
-            <img src="./assets/underline.svg" alt="text-underline" />
+            <h2 class="title">Misiunea noastră</h2>
+            <img
+              class="underline"
+              src="./assets/underline.svg"
+              alt="text-underline"
+            />
           </div>
           <div class="our-mission__content__details">
             <div class="description">
@@ -196,12 +200,16 @@
 
       <section id="how-contribute" class="how-contribute" data-aos="fade-up">
         <div
-          class="how-contribute__title"
+          class="underlined-title"
           data-aos="zoom-in-up"
           data-aos-duration="1000"
         >
-          <h2>Cum poți ajuta tu?</h2>
-          <img src="./assets/underline.svg" alt="text-underline" />
+          <h2 class="title">Cum poți ajuta?</h2>
+          <img
+            class="underline"
+            src="./assets/underline.svg"
+            alt="text-underline"
+          />
         </div>
         <div
           class="how-contribute__description"
@@ -304,12 +312,12 @@
       </section>
       <section id="why-contribute" class="why-contribute" data-aos="fade-up">
         <div
-          class="why-contribute__title"
+          class="underlined-title"
           data-aos="zoom-in-up"
           data-aos-duration="1000"
         >
-          <h2>De ce să ajuți?</h2>
-          <img src="./assets/underline.svg" alt="" />
+          <h2 class="title">De ce să ajuți?</h2>
+          <img class="underline" src="./assets/underline.svg" alt="" />
         </div>
         <div class="why-contribute__description">
           <p>
@@ -398,12 +406,16 @@
         </div>
       </section>
       <section id="team" class="team" data-aos="fade-up">
-        <div class="team__title" data-aos="zoom-in-up" data-aos-duration="1000">
-          <h2>Echipă</h2>
+        <div
+          class="underlined-title"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <h2 class="title">Echipa noastră</h2>
           <img
+            class="underline"
             src="./assets/underline.svg"
             alt="text-underline"
-            class="team-line"
           />
         </div>
         <p class="team__description">
@@ -555,9 +567,9 @@
       <!-- Povesti de succes section -->
 
       <section id="stories" class="stories">
-        <div class="stories-title">
-          <h2>Povești de succes</h2>
-          <img src="./assets/underline.svg" alt="" />
+        <div class="underlined-title">
+          <h2 class="title">Povești de succes</h2>
+          <img class="underline" src="./assets/underline.svg" alt="" />
         </div>
         <div class="stories-text">
           <p>
@@ -633,12 +645,12 @@
           învăța și a contribui împreună la succesul proiectului nostru!
         </p> -->
 
-        <div class="join-us-section__title-container">
-          <h2 class="title">ÎNTÂLNIRI SĂPTĂMÂNALE</h2>
+        <div class="underlined-title">
+          <h2 class="title">Întâlniri săptămânale</h2>
           <img
+            class="underline"
             src="./assets/underline.svg"
             alt="text-underline"
-            class="team-line"
           />
         </div>
 
@@ -662,39 +674,15 @@
 
               <div class="day-details">
                 <span class="day">Luni</span>
+                <time class="day-time" datetime="18:30">18:30</time>
                 <time class="day-time" datetime="19:30">19:30</time>
               </div>
             </div>
 
             <div class="team-container">
-              <span class="team">Echipa de</span>
-              <span class="team-type">TESTARE</span>
-            </div>
-          </li>
-
-          <li class="meeting-item">
-            <div class="day-container">
-              <span class="meeting-icon">
-                <a
-                  class="meeting-link"
-                  href="https://meet.jit.si/PEVIITOR.RO"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-tippy-content="Conectare Jitsi"
-                  aria-label="Conectare Jitsi"
-                ></a>
-              </span>
-              <div class="day-details">
-                <span class="day">Marți</span>
-                <time class="day-time" datetime="18:30">18:30</time>
-                <time class="day-time" datetime="19:00">19:00</time>
-              </div>
-            </div>
-
-            <div class="team-container">
               <span class="team">Echipele de</span>
-              <span class="team-type">API TESTING &</span>
               <span class="team-type">CYBERSECURITY</span>
+              <span class="team-type">TESTARE</span>
             </div>
           </li>
 
@@ -712,26 +700,51 @@
               </span>
               <div>
                 <div class="day-details">
-                  <span class="day">Miercuri</span>
+                  <span class="day">Marți</span>
                   <time class="day-time" datetime="18:00">18:00</time>
-                  <time class="day-time" datetime="18:15">18:15</time>
+                  <span class="day hidden">Marți</span>
+
                 </div>
                 <div class="day-details">
-                  <span class="day hidden">Miercuri</span>
                   <time class="day-time" datetime="18:30">18:30</time>
+                  <time class="day-time" datetime="18:45">18:45</time>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-container">
+              <span class="team">Prezentarea noilor</span>
+              <span class="team-type">VOLUNTARI</span>
+              <span class="team">Echipele de</span>
+              <span class="team-type">BACK-END &</span>
+              <span class="team-type">DEVOPS</span>
+            </div>
+          </li>
+
+          <li class="meeting-item">
+            <div class="day-container">
+              <span class="meeting-icon">
+                <a
+                  class="meeting-link"
+                  href="https://meet.jit.si/PEVIITOR.RO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-tippy-content="Conectare Jitsi"
+                  aria-label="Conectare Jitsi"
+                ></a>
+              </span>
+              <div>
+                <div class="day-details">
+                  <span class="day">Mierc</span>
+                  <time class="day-time" datetime="19:00">19:00</time>
                 </div>
               </div>
             </div>
 
             <div class="teams-container">
               <div class="team-container">
-                <span class="team">Echipele de</span>
-                <span class="team-type">BACK-END &</span>
-                <span class="team-type">DEVOPS</span>
-              </div>
-              <div class="team-container">
-                <span class="team">Prezentarea noilor</span>
-                <span class="team-type">VOLUNTARI</span>
+                <span class="team">Echipa de</span>
+                <span class="team-type">API TESTING</span>
               </div>
             </div>
           </li>
@@ -786,7 +799,7 @@
         </ul>
 
         <a
-          class="join-us-section__button"
+          class="primary-btn"
           href="https://discord.gg/KPMkdUfQNu"
           target="_blank"
           data-aos-duration="800"

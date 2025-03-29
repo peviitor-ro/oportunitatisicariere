@@ -1,5 +1,4 @@
 /* JOIN US SECTION */
-/* styles for tooltip - jitsi links in Întâlniri săptămânale*/
 .tippy-box[data-theme~="tooltip-jitsi-theme"] {
   background-color: white;
   color: $green-mint;
@@ -8,9 +7,11 @@
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translateX(-120%);
+
   .tippy-arrow {
     color: transparent;
   }
+
   @media (max-width: $tablet-size) {
     transform: translateX(10%);
   }
@@ -18,21 +19,21 @@
 
 .join-us-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+  gap: 1.6rem;
+  padding: 3.2rem 2.4rem;
   background-color: $greyish-white;
-  padding: 0 0 2.4rem;
 
   & h2 {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.4rem;
-    padding: 2.4rem 0;
   }
 
-  > h2 {
+  >h2 {
     inline-size: clamp(30rem, 60rem, 70rem);
 
     @media screen and (min-width: 500px) and (max-width: 650px) {
@@ -53,19 +54,6 @@
     font-weight: 400;
     line-height: 2.2rem;
     padding: 0 30rem 2rem 30rem;
-  }
-
-  &__title-container {
-    margin-bottom: 3rem;
-
-    & .title {
-      font-size: 2.2rem;
-      padding: 0rem;
-    }
-
-    & .team-line {
-      width: 28rem;
-    }
   }
 
   &__meeting-list {
@@ -95,7 +83,6 @@
           border: 2px solid transparent;
           transition: all 0.2s ease-in-out;
 
-
           &:hover {
             background-color: #ededed;
             box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
@@ -109,7 +96,8 @@
             height: 42px;
             color: $white;
             border-radius: 50%;
-            background-color: $darker-gray; /* Culoarea implicita a svg-ului */
+            background-color: $darker-gray;
+            /* Culoarea implicita a svg-ului */
             mask-size: 32px 32px;
             mask-repeat: no-repeat;
             mask-position: center;
@@ -163,21 +151,8 @@
     }
   }
 
-  &__button {
+  .primary-btn {
     margin-top: 3rem;
-    padding: 1rem 3.2rem;
-    border-radius: 0.8rem;
-    border: none;
-    font-size: 1.6rem;
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
-    background-color: $green-mint;
-
-    &:hover {
-      transition: all 0.3s;
-      background-color: $dark-mint;
-    }
   }
 }
 
@@ -193,6 +168,7 @@
       .title {
         padding: 0 2.7rem;
       }
+
       & .team-line {
         width: 22rem;
       }
@@ -200,16 +176,9 @@
   }
 }
 
-
-
 @media only screen and (min-width: $phone-size) and (max-width: 500px) {
   .join-us-section {
     gap: 0rem;
-
-    & h2 {
-      padding: 0 3rem;
-      margin: 3rem 1rem;
-    }
 
     & p {
       padding: 0 2.5rem;
@@ -223,7 +192,7 @@
         & .day-container {
           & .day-details {
             & .day-time {
-              font-size: 2rem; 
+              font-size: 2rem;
             }
           }
         }
@@ -244,7 +213,7 @@
       }
     }
 
-    &__button {
+    .primary-btn {
       margin-top: 1.4rem;
     }
   }

@@ -1,45 +1,14 @@
-@import "../utils/breakpoints";
-
-// Laptop, Desktop, and Widescreen
-$font-size-h2: 3.2rem;
-$font-size-p: 1.6rem;
-$font-size-h4: 2rem;
-
-// Phone Variables
-$phone-font-size-h2: 3.2rem;
-$phone-font-size-p: 2.2rem;
-$phone-font-size-h4: 2.5rem;
-$phone-line-height-p: 2rem;
-
-// Tablet Variables
-$tablet-font-size-h2: 2rem;
-$tablet-font-size-p: 1.6rem;
-$tablet-font-size-h4: 2rem;
-$tablet-line-height-p: 2rem;
-
 .team {
-  padding: 7rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1.6rem;
+  padding: 3.2rem 2.4rem;
   background-color: #f3f3f3;
-
-  h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    text-align: center;
-    color: #000000;
-    margin-bottom: -0.5rem;
-  }
 
   p {
     font-size: 1.6rem;
-  }
-
-  .team-line {
-    width: 23rem;
   }
 
   &__description {
@@ -68,24 +37,6 @@ $tablet-line-height-p: 2rem;
       z-index: 10;
       border-radius: 0.8rem;
       background-color: $white;
-
-      .team-nav-btn {
-        margin: 1rem;
-        font-size: 1.6rem;
-        font-weight: 600;
-        padding: 0.5rem 1rem;
-        border-radius: 0.8rem;
-        border: 2px solid $green-mint;
-        color: $green-mint;
-        background-color: $white;
-        transition: all 0.3s ease;
-        cursor: pointer;
-
-        &:hover {
-          background-color: $green-mint;
-          color: $white;
-        }
-      }
 
       .active {
         background-color: $green-mint;
@@ -129,6 +80,7 @@ $tablet-line-height-p: 2rem;
       background-repeat: no-repeat;
       background-size: cover;
     }
+
     img {
       position: relative;
       padding-top: 2px;
@@ -162,7 +114,7 @@ $tablet-line-height-p: 2rem;
     }
 
     h4 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 500;
       white-space: nowrap;
     }
@@ -184,9 +136,7 @@ $tablet-line-height-p: 2rem;
 
         &:hover {
           background-color: #ededed;
-          box-shadow:
-            2px 2px 6px #00000020,
-            -2px -2px 12px $white;
+          box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
         }
 
         a {
@@ -194,7 +144,8 @@ $tablet-line-height-p: 2rem;
           height: 46px;
           color: $white;
           border-radius: 50%;
-          background-color: $darker-gray; /* Culoarea implicita a svg-ului */
+          background-color: $darker-gray;
+          /* Culoarea implicita a svg-ului */
           mask-size: 32px 32px;
           mask-repeat: no-repeat;
           mask-position: center;
@@ -217,15 +168,18 @@ $tablet-line-height-p: 2rem;
 
         /* Culori on hover pentru svg-uri */
         &:nth-child(1):hover a {
-          background-color: $linkedin-blue; /* Culoare LinkedIn */
+          background-color: $linkedin-blue;
+          /* Culoare LinkedIn */
         }
 
         &:nth-child(2):hover a {
-          background-color: $black; /* Culoare GitHub */
+          background-color: $black;
+          /* Culoare GitHub */
         }
 
         &:nth-child(3):hover a {
-          background-color: $discord-purple; /* Culoare Discord */
+          background-color: $discord-purple;
+          /* Culoare Discord */
         }
       }
     }
@@ -265,15 +219,18 @@ $tablet-line-height-p: 2rem;
     }
   }
 }
+
 @media screen and (max-width: 376px) {
   .team {
     &__banner {
       transform: scale(0.8);
+
       p {
         top: 2.3rem;
         font-size: 1.8rem;
       }
     }
+
     .banner-core {
       transform: scale(0.8);
     }
@@ -282,16 +239,8 @@ $tablet-line-height-p: 2rem;
 
 @media only screen and (min-width: $tablet-size) {
   .team {
-    .team__title h2 {
-      font-size: 3.2rem;
-    }
-
     &__banner img {
       transform: scale(0.9);
-    }
-
-    h4 {
-      font-size: 1.9rem;
     }
   }
 }
