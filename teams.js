@@ -11,28 +11,26 @@ function loadTeamMembers() {
   fetch("data/teamMembers.json")
     .then((response) => response.json())
     .then((data) => {
-      teamMembers = data;
-      initializeTeams(); // Initiazare echipe dupa ce datele devin disponibile
+
+      // Filtrăm membrii și păstrăm doar rolurile active
+      teamMembers = data
+        .map(member => {
+          const activeRoles = member.roles.filter(role => role.status === true);
+          if (activeRoles.length === 0) return null;
+
+          return {
+            ...member,
+            roles: activeRoles
+          };
+        })
+        .filter(member => member !== null); // Eliminăm membrii fără roluri active
+
+      // Inițializăm echipele doar cu membrii activi
+      initializeTeams();
     })
     .catch((error) => console.error("Eroare la încarcarea JSON:", error));
-}  
-
-// Functie pentru filtrarea membrilor dupa status
-function filterActiveMembers(members) {
-  return members.filter(member => member.status !== false);
 }
 
-const activeMembers = filterActiveMembers(teamMembers);
-console.log(activeMembers);
-
-
-// function filterActiveMembers () {
-//   if ("status" = true) {
-//     firstButton.classList.add("active");
-//     // Apelarea functiei de afisare a membrilor echipei selectate, în functie de butonul activat
-//     displayTeamMembers(fourthButton.textContent);
-//   }
-// }
 
 // Functie pentru initializarea echipelor
 function initializeTeams() {
@@ -50,11 +48,6 @@ function initializeTeams() {
     const button = document.createElement("button");
     button.classList.add("team-btn");
     button.textContent = team;
-
-    // for (let status of teams) {
-    //   const button = document.createElement("button");
-    //   button.classList.add("status-btn");
-    //   button.textContent = status;
 
     if (!firstButton) firstButton = button;
     button.addEventListener("click", () => {
