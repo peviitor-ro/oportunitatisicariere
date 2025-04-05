@@ -112,7 +112,7 @@
           "position": "Front-end Developer",
           "teamLead": false,
           "status": true
-        }
+        },
         {
           "team": "Scraping",
           "position": "Scraper Developer",
@@ -354,7 +354,7 @@
   {
     "name": "Elena Istratescu",
     "avatar": "./assets/contributors/elena-istratescu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -363,8 +363,7 @@
       }
     ],
     "socials": {
-      "linkedin":
-        "https://www.linkedin.com/in/elena-ramona-istratescu-680564299/",
+      "linkedin": "https://www.linkedin.com/in/elena-ramona-istratescu-680564299/",
       "github": "https://github.com/Elena1303996",
       "discord": "https://discord.com/users/1197172023709925418"
     }
@@ -372,7 +371,7 @@
   {
     "name": "Cătălina Ion",
     "avatar": "./assets/contributors/catalina-ion.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -395,7 +394,7 @@
   {
     "name": "Ionuț Pintilie",
     "avatar": "./assets/contributors/ionut-pintilie.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -412,7 +411,7 @@
   {
     "name": "Bogdan Dumitrache",
     "avatar": "./assets/contributors/bogdan-dumitrache.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -429,7 +428,7 @@
   {
     "name": "Camelia Melinte",
     "avatar": "./assets/contributors/camelia-melinte.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -446,7 +445,7 @@
   {
     "name": "Cristian Zidărescu",
     "avatar": "./assets/contributors/cristian-zidarescu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -469,7 +468,7 @@
   {
     "name": "Răzvan Gradea",
     "avatar": "./assets/contributors/razvan-gradea.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -486,7 +485,7 @@
   {
     "name": "Georgiana Redenstein",
     "avatar": "./assets/contributors/georgiana-redenstein.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -503,7 +502,7 @@
   {
     "name": "Andreea Dima",
     "avatar": "./assets/contributors/andreea-dima.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -520,7 +519,7 @@
   {
     "name": "Adelina Moroacă",
     "avatar": "./assets/contributors/adelina-moroaca.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Lead",
@@ -543,7 +542,7 @@
   {
     "name": "Marian Ciobanu",
     "avatar": "./assets/contributors/marian-ciobanu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Developer",
@@ -560,7 +559,7 @@
   {
     "name": "Grigore Herța",
     "avatar": "./assets/contributors/grigore-herta.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Developer",
@@ -577,7 +576,7 @@
   {
     "name": "Niculina Romanta",
     "avatar": "./assets/contributors/niculina-romanta.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Developer",
@@ -594,7 +593,7 @@
   {
     "name": "Adrian Doinea",
     "avatar": "./assets/contributors/adrian-doinea.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Developer",
@@ -611,7 +610,7 @@
   {
     "name": "Andrei Barari",
     "avatar": "./assets/contributors/andrei-barari.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Lead",
@@ -634,7 +633,7 @@
   {
     "name": "Ana-Maria Tălmăcel",
     "avatar": "./assets/contributors/anamaria-talmacel.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Test Lead",
@@ -663,7 +662,7 @@
   {
     "name": "Mădălina Andon",
     "avatar": "./assets/contributors/madalina-andon.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -677,11 +676,10 @@
       "discord": "https://discordapp.com/users/694204138099179640"
     }
   },
-  
   {
     "name": "Cristina Apostol",
     "avatar": "./assets/contributors/cristina-apostol.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -704,7 +702,7 @@
   {
     "name": "Lucian Lodin",
     "avatar": "./assets/contributors/lucian-lodin.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -721,7 +719,7 @@
   {
     "name": "Caterina Bocaniciu",
     "avatar": "./assets/contributors/caterina-bocaniciu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -744,7 +742,7 @@
   {
     "name": "Loredana Pelle",
     "avatar": "./assets/contributors/loredana-pelle.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -767,7 +765,7 @@
   {
     "name": "Carmen Steliana Ut",
     "avatar": "./assets/contributors/carmen-steliana.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -784,7 +782,7 @@
   {
     "name": "Georgiana Radu",
     "avatar": "./assets/contributors/georgiana-radu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -801,7 +799,7 @@
   {
     "name": "Radu Lutu",
     "avatar": "./assets/contributors/radu-lutu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -818,7 +816,7 @@
   {
     "name": "Andreea Plugaru",
     "avatar": "./assets/contributors/person-placeholder.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -841,7 +839,7 @@
   {
     "name": "Roxana Danalache",
     "avatar": "./assets/contributors/roxana-danalache.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -858,7 +856,7 @@
   {
     "name": "Alina Floroiu",
     "avatar": "./assets/contributors/alina-floroiu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Back-end",
         "position": "Junior PHP Developer",
@@ -875,7 +873,7 @@
   {
     "name": "Cristi Olteanu",
     "avatar": "./assets/contributors/cristi-olteanu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Scraping",
         "position": "Python Scraper",
@@ -888,11 +886,11 @@
       "github": "https://github.com/cristiol",
       "discord": "https://discordapp.com/users/1148983001800253511"
     }
-  }, 
+  },
   {
     "name": "Anca Matei",
     "avatar": "./assets/contributors/anca-matei.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Developer",
@@ -909,7 +907,7 @@
   {
     "name": "Daniela Popa",
     "avatar": "./assets/contributors/daniela-popa.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -932,7 +930,7 @@
   {
     "name": "Livia Hriscu",
     "avatar": "./assets/contributors/livia-hriscu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -955,7 +953,7 @@
   {
     "name": "Iurie Chigai",
     "avatar": "./assets/contributors/iurie-chigai.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Scraping",
         "position": "Python Scraper",
@@ -972,7 +970,7 @@
   {
     "name": "Dinu Marian Cătălin",
     "avatar": "./assets/contributors/marian-dinu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -987,9 +985,30 @@
     }
   },
   {
+    "name": "Ivaşcu Theodor",
+    "avatar": "./assets/contributors/theodor-ivascu.webp",
+    "roles": [
+      {
+        "team": "QA",
+        "position": "Manual Test Lead",
+        "teamLead": true
+      },
+      {
+        "team": "Core",
+        "position": "Manual Test Lead",
+        "teamLead": false
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/theodorivascu/",
+      "github": "https://github.com/TheodorIvascu",
+      "discord": "http://discordapp.com/users/1188200252369547325"
+    }
+  },
+  {
     "name": "Radu Spatacean",
     "avatar": "./assets/contributors/radu-spatacean.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Core",
         "position": "Scrum Master",
@@ -1006,7 +1025,7 @@
   {
     "name": "Alexandru Coca",
     "avatar": "./assets/contributors/alexandru-coca.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Back-end",
         "position": "Junior PHP Developer",
@@ -1023,7 +1042,7 @@
   {
     "name": "Andrei Marin",
     "avatar": "./assets/contributors/andrei-marin.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -1040,7 +1059,7 @@
   {
     "name": "Robert Burcea",
     "avatar": "./assets/contributors/robert-burcea.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Developer",
@@ -1057,7 +1076,7 @@
   {
     "name": "Robert Popescu",
     "avatar": "./assets/contributors/robert-popescu.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Front-end",
         "position": "Front-end Developer",
@@ -1074,7 +1093,7 @@
   {
     "name": "Mirela-Estera Stoica",
     "avatar": "./assets/contributors/mirela-stoica.webp",
-    "roles":[
+    "roles": [
       {
         "team": "DevOps",
         "position": "DevOps",
@@ -1091,7 +1110,7 @@
   {
     "name": "Brăviceanu-Badea Clarisse",
     "avatar": "./assets/contributors/braviceanu-badea-clarisse.webp",
-    "roles":[
+    "roles": [
       {
         "team": "Cybersecurity",
         "position": "Junior Security Analyst",
@@ -1108,7 +1127,7 @@
   {
     "name": "Alexandra Meghesan",
     "avatar": "./assets/contributors/alexandra-meghesan.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -1125,7 +1144,7 @@
   {
     "name": "Alexandru Fabian",
     "avatar": "./assets/contributors/alexandru-fabian.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -1142,7 +1161,7 @@
   {
     "name": "Mihaela Adam",
     "avatar": "./assets/contributors/mihaela-adam.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
@@ -1159,7 +1178,7 @@
   {
     "name": "Alin Dumbravă",
     "avatar": "./assets/contributors/alin-dumbrava.webp",
-    "roles":[
+    "roles": [
       {
         "team": "QA",
         "position": "Manual Tester",
