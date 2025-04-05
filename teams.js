@@ -3,6 +3,7 @@ const membersWrapper = document.querySelector("#team-wrapper");
 
 let teamMembers = []; // Vector gol pentru datele din json
 let preferredTeam = sessionStorage.getItem("preferredTeam"); // pentru cand navigarea se face dinspre pagina Detalii
+let activeMembers = sessionStorage.getItem("status");
 let hasActiveBtn = false;
 
 // Functie de fetch pentru datele din json
@@ -14,7 +15,24 @@ function loadTeamMembers() {
       initializeTeams(); // Initiazare echipe dupa ce datele devin disponibile
     })
     .catch((error) => console.error("Eroare la încarcarea JSON:", error));
+}  
+
+// Functie pentru filtrarea membrilor dupa status
+function filterActiveMembers(members) {
+  return members.filter(member => member.status !== false);
 }
+
+const activeMembers = filterActiveMembers(teamMembers);
+console.log(activeMembers);
+
+
+// function filterActiveMembers () {
+//   if ("status" = true) {
+//     firstButton.classList.add("active");
+//     // Apelarea functiei de afisare a membrilor echipei selectate, în functie de butonul activat
+//     displayTeamMembers(fourthButton.textContent);
+//   }
+// }
 
 // Functie pentru initializarea echipelor
 function initializeTeams() {
@@ -32,6 +50,11 @@ function initializeTeams() {
     const button = document.createElement("button");
     button.classList.add("team-btn");
     button.textContent = team;
+
+    // for (let status of teams) {
+    //   const button = document.createElement("button");
+    //   button.classList.add("status-btn");
+    //   button.textContent = status;
 
     if (!firstButton) firstButton = button;
     button.addEventListener("click", () => {

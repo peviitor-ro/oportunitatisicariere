@@ -7,19 +7,19 @@
           "team": "Core",
           "position": "Product Owner",
           "teamLead": false,
-          "status": "active"
+          "status": true
         },
         {
           "team": "Back-end",
           "position": "Back-end Developer",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         },
         {
           "team": "QA",
           "position": "QA Manager",
           "teamLead": true,
-          "status": "active"
+          "status": true
         }
       ],
       "socials": {
@@ -36,7 +36,7 @@
           "team": "Core",
           "position": "Project Manager",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         }
       ],
       "socials": {
@@ -53,13 +53,13 @@
           "team": "Front-end",
           "position": "Front-end Developer",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         },
         {
           "team": "UI/UX",
           "position": "UI/UX Designer",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         }
       ],
       "socials": {
@@ -76,13 +76,13 @@
           "team": "Core",
           "position": "UI/UX Expert",
           "teamLead": false,
-          "status": "active" | "inactive"
+          "status": true
         },
         {
           "team": "UI/UX",
           "position": "UI/UX Lead",
           "teamLead": true,
-          "status": "active" | "inactive"
+          "status": true
         }
       ],
       "socials": {
@@ -99,37 +99,37 @@
           "team": "Core",
           "position": "CTO",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         },
         {
           "team": "Back-end",
           "position": "Back-end Developer",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         },
         {
           "team": "Front-end",
           "position": "Front-end Developer",
           "teamLead": false,
-          "status": "active"
-        },
+          "status": true
+        }
         {
           "team": "Scraping",
           "position": "Scraper Developer",
           "teamLead": false,
-          "status": "active"
+          "status": true
         },
         {
           "team": "Data Quality",
           "position": "Data Quality Tester",
           "teamLead": false,
-          "status": "active" | "inactive"
+          "status": true
         },
         {
           "team": "Cybersecurity",
           "position": "CTO",
           "teamLead": false,
-          "status": "active"
+          "status": true
         }
       ],
       "socials": {
@@ -146,13 +146,13 @@
           "team": "Scraping",
           "position": "Scraping Lead",
           "teamLead": true,
-          "status": "active" 
+          "status": true
         },
         {
           "team": "Core",
           "position": "Scraping Lead",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         }
       ],
       "socials": {
@@ -169,7 +169,7 @@
           "team": "QA",
           "position": "Manual Tester",
           "teamLead": false,
-          "status": "active" | "inactive"
+          "status": true
         }
       ],
       "socials": {
@@ -186,18 +186,19 @@
           "team": "QA",
           "position": "Automation Test Lead",
           "teamLead": true,
-          "status": "active" 
+          "status": true
         },
         {
           "team": "Scraping",
           "position": "Python Scraper",
-          "teamLead": false
+          "teamLead": false,
+          "status": true
         },
         {
           "team": "Core",
           "position": "Automation Test Lead",
           "teamLead": false,
-          "status": "active"
+          "status": true
         }
       ],
       "socials": {
@@ -214,13 +215,13 @@
           "team": "Back-end",
           "position": "Back-end Lead",
           "teamLead": true,
-          "status": "active" | "inactive"
+          "status": true
         },
         {
           "team": "Core",
           "position": "Back-end Lead",
           "teamLead": false,
-          "status": "active" | "inactive"
+          "status": true
         }
       ],
       "socials": {
@@ -237,13 +238,13 @@
           "team": "Core",
           "position": "DevOps Lead",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         },
         {
           "team": "DevOps",
           "position": "DevOps Lead",
           "teamLead": true,
-          "status": "active"
+          "status": true
         }
       ],
       "socials": {
@@ -260,13 +261,13 @@
           "team": "Core",
           "position": "Pentester",
           "teamLead": false,
-          "status": "active"
+          "status": true
         },
         {
           "team": "Cybersecurity",
           "position": "Pentester",
           "teamLead": true,
-          "status": "active"
+          "status": true
         }
       ],
       "socials": {
@@ -283,13 +284,13 @@
           "team": "Core",
           "position": "Data Quality Test Lead",
           "teamLead": false,
-          "status": "active" | "inactive"
+          "status": true
         },
         {
           "team": "Data Quality",
           "position": "Data Quality Test Lead",
           "teamLead": true,
-          "status": "active" | "inactive"
+          "status": true
         }
       ],
       "socials": {
@@ -306,13 +307,13 @@
           "team": "QA",
           "position": "Manual Test Lead",
           "teamLead": true,
-          "status": "active"
+          "status": true
         },
         {
           "team": "Core",
           "position": "Manual Test Lead",
           "teamLead": false,
-          "status": "active" 
+          "status": true
         }
       ],
       "socials": {
@@ -329,19 +330,19 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       },
       {
         "team": "Cybersecurity",
         "position": "Data Protection Officer",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -358,7 +359,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -376,13 +377,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -399,7 +400,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -416,7 +417,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -433,7 +434,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -450,13 +451,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -473,7 +474,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -490,7 +491,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -507,7 +508,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -524,13 +525,13 @@
         "team": "Front-end",
         "position": "Front-end Lead",
         "teamLead": true,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Core",
         "position": "Front-end Lead",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -547,7 +548,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -564,7 +565,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -581,7 +582,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -598,7 +599,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -615,13 +616,13 @@
         "team": "Front-end",
         "position": "Front-end Lead",
         "teamLead": true,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Core",
         "position": "Front-end Lead",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -638,19 +639,19 @@
         "team": "QA",
         "position": "Manual Test Lead",
         "teamLead": true,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Core",
         "position": "Manual Test Lead",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -667,7 +668,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active"
+        "status": true
       }
     ],
     "socials": {
@@ -685,13 +686,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -708,7 +709,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -725,13 +726,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -748,13 +749,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -771,7 +772,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -788,7 +789,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -805,7 +806,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -821,13 +822,14 @@
       {
         "team": "QA",
         "position": "Manual Tester",
-        "teamLead": false
+        "teamLead": false,
+        "status": true
       },
       {
         "team": "Cybersecurity",
         "position": "Junior Security Analyst",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -844,7 +846,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -861,7 +863,7 @@
         "team": "Back-end",
         "position": "Junior PHP Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -878,7 +880,7 @@
         "team": "Scraping",
         "position": "Python Scraper",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -895,7 +897,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -912,13 +914,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -935,13 +937,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -958,7 +960,7 @@
         "team": "Scraping",
         "position": "Python Scraper",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -975,7 +977,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -992,7 +994,7 @@
         "team": "Core",
         "position": "Scrum Master",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1009,7 +1011,7 @@
         "team": "Back-end",
         "position": "Junior PHP Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1026,7 +1028,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1043,7 +1045,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1060,7 +1062,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1077,13 +1079,13 @@
         "team": "DevOps",
         "position": "DevOps",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
       "linkedin": "https://www.linkedin.com/in/mirela-estera-stoica-b36492182/",
       "github": "https://github.com/stoicamirela",
-      "discord": "https://discord.com/users/1326603739594887249"
+      "discord": "https://discord.com/users/730821185075675216"
     }
   },
   {
@@ -1094,7 +1096,7 @@
         "team": "Cybersecurity",
         "position": "Junior Security Analyst",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -1111,7 +1113,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -1128,7 +1130,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -1144,7 +1146,8 @@
       {
         "team": "QA",
         "position": "Manual Tester",
-        "teamLead": false
+        "teamLead": false,
+        "status": true
       }
     ],
     "socials": {
@@ -1160,7 +1163,8 @@
       {
         "team": "QA",
         "position": "Manual Tester",
-        "teamLead": false
+        "teamLead": false,
+        "status": true
       }
     ],
     "socials": {
