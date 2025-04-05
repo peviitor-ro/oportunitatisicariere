@@ -1,326 +1,327 @@
 [
-  {
-    "name": "Sebastian Boga",
-    "avatar": "./assets/contributors/sebastian-boga.webp",
-    "roles": [
-      {
-        "team": "Core",
-        "position": "Product Owner",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Back-end",
-        "position": "Back-end Developer",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "QA",
-        "position": "QA Manager",
-        "teamLead": true,
-        "status": true
+    {
+      "name": "Sebastian Boga",
+      "avatar": "./assets/contributors/sebastian-boga.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "Product Owner",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Back-end",
+          "position": "Back-end Developer",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "QA",
+          "position": "QA Manager",
+          "teamLead": true,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/sebastianboga/",
+        "github": "https://github.com/sebiboga",
+        "discord": "https://discord.com/users/784091439993847870"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/sebastianboga/",
-      "github": "https://github.com/sebiboga",
-      "discord": "https://discord.com/users/784091439993847870"
-    }
-  },
-  {
-    "name": "Adriana Cionca",
-    "avatar": "./assets/contributors/adriana-cionca.webp",
-    "roles": [
-      {
-        "team": "Core",
-        "position": "Project Manager",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Adriana Cionca",
+      "avatar": "./assets/contributors/adriana-cionca.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "Project Manager",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/adriana-cionca-63b14620a/",
+        "github": "https://github.com/AdrianaCionca",
+        "discord": "https://discord.com/users/1064933385878904954"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/adriana-cionca-63b14620a/",
-      "github": "https://github.com/AdrianaCionca",
-      "discord": "https://discord.com/users/1064933385878904954"
-    }
-  },
-  {
-    "name": "Talida Ganciu",
-    "avatar": "./assets/contributors/talida-ganciu.webp",
-    "roles": [
-      {
-        "team": "Front-end",
-        "position": "Front-end Developer",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "UI/UX",
-        "position": "UI/UX Designer",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Talida Ganciu",
+      "avatar": "./assets/contributors/talida-ganciu.webp",
+      "roles": [
+        {
+          "team": "Front-end",
+          "position": "Front-end Developer",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "UI/UX",
+          "position": "UI/UX Designer",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/mihaela-talida-g-66532716a/",
+        "github": "https://github.com/talidag",
+        "discord": "https://discord.com/users/1123986908914139147"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/mihaela-talida-g-66532716a/",
-      "github": "https://github.com/talidag",
-      "discord": "https://discord.com/users/1123986908914139147"
-    }
-  },
-  {
-    "name": "Patricia Istrate",
-    "avatar": "./assets/contributors/patricia-istrate.webp",
-    "roles": [
-      {
-        "team": "Core",
-        "position": "UI/UX Expert",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "UI/UX",
-        "position": "UI/UX Lead",
-        "teamLead": true,
-        "status": true
+    },
+    {
+      "name": "Patricia Istrate",
+      "avatar": "./assets/contributors/patricia-istrate.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "UI/UX Expert",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "UI/UX",
+          "position": "UI/UX Lead",
+          "teamLead": true,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/patriciaistrate/",
+        "github": "https://sites.google.com/view/patriciaistrateportfolio/home",
+        "discord": "https://discord.com/users/1167459382653632643"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/patriciaistrate/",
-      "github": "https://sites.google.com/view/patriciaistrateportfolio/home",
-      "discord": "https://discord.com/users/1167459382653632643"
-    }
-  },
-  {
-    "name": "Laurențiu Băluță",
-    "avatar": "./assets/contributors/laurentiu-baluta.webp",
-    "roles": [
-      {
-        "team": "Core",
-        "position": "CTO",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Back-end",
-        "position": "Back-end Developer",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Front-end",
-        "position": "Front-end Developer",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Scraping",
-        "position": "Scraper Developer",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Data Quality",
-        "position": "Data Quality Tester",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Cybersecurity",
-        "position": "CTO",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Laurențiu Băluță",
+      "avatar": "./assets/contributors/laurentiu-baluta.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "CTO",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Back-end",
+          "position": "Back-end Developer",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Front-end",
+          "position": "Front-end Developer",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Scraping",
+          "position": "Scraper Developer",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Data Quality",
+          "position": "Data Quality Tester",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Cybersecurity",
+          "position": "CTO",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/laurentiu-baluta-3153b9217/",
+        "github": "https://github.com/lalalaurentiu",
+        "discord": "https://discord.com/users/443431920320249856"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/laurentiu-baluta-3153b9217/",
-      "github": "https://github.com/lalalaurentiu",
-      "discord": "https://discord.com/users/443431920320249856"
-    }
-  },
-  {
-    "name": "Andrei Cojocaru",
-    "avatar": "./assets/contributors/andrei-cojocaru.webp",
-    "roles": [
-      {
-        "team": "Scraping",
-        "position": "Scraping Lead",
-        "teamLead": true,
-        "status": true
-      },
-      {
-        "team": "Core",
-        "position": "Scraping Lead",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Andrei Cojocaru",
+      "avatar": "./assets/contributors/andrei-cojocaru.webp",
+      "roles": [
+        {
+          "team": "Scraping",
+          "position": "Scraping Lead",
+          "teamLead": true,
+          "status": true
+        },
+        {
+          "team": "Core",
+          "position": "Scraping Lead",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/andrei-cojocaru-985932204/",
+        "github": "https://github.com/andreireporter13",
+        "discord": "https://discord.com/users/728326602618044438"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/andrei-cojocaru-985932204/",
-      "github": "https://github.com/andreireporter13",
-      "discord": "https://discord.com/users/728326602618044438"
-    }
-  },
-  {
-    "name": "Adelina Guliman",
-    "avatar": "./assets/contributors/adelina-guliman.webp",
-    "roles": [
-      {
-        "team": "QA",
-        "position": "Manual Tester",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Adelina Guliman",
+      "avatar": "./assets/contributors/adelina-guliman.webp",
+      "roles": [
+        {
+          "team": "QA",
+          "position": "Manual Tester",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/adelina-guliman-111631286/",
+        "github": "https://github.com/AdelinaGuliman",
+        "discord": "https://discord.com/users/1167074527067512834"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/adelina-guliman-111631286/",
-      "github": "https://github.com/AdelinaGuliman",
-      "discord": "https://discord.com/users/1167074527067512834"
-    }
-  },
-  {
-    "name": "Rareș Irimus",
-    "avatar": "./assets/contributors/rares-irimus.webp",
-    "roles": [
-      {
-        "team": "QA",
-        "position": "Automation Test Lead",
-        "teamLead": true,
-        "status": true
-      },
-      {
-        "team": "Scraping",
-        "position": "Python Scraper",
-        "teamLead": false
-      },
-      {
-        "team": "Core",
-        "position": "Automation Test Lead",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Rareș Irimus",
+      "avatar": "./assets/contributors/rares-irimus.webp",
+      "roles": [
+        {
+          "team": "QA",
+          "position": "Automation Test Lead",
+          "teamLead": true,
+          "status": true
+        },
+        {
+          "team": "Scraping",
+          "position": "Python Scraper",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Core",
+          "position": "Automation Test Lead",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/raresirimus/",
+        "github": "https://github.com/RaresCode",
+        "discord": "https://discord.com/users/939250630239846490"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/raresirimus/",
-      "github": "https://github.com/RaresCode",
-      "discord": "https://discord.com/users/939250630239846490"
-    }
-  },
-  {
-    "name": "Alexandra Ifrim",
-    "avatar": "./assets/contributors/alexandra-ifrim.webp",
-    "roles": [
-      {
-        "team": "Back-end",
-        "position": "Back-end Lead",
-        "teamLead": true,
-        "status": true
-      },
-      {
-        "team": "Core",
-        "position": "Back-end Lead",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Alexandra Ifrim",
+      "avatar": "./assets/contributors/alexandra-ifrim.webp",
+      "roles": [
+        {
+          "team": "Back-end",
+          "position": "Back-end Lead",
+          "teamLead": true,
+          "status": true
+        },
+        {
+          "team": "Core",
+          "position": "Back-end Lead",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/alexandra-ifrim-9958092b0/",
+        "github": "https://github.com/ale23yfm",
+        "discord": "https://discord.com/users/882675128515838012"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/alexandra-ifrim-9958092b0/",
-      "github": "https://github.com/ale23yfm",
-      "discord": "https://discord.com/users/882675128515838012"
-    }
-  },
-  {
-    "name": "Alex Ștefan",
-    "avatar": "./assets/contributors/alex-stefan.webp",
-    "roles": [
-      {
-        "team": "Core",
-        "position": "DevOps Lead",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "DevOps",
-        "position": "DevOps Lead",
-        "teamLead": true,
-        "status": true
+    },
+    {
+      "name": "Alex Ștefan",
+      "avatar": "./assets/contributors/alex-stefan.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "DevOps Lead",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "DevOps",
+          "position": "DevOps Lead",
+          "teamLead": true,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/alex-stefan99/",
+        "github": "https://github.com/AlexStefan17",
+        "discord": "https://discord.com/users/348500220633546753"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/alex-stefan99/",
-      "github": "https://github.com/AlexStefan17",
-      "discord": "https://discord.com/users/348500220633546753"
-    }
-  },
-  {
-    "name": "Lavinia Avram",
-    "avatar": "./assets/contributors/avram-lavinia.webp",
-    "roles": [
-      {
-        "team": "Core",
-        "position": "Pentester",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Cybersecurity",
-        "position": "Pentester",
-        "teamLead": true,
-        "status": true
+    },
+    {
+      "name": "Lavinia Avram",
+      "avatar": "./assets/contributors/avram-lavinia.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "Pentester",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Cybersecurity",
+          "position": "Pentester",
+          "teamLead": true,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/lavinia-malina-783a10231/",
+        "github": "https://github.com/AvramLavinia/",
+        "discord": "https://discord.com/users/373100831731613696"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/lavinia-malina-783a10231/",
-      "github": "https://github.com/AvramLavinia/",
-      "discord": "https://discord.com/users/373100831731613696"
-    }
-  },
-  {
-    "name": "Florin Nistor",
-    "avatar": "./assets/contributors/florin-nistor.webp",
-    "roles": [
-      {
-        "team": "Core",
-        "position": "Data Quality Test Lead",
-        "teamLead": false,
-        "status": true
-      },
-      {
-        "team": "Data Quality",
-        "position": "Data Quality Test Lead",
-        "teamLead": true,
-        "status": true
+    },
+    {
+      "name": "Florin Nistor",
+      "avatar": "./assets/contributors/florin-nistor.webp",
+      "roles": [
+        {
+          "team": "Core",
+          "position": "Data Quality Test Lead",
+          "teamLead": false,
+          "status": true
+        },
+        {
+          "team": "Data Quality",
+          "position": "Data Quality Test Lead",
+          "teamLead": true,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/florin-nistor-b9a766252/",
+        "github": "https://github.com/Florin201092",
+        "discord": "https://discord.com/users/1219216349184790601"
       }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/florin-nistor-b9a766252/",
-      "github": "https://github.com/Florin201092",
-      "discord": "https://discord.com/users/1219216349184790601"
-    }
-  },
-  {
-    "name": "Diana Drăgoi",
-    "avatar": "./assets/contributors/diana-dragoi.webp",
-    "roles": [
-      {
-        "team": "QA",
-        "position": "Manual Test Lead",
-        "teamLead": true,
-        "status": true
-      },
-      {
-        "team": "Core",
-        "position": "Manual Test Lead",
-        "teamLead": false,
-        "status": true
+    },
+    {
+      "name": "Diana Drăgoi",
+      "avatar": "./assets/contributors/diana-dragoi.webp",
+      "roles": [
+        {
+          "team": "QA",
+          "position": "Manual Test Lead",
+          "teamLead": true,
+          "status": true
+        },
+        {
+          "team": "Core",
+          "position": "Manual Test Lead",
+          "teamLead": false,
+          "status": true
+        }
+      ],
+      "socials": {
+        "linkedin": "https://ro.linkedin.com/in/diana-lavinia-dragoi",
+        "github": "https://github.com/DeedeeDL",
+        "discord": "https://discord.com/users/930881772374360084"
       }
-    ],
-    "socials": {
-      "linkedin": "https://ro.linkedin.com/in/diana-lavinia-dragoi",
-      "github": "https://github.com/DeedeeDL",
-      "discord": "https://discord.com/users/930881772374360084"
-    }
-  },
+    },
   {
     "name": "Beatrix Răcășanu",
     "avatar": "./assets/contributors/beatrix-racasanu.webp",
@@ -349,7 +350,7 @@
       "github": "https://github.com/iBixee",
       "discord": "https://discord.com/users/377879793934532619"
     }
-  },
+  },  
   {
     "name": "Elena Istratescu",
     "avatar": "./assets/contributors/elena-istratescu.webp",
@@ -363,7 +364,6 @@
     ],
     "socials": {
       "linkedin": "https://www.linkedin.com/in/elena-ramona-istratescu-680564299/",
-      "linkedin": "https://www.linkedin.com/in/elena-ramona-istratescu-680564299/",
       "github": "https://github.com/Elena1303996",
       "discord": "https://discord.com/users/1197172023709925418"
     }
@@ -376,13 +376,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -399,7 +399,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -416,7 +416,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -433,7 +433,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -450,13 +450,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -473,7 +473,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -490,7 +490,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -507,7 +507,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -524,13 +524,13 @@
         "team": "Front-end",
         "position": "Front-end Lead",
         "teamLead": true,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Core",
         "position": "Front-end Lead",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -547,7 +547,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -564,7 +564,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -581,7 +581,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -598,7 +598,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -615,13 +615,13 @@
         "team": "Front-end",
         "position": "Front-end Lead",
         "teamLead": true,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Core",
         "position": "Front-end Lead",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -638,19 +638,19 @@
         "team": "QA",
         "position": "Manual Test Lead",
         "teamLead": true,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Core",
         "position": "Manual Test Lead",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -667,7 +667,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active"
+        "status": true
       }
     ],
     "socials": {
@@ -684,13 +684,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -707,7 +707,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -724,13 +724,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -747,13 +747,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -770,7 +770,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -787,7 +787,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -804,7 +804,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -820,13 +820,14 @@
       {
         "team": "QA",
         "position": "Manual Tester",
-        "teamLead": false
+        "teamLead": false,
+        "status": true
       },
       {
         "team": "Cybersecurity",
         "position": "Junior Security Analyst",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -843,7 +844,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -860,7 +861,7 @@
         "team": "Back-end",
         "position": "Junior PHP Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -877,7 +878,7 @@
         "team": "Scraping",
         "position": "Python Scraper",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -894,7 +895,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -911,13 +912,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -934,13 +935,13 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -957,7 +958,7 @@
         "team": "Scraping",
         "position": "Python Scraper",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -974,7 +975,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1012,7 +1013,7 @@
         "team": "Core",
         "position": "Scrum Master",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1029,7 +1030,7 @@
         "team": "Back-end",
         "position": "Junior PHP Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1046,7 +1047,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1063,7 +1064,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1080,7 +1081,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": "active" | "inactive"
+        "status": true
       }
     ],
     "socials": {
@@ -1097,13 +1098,13 @@
         "team": "DevOps",
         "position": "DevOps",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
       "linkedin": "https://www.linkedin.com/in/mirela-estera-stoica-b36492182/",
       "github": "https://github.com/stoicamirela",
-      "discord": "https://discord.com/users/1326603739594887249"
+      "discord": "https://discord.com/users/730821185075675216"
     }
   },
   {
@@ -1114,7 +1115,7 @@
         "team": "Cybersecurity",
         "position": "Junior Security Analyst",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -1131,7 +1132,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -1148,7 +1149,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": "active" 
+        "status": true
       }
     ],
     "socials": {
@@ -1164,7 +1165,8 @@
       {
         "team": "QA",
         "position": "Manual Tester",
-        "teamLead": false
+        "teamLead": false,
+        "status": true
       }
     ],
     "socials": {
@@ -1180,7 +1182,8 @@
       {
         "team": "QA",
         "position": "Manual Tester",
-        "teamLead": false
+        "teamLead": false,
+        "status": true
       }
     ],
     "socials": {
