@@ -1098,7 +1098,7 @@
         "team": "DevOps",
         "position": "DevOps",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
