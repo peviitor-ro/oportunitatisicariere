@@ -3,6 +3,7 @@ const membersWrapper = document.querySelector("#team-wrapper");
 
 let teamMembers = []; // Vector gol pentru datele din json
 let preferredTeam = sessionStorage.getItem("preferredTeam"); // pentru cand navigarea se face dinspre pagina Detalii
+let activeMembers = sessionStorage.getItem("status");
 let hasActiveBtn = false;
 
 // Functie de fetch pentru datele din json
@@ -10,11 +11,26 @@ function loadTeamMembers() {
   fetch("data/teamMembers.json")
     .then((response) => response.json())
     .then((data) => {
-      teamMembers = data;
-      initializeTeams(); // Initiazare echipe dupa ce datele devin disponibile
+
+      // Filtrăm membrii și păstrăm doar rolurile active
+      teamMembers = data
+        .map(member => {
+          const activeRoles = member.roles.filter(role => role.status === true);
+          if (activeRoles.length === 0) return null;
+
+          return {
+            ...member,
+            roles: activeRoles
+          };
+        })
+        .filter(member => member !== null); // Eliminăm membrii fără roluri active
+
+      // Inițializăm echipele doar cu membrii activi
+      initializeTeams();
     })
     .catch((error) => console.error("Eroare la încarcarea JSON:", error));
 }
+
 
 // Functie pentru initializarea echipelor
 function initializeTeams() {

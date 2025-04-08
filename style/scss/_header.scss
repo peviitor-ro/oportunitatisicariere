@@ -35,15 +35,13 @@ header {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(
-      to right,
-      $ro-blue 0%,
-      $ro-blue 33.33%,
-      $ro-yellow 33.33%,
-      $ro-yellow 66.66%,
-      $ro-red 66.66%,
-      $ro-red 100%
-    );
+    background: linear-gradient(to right,
+        $ro-blue 0%,
+        $ro-blue 33.33%,
+        $ro-yellow 33.33%,
+        $ro-yellow 66.66%,
+        $ro-red 66.66%,
+        $ro-red 100%);
     // filter: blur(2px);
     z-index: -1;
   }
@@ -92,6 +90,7 @@ header {
   & #socialLinks {
     display: none;
   }
+
   // Hide logo while on intro section
 }
 
@@ -99,8 +98,10 @@ header {
   // border-bottom: 1px solid $light-white;
   // Changed border effect to elevation effect
   box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.2),
-    /* Top shadow */ 0 8px 8px -4px rgba(0, 0, 0, 0.14),
-    /* Bottom shadow */ 0 8px 12px -4px rgba(0, 0, 0, 0.12);
+    /* Top shadow */
+    0 8px 8px -4px rgba(0, 0, 0, 0.14),
+    /* Bottom shadow */
+    0 8px 12px -4px rgba(0, 0, 0, 0.12);
 }
 
 .nav__links {
@@ -123,7 +124,7 @@ header {
       border-bottom: 3px solid $green-mint;
     }
 
-    & > li > a {
+    &>li>a {
       text-decoration: none;
       color: $black;
       font-size: 1.6rem;
@@ -172,8 +173,9 @@ header {
       align-items: center;
     }
 
-    &__links__list li > a {
+    &__links__list li>a {
       position: relative;
+
       &:before {
         content: "";
         position: absolute;
@@ -186,6 +188,7 @@ header {
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
       }
+
       &:hover:before {
         visibility: visible;
         transform: scaleX(1);
@@ -202,7 +205,7 @@ header {
       display: none;
     }
 
-    > img {
+    >img {
       height: 35px;
     }
   }
@@ -217,7 +220,7 @@ header {
       margin-top: 18px;
       border: none;
 
-      > img {
+      >img {
         height: 25px;
       }
     }
@@ -246,8 +249,9 @@ header {
       align-items: center;
     }
 
-    &__links__list li > a {
+    &__links__list li>a {
       position: relative;
+
       &:before {
         content: "";
         position: absolute;
@@ -260,6 +264,7 @@ header {
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
       }
+
       &:hover:before {
         visibility: visible;
         transform: scaleX(1);
@@ -277,9 +282,11 @@ header {
           inline-size: 20rem;
         }
       }
+
       & .title-mint {
         font-size: 1.6rem;
       }
+
       & .img-logo {
         width: 50px;
         height: 50px;
@@ -296,7 +303,7 @@ header {
       display: none;
     }
 
-    > img {
+    >img {
       height: 35px;
     }
   }
@@ -311,7 +318,7 @@ header {
       margin-top: 18px;
       border: none;
 
-      > img {
+      >img {
         height: 25px;
       }
     }
@@ -321,13 +328,14 @@ header {
 @media only screen and (min-width: $tablet-size) and (max-width: 1282px) {
   .nav {
     display: block;
+
     &__links__list {
       display: none;
       height: calc(100vh - 30px);
       gap: 2.2rem;
       background-color: $white-smoke;
 
-      & li > a {
+      & li>a {
         font-size: 2.8rem;
         font-weight: 500;
       }
@@ -355,8 +363,9 @@ header {
       align-items: center;
     }
 
-    &__links__list li > a {
+    &__links__list li>a {
       position: relative;
+
       &:before {
         content: "";
         position: absolute;
@@ -369,6 +378,7 @@ header {
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
       }
+
       &:hover:before {
         visibility: visible;
         transform: scaleX(1);
@@ -385,7 +395,7 @@ header {
       display: none;
     }
 
-    > img {
+    >img {
       height: 35px;
     }
   }
@@ -400,7 +410,7 @@ header {
       margin-top: 18px;
       border: none;
 
-      > img {
+      >img {
         height: 25px;
       }
     }
@@ -413,6 +423,7 @@ header {
       min-width: fit-content;
     }
   }
+
   .hamburger-menu-icon {
     display: none;
   }
@@ -429,7 +440,7 @@ header {
       gap: 2rem;
       background-color: $white-smoke;
 
-      & li > a {
+      & li>a {
         font-size: 2.4rem;
       }
 
@@ -466,7 +477,7 @@ header {
 }
 
 @media (min-width: $laptop-size) {
-  #team > p {
+  #team>p {
     width: 860px;
   }
 }
