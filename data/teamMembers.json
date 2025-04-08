@@ -996,7 +996,8 @@
       {
         "team": "Core",
         "position": "Manual Test Lead",
-        "teamLead": false
+        "teamLead": false,
+        "status": true
       }
     ],
     "socials": {
