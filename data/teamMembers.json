@@ -985,28 +985,6 @@
     }
   },
   {
-    "name": "Ivaşcu Theodor",
-    "avatar": "./assets/contributors/theodor-ivascu.webp",
-    "roles": [
-      {
-        "team": "QA",
-        "position": "Manual Test Lead",
-        "teamLead": true
-      },
-      {
-        "team": "Core",
-        "position": "Manual Test Lead",
-        "teamLead": false,
-        "status": true
-      }
-    ],
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/theodorivascu/",
-      "github": "https://github.com/TheodorIvascu",
-      "discord": "http://discordapp.com/users/1188200252369547325"
-    }
-  },
-  {
     "name": "Radu Spatacean",
     "avatar": "./assets/contributors/radu-spatacean.webp",
     "roles": [
