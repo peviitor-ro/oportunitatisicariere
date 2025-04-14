@@ -357,6 +357,74 @@
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
+
+        a{
+          color: $green-mint;
+          font-weight: 600;
+          padding-right: 20px;
+        }
+
+        .copyMail{
+          position: relative;
+          display: inline-block;
+          width: 20px;
+          height: 30px;
+          margin-left: -20px;
+          top: 2px;
+          right: 0;
+          cursor: pointer;
+
+          .tooltip{
+            display: none;
+          }
+
+          &:hover .tooltip{
+            display: block;
+            position: absolute;
+            top: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: black;
+            color: white;
+            font-size: 1.4rem;
+            padding: 5px 10px;
+            border-radius: 10px;
+            white-space: pre;
+
+            &::after{
+              content: '';
+              position: absolute;
+              clip-path: polygon(50% 100%, 0 0, 100% 0);
+              background: black;
+              width: 12px;
+              height: 6px;
+              z-index: 1;
+              top:100%;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          &::after, &::before{
+            content: '';
+            position: absolute;
+            z-index: -2;
+            top: 14px;
+            right: 0px;
+            border: 1px solid $dark-gray;
+            background: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+          }
+
+          &::before{
+            top: 20px;
+            left: 5px;
+            z-index: -1;
+            outline: 1px solid white;
+          }
+        }
       }
 
       > li {
