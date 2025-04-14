@@ -2435,6 +2435,68 @@ footer .footer-bottom h4 {
   -webkit-hyphens: auto;
           hyphens: auto;
 }
+.jd__container .jd__body .list #email a {
+  color: #2f7973;
+  font-weight: 600;
+  padding-right: 20px;
+}
+.jd__container .jd__body .list #email .copyMail {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  margin-left: -20px;
+  top: 2px;
+  right: 0;
+  cursor: pointer;
+}
+.jd__container .jd__body .list #email .copyMail .tooltip {
+  display: none;
+}
+.jd__container .jd__body .list #email .copyMail:hover .tooltip {
+  display: block;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  white-space: pre;
+}
+.jd__container .jd__body .list #email .copyMail:hover .tooltip::after {
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background: black;
+  width: 12px;
+  height: 6px;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.jd__container .jd__body .list #email .copyMail::after, .jd__container .jd__body .list #email .copyMail::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 14px;
+  right: 0px;
+  border: 1px solid #6b6b6b;
+  background: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+.jd__container .jd__body .list #email .copyMail::before {
+  top: 20px;
+  left: 5px;
+  z-index: -1;
+  outline: 1px solid white;
+}
 .jd__container .jd__body .list > li {
   padding: 0.2rem;
 }
