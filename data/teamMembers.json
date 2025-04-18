@@ -209,7 +209,7 @@
   },
   {
     "name": "Alexandra Ifrim",
-    "avatar": "./assets/contributors/alexandra-ifrim.webp",
+    "avatar": "./assets/contributors/alexandra-ifrim-second-photo.webp",
     "roles": [
       {
         "team": "Back-end",
@@ -1031,7 +1031,7 @@
         "team": "Back-end",
         "position": "Junior PHP Developer",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
