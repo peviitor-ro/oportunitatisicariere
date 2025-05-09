@@ -991,7 +991,8 @@
       {
         "team": "QA",
         "position": "Manual Test Lead",
-        "teamLead": true
+        "teamLead": true,
+        "status": true
       },
       {
         "team": "Core",
