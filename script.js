@@ -76,6 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
     removeNavBottomBorder();
   });
 
+  // Initialize tooltips
+  tippy(".footer-link", {
+    theme: "tooltip-footer-theme",
+  });
+
   // Highlight when the page gets loaded:
   highlightNavLink();
 });
@@ -143,7 +148,7 @@ function createNewSubList() {
     },
     {
       href: "https://www.instagram.com/peviitor.ro/",
-      src: "./assets/social-media-icons/bxl-instagram-alt.svg", 
+      src: "./assets/social-media-icons/bxl-instagram-alt.svg",
       text: "instagram",
     },
     {

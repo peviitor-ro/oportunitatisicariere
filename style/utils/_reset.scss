@@ -32,7 +32,6 @@ section:target {
 }
 
 @keyframes shake {
-
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
@@ -140,6 +139,28 @@ section:target {
   .underline {
     width: 100%;
     display: block;
+  }
+}
+
+// Scroll-to-top button
+.top-redirect-btn {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  z-index: 99;
+  opacity: 0;
+  bottom: 0rem;
+  right: 2rem;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.3s ease;
+  }
+
+  &:hover img {
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+      brightness(85%) contrast(77%);
   }
 }
 
