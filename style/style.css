@@ -1854,7 +1854,7 @@ header {
   justify-content: center;
   align-items: start;
   gap: 0.6rem;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.5019607843);
   padding-bottom: 3.6rem;
 }
 .footer__logo a h1 {
@@ -1949,7 +1949,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 7.2rem 3rem;
+    padding: 8.4rem 3rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "logo navigation" "social-media info-link";
   }

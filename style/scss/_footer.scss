@@ -34,7 +34,7 @@
     grid-area: logo;
     @include flex(column, center, start);
     gap: 0.6rem;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $gray;
     padding-bottom: 3.6rem;
     a {
       h1 {
@@ -136,7 +136,7 @@
 
 @media screen and (min-width: $tablet-size) {
   .footer {
-    padding: 7.2rem 3rem;
+    padding: 8.4rem 3rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "logo navigation"
