@@ -2,7 +2,7 @@ const redirectBtn = document.getElementById("redirect-btn");
 
 // Object to store routes
 const routes = {
-  "": "home", // Default route for home
+  "": "home",
   "our-mission": "ourMission",
   "how-contribute": "howContribute",
   "why-contribute": "whyContribute",
@@ -22,10 +22,8 @@ function loadContent() {
   }
 
   if (path) {
-    //setTimeout - să aiba timp să se încarce conținutul generat dinamic de pe index.html
     setTimeout(() => {
       const targetElement = document.querySelector(`#${path}`);
-      // Scroll to the target element
       targetElement.scrollIntoView({ behavior: "smooth" });
     }, 300);
   }
