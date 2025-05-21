@@ -11,12 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const job = data.find((job) => job.id === jobId);
 
       if (!job) {
-        // Redirect to 404 if job not found in data
         window.location.href = "404.html";
         return;
       }
       if (job.isHiring === false) {
-        // Redirect to 404 if not hiring for mentioned position
         window.location.href = "404.html";
         return;
       }
@@ -82,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .getElementById("employer-discord")
           .setAttribute("href", job.aboutEmployer.discord);
       }
-      checkPath(data); // Call the function to check if the path matches any of the job IDs
+      checkPath(data);
     })
     .catch((error) => {
       {

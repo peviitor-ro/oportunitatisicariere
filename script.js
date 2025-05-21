@@ -52,15 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const introTreshold = logoSection.getBoundingClientRect().bottom;
       const footerTreshold = joinUsSection.getBoundingClientRect().top;
 
-      // Remove footerTreshold if you do not want the behavior to trigger
-      // As the footer comes into view
       if (introTreshold < 100 && footerTreshold > -300) {
-        // Enable title and make it visible
         navTitleLogo.style.pointerEvents = "auto";
         navTitleLogo.style.cursor = "pointer";
         navTitleLogo.classList.add("visible-title");
       } else {
-        // Disable title and hide it
         navTitleLogo.style.pointerEvents = "none";
         navTitleLogo.style.cursor = "none";
         navTitleLogo.classList.remove("visible-title");
@@ -74,6 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("scroll", () => {
     highlightNavLink();
     removeNavBottomBorder();
+  });
+
+  // Initialize tooltips
+  tippy(".footer-link", {
+    theme: "tooltip-footer-theme",
   });
 
   // Highlight when the page gets loaded:
@@ -143,7 +144,7 @@ function createNewSubList() {
     },
     {
       href: "https://www.instagram.com/peviitor.ro/",
-      src: "./assets/social-media-icons/bxl-instagram-alt.svg", 
+      src: "./assets/social-media-icons/bxl-instagram-alt.svg",
       text: "instagram",
     },
     {

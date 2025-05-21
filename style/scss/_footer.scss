@@ -7,312 +7,185 @@
   border-radius: 8px;
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transform: translate(20%, 25%);
+  transform: translate(0, 10%);
 
   .tippy-arrow {
     color: #000000;
   }
 }
 
-footer {
-  padding: 11.2rem 8rem 3.2rem 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 5.2rem;
+.footer {
+  padding: 7.2rem 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4.8rem;
+  grid-template-areas:
+    "logo"
+    "navigation"
+    "social-media"
+    "info-link";
 
-  // Footer navigation links inherit styles from header nav links to avoid duplication.
+  ul {
+    list-style: none;
+  }
 
-  // .footer-navigation {
-  //   & nav {
-  //     background-color: white;
-  //     & ul {
-  //       background-color: white;
-  //     }
-  //   }
-  // }
+  // Footer logo section
+  &__logo {
+    grid-area: logo;
+    @include flex(column, center, start);
+    gap: 0.6rem;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 3.6rem;
+    a {
+      h1 {
+        font-size: 3.2rem;
 
-  // hr {
-  //   height: 0;
-  //   border: none;
-  //   border-top: 1px solid $black;
-  //   width: 100%;
-  //   max-width: 100rem;
-  // }
+        &:first-child {
+          font-family: "Gelasio";
+          color: $dark-teal;
+        }
+        &:nth-child(2) {
+          color: $dark-blue;
+        }
+      }
+    }
 
-  .footer-social {
-    &__links {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 2.4rem;
+    // Trademark year
+    p {
+      color: $dark-gray;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+
+  // Footer navigation section
+  &__navigation {
+    grid-area: navigation;
+    @include flex(row, flex-start);
+    ul {
+      @include flex(column, start, start);
+      row-gap: 1.8rem;
+      flex-wrap: wrap;
 
       li {
-        display: inline-block;
-        margin: 0 1rem;
-
         a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 5.6rem;
-          height: 5.6rem;
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  // Footer social media section
+  &__social {
+    grid-area: social-media;
+
+    ul {
+      @include flex(row, flex-start, center);
+      flex-wrap: wrap;
+      gap: 1.8rem;
+
+      li {
+        a {
+          width: 4.4rem;
+          height: 4.4rem;
+          @include flex(row, center, center);
           border-radius: 50%;
-          transition: background-color 0.3s ease, box-shadow 0.3s ease;
+          transition: all 0.3s ease-in-out;
 
           &:hover {
-            background-color: rgba(237, 237, 237, 1);
-            box-shadow: 0.15rem 0.3rem 0.3rem rgba(136, 136, 136, 0.25);
+            background-color: #ededed;
+            box-shadow: 2px 2px 6px #00000020, -2px -2px 12px #f3f3f3;
           }
-
           img {
-            width: 4rem;
-            height: 4rem;
+            width: 3.2rem;
+            height: 3.2rem;
           }
         }
       }
     }
   }
 
-  .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  // Footer info section
+  &__info-links {
+    grid-area: info-link;
+    @include flex(row, flex-start, center);
 
-    p {
-      padding: 1rem;
-      font-size: 1.8rem;
-    }
-
-    h4 {
-      font-size: 2rem;
-    }
-  }
-}
-
-.top-redirect-btn {
-  cursor: pointer;
-  border: none;
-  position: fixed;
-  z-index: 99;
-  opacity: 0;
-  bottom: 2vh;
-
-  img {
-    width: 5rem;
-    height: 5rem;
-    transition: all 0.3s ease;
-  }
-
-  img:hover {
-    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
-  }
-}
-
-#top-redirect-main-page {
-  right: 3vw;
-
-  @media (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
-    right: 2vw;
-  }
-
-  @media (min-width: 769px) and (max-width: $laptop-size) {
-    right: 1.8vw;
-    bottom: 1.8vh;
-  }
-
-  @media (max-width: $tablet-size) {
-    right: 1.2vw;
-    bottom: 1.2vh;
-  }
-}
-
-// Mobile size
-@media (max-width: $tablet-size) {
-  footer {
-    padding: 3.2rem 1.4rem;
-    gap: 2.4rem;
-
-    hr {
-      width: 100%;
-      max-width: 22rem;
-    }
-
-    .footer-bottom {
-      p {
-        font-size: 1.4rem;
-      }
-
-      h4 {
-        font-size: 1.4rem;
-      }
-    }
-
-    .footer-social {
-      &__links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.1rem 2.4rem;
-        // max-width: 14.8rem; //#fixed mobile icon for wrap
-
-        li {
-          a {
-            img {
-              width: 3.2rem;
-              height: 3.2rem;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .footer-navigation {
     ul {
-      display: flex;
-      flex-direction: column;
-      gap: 1.4rem;
+      @include flex(row, flex-start, center);
+      flex-wrap: wrap;
+      gap: 1.8rem;
 
       li {
+        border-right: 1px solid $dark-gray;
+        padding-right: 1.8rem;
+
+        &:last-child {
+          border-right: none;
+          padding-right: 0;
+        }
+
         a {
-          font-size: 1.4rem;
+          font-size: 1.6rem;
+          color: $dark-gray;
         }
       }
-    }
-  }
-
-  .top-redirect-btn {
-
-    // right: 2vw;
-    // bottom: 0vh;
-    img {
-      width: 3.2rem;
-      height: 3.2rem;
     }
   }
 }
 
-// Tablet size
-@media (min-width: 321px) and (max-width: $tablet-size) {
-  footer {
-    padding: 3.2rem 2.4rem;
-    gap: 3.2rem;
+@media screen and (min-width: $tablet-size) {
+  .footer {
+    padding: 8.4rem 3rem 4.2rem 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "logo navigation"
+      "social-media info-link";
 
-    hr {
-      max-width: 52rem;
+    &__logo {
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
-    .footer-bottom {
-      p {
-        font-size: 1.4rem;
-      }
+    &__navigation {
+      justify-content: flex-end;
 
-      h4 {
-        font-size: 1.4rem;
-      }
-    }
-
-    .footer-social {
-      &__links {
-        li {
-          a {
-            img {
-              width: 3.2rem;
-              height: 3.2rem;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .footer-navigation {
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 2.4rem;
-
-      li {
-        a {
-          font-size: 1.4rem;
-        }
-      }
-    }
-  }
-
-  .top-redirect-btn {
-    img {
-      width: 3.2rem;
-      height: 3.2rem;
-    }
-  }
-}
-
-// Laptop size
-@media (min-width: 769px) and (max-width: $laptop-size) {
-  footer {
-    padding: 10rem 8.4rem 3.2rem 8.4rem;
-
-    hr {
-      max-width: 100rem;
-    }
-
-    .footer-social {
-      &__links {
-        max-width: 100%;
+      ul {
         flex-direction: row;
-        gap: 3.2rem;
+        column-gap: 1.8rem;
+        max-width: 34rem;
+        height: 11rem;
 
         li {
-          cursor: pointer;
-        }
+          width: calc(50% - 1.8rem); // two columns
 
-        li a img {
-          width: 4rem;
-          height: 4rem;
-        }
-      }
-    }
-
-    .footer-bottom {
-      padding-bottom: 3.2rem;
-
-      p {
-        padding: 1.6rem;
-        font-size: 1.6rem;
-      }
-
-      h4 {
-        font-size: 2rem;
-      }
-    }
-  }
-
-  .footer-navigation {
-    ul {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      li {
-        a {
-          font-size: 1.4rem;
+          a {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: $dark-gray;
+            }
+          }
         }
       }
     }
-  }
 
-  .top-redirect-btn {
-    // right: 2vw;
-    // bottom: 2vh;
+    &__info-links {
+      grid-area: info-link;
+      justify-content: flex-end;
 
-    img {
-      width: 4rem;
-      height: 4rem;
+      ul {
+        justify-content: flex-end;
+
+        li {
+          a {
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+      }
     }
   }
 }

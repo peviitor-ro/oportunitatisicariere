@@ -3,10 +3,9 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  // position: sticky; // Position sticky does not work well with firefox
   position: fixed;
   top: 0;
-  left: 50%; // Added left property in order to center the header for fixed position
+  left: 50%;
   z-index: 1000;
 }
 
