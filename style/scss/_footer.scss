@@ -69,7 +69,7 @@
 
       li {
         a {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           font-weight: 500;
         }
       }
@@ -136,7 +136,7 @@
 
 @media screen and (min-width: $tablet-size) {
   .footer {
-    padding: 8.4rem 3rem;
+    padding: 8.4rem 3rem 4.2rem 3rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "logo navigation"

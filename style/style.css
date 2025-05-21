@@ -1887,7 +1887,7 @@ header {
   flex-wrap: wrap;
 }
 .footer__navigation ul li a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 .footer__social {
@@ -1949,7 +1949,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 8.4rem 3rem;
+    padding: 8.4rem 3rem 4.2rem 3rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "logo navigation" "social-media info-link";
   }
