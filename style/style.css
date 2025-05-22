@@ -73,7 +73,7 @@ section:target {
 
 .secondary-btn, .team-btn {
   color: #2f7973;
-  background-color: #f3f3f3;
+  background: transparent;
   border: 2px solid #2f7973;
 }
 .secondary-btn:hover, .team-btn:hover {
@@ -2406,10 +2406,6 @@ header {
   overflow-wrap: break-word;
   -webkit-hyphens: auto;
           hyphens: auto;
-}
-.jd__container .jd__body .list #email a {
-  color: #2f7973;
-  font-weight: 500;
 }
 .jd__container .jd__body .list #email #copy-email {
   position: relative;
