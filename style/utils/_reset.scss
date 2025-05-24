@@ -85,7 +85,7 @@ section:target {
 .secondary-btn {
   @extend .custom-btn;
   color: $green-mint;
-  background-color: $white;
+  background: transparent;
   border: 2px solid $green-mint;
 
   &:hover {
