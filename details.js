@@ -81,9 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
           .getElementById("employer-discord")
           .setAttribute("href", job.aboutEmployer.discord);
 
-          const copy = document.querySelector('#copy-email');
-          // copy email address event
-          copy.addEventListener("click", (e) => {
+          const copyEmail = document.querySelector('#copy-email');
+          copyEmail.addEventListener("click", (e) => {
             copyText = e.target.previousElementSibling.innerHTML;
             navigator.clipboard.writeText(copyText);
             e.target.classList.add('clicked');
