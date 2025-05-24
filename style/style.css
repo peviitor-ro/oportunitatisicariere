@@ -65,7 +65,7 @@ section:target {
 
 .secondary-btn, .team-btn {
   color: #2f7973;
-  background-color: #f3f3f3;
+  background: transparent;
   border: 2px solid #2f7973; }
   .secondary-btn:hover, .team-btn:hover {
     color: #f3f3f3;
@@ -1892,6 +1892,42 @@ header {
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto; }
+        .jd__container .jd__body .list #email #copy-email {
+          position: relative;
+          display: inline-block;
+          width: 14px;
+          height: 15px;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          cursor: pointer; }
+          .jd__container .jd__body .list #email #copy-email:hover::after {
+            content: "Copy email";
+            font-size: 14px;
+            position: absolute;
+            white-space: nowrap;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            height: auto;
+            padding: 4px 12px;
+            border-radius: .6rem;
+            background: #4b4b4b;
+            color: #f5f5f5;
+            z-index: 2; }
+          .jd__container .jd__body .list #email #copy-email:hover::before {
+            content: "";
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            background: #4b4b4b; }
+          .jd__container .jd__body .list #email #copy-email.clicked:hover::after {
+            content: "Copied"; }
       .jd__container .jd__body .list > li {
         padding: 0.2rem; }
       @media (min-width: 768px) {

@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("location").textContent += job.location;
         document.getElementById(
           "email"
-        ).innerHTML += `<a href="mailto:${job.aboutEmployer.email}">${job.aboutEmployer.email}</a>`;
+        ).innerHTML += `<a href="mailto:${job.aboutEmployer.email}">${job.aboutEmployer.email}</a>
+        <span id="copy-email"></span>`;
         document.getElementById("address").textContent +=
           job.aboutEmployer.address;
         document
@@ -79,6 +80,17 @@ document.addEventListener("DOMContentLoaded", () => {
         document
           .getElementById("employer-discord")
           .setAttribute("href", job.aboutEmployer.discord);
+
+          const copyEmail = document.querySelector('#copy-email');
+          copyEmail.addEventListener("click", (e) => {
+            copyText = e.target.previousElementSibling.innerHTML;
+            navigator.clipboard.writeText(copyText);
+            e.target.classList.add('clicked');
+            setTimeout(() => {
+              e.target.classList.remove('clicked');
+            }, '1000');
+            e.preventDefault();
+          });
       }
       checkPath(data);
     })
