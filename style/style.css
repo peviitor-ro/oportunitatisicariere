@@ -1380,7 +1380,6 @@ header {
             color: #f3f3f3;
             border-radius: 50%;
             background-color: #4b4b4b;
-            /* Culoarea implicita a svg-ului */
             mask-size: 32px 32px;
             mask-repeat: no-repeat;
             mask-position: center;
@@ -1498,12 +1497,12 @@ header {
     gap: 0.6rem;
     border-bottom: 1px solid #1e1e1e80;
     padding-bottom: 3.6rem; }
-    .footer__logo a h1 {
+    .footer__logo a h2 {
       font-size: 3.2rem; }
-      .footer__logo a h1:first-child {
+      .footer__logo a h2:first-child {
         font-family: "Gelasio";
         color: #2c6980; }
-      .footer__logo a h1:nth-child(2) {
+      .footer__logo a h2:nth-child(2) {
         color: #1d2b59; }
     .footer__logo p {
       color: #6b6b6b;
