@@ -547,7 +547,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -564,7 +564,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -581,7 +581,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -1066,7 +1066,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -1083,7 +1083,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
