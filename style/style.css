@@ -1883,14 +1883,14 @@ header {
   border-bottom: 1px solid rgba(30, 30, 30, 0.5019607843);
   padding-bottom: 3.6rem;
 }
-.footer__logo a h1 {
+.footer__logo a h2 {
   font-size: 3.2rem;
 }
-.footer__logo a h1:first-child {
+.footer__logo a h2:first-child {
   font-family: "Gelasio";
   color: #2c6980;
 }
-.footer__logo a h1:nth-child(2) {
+.footer__logo a h2:nth-child(2) {
   color: #1d2b59;
 }
 .footer__logo p {
