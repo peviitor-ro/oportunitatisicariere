@@ -13,3 +13,11 @@
     align-items: $align;
   }
 }
+
+@mixin meeting-border{
+    border-left: 1px solid rgba(47,121,115,.5);
+    border-right: 1px solid transparent;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15px;
+}

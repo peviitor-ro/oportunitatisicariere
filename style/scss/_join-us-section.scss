@@ -156,6 +156,186 @@
   }
 }
 
+.highlight-text{
+  color: $minty-qua;
+}
+
+.deep-blue-text{
+  color: $deep-blue;
+}
+
+.dark-text{
+  color: $dark;
+}
+
+.shade{
+  box-shadow: 2px 2px 6px -4px rgba( 0, 0, 0, .25);
+}
+
+.join-us__sub-heading{
+  font-size: 24px;
+}
+.meeting-section{
+  position: relative;
+  width: clamp(280px, 80rem, 100%);
+  margin: 3rem 0;
+}
+
+.meeting-days{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0 20px;
+
+  .meeting-day{
+    width: clamp( 50px, calc(100% / 5), 200px);
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ffffff;
+    @include meeting-border;
+    color: $black;
+    padding: 26px 0;
+    cursor: pointer;
+    transition: .25s ease-out;
+    letter-spacing: 2px;
+
+    &:hover{
+      background-color: $green-mint;
+      color: $white;
+      border-color: transparent;
+    }
+
+    &:focus{
+      background-color: $dark-mint;
+      color: $white;
+      border-color: transparent;
+    }
+
+    &.active{
+      background-color: $minty-qua;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      color: #ffffff;
+    }
+
+    span{
+      display: none;
+    }
+  }
+}
+
+.meeting-schedule{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0;
+  gap: 20px;
+
+  .meeting-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    @include meeting-border;
+    cursor: pointer;
+    min-height: 136px;
+    transition: all .25s ease-out;
+
+    .meeting-card__top{
+      font-size: 20px;
+      font-weight: 600;
+      color: $black;
+      margin-bottom: .15rem;
+      letter-spacing: 1px;
+    }
+    .meeting-card__middle{
+      font-size: 24px;
+      font-weight: 700;
+      color: $green-mint;
+      letter-spacing: 1px;
+    }
+    .meeting-card__bottom{
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: .6rem;
+      color: $black;
+      letter-spacing: 1px;
+    }
+
+    &.active{
+      background: $minty-qua;
+      
+      .meeting-card__top{
+        color: $deep-blue;
+      }
+      .meeting-card__middle{
+        color: #ffffff;
+      }
+      .meeting-card__bottom{
+        color: $deep-blue;
+      }
+    }
+
+    &::after{
+      position: absolute;
+      content: "PARTICIPĂ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: transparent;
+      color: #ffffff;
+      border-radius: 1px solid red;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 14px 0 ;
+      opacity: 0;
+    }
+
+    &::before{
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      background: url("/assets/round-table.png") no-repeat;
+      background-position:  top center;
+      width: 100%;
+      height: 80px;
+      opacity: 0;
+    }
+
+    &:hover{
+      background-color: $green-mint;
+      .meeting-card__top,
+      .meeting-card__middle,
+      .meeting-card__bottom{
+        visibility: hidden;
+      }
+
+      &::after,
+      &::before{
+        opacity: 1;
+      }
+    }
+
+    &:focus{
+      background-color: $dark-mint;
+      .meeting-card__top,
+      .meeting-card__middle,
+      .meeting-card__bottom{
+        visibility: hidden;
+      }
+
+      &::after,
+      &::before{
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
 @media only screen and (max-width: $phone-size) {
   .join-us-section {
     & p {
@@ -217,6 +397,7 @@
       margin-top: 1.4rem;
     }
   }
+
 }
 
 @media only screen and (min-width: 500px) and (max-width: $tablet-size) {
@@ -239,6 +420,7 @@
       line-height: 2.5rem;
     }
   }
+
 }
 
 @media only screen and (min-width:#{$laptop-size}) {
@@ -249,6 +431,16 @@
       padding: 0 0 2rem;
       line-height: 2.2rem;
       width: 860px;
+    }
+  }
+
+  .meeting-days{
+    
+    .meeting-day{
+
+      span{
+        display: inline;
+      }
     }
   }
 }

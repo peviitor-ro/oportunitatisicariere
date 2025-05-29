@@ -1,0 +1,72 @@
+{
+    "data": {
+        "day": {
+            "full" : "Luni",
+            "first" : "L",
+            "last": "uni"
+        },
+        "meeting": {
+            "for" : "Echipa de",
+            "team" : "Front-End",
+            "hour" : "19:00"
+        }
+    },
+    "data": {
+        "day": {
+            "full" : "Marti",
+            "first" : "M",
+            "last": "arti"
+        },
+        "meeting": {
+            "for" : "Echipa de",
+            "team" : "Front-End",
+            "hour" : "19:00"
+        }
+    },
+    "data": {
+        "day": {
+            "full" : "Miercuri",
+            "first" : "M",
+            "last": "iercuri"
+        },
+        "meeting": {
+            "for" : "Echipa de",
+            "team" : "Front-End",
+            "hour" : "19:00"
+        },
+        "meeting": {
+            "for" : "Echipa de",
+            "team" : "DevOps",
+            "hour" : "19:00"
+        },
+        "meeting": {
+            "for" : "Prezentarea noilor",
+            "team" : "Voluntari",
+            "hour" : "19:00"
+        }
+    },
+    "data": {
+        "day": {
+            "full" : "Joi",
+            "first" : "J",
+            "last": "oi"
+        },
+        "meeting": {
+            "for" : "Echipa de",
+            "team" : "Front-End",
+            "hour" : "19:00"
+        }
+    },
+    "data": {
+        "day": {
+            "full" : "Vineri",
+            "first" : "V",
+            "last": "ineri"
+        },
+        "meeting": {
+            "for" : "Echipa de",
+            "team" : "Front-End",
+            "hour" : "19:00"
+        }
+    }
+}
