@@ -175,10 +175,11 @@
 .join-us__sub-heading{
   font-size: 24px;
 }
+
 .meeting-section{
   position: relative;
   width: clamp(280px, 80rem, 100%);
-  margin: 3rem 0;
+  margin: 3rem 0 0;
 }
 
 .meeting-days{
@@ -242,20 +243,22 @@
     min-height: 136px;
     transition: all .25s ease-out;
 
-    .meeting-card__top{
+    &__top{
       font-size: 20px;
       font-weight: 600;
       color: $black;
       margin-bottom: .15rem;
       letter-spacing: 1px;
     }
-    .meeting-card__middle{
+    
+    &__middle{
       font-size: 24px;
       font-weight: 700;
       color: $green-mint;
       letter-spacing: 1px;
     }
-    .meeting-card__bottom{
+
+    &__bottom{
       font-size: 30px;
       font-weight: 700;
       margin-top: .6rem;
@@ -279,7 +282,7 @@
 
     &::after{
       position: absolute;
-      content: "PARTICIPĂ";
+      content: attr(data-label);
       top: 0;
       left: 0;
       width: 100%;
@@ -337,6 +340,7 @@
 }
 
 @media only screen and (max-width: $phone-size) {
+
   .join-us-section {
     & p {
       line-height: 2.5rem;
@@ -357,6 +361,10 @@
 }
 
 @media only screen and (min-width: $phone-size) and (max-width: 500px) {
+  .join-us__sub-heading{
+    margin-top: 3rem;
+  }
+
   .join-us-section {
     gap: 0rem;
 
@@ -398,6 +406,24 @@
     }
   }
 
+  .meeting-days{
+    justify-content: center;
+    gap: 0 10px;
+    .meeting-day{
+      width: 50px;
+      height: 50px;
+      padding: 0 0 0 4px;
+    }
+  }
+
+  .meeting-schedule{
+    flex-direction: column;
+    gap: 10px;
+    .meeting-card{
+      max-width: 310px;
+      margin: auto;
+    }
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: $tablet-size) {
@@ -407,6 +433,22 @@
     & p {
       padding: 0 5rem 5rem 5rem;
       line-height: 2.5rem;
+    }
+  }
+
+  .meeting-days{
+    gap: 0 12px;
+    .meeting-day{
+      padding: 20px 0;
+    }
+  }
+
+  .meeting-schedule{
+    flex-direction: column;
+    gap: 14px;
+    .meeting-card{
+      max-width: 420px;
+      margin: auto;
     }
   }
 }
@@ -420,10 +462,10 @@
       line-height: 2.5rem;
     }
   }
-
 }
 
 @media only screen and (min-width:#{$laptop-size}) {
+
   .join-us-section {
     padding: 8.3rem 5rem;
 

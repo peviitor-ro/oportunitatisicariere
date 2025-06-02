@@ -7,8 +7,9 @@
         },
         "meeting": {
             "for" : "Echipa de",
-            "team" : "Front-End",
-            "hour" : "19:00"
+            "team" : "CYBERSECURITY TESTARE",
+            "hour" : "19:00",
+            "url" : "https://meet.jit.si/PEVIITOR.RO"
         }
     },
     "data": {
@@ -19,8 +20,9 @@
         },
         "meeting": {
             "for" : "Echipa de",
-            "team" : "Front-End",
-            "hour" : "19:00"
+            "team" : "VOLUNTARI",
+            "hour" : "19:00",
+            "url" : "https://meet.jit.si/PEVIITOR.RO"
         }
     },
     "data": {
@@ -32,17 +34,20 @@
         "meeting": {
             "for" : "Echipa de",
             "team" : "Front-End",
-            "hour" : "19:00"
+            "hour" : "19:00",
+            "url" : "https://meet.jit.si/PEVIITOR.RO"
         },
         "meeting": {
             "for" : "Echipa de",
             "team" : "DevOps",
-            "hour" : "19:00"
+            "hour" : "19:00",
+            "url" : "https://meet.jit.si/PEVIITOR.RO"
         },
         "meeting": {
             "for" : "Prezentarea noilor",
             "team" : "Voluntari",
-            "hour" : "19:00"
+            "hour" : "19:00",
+            "url" : "https://meet.jit.si/PEVIITOR.RO"
         }
     },
     "data": {
@@ -54,7 +59,8 @@
         "meeting": {
             "for" : "Echipa de",
             "team" : "Front-End",
-            "hour" : "19:00"
+            "hour" : "19:00",
+            "url" : "https://meet.jit.si/PEVIITOR.RO"
         }
     },
     "data": {
@@ -65,8 +71,9 @@
         },
         "meeting": {
             "for" : "Echipa de",
-            "team" : "Front-End",
-            "hour" : "19:00"
+            "team" : "SCRAPING",
+            "hour" : "19:00",
+            "url" : "https://meet.jit.si/PEVIITOR.RO"
         }
     }
 }
