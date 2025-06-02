@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Global Imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
@@ -1803,7 +1802,7 @@ header {
 .meeting-section {
   position: relative;
   width: clamp(280px, 80rem, 100%);
-  margin: 3rem 0;
+  margin: 3rem 0 0;
 }
 
 .meeting-days {
@@ -1870,20 +1869,20 @@ header {
   min-height: 136px;
   transition: all 0.25s ease-out;
 }
-.meeting-schedule .meeting-card .meeting-card__top {
+.meeting-schedule .meeting-card__top {
   font-size: 20px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 0.15rem;
   letter-spacing: 1px;
 }
-.meeting-schedule .meeting-card .meeting-card__middle {
+.meeting-schedule .meeting-card__middle {
   font-size: 24px;
   font-weight: 700;
   color: #2f7973;
   letter-spacing: 1px;
 }
-.meeting-schedule .meeting-card .meeting-card__bottom {
+.meeting-schedule .meeting-card__bottom {
   font-size: 30px;
   font-weight: 700;
   margin-top: 0.6rem;
@@ -1904,7 +1903,7 @@ header {
 }
 .meeting-schedule .meeting-card::after {
   position: absolute;
-  content: "PARTICIPĂ";
+  content: attr(data-label);
   top: 0;
   left: 0;
   width: 100%;
@@ -1966,6 +1965,9 @@ header {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
+  .join-us__sub-heading {
+    margin-top: 3rem;
+  }
   .join-us-section {
     gap: 0rem;
   }
@@ -1991,6 +1993,23 @@ header {
   .join-us-section .primary-btn, .join-us-section .job-btn {
     margin-top: 1.4rem;
   }
+  .meeting-days {
+    justify-content: center;
+    gap: 0 10px;
+  }
+  .meeting-days .meeting-day {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 4px;
+  }
+  .meeting-schedule {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .meeting-schedule .meeting-card {
+    max-width: 310px;
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   .join-us-section {
@@ -1999,6 +2018,20 @@ header {
   .join-us-section p {
     padding: 0 5rem 5rem 5rem;
     line-height: 2.5rem;
+  }
+  .meeting-days {
+    gap: 0 12px;
+  }
+  .meeting-days .meeting-day {
+    padding: 20px 0;
+  }
+  .meeting-schedule {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .meeting-schedule .meeting-card {
+    max-width: 420px;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
