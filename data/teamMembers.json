@@ -1193,5 +1193,22 @@
       "github": "https://github.com/aLinDC",
       "discord": "http://discordapp.com/users/203244469582036992"
     }
+  },
+    {
+    "name": "Maria Nascu",
+    "avatar": "./assets/contributors/maria-nascu.webp",
+    "roles": [
+      {
+        "team": "Scraping",
+        "position": "AI Scraper Developer",
+        "teamLead": false,
+        "status": true
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/maria-nascu/",
+      "github": "https://github.com/MariaNascu",
+      "discord": "https://discord.com/users/697469695057461351"
+    }
   }
 ]
