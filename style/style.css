@@ -1827,6 +1827,12 @@ header {
   transition: 0.25s ease-out;
   letter-spacing: 2px;
 }
+.meeting-days .meeting-day.active {
+  background-color: #48AFAB;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  color: #ffffff;
+}
 .meeting-days .meeting-day:hover {
   background-color: #2f7973;
   color: #f3f3f3;
@@ -1836,12 +1842,6 @@ header {
   background-color: #1e524e;
   color: #f3f3f3;
   border-color: transparent;
-}
-.meeting-days .meeting-day.active {
-  background-color: #48AFAB;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  color: #ffffff;
 }
 .meeting-days .meeting-day span {
   display: none;
@@ -1891,6 +1891,7 @@ header {
 }
 .meeting-schedule .meeting-card.active {
   background: #48AFAB;
+  border-color: transparent;
 }
 .meeting-schedule .meeting-card.active .meeting-card__top {
   color: #1D2B5D;

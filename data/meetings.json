@@ -24,13 +24,13 @@
     {
         "day": {
             "full" : "Marți",
-            "first" : "M",
-            "last": "arți"
+            "first" : "Ma",
+            "last": "rți"
         },
         "meeting": [
             {
-                "for" : "Prezentarea noilor",
-                "team" : "VOLUNTARI",
+                "for" : "Întâlnire generală",
+                "team" : "Toți membrii",
                 "hour" : "18:00",
                 "url" : "https://meet.jit.si/PEVIITOR.RO"
             },
@@ -51,8 +51,8 @@
     {
         "day": {
             "full" : "Miercuri",
-            "first" : "M",
-            "last": "iercuri"
+            "first" : "Mi",
+            "last": "ercuri"
         },
         "meeting": [
             {
