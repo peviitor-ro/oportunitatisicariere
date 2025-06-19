@@ -1838,7 +1838,7 @@ header {
   color: #f3f3f3;
   border-color: transparent;
 }
-.meeting-days .meeting-day:focus {
+.meeting-days .meeting-day:active {
   background-color: #1e524e;
   color: #f3f3f3;
   border-color: transparent;
