@@ -1779,6 +1779,178 @@ header {
   margin-top: 3rem;
 }
 
+.highlight-text {
+  color: #48AFAB;
+}
+
+.deep-blue-text {
+  color: #1D2B5D;
+}
+
+.dark-text {
+  color: #333333;
+}
+
+.shade {
+  box-shadow: 2px 2px 6px -4px rgba(0, 0, 0, 0.25);
+}
+
+.join-us__sub-heading {
+  font-size: 24px;
+}
+
+.meeting-section {
+  position: relative;
+  width: clamp(280px, 80rem, 100%);
+  margin: 3rem 0 0;
+}
+
+.meeting-days {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0 20px;
+}
+.meeting-days .meeting-day {
+  width: clamp(50px, 20%, 200px);
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-left: 1px solid rgba(47, 121, 115, 0.5);
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 15px;
+  color: #000000;
+  padding: 26px 0;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+  letter-spacing: 2px;
+}
+.meeting-days .meeting-day.active {
+  background-color: #48AFAB;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  color: #ffffff;
+}
+.meeting-days .meeting-day:hover {
+  background-color: #2f7973;
+  color: #f3f3f3;
+  border-color: transparent;
+}
+.meeting-days .meeting-day:active {
+  background-color: #1e524e;
+  color: #f3f3f3;
+  border-color: transparent;
+}
+.meeting-days .meeting-day span {
+  display: none;
+}
+
+.meeting-schedule {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0;
+  gap: 20px;
+}
+.meeting-schedule .meeting-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  border-left: 1px solid rgba(47, 121, 115, 0.5);
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 15px;
+  cursor: pointer;
+  min-height: 136px;
+  transition: all 0.25s ease-out;
+}
+.meeting-schedule .meeting-card__top {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.15rem;
+  letter-spacing: 1px;
+}
+.meeting-schedule .meeting-card__middle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f7973;
+  letter-spacing: 1px;
+}
+.meeting-schedule .meeting-card__bottom {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0.6rem;
+  color: #000000;
+  letter-spacing: 1px;
+}
+.meeting-schedule .meeting-card.active {
+  background: #48AFAB;
+  border-color: transparent;
+}
+.meeting-schedule .meeting-card.active .meeting-card__top {
+  color: #1D2B5D;
+}
+.meeting-schedule .meeting-card.active .meeting-card__middle {
+  color: #ffffff;
+}
+.meeting-schedule .meeting-card.active .meeting-card__bottom {
+  color: #1D2B5D;
+}
+.meeting-schedule .meeting-card::after {
+  position: absolute;
+  content: attr(data-label);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 1px solid red;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 14px 0;
+  opacity: 0;
+}
+.meeting-schedule .meeting-card::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background: url("/assets/round-table.png") no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 80px;
+  opacity: 0;
+}
+.meeting-schedule .meeting-card:hover {
+  background-color: #2f7973;
+}
+.meeting-schedule .meeting-card:hover .meeting-card__top,
+.meeting-schedule .meeting-card:hover .meeting-card__middle,
+.meeting-schedule .meeting-card:hover .meeting-card__bottom {
+  visibility: hidden;
+}
+.meeting-schedule .meeting-card:hover::after, .meeting-schedule .meeting-card:hover::before {
+  opacity: 1;
+}
+.meeting-schedule .meeting-card:focus {
+  background-color: #1e524e;
+}
+.meeting-schedule .meeting-card:focus .meeting-card__top,
+.meeting-schedule .meeting-card:focus .meeting-card__middle,
+.meeting-schedule .meeting-card:focus .meeting-card__bottom {
+  visibility: hidden;
+}
+.meeting-schedule .meeting-card:focus::after, .meeting-schedule .meeting-card:focus::before {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 320px) {
   .join-us-section p {
     line-height: 2.5rem;
@@ -1794,6 +1966,9 @@ header {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
+  .join-us__sub-heading {
+    margin-top: 3rem;
+  }
   .join-us-section {
     gap: 0rem;
   }
@@ -1819,6 +1994,23 @@ header {
   .join-us-section .primary-btn, .join-us-section .job-btn {
     margin-top: 1.4rem;
   }
+  .meeting-days {
+    justify-content: center;
+    gap: 0 10px;
+  }
+  .meeting-days .meeting-day {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 4px;
+  }
+  .meeting-schedule {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .meeting-schedule .meeting-card {
+    max-width: 310px;
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   .join-us-section {
@@ -1827,6 +2019,20 @@ header {
   .join-us-section p {
     padding: 0 5rem 5rem 5rem;
     line-height: 2.5rem;
+  }
+  .meeting-days {
+    gap: 0 12px;
+  }
+  .meeting-days .meeting-day {
+    padding: 20px 0;
+  }
+  .meeting-schedule {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .meeting-schedule .meeting-card {
+    max-width: 420px;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1846,6 +2052,9 @@ header {
     padding: 0 0 2rem;
     line-height: 2.2rem;
     width: 860px;
+  }
+  .meeting-days .meeting-day span {
+    display: inline;
   }
 }
 /* FOOTER SECTION */
