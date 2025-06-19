@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build-css": "node-sass --include-path scss style/style.scss dist/style/style.css",
-    "build": "rm -r dist && mkdir dist && mkdir -p dist/data && cp index.html dist/index.html && cp details.html dist/details.html && cp 404.html dist/404.html && cp jobCards.js dist/jobCards.js && cp data/data.json dist/data/data.json && cp testimonials.js dist/testimonials.js && cp data/testimonials.json dist/data/testimonials.json && cp data/teamMembers.json dist/data/teamMembers.json && cp details.js dist/details.js && cp teams.js dist/teams.js && cp script.js dist/script.js && cp carousel.js dist/carousel.js && cp -r assets dist/assets && npm run build-css"
+    "build": "rm -r dist && mkdir dist && mkdir -p dist/data && cp index.html dist/index.html && cp details.html dist/details.html && cp 404.html dist/404.html && cp jobCards.js dist/jobCards.js && cp data/data.json && data/meetings.json && dist/data/data.json && cp testimonials.js dist/testimonials.js && cp data/testimonials.json dist/data/testimonials.json && cp data/teamMembers.json dist/data/teamMembers.json && cp details.js dist/details.js && cp teams.js dist/teams.js && cp script.js dist/script.js && cp carousel.js dist/carousel.js && cp -r assets dist/assets && npm run build-css"
   },  
    "dependencies": {
     "braces": "^3.0.3",
