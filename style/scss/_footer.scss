@@ -32,15 +32,16 @@
   // Footer logo section
   &__logo {
     grid-area: logo;
-    @include flex(column, center, start);
+    @include flex(column, start);
     gap: 0.6rem;
     border-bottom: 1px solid $gray;
     padding-bottom: 3.6rem;
     a {
       h2 {
-        font-size: 3.2rem;
+        font-size: 2rem;
 
         &:first-child {
+          font-size: 1.8rem;
           font-family: "Gelasio";
           color: $dark-teal;
         }
