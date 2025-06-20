@@ -1662,14 +1662,14 @@ header {
     grid-area: logo;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    justify-content: start;
     gap: 0.6rem;
     border-bottom: 1px solid #1e1e1e80;
     padding-bottom: 3.6rem; }
     .footer__logo a h2 {
-      font-size: 3.2rem; }
+      font-size: 2rem; }
       .footer__logo a h2:first-child {
+        font-size: 1.8rem;
         font-family: "Gelasio";
         color: #2c6980; }
       .footer__logo a h2:nth-child(2) {
