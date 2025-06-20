@@ -52,7 +52,6 @@ section:target {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 1.2rem;
   letter-spacing: 0.1rem;
@@ -426,8 +425,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.4rem;
-    -moz-column-gap: 3.2rem;
-         column-gap: 3.2rem;
+    column-gap: 3.2rem;
     list-style-type: none;
     margin-top: 6.4rem;
   }
@@ -486,7 +484,6 @@ header {
 }
 @media only screen and (min-width: 1283px) {
   .nav .nav__links .nav__links__list:first-of-type li {
-    min-width: -moz-fit-content;
     min-width: fit-content;
   }
   .hamburger-menu-icon {
@@ -509,8 +506,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
     list-style-type: none;
     margin-top: 6rem;
   }
@@ -527,8 +523,7 @@ header {
   .nav__links__list #socialLinks {
     margin-top: 6rem;
     row-gap: 1.6rem;
-    -moz-column-gap: 2.6rem;
-         column-gap: 2.6rem;
+    column-gap: 2.6rem;
   }
 }
 @media (min-width: 1024px) {
@@ -700,7 +695,6 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
-  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -892,8 +886,7 @@ header {
   display: block;
   width: 100%;
   height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide .how-contribute__job__text {
@@ -1004,10 +997,6 @@ header {
   outline: none;
   border: solid 0.1rem #2f7973;
   color: #2f7973;
-}
-.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
-  color: #2f7973;
-  opacity: 0.6;
 }
 .how-contribute .how-contribute-img__container .search-input::placeholder {
   color: #2f7973;
@@ -1328,8 +1317,7 @@ header {
 }
 .team__member .img-position {
   position: relative;
-  -o-object-position: 0% 0%;
-     object-position: 0% 0%;
+  object-position: 0% 0%;
 }
 .team__member-img {
   width: 16rem;
@@ -1371,27 +1359,20 @@ header {
   border-radius: 50%;
   background-color: #4b4b4b;
   /* Culoarea implicita a svg-ului */
-  -webkit-mask-size: 32px 32px;
-          mask-size: 32px 32px;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-size: 32px 32px;
+  mask-repeat: no-repeat;
+  mask-position: center;
   transition: all 0.2s ease-in-out;
 }
 .team__member__socials span:nth-child(1) a {
-  -webkit-mask-size: 28px 28px;
-          mask-size: 28px 28px;
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+  mask-size: 28px 28px;
+  mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
 }
 .team__member__socials span:nth-child(2) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
 }
 .team__member__socials span:nth-child(3) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
 }
 .team__member__socials span:nth-child(1):hover a {
   background-color: #0a66c2;
@@ -1504,8 +1485,7 @@ header {
 .stories-right img {
   width: 34.8rem;
   height: 51.7rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .stories-extra {
   position: absolute;
@@ -1548,8 +1528,7 @@ header {
   }
   .stories-right img {
     margin-bottom: -17rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     transform: scale(0.5);
     border-radius: 30rem;
   }
@@ -1728,18 +1707,12 @@ header {
   color: #f3f3f3;
   border-radius: 50%;
   background-color: #4b4b4b;
-  /* Culoarea implicita a svg-ului */
-  -webkit-mask-size: 32px 32px;
-          mask-size: 32px 32px;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-size: 32px 32px;
+  mask-repeat: no-repeat;
+  mask-position: center;
   transition: all 0.2s ease-in-out;
-  -webkit-mask-size: 42px 42px;
-          mask-size: 42px 42px;
-  -webkit-mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
-          mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
+  mask-size: 42px 42px;
+  mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
 }
 .join-us-section__meeting-list .meeting-item .day-container .meeting-icon:hover .meeting-link {
   background-color: #0a66c2;
@@ -2093,9 +2066,10 @@ header {
   padding-bottom: 3.6rem;
 }
 .footer__logo a h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 .footer__logo a h2:first-child {
+  font-size: 1.8rem;
   font-family: "Gelasio";
   color: #2c6980;
 }
@@ -2197,8 +2171,7 @@ header {
   }
   .footer__navigation ul {
     flex-direction: row;
-    -moz-column-gap: 1.8rem;
-         column-gap: 1.8rem;
+    column-gap: 1.8rem;
     max-width: 34rem;
     height: 11rem;
   }
@@ -2613,8 +2586,7 @@ header {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 .jd__container .jd__body .list #email #copy-email {
   position: relative;
@@ -2715,8 +2687,7 @@ header {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials {
   display: flex;
@@ -2743,27 +2714,20 @@ header {
   color: #f3f3f3;
   border-radius: 50%;
   background-color: #4b4b4b;
-  -webkit-mask-size: 32px 32px;
-          mask-size: 32px 32px;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-size: 32px 32px;
+  mask-repeat: no-repeat;
+  mask-position: center;
   transition: all 0.2s ease-in-out;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1) a {
-  -webkit-mask-size: 28px 28px;
-          mask-size: 28px 28px;
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+  mask-size: 28px 28px;
+  mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(2) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(3) a {
-  -webkit-mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
-          mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+  mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1):hover a {
   background-color: #0a66c2;
