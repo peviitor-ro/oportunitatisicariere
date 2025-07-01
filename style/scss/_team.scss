@@ -213,26 +213,9 @@
       transform: scale(0.6);
 
       p {
-        top: 2rem;
-        font-size: 2.2rem;
+        top: 1.8rem;
+        font-size: 2.8rem;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .team {
-    &__banner {
-      transform: scale(0.8);
-
-      p {
-        top: 2.3rem;
-        font-size: 1.8rem;
-      }
-    }
-
-    .banner-core {
-      transform: scale(0.8);
     }
   }
 }
