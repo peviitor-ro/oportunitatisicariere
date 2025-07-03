@@ -23,7 +23,7 @@
     "logo"
     "navigation"
     "social-media"
-    "info-link";
+    "info-links";
 
   ul {
     list-style: none;
@@ -37,6 +37,7 @@
     border-bottom: 1px solid $gray;
     padding-bottom: 3.6rem;
     a {
+      width: fit-content;
       h2 {
         font-size: 2rem;
 
@@ -84,23 +85,20 @@
     ul {
       @include flex(row, flex-start, center);
       flex-wrap: wrap;
-      gap: 1.8rem;
+      gap: 0.8rem;
+      row-gap: 2.4rem;
 
       li {
-        a {
-          width: 4.4rem;
-          height: 4.4rem;
-          @include flex(row, center, center);
-          border-radius: 50%;
-          transition: all 0.3s ease-in-out;
+        flex-basis: calc(100% / 4);
 
-          &:hover {
-            background-color: #ededed;
-            box-shadow: 2px 2px 6px #00000020, -2px -2px 12px #f3f3f3;
-          }
+        a {
+          width: 3rem;
+          height: 3rem;
+          @include flex(row, start, center);
+
           img {
-            width: 3.2rem;
-            height: 3.2rem;
+            width: 3rem;
+            height: 3rem;
           }
         }
       }
@@ -109,7 +107,7 @@
 
   // Footer info section
   &__info-links {
-    grid-area: info-link;
+    grid-area: info-links;
     @include flex(row, flex-start, center);
 
     ul {
@@ -135,13 +133,26 @@
   }
 }
 
+@media screen and (min-width: 375px) {
+  .footer {
+    &__social {
+      ul {
+        gap: 1.6rem;
+        li {
+          flex-basis: 0;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $tablet-size) {
   .footer {
     padding: 8.4rem 3rem 4.2rem 3rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "logo navigation"
-      "social-media info-link";
+      "social-media info-links";
 
     &__logo {
       border-bottom: none;
@@ -170,8 +181,26 @@
       }
     }
 
+    &__social {
+      ul {
+        li {
+          a {
+            width: 4.2rem;
+            height: 4.2rem;
+            @include flex(row, center, center);
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: #ededed;
+              box-shadow: 2px 2px 6px #00000020, -2px -2px 12px #f3f3f3;
+            }
+          }
+        }
+      }
+    }
+
     &__info-links {
-      grid-area: info-link;
       justify-content: flex-end;
 
       ul {
