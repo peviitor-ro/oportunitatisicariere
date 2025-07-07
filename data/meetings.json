@@ -1,96 +1,95 @@
-
 [
-    {
-        "day": {
-            "full" : "Luni",
-            "first" : "L",
-            "last": "uni"
-        },
-        "meeting": [
-            {
-                "for" : "Echipa de",
-                "team" : "CYBERSECURITY",
-                "hour" : "18:30",
-                "url" : "https://meet.jit.si/PEVIITOR.RO"
-            },
-            {
-                "for" : "Echipa de",
-                "team" : "TESTARE",
-                "hour" : "19:30",
-                "url" : "https://meet.jit.si/PEVIITOR.RO"
-            }
-        ]
+  {
+    "day": {
+      "full": "Luni",
+      "first": "L",
+      "last": "uni"
     },
-    {
-        "day": {
-            "full" : "Marți",
-            "first" : "Ma",
-            "last": "rți"
-        },
-        "meeting": [
-            {
-                "for" : "Întâlnire generală",
-                "team" : "Toți membrii",
-                "hour" : "18:00",
-                "url" : "https://meet.jit.si/PEVIITOR.RO"
-            },
-            {
-                "for" : "Echipa de",
-                "team" : "BACK-END",
-                "hour" : "18:30",
-                "url" : "https://meet.jit.si/PEVIITOR.RO"
-            },
-            {
-                "for" : "Echipa de",
-                "team" : "DEVOPS",
-                "hour" : "18:45",
-                "url" : "https://meet.jit.si/PEVIITOR.RO"
-            }
-        ]
+    "meeting": [
+      {
+        "for": "Echipa de",
+        "team": "CYBERSECURITY",
+        "hour": "18:30",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      },
+      {
+        "for": "Echipa de",
+        "team": "TESTARE",
+        "hour": "19:30",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      }
+    ]
+  },
+  {
+    "day": {
+      "full": "Marți",
+      "first": "Ma",
+      "last": "rți"
     },
-    {
-        "day": {
-            "full" : "Miercuri",
-            "first" : "Mi",
-            "last": "ercuri"
-        },
-        "meeting": [
-            {
-                "for" : "Echipa de",
-                "team" : "API TESTING",
-                "hour" : "19:00",
-                "url" : "https://meet.jit.si/PEVIITOR.RO"
-            }
-        ]
+    "meeting": [
+      {
+        "for": "Întâlnire generală",
+        "team": "Toți membrii",
+        "hour": "18:00",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      },
+      {
+        "for": "Echipa de",
+        "team": "BACK-END",
+        "hour": "18:30",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      },
+      {
+        "for": "Echipa de",
+        "team": "DEVOPS",
+        "hour": "18:45",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      }
+    ]
+  },
+  {
+    "day": {
+      "full": "Miercuri",
+      "first": "Mi",
+      "last": "ercuri"
     },
-    {
-        "day": {
-            "full" : "Joi",
-            "first" : "J",
-            "last": "oi"
-        },
-        "meeting": [
-            {
-                "for" : "Echipa de",
-                "team" : "Front-End",
-                "hour" : "18:30",
-                "url" : "https://meet.jit.si/PEVIITOR.RO"
-            }
-        ]
+    "meeting": [
+      {
+        "for": "Echipa de",
+        "team": "API TESTING",
+        "hour": "19:00",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      }
+    ]
+  },
+  {
+    "day": {
+      "full": "Joi",
+      "first": "J",
+      "last": "oi"
     },
-    {
-        "day": {
-            "full" : "Vineri",
-            "first" : "V",
-            "last": "ineri"
-        },
-        "meeting": [
-            {
-            "for" : "Echipa de",
-            "team" : "SCRAPING",
-            "hour" : "18:30",
-            "url" : "https://meet.jit.si/PEVIITOR.RO"
-            }
-        ]
-    }
+    "meeting": [
+      {
+        "for": "Echipa de",
+        "team": "FRONT-END",
+        "hour": "18:30",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      }
+    ]
+  },
+  {
+    "day": {
+      "full": "Vineri",
+      "first": "V",
+      "last": "ineri"
+    },
+    "meeting": [
+      {
+        "for": "Echipa de",
+        "team": "SCRAPING",
+        "hour": "18:30",
+        "url": "https://meet.jit.si/PEVIITOR.RO"
+      }
+    ]
+  }
 ]
