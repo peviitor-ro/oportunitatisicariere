@@ -149,7 +149,8 @@
   }
 
   .primary-btn {
-    margin-top: 3rem;
+    margin-top: 4rem;
+    width: clamp(280px, 38rem, 100%);
   }
 }
 
@@ -175,7 +176,7 @@
 
 .meeting-section {
   position: relative;
-  width: clamp(280px, 68rem, 100%);
+  width: clamp(280px, 60rem, 100%);
   margin: 3rem 0 0;
 }
 
@@ -237,7 +238,7 @@
     width: 100%;
     background-color: #fff;
     @include meeting-border;
-    min-height: 136px;
+    min-height: 120px;
   }
   .meeting-card {
     cursor: pointer;
@@ -253,18 +254,18 @@
 
     &__middle,
     &__bottom {
-      font-size: 2.2rem;
       font-weight: 700;
-
       letter-spacing: 1px;
     }
 
     &__middle {
+      font-size: 1.8rem;
       color: $green-mint;
     }
 
     &__bottom {
       margin-top: 0.6rem;
+      font-size: 2.2rem;
       color: $black;
     }
 
@@ -408,14 +409,10 @@
         margin: 2rem 0 0;
       }
     }
-
-    .primary-btn {
-      margin-top: 1.4rem;
-    }
   }
 
   .meeting-days {
-    justify-content: center;
+    justify-content: space-between;
     gap: 0 10px;
     .meeting-day {
       width: 50px;
@@ -469,6 +466,10 @@
       padding: 0 10rem 5rem 10rem;
       line-height: 2.5rem;
     }
+
+    .primary-btn {
+      max-width: 34rem;
+    }
   }
 }
 
@@ -480,6 +481,10 @@
       padding: 0 0 2rem;
       line-height: 2.2rem;
       width: 860px;
+    }
+
+    .primary-btn {
+      max-width: 34rem;
     }
   }
 

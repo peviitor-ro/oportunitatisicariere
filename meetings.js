@@ -16,12 +16,12 @@ async function meetingData() {
     const data = await response.json();
 
     if (d === 6 || d === 7) {
+      const weekendDay = d === 6 ? "Sâmbăta" : "Duminica";
       meetings.innerHTML = `<h3 class="weekend-card shade">
-      <span class="highlight-text">În weekend, nu avem ședințe!</span>
-    Nu de alta, dar cine vrea să fie văzut aici sâmbăta? 
-    <span>Oamenii ar începe să vorbească.</span>
-    <span class="deep-blue-text">De luni ne vedem!</span>
-    </h3>`;
+    <span class="highlight-text">Este weekend, nu avem ședințe!</span>
+    Nu de alta, dar cine vrea să fie văzut aici ${weekendDay}? 
+    <span class="deep-blue-text">Ne vedem de Luni!</span>
+  </h3>`;
     }
 
     for (let x = 0; data.length > x; x++) {
