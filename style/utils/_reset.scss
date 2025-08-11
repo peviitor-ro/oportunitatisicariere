@@ -27,8 +27,9 @@ a {
   text-decoration: none;
 }
 
-section:target {
-  padding-top: 10rem !important;
+section {
+  padding: 7.2rem 2.4rem;
+  gap: 1.6rem;
 }
 
 @keyframes shake {

@@ -23,8 +23,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1.6rem;
-  padding: 3.2rem 2.4rem;
   background-color: $greyish-white;
 
   & h2 {
@@ -33,7 +31,7 @@
     line-height: 3.4rem;
   }
 
-  >h2 {
+  > h2 {
     inline-size: clamp(30rem, 60rem, 70rem);
 
     @media screen and (min-width: 500px) and (max-width: 650px) {
@@ -155,58 +153,58 @@
   }
 }
 
-.highlight-text{
+.highlight-text {
   color: $minty-qua;
 }
 
-.deep-blue-text{
+.deep-blue-text {
   color: $deep-blue;
 }
 
-.dark-text{
+.dark-text {
   color: $dark;
 }
 
-.shade{
-  box-shadow: 2px 2px 6px -4px rgba( 0, 0, 0, .25);
+.shade {
+  box-shadow: 2px 2px 6px -4px rgba(0, 0, 0, 0.25);
 }
 
-.join-us__sub-heading{
+.join-us__sub-heading {
   font-size: 24px;
 }
 
-.meeting-section{
+.meeting-section {
   position: relative;
-  width: clamp(280px, 80rem, 100%);
+  width: clamp(280px, 68rem, 100%);
   margin: 3rem 0 0;
 }
 
-.meeting-days{
+.meeting-days {
   display: flex;
   justify-content: space-between;
   width: 100%;
   gap: 0 20px;
 
-  .meeting-day{
-    width: clamp( 50px, calc(100% / 5), 200px);
-    font-size: 24px;
+  .meeting-day {
+    width: clamp(50px, 12rem, 100%);
+    height: 6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     background-color: #ffffff;
     @include meeting-border;
     color: $black;
-    padding: 26px 0;
     cursor: pointer;
-    transition: .25s ease-out;
+    transition: 0.25s ease-out;
     letter-spacing: 2px;
 
-    &.active{
+    &.active {
       background-color: $minty-qua;
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
       color: #ffffff;
     }
 
-    &:hover{
+    &:hover {
       background-color: $green-mint;
       color: $white;
       border-color: transparent;
@@ -218,19 +216,20 @@
       border-color: transparent;
     }
 
-    span{
+    span {
       display: none;
     }
   }
 }
 
-.meeting-schedule{
+.meeting-schedule {
   display: flex;
   justify-content: space-between;
   margin: 3rem 0 0;
   gap: 20px;
 
-  .meeting-card{
+  .meeting-card,
+  .weekend-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -238,49 +237,53 @@
     width: 100%;
     background-color: #fff;
     @include meeting-border;
-    cursor: pointer;
     min-height: 136px;
-    transition: all .25s ease-out;
+  }
+  .meeting-card {
+    cursor: pointer;
+    transition: all 0.25s ease-out;
 
-    &__top{
-      font-size: 20px;
+    &__top {
+      font-size: 1.8rem;
       font-weight: 600;
       color: $black;
-      margin-bottom: .15rem;
+      margin-bottom: 0.15rem;
       letter-spacing: 1px;
     }
-    
-    &__middle{
-      font-size: 24px;
+
+    &__middle,
+    &__bottom {
+      font-size: 2.2rem;
       font-weight: 700;
+
+      letter-spacing: 1px;
+    }
+
+    &__middle {
       color: $green-mint;
-      letter-spacing: 1px;
     }
 
-    &__bottom{
-      font-size: 30px;
-      font-weight: 700;
-      margin-top: .6rem;
+    &__bottom {
+      margin-top: 0.6rem;
       color: $black;
-      letter-spacing: 1px;
     }
 
-    &.active{
+    &.active {
       background: $minty-qua;
       border-color: transparent;
-      
-      .meeting-card__top{
+
+      .meeting-card__top {
         color: $deep-blue;
       }
-      .meeting-card__middle{
+      .meeting-card__middle {
         color: #ffffff;
       }
-      .meeting-card__bottom{
+      .meeting-card__bottom {
         color: $deep-blue;
       }
     }
 
-    &::after{
+    &::after {
       position: absolute;
       content: attr(data-label);
       top: 0;
@@ -292,55 +295,60 @@
       border-radius: 1px solid red;
       font-size: 24px;
       font-weight: 700;
-      padding: 14px 0 ;
+      padding: 14px 0;
       opacity: 0;
     }
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       bottom: 0;
       left: 0;
       background: url("/assets/round-table.png") no-repeat;
-      background-position:  top center;
+      background-position: top center;
       width: 100%;
       height: 80px;
       opacity: 0;
     }
 
-    &:hover{
+    &:hover {
       background-color: $green-mint;
       .meeting-card__top,
       .meeting-card__middle,
-      .meeting-card__bottom{
+      .meeting-card__bottom {
         visibility: hidden;
       }
 
       &::after,
-      &::before{
+      &::before {
         opacity: 1;
       }
     }
 
-    &:focus{
+    &:focus {
       background-color: $dark-mint;
       .meeting-card__top,
       .meeting-card__middle,
-      .meeting-card__bottom{
+      .meeting-card__bottom {
         visibility: hidden;
       }
 
       &::after,
-      &::before{
+      &::before {
         opacity: 1;
       }
     }
+  }
 
+  .weekend-card {
+    padding: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 600;
   }
 }
 
 @media only screen and (max-width: $phone-size) {
-
   .join-us-section {
     & p {
       line-height: 2.5rem;
@@ -361,7 +369,7 @@
 }
 
 @media only screen and (min-width: $phone-size) and (max-width: 500px) {
-  .join-us__sub-heading{
+  .join-us__sub-heading {
     margin-top: 3rem;
   }
 
@@ -406,20 +414,20 @@
     }
   }
 
-  .meeting-days{
+  .meeting-days {
     justify-content: center;
     gap: 0 10px;
-    .meeting-day{
+    .meeting-day {
       width: 50px;
       height: 50px;
       padding: 0 0 0 4px;
     }
   }
 
-  .meeting-schedule{
+  .meeting-schedule {
     flex-direction: column;
     gap: 10px;
-    .meeting-card{
+    .meeting-card {
       max-width: 310px;
       margin: auto;
     }
@@ -436,17 +444,17 @@
     }
   }
 
-  .meeting-days{
+  .meeting-days {
     gap: 0 12px;
-    .meeting-day{
+    .meeting-day {
       padding: 20px 0;
     }
   }
 
-  .meeting-schedule{
+  .meeting-schedule {
     flex-direction: column;
     gap: 14px;
-    .meeting-card{
+    .meeting-card {
       max-width: 420px;
       margin: auto;
     }
@@ -465,7 +473,6 @@
 }
 
 @media only screen and (min-width:#{$laptop-size}) {
-
   .join-us-section {
     padding: 8.3rem 5rem;
 
@@ -476,11 +483,9 @@
     }
   }
 
-  .meeting-days{
-    
-    .meeting-day{
-
-      span{
+  .meeting-days {
+    .meeting-day {
+      span {
         display: inline;
       }
     }
