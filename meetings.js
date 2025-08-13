@@ -3,7 +3,8 @@ const meetings = document.querySelector(".meeting-schedule");
 const days = document.querySelector(".meeting-days");
 
 const date = new Date();
-const d = date.getDay();
+// const d = date.getDay();
+const d = 6;
 
 function getTime() {
   const now = new Date();
@@ -15,14 +16,10 @@ async function meetingData() {
     const response = await fetch("data/meetings.json");
     const data = await response.json();
 
-    if (d === 6 || d === 7) {
-      const weekendDay = d === 6 ? "Sâmbăta" : "Duminica";
-      meetings.innerHTML = `<h3 class="weekend-card shade">
-    <span class="highlight-text">Este weekend, nu avem ședințe!</span>
-    Nu de alta, dar cine vrea să fie văzut aici ${weekendDay}? 
+    meetings.innerHTML = `<div class="weekend-card shade">
+    <span class="highlight-text">Este weekend, nu avem ședințe!
     <span class="deep-blue-text">Ne vedem de Luni!</span>
-  </h3>`;
-    }
+  </div>`;
 
     for (let x = 0; data.length > x; x++) {
       if (d === x + 1) {

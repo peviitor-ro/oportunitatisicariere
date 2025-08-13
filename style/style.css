@@ -1898,6 +1898,9 @@ header {
   line-height: 2.8rem;
   font-weight: 600;
 }
+.meeting-schedule .weekend-card span {
+  display: block;
+}
 
 @media only screen and (max-width: 320px) {
   .join-us-section p {
