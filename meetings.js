@@ -15,10 +15,12 @@ async function meetingData() {
     const response = await fetch("data/meetings.json");
     const data = await response.json();
 
-    meetings.innerHTML = `<div class="weekend-card shade">
-    <span class="highlight-text">Este weekend, nu avem ședințe!
-    <span class="deep-blue-text">Ne vedem de Luni!</span>
-  </div>`;
+    if (d === 6 || d === 7) {
+      meetings.innerHTML = `<div class="weekend-card shade">
+      <span class="highlight-text">Este weekend, nu avem ședințe!
+      <span class="deep-blue-text">Ne vedem de Luni!</span>
+    </div>`;
+    }
 
     for (let x = 0; data.length > x; x++) {
       if (d === x + 1) {
