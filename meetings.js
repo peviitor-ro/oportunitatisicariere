@@ -3,8 +3,7 @@ const meetings = document.querySelector(".meeting-schedule");
 const days = document.querySelector(".meeting-days");
 
 const date = new Date();
-// const d = date.getDay();
-const d = 6;
+const d = date.getDay();
 
 function getTime() {
   const now = new Date();
