@@ -2122,11 +2122,11 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.8rem;
+  gap: 1.4rem;
 }
 .footer__info-links ul li {
   border-right: 1px solid #6b6b6b;
-  padding-right: 1.8rem;
+  padding-right: 1.4rem;
 }
 .footer__info-links ul li:last-child {
   border-right: none;
