@@ -113,11 +113,11 @@
     ul {
       @include flex(row, flex-start, center);
       flex-wrap: wrap;
-      gap: 1.8rem;
+      gap: 1.4rem;
 
       li {
         border-right: 1px solid $dark-gray;
-        padding-right: 1.8rem;
+        padding-right: 1.4rem;
 
         &:last-child {
           border-right: none;

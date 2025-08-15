@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.2rem 2.4rem;
   overflow: hidden;
 
   &__content {
@@ -163,12 +162,6 @@
         }
       }
     }
-  }
-}
-
-@media only screen and (min-width:#{$tablet-size}) {
-  .our-mission {
-    padding: 2.4rem 6rem;
   }
 }
 
