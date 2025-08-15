@@ -198,7 +198,7 @@
         "team": "Core",
         "position": "Automation Test Lead",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -261,7 +261,7 @@
         "team": "Core",
         "position": "Pentester",
         "teamLead": false,
-        "status": true
+        "status": false
       },
       {
         "team": "Cybersecurity",
@@ -1015,7 +1015,7 @@
         "team": "Core",
         "position": "Scrum Master",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
