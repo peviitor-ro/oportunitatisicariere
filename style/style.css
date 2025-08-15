@@ -25,8 +25,9 @@ a {
   color: inherit;
   text-decoration: none; }
 
-section:target {
-  padding-top: 10rem !important; }
+section {
+  padding: 7.2rem 2.4rem;
+  gap: 1.6rem; }
 
 @keyframes shake {
   10%,
@@ -551,7 +552,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.2rem 2.4rem;
   overflow: hidden; }
   .our-mission__content {
     display: flex;
@@ -648,10 +648,6 @@ header {
     .our-mission__content__details .description img {
       display: none; } }
 
-@media only screen and (min-width: 768px) {
-  .our-mission {
-    padding: 2.4rem 6rem; } }
-
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .our-mission {
     padding: 7rem 13.5rem; }
@@ -667,10 +663,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.6rem;
   background-color: #f7f7f7;
-  position: relative;
-  padding: 3.2rem 2.4rem; }
+  position: relative; }
   @media only screen and (min-width: 1024px) {
     .how-contribute {
       padding-bottom: 4rem; }
@@ -875,9 +869,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-  padding: 3.2rem 2.4rem; }
+  justify-content: center; }
   .why-contribute__description {
     display: flex;
     flex-direction: column;
@@ -909,28 +901,22 @@ header {
         inline-size: 8rem; }
 
 @media screen and (min-width: 1024px) {
-  .why-contribute {
-    padding-bottom: 12rem; }
-    .why-contribute__title {
-      padding: 7rem 0 3.5rem; }
-    .why-contribute__description {
-      padding: 0 15rem 4rem 15rem;
-      gap: 0.2rem; }
-    .why-contribute__reasons {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 3rem; }
-      .why-contribute__reasons__reason {
-        padding: 0rem; }
-        .why-contribute__reasons__reason img {
-          width: 7rem; }
-        .why-contribute__reasons__reason p {
-          font-size: 1.8rem;
-          padding-top: 1.4rem; } }
-
-@media screen and (min-width: 1280px) {
-  .why-contribute {
-    padding-bottom: 20.2rem; } }
+  .why-contribute__title {
+    padding: 7rem 0 3.5rem; }
+  .why-contribute__description {
+    padding: 0 15rem 4rem 15rem;
+    gap: 0.2rem; }
+  .why-contribute__reasons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem; }
+    .why-contribute__reasons__reason {
+      padding: 0rem; }
+      .why-contribute__reasons__reason img {
+        width: 7rem; }
+      .why-contribute__reasons__reason p {
+        font-size: 1.8rem;
+        padding-top: 1.4rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .why-contribute {
@@ -989,8 +975,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.6rem;
-  padding: 3.2rem 2.4rem;
   background-color: #f3f3f3; }
   .team p {
     font-size: 1.6rem; }
@@ -1150,11 +1134,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 1.6rem;
-  padding: 3.2rem 2.4rem; }
+  text-align: center; }
   .stories-text {
-    padding: 3.5rem;
+    padding: 1.2rem;
     font-size: 1.6rem;
     line-height: 130%;
     text-wrap: balance;
@@ -1313,8 +1295,6 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1.6rem;
-  padding: 3.2rem 2.4rem;
   background-color: #f7f7f7; }
   .join-us-section h2 {
     font-size: 2.4rem;
@@ -1405,7 +1385,8 @@ header {
           font-size: 2.2rem;
           line-height: 2.2rem; }
   .join-us-section .primary-btn, .join-us-section .job-btn {
-    margin-top: 3rem; }
+    margin-top: 4rem;
+    width: clamp(280px, 38rem, 100%); }
 
 .highlight-text {
   color: #48AFAB; }
@@ -1424,7 +1405,7 @@ header {
 
 .meeting-section {
   position: relative;
-  width: clamp(280px, 80rem, 100%);
+  width: clamp(280px, 60rem, 100%);
   margin: 3rem 0 0; }
 
 .meeting-days {
@@ -1433,8 +1414,9 @@ header {
   width: 100%;
   gap: 0 20px; }
   .meeting-days .meeting-day {
-    width: clamp(50px, calc(100% / 5), 200px);
-    font-size: 24px;
+    width: clamp(50px, 12rem, 100%);
+    height: 6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     background-color: #ffffff;
     border-left: 1px solid rgba(47, 121, 115, 0.5);
@@ -1443,9 +1425,8 @@ header {
     border-bottom: none;
     border-radius: 15px;
     color: #000000;
-    padding: 26px 0;
     cursor: pointer;
-    transition: .25s ease-out;
+    transition: 0.25s ease-out;
     letter-spacing: 2px; }
     .meeting-days .meeting-day.active {
       background-color: #48AFAB;
@@ -1468,7 +1449,8 @@ header {
   justify-content: space-between;
   margin: 3rem 0 0;
   gap: 20px; }
-  .meeting-schedule .meeting-card {
+  .meeting-schedule .meeting-card,
+  .meeting-schedule .weekend-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1480,26 +1462,26 @@ header {
     border-top: none;
     border-bottom: none;
     border-radius: 15px;
+    min-height: 120px; }
+  .meeting-schedule .meeting-card {
     cursor: pointer;
-    min-height: 136px;
-    transition: all .25s ease-out; }
+    transition: all 0.25s ease-out; }
     .meeting-schedule .meeting-card__top {
-      font-size: 20px;
+      font-size: 1.8rem;
       font-weight: 600;
       color: #000000;
-      margin-bottom: .15rem;
+      margin-bottom: 0.15rem;
+      letter-spacing: 1px; }
+    .meeting-schedule .meeting-card__middle, .meeting-schedule .meeting-card__bottom {
+      font-weight: 700;
       letter-spacing: 1px; }
     .meeting-schedule .meeting-card__middle {
-      font-size: 24px;
-      font-weight: 700;
-      color: #2f7973;
-      letter-spacing: 1px; }
+      font-size: 1.8rem;
+      color: #2f7973; }
     .meeting-schedule .meeting-card__bottom {
-      font-size: 30px;
-      font-weight: 700;
-      margin-top: .6rem;
-      color: #000000;
-      letter-spacing: 1px; }
+      margin-top: 0.6rem;
+      font-size: 2.2rem;
+      color: #000000; }
     .meeting-schedule .meeting-card.active {
       background: #48AFAB;
       border-color: transparent; }
@@ -1549,6 +1531,13 @@ header {
         visibility: hidden; }
       .meeting-schedule .meeting-card:focus::after, .meeting-schedule .meeting-card:focus::before {
         opacity: 1; }
+  .meeting-schedule .weekend-card {
+    padding: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 600; }
+    .meeting-schedule .weekend-card span {
+      display: block; }
 
 @media only screen and (max-width: 320px) {
   .join-us-section p {
@@ -1578,10 +1567,8 @@ header {
       margin: 1.6rem 0 0rem; }
       .join-us-section__title-container .title {
         margin: 2rem 0 0; }
-    .join-us-section .primary-btn, .join-us-section .job-btn {
-      margin-top: 1.4rem; }
   .meeting-days {
-    justify-content: center;
+    justify-content: space-between;
     gap: 0 10px; }
     .meeting-days .meeting-day {
       width: 50px;
@@ -1616,7 +1603,9 @@ header {
     padding: 2.4rem 5rem; }
     .join-us-section p {
       padding: 0 10rem 5rem 10rem;
-      line-height: 2.5rem; } }
+      line-height: 2.5rem; }
+    .join-us-section .primary-btn, .join-us-section .job-btn {
+      max-width: 34rem; } }
 
 @media only screen and (min-width: 1024px) {
   .join-us-section {
@@ -1625,6 +1614,8 @@ header {
       padding: 0 0 2rem;
       line-height: 2.2rem;
       width: 860px; }
+    .join-us-section .primary-btn, .join-us-section .job-btn {
+      max-width: 34rem; }
   .meeting-days .meeting-day span {
     display: inline; } }
 
@@ -1720,10 +1711,10 @@ header {
       justify-content: flex-start;
       align-items: center;
       flex-wrap: wrap;
-      gap: 1.8rem; }
+      gap: 1.4rem; }
       .footer__info-links ul li {
         border-right: 1px solid #6b6b6b;
-        padding-right: 1.8rem; }
+        padding-right: 1.4rem; }
         .footer__info-links ul li:last-child {
           border-right: none;
           padding-right: 0; }
