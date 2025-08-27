@@ -13,5 +13,8 @@
     "stylelint-prettier": "^5.0.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
+  },
+  "overrides": {
+    "brace-expansion": ">=2.0.2"
   }
 }
