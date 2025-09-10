@@ -1,0 +1,337 @@
+section {
+  padding: 7.2rem 2.4rem;
+  gap: 1.6rem;
+}
+
+.notification-widget {
+  position: fixed;
+  top: 10rem;
+  right: 1rem;
+  z-index: 99;
+  overflow: hidden;
+
+  width: clamp(280px, 31rem, 100%);
+  background: #ffffff50;
+  backdrop-filter: saturate(180%) blur(10px);
+  transition: all 0.3s ease;
+
+  #widget-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  &__body {
+    @include flex(column, center, flex-start);
+    gap: 1.6rem;
+    padding: 1rem;
+    transform-origin: top right;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  &__header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  &__content {
+    @include flex(column, center, center);
+    width: 100%;
+
+    li {
+      @include flex(row, space-between, center);
+      padding: 1.2rem 0;
+      width: 100%;
+      list-style: none;
+      border-bottom: 1px solid $light-white;
+
+      h2 {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      a {
+        padding: 0.6rem 1.2rem;
+        font-size: 1.4rem;
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.widget-opened {
+  border-radius: 1rem;
+  padding: 0.4rem;
+
+  #widget-toggle {
+    background-image: url("../../assets/widget-closed.svg");
+  }
+
+  .notification-widget__body {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.widget-closed {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  padding: 0;
+
+  #widget-toggle {
+    background-image: url("../../assets/widget-opened.svg");
+  }
+
+  .notification-widget__body {
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+// Ping animation for notification widget when there is a meeting in progress
+.ping {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+// Global styles for buttons
+.custom-btn {
+  padding: 1.2rem 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+// Primary
+.primary-btn {
+  @extend .custom-btn;
+  color: $white;
+  background-color: $green-mint;
+  border: none;
+
+  &:hover {
+    background-color: $dark-mint;
+  }
+}
+
+// Secondary
+.secondary-btn {
+  @extend .custom-btn;
+  color: $green-mint;
+  background: transparent;
+  border: 2px solid $green-mint;
+
+  &:hover {
+    color: $white;
+    background-color: $dark-mint;
+    border-color: $dark-mint;
+  }
+}
+
+// Job button
+.job-btn {
+  font-size: 1.4rem;
+  padding: 1rem 1.6rem;
+  @extend .primary-btn;
+}
+
+// Team navigation
+.team-btn {
+  font-size: 1.8rem;
+  padding: 0.6rem 0.8rem;
+  margin: 0.8rem 0.3rem;
+  @extend .secondary-btn;
+}
+
+.disabled-btn {
+  @extend .custom-btn;
+  color: $white;
+  background-color: $dark-gray;
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+// Button icon
+.btn-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 0.8rem;
+  background: url("../assets/rocket.svg") no-repeat center/contain;
+  color: $white;
+}
+
+// Underlined title global style
+.underlined-title {
+  align-self: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    text-align: center;
+    color: $black;
+  }
+
+  .underline {
+    width: 100%;
+    display: block;
+  }
+}
+
+// Scroll-to-top button
+.top-redirect-btn {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  z-index: 99;
+  opacity: 0;
+  bottom: 0rem;
+  right: 2rem;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.3s ease;
+  }
+
+  &:hover img {
+    filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg)
+      brightness(85%) contrast(77%);
+  }
+}
+
+// Keyframes
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+// Media queries
+@media only screen and (min-width: $tablet-size) {
+  .underlined-title {
+    .title {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .notification-widget {
+    right: calc((100vw - 1440px) / 2 + 1rem);
+  }
+}
