@@ -17,25 +17,28 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      font-size: 5.2rem;
-      line-height: 140%;
+      font-size: 4.8rem;
+      line-height: 180%;
 
       & img {
         width: 270px;
         height: 270px;
       }
+      &__title {
+        @include flex(column, space-between, flex-start);
+        & h1 {
+          height: auto;
+          color: $dark-blue;
+          font-weight: 700;
+        }
 
-      & h1 {
-        color: $dark-blue;
-        font-weight: 700;
-      }
-
-      & h1:first-child {
-        font-family: $gelasio;
-        color: $dark-teal;
-        font-weight: 400;
-        font-size: 5rem;
-        line-height: 130%;
+        & h1:first-child {
+          font-family: $gelasio;
+          color: $dark-teal;
+          font-weight: 400;
+          font-size: 5rem;
+          line-height: 130%;
+        }
       }
     }
   }
@@ -60,12 +63,12 @@
     background-repeat: no-repeat;
     cursor: pointer;
     animation: bounce 2s infinite;
-    filter: brightness(0) invert(0.7); // Lighter gray color for SVG
-    transition: filter 0.3s ease; // Smooth transition for filter
+    filter: brightness(0) invert(0.7);
+    transition: filter 0.3s ease;
 
     &:hover {
       animation-play-state: paused;
-      filter: brightness(0) invert(0); // Change to black on hover
+      filter: brightness(0) invert(0);
     }
   }
 }
@@ -91,9 +94,10 @@
           width: 180px;
           height: 180px;
         }
-
-        & h1:first-child {
-          font-size: 3.6rem;
+        &__title {
+          & h1:first-child {
+            font-size: 3.6rem;
+          }
         }
       }
     }
@@ -153,8 +157,10 @@
             width: 90px;
             height: 90px;
           }
-          & h1:first-child {
-            font-size: 1.8rem;
+          &__title {
+            & h1:first-child {
+              font-size: 1.8rem;
+            }
           }
         }
       }
