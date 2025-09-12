@@ -198,7 +198,7 @@ function createWidget(day, meetings) {
 
     const now = getTime();
     if (now >= firstStart && now <= lastEnd) {
-      widget.style.display = "block";
+      widget.style.display = "flex";
     } else {
       widget.style.display = "none";
     }

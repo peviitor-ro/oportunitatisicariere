@@ -9,7 +9,8 @@ section {
   right: 1rem;
   z-index: 99;
   overflow: hidden;
-
+  display: none;
+  border-color: transparent;
   width: clamp(280px, 31rem, 100%);
   background: #ffffff50;
   backdrop-filter: saturate(180%) blur(10px);
@@ -17,8 +18,8 @@ section {
 
   #widget-toggle {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.8rem;
+    right: 1rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -32,6 +33,7 @@ section {
 
   &__body {
     @include flex(column, center, flex-start);
+    width: 100%;
     gap: 1.6rem;
     padding: 1rem;
     transform-origin: top right;
@@ -61,7 +63,7 @@ section {
       }
 
       a {
-        padding: 0.6rem 1.2rem;
+        padding: 1rem 1.2rem;
         font-size: 1.4rem;
       }
 
@@ -75,6 +77,9 @@ section {
 .widget-opened {
   border-radius: 1rem;
   padding: 0.4rem;
+  border: 1px solid $greyish-white;
+  box-shadow: 0 1px 6px -4px rgba(0, 0, 0, 0.2),
+    0 1px 8px -4px rgba(0, 0, 0, 0.14), 0 1px 12px -4px rgba(0, 0, 0, 0.12);
 
   #widget-toggle {
     background-image: url("../../assets/widget-closed.svg");
@@ -87,8 +92,8 @@ section {
 }
 
 .widget-closed {
-  width: 4.2rem;
-  height: 4.2rem;
+  width: 6.2rem;
+  height: 6.2rem;
   border-radius: 50%;
   padding: 0;
 
