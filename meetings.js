@@ -140,7 +140,7 @@ function createWidget(day, meetings) {
       (meeting, index) => `
         <li data-index="${index}">
           <h2>${meeting.hour} - ${meeting.team}</h2>
-          <a class="primary-btn">Participa</a>
+          <a class="primary-btn">Participă</a>
         </li>
       `
     )
@@ -181,7 +181,13 @@ function createWidget(day, meetings) {
       }
 
       const end = Math.min(start + 30, nextStart);
-      const active = getTime() >= start && getTime() < end;
+
+      let active;
+      if (index === 0) {
+        active = getTime() >= start - 5 && getTime() < end;
+      } else {
+        active = getTime() >= start && getTime() < end;
+      }
 
       const link = links[index];
       if (active) {

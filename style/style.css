@@ -102,6 +102,7 @@ section {
 }
 .notification-widget__content li:last-child {
   border: none;
+  padding-bottom: 0;
 }
 
 .widget-opened {
