@@ -88,7 +88,8 @@ section {
         padding: 1rem 1.2rem;
         font-size: 1.4rem; }
       .notification-widget__content li:last-child {
-        border: none; }
+        border: none;
+        padding-bottom: 0; }
 
 .widget-opened {
   border-radius: 1rem;
