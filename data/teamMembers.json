@@ -1210,5 +1210,22 @@
       "github": "https://github.com/MariaNascu",
       "discord": "https://discord.com/users/697469695057461351"
     }
+  },
+  {
+    "name": "Boris-Andrei Pavel",
+    "avatar": "./assets/contributors/boris-andrei-pavel.webp",
+    "roles": [
+      {
+        "team": "Back-end",
+        "position": "Back-end Developer",
+        "teamLead": false,
+        "status": true
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/boris-pavel/",
+      "github": "https://github.com/boris-pavel",
+      "discord": "https://discord.com/users/1240813832012697762"
+    }
   }
 ]
