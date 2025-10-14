@@ -1,48 +1,55 @@
+let romaniaTime = null;
+let lastSync = null;
+
+async function syncRomaniaTime() {
+  try {
+    const response = await fetch(
+      "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Bucharest"
+    );
+    const data = await response.json();
+
+    romaniaTime = new Date(data.dateTime);
+    lastSync = Date.now();
+    console.log("Sincronizat ora României:", romaniaTime.toString());
+  } catch (error) {
+    console.error("Eroare la obținerea orei României:", error);
+  }
+}
+
+function getRomaniaDate() {
+  if (!romaniaTime || !lastSync) return new Date();
+  const diff = Date.now() - lastSync;
+  return new Date(romaniaTime.getTime() + diff);
+}
+
+function getRomaniaDay() {
+  const date = getRomaniaDate();
+  let day = date.getDay();
+  return day === 0 ? 7 : day;
+}
+
+function getTime() {
+  const now = getRomaniaDate();
+  return now.getHours() * 60 + now.getMinutes();
+}
+
+await syncRomaniaTime();
+setInterval(syncRomaniaTime, 5 * 60 * 1000);
+
 const meetings = document.querySelector(".meeting-schedule");
 const toggleWidget = document.querySelector("#widget-toggle");
 const widget = document.querySelector(".notification-widget");
 const widgetBody = document.querySelector(".notification-widget__body");
 const days = document.querySelector(".meeting-days");
 
-let romaniaTimeOffset = 0;
-
-async function getRomaniaTimeOffset() {
-  try {
-    const response = await fetch(
-      "https://worldtimeapi.org/api/timezone/Europe/Bucharest"
-    );
-    const data = await response.json();
-
-    const romaniaTime = new Date(data.datetime);
-    const localTime = new Date();
-    romaniaTimeOffset = romaniaTime.getTime() - localTime.getTime();
-
-    console.log("Offset România (ms):", romaniaTimeOffset);
-  } catch (error) {
-    console.error("Nu s-a putut obține ora României:", error);
-    romaniaTimeOffset = 0;
-  }
-}
-
-function getTime() {
-  const now = new Date(Date.now() + romaniaTimeOffset);
-  return now.getHours() * 60 + now.getMinutes();
-}
-
-function getRomaniaDay() {
-  const date = new Date(Date.now() + romaniaTimeOffset);
-  let day = date.getDay();
-  return day === 0 ? 7 : day;
-}
-
 async function meetingData() {
-  await getRomaniaTimeOffset();
   const d = getRomaniaDay();
 
   try {
     const response = await fetch("data/meetings.json");
     const data = await response.json();
 
+    // Weekend
     if (d === 6 || d === 7) {
       meetings.innerHTML = `
         <div class="weekend-card shade">
@@ -96,7 +103,7 @@ async function meetingData() {
       }
     }
   } catch (error) {
-    console.log("Error: ", error);
+    console.log("Error:", error);
   }
 }
 
@@ -143,7 +150,6 @@ function createCard(label, url, tag, team, time, button) {
   meetings.appendChild(card);
 }
 
-// Notification widget
 toggleWidget.addEventListener("click", () => {
   widget.classList.toggle("widget-opened");
   widget.classList.toggle("widget-closed");
@@ -156,8 +162,7 @@ function createWidget(day, meetings) {
         <li data-index="${index}">
           <h2>${meeting.hour} - ${meeting.team}</h2>
           <a class="primary-btn">Participă</a>
-        </li>
-      `
+        </li>`
     )
     .join("");
 
