@@ -1,41 +1,73 @@
-const meetings = document.querySelector(".meeting-schedule");
+let romaniaTime = null;
+let lastSync = null;
 
-const toggleWidget = document.querySelector("#widget-toggle");
-const widget = document.querySelector(".notification-widget");
-const widgetBody = document.querySelector(".notification-widget__body");
+async function syncRomaniaTime() {
+  try {
+    const response = await fetch(
+      "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Bucharest"
+    );
+    const data = await response.json();
 
-const days = document.querySelector(".meeting-days");
+    romaniaTime = new Date(data.dateTime);
+    lastSync = Date.now();
+    console.log("Sincronizat ora României:", romaniaTime.toString());
+  } catch (error) {
+    console.error("Eroare la obținerea orei României:", error);
+  }
+}
 
-const date = new Date();
-const d = date.getDay();
+function getRomaniaDate() {
+  if (!romaniaTime || !lastSync) return new Date();
+  const diff = Date.now() - lastSync;
+  return new Date(romaniaTime.getTime() + diff);
+}
+
+function getRomaniaDay() {
+  const date = getRomaniaDate();
+  let day = date.getDay();
+  return day === 0 ? 7 : day;
+}
 
 function getTime() {
-  const now = new Date();
+  const now = getRomaniaDate();
   return now.getHours() * 60 + now.getMinutes();
 }
 
+await syncRomaniaTime();
+setInterval(syncRomaniaTime, 5 * 60 * 1000);
+
+const meetings = document.querySelector(".meeting-schedule");
+const toggleWidget = document.querySelector("#widget-toggle");
+const widget = document.querySelector(".notification-widget");
+const widgetBody = document.querySelector(".notification-widget__body");
+const days = document.querySelector(".meeting-days");
+
 async function meetingData() {
+  const d = getRomaniaDay();
+
   try {
     const response = await fetch("data/meetings.json");
     const data = await response.json();
 
+    // Weekend
     if (d === 6 || d === 7) {
-      meetings.innerHTML = `<div class="weekend-card shade">
-      <span class="highlight-text">Este weekend, nu avem ședințe!
-      <span class="deep-blue-text">Ne vedem de Luni!</span>
-    </div>`;
-
+      meetings.innerHTML = `
+        <div class="weekend-card shade">
+          <span class="highlight-text">Este weekend, nu avem ședințe!</span>
+          <span class="deep-blue-text">Ne vedem de Luni!</span>
+        </div>`;
       widget.style.display = "none";
       widgetBody.innerHTML = "";
+      return;
     }
 
-    for (let x = 0; data.length > x; x++) {
+    for (let x = 0; x < data.length; x++) {
       if (d === x + 1) {
         createWidget(data[x].day.full, data[x].meeting);
         createButton(data[x].day.first, data[x].day.last, "active");
 
         const meet = data[x].meeting;
-        for (let y = 0; meet.length > y; y++) {
+        for (let y = 0; y < meet.length; y++) {
           createCard(
             "PARTICIPĂ",
             meet[y].url,
@@ -50,14 +82,14 @@ async function meetingData() {
       }
 
       const btn = document.querySelectorAll(".meeting-day");
-      for (let z = 0; btn.length > z; z++) {
+      for (let z = 0; z < btn.length; z++) {
         btn[z].addEventListener("click", () => {
           btn.forEach((b) => b.classList.remove("active"));
           btn[z].classList.add("active");
 
           meetings.innerHTML = "";
           const meet = data[z].meeting;
-          for (let y = 0; meet.length > y; y++) {
+          for (let y = 0; y < meet.length; y++) {
             createCard(
               "PARTICIPĂ",
               meet[y].url,
@@ -71,7 +103,7 @@ async function meetingData() {
       }
     }
   } catch (error) {
-    console.log("Error: ", error);
+    console.log("Error:", error);
   }
 }
 
@@ -81,54 +113,43 @@ function createButton(short, long, active = "") {
   const createBTN = document.createElement("button");
   createBTN.className = "meeting-day shade " + active;
   createBTN.innerHTML = `${short}<span>${long}</span>`;
-
   days.appendChild(createBTN);
 }
 
 function createCard(label, url, tag, team, time, button) {
+  const d = getRomaniaDay();
   const [hour, minutes] = time.split(":").map(Number);
   const start = hour * 60 + minutes;
-  const end = hour * 60 + minutes + 30;
+  const end = start + 30;
 
   const card = document.createElement("a");
   card.dataset.label = label;
   card.href = url;
   card.rel = "noopener noreferrer";
   card.target = "_blank";
-  if (d === button) {
-    card.className =
-      getTime() >= start && end >= getTime()
-        ? "meeting-card shade active"
-        : "meeting-card shade";
-  } else {
-    card.className = "meeting-card shade";
-  }
-  card.innerHTML = `
-    <div class="meeting-card__top"> 
-        ${tag} 
-    </div>
-    <div class="meeting-card__middle"> 
-        ${team} 
-    </div>
-    <div class="meeting-card__bottom"> 
-        ${time} 
-    </div>`;
 
-  setInterval(() => {
+  const updateCard = () => {
     if (d === button) {
       card.className =
-        getTime() >= start && end >= getTime()
+        getTime() >= start && getTime() <= end
           ? "meeting-card shade active"
           : "meeting-card shade";
     } else {
       card.className = "meeting-card shade";
     }
-  }, 10 * 1000);
+  };
+
+  updateCard();
+  setInterval(updateCard, 10 * 1000);
+
+  card.innerHTML = `
+    <div class="meeting-card__top">${tag}</div>
+    <div class="meeting-card__middle">${team}</div>
+    <div class="meeting-card__bottom">${time}</div>`;
 
   meetings.appendChild(card);
 }
 
-// Notification widget section
 toggleWidget.addEventListener("click", () => {
   widget.classList.toggle("widget-opened");
   widget.classList.toggle("widget-closed");
@@ -141,8 +162,7 @@ function createWidget(day, meetings) {
         <li data-index="${index}">
           <h2>${meeting.hour} - ${meeting.team}</h2>
           <a class="primary-btn">Participă</a>
-        </li>
-      `
+        </li>`
     )
     .join("");
 
@@ -150,10 +170,7 @@ function createWidget(day, meetings) {
     <div class="notification-widget__header">
       <h1>${day}:</h1>
     </div>
-
-    <ul class="notification-widget__content">
-      ${meetingHtml}
-    </ul>
+    <ul class="notification-widget__content">${meetingHtml}</ul>
   `;
 
   const times = meetings.map((m) => {
@@ -181,12 +198,13 @@ function createWidget(day, meetings) {
       }
 
       const end = Math.min(start + 30, nextStart);
+      const now = getTime();
 
       let active;
       if (index === 0) {
-        active = getTime() >= start - 5 && getTime() < end;
+        active = now >= start - 5 && now < end;
       } else {
-        active = getTime() >= start && getTime() < end;
+        active = now >= start && now < end;
       }
 
       const link = links[index];
@@ -217,6 +235,5 @@ function createWidget(day, meetings) {
   }
 
   updateWidgetLinks();
-
   setInterval(updateWidgetLinks, 1000);
 }
