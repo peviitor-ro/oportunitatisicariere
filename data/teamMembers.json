@@ -1227,5 +1227,22 @@
       "github": "https://github.com/boris-pavel",
       "discord": "https://discord.com/users/1240813832012697762"
     }
+  },
+  {
+    "name": "Gidoiu Alexandru",
+    "avatar": "./assets/contributors/gidoiu-alexandru.webp",
+    "roles": [
+      {
+        "team": "DevOps",
+        "position": "DevOps Engineer",
+        "teamLead": false,
+        "status": true
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/gidoiu-alexandru/",
+      "github": "https://github.com/gidoiualexandru",
+      "discord": "https://discord.com/users/449879537908449290"
+    }
   }
 ]
