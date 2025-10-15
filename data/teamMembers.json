@@ -243,8 +243,8 @@
       {
         "team": "DevOps",
         "position": "DevOps Lead",
-        "teamLead": false,
-        "status": false
+        "teamLead": true,
+        "status": true
       }
     ],
     "socials": {
@@ -1243,6 +1243,23 @@
       "linkedin": "https://www.linkedin.com/in/gidoiu-alexandru/",
       "github": "https://github.com/gidoiualexandru",
       "discord": "https://discord.com/users/449879537908449290"
+    }
+  },
+  {
+    "name": "Robert Pop",
+    "avatar": "./assets/contributors/robert-pop.webp",
+    "roles": [
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false,
+        "status": true
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/poprobert1999/",
+      "github": "https://github.com/poprobert0412",
+      "discord": "https://discordapp.com/users/183635162246938625 "
     }
   }
 ]
