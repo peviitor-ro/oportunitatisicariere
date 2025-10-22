@@ -895,7 +895,7 @@
         "team": "Front-end",
         "position": "Front-end Developer",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -1260,6 +1260,23 @@
       "linkedin": "https://www.linkedin.com/in/poprobert1999/",
       "github": "https://github.com/poprobert0412",
       "discord": "https://discordapp.com/users/183635162246938625 "
+    }
+  },
+  {
+    "name": "Lidia Rebeca Barle",
+    "avatar": "./assets/contributors/lidia-rebeca.webp",
+    "roles": [
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false,
+        "status": true
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/lidia-rebeca-barle-97704b23a",
+      "github": "https://github.com/LidiaBarle",
+      "discord": "https://discordapp.com/users/1397904300293885992 "
     }
   }
 ]
