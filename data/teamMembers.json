@@ -1278,5 +1278,22 @@
       "github": "https://github.com/LidiaBarle",
       "discord": "https://discordapp.com/users/1397904300293885992 "
     }
+  },
+  {
+    "name": "Andrei Păun",
+    "avatar": "./assets/contributors/andrei-paun.webp",
+    "roles": [
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false,
+        "status": true
+      }
+    ],
+    "socials": {
+      "linkedin": "http://www.linkedin.com/in/andrei-p%C4%83un-29ab6a252",
+      "github": "https://github.com/a-paun",
+      "discord": "https://discordapp.com/users/1424142710671020192 "
+    }
   }
 ]
