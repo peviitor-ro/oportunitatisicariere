@@ -129,7 +129,7 @@
         "team": "Cybersecurity",
         "position": "CTO",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -266,8 +266,8 @@
       {
         "team": "Cybersecurity",
         "position": "Pentester",
-        "teamLead": true,
-        "status": true
+        "teamLead": false,
+        "status": false
       }
     ],
     "socials": {
@@ -341,7 +341,7 @@
       {
         "team": "Cybersecurity",
         "position": "Data Protection Officer",
-        "teamLead": false,
+        "teamLead": true,
         "status": true
       }
     ],
@@ -827,7 +827,7 @@
         "team": "Cybersecurity",
         "position": "Junior Security Analyst",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -1117,7 +1117,7 @@
         "team": "Cybersecurity",
         "position": "Junior Security Analyst",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
