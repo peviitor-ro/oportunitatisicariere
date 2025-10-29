@@ -27,10 +27,18 @@ async function meetingData() {
 
       widget.style.display = "none";
       widgetBody.innerHTML = "";
+    } else if (d === 3) {
+      meetings.innerHTML = `<div class="weekend-card shade">
+      <span class="highlight-text">Miercuri nu avem ședințe!
+      <span class="deep-blue-text">Ne vedem de mâine!</span>
+    </div>`;
+
+      widget.style.display = "none";
+      widgetBody.innerHTML = "";
     }
 
     for (let x = 0; data.length > x; x++) {
-      if (d === x + 1) {
+      if (d === x + 1 && d !== 3) {
         createWidget(data[x].day.full, data[x].meeting);
         createButton(data[x].day.first, data[x].day.last, "active");
 
