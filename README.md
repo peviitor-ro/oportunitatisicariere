@@ -1,4 +1,4 @@
-[![Deploy Website](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml/badge.svg)](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml)
+Test[![Deploy Website](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml/badge.svg)](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/deploy.yml)
 [![pages-build-deployment](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/peviitor-ro/oportunitatisicariere/actions/workflows/pages/pages-build-deployment)
 # ASOCIATIA OPORTUNITATI SI CARIERE
 
