@@ -19,51 +19,59 @@ async function meetingData() {
     const response = await fetch("data/meetings.json");
     const data = await response.json();
 
-    if (d === 6 || d === 7) {
+    if (d === 6 || d === 0) {
       meetings.innerHTML = `<div class="weekend-card shade">
-      <span class="highlight-text">Este weekend, nu avem ședințe!
-      <span class="deep-blue-text">Ne vedem de Luni!</span>
-    </div>`;
-
-      widget.style.display = "none";
-      widgetBody.innerHTML = "";
-    } else if (d === 3) {
-      meetings.innerHTML = `<div class="weekend-card shade">
-      <span class="highlight-text">Miercuri nu avem ședințe!
-      <span class="deep-blue-text">Ne vedem de mâine!</span>
-    </div>`;
+        <span class="highlight-text">Este weekend, nu avem ședințe!
+        <span class="deep-blue-text">Ne vedem de Luni!</span>
+      </div>`;
 
       widget.style.display = "none";
       widgetBody.innerHTML = "";
     }
 
     for (let x = 0; data.length > x; x++) {
-      if (d === x + 1 && d !== 3) {
+      if (d === x + 1 && d !== 6 && d !== 0) {
         createWidget(data[x].day.full, data[x].meeting);
         createButton(data[x].day.first, data[x].day.last, "active");
-
-        const meet = data[x].meeting;
-        for (let y = 0; meet.length > y; y++) {
-          createCard(
-            "PARTICIPĂ",
-            meet[y].url,
-            meet[y].for,
-            meet[y].team,
-            meet[y].hour,
-            x + 1
-          );
+        if (d === 3) {
+          meetings.innerHTML = `<div class="weekend-card shade">
+                      <span class="highlight-text">Miercuri nu avem ședințe!
+                      <span class="deep-blue-text">Ne vedem de mâine!</span>
+                    </div>`;
+          widget.style.display = "none";
+          widgetBody.innerHTML = "";
+        } else {
+          const meet = data[x].meeting;
+          for (let y = 0; meet.length > y; y++) {
+            createCard(
+              "PARTICIPĂ",
+              meet[y].url,
+              meet[y].for,
+              meet[y].team,
+              meet[y].hour,
+              x + 1
+            );
+          }
         }
       } else {
         createButton(data[x].day.first, data[x].day.last);
       }
+    }
 
-      const btn = document.querySelectorAll(".meeting-day");
-      for (let z = 0; btn.length > z; z++) {
-        btn[z].addEventListener("click", () => {
-          btn.forEach((b) => b.classList.remove("active"));
-          btn[z].classList.add("active");
+    const btn = document.querySelectorAll(".meeting-day");
+    for (let z = 0; btn.length > z; z++) {
+      btn[z].addEventListener("click", () => {
+        btn.forEach((b) => b.classList.remove("active"));
+        btn[z].classList.add("active");
 
-          meetings.innerHTML = "";
+        meetings.innerHTML = "";
+
+        if (z === 2) {
+          meetings.innerHTML = `<div class="weekend-card shade">
+                      <span class="highlight-text">Miercuri nu avem ședințe!
+                      <span class="deep-blue-text">Ne vedem de mâine!</span>
+                    </div>`;
+        } else {
           const meet = data[z].meeting;
           for (let y = 0; meet.length > y; y++) {
             createCard(
@@ -75,8 +83,8 @@ async function meetingData() {
               z + 1
             );
           }
-        });
-      }
+        }
+      });
     }
   } catch (error) {
     console.log("Error: ", error);
