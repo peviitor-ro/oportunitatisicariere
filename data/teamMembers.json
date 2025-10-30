@@ -1295,5 +1295,22 @@
       "github": "https://github.com/a-paun",
       "discord": "https://discordapp.com/users/1424142710671020192 "
     }
+  },
+  {
+    "name": "Adela Paclisan",
+    "avatar": "./assets/contributors/adela-paclisan.webp",
+    "roles": [
+      {
+        "team": "QA",
+        "position": "Manual Tester",
+        "teamLead": false,
+        "status": true
+      }
+    ],
+    "socials": {
+      "linkedin": "http://www.linkedin.com/in/adela-paclisan-9137782a3",
+      "github": "https://github.com/Adelapac",
+      "discord": "https://discordapp.com/users/1215008579128660080 "
+    }
   }
 ]
