@@ -17,6 +17,33 @@ We would like to extend our heartfelt thanks to the following individuals for th
 
 Feel free to add your name to this list by contributing to the project!
 
+# Contributing Guidelines
+
+Thank you for contributing to **Asociatia Oportunitati si Cariere** projects!
+
+## 1. Branch Policy
+- Create a new branch for each change: `feature/<name>` or `fix/<name>`.
+- Open a **Pull Request** before merging.
+- Self-review and merge only after testing if no reviewer is available.
+- Avoid force-pushing to `main`.
+- Keep commits clean and descriptive.
+
+## 2. Code of Conduct
+Be respectful, helpful, and concise in communication.
+
+## 3. Security & Privacy
+- **Never commit secrets or personal data.**
+- Don’t post emails or phone numbers publicly.
+- Report accidental leaks to the DPO (aocpeviitor@gmail.com).
+
+## 4. Testing & Validation
+Ensure your changes don’t break existing functionality.
+Run lint/tests if available.
+
+## 5. License
+All contributions are subject to the repository’s open-source license.
+
+
 
 
 
