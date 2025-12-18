@@ -1,6 +1,5 @@
 const redirectBtn = document.getElementById("redirect-btn");
 
-// Object to store routes
 const routes = {
   "": "home",
   "our-mission": "ourMission",
@@ -12,31 +11,36 @@ const routes = {
   stories: "stories",
 };
 
-// Load content based on the current hash
 function loadContent() {
   const path = window.location.hash.substring(1);
-  const page = routes[path];
 
-  if (!page) {
+  if (
+    path &&
+    !routes[path] &&
+    !window.location.pathname.includes("index.html")
+  ) {
     window.location.href = "404.html";
+    return;
   }
 
   if (path) {
     setTimeout(() => {
       const targetElement = document.querySelector(`#${path}`);
-      targetElement.scrollIntoView({ behavior: "smooth" });
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
     }, 300);
   }
 }
 
-// Load the initial content
-window.addEventListener("load", loadContent);
+window.addEventListener("load", () => {
+  loadContent();
+});
 
-// Update content when the hash changes
 window.addEventListener("hashchange", loadContent);
 
 function redirectToHome() {
-  window.location.href = "https://oportunitatisicariere.ro/index.html";
+  window.location.href = "/index.html";
 }
 
 redirectBtn?.addEventListener("click", redirectToHome);
