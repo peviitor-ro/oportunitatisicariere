@@ -1,3 +1,4 @@
+let widgetInterval = null;
 const meetings = document.querySelector(".meeting-schedule");
 
 const toggleWidget = document.querySelector("#widget-toggle");
@@ -206,6 +207,7 @@ function createWidget(day, meetings) {
       }
 
       const link = links[index];
+      if (!link) return;
       if (active) {
         link.href = meeting.url;
         link.setAttribute("target", "_blank");
@@ -232,7 +234,10 @@ function createWidget(day, meetings) {
     }
   }
 
-  updateWidgetLinks();
+  if (widgetInterval) {
+    clearInterval(widgetInterval);
+  }
 
-  setInterval(updateWidgetLinks, 1000);
+  updateWidgetLinks();
+  widgetInterval = setInterval(updateWidgetLinks, 1000);
 }
