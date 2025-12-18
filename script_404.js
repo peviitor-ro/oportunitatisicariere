@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
 window.addEventListener("hashchange", loadContent);
 
 function redirectToHome() {
-  window.location.href = "/index.html";
+  window.location.href = "./index.html";
 }
 
 redirectBtn?.addEventListener("click", redirectToHome);
