@@ -10,6 +10,7 @@ const days = document.querySelector(".meeting-days");
 const date = new Date();
 const d = date.getDay();
 
+
 function getTime() {
   const now = new Date();
   return now.getHours() * 60 + now.getMinutes();
@@ -34,14 +35,6 @@ async function meetingData() {
       if (d === x + 1 && d !== 6 && d !== 0) {
         createWidget(data[x].day.full, data[x].meeting);
         createButton(data[x].day.first, data[x].day.last, "active");
-        if (d === 3) {
-          meetings.innerHTML = `<div class="weekend-card shade">
-                      <span class="highlight-text">Miercuri nu avem ședințe!
-                      <span class="deep-blue-text">Ne vedem de mâine!</span>
-                    </div>`;
-          widget.style.display = "none";
-          widgetBody.innerHTML = "";
-        } else {
           const meet = data[x].meeting;
           for (let y = 0; meet.length > y; y++) {
             createCard(
@@ -53,7 +46,6 @@ async function meetingData() {
               x + 1
             );
           }
-        }
       } else {
         createButton(data[x].day.first, data[x].day.last);
       }
@@ -66,13 +58,6 @@ async function meetingData() {
         btn[z].classList.add("active");
 
         meetings.innerHTML = "";
-
-        if (z === 2) {
-          meetings.innerHTML = `<div class="weekend-card shade">
-                      <span class="highlight-text">Miercuri nu avem ședințe!
-                      <span class="deep-blue-text">Ne vedem de mâine!</span>
-                    </div>`;
-        } else {
           const meet = data[z].meeting;
           for (let y = 0; meet.length > y; y++) {
             createCard(
@@ -84,7 +69,6 @@ async function meetingData() {
               z + 1
             );
           }
-        }
       });
     }
   } catch (error) {
