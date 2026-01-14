@@ -18,7 +18,7 @@ function getTime() {
 
 async function meetingData() {
   try {
-    const response = await fetch("data/meetings.json");
+    const response = await fetch(`data/meetings.json?nocache=${new Date().getTime()}`);
     const data = await response.json();
 
     if (d === 6 || d === 0) {
