@@ -7,12 +7,14 @@
     },
     "meeting": [
       {
+        "active": true,
         "for": "Echipa de",
         "team": "CYBERSECURITY",
         "hour": "18:30",
         "url": "https://meet.jit.si/PEVIITOR.RO"
       },
       {
+        "active": false,
         "for": "Echipa de",
         "team": "TESTARE",
         "hour": "19:30",
@@ -28,18 +30,21 @@
     },
     "meeting": [
       {
+        "active": true,
         "for": "Întâlnire generală",
         "team": "TOȚI MEMBRII",
         "hour": "18:00",
         "url": "https://meet.jit.si/PEVIITOR.RO"
       },
       {
+        "active": true,
         "for": "Echipa de",
         "team": "BACK-END",
         "hour": "18:30",
         "url": "https://meet.jit.si/PEVIITOR.RO"
       },
       {
+        "active": true,
         "for": "Echipa de",
         "team": "DEVOPS",
         "hour": "18:45",
@@ -55,6 +60,7 @@
     },
     "meeting": [
       {
+        "active": true,
         "for": "Echipa",
         "team": "CORE",
         "hour": "18:30",
@@ -70,6 +76,7 @@
     },
     "meeting": [
       {
+        "active": true,
         "for": "Echipa de",
         "team": "FRONT-END",
         "hour": "18:30",
@@ -85,6 +92,7 @@
     },
     "meeting": [
       {
+        "active": true,
         "for": "Echipa de",
         "team": "SCRAPING",
         "hour": "18:30",
