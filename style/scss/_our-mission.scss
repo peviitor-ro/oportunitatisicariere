@@ -1,3 +1,6 @@
+@use "../utils/breakpoints";
+@use "../utils/colors";
+
 /* OUR MISSION SECTION */
 .our-mission {
   display: flex;
@@ -19,7 +22,7 @@
 
       & a {
         font-weight: bold;
-        color: $green-mint;
+        color: colors.$green-mint;
       }
 
       .description,
@@ -70,7 +73,7 @@
   }
 }
 
-@media only screen and (max-width:#{$phone-size}) {
+@media only screen and (max-width:#{breakpoints.$phone-size}) {
   .our-mission {
     &__content {
       &__details {
@@ -96,7 +99,7 @@
   }
 }
 
-@media only screen and (min-width:#{$phone-size})  and (max-width:#{$tablet-size}) {
+@media only screen and (min-width:#{breakpoints.$phone-size})  and (max-width:#{breakpoints.$tablet-size}) {
   .our-mission {
     &__content {
       &__details {
@@ -121,7 +124,7 @@
   }
 }
 
-@media screen and (min-width:650px) and (max-width:#{$tablet-size}) {
+@media screen and (min-width:650px) and (max-width:#{breakpoints.$tablet-size}) {
   .our-mission {
     margin-bottom: 3rem;
 
@@ -165,7 +168,7 @@
   }
 }
 
-@media only screen and (min-width:#{$laptop-size}) and (max-width:#{$desktop-size}) {
+@media only screen and (min-width:#{breakpoints.$laptop-size}) and (max-width:#{breakpoints.$desktop-size}) {
   .our-mission {
     padding: 7rem 13.5rem;
     &__content {
@@ -176,7 +179,7 @@
   }
 }
 
-@media only screen and (min-width: #{$desktop-size}) {
+@media only screen and (min-width: #{breakpoints.$desktop-size}) {
   .search-engine img {
     min-height: 330px;
   }

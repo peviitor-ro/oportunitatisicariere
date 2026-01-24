@@ -1,3 +1,6 @@
+@use "../utils/breakpoints";
+@use "../utils/colors";
+
 .team {
   display: flex;
   flex-direction: column;
@@ -34,15 +37,15 @@
       flex-wrap: wrap;
       z-index: 10;
       border-radius: 0.8rem;
-      background-color: $white;
+      background-color: colors.$white;
 
       .active {
-        background-color: $green-mint;
-        color: $white;
+        background-color: colors.$green-mint;
+        color: colors.$white;
 
         &:hover {
-          background-color: $dark-mint;
-          border-color: $dark-mint;
+          background-color: colors.$dark-mint;
+          border-color: colors.$dark-mint;
         }
       }
     }
@@ -83,10 +86,10 @@
       position: relative;
       padding-top: 2px;
       padding-bottom: 2px;
-      border: 3px solid $dark-blue;
+      border: 3px solid colors.$dark-blue;
       border-top: none;
       border-bottom: none;
-      background-color: $green-mint;
+      background-color: colors.$green-mint;
     }
   }
 
@@ -134,15 +137,15 @@
 
         &:hover {
           background-color: #ededed;
-          box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
+          box-shadow: 2px 2px 6px #00000020, -2px -2px 12px colors.$white;
         }
 
         a {
           width: 46px;
           height: 46px;
-          color: $white;
+          color: colors.$white;
           border-radius: 50%;
-          background-color: $darker-gray;
+          background-color: colors.$darker-gray;
           /* Culoarea implicita a svg-ului */
           mask-size: 32px 32px;
           mask-repeat: no-repeat;
@@ -166,17 +169,17 @@
 
         /* Culori on hover pentru svg-uri */
         &:nth-child(1):hover a {
-          background-color: $linkedin-blue;
+          background-color: colors.$linkedin-blue;
           /* Culoare LinkedIn */
         }
 
         &:nth-child(2):hover a {
-          background-color: $black;
+          background-color: colors.$black;
           /* Culoare GitHub */
         }
 
         &:nth-child(3):hover a {
-          background-color: $discord-purple;
+          background-color: colors.$discord-purple;
           /* Culoare Discord */
         }
       }
@@ -218,7 +221,7 @@
   }
 }
 
-@media only screen and (min-width: $tablet-size) {
+@media only screen and (min-width: breakpoints.$tablet-size) {
   .team {
     &__banner img {
       transform: scale(0.9);

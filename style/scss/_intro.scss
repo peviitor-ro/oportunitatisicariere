@@ -1,3 +1,7 @@
+@use "../utils/colors";
+@use "../utils/mixins";
+@use "../utils/typography";
+
 .intro {
   display: flex;
   align-items: center;
@@ -25,16 +29,16 @@
         height: 270px;
       }
       &__title {
-        @include flex(column, space-between, flex-start);
+        @include mixins.flex(column, space-between, flex-start);
         & h1 {
           height: auto;
-          color: $dark-blue;
+          color: colors.$dark-blue;
           font-weight: 700;
         }
 
         & h1:first-child {
-          font-family: $gelasio;
-          color: $dark-teal;
+          font-family: typography.$gelasio;
+          color: colors.$dark-teal;
           font-weight: 400;
           font-size: 5rem;
           line-height: 130%;

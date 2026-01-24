@@ -1,5 +1,8 @@
+@use "../utils/breakpoints";
+@use "../utils/colors";
+
 .main {
-  box-shadow: 0 0.1rem 1.8rem 0 rgba($dark-gray, 0.35);
+  box-shadow: 0 0.1rem 1.8rem 0 rgba(colors.$dark-gray, 0.35);
   margin: 12rem 2rem 2rem;
   border-radius: 3rem;
   padding-bottom: 3rem;
@@ -7,25 +10,25 @@
   flex-direction: column;
   row-gap: 1.6rem;
 
-  @media (max-width: $tablet-size) {
+  @media (max-width: breakpoints.$tablet-size) {
     margin-top: 10rem;
   }
 
-  @media (min-width: $tablet-size) {
+  @media (min-width: breakpoints.$tablet-size) {
     row-gap: 0;
     padding-bottom: 4rem;
     margin-bottom: 2rem;
   }
 
-  @media (min-width: $laptop-size) {
+  @media (min-width: breakpoints.$laptop-size) {
     padding-bottom: 5rem;
   }
 
-  @media (min-width: $desktop-size) {
+  @media (min-width: breakpoints.$desktop-size) {
     padding-bottom: 6rem;
   }
 
-  @media (min-width: $desktop-xxl-size) {
+  @media (min-width: breakpoints.$desktop-xxl-size) {
     padding-bottom: 7rem;
   }
 }
@@ -50,19 +53,19 @@
     color: #000000;
   }
 
-  @media (min-width: $tablet-size) {
+  @media (min-width: breakpoints.$tablet-size) {
     margin: 1rem 3rem;
   }
 
-  @media (min-width: $laptop-size) {
+  @media (min-width: breakpoints.$laptop-size) {
     margin: 1rem 4rem;
   }
 
-  @media (min-width: $desktop-size) {
+  @media (min-width: breakpoints.$desktop-size) {
     margin: 1rem 5rem;
   }
 
-  @media (min-width: $desktop-xxl-size) {
+  @media (min-width: breakpoints.$desktop-xxl-size) {
     margin: 1rem 6rem;
   }
 }
@@ -122,7 +125,7 @@
   flex-direction: column;
   margin: 0 2rem;
 
-  @media (min-width: $tablet-size) {
+  @media (min-width: breakpoints.$tablet-size) {
     margin: 0 3rem;
 
     .jd__apply {
@@ -130,15 +133,15 @@
     }
   }
 
-  @media (min-width: $laptop-size) {
+  @media (min-width: breakpoints.$laptop-size) {
     margin: 0 4rem;
   }
 
-  @media (min-width: $desktop-size) {
+  @media (min-width: breakpoints.$desktop-size) {
     margin: 0 5rem;
   }
 
-  @media (min-width: $desktop-xxl-size) {
+  @media (min-width: breakpoints.$desktop-xxl-size) {
     margin: 0 6rem;
   }
 
@@ -150,7 +153,7 @@
   }
 
   .jd__main {
-    border: 0.1rem solid rgba($black, 0.2);
+    border: 0.1rem solid rgba(colors.$black, 0.2);
     border-radius: 1.6rem;
     padding: 2.4rem 2.8rem;
     gap: 2rem;
@@ -161,21 +164,21 @@
       font-size: 3.6rem;
       font-weight: 700;
       line-height: 4.7rem;
-      color: $green-mint;
+      color: colors.$green-mint;
 
-      @media (min-width: $tablet-size) {
+      @media (min-width: breakpoints.$tablet-size) {
         font-size: 4rem;
       }
 
-      @media (min-width: $laptop-size) {
+      @media (min-width: breakpoints.$laptop-size) {
         font-size: 4.4rem;
       }
 
-      @media (min-width: $desktop-size) {
+      @media (min-width: breakpoints.$desktop-size) {
         font-size: 4.8rem;
       }
 
-      @media (min-width: $desktop-xxl-size) {
+      @media (min-width: breakpoints.$desktop-xxl-size) {
         font-size: 5.2rem;
       }
     }
@@ -187,22 +190,22 @@
       margin-top: 1rem;
 
       .employer {
-        color: $dark-gray;
+        color: colors.$dark-gray;
         font-size: 2rem;
 
-        @media (min-width: $tablet-size) {
+        @media (min-width: breakpoints.$tablet-size) {
           font-size: 2rem;
         }
 
-        @media (min-width: $laptop-size) {
+        @media (min-width: breakpoints.$laptop-size) {
           font-size: 2.2rem;
         }
 
-        @media (min-width: $desktop-size) {
+        @media (min-width: breakpoints.$desktop-size) {
           font-size: 2.4rem;
         }
 
-        @media (min-width: $desktop-xxl-size) {
+        @media (min-width: breakpoints.$desktop-xxl-size) {
           font-size: 2.6rem;
         }
       }
@@ -211,21 +214,21 @@
         font-weight: 600;
         font-size: 1.8rem;
         line-height: 2.7rem;
-        color: $black;
+        color: colors.$black;
 
-        @media (min-width: $tablet-size) {
+        @media (min-width: breakpoints.$tablet-size) {
           font-size: 2rem;
         }
 
-        @media (min-width: $laptop-size) {
+        @media (min-width: breakpoints.$laptop-size) {
           font-size: 2.2rem;
         }
 
-        @media (min-width: $desktop-size) {
+        @media (min-width: breakpoints.$desktop-size) {
           font-size: 2.4rem;
         }
 
-        @media (min-width: $desktop-xxl-size) {
+        @media (min-width: breakpoints.$desktop-xxl-size) {
           font-size: 2.6rem;
         }
       }
@@ -237,7 +240,7 @@
       gap: 3rem;
       justify-content: space-between;
 
-      @media (min-width: $tablet-size) {
+      @media (min-width: breakpoints.$tablet-size) {
         flex-direction: row;
         gap: 10rem;
       }
@@ -251,11 +254,11 @@
           display: flex;
           align-items: center;
           gap: 0.6rem;
-          color: $dark-gray;
+          color: colors.$dark-gray;
 
           .img {
-            stroke: $dark-gray;
-            fill: $dark-gray;
+            stroke: colors.$dark-gray;
+            fill: colors.$dark-gray;
           }
         }
       }
@@ -280,27 +283,27 @@
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 2.7rem;
-        color: $dark-gray;
+        color: colors.$dark-gray;
       }
 
       .description__header {
         font-size: 2.2rem;
         line-height: 3.3rem;
-        color: $black;
+        color: colors.$black;
 
-        @media (min-width: $tablet-size) {
+        @media (min-width: breakpoints.$tablet-size) {
           font-size: 2.8rem;
         }
 
-        @media (min-width: $laptop-size) {
+        @media (min-width: breakpoints.$laptop-size) {
           font-size: 3rem;
         }
 
-        @media (min-width: $desktop-size) {
+        @media (min-width: breakpoints.$desktop-size) {
           font-size: 3.2rem;
         }
 
-        @media (min-width: $desktop-xxl-size) {
+        @media (min-width: breakpoints.$desktop-xxl-size) {
           font-size: 3.4rem;
         }
       }
@@ -310,7 +313,7 @@
         font-size: 1.6rem;
         font-weight: 700;
         line-height: 2.4rem;
-        color: $black;
+        color: colors.$black;
       }
     }
 
@@ -323,21 +326,21 @@
       h2 {
         font-size: 2.2rem;
         line-height: 3.3rem;
-        color: $black;
+        color: colors.$black;
 
-        @media (min-width: $tablet-size) {
+        @media (min-width: breakpoints.$tablet-size) {
           font-size: 2.8rem;
         }
 
-        @media (min-width: $laptop-size) {
+        @media (min-width: breakpoints.$laptop-size) {
           font-size: 3rem;
         }
 
-        @media (min-width: $desktop-size) {
+        @media (min-width: breakpoints.$desktop-size) {
           font-size: 3.2rem;
         }
 
-        @media (min-width: $desktop-xxl-size) {
+        @media (min-width: breakpoints.$desktop-xxl-size) {
           font-size: 3.4rem;
         }
       }
@@ -349,7 +352,7 @@
       list-style-position: outside;
       padding-left: 2rem;
       width: 100%;
-      color: $dark-gray;
+      color: colors.$dark-gray;
       line-height: 2.4rem;
 
       #email {
@@ -382,8 +385,8 @@
               height: auto;
               padding: 4px 12px;
               border-radius: .6rem;
-              background: $darker-gray;
-              color: $white-smoke;
+              background: colors.$darker-gray;
+              color: colors.$white-smoke;
               z-index: 2;
             }
 
@@ -395,7 +398,7 @@
               top: -18px;
               left: 50%;
               transform: translateX(-50%) rotate(45deg);
-              background: $darker-gray;
+              background: colors.$darker-gray;
             }
           }
 
@@ -409,22 +412,22 @@
         padding: 0.2rem;
       }
 
-      @media (min-width: $tablet-size) {
+      @media (min-width: breakpoints.$tablet-size) {
         font-size: 2rem;
         li {
           font-size: 1.8rem;
         }
       }
 
-      @media (min-width: $laptop-size) {
+      @media (min-width: breakpoints.$laptop-size) {
         font-size: 2.2rem;
       }
 
-      @media (min-width: $desktop-size) {
+      @media (min-width: breakpoints.$desktop-size) {
         font-size: 2.4rem;
       }
 
-      @media (min-width: $desktop-xxl-size) {
+      @media (min-width: breakpoints.$desktop-xxl-size) {
         font-size: 2.6rem;
       }
     }
@@ -436,7 +439,7 @@
     .general__info {
       display: flex;
       flex-direction: column;
-      border-bottom: 2px solid rgba($black, 0.2);
+      border-bottom: 2px solid rgba(colors.$black, 0.2);
       padding-bottom: 1.5rem;
       gap: 1.2rem;
     }
@@ -482,15 +485,15 @@
 
               &:hover {
                 background-color: #ededed;
-                box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
+                box-shadow: 2px 2px 6px #00000020, -2px -2px 12px colors.$white;
               }
 
               a {
                 width: 36px;
                 height: 36px;
-                color: $white;
+                color: colors.$white;
                 border-radius: 50%;
-                background-color: $darker-gray;
+                background-color: colors.$darker-gray;
                 mask-size: 32px 32px;
                 mask-repeat: no-repeat;
                 mask-position: center;
@@ -511,15 +514,15 @@
               }
 
               &:nth-child(1):hover a {
-                background-color: $linkedin-blue;
+                background-color: colors.$linkedin-blue;
               }
 
               &:nth-child(2):hover a {
-                background-color: $black;
+                background-color: colors.$black;
               }
 
               &:nth-child(3):hover a {
-                background-color: $discord-purple;
+                background-color: colors.$discord-purple;
               }
             }
           }
@@ -535,7 +538,7 @@
         .contact__role {
           font-weight: 400;
           font-size: 1.7rem;
-          color: $dark-gray;
+          color: colors.$dark-gray;
         }
 
         @media screen and (max-width: 520px) {
@@ -553,7 +556,7 @@
         }
       }
 
-      @media screen and (max-width: $tablet-size) {
+      @media screen and (max-width: breakpoints.$tablet-size) {
         justify-content: center;
       }
     }
@@ -599,19 +602,19 @@
 #top-redirect-details-page {
   right: 4vw;
   bottom: 0.2vh;
-  @media (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
+  @media (min-width: breakpoints.$laptop-size) and (max-width: breakpoints.$desktop-xxl-size) {
     right: 2vw;
   }
 
-  @media (min-width: 769px) and (max-width: $laptop-size) {
+  @media (min-width: 769px) and (max-width: breakpoints.$laptop-size) {
     right: 2.6vw;
   }
 
-  @media (min-width: 500px) and (max-width: $tablet-size) {
+  @media (min-width: 500px) and (max-width: breakpoints.$tablet-size) {
     right: 4.2vw;
   }
 
-  @media (min-width: $phone-size) and (max-width: 500px) {
+  @media (min-width: breakpoints.$phone-size) and (max-width: 500px) {
     right: 5.6vw;
   }
 }

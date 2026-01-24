@@ -1,3 +1,7 @@
+@use "breakpoints";
+@use "colors";
+@use "mixins";
+
 section {
   padding: 7.2rem 2.4rem;
   gap: 1.6rem;
@@ -32,7 +36,7 @@ section {
   }
 
   &__body {
-    @include flex(column, center, flex-start);
+    @include mixins.flex(column, center, flex-start);
     width: 100%;
     gap: 1.6rem;
     padding: 1rem;
@@ -47,15 +51,15 @@ section {
   }
 
   &__content {
-    @include flex(column, center, center);
+    @include mixins.flex(column, center, center);
     width: 100%;
 
     li {
-      @include flex(row, space-between, center);
+      @include mixins.flex(row, space-between, center);
       padding: 1.2rem 0;
       width: 100%;
       list-style: none;
-      border-bottom: 1px solid $light-white;
+      border-bottom: 1px solid colors.$light-white;
 
       h2 {
         font-size: 1.6rem;
@@ -78,7 +82,7 @@ section {
 .widget-opened {
   border-radius: 1rem;
   padding: 0.4rem;
-  border: 1px solid $greyish-white;
+  border: 1px solid colors.$greyish-white;
   box-shadow: 0 1px 6px -4px rgba(0, 0, 0, 0.2),
     0 1px 8px -4px rgba(0, 0, 0, 0.14), 0 1px 12px -4px rgba(0, 0, 0, 0.12);
 
@@ -133,26 +137,26 @@ section {
 // Primary
 .primary-btn {
   @extend .custom-btn;
-  color: $white;
-  background-color: $green-mint;
+  color: colors.$white;
+  background-color: colors.$green-mint;
   border: none;
 
   &:hover {
-    background-color: $dark-mint;
+    background-color: colors.$dark-mint;
   }
 }
 
 // Secondary
 .secondary-btn {
   @extend .custom-btn;
-  color: $green-mint;
+  color: colors.$green-mint;
   background: transparent;
-  border: 2px solid $green-mint;
+  border: 2px solid colors.$green-mint;
 
   &:hover {
-    color: $white;
-    background-color: $dark-mint;
-    border-color: $dark-mint;
+    color: colors.$white;
+    background-color: colors.$dark-mint;
+    border-color: colors.$dark-mint;
   }
 }
 
@@ -173,8 +177,8 @@ section {
 
 .disabled-btn {
   @extend .custom-btn;
-  color: $white;
-  background-color: $dark-gray;
+  color: colors.$white;
+  background-color: colors.$dark-gray;
   pointer-events: none;
   opacity: 0.6;
   cursor: not-allowed;
@@ -187,7 +191,7 @@ section {
   height: 22px;
   margin-right: 0.8rem;
   background: url("../assets/rocket.svg") no-repeat center/contain;
-  color: $white;
+  color: colors.$white;
 }
 
 // Underlined title global style
@@ -203,7 +207,7 @@ section {
     font-weight: 400;
     line-height: 3.6rem;
     text-align: center;
-    color: $black;
+    color: colors.$black;
   }
 
   .underline {
@@ -328,7 +332,7 @@ section {
 }
 
 // Media queries
-@media only screen and (min-width: $tablet-size) {
+@media only screen and (min-width: breakpoints.$tablet-size) {
   .underlined-title {
     .title {
       font-size: 3.2rem;
@@ -336,7 +340,7 @@ section {
   }
 }
 
-@media screen and (min-width: $desktop-size) {
+@media screen and (min-width: breakpoints.$desktop-size) {
   .notification-widget {
     right: calc((100vw - 1440px) / 2 + 1rem);
   }

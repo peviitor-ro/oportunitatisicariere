@@ -1,3 +1,7 @@
+@use "../utils/breakpoints";
+@use "../utils/colors";
+@use "../utils/mixins";
+
 /* FOOTER SECTION */
 /* styles for tooltip - footer links*/
 .tippy-box[data-theme~="tooltip-footer-theme"] {
@@ -32,9 +36,9 @@
   // Footer logo section
   &__logo {
     grid-area: logo;
-    @include flex(column, start);
+    @include mixins.flex(column, start);
     gap: 0.6rem;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid colors.$gray;
     padding-bottom: 3.6rem;
     a {
       width: fit-content;
@@ -44,17 +48,17 @@
         &:first-child {
           font-size: 1.8rem;
           font-family: "Gelasio";
-          color: $dark-teal;
+          color: colors.$dark-teal;
         }
         &:nth-child(2) {
-          color: $dark-blue;
+          color: colors.$dark-blue;
         }
       }
     }
 
     // Trademark year
     p {
-      color: $dark-gray;
+      color: colors.$dark-gray;
       font-size: 1.6rem;
       font-weight: 500;
     }
@@ -63,9 +67,9 @@
   // Footer navigation section
   &__navigation {
     grid-area: navigation;
-    @include flex(row, flex-start);
+    @include mixins.flex(row, flex-start);
     ul {
-      @include flex(column, start, start);
+      @include mixins.flex(column, start, start);
       row-gap: 1.8rem;
       flex-wrap: wrap;
 
@@ -83,7 +87,7 @@
     grid-area: social-media;
 
     ul {
-      @include flex(row, flex-start, center);
+      @include mixins.flex(row, flex-start, center);
       flex-wrap: wrap;
       gap: 0.8rem;
       row-gap: 2.4rem;
@@ -94,7 +98,7 @@
         a {
           width: 3rem;
           height: 3rem;
-          @include flex(row, start, center);
+          @include mixins.flex(row, start, center);
 
           img {
             width: 3rem;
@@ -108,15 +112,15 @@
   // Footer info section
   &__info-links {
     grid-area: info-links;
-    @include flex(row, flex-start, center);
+    @include mixins.flex(row, flex-start, center);
 
     ul {
-      @include flex(row, flex-start, center);
+      @include mixins.flex(row, flex-start, center);
       flex-wrap: wrap;
       gap: 1.4rem;
 
       li {
-        border-right: 1px solid $dark-gray;
+        border-right: 1px solid colors.$dark-gray;
         padding-right: 1.4rem;
 
         &:last-child {
@@ -126,7 +130,7 @@
 
         a {
           font-size: 1.6rem;
-          color: $dark-gray;
+          color: colors.$dark-gray;
         }
       }
     }
@@ -146,7 +150,7 @@
   }
 }
 
-@media screen and (min-width: $tablet-size) {
+@media screen and (min-width: breakpoints.$tablet-size) {
   .footer {
     padding: 8.4rem 3rem 4.2rem 3rem;
     grid-template-columns: repeat(2, 1fr);
@@ -174,7 +178,7 @@
           a {
             transition: all 0.3s ease-in-out;
             &:hover {
-              color: $dark-gray;
+              color: colors.$dark-gray;
             }
           }
         }
@@ -187,7 +191,7 @@
           a {
             width: 4.2rem;
             height: 4.2rem;
-            @include flex(row, center, center);
+            @include mixins.flex(row, center, center);
             border-radius: 50%;
             transition: all 0.3s ease-in-out;
 
@@ -211,7 +215,7 @@
             transition: all 0.3s ease-in-out;
 
             &:hover {
-              color: $black;
+              color: colors.$black;
             }
           }
         }
