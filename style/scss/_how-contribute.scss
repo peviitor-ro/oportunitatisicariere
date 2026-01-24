@@ -1,12 +1,15 @@
+@use "../utils/breakpoints";
+@use "../utils/colors";
+
 /* HOW CONTRIBUTE SECTION */
 .how-contribute {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $greyish-white;
+  background-color: colors.$greyish-white;
   position: relative;
 
-  @media only screen and (min-width: $laptop-size) {
+  @media only screen and (min-width: breakpoints.$laptop-size) {
     padding-bottom: 4rem;
     p {
       width: 860px;
@@ -23,15 +26,15 @@
     font-size: 1.6rem;
     padding-bottom: 4.2rem;
 
-    @media screen and (min-width: $laptop-size) and (max-width: $desktop-xxl-size) {
+    @media screen and (min-width: breakpoints.$laptop-size) and (max-width: breakpoints.$desktop-xxl-size) {
       padding: 1rem 22rem 4rem;
     }
 
-    @media screen and (min-width: $tablet-size) and (max-width: $laptop-size) {
+    @media screen and (min-width: breakpoints.$tablet-size) and (max-width: breakpoints.$laptop-size) {
       padding: 1rem 3rem 9rem;
     }
 
-    @media screen and (max-width: $tablet-size) {
+    @media screen and (max-width: breakpoints.$tablet-size) {
       padding: 0 0 2rem;
     }
   }
@@ -131,12 +134,12 @@
       position: relative;
       z-index: 3;
 
-      @media screen and (max-width: $tablet-size) {
+      @media screen and (max-width: breakpoints.$tablet-size) {
         width: 7rem;
         height: 7rem;
       }
 
-      @media screen and (max-width: $phone-size) {
+      @media screen and (max-width: breakpoints.$phone-size) {
         width: 5rem;
         height: 5rem;
       }
@@ -147,7 +150,7 @@
         filter: invert(50%);
       }
 
-      @media screen and (max-width: $tablet-size) {
+      @media screen and (max-width: breakpoints.$tablet-size) {
         left: 1rem;
       }
 
@@ -163,7 +166,7 @@
         filter: invert(50%);
       }
 
-      @media screen and (max-width: $tablet-size) {
+      @media screen and (max-width: breakpoints.$tablet-size) {
         right: 1rem;
       }
 
@@ -181,15 +184,15 @@
       display: flex;
       align-self: flex-start;
       outline: none;
-      border: solid 0.1rem $green-mint;
-      color: $green-mint;
+      border: solid 0.1rem colors.$green-mint;
+      color: colors.$green-mint;
 
       &::placeholder {
-        color: $green-mint;
+        color: colors.$green-mint;
         opacity: 0.6;
       }
 
-      @media screen and (max-width: $tablet-size) {
+      @media screen and (max-width: breakpoints.$tablet-size) {
         font-size: 1.8rem;
         padding: 0.4rem;
         margin-top: 0;
@@ -200,7 +203,7 @@
         margin-top: 0.6rem;
         width: 15rem;
       }
-      @media screen and (max-width: $phone-size) {
+      @media screen and (max-width: breakpoints.$phone-size) {
         font-size: 1.6rem;
         padding: 0.3rem;
         margin-top: -1rem;
@@ -232,7 +235,7 @@
 
     a {
       font-weight: 600;
-      color: $dark-mint;
+      color: colors.$dark-mint;
 
       &:hover {
         text-decoration: underline;
@@ -256,16 +259,16 @@
 
     .asociation_title {
       font-size: 1.4rem;
-      color: $dark-mint;
+      color: colors.$dark-mint;
       font-weight: 600;
     }
 
     .important_info {
-      color: $dark-mint;
+      color: colors.$dark-mint;
       font-size: 1.5rem;
       font-weight: 600;
 
-      @media screen and (min-width: $phone-size) {
+      @media screen and (min-width: breakpoints.$phone-size) {
         font-size: 2rem;
       }
     }

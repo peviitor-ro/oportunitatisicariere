@@ -1,4 +1,6 @@
-@import "../utils/colors";
+@use "../utils/colors";
+@use "../utils/breakpoints";
+
 
 .stories {
   display: flex;
@@ -31,8 +33,8 @@
   &-left {
     width: 49.2rem;
     height: 51.7rem;
-    background-color: $green-mint;
-    color: $white;
+    background-color: colors.$green-mint;
+    color: colors.$white;
     font-size: 1.8rem;
     text-align: left;
     padding: 12rem 7rem 0 7rem;
@@ -68,7 +70,7 @@
     position: absolute;
     bottom: 4rem;
     right: 0;
-    color: $dark-mint;
+    color: colors.$dark-mint;
     font-size: 4.4rem;
     padding-left: 25rem;
     line-height: 80%;
@@ -79,12 +81,12 @@
       width: 8px;
       height: 20px;
       border-radius: 1rem;
-      background: $dark-mint;
+      background: colors.$dark-mint;
     }
   }
 }
 
-@media (max-width: $laptop-size) {
+@media (max-width: breakpoints.$laptop-size) {
   .stories {
     padding-bottom: 10rem;
 

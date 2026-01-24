@@ -1,8 +1,12 @@
+@use "../utils/breakpoints";
+@use "../utils/colors";
+@use "../utils/mixins";
+
 /* JOIN US SECTION */
 .tippy-box[data-theme~="tooltip-jitsi-theme"] {
   background-color: white;
-  color: $green-mint;
-  border: 1px solid $green-mint;
+  color: colors.$green-mint;
+  border: 1px solid colors.$green-mint;
   border-radius: 8px;
   font-size: 1.4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -12,7 +16,7 @@
     color: transparent;
   }
 
-  @media (max-width: $tablet-size) {
+  @media (max-width: breakpoints.$tablet-size) {
     transform: translateX(10%);
   }
 }
@@ -23,7 +27,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: $greyish-white;
+  background-color: colors.$greyish-white;
 
   & h2 {
     font-size: 2.4rem;
@@ -42,7 +46,7 @@
       inline-size: clamp(20rem, 40rem, 60rem);
     }
 
-    @media screen and (min-width: $phone-size) and (max-width: 400px) {
+    @media screen and (min-width: breakpoints.$phone-size) and (max-width: 400px) {
       inline-size: clamp(20rem, 30rem, 40rem);
     }
   }
@@ -83,7 +87,7 @@
 
           &:hover {
             background-color: #ededed;
-            box-shadow: 2px 2px 6px #00000020, -2px -2px 12px $white;
+            box-shadow: 2px 2px 6px #00000020, -2px -2px 12px colors.$white;
           }
 
           .meeting-link {
@@ -92,9 +96,9 @@
             align-items: center;
             width: 42px;
             height: 42px;
-            color: $white;
+            color: colors.$white;
             border-radius: 50%;
-            background-color: $darker-gray;
+            background-color: colors.$darker-gray;
             mask-size: 32px 32px;
             mask-repeat: no-repeat;
             mask-position: center;
@@ -104,7 +108,7 @@
           }
 
           &:hover .meeting-link {
-            background-color: $linkedin-blue;
+            background-color: colors.$linkedin-blue;
             animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
           }
         }
@@ -155,15 +159,15 @@
 }
 
 .highlight-text {
-  color: $minty-qua;
+  color: colors.$minty-qua;
 }
 
 .deep-blue-text {
-  color: $deep-blue;
+  color: colors.$deep-blue;
 }
 
 .dark-text {
-  color: $dark;
+  color: colors.$dark;
 }
 
 .shade {
@@ -192,28 +196,28 @@
     font-size: 1.8rem;
     font-weight: bold;
     background-color: #ffffff;
-    @include meeting-border;
-    color: $black;
+    @include mixins.meeting-border;
+    color: colors.$black;
     cursor: pointer;
     transition: 0.25s ease-out;
     letter-spacing: 2px;
 
     &.active {
-      background-color: $minty-qua;
+      background-color: colors.$minty-qua;
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
       color: #ffffff;
     }
 
     &:hover {
-      background-color: $green-mint;
-      color: $white;
+      background-color: colors.$green-mint;
+      color: colors.$white;
       border-color: transparent;
     }
 
     &:active {
-      background-color: $dark-mint;
-      color: $white;
+      background-color: colors.$dark-mint;
+      color: colors.$white;
       border-color: transparent;
     }
 
@@ -237,7 +241,7 @@
     justify-content: center;
     width: 100%;
     background-color: #fff;
-    @include meeting-border;
+    @include mixins.meeting-border;
     min-height: 120px;
   }
   .meeting-card {
@@ -247,7 +251,7 @@
     &__top {
       font-size: 1.8rem;
       font-weight: 600;
-      color: $black;
+      color: colors.$black;
       margin-bottom: 0.15rem;
       letter-spacing: 1px;
     }
@@ -260,27 +264,27 @@
 
     &__middle {
       font-size: 1.8rem;
-      color: $green-mint;
+      color: colors.$green-mint;
     }
 
     &__bottom {
       margin-top: 0.6rem;
       font-size: 2.2rem;
-      color: $black;
+      color: colors.$black;
     }
 
     &.active {
-      background: $minty-qua;
+      background: colors.$minty-qua;
       border-color: transparent;
 
       .meeting-card__top {
-        color: $deep-blue;
+        color: colors.$deep-blue;
       }
       .meeting-card__middle {
         color: #ffffff;
       }
       .meeting-card__bottom {
-        color: $deep-blue;
+        color: colors.$deep-blue;
       }
     }
 
@@ -313,7 +317,7 @@
     }
 
     &:hover {
-      background-color: $green-mint;
+      background-color: colors.$green-mint;
       .meeting-card__top,
       .meeting-card__middle,
       .meeting-card__bottom {
@@ -327,7 +331,7 @@
     }
 
     &:focus {
-      background-color: $dark-mint;
+      background-color: colors.$dark-mint;
       .meeting-card__top,
       .meeting-card__middle,
       .meeting-card__bottom {
@@ -353,7 +357,7 @@
   }
 }
 
-@media only screen and (max-width: $phone-size) {
+@media only screen and (max-width: breakpoints.$phone-size) {
   .join-us-section {
     & p {
       line-height: 2.5rem;
@@ -373,7 +377,7 @@
   }
 }
 
-@media only screen and (min-width: $phone-size) and (max-width: 500px) {
+@media only screen and (min-width: breakpoints.$phone-size) and (max-width: 500px) {
   .join-us__sub-heading {
     margin-top: 3rem;
   }
@@ -435,7 +439,7 @@
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: $tablet-size) {
+@media only screen and (min-width: 500px) and (max-width: breakpoints.$tablet-size) {
   .join-us-section {
     padding: 3rem;
 
@@ -462,7 +466,7 @@
   }
 }
 
-@media only screen and (min-width:#{$tablet-size}) and (max-width:#{$laptop-size}) {
+@media only screen and (min-width:#{breakpoints.$tablet-size}) and (max-width:#{breakpoints.$laptop-size}) {
   .join-us-section {
     padding: 2.4rem 5rem;
 
@@ -477,7 +481,7 @@
   }
 }
 
-@media only screen and (min-width:#{$laptop-size}) {
+@media only screen and (min-width:#{breakpoints.$laptop-size}) {
   .join-us-section {
     padding: 8.3rem 5rem;
 

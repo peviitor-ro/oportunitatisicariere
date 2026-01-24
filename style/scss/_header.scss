@@ -1,3 +1,7 @@
+@use "../utils/breakpoints";
+@use "../utils/colors";
+@use "../utils/typography";
+
 /* HEADER SECTION */
 header {
   display: flex;
@@ -11,7 +15,7 @@ header {
 
 .close-menu-icon,
 .hamburger-menu-icon {
-  background-color: $white-smoke;
+  background-color: colors.$white-smoke;
 }
 
 /* NAVIGATION SECTION */
@@ -21,7 +25,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
 
-  background-color: $white-smoke;
+  background-color: colors.$white-smoke;
   padding: 1rem 2rem;
   width: clamp(250px, 100%, 1440px);
   height: auto;
@@ -35,12 +39,12 @@ header {
     height: 3px;
     background: linear-gradient(
       to right,
-      $ro-blue 0%,
-      $ro-blue 33.33%,
-      $ro-yellow 33.33%,
-      $ro-yellow 66.66%,
-      $ro-red 66.66%,
-      $ro-red 100%
+      colors.$ro-blue 0%,
+      colors.$ro-blue 33.33%,
+      colors.$ro-yellow 33.33%,
+      colors.$ro-yellow 66.66%,
+      colors.$ro-red 66.66%,
+      colors.$ro-red 100%
     );
 
     z-index: -1;
@@ -56,7 +60,7 @@ header {
     &__title {
       font-weight: 700;
       font-size: 2rem;
-      color: $dark-blue;
+      color: colors.$dark-blue;
       transition: all 0.2s ease;
       inline-size: 25rem;
     }
@@ -67,8 +71,8 @@ header {
     }
 
     & .title-mint {
-      font-family: $gelasio;
-      color: $dark-teal;
+      font-family: typography.$gelasio;
+      color: colors.$dark-teal;
       font-size: 1.8rem;
     }
 
@@ -114,17 +118,17 @@ header {
     gap: 3rem;
 
     .active {
-      border-bottom: 3px solid $green-mint;
+      border-bottom: 3px solid colors.$green-mint;
     }
 
     & > li > a {
       text-decoration: none;
-      color: $black;
+      color: colors.$black;
       font-size: 1.6rem;
       font-weight: 500;
 
       &:hover {
-        color: $dark-gray;
+        color: colors.$dark-gray;
         transition: all 0.3s ease;
       }
     }
@@ -252,7 +256,7 @@ header {
         height: 2px;
         bottom: 0;
         margin: -5px 0;
-        background-color: $green-mint;
+        background-color: colors.$green-mint;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
@@ -271,7 +275,7 @@ header {
         font-size: 1.7rem;
         inline-size: 22rem;
 
-        @media screen and (min-width: $phone-size) and (max-width: 351px) {
+        @media screen and (min-width: breakpoints.$phone-size) and (max-width: 351px) {
           inline-size: 20rem;
         }
       }
@@ -318,7 +322,7 @@ header {
   }
 }
 
-@media only screen and (min-width: $tablet-size) and (max-width: 1282px) {
+@media only screen and (min-width: breakpoints.$tablet-size) and (max-width: 1282px) {
   .nav {
     display: block;
 
@@ -326,7 +330,7 @@ header {
       display: none;
       height: calc(100vh - 30px);
       gap: 2.2rem;
-      background-color: $white-smoke;
+      background-color: colors.$white-smoke;
 
       & li > a {
         font-size: 2.8rem;
@@ -366,7 +370,7 @@ header {
         height: 2px;
         bottom: 0;
         margin: -5px 0;
-        background-color: $green-mint;
+        background-color: colors.$green-mint;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
@@ -426,12 +430,12 @@ header {
   }
 }
 
-@media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
+@media screen and (min-width: breakpoints.$phone-size) and (max-width: breakpoints.$tablet-size) {
   .nav {
     &__links__list {
       height: calc(100vh - 10px);
       gap: 2rem;
-      background-color: $white-smoke;
+      background-color: colors.$white-smoke;
 
       & li > a {
         font-size: 2.4rem;
@@ -454,7 +458,7 @@ header {
   }
 }
 
-@media (max-width: $phone-size) {
+@media (max-width: breakpoints.$phone-size) {
   .nav {
     &__links__list {
       padding-top: 2rem;
@@ -469,7 +473,7 @@ header {
   }
 }
 
-@media (min-width: $laptop-size) {
+@media (min-width: breakpoints.$laptop-size) {
   #team > p {
     width: 860px;
   }

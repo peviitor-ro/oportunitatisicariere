@@ -1,3 +1,5 @@
+@use "../utils/breakpoints";
+
 /* THANK YOU SECTION */
 .thank-section {
   display: flex;
@@ -6,7 +8,7 @@
   flex-direction: column;
   padding: 0 4.9rem 2.4rem;
 
-  @media only screen and (min-width: $laptop-size) {
+  @media only screen and (min-width: breakpoints.$laptop-size) {
     padding: 10.7rem 0;
 
     p {
@@ -34,7 +36,7 @@
   }
 }
 
-@media only screen and (max-width:#{$phone-size}) {
+@media only screen and (max-width:#{breakpoints.$phone-size}) {
   .thank-section {
     & p {
       padding-left: 0rem;
@@ -43,7 +45,7 @@
   }
 }
 
-@media only screen and (min-width:#{$tablet-size}) and (max-width:#{$desktop-size}) {
+@media only screen and (min-width:#{breakpoints.$tablet-size}) and (max-width:#{breakpoints.$desktop-size}) {
   .thank-section {
     padding: 12rem 2; // Adjust padding acording to the margin of the logo
     &__final-logo {
@@ -56,7 +58,7 @@
   }
 }
 
-@media only screen and (min-width:#{$desktop-xxl-size}) {
+@media only screen and (min-width:#{breakpoints.$desktop-xxl-size}) {
   .thank-section {
     & p {
       line-height: 2.4rem;

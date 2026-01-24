@@ -1,3 +1,5 @@
+@use "../utils/breakpoints";
+
 /* WHY CONTRIBUTE SECTION */
 .why-contribute {
   display: flex;
@@ -49,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: $laptop-size) {
+@media screen and (min-width: breakpoints.$laptop-size) {
   .why-contribute {
     &__title {
       padding: 7rem 0 3.5rem;
@@ -81,7 +83,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: $laptop-size) {
+@media screen and (min-width: 769px) and (max-width: breakpoints.$laptop-size) {
   .why-contribute {
     padding-bottom: 7rem;
     &__description {
@@ -126,7 +128,7 @@
   }
 }
 
-@media screen and (min-width: $phone-size) and (max-width: $tablet-size) {
+@media screen and (min-width: breakpoints.$phone-size) and (max-width: breakpoints.$tablet-size) {
   .why-contribute {
     &__description {
       & p {
@@ -165,7 +167,7 @@
   }
 }
 
-@media (max-width: $phone-size) {
+@media (max-width: breakpoints.$phone-size) {
   .why-contribute {
     &__description {
       padding: 0 2rem;
