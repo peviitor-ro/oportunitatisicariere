@@ -1,8 +1,7 @@
 /* Global Imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
+/* Global Imports */
 *,
 ::after,
 ::before {
@@ -44,7 +43,8 @@ section {
   border-color: transparent;
   width: clamp(280px, 31rem, 100%);
   background: rgba(255, 255, 255, 0.3137254902);
-  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+          backdrop-filter: saturate(180%) blur(10px);
   transition: all 0.3s ease;
 }
 .notification-widget #widget-toggle {
@@ -135,7 +135,6 @@ section {
 }
 
 .ping {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
@@ -144,6 +143,7 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 1.2rem;
   letter-spacing: 0.1rem;
@@ -237,72 +237,26 @@ section {
 .top-redirect-btn:hover img {
   filter: invert(44%) sepia(9%) saturate(2875%) hue-rotate(126deg) brightness(85%) contrast(77%);
 }
-
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
 @keyframes heartbeat {
   from {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   10% {
-    -webkit-transform: scale(0.91);
     transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   17% {
-    -webkit-transform: scale(0.98);
     transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   33% {
-    -webkit-transform: scale(0.87);
     transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   45% {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 }
@@ -330,6 +284,7 @@ section {
     right: calc((100vw - 1440px) / 2 + 1rem);
   }
 }
+/* Global Imports */
 /* HEADER SECTION */
 header {
   display: flex;
@@ -613,7 +568,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.4rem;
-    column-gap: 3.2rem;
+    -moz-column-gap: 3.2rem;
+         column-gap: 3.2rem;
     list-style-type: none;
     margin-top: 6.4rem;
   }
@@ -672,6 +628,7 @@ header {
 }
 @media only screen and (min-width: 1283px) {
   .nav .nav__links .nav__links__list:first-of-type li {
+    min-width: -moz-fit-content;
     min-width: fit-content;
   }
   .hamburger-menu-icon {
@@ -694,7 +651,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
     list-style-type: none;
     margin-top: 6rem;
   }
@@ -711,7 +669,8 @@ header {
   .nav__links__list #socialLinks {
     margin-top: 6rem;
     row-gap: 1.6rem;
-    column-gap: 2.6rem;
+    -moz-column-gap: 2.6rem;
+         column-gap: 2.6rem;
   }
 }
 @media (min-width: 1024px) {
@@ -719,6 +678,7 @@ header {
     width: 860px;
   }
 }
+/* Global Imports */
 .intro {
   display: flex;
   align-items: center;
@@ -889,6 +849,7 @@ header {
 .our-mission__content__details .description,
 .our-mission__content__details .search-engine {
   flex: 1 1 48%;
+  min-height: -moz-fit-content;
   min-height: fit-content;
   box-sizing: border-box;
   padding: 1rem;
@@ -1073,7 +1034,8 @@ header {
   display: block;
   width: 100%;
   height: 25rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .how-contribute .swiper .swiper-wrapper .swiper-slide .how-contribute__job__text {
@@ -1184,6 +1146,10 @@ header {
   outline: none;
   border: solid 0.1rem #2f7973;
   color: #2f7973;
+}
+.how-contribute .how-contribute-img__container .search-input::-moz-placeholder {
+  color: #2f7973;
+  opacity: 0.6;
 }
 .how-contribute .how-contribute-img__container .search-input::placeholder {
   color: #2f7973;
@@ -1492,7 +1458,8 @@ header {
 }
 .team__member .img-position {
   position: relative;
-  object-position: 0% 0%;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
 }
 .team__member-img {
   width: 16rem;
@@ -1534,20 +1501,27 @@ header {
   border-radius: 50%;
   background-color: #4b4b4b;
   /* Culoarea implicita a svg-ului */
-  mask-size: 32px 32px;
-  mask-repeat: no-repeat;
-  mask-position: center;
+  -webkit-mask-size: 32px 32px;
+          mask-size: 32px 32px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
   transition: all 0.2s ease-in-out;
 }
 .team__member__socials span:nth-child(1) a {
-  mask-size: 28px 28px;
-  mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+  -webkit-mask-size: 28px 28px;
+          mask-size: 28px 28px;
+  -webkit-mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+          mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
 }
 .team__member__socials span:nth-child(2) a {
-  mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+  -webkit-mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+          mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
 }
 .team__member__socials span:nth-child(3) a {
-  mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+  -webkit-mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+          mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
 }
 .team__member__socials span:nth-child(1):hover a {
   background-color: #0a66c2;
@@ -1646,7 +1620,8 @@ header {
 .stories-right img {
   width: 34.8rem;
   height: 51.7rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .stories-extra {
   position: absolute;
@@ -1689,7 +1664,8 @@ header {
   }
   .stories-right img {
     margin-bottom: -17rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     transform: scale(0.5);
     border-radius: 30rem;
   }
@@ -1866,12 +1842,17 @@ header {
   color: #f3f3f3;
   border-radius: 50%;
   background-color: #4b4b4b;
-  mask-size: 32px 32px;
-  mask-repeat: no-repeat;
-  mask-position: center;
+  -webkit-mask-size: 32px 32px;
+          mask-size: 32px 32px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
   transition: all 0.2s ease-in-out;
-  mask-size: 42px 42px;
-  mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
+  -webkit-mask-size: 42px 42px;
+          mask-size: 42px 42px;
+  -webkit-mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
+          mask-image: url("../assets/social-media-icons/jitsi_meeting_icon.svg");
 }
 .join-us-section__meeting-list .meeting-item .day-container .meeting-icon:hover .meeting-link {
   background-color: #0a66c2;
@@ -1907,7 +1888,7 @@ header {
   font-size: 2.2rem;
   line-height: 2.2rem;
 }
-.join-us-section .primary-btn, .join-us-section .job-btn {
+.join-us-section .primary-btn {
   margin-top: 4rem;
   width: clamp(280px, 38rem, 100%);
 }
@@ -1982,9 +1963,10 @@ header {
 
 .meeting-schedule {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 3rem 0 0;
-  gap: 20px;
+  gap: 12px;
 }
 .meeting-schedule .meeting-card,
 .meeting-schedule .weekend-card {
@@ -1992,7 +1974,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   background-color: #fff;
   border-left: 1px solid rgba(47, 121, 115, 0.5);
   border-right: 1px solid transparent;
@@ -2000,6 +1981,8 @@ header {
   border-bottom: none;
   border-radius: 15px;
   min-height: 120px;
+  flex: 1 1 calc(33.33% - 12px);
+  max-width: 100%;
 }
 .meeting-schedule .meeting-card {
   cursor: pointer;
@@ -2150,7 +2133,7 @@ header {
     gap: 10px;
   }
   .meeting-schedule .meeting-card {
-    max-width: 310px;
+    width: 100%;
     margin: auto;
   }
 }
@@ -2173,7 +2156,7 @@ header {
     gap: 14px;
   }
   .meeting-schedule .meeting-card {
-    max-width: 420px;
+    width: 100%;
     margin: auto;
   }
 }
@@ -2185,7 +2168,7 @@ header {
     padding: 0 10rem 5rem 10rem;
     line-height: 2.5rem;
   }
-  .join-us-section .primary-btn, .join-us-section .job-btn {
+  .join-us-section .primary-btn {
     max-width: 34rem;
   }
 }
@@ -2198,7 +2181,7 @@ header {
     line-height: 2.2rem;
     width: 860px;
   }
-  .join-us-section .primary-btn, .join-us-section .job-btn {
+  .join-us-section .primary-btn {
     max-width: 34rem;
   }
   .meeting-days .meeting-day span {
@@ -2240,6 +2223,7 @@ header {
   padding-bottom: 3.6rem;
 }
 .footer__logo a {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .footer__logo a h2 {
@@ -2354,7 +2338,8 @@ header {
   }
   .footer__navigation ul {
     flex-direction: row;
-    column-gap: 1.8rem;
+    -moz-column-gap: 1.8rem;
+         column-gap: 1.8rem;
     max-width: 34rem;
     height: 11rem;
   }
@@ -2782,7 +2767,8 @@ header {
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 .jd__container .jd__body .list #email #copy-email {
   position: relative;
@@ -2883,7 +2869,8 @@ header {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials {
   display: flex;
@@ -2910,20 +2897,27 @@ header {
   color: #f3f3f3;
   border-radius: 50%;
   background-color: #4b4b4b;
-  mask-size: 32px 32px;
-  mask-repeat: no-repeat;
-  mask-position: center;
+  -webkit-mask-size: 32px 32px;
+          mask-size: 32px 32px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
   transition: all 0.2s ease-in-out;
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1) a {
-  mask-size: 28px 28px;
-  mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+  -webkit-mask-size: 28px 28px;
+          mask-size: 28px 28px;
+  -webkit-mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
+          mask-image: url("../assets/social-media-icons/contributor-linkedIn-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(2) a {
-  mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+  -webkit-mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
+          mask-image: url("../assets/social-media-icons/contributor-github-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(3) a {
-  mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+  -webkit-mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
+          mask-image: url("../assets/social-media-icons/contributor-discord-icon.svg");
 }
 .jd__container .jd__body .about .contact .contact-profile .employer-socials span:nth-child(1):hover a {
   background-color: #0a66c2;
