@@ -1987,9 +1987,10 @@ header {
 
 .meeting-schedule {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 3rem 0 0;
-  gap: 20px;
+  gap: 12px;
 }
 .meeting-schedule .meeting-card,
 .meeting-schedule .weekend-card {
@@ -1997,7 +1998,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   background-color: #fff;
   border-left: 1px solid rgba(47, 121, 115, 0.5);
   border-right: 1px solid transparent;
@@ -2005,6 +2005,8 @@ header {
   border-bottom: none;
   border-radius: 15px;
   min-height: 120px;
+  flex: 1 1 calc(33.33% - 12px);
+  max-width: 100%;
 }
 .meeting-schedule .meeting-card {
   cursor: pointer;
@@ -2155,7 +2157,7 @@ header {
     gap: 10px;
   }
   .meeting-schedule .meeting-card {
-    max-width: 310px;
+    width: 100%;
     margin: auto;
   }
 }
@@ -2178,7 +2180,7 @@ header {
     gap: 14px;
   }
   .meeting-schedule .meeting-card {
-    max-width: 420px;
+    width: 100%;
     margin: auto;
   }
 }
