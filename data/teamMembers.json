@@ -169,7 +169,7 @@
         "team": "QA",
         "position": "Manual Tester",
         "teamLead": false,
-        "status": true
+        "status": false
       }
     ],
     "socials": {
@@ -186,13 +186,13 @@
         "team": "QA",
         "position": "Automation Test Lead",
         "teamLead": true,
-        "status": true
+        "status": false
       },
       {
         "team": "Scraping",
         "position": "Python Scraper",
         "teamLead": false,
-        "status": true
+        "status": false
       },
       {
         "team": "Core",
@@ -284,13 +284,13 @@
         "team": "Core",
         "position": "Data Quality Test Lead",
         "teamLead": false,
-        "status": true
+        "status": false
       },
       {
         "team": "Data Quality",
         "position": "Data Quality Test Lead",
-        "teamLead": true,
-        "status": true
+        "teamLead": false,
+        "status": false
       }
     ],
     "socials": {
@@ -768,7 +768,13 @@
     "roles": [
       {
         "team": "QA",
-        "position": "Manual Tester",
+        "position": "Manual Test Lead",
+        "teamLead": true,
+        "status": true
+      },
+      {
+        "team": "Core",
+        "position": "Manual Test Lead",
         "teamLead": false,
         "status": true
       }
@@ -990,13 +996,13 @@
     "roles": [
       {
         "team": "QA",
-        "position": "Manual Test Lead",
+        "position": "Automation Test Lead",
         "teamLead": true,
         "status": true
       },
       {
         "team": "Core",
-        "position": "Manual Test Lead",
+        "position": "Automation Test Lead",
         "teamLead": false,
         "status": true
       }
